@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bpmn:definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bpmn="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:dc="http://www.omg.org/spec/DD/20100524/DC" xmlns:di="http://www.omg.org/spec/DD/20100524/DI" id="Definitions_1xbicdd" targetNamespace="http://bpmn.io/schema/bpmn" exporter="bpmn-js (https://demo.bpmn.io)" exporterVersion="7.3.0">
+  <bpmn:collaboration id="Collaboration_0oxil07">
+    <bpmn:participant id="Participant_00dxb79" name="Gestión de pedidos con el proveedor" processRef="Process_1sw6mgg" />
+  </bpmn:collaboration>
+  <bpmn:process id="Process_1sw6mgg" isExecutable="false">
+    <bpmn:laneSet id="LaneSet_1eq6od6">
+      <bpmn:lane id="Lane_0cphb1h" name="Proveedor de materiales" />
+      <bpmn:lane id="Lane_1h2uq5p" name="Encargado de pedidos" />
+      <bpmn:lane id="Lane_14x95bf" name="Encargado de almacén">
+        <bpmn:flowNodeRef>Event_1yuqoyy</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>Event_1cpx9zy</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>Activity_0he4452</bpmn:flowNodeRef>
+      </bpmn:lane>
+    </bpmn:laneSet>
+    <bpmn:endEvent id="Event_1yuqoyy">
+      <bpmn:terminateEventDefinition id="TerminateEventDefinition_1e4ywfr" />
+    </bpmn:endEvent>
+    <bpmn:startEvent id="Event_1cpx9zy">
+      <bpmn:outgoing>Flow_07meoeo</bpmn:outgoing>
+    </bpmn:startEvent>
+    <bpmn:task id="Activity_0he4452" name="Atender  avisos de stock bajo">
+      <bpmn:incoming>Flow_07meoeo</bpmn:incoming>
+    </bpmn:task>
+    <bpmn:sequenceFlow id="Flow_07meoeo" sourceRef="Event_1cpx9zy" targetRef="Activity_0he4452" />
+  </bpmn:process>
+  <bpmndi:BPMNDiagram id="BPMNDiagram_1">
+    <bpmndi:BPMNPlane id="BPMNPlane_1" bpmnElement="Collaboration_0oxil07">
+      <bpmndi:BPMNShape id="Participant_00dxb79_di" bpmnElement="Participant_00dxb79" isHorizontal="true">
+        <dc:Bounds x="160" y="80" width="1300" height="700" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Lane_0cphb1h_di" bpmnElement="Lane_0cphb1h" isHorizontal="true">
+        <dc:Bounds x="190" y="80" width="1270" height="230" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Lane_1h2uq5p_di" bpmnElement="Lane_1h2uq5p" isHorizontal="true">
+        <dc:Bounds x="190" y="310" width="1270" height="230" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Lane_14x95bf_di" bpmnElement="Lane_14x95bf" isHorizontal="true">
+        <dc:Bounds x="190" y="540" width="1270" height="240" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNEdge id="Flow_07meoeo_di" bpmnElement="Flow_07meoeo">
+        <di:waypoint x="268" y="660" />
+        <di:waypoint x="310" y="660" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNShape id="Event_1atlbx1_di" bpmnElement="Event_1yuqoyy">
+        <dc:Bounds x="1222" y="582" width="36" height="36" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Event_1cpx9zy_di" bpmnElement="Event_1cpx9zy">
+        <dc:Bounds x="232" y="642" width="36" height="36" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Activity_0he4452_di" bpmnElement="Activity_0he4452">
+        <dc:Bounds x="310" y="620" width="100" height="80" />
+      </bpmndi:BPMNShape>
+    </bpmndi:BPMNPlane>
+  </bpmndi:BPMNDiagram>
+</bpmn:definitions>
