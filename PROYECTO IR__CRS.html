@@ -13,6 +13,7 @@
             // converter.setOption( "key", "value" );
 
             var converter = new showdown.Converter();
+            converter.setOption( "parseImgDimensions", true );
 
             // function to be used in XLST templates
             // if inline=true, all CRLF tags are replaced
@@ -630,70 +631,6 @@
 </div>
 <h2 id="SEC-0022" class="section">3.2 Modelos de procesos de negocio actuales</h2>
 <h3 id="SEC-0023" class="section">3.2.1 Descripción de actores de negocio actuales</h3>
-<div id="ACT-0001">
-<table class="actor remus_table">
-<thead>
-<tr>
-<th>
-<img src="https://cdn.jsdelivr.net/gh/amador-duran-toro/remus/assets/images/icons/actor.png" /> ACT-0001</th>
-<th class="name_column" colspan="1">Propietario</th>
-</tr>
-</thead>
-<tr>
-<th>Versión</th>
-<td colspan="1">1.0 (02/11/2020)
-</td>
-</tr>
-<tr>
-<th>Descripción</th>
-<td colspan="1">
-<textarea id="ACT-0001-actorRole-md" class="markdown">Este actor representa al propietario de la empresa. Ejerce de contable además de dedicarse a otros trabajos dentro de al empresa, ya sea transportando la mercancía o ayudando en el almacén.</textarea>
-<div id="ACT-0001-actorRole-html" class=""></div>
-<script>generate_markdown("ACT-0001-actorRole");</script>
-</td>
-</tr>
-<tr>
-<th>Comentarios</th>
-<td colspan="1">
-<textarea id="ACT-0001-comments-md" class="markdown">Ninguno</textarea>
-<div id="ACT-0001-comments-html" class="remus_comments"></div>
-<script>generate_markdown("ACT-0001-comments");</script>
-</td>
-</tr>
-</table>
-</div>
-<div id="ACT-0003">
-<table class="actor remus_table">
-<thead>
-<tr>
-<th>
-<img src="https://cdn.jsdelivr.net/gh/amador-duran-toro/remus/assets/images/icons/actor.png" /> ACT-0003</th>
-<th class="name_column" colspan="1">Recepcionista</th>
-</tr>
-</thead>
-<tr>
-<th>Versión</th>
-<td colspan="1">1.0 (02/11/2020)
-</td>
-</tr>
-<tr>
-<th>Descripción</th>
-<td colspan="1">
-<textarea id="ACT-0003-actorRole-md" class="markdown">Este actor representa a un recepcinista de la empresa. Esta administra los pedidos de los clientes, es la que trabaja de cara al público.</textarea>
-<div id="ACT-0003-actorRole-html" class=""></div>
-<script>generate_markdown("ACT-0003-actorRole");</script>
-</td>
-</tr>
-<tr>
-<th>Comentarios</th>
-<td colspan="1">
-<textarea id="ACT-0003-comments-md" class="markdown">En algunos procesos es referido como Atención al cliente</textarea>
-<div id="ACT-0003-comments-html" class="remus_comments"></div>
-<script>generate_markdown("ACT-0003-comments");</script>
-</td>
-</tr>
-</table>
-</div>
 <div id="ACT-0004">
 <table class="actor remus_table">
 <thead>
@@ -732,7 +669,7 @@
 <tr>
 <th>
 <img src="https://cdn.jsdelivr.net/gh/amador-duran-toro/remus/assets/images/icons/actor.png" /> ACT-0013</th>
-<th class="name_column" colspan="1">Empleado del alamacén</th>
+<th class="name_column" colspan="1">Empleado del almacén</th>
 </tr>
 </thead>
 <tr>
@@ -743,7 +680,7 @@
 <tr>
 <th>Descripción</th>
 <td colspan="1">
-<textarea id="ACT-0013-actorRole-md" class="markdown">Este actor representa <span class="tbd" title="Por determinar">PD</span>.</textarea>
+<textarea id="ACT-0013-actorRole-md" class="markdown">Este actor representa a los empleados que trabajan en el almacén, estos se encargan de llevar los productos a los camiones, además de transportar los pedidos en el camión si fuera necesario.</textarea>
 <div id="ACT-0013-actorRole-html" class=""></div>
 <script>generate_markdown("ACT-0013-actorRole");</script>
 </td>
@@ -754,6 +691,70 @@
 <textarea id="ACT-0013-comments-md" class="markdown">Ninguno</textarea>
 <div id="ACT-0013-comments-html" class="remus_comments"></div>
 <script>generate_markdown("ACT-0013-comments");</script>
+</td>
+</tr>
+</table>
+</div>
+<div id="ACT-0014">
+<table class="actor remus_table">
+<thead>
+<tr>
+<th>
+<img src="https://cdn.jsdelivr.net/gh/amador-duran-toro/remus/assets/images/icons/actor.png" /> ACT-0014</th>
+<th class="name_column" colspan="1">Empleado de la tienda</th>
+</tr>
+</thead>
+<tr>
+<th>Versión</th>
+<td colspan="1">1.0 (07/11/2020)
+</td>
+</tr>
+<tr>
+<th>Descripción</th>
+<td colspan="1">
+<textarea id="ACT-0014-actorRole-md" class="markdown">Este actor representa a los empleados que trabajan en la tienda. Se encargan de la gestión del stock en la tienda así como su disposición dentro de la tienda.</textarea>
+<div id="ACT-0014-actorRole-html" class=""></div>
+<script>generate_markdown("ACT-0014-actorRole");</script>
+</td>
+</tr>
+<tr>
+<th>Comentarios</th>
+<td colspan="1">
+<textarea id="ACT-0014-comments-md" class="markdown">Ninguno</textarea>
+<div id="ACT-0014-comments-html" class="remus_comments"></div>
+<script>generate_markdown("ACT-0014-comments");</script>
+</td>
+</tr>
+</table>
+</div>
+<div id="ACT-0001">
+<table class="actor remus_table">
+<thead>
+<tr>
+<th>
+<img src="https://cdn.jsdelivr.net/gh/amador-duran-toro/remus/assets/images/icons/actor.png" /> ACT-0001</th>
+<th class="name_column" colspan="1">Propietario</th>
+</tr>
+</thead>
+<tr>
+<th>Versión</th>
+<td colspan="1">1.0 (02/11/2020)
+</td>
+</tr>
+<tr>
+<th>Descripción</th>
+<td colspan="1">
+<textarea id="ACT-0001-actorRole-md" class="markdown">Este actor representa al propietario de la empresa. Ejerce de contable además de dedicarse a otros trabajos dentro de al empresa, ya sea transportando la mercancía o ayudando en el almacén.</textarea>
+<div id="ACT-0001-actorRole-html" class=""></div>
+<script>generate_markdown("ACT-0001-actorRole");</script>
+</td>
+</tr>
+<tr>
+<th>Comentarios</th>
+<td colspan="1">
+<textarea id="ACT-0001-comments-md" class="markdown">Ninguno</textarea>
+<div id="ACT-0001-comments-html" class="remus_comments"></div>
+<script>generate_markdown("ACT-0001-comments");</script>
 </td>
 </tr>
 </table>
@@ -786,6 +787,38 @@
 <textarea id="ACT-0005-comments-md" class="markdown">Ninguno</textarea>
 <div id="ACT-0005-comments-html" class="remus_comments"></div>
 <script>generate_markdown("ACT-0005-comments");</script>
+</td>
+</tr>
+</table>
+</div>
+<div id="ACT-0003">
+<table class="actor remus_table">
+<thead>
+<tr>
+<th>
+<img src="https://cdn.jsdelivr.net/gh/amador-duran-toro/remus/assets/images/icons/actor.png" /> ACT-0003</th>
+<th class="name_column" colspan="1">Recepcionista</th>
+</tr>
+</thead>
+<tr>
+<th>Versión</th>
+<td colspan="1">1.0 (02/11/2020)
+</td>
+</tr>
+<tr>
+<th>Descripción</th>
+<td colspan="1">
+<textarea id="ACT-0003-actorRole-md" class="markdown">Este actor representa a un recepcinista de la empresa. Esta administra los pedidos de los clientes, es la que trabaja de cara al público.</textarea>
+<div id="ACT-0003-actorRole-html" class=""></div>
+<script>generate_markdown("ACT-0003-actorRole");</script>
+</td>
+</tr>
+<tr>
+<th>Comentarios</th>
+<td colspan="1">
+<textarea id="ACT-0003-comments-md" class="markdown">Ninguno</textarea>
+<div id="ACT-0003-comments-html" class="remus_comments"></div>
+<script>generate_markdown("ACT-0003-comments");</script>
 </td>
 </tr>
 </table>
