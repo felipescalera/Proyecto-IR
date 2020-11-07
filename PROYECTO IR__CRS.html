@@ -13,7 +13,6 @@
             // converter.setOption( "key", "value" );
 
             var converter = new showdown.Converter();
-            converter.setOption( "parseImgDimensions", true );
 
             // function to be used in XLST templates
             // if inline=true, all CRLF tags are replaced
@@ -234,7 +233,7 @@
 <h1 id="SEC-0002" class="section">1 Introducción</h1>
 <h2 id="SEC-0015" class="section">1.1 Alcance del proyecto</h2>
 <div id="PRG-0033" class="info">
-<textarea id="PRG-0033-text-md" class="markdown">El alcance del sistema "NOSE" afectará a los siguientes aspectos de la organización HERMANOS SILES S.L :¬¬* Gestión de pedidos de los clientes mediante una plataforma online donde podrán comprar los productos y elegir si desean que se les envíe adomicilio o recogerlo en tienda.¬¬* Gestón de empleados mediante una lista con los datos de los empleados de la empresa y sus respectivos contratos.¬¬* Gestión de proveedores mediante una lista con los datos de los proveedores y un historial con los productos pedidos a estos.¬¬* Gestión del inventario de productos mediante una lista con los datos de los productos y su stock en el almacén. Además con la posibilidad de renovación de stock con la automatización de pedidos.¬¬</textarea>
+<textarea id="PRG-0033-text-md" class="markdown">El alcance del sistema "InfoSiles" afectará a los siguientes aspectos de la organización HERMANOS SILES S.L :¬¬* **Gestión de pedidos** de los clientes mediante una **plataforma online** donde podrán comprar los productos y elegir si desean que se les envíen a domicilio o recogerlo en tienda.¬¬* **Gestón de empleados** mediante una **lista con los datos de los empleados** de la empresa y sus respectivos **contratos**.¬¬* **Gestión de proveedores** mediante una **lista** con los **datos de los proveedores** y un **historial con los productos pedidos** a estos.¬¬* **Gestión del inventario** de productos mediante un **catálogo de productos** y su **stock** en el almacén. Además con la posibilidad de renovación de stock con la **automatización de pedidos**.¬¬</textarea>
 <div id="PRG-0033-text-html" class=""></div>
 <script>generate_markdown("PRG-0033-text");</script>
 </div>
@@ -631,6 +630,70 @@
 </div>
 <h2 id="SEC-0022" class="section">3.2 Modelos de procesos de negocio actuales</h2>
 <h3 id="SEC-0023" class="section">3.2.1 Descripción de actores de negocio actuales</h3>
+<div id="ACT-0001">
+<table class="actor remus_table">
+<thead>
+<tr>
+<th>
+<img src="https://cdn.jsdelivr.net/gh/amador-duran-toro/remus/assets/images/icons/actor.png" /> ACT-0001</th>
+<th class="name_column" colspan="1">Propietario</th>
+</tr>
+</thead>
+<tr>
+<th>Versión</th>
+<td colspan="1">1.0 (02/11/2020)
+</td>
+</tr>
+<tr>
+<th>Descripción</th>
+<td colspan="1">
+<textarea id="ACT-0001-actorRole-md" class="markdown">Este actor representa al propietario de la empresa. Ejerce de contable además de dedicarse a otros trabajos dentro de al empresa, ya sea transportando la mercancía o ayudando en el almacén.</textarea>
+<div id="ACT-0001-actorRole-html" class=""></div>
+<script>generate_markdown("ACT-0001-actorRole");</script>
+</td>
+</tr>
+<tr>
+<th>Comentarios</th>
+<td colspan="1">
+<textarea id="ACT-0001-comments-md" class="markdown">Ninguno</textarea>
+<div id="ACT-0001-comments-html" class="remus_comments"></div>
+<script>generate_markdown("ACT-0001-comments");</script>
+</td>
+</tr>
+</table>
+</div>
+<div id="ACT-0003">
+<table class="actor remus_table">
+<thead>
+<tr>
+<th>
+<img src="https://cdn.jsdelivr.net/gh/amador-duran-toro/remus/assets/images/icons/actor.png" /> ACT-0003</th>
+<th class="name_column" colspan="1">Recepcionista</th>
+</tr>
+</thead>
+<tr>
+<th>Versión</th>
+<td colspan="1">1.0 (02/11/2020)
+</td>
+</tr>
+<tr>
+<th>Descripción</th>
+<td colspan="1">
+<textarea id="ACT-0003-actorRole-md" class="markdown">Este actor representa a un recepcinista de la empresa. Esta administra los pedidos de los clientes, es la que trabaja de cara al público.</textarea>
+<div id="ACT-0003-actorRole-html" class=""></div>
+<script>generate_markdown("ACT-0003-actorRole");</script>
+</td>
+</tr>
+<tr>
+<th>Comentarios</th>
+<td colspan="1">
+<textarea id="ACT-0003-comments-md" class="markdown">En algunos procesos es referido como Atención al cliente</textarea>
+<div id="ACT-0003-comments-html" class="remus_comments"></div>
+<script>generate_markdown("ACT-0003-comments");</script>
+</td>
+</tr>
+</table>
+</div>
 <div id="ACT-0004">
 <table class="actor remus_table">
 <thead>
@@ -669,7 +732,7 @@
 <tr>
 <th>
 <img src="https://cdn.jsdelivr.net/gh/amador-duran-toro/remus/assets/images/icons/actor.png" /> ACT-0013</th>
-<th class="name_column" colspan="1">Empleado del almacén</th>
+<th class="name_column" colspan="1">Empleado del alamacén</th>
 </tr>
 </thead>
 <tr>
@@ -680,7 +743,7 @@
 <tr>
 <th>Descripción</th>
 <td colspan="1">
-<textarea id="ACT-0013-actorRole-md" class="markdown">Este actor representa a los empleados que trabajan en el almacén. Estos llevan los productos a los camiones para su posterior envío, también pueden ejercer de transportistas.</textarea>
+<textarea id="ACT-0013-actorRole-md" class="markdown">Este actor representa <span class="tbd" title="Por determinar">PD</span>.</textarea>
 <div id="ACT-0013-actorRole-html" class=""></div>
 <script>generate_markdown("ACT-0013-actorRole");</script>
 </td>
@@ -691,70 +754,6 @@
 <textarea id="ACT-0013-comments-md" class="markdown">Ninguno</textarea>
 <div id="ACT-0013-comments-html" class="remus_comments"></div>
 <script>generate_markdown("ACT-0013-comments");</script>
-</td>
-</tr>
-</table>
-</div>
-<div id="ACT-0014">
-<table class="actor remus_table">
-<thead>
-<tr>
-<th>
-<img src="https://cdn.jsdelivr.net/gh/amador-duran-toro/remus/assets/images/icons/actor.png" /> ACT-0014</th>
-<th class="name_column" colspan="1">Empleado en tienda</th>
-</tr>
-</thead>
-<tr>
-<th>Versión</th>
-<td colspan="1">1.0 (07/11/2020)
-</td>
-</tr>
-<tr>
-<th>Descripción</th>
-<td colspan="1">
-<textarea id="ACT-0014-actorRole-md" class="markdown">Este actor representa los empleados que trabajan en la tienda. Reponen el stock, gestionan los productos dentro de la tienda.</textarea>
-<div id="ACT-0014-actorRole-html" class=""></div>
-<script>generate_markdown("ACT-0014-actorRole");</script>
-</td>
-</tr>
-<tr>
-<th>Comentarios</th>
-<td colspan="1">
-<textarea id="ACT-0014-comments-md" class="markdown">Ninguno</textarea>
-<div id="ACT-0014-comments-html" class="remus_comments"></div>
-<script>generate_markdown("ACT-0014-comments");</script>
-</td>
-</tr>
-</table>
-</div>
-<div id="ACT-0001">
-<table class="actor remus_table">
-<thead>
-<tr>
-<th>
-<img src="https://cdn.jsdelivr.net/gh/amador-duran-toro/remus/assets/images/icons/actor.png" /> ACT-0001</th>
-<th class="name_column" colspan="1">Propietario</th>
-</tr>
-</thead>
-<tr>
-<th>Versión</th>
-<td colspan="1">1.0 (02/11/2020)
-</td>
-</tr>
-<tr>
-<th>Descripción</th>
-<td colspan="1">
-<textarea id="ACT-0001-actorRole-md" class="markdown">Este actor representa al propietario de la empresa. Ejerce de contable además de dedicarse a otros trabajos dentro de al empresa, ya sea transportando la mercancía o ayudando en el almacén.</textarea>
-<div id="ACT-0001-actorRole-html" class=""></div>
-<script>generate_markdown("ACT-0001-actorRole");</script>
-</td>
-</tr>
-<tr>
-<th>Comentarios</th>
-<td colspan="1">
-<textarea id="ACT-0001-comments-md" class="markdown">Ninguno</textarea>
-<div id="ACT-0001-comments-html" class="remus_comments"></div>
-<script>generate_markdown("ACT-0001-comments");</script>
 </td>
 </tr>
 </table>
@@ -787,38 +786,6 @@
 <textarea id="ACT-0005-comments-md" class="markdown">Ninguno</textarea>
 <div id="ACT-0005-comments-html" class="remus_comments"></div>
 <script>generate_markdown("ACT-0005-comments");</script>
-</td>
-</tr>
-</table>
-</div>
-<div id="ACT-0003">
-<table class="actor remus_table">
-<thead>
-<tr>
-<th>
-<img src="https://cdn.jsdelivr.net/gh/amador-duran-toro/remus/assets/images/icons/actor.png" /> ACT-0003</th>
-<th class="name_column" colspan="1">Recepcionista</th>
-</tr>
-</thead>
-<tr>
-<th>Versión</th>
-<td colspan="1">1.0 (02/11/2020)
-</td>
-</tr>
-<tr>
-<th>Descripción</th>
-<td colspan="1">
-<textarea id="ACT-0003-actorRole-md" class="markdown">Este actor representa a un recepcinista de la empresa. Esta administra los pedidos de los clientes, es la que trabaja de cara al público.</textarea>
-<div id="ACT-0003-actorRole-html" class=""></div>
-<script>generate_markdown("ACT-0003-actorRole");</script>
-</td>
-</tr>
-<tr>
-<th>Comentarios</th>
-<td colspan="1">
-<textarea id="ACT-0003-comments-md" class="markdown">En algunos procesos es referido como Atención al cliente</textarea>
-<div id="ACT-0003-comments-html" class="remus_comments"></div>
-<script>generate_markdown("ACT-0003-comments");</script>
 </td>
 </tr>
 </table>
@@ -873,7 +840,7 @@
 <h1 id="SEC-0006" class="section">4 Necesidades de negocio</h1>
 <h2 id="SEC-0028" class="section">4.1 Objetivos de negocio</h2>
 <div id="PRG-0014">
-<textarea id="PRG-0014-text-md" class="markdown">* H1: **Como** *empleado en tienda* **quiero que** *el sistema me permita consultar el stock de cualquier producto disponible en el almacén* **para** *poder gestionar rápidamente el inventario*.¬¬* H2: **Como** *propietario* **quiero que** *el sistema pida stock de algún producto si está por debajo del 10%* **para** *agilizar la renovación de stock*. ¬¬* H3: **Como** *cliente* **desearía poder** *comprar desde la página web* **para** *no tener que gastar gasolina*.¬¬* H4: **Como** *cliente* **quiero** *tener un carrito donde poder almacenar los productos que voy a comprar* **para** *poder retomar la compra en otro momento*.¬¬* H5: **Como** *propietario* **me gustaría que** *el sistema notifique a los trabajadores si en el día de hoy va a llegar algún pedido* **para** *que estos pedidos no se queden sin atender*.¬¬* H6: **Como** *cliente* **desearía que** *el sistema me permitiese elegir, a la hora de finalizar el pedido, entre recoger en tienda o a domicilio* **para** *poder decidir si pagar los gastos de envío o desplazarme a la tienda personalmente*.¬¬* H7: **Como** *propietario* **quiero** *tener disponible una lista de todos los gastos y beneficios obtenidos al día, a la semana y al mes* **para** *poder hacer cuentas y comprobar la situación de la empresa*.¬¬* H8: **Como** *empleado del almacén* **quiero que** *el sistema me notifique si hay que llevar un producto a domicilio, además de que me dé los datos del envío* **para** *agilizar la entrega de pedidos*.¬¬* H9: **Como** *propietario* **quiero poder** *consultar y/o modificar una lista de los proveedores con los que tenemos contacto* **para** *gestionar los proveedores que nos abastecen*.¬¬* H10: **Como** *empleado de la tienda* **quiero poder** *aplicar descuentos a los productos a la hora de la venta* **para** *automatizar los descuentos en la tienda física*.¬¬* H11: **Como** *propietario* **quiero poder** *modificar los precios de mis productos* **para** *estar actualizado en el mercado*.¬¬* H12: **Como** *propietario* **quiero poder** *acceder a los datos de los trabajadores* **para** *comprobar la efectividad de la empresa*.¬</textarea>
+<textarea id="PRG-0014-text-md" class="markdown">* H1: **Como** *empleado* **quiero que** *el sistema me permita consultar el stock de cualquier producto disponible en el almacén* **para** *poder gestionar rápidamente el inventario*.¬¬* H2: **Como** *propietario* **quiero que** *el sistema pida stock de algún producto si está por debajo del 10%* **para** *agilizar la renovación de stock*. ¬¬* H3: **Como** *cliente* **desearía poder** *comprar desde la página web* **para** *no tener que gastar gasolina*.¬¬* H4: **Como** *cliente* **quiero** *tener un carrito donde poder almacenar los productos que voy a comprar* **para** *poder retomar la compra en otro momento*.¬¬* H5: **Como** *propietario* **me gustaría que** *el sistema notifique a los trabajadores si en el día de hoy va a llegar algún pedido* **para** *que estos pedidos no se queden sin atender*.¬¬* H6: **Como** *cliente* **desearía que** *el sistema me permitiese elegir, a la hora de finalizar el pedido, entre recoger en tienda o a domicilio* **para** *poder decidir si pagar los gastos de envío o desplazarme a la tienda personalmente*.¬¬* H7: **Como** *contable* **quiero** *tener disponible una lista de todos los gastos y beneficios obtenidos al día, a la semana y al mes* **para** *poder hacer cuentas y comprobar la situación de la empresa*.¬¬* H8: **Como** *transportista* **quiero que** *el sistema me notifique si hay que llevar un producto a domicilio, además de que me dé los datos del envío* **para** *agilizar la entrega de pedidos*.¬¬* H9: **Como** *propietario* **quiero poder** *consultar y/o modificar una lista de los proveedores con los que tenemos contacto* **para** *gestionar los proveedores que nos abastecen*.¬¬* H10: **Como** *empleado* **quiero poder** *aplicar descuentos a los productos a la hora de la venta* **para** *automatizar los descuentos en la tienda física*.¬¬* H11: **Como** *propietario* **quiero poder** *modificar los precios de mis productos* **para** *estar actualizado en el mercado*.¬¬* H12: **Como** *contable* **quiero poder** *acceder a los datos de los trabajadores* **para** *comprobar la efectividad de la empresa*.¬</textarea>
 <div id="PRG-0014-text-html" class=""></div>
 <script>generate_markdown("PRG-0014-text");</script>
 </div>
