@@ -127,7 +127,7 @@
 <rem:day>31</rem:day>
 </rem:date>
 </rem:version>
-<rem:authors stakeholders="STK-0004 STK-0005 STK-0003 STK-0002 STK-0001 "/>
+<rem:authors stakeholders="STK-0001 STK-0002 STK-0003 STK-0005 STK-0004 "/>
 <rem:comments>Ninguno</rem:comments>
 <rem:address>Av. Reina Mercedes</rem:address>
 <rem:telephone><rem:tbd/></rem:telephone>
@@ -340,7 +340,7 @@
 </rem:date>
 </rem:version>
 <rem:comments>Ninguno</rem:comments>
-<rem:text>La empresa a la cual va destinado del proyecto de software se dedica fundamentalmente a la venta al por mayor y por menor de productos de materiales de construcción. Ademas de el envio a la misma localidad y localidades proximas de los productos comprados en la empresa.<br/><br/>Disponen de material como cubas, camiones con gruas incorporadas y maquinas elevadoras en caso de alquiler por parte del cliente.</rem:text>
+<rem:text>* La empresa a la cual va destinado el proyecto de software se dedica fundamentalmente a la venta al por mayor y por menor de productos de materiales de construcción. Además del envío a la misma localidad y localidades próximas de los productos comprados en la empresa.<br/><br/>Disponen de material como cubas, camiones con grúas incorporadas y máquinas elevadoras en caso de alquiler por parte del cliente.</rem:text>
 </rem:paragraph>
 </rem:section>
 <rem:section oid="SEC-0018">
@@ -957,38 +957,6 @@
 <rem:comments>Ninguno</rem:comments>
 <rem:level>2</rem:level>
 <rem:number>4.1 </rem:number>
-<rem:paragraph oid="PRG-0011">
-<rem:name>H1</rem:name>
-<rem:version>
-<rem:major>1</rem:major>
-<rem:minor>0</rem:minor>
-<rem:date>
-<rem:year>2020</rem:year>
-<rem:month>11</rem:month>
-<rem:day>5</rem:day>
-</rem:date>
-</rem:version>
-<rem:comments>Ninguno</rem:comments>
-<rem:text><br/>&lt;table class=&quot;objective remus_table&quot;&gt;<br/>&lt;thead&gt;<br/>&lt;tr&gt;<br/>&lt;th&gt;<br/>&lt;img src=&quot;https://cdn.jsdelivr.net/gh/amador-duran-toro/remus/assets/images/icons/objective.png&quot; /&gt; OBJ-0005&lt;/th&gt;<br/>&lt;th class=&quot;name_column&quot; colspan=&quot;1&quot;&gt;Consulta stock&lt;/th&gt;<br/>&lt;/tr&gt;<br/>&lt;/thead&gt;<br/>&lt;tr&gt;<br/>&lt;th&gt;Versión&lt;/th&gt;<br/>&lt;td colspan=&quot;1&quot;&gt;1.0 (05/11/2020)<br/>&lt;/td&gt;<br/>&lt;/tr&gt;<br/>&lt;tr&gt;<br/>&lt;th&gt;Descripción&lt;/th&gt;<br/>&lt;td colspan=&quot;1&quot;&gt;<br/>&lt;p id=&quot;OBJ-0005-description-md&quot;  &gt; Como empleado quiero que el sistema me permita consultar el stock de cualquier producto disponible en el almacén. &lt;/p&gt;<br/>&lt;div id=&quot;OBJ-0005-description-html&quot; class=&quot;&quot;&gt;&lt;/div&gt;<br/>&lt;script&gt;generate_markdown(&quot;OBJ-0005-description&quot;);&lt;/script&gt;<br/>&lt;/td&gt;<br/>&lt;/tr&gt;<br/>&lt;tr&gt;<br/>&lt;th&gt;Subobjetivos&lt;/th&gt;<br/>&lt;td&gt;<br/>&lt;ul class=&quot;subobjectives&quot;&gt;<br/>&lt;li id=&quot;OBJ-0002&quot;&gt;<br/>&lt;p id=&quot;OBJ-0002-description-md&quot; class=&quot;markdown&quot;&gt;&lt;b&gt; [OBJ-0002] Recarga Stock:&lt;/b&gt; Como propietario quiero que el sistema pida stock de algún producto si está por debajo del 10%. &lt;/p&gt;<br/>&lt;span id=&quot;OBJ-0002-description-html&quot;&gt;&lt;/span&gt;<br/>&lt;script&gt;generate_markdown(&quot;OBJ-0002-description&quot;,true);&lt;/script&gt;<br/>&lt;/li&gt;<br/>&lt;/ul&gt;<br/>&lt;/td&gt;<br/>&lt;/tr&gt;<br/>&lt;tr&gt;<br/>&lt;th&gt;Importancia&lt;/th&gt;<br/>&lt;td colspan=&quot;1&quot;&gt;vital&lt;/td&gt;<br/>&lt;/tr&gt;<br/>&lt;tr&gt;<br/>&lt;th&gt;Urgencia&lt;/th&gt;<br/>&lt;td colspan=&quot;1&quot;&gt;hay presión&lt;/td&gt;<br/>&lt;/tr&gt;<br/>&lt;tr&gt;<br/>&lt;th&gt;Estado&lt;/th&gt;<br/>&lt;td colspan=&quot;1&quot;&gt;pendiente de verificación&lt;/td&gt;<br/>&lt;/tr&gt;<br/>&lt;tr&gt;<br/>&lt;th&gt;Estabilidad&lt;/th&gt;<br/>&lt;td colspan=&quot;1&quot;&gt;baja&lt;/td&gt;<br/>&lt;/tr&gt;<br/>&lt;tr&gt;<br/>&lt;th&gt;Comentarios&lt;/th&gt;<br/>&lt;td colspan=&quot;1&quot;&gt;<br/>&lt;p id=&quot;OBJ-0005-comments-md&quot; class=&quot;markdown&quot;&gt;Ninguno&lt;/p&gt;<br/>&lt;div id=&quot;OBJ-0005-comments-html&quot; class=&quot;remus_comments&quot;&gt;&lt;/div&gt;<br/>&lt;script&gt;generate_markdown(&quot;OBJ-0005-comments&quot;);&lt;/script&gt;<br/>&lt;/td&gt;<br/>&lt;/tr&gt;<br/>&lt;/table&gt;<br/></rem:text>
-</rem:paragraph>
-<rem:objective oid="OBJ-0001">
-<rem:name>Consulta pedidos</rem:name>
-<rem:version>
-<rem:major>1</rem:major>
-<rem:minor>0</rem:minor>
-<rem:date>
-<rem:year>2020</rem:year>
-<rem:month>11</rem:month>
-<rem:day>5</rem:day>
-</rem:date>
-</rem:version>
-<rem:comments>Ninguno</rem:comments>
-<rem:importance value = "IMV-0003"/>
-<rem:urgency value = "URV-0003"/>
-<rem:status value = "STV-0003"/>
-<rem:stability value = "SBV-0004"/>
-<rem:description>notificar a los trabajadores si en el día de hoy va a llegar algún pedido</rem:description>
-</rem:objective>
 <rem:paragraph oid="PRG-0014">
 <rem:name>Historias de usuario</rem:name>
 <rem:version>
@@ -1001,10 +969,118 @@
 </rem:date>
 </rem:version>
 <rem:comments>Ninguno</rem:comments>
-<rem:text>H1: Como empleado quiero que el sistema me permita consultar el stock de cualquier producto disponible en el almacén para poder gestionar rápidamente el inventario.<br/><br/>H2: Como propietario quiero que el sistema pida stock de algún producto si está por debajo del 10% para agilizar la renovación de stock. <br/><br/>H3: Como cliente desearía poder comprar desde la página web para no tener que gastar gasolina.<br/><br/>H4: Como cliente quiero tener un carrito donde poder almacenar los productos que voy a comprar para poder retomar la compra en otro momento.<br/><br/>H5: Como propietario me gustaría que el sistema notifique a los trabajadores si en el día de hoy va a llegar algún pedido para que estos pedidos no se queden sin atender.<br/><br/>H6: Como cliente desearía que el sistema me permitiese elegir, a la hora de finalizar el pedido, entre recoger en tienda o a domicilio para poder decidir si pagar los gastos de envío o desplazarme a la tienda personalmente.<br/><br/>H7: Como contable quiero tener disponible una lista de todos los gastos y beneficios obtenidos al día, a la semana y al mes para poder hacer cuentas y comprobar la situación de la empresa.<br/><br/>H8: Como transportista quiero que el sistema me notifique si hay que llevar un producto a domicilio, además de que me dé los datos del envío para agilizar la entrega de pedidos.<br/><br/>H9: Como propietario quiero poder consultar y/o modificar una lista de los proveedores con los que tenemos contacto para gestionar los proveedores que nos abastecen.<br/><br/>H10: Como empleado quiero poder aplicar descuentos a los productos a la hora de la venta para automatizar los descuentos en la tienda física.<br/><br/>H11: Como propietario quiero poder modificar los precios de mis productos para estar actualizado en el mercado.<br/><br/>H12: Como contable quiero poder acceder a los datos de los trabajadores y de los proveedores para comprobar la efectividad de la empresa.<br/></rem:text>
+<rem:text>* H1: **Como** *empleado* **quiero que** *el sistema me permita consultar el stock de cualquier producto disponible en el almacén* **para** *poder gestionar rápidamente el inventario*.<br/><br/>* H2: **Como** *propietario* **quiero que** *el sistema pida stock de algún producto si está por debajo del 10%* **para** *agilizar la renovación de stock*. <br/><br/>* H3: **Como** *cliente* **desearía poder** *comprar desde la página web* **para** *no tener que gastar gasolina*.<br/><br/>* H4: **Como** *cliente* **quiero** *tener un carrito donde poder almacenar los productos que voy a comprar* **para** *poder retomar la compra en otro momento*.<br/><br/>* H5: **Como** *propietario* **me gustaría que** *el sistema notifique a los trabajadores si en el día de hoy va a llegar algún pedido* **para** *que estos pedidos no se queden sin atender*.<br/><br/>* H6: **Como** *cliente* **desearía que** *el sistema me permitiese elegir, a la hora de finalizar el pedido, entre recoger en tienda o a domicilio* **para** *poder decidir si pagar los gastos de envío o desplazarme a la tienda personalmente*.<br/><br/>* H7: **Como** *contable* **quiero** *tener disponible una lista de todos los gastos y beneficios obtenidos al día, a la semana y al mes* **para** *poder hacer cuentas y comprobar la situación de la empresa*.<br/><br/>* H8: **Como** *transportista* **quiero que** *el sistema me notifique si hay que llevar un producto a domicilio, además de que me dé los datos del envío* **para** *agilizar la entrega de pedidos*.<br/><br/>* H9: **Como** *propietario* **quiero poder** *consultar y/o modificar una lista de los proveedores con los que tenemos contacto* **para** *gestionar los proveedores que nos abastecen*.<br/><br/>* H10: **Como** *empleado* **quiero poder** *aplicar descuentos a los productos a la hora de la venta* **para** *automatizar los descuentos en la tienda física*.<br/><br/>* H11: **Como** *propietario* **quiero poder** *modificar los precios de mis productos* **para** *estar actualizado en el mercado*.<br/><br/>* H12: **Como** *contable* **quiero poder** *acceder a los datos de los trabajadores* **para** *comprobar la efectividad de la empresa*.<br/></rem:text>
 </rem:paragraph>
+<rem:objective oid="OBJ-0001">
+<rem:name>Consulta stock</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2020</rem:year>
+<rem:month>11</rem:month>
+<rem:day>5</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>Ninguno</rem:comments>
+<rem:importance value = "IMV-0002"/>
+<rem:urgency value = "URV-0003"/>
+<rem:status value = "STV-0003"/>
+<rem:stability><rem:tbd/></rem:stability>
+<rem:description>tener una lista de los productos de la empresa así como su stock</rem:description>
 <rem:objective oid="OBJ-0002">
-<rem:name>H7</rem:name>
+<rem:name>Renovación stock</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2020</rem:year>
+<rem:month>11</rem:month>
+<rem:day>7</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>La importancia de un producto se decide dependiendo de cuanto se venda dicho producto en un año fiscal.</rem:comments>
+<rem:importance value = "IMV-0003"/>
+<rem:urgency value = "URV-0003"/>
+<rem:status value = "STV-0003"/>
+<rem:stability><rem:tbd/></rem:stability>
+<rem:description>poder pedir automáticamente stock a los proveedores si dicho stock está por debajo del 10%, dependiendo de la importancia del producto</rem:description>
+</rem:objective>
+</rem:objective>
+<rem:objective oid="OBJ-0003">
+<rem:name>Compra online</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2020</rem:year>
+<rem:month>11</rem:month>
+<rem:day>7</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>Ninguno</rem:comments>
+<rem:importance value = "IMV-0002"/>
+<rem:urgency value = "URV-0003"/>
+<rem:status value = "STV-0003"/>
+<rem:stability><rem:tbd/></rem:stability>
+<rem:description>disponer de una sección que permita la compra online</rem:description>
+<rem:objective oid="OBJ-0004">
+<rem:name>Carrito de la compra</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2020</rem:year>
+<rem:month>11</rem:month>
+<rem:day>7</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>Ninguno</rem:comments>
+<rem:importance value = "IMV-0002"/>
+<rem:urgency value = "URV-0003"/>
+<rem:status value = "STV-0003"/>
+<rem:stability><rem:tbd/></rem:stability>
+<rem:description>poder almacenar los productos que se vayan a comprar online por parte de un usuario</rem:description>
+</rem:objective>
+<rem:objective oid="OBJ-0006">
+<rem:name>Pedidos Adomicilios</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2020</rem:year>
+<rem:month>11</rem:month>
+<rem:day>7</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>Ninguno</rem:comments>
+<rem:importance value = "IMV-0003"/>
+<rem:urgency value = "URV-0004"/>
+<rem:status value = "STV-0003"/>
+<rem:stability><rem:tbd/></rem:stability>
+<rem:description>permitir elegir al usuario si su pedido será enviado a domicilio o recogido en la tienda física</rem:description>
+</rem:objective>
+</rem:objective>
+<rem:objective oid="OBJ-0005">
+<rem:name>Llegadas de pedidos</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2020</rem:year>
+<rem:month>11</rem:month>
+<rem:day>7</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>Ninguno</rem:comments>
+<rem:importance value = "IMV-0004"/>
+<rem:urgency value = "URV-0004"/>
+<rem:status value = "STV-0003"/>
+<rem:stability><rem:tbd/></rem:stability>
+<rem:description>avisar a los trabajadores de si un pedido por parte de los proveedores</rem:description>
+</rem:objective>
+<rem:objective oid="OBJ-0007">
+<rem:name>Consulta gastos</rem:name>
 <rem:version>
 <rem:major>1</rem:major>
 <rem:minor>0</rem:minor>
@@ -1018,29 +1094,11 @@
 <rem:importance value = "IMV-0003"/>
 <rem:urgency value = "URV-0003"/>
 <rem:status value = "STV-0003"/>
-<rem:stability value = "SBV-0003"/>
-<rem:description>Guardar los datos crediticios cada dia, para posteriormente poder mostrar la información.</rem:description>
-</rem:objective>
-<rem:objective oid="OBJ-0003">
-<rem:name>H8</rem:name>
-<rem:version>
-<rem:major>1</rem:major>
-<rem:minor>0</rem:minor>
-<rem:date>
-<rem:year>2020</rem:year>
-<rem:month>11</rem:month>
-<rem:day>7</rem:day>
-</rem:date>
-</rem:version>
-<rem:comments>Ninguno</rem:comments>
-<rem:importance><rem:tbd/></rem:importance>
-<rem:urgency><rem:tbd/></rem:urgency>
-<rem:status><rem:tbd/></rem:status>
 <rem:stability><rem:tbd/></rem:stability>
-<rem:description>avisar al transportista cuando haya un envio junto a la información.</rem:description>
+<rem:description>guardar los datos crediticios cada dia, para posteriormente poder mostrar la información</rem:description>
 </rem:objective>
-<rem:objective oid="OBJ-0004">
-<rem:name>H9</rem:name>
+<rem:objective oid="OBJ-0008">
+<rem:name>Notificación productos a enviar</rem:name>
 <rem:version>
 <rem:major>1</rem:major>
 <rem:minor>0</rem:minor>
@@ -1051,14 +1109,50 @@
 </rem:date>
 </rem:version>
 <rem:comments>Ninguno</rem:comments>
-<rem:importance><rem:tbd/></rem:importance>
-<rem:urgency><rem:tbd/></rem:urgency>
-<rem:status><rem:tbd/></rem:status>
+<rem:importance value = "IMV-0003"/>
+<rem:urgency value = "URV-0004"/>
+<rem:status value = "STV-0003"/>
+<rem:stability><rem:tbd/></rem:stability>
+<rem:description>avisar al transportista cuando haya un envío junto con la información.</rem:description>
+</rem:objective>
+<rem:objective oid="OBJ-0009">
+<rem:name>Consulta proveedores</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2020</rem:year>
+<rem:month>11</rem:month>
+<rem:day>7</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>Ninguno</rem:comments>
+<rem:importance value = "IMV-0003"/>
+<rem:urgency value = "URV-0004"/>
+<rem:status value = "STV-0003"/>
 <rem:stability><rem:tbd/></rem:stability>
 <rem:description>permitir al propietario modificar la lista de proveedores</rem:description>
 </rem:objective>
-<rem:objective oid="OBJ-0005">
-<rem:name>H10</rem:name>
+<rem:objective oid="OBJ-0010">
+<rem:name>Aplicar descuentos</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2020</rem:year>
+<rem:month>11</rem:month>
+<rem:day>7</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>Ninguno</rem:comments>
+<rem:importance value = "IMV-0004"/>
+<rem:urgency value = "URV-0004"/>
+<rem:status value = "STV-0003"/>
+<rem:stability value = "SBV-0002"/>
+<rem:description>aceptar descuentos provenientes de los empleados para agilizar la venta</rem:description>
+</rem:objective>
+<rem:objective oid="OBJ-0011">
+<rem:name>Modificación precios</rem:name>
 <rem:version>
 <rem:major>1</rem:major>
 <rem:minor>0</rem:minor>
@@ -1070,31 +1164,13 @@
 </rem:version>
 <rem:comments>Ninguno</rem:comments>
 <rem:importance value = "IMV-0002"/>
-<rem:urgency value = "URV-0002"/>
+<rem:urgency value = "URV-0003"/>
 <rem:status value = "STV-0003"/>
-<rem:stability value = "SBV-0002"/>
-<rem:description>aceptar descuentos provenientes de los empleados para agilizar la venta</rem:description>
-</rem:objective>
-<rem:objective oid="OBJ-0006">
-<rem:name>H11</rem:name>
-<rem:version>
-<rem:major>1</rem:major>
-<rem:minor>0</rem:minor>
-<rem:date>
-<rem:year>2020</rem:year>
-<rem:month>11</rem:month>
-<rem:day>7</rem:day>
-</rem:date>
-</rem:version>
-<rem:comments>Ninguno</rem:comments>
-<rem:importance><rem:tbd/></rem:importance>
-<rem:urgency><rem:tbd/></rem:urgency>
-<rem:status><rem:tbd/></rem:status>
 <rem:stability><rem:tbd/></rem:stability>
 <rem:description>permitir que el propietario pueda modificar el precio de los productos</rem:description>
 </rem:objective>
-<rem:objective oid="OBJ-0007">
-<rem:name>H12</rem:name>
+<rem:objective oid="OBJ-0012">
+<rem:name>Consulta datos empleados</rem:name>
 <rem:version>
 <rem:major>1</rem:major>
 <rem:minor>0</rem:minor>
@@ -1105,11 +1181,11 @@
 </rem:date>
 </rem:version>
 <rem:comments>Ninguno</rem:comments>
-<rem:importance><rem:tbd/></rem:importance>
-<rem:urgency><rem:tbd/></rem:urgency>
-<rem:status><rem:tbd/></rem:status>
+<rem:importance value = "IMV-0003"/>
+<rem:urgency value = "URV-0003"/>
+<rem:status value = "STV-0003"/>
 <rem:stability><rem:tbd/></rem:stability>
-<rem:description>permitir que el contable acceda a los datos de los trabajadores y de los proveedores</rem:description>
+<rem:description>permitir que el contable acceda a los datos de los trabajadores</rem:description>
 </rem:objective>
 </rem:section>
 <rem:section oid="SEC-0029">
@@ -1634,7 +1710,7 @@
 </rem:time>
 <rem:place>Online (plataforma de videollamadas)</rem:place>
 <rem:results>Trazar objetivos principales, reparto de tareas  y creación de encuesta para la organización. (1h20min)</rem:results>
-	<rem:attenders stakeholders = "STK-0004 STK-0005 STK-0003 STK-0002 STK-0001 "/>
+	<rem:attenders stakeholders = "STK-0001 STK-0002 STK-0003 STK-0005 STK-0004 "/>
 </rem:meeting>
 </rem:section>
 <rem:section oid="SEC-0010">
@@ -1707,9 +1783,39 @@
 </rem:version>
 <rem:comments>Ninguno</rem:comments>
 </rem:changeRequestsSpecification>
+<rem:trace source="GRF-0001"  target="ACT-0009" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source="GRF-0001"  target="ACT-0004" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source="GRF-0002"  target="ACT-0005" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source="GRF-0002"  target="ACT-0003" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source="GRF-0001"  target="ACT-0003" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source="GRF-0002"  target="ACT-0009" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source="OBJ-0004"  target="OBJ-0003" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source="OBJ-0002"  target="OBJ-0001" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source="OBJ-0006"  target="OBJ-0003" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source="GLO-0015"  target="OBJ-0003" >
+<rem:isChecked/>
+</rem:trace>
 <rem:predefinedValueTypes>
-<rem:predefinedValueType oid="PVT-0005">
-<rem:name>String</rem:name>
+<rem:predefinedValueType oid="PVT-0003">
+<rem:name>Integer</rem:name>
 <rem:version>
 <rem:major>1</rem:major>
 <rem:minor>0</rem:minor>
@@ -1720,22 +1826,7 @@
 </rem:date>
 </rem:version>
 <rem:comments>Predefined OCL type</rem:comments>
-<rem:description>Alphanumeric strings</rem:description>
-<rem:definition>(null)</rem:definition>
-</rem:predefinedValueType>
-<rem:predefinedValueType oid="PVT-0007">
-<rem:name>Time</rem:name>
-<rem:version>
-<rem:major>1</rem:major>
-<rem:minor>0</rem:minor>
-<rem:date>
-<rem:year>2000</rem:year>
-<rem:month>10</rem:month>
-<rem:day>30</rem:day>
-</rem:date>
-</rem:version>
-<rem:comments>Predefined OCL type (non-standard)</rem:comments>
-<rem:description>Hour:minutes:seconds</rem:description>
+<rem:description>Integer numbers</rem:description>
 <rem:definition>(null)</rem:definition>
 </rem:predefinedValueType>
 <rem:predefinedValueType oid="PVT-0004">
@@ -1768,8 +1859,8 @@
 <rem:description>Real numbers</rem:description>
 <rem:definition>(null)</rem:definition>
 </rem:predefinedValueType>
-<rem:predefinedValueType oid="PVT-0003">
-<rem:name>Integer</rem:name>
+<rem:predefinedValueType oid="PVT-0006">
+<rem:name>Date</rem:name>
 <rem:version>
 <rem:major>1</rem:major>
 <rem:minor>0</rem:minor>
@@ -1779,8 +1870,8 @@
 <rem:day>30</rem:day>
 </rem:date>
 </rem:version>
-<rem:comments>Predefined OCL type</rem:comments>
-<rem:description>Integer numbers</rem:description>
+<rem:comments>Predefined OCL type (non-standard)</rem:comments>
+<rem:description>Dates</rem:description>
 <rem:definition>(null)</rem:definition>
 </rem:predefinedValueType>
 <rem:predefinedValueType oid="PVT-0001">
@@ -1798,8 +1889,23 @@
 <rem:description>Enumeration literals</rem:description>
 <rem:definition>(null)</rem:definition>
 </rem:predefinedValueType>
-<rem:predefinedValueType oid="PVT-0006">
-<rem:name>Date</rem:name>
+<rem:predefinedValueType oid="PVT-0005">
+<rem:name>String</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2000</rem:year>
+<rem:month>10</rem:month>
+<rem:day>30</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>Predefined OCL type</rem:comments>
+<rem:description>Alphanumeric strings</rem:description>
+<rem:definition>(null)</rem:definition>
+</rem:predefinedValueType>
+<rem:predefinedValueType oid="PVT-0007">
+<rem:name>Time</rem:name>
 <rem:version>
 <rem:major>1</rem:major>
 <rem:minor>0</rem:minor>
@@ -1810,7 +1916,7 @@
 </rem:date>
 </rem:version>
 <rem:comments>Predefined OCL type (non-standard)</rem:comments>
-<rem:description>Dates</rem:description>
+<rem:description>Hour:minutes:seconds</rem:description>
 <rem:definition>(null)</rem:definition>
 </rem:predefinedValueType>
 </rem:predefinedValueTypes>
@@ -1821,20 +1927,20 @@
 <rem:changeRequestStatusValue oid = "CRV-0001">
 <rem:name>PD</rem:name>
 </rem:changeRequestStatusValue>
-<rem:changeRequestStatusValue oid = "CRV-0006">
-<rem:name>rechazado</rem:name>
-</rem:changeRequestStatusValue>
-<rem:changeRequestStatusValue oid = "CRV-0005">
-<rem:name>verificado</rem:name>
+<rem:changeRequestStatusValue oid = "CRV-0004">
+<rem:name>pendiente de realización</rem:name>
 </rem:changeRequestStatusValue>
 <rem:changeRequestStatusValue oid = "CRV-0003">
 <rem:name>pendiente de aprobar/rechazar</rem:name>
 </rem:changeRequestStatusValue>
-<rem:changeRequestStatusValue oid = "CRV-0004">
-<rem:name>pendiente de realización</rem:name>
+<rem:changeRequestStatusValue oid = "CRV-0005">
+<rem:name>verificado</rem:name>
 </rem:changeRequestStatusValue>
-<rem:conflictStatusValue oid = "CSV-0002">
-<rem:name>no resuelto</rem:name>
+<rem:changeRequestStatusValue oid = "CRV-0006">
+<rem:name>rechazado</rem:name>
+</rem:changeRequestStatusValue>
+<rem:conflictStatusValue oid = "CSV-0004">
+<rem:name>resuelto</rem:name>
 </rem:conflictStatusValue>
 <rem:conflictStatusValue oid = "CSV-0001">
 <rem:name>PD</rem:name>
@@ -1842,25 +1948,31 @@
 <rem:conflictStatusValue oid = "CSV-0003">
 <rem:name>en proceso de negociación</rem:name>
 </rem:conflictStatusValue>
-<rem:conflictStatusValue oid = "CSV-0004">
-<rem:name>resuelto</rem:name>
+<rem:conflictStatusValue oid = "CSV-0002">
+<rem:name>no resuelto</rem:name>
 </rem:conflictStatusValue>
-<rem:defectStatusValue oid = "DSV-0004">
-<rem:name>eliminado</rem:name>
-</rem:defectStatusValue>
 <rem:defectStatusValue oid = "DSV-0001">
 <rem:name>PD</rem:name>
 </rem:defectStatusValue>
 <rem:defectStatusValue oid = "DSV-0002">
 <rem:name>no eliminado</rem:name>
 </rem:defectStatusValue>
+<rem:defectStatusValue oid = "DSV-0004">
+<rem:name>eliminado</rem:name>
+</rem:defectStatusValue>
 <rem:defectStatusValue oid = "DSV-0003">
 <rem:name>en proceso de negociación</rem:name>
 </rem:defectStatusValue>
-<rem:defectTypeValue oid = "DTV-0023">
-<rem:name>Otro</rem:name>
+<rem:defectTypeValue oid = "DTV-0005">
+<rem:name>No verificabilidad</rem:name>
 <rem:description>
-<![CDATA[El requisito o requisitos presentan otro tipo de defecto]]>
+<![CDATA[No se puede comprobar que el sistema satisface el requisito o requisitos]]>
+</rem:description>
+</rem:defectTypeValue>
+<rem:defectTypeValue oid = "DTV-0004">
+<rem:name>Incomprensibilidad</rem:name>
+<rem:description>
+<![CDATA[El requisito o requisitos no pueden ser entendidos por algún lector]]>
 </rem:description>
 </rem:defectTypeValue>
 <rem:defectTypeValue oid = "DTV-0003">
@@ -1869,16 +1981,40 @@
 <![CDATA[El requisito o requisitos no son necesarios porque no contribuyen a satisfacer ninguna necesidad de clientes o usuarios]]>
 </rem:description>
 </rem:defectTypeValue>
-<rem:defectTypeValue oid = "DTV-0007">
-<rem:name>No implementabilidad</rem:name>
+<rem:defectTypeValue oid = "DTV-0006">
+<rem:name>Inconsistencia</rem:name>
 <rem:description>
-<![CDATA[El requisito o requisitos no pueden ser implementados con la tecnología actual o dentro de un coste razonable]]>
+<![CDATA[El requisito o requisitos no son consistentes, es decir, presentan contradicciones internas o entre varios]]>
 </rem:description>
 </rem:defectTypeValue>
-<rem:defectTypeValue oid = "DTV-0009">
-<rem:name>Dependiente del diseño</rem:name>
+<rem:defectTypeValue oid = "DTV-0008">
+<rem:name>Verbosidad excesiva</rem:name>
 <rem:description>
-<![CDATA[El requisito o requisitos incluyen elementos dependientes del diseño del sistema]]>
+<![CDATA[El requisito o requisitos pueden expresarse de forma más concisa sin alterar su significado]]>
+</rem:description>
+</rem:defectTypeValue>
+<rem:defectTypeValue oid = "DTV-0010">
+<rem:name>Redundancia</rem:name>
+<rem:description>
+<![CDATA[El requisito o requisitos son redundantes o contienen elementos redundantes]]>
+</rem:description>
+</rem:defectTypeValue>
+<rem:defectTypeValue oid = "DTV-0013">
+<rem:name>Prioridad no establecida</rem:name>
+<rem:description>
+<![CDATA[El requisito o requisitos no tienen establecida su prioridad, es decir, su importancia y su urgencia]]>
+</rem:description>
+</rem:defectTypeValue>
+<rem:defectTypeValue oid = "DTV-0015">
+<rem:name>Nivel incorrecto de detalle</rem:name>
+<rem:description>
+<![CDATA[El requisito o requisitos no están expresados con el nivel adecuado de detalle, es decir, son demasiado abstractos o demasiado detallados]]>
+</rem:description>
+</rem:defectTypeValue>
+<rem:defectTypeValue oid = "DTV-0023">
+<rem:name>Otro</rem:name>
+<rem:description>
+<![CDATA[El requisito o requisitos presentan otro tipo de defecto]]>
 </rem:description>
 </rem:defectTypeValue>
 <rem:defectTypeValue oid = "DTV-0011">
@@ -1893,46 +2029,10 @@
 <![CDATA[El requisito o requisitos no están trazados hacia sus orígenes, bien requisitos de nivel superior (objetivos), bien clientes y usuarios]]>
 </rem:description>
 </rem:defectTypeValue>
-<rem:defectTypeValue oid = "DTV-0008">
-<rem:name>Verbosidad excesiva</rem:name>
+<rem:defectTypeValue oid = "DTV-0009">
+<rem:name>Dependiente del diseño</rem:name>
 <rem:description>
-<![CDATA[El requisito o requisitos pueden expresarse de forma más concisa sin alterar su significado]]>
-</rem:description>
-</rem:defectTypeValue>
-<rem:defectTypeValue oid = "DTV-0014">
-<rem:name>Estabilidad no establecida</rem:name>
-<rem:description>
-<![CDATA[El requisito o requisitos no tienen estimada su estabilidad]]>
-</rem:description>
-</rem:defectTypeValue>
-<rem:defectTypeValue oid = "DTV-0010">
-<rem:name>Redundancia</rem:name>
-<rem:description>
-<![CDATA[El requisito o requisitos son redundantes o contienen elementos redundantes]]>
-</rem:description>
-</rem:defectTypeValue>
-<rem:defectTypeValue oid = "DTV-0006">
-<rem:name>Inconsistencia</rem:name>
-<rem:description>
-<![CDATA[El requisito o requisitos no son consistentes, es decir, presentan contradicciones internas o entre varios]]>
-</rem:description>
-</rem:defectTypeValue>
-<rem:defectTypeValue oid = "DTV-0013">
-<rem:name>Prioridad no establecida</rem:name>
-<rem:description>
-<![CDATA[El requisito o requisitos no tienen establecida su prioridad, es decir, su importancia y su urgencia]]>
-</rem:description>
-</rem:defectTypeValue>
-<rem:defectTypeValue oid = "DTV-0004">
-<rem:name>Incomprensibilidad</rem:name>
-<rem:description>
-<![CDATA[El requisito o requisitos no pueden ser entendidos por algún lector]]>
-</rem:description>
-</rem:defectTypeValue>
-<rem:defectTypeValue oid = "DTV-0005">
-<rem:name>No verificabilidad</rem:name>
-<rem:description>
-<![CDATA[No se puede comprobar que el sistema satisface el requisito o requisitos]]>
+<![CDATA[El requisito o requisitos incluyen elementos dependientes del diseño del sistema]]>
 </rem:description>
 </rem:defectTypeValue>
 <rem:defectTypeValue oid = "DTV-0002">
@@ -1941,22 +2041,16 @@
 <![CDATA[El requisito o requisitos, aunque comprensibles, tienen más de una interpretación posible]]>
 </rem:description>
 </rem:defectTypeValue>
-<rem:defectTypeValue oid = "DTV-0001">
-<rem:name>PD</rem:name>
-<rem:description>
-<![CDATA[Por Determinar]]>
-</rem:description>
-</rem:defectTypeValue>
 <rem:defectTypeValue oid = "DTV-0012">
 <rem:name>Incompleción</rem:name>
 <rem:description>
 <![CDATA[El requisito o requisitos no describen todo lo que el sistema se supone que deberá hacer, no describen las respuestas del sistema a todas las posibles situaciones o incluyen elementos por determinar (PD)]]>
 </rem:description>
 </rem:defectTypeValue>
-<rem:defectTypeValue oid = "DTV-0015">
-<rem:name>Nivel incorrecto de detalle</rem:name>
+<rem:defectTypeValue oid = "DTV-0014">
+<rem:name>Estabilidad no establecida</rem:name>
 <rem:description>
-<![CDATA[El requisito o requisitos no están expresados con el nivel adecuado de detalle, es decir, son demasiado abstractos o demasiado detallados]]>
+<![CDATA[El requisito o requisitos no tienen estimada su estabilidad]]>
 </rem:description>
 </rem:defectTypeValue>
 <rem:defectTypeValue oid = "DTV-0017">
@@ -1965,35 +2059,50 @@
 <![CDATA[El requisito o requisitos no están organizados correctamente según la normativa aplicada o el documento no contiene las secciones obligatorias]]>
 </rem:description>
 </rem:defectTypeValue>
-<rem:importanceValue oid = "IMV-0001">
+<rem:defectTypeValue oid = "DTV-0001">
 <rem:name>PD</rem:name>
-</rem:importanceValue>
-<rem:importanceValue oid = "IMV-0002">
-<rem:name>vital</rem:name>
-</rem:importanceValue>
+<rem:description>
+<![CDATA[Por Determinar]]>
+</rem:description>
+</rem:defectTypeValue>
+<rem:defectTypeValue oid = "DTV-0007">
+<rem:name>No implementabilidad</rem:name>
+<rem:description>
+<![CDATA[El requisito o requisitos no pueden ser implementados con la tecnología actual o dentro de un coste razonable]]>
+</rem:description>
+</rem:defectTypeValue>
 <rem:importanceValue oid = "IMV-0003">
 <rem:name>importante</rem:name>
+</rem:importanceValue>
+<rem:importanceValue oid = "IMV-0001">
+<rem:name>PD</rem:name>
 </rem:importanceValue>
 <rem:importanceValue oid = "IMV-0004">
 <rem:name>quedaría bien</rem:name>
 </rem:importanceValue>
+<rem:importanceValue oid = "IMV-0002">
+<rem:name>vital</rem:name>
+</rem:importanceValue>
 <rem:stabilityValue oid = "SBV-0001">
 <rem:name>PD</rem:name>
-</rem:stabilityValue>
-<rem:stabilityValue oid = "SBV-0002">
-<rem:name>baja</rem:name>
-</rem:stabilityValue>
-<rem:stabilityValue oid = "SBV-0004">
-<rem:name>alta</rem:name>
 </rem:stabilityValue>
 <rem:stabilityValue oid = "SBV-0003">
 <rem:name>media</rem:name>
 </rem:stabilityValue>
-<rem:statusValue oid = "STV-0001">
-<rem:name>PD</rem:name>
-</rem:statusValue>
+<rem:stabilityValue oid = "SBV-0004">
+<rem:name>alta</rem:name>
+</rem:stabilityValue>
+<rem:stabilityValue oid = "SBV-0002">
+<rem:name>baja</rem:name>
+</rem:stabilityValue>
 <rem:statusValue oid = "STV-0005">
 <rem:name>validado</rem:name>
+</rem:statusValue>
+<rem:statusValue oid = "STV-0002">
+<rem:name>en construcción</rem:name>
+</rem:statusValue>
+<rem:statusValue oid = "STV-0001">
+<rem:name>PD</rem:name>
 </rem:statusValue>
 <rem:statusValue oid = "STV-0003">
 <rem:name>pendiente de verificación</rem:name>
@@ -2001,38 +2110,23 @@
 <rem:statusValue oid = "STV-0004">
 <rem:name>pendiente de validación</rem:name>
 </rem:statusValue>
-<rem:statusValue oid = "STV-0002">
-<rem:name>en construcción</rem:name>
-</rem:statusValue>
-<rem:terminationValue oid = "TEV-0003">
-<rem:name>queda sin efecto</rem:name>
+<rem:terminationValue oid = "TEV-0002">
+<rem:name>continúa</rem:name>
 </rem:terminationValue>
 <rem:terminationValue oid = "TEV-0001">
 <rem:name>PD</rem:name>
 </rem:terminationValue>
-<rem:terminationValue oid = "TEV-0002">
-<rem:name>continúa</rem:name>
+<rem:terminationValue oid = "TEV-0003">
+<rem:name>queda sin efecto</rem:name>
 </rem:terminationValue>
-<rem:timeUnitValue oid = "TUV-0001">
-<rem:name>PD</rem:name>
-</rem:timeUnitValue>
-<rem:timeUnitValue oid = "TUV-0002">
-<rem:name>año(s)</rem:name>
+<rem:timeUnitValue oid = "TUV-0005">
+<rem:name>mes(es)</rem:name>
 </rem:timeUnitValue>
 <rem:timeUnitValue oid = "TUV-0009">
 <rem:name>hora(s)</rem:name>
 </rem:timeUnitValue>
-<rem:timeUnitValue oid = "TUV-0005">
-<rem:name>mes(es)</rem:name>
-</rem:timeUnitValue>
-<rem:timeUnitValue oid = "TUV-0012">
-<rem:name>décima(s) de segundo</rem:name>
-</rem:timeUnitValue>
-<rem:timeUnitValue oid = "TUV-0007">
-<rem:name>semana(s)</rem:name>
-</rem:timeUnitValue>
-<rem:timeUnitValue oid = "TUV-0010">
-<rem:name>minuto(s)</rem:name>
+<rem:timeUnitValue oid = "TUV-0001">
+<rem:name>PD</rem:name>
 </rem:timeUnitValue>
 <rem:timeUnitValue oid = "TUV-0008">
 <rem:name>día(s)</rem:name>
@@ -2040,23 +2134,35 @@
 <rem:timeUnitValue oid = "TUV-0011">
 <rem:name>segundo(s)</rem:name>
 </rem:timeUnitValue>
+<rem:timeUnitValue oid = "TUV-0007">
+<rem:name>semana(s)</rem:name>
+</rem:timeUnitValue>
+<rem:timeUnitValue oid = "TUV-0002">
+<rem:name>año(s)</rem:name>
+</rem:timeUnitValue>
+<rem:timeUnitValue oid = "TUV-0010">
+<rem:name>minuto(s)</rem:name>
+</rem:timeUnitValue>
+<rem:timeUnitValue oid = "TUV-0012">
+<rem:name>décima(s) de segundo</rem:name>
+</rem:timeUnitValue>
 <rem:timeUnitValue oid = "TUV-0013">
 <rem:name>centésima(s) de segundo</rem:name>
 </rem:timeUnitValue>
 <rem:timeUnitValue oid = "TUV-0014">
 <rem:name>milisegundo(s)</rem:name>
 </rem:timeUnitValue>
-<rem:urgencyValue oid = "URV-0003">
-<rem:name>hay presión</rem:name>
-</rem:urgencyValue>
 <rem:urgencyValue oid = "URV-0002">
 <rem:name>inmediatamente</rem:name>
 </rem:urgencyValue>
-<rem:urgencyValue oid = "URV-0001">
-<rem:name>PD</rem:name>
+<rem:urgencyValue oid = "URV-0003">
+<rem:name>hay presión</rem:name>
 </rem:urgencyValue>
 <rem:urgencyValue oid = "URV-0004">
 <rem:name>puede esperar</rem:name>
+</rem:urgencyValue>
+<rem:urgencyValue oid = "URV-0001">
+<rem:name>PD</rem:name>
 </rem:urgencyValue>
 </rem:predefinedValues>
 </rem:requirementsProject>
