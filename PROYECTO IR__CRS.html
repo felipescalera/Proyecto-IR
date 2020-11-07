@@ -13,6 +13,7 @@
             // converter.setOption( "key", "value" );
 
             var converter = new showdown.Converter();
+            converter.setOption( "parseImgDimensions", true );
 
             // function to be used in XLST templates
             // if inline=true, all CRLF tags are replaced
@@ -647,7 +648,7 @@
 <tr>
 <th>Descripción</th>
 <td colspan="1">
-<textarea id="ACT-0001-actorRole-md" class="markdown">Este actor representa al propietario de la empresa.</textarea>
+<textarea id="ACT-0001-actorRole-md" class="markdown">Este actor representa al propietario de la empresa. Ejerce de contable además de dedicarse a otros trabajos dentro de al empresa, ya sea transportando la mercancía o ayudando en el almacén.</textarea>
 <div id="ACT-0001-actorRole-html" class=""></div>
 <script>generate_markdown("ACT-0001-actorRole");</script>
 </td>
@@ -662,45 +663,13 @@
 </tr>
 </table>
 </div>
-<div id="ACT-0011">
-<table class="actor remus_table">
-<thead>
-<tr>
-<th>
-<img src="https://cdn.jsdelivr.net/gh/amador-duran-toro/remus/assets/images/icons/actor.png" /> ACT-0011</th>
-<th class="name_column" colspan="1">Contable</th>
-</tr>
-</thead>
-<tr>
-<th>Versión</th>
-<td colspan="1">1.0 (03/11/2020)
-</td>
-</tr>
-<tr>
-<th>Descripción</th>
-<td colspan="1">
-<textarea id="ACT-0011-actorRole-md" class="markdown">Este actor representa al contable de la empresa.</textarea>
-<div id="ACT-0011-actorRole-html" class=""></div>
-<script>generate_markdown("ACT-0011-actorRole");</script>
-</td>
-</tr>
-<tr>
-<th>Comentarios</th>
-<td colspan="1">
-<textarea id="ACT-0011-comments-md" class="markdown">Ninguno</textarea>
-<div id="ACT-0011-comments-html" class="remus_comments"></div>
-<script>generate_markdown("ACT-0011-comments");</script>
-</td>
-</tr>
-</table>
-</div>
 <div id="ACT-0003">
 <table class="actor remus_table">
 <thead>
 <tr>
 <th>
 <img src="https://cdn.jsdelivr.net/gh/amador-duran-toro/remus/assets/images/icons/actor.png" /> ACT-0003</th>
-<th class="name_column" colspan="1">Dependiente</th>
+<th class="name_column" colspan="1">Recepcionista</th>
 </tr>
 </thead>
 <tr>
@@ -711,7 +680,7 @@
 <tr>
 <th>Descripción</th>
 <td colspan="1">
-<textarea id="ACT-0003-actorRole-md" class="markdown">Este actor representa a un dependiente de la empresa.</textarea>
+<textarea id="ACT-0003-actorRole-md" class="markdown">Este actor representa a un recepcinista de la empresa. Esta administra los pedidos de los clientes, es la que trabaja de cara al público.</textarea>
 <div id="ACT-0003-actorRole-html" class=""></div>
 <script>generate_markdown("ACT-0003-actorRole");</script>
 </td>
@@ -722,38 +691,6 @@
 <textarea id="ACT-0003-comments-md" class="markdown">En algunos procesos es referido como Atención al cliente</textarea>
 <div id="ACT-0003-comments-html" class="remus_comments"></div>
 <script>generate_markdown("ACT-0003-comments");</script>
-</td>
-</tr>
-</table>
-</div>
-<div id="ACT-0009">
-<table class="actor remus_table">
-<thead>
-<tr>
-<th>
-<img src="https://cdn.jsdelivr.net/gh/amador-duran-toro/remus/assets/images/icons/actor.png" /> ACT-0009</th>
-<th class="name_column" colspan="1">Transportista</th>
-</tr>
-</thead>
-<tr>
-<th>Versión</th>
-<td colspan="1">1.0 (03/11/2020)
-</td>
-</tr>
-<tr>
-<th>Descripción</th>
-<td colspan="1">
-<textarea id="ACT-0009-actorRole-md" class="markdown">Este actor representa a un transportista de la empresa.</textarea>
-<div id="ACT-0009-actorRole-html" class=""></div>
-<script>generate_markdown("ACT-0009-actorRole");</script>
-</td>
-</tr>
-<tr>
-<th>Comentarios</th>
-<td colspan="1">
-<textarea id="ACT-0009-comments-md" class="markdown">En algunos procesos es referido como Encargado de transporte</textarea>
-<div id="ACT-0009-comments-html" class="remus_comments"></div>
-<script>generate_markdown("ACT-0009-comments");</script>
 </td>
 </tr>
 </table>
@@ -786,6 +723,38 @@
 <textarea id="ACT-0004-comments-md" class="markdown">Ninguno</textarea>
 <div id="ACT-0004-comments-html" class="remus_comments"></div>
 <script>generate_markdown("ACT-0004-comments");</script>
+</td>
+</tr>
+</table>
+</div>
+<div id="ACT-0013">
+<table class="actor remus_table">
+<thead>
+<tr>
+<th>
+<img src="https://cdn.jsdelivr.net/gh/amador-duran-toro/remus/assets/images/icons/actor.png" /> ACT-0013</th>
+<th class="name_column" colspan="1">Empleado del alamacén</th>
+</tr>
+</thead>
+<tr>
+<th>Versión</th>
+<td colspan="1">1.0 (07/11/2020)
+</td>
+</tr>
+<tr>
+<th>Descripción</th>
+<td colspan="1">
+<textarea id="ACT-0013-actorRole-md" class="markdown">Este actor representa <span class="tbd" title="Por determinar">PD</span>.</textarea>
+<div id="ACT-0013-actorRole-html" class=""></div>
+<script>generate_markdown("ACT-0013-actorRole");</script>
+</td>
+</tr>
+<tr>
+<th>Comentarios</th>
+<td colspan="1">
+<textarea id="ACT-0013-comments-md" class="markdown">Ninguno</textarea>
+<div id="ACT-0013-comments-html" class="remus_comments"></div>
+<script>generate_markdown("ACT-0013-comments");</script>
 </td>
 </tr>
 </table>
@@ -829,7 +798,7 @@
 <script>generate_markdown("PRG-0030-text");</script>
 </div>
 <div id="GRF-0001" class="figure">
-<img class="figure_image" src="D:\remus-master\doc\images\diagram.png" />
+<img class="figure_image" src=".\diagramas\diagramas actuales\diagram.png" />
 <p class="figure_caption">
 <span class="figure_caption_label">Figura 1: </span>
 <textarea id="GRF-0001-name-md" class="markdown">Proceso Venta Productos</textarea>
@@ -843,7 +812,7 @@
 <script>generate_markdown("PRG-0031-text");</script>
 </div>
 <div id="GRF-0002" class="figure">
-<img class="figure_image" src="D:\remus-master\doc\images\diagram2.png" />
+<img class="figure_image" src=".\diagramas\diagramas actuales\diagram2.png" />
 <p class="figure_caption">
 <span class="figure_caption_label">Figura 2: </span>
 <textarea id="GRF-0002-name-md" class="markdown">Proceso Compra a Proveedores</textarea>
