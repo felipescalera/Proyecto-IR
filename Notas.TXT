@@ -2,9 +2,9 @@
 DIVISIÓN DEL PRIMER ENTREGABLE
 ====================== 
 1-3 JK 2.2 no hace falta y glosario A
-Pareja ANTVINPER FELESCGON 4.1 compartido 4.2.2
+Pareja ANTVINPER FELESCGON 4.1 compartido 4.2.2 
 Pareja ANGTORDOM ANTONIOJSS 4.1 compartido 4.2.1
 
 Nueva división
-Pareja ANTVINPER FELESCGON 4.1 compartido 4.2.2 3.2.2
+Pareja ANTVINPER FELESCGON 4.1 compartido 4.2.2 3.2.2 Procesos y BPMN(respectivamente)
 Pareja ANGTORDOM ANTONIOJSS 4.1 compartido 4.2.1 3.2.1 + ayuda a JK
