@@ -7935,6 +7935,15 @@ Disponen de material como cubas, camiones con grúas incorporadas y máquinas elev
 </rem:change>
 <rem:change>
 <rem:type>U</rem:type>
+<rem:owner>PRG-0004</rem:owner><rem:date>
+<rem:year>2020</rem:year>
+<rem:month>11</rem:month>
+<rem:day>8</rem:day>
+</rem:date>
+<rem:description><![CDATA[Propiedad [Version] actualizada [1.0 2020/11/01] -> [2.0 2020/11/08]]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
 <rem:owner>GRF-0006</rem:owner><rem:date>
 <rem:year>2020</rem:year>
 <rem:month>11</rem:month>
@@ -7980,6 +7989,15 @@ Disponen de material como cubas, camiones con grúas incorporadas y máquinas elev
 
 *Informatizar el negocio de forma general.
 ]]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>C</rem:type>
+<rem:owner>GLO-0040</rem:owner><rem:date>
+<rem:year>2020</rem:year>
+<rem:month>11</rem:month>
+<rem:day>8</rem:day>
+</rem:date>
+<rem:description><![CDATA[Clonado a partir de [GLO-0018] Adaraja, Adarajas del proyecto C:\Users\felip\workspaceIR\Proyecto IR\PROYECTO IR.rem]]></rem:description>
 </rem:change>
 <rem:change>
 <rem:type>U</rem:type>
@@ -8035,11 +8053,494 @@ Disponen de material como cubas, camiones con grúas incorporadas y máquinas elev
 </rem:change>
 <rem:change>
 <rem:type>U</rem:type>
+<rem:owner>SEC-0018</rem:owner><rem:date>
+<rem:year>2020</rem:year>
+<rem:month>11</rem:month>
+<rem:day>8</rem:day>
+</rem:date>
+<rem:description><![CDATA[Intercambiados hijos nº17 ([GLO-0026] Teja) y nº18 ([GLO-0039] Copia de Financiación)]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>PRG-0004</rem:owner><rem:date>
+<rem:year>2020</rem:year>
+<rem:month>11</rem:month>
+<rem:day>8</rem:day>
+</rem:date>
+<rem:description><![CDATA[Propiedad [Text] actualizada [* La empresa a la cual va destinado el proyecto de software se dedica fundamentalmente a la venta al por mayor y por menor de productos de materiales de construcción. Además del envío a la misma localidad y localidades próximas de los productos comprados en la empresa.
+
+Disponen de material como cubas, camiones con grúas incorporadas y máquinas elevadoras en caso de alquiler por parte del cliente.] -> [La empresa a que va destinada el proyecto de software, se dedica fundamentalmente a la venta al por mayor y por menor de productos de materiales de construcción. Además, se encarga del envío a la misma localidad y a localidades próximas de los productos comprados en la empresa. Estos pedidos se pueden recibir por teléfono y por correo (aparte de en físico). 
+
+Disponen de material como cubas, camiones con grúas incorporadas y máquinas elevadoras en caso de alquiler por parte del cliente.
+
+Se dan casos en los que un cliente pide un elemento que el negocio no tiene; el paso a seguir es contactar con un proveedor para recibir el pedido y entregárselo al cliente (suelen ser pedidos pesados, arena, cementos...). En estos casos hacen el papel de intermediarios y almacen de pedidos.
+
+En la actualidad no cuentan con una informatización pesada del negocio. El papel sigue estando muy presente en el negocio y los conteos generales se dan en una hoja Excel. 
+
+Buscan formas de informatizar el negocio y ampliar el alcance; de esta forma se podrían permitir llegar a un público mayor e incrementar sus beneficios.]]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
 <rem:owner>PRG-0034</rem:owner><rem:date>
 <rem:year>2020</rem:year>
 <rem:month>11</rem:month>
 <rem:day>8</rem:day>
 </rem:date>
 <rem:description><![CDATA[Propiedad [Version] actualizada [1.0 2020/11/07] -> [2.0 2020/11/08]]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>C</rem:type>
+<rem:owner>GLO-0039</rem:owner><rem:date>
+<rem:year>2020</rem:year>
+<rem:month>11</rem:month>
+<rem:day>8</rem:day>
+</rem:date>
+<rem:description><![CDATA[Clonado a partir de [GLO-0038] Financiación del proyecto C:\Users\felip\workspaceIR\Proyecto IR\PROYECTO IR.rem]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>SEC-0018</rem:owner><rem:date>
+<rem:year>2020</rem:year>
+<rem:month>11</rem:month>
+<rem:day>8</rem:day>
+</rem:date>
+<rem:description><![CDATA[Añadido hijo nº18 ([GLO-0039] Copia de Financiación)]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>GLO-0028</rem:owner><rem:date>
+<rem:year>2020</rem:year>
+<rem:month>11</rem:month>
+<rem:day>8</rem:day>
+</rem:date>
+<rem:description><![CDATA[Propiedad [Name] actualizada [Escombro] -> [Escombro, Escombros]]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>GLO-0018</rem:owner><rem:date>
+<rem:year>2020</rem:year>
+<rem:month>11</rem:month>
+<rem:day>8</rem:day>
+</rem:date>
+<rem:description><![CDATA[Propiedad [Name] actualizada [Adaraja] -> [Adaraja, Adarajas]]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>SEC-0018</rem:owner><rem:date>
+<rem:year>2020</rem:year>
+<rem:month>11</rem:month>
+<rem:day>8</rem:day>
+</rem:date>
+<rem:description><![CDATA[Intercambiados hijos nº17 ([GLO-0015] Polvero) y nº18 ([GLO-0040] Copia de Adaraja, Adarajas)]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>SEC-0018</rem:owner><rem:date>
+<rem:year>2020</rem:year>
+<rem:month>11</rem:month>
+<rem:day>8</rem:day>
+</rem:date>
+<rem:description><![CDATA[Intercambiados hijos nº18 ([GLO-0026] Teja) y nº19 ([GLO-0040] Copia de Adaraja, Adarajas)]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>SEC-0018</rem:owner><rem:date>
+<rem:year>2020</rem:year>
+<rem:month>11</rem:month>
+<rem:day>8</rem:day>
+</rem:date>
+<rem:description><![CDATA[Intercambiados hijos nº16 ([GLO-0024] Mortero) y nº17 ([GLO-0040] Copia de Adaraja, Adarajas)]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>SEC-0018</rem:owner><rem:date>
+<rem:year>2020</rem:year>
+<rem:month>11</rem:month>
+<rem:day>8</rem:day>
+</rem:date>
+<rem:description><![CDATA[Intercambiados hijos nº13 ([GLO-0021] Loseta) y nº14 ([GLO-0039] Copia de Financiación)]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>SEC-0018</rem:owner><rem:date>
+<rem:year>2020</rem:year>
+<rem:month>11</rem:month>
+<rem:day>8</rem:day>
+</rem:date>
+<rem:description><![CDATA[Intercambiados hijos nº10 ([GLO-0039] Factura, Facturas) y nº11 ([GLO-0040] Copia de Adaraja, Adarajas)]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>SEC-0018</rem:owner><rem:date>
+<rem:year>2020</rem:year>
+<rem:month>11</rem:month>
+<rem:day>8</rem:day>
+</rem:date>
+<rem:description><![CDATA[Intercambiados hijos nº12 ([GLO-0019] Hormigón) y nº13 ([GLO-0040] Copia de Adaraja, Adarajas)]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>GLO-0039</rem:owner><rem:date>
+<rem:year>2020</rem:year>
+<rem:month>11</rem:month>
+<rem:day>8</rem:day>
+</rem:date>
+<rem:description><![CDATA[Propiedad [Name] actualizada [Copia de Financiación] -> [Factura]]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>GLO-0028</rem:owner><rem:date>
+<rem:year>2020</rem:year>
+<rem:month>11</rem:month>
+<rem:day>8</rem:day>
+</rem:date>
+<rem:description><![CDATA[Propiedad [Text] actualizada [Conjunto de cascotes y desechos que resultan del derribo de un edificio o de una obra de albañilería.] -> [Conjunto de cascotes y desechos que resultan del derribo de un edificio o de una obra de albañilería.
+Es habitual que la recogida de estos se hagan en cubas, a beneficio del negocio.]]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>GLO-0028</rem:owner><rem:date>
+<rem:year>2020</rem:year>
+<rem:month>11</rem:month>
+<rem:day>8</rem:day>
+</rem:date>
+<rem:description><![CDATA[Propiedad [Text] actualizada [Conjunto de cascotes y desechos que resultan del derribo de un edificio o de una obra de albañilería.
+Es habitual que la recogida de estos se hagan en cubas (agregado), a beneficio del negocio.] -> [Conjunto de cascotes y desechos que resultan del derribo de un edificio o de una obra de albañilería.
+Es habitual que la recogida de estos se hagan en cubas, a beneficio del negocio.]]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>GLO-0029</rem:owner><rem:date>
+<rem:year>2020</rem:year>
+<rem:month>11</rem:month>
+<rem:day>8</rem:day>
+</rem:date>
+<rem:description><![CDATA[Propiedad [Name] actualizada [Corona] -> [Corona, Coronas]]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>SEC-0018</rem:owner><rem:date>
+<rem:year>2020</rem:year>
+<rem:month>11</rem:month>
+<rem:day>8</rem:day>
+</rem:date>
+<rem:description><![CDATA[Intercambiados hijos nº15 ([GLO-0024] Mortero) y nº16 ([GLO-0039] Copia de Financiación)]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>SEC-0018</rem:owner><rem:date>
+<rem:year>2020</rem:year>
+<rem:month>11</rem:month>
+<rem:day>8</rem:day>
+</rem:date>
+<rem:description><![CDATA[Intercambiados hijos nº16 ([GLO-0015] Polvero) y nº17 ([GLO-0039] Copia de Financiación)]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>SEC-0018</rem:owner><rem:date>
+<rem:year>2020</rem:year>
+<rem:month>11</rem:month>
+<rem:day>8</rem:day>
+</rem:date>
+<rem:description><![CDATA[Intercambiados hijos nº10 ([GLO-0027] Gres) y nº11 ([GLO-0039] Copia de Financiación)]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>GLO-0028</rem:owner><rem:date>
+<rem:year>2020</rem:year>
+<rem:month>11</rem:month>
+<rem:day>8</rem:day>
+</rem:date>
+<rem:description><![CDATA[Propiedad [Text] actualizada [Conjunto de cascotes y desechos que resultan del derribo de un edificio o de una obra de albañilería.
+Es habitual que la recogida de estos se hagan en cubas, a beneficio del negocio.] -> [Conjunto de cascotes y desechos que resultan del derribo de un edificio o de una obra de albañilería.
+Es habitual que la recogida de estos se hagan en cubas (agregado), a beneficio del negocio.]]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>GLO-0016</rem:owner><rem:date>
+<rem:year>2020</rem:year>
+<rem:month>11</rem:month>
+<rem:day>8</rem:day>
+</rem:date>
+<rem:description><![CDATA[Propiedad [Name] actualizada [Cuba] -> [Cuba, Cubas]]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>SEC-0018</rem:owner><rem:date>
+<rem:year>2020</rem:year>
+<rem:month>11</rem:month>
+<rem:day>8</rem:day>
+</rem:date>
+<rem:description><![CDATA[Intercambiados hijos nº11 ([GLO-0019] Hormigón) y nº12 ([GLO-0039] Copia de Financiación)]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>GLO-0039</rem:owner><rem:date>
+<rem:year>2020</rem:year>
+<rem:month>11</rem:month>
+<rem:day>8</rem:day>
+</rem:date>
+<rem:description><![CDATA[Propiedad [Text] actualizada [Forma de pago de un producto a plazos a discutir o ya delimitados con una cantidad de dinero igualitaria en estos pagos. Estos pagos suele utilizarse en pago de materiales los cuales son una suma grande.] -> [Cuenta en la que se detallan las mercancías compradas o los servicios recibidos, junto con su cantidad y su importe, y que se entrega a quien debe pagarla. 
+En este negocio es altamente habitual tener archivadores para almacenar las facturas en físico. ]]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>SEC-0018</rem:owner><rem:date>
+<rem:year>2020</rem:year>
+<rem:month>11</rem:month>
+<rem:day>8</rem:day>
+</rem:date>
+<rem:description><![CDATA[Intercambiados hijos nº12 ([GLO-0022] Losa) y nº13 ([GLO-0039] Copia de Financiación)]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>SEC-0018</rem:owner><rem:date>
+<rem:year>2020</rem:year>
+<rem:month>11</rem:month>
+<rem:day>8</rem:day>
+</rem:date>
+<rem:description><![CDATA[Añadido hijo nº19 ([GLO-0040] Copia de Adaraja, Adarajas)]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>GLO-0037</rem:owner><rem:date>
+<rem:year>2020</rem:year>
+<rem:month>11</rem:month>
+<rem:day>8</rem:day>
+</rem:date>
+<rem:description><![CDATA[Propiedad [Text] actualizada [Sirven para exponer los productos. En este caso en la empresa se usan en la zona de exposiciones para enseñar los productos de nueva temporada en cuanto a azulejos, fragmentos de platos de ducha y vateres a los clientes. Haciendo que puedan tocarlos, ver distintos modelos del mismo, empresa que lo suministra, precios y colores.] -> [Sirven para exponer los productos. En este caso en la empresa se usan en la zona de exposiciones para enseñar los productos de nueva temporada en cuanto a azulejos, fragmentos de platos de ducha y vateres a los clientes. Haciendo que puedan tocarlos, ver distintos modelos del mismo, empresa que lo suministra, precios y colores.
+Es la pieza clave para vender a clientes no habituales, se busca sustituirlos por catálogos en la web.]]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>SEC-0018</rem:owner><rem:date>
+<rem:year>2020</rem:year>
+<rem:month>11</rem:month>
+<rem:day>8</rem:day>
+</rem:date>
+<rem:description><![CDATA[Intercambiados hijos nº15 ([GLO-0023] Masilla) y nº16 ([GLO-0040] Copia de Adaraja, Adarajas)]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>GLO-0017</rem:owner><rem:date>
+<rem:year>2020</rem:year>
+<rem:month>11</rem:month>
+<rem:day>8</rem:day>
+</rem:date>
+<rem:description><![CDATA[Propiedad [Name] actualizada [Autohormigonera] -> [Autohormigonera, Autohormigoneras]]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>GLO-0039</rem:owner><rem:date>
+<rem:year>2020</rem:year>
+<rem:month>11</rem:month>
+<rem:day>8</rem:day>
+</rem:date>
+<rem:description><![CDATA[Propiedad [Name] actualizada [Factura] -> [Factura, Facturas]]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>SEC-0018</rem:owner><rem:date>
+<rem:year>2020</rem:year>
+<rem:month>11</rem:month>
+<rem:day>8</rem:day>
+</rem:date>
+<rem:description><![CDATA[Intercambiados hijos nº13 ([GLO-0022] Losa) y nº14 ([GLO-0040] Copia de Adaraja, Adarajas)]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>SEC-0018</rem:owner><rem:date>
+<rem:year>2020</rem:year>
+<rem:month>11</rem:month>
+<rem:day>8</rem:day>
+</rem:date>
+<rem:description><![CDATA[Intercambiados hijos nº14 ([GLO-0021] Loseta) y nº15 ([GLO-0040] Copia de Adaraja, Adarajas)]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>SEC-0018</rem:owner><rem:date>
+<rem:year>2020</rem:year>
+<rem:month>11</rem:month>
+<rem:day>8</rem:day>
+</rem:date>
+<rem:description><![CDATA[Intercambiados hijos nº9 ([GLO-0038] Financiación) y nº10 ([GLO-0040] Copia de Adaraja, Adarajas)]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>SEC-0018</rem:owner><rem:date>
+<rem:year>2020</rem:year>
+<rem:month>11</rem:month>
+<rem:day>8</rem:day>
+</rem:date>
+<rem:description><![CDATA[Intercambiados hijos nº14 ([GLO-0023] Masilla) y nº15 ([GLO-0039] Copia de Financiación)]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>SEC-0018</rem:owner><rem:date>
+<rem:year>2020</rem:year>
+<rem:month>11</rem:month>
+<rem:day>8</rem:day>
+</rem:date>
+<rem:description><![CDATA[Intercambiados hijos nº11 ([GLO-0027] Gres) y nº12 ([GLO-0040] Copia de Adaraja, Adarajas)]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>GLO-0016</rem:owner><rem:date>
+<rem:year>2020</rem:year>
+<rem:month>11</rem:month>
+<rem:day>8</rem:day>
+</rem:date>
+<rem:description><![CDATA[Propiedad [Text] actualizada [Recipiente que se utiliza para almacenar el hormigón. Llámese también hormigonera.] -> [Recipiente que se utiliza para almacenar el hormigón. Llámese también hormigonera.
+El negocio dispone de un servicio de alquiler de estas, encargándose ellos mismos del porte.]]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>GLO-0019</rem:owner><rem:date>
+<rem:year>2020</rem:year>
+<rem:month>11</rem:month>
+<rem:day>8</rem:day>
+</rem:date>
+<rem:description><![CDATA[Propiedad [Text] actualizada [Material compuesto empleado en construcción, formado esencialmente por un aglomerante al que se añade áridos (agregado), agua y aditivos específicos.] -> [Material compuesto empleado en construcción, formado esencialmente por un aglomerante al que se añade áridos (agregado), agua y aditivos específicos.
+Muy habitual en el sector, es un ingreso recurrente.]]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>SEC-0018</rem:owner><rem:date>
+<rem:year>2020</rem:year>
+<rem:month>11</rem:month>
+<rem:day>8</rem:day>
+</rem:date>
+<rem:description><![CDATA[Intercambiados hijos nº7 ([GLO-0028] Escombro, Escombros) y nº8 ([GLO-0040] Copia de Adaraja, Adarajas)]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>SEC-0018</rem:owner><rem:date>
+<rem:year>2020</rem:year>
+<rem:month>11</rem:month>
+<rem:day>8</rem:day>
+</rem:date>
+<rem:description><![CDATA[Intercambiados hijos nº5 ([GLO-0029] Corona, Coronas) y nº6 ([GLO-0040] Copia de Adaraja, Adarajas)]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>GLO-0021</rem:owner><rem:date>
+<rem:year>2020</rem:year>
+<rem:month>11</rem:month>
+<rem:day>8</rem:day>
+</rem:date>
+<rem:description><![CDATA[Propiedad [Text] actualizada [Losa pequeña, especialmente la que se emplea en la pavimentación de suelos.] -> [Losa pequeña, especialmente la que se emplea en la pavimentación de suelos.
+En el negocio, cobra la misma importancia que su hermana mayor, la losa.]]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>GLO-0025</rem:owner><rem:date>
+<rem:year>2020</rem:year>
+<rem:month>11</rem:month>
+<rem:day>8</rem:day>
+</rem:date>
+<rem:description><![CDATA[Propiedad [Text] actualizada [Piezas cerámicas que se fabrican de forma muy parecida a los ladrillos huecos que se utilizan para hacer tabiques de ladrillos de separación de paredes dentro de una casa.] -> [Piezas cerámicas que se fabrican de forma muy parecida a los ladrillos huecos que se utilizan para hacer tabiques de ladrillos de separación de paredes dentro de una casa.
+Habituales en obras de reformas.]]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>SEC-0018</rem:owner><rem:date>
+<rem:year>2020</rem:year>
+<rem:month>11</rem:month>
+<rem:day>8</rem:day>
+</rem:date>
+<rem:description><![CDATA[Intercambiados hijos nº8 ([GLO-0037] Expositores) y nº9 ([GLO-0040] Copia de Adaraja, Adarajas)]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>GLO-0026</rem:owner><rem:date>
+<rem:year>2020</rem:year>
+<rem:month>11</rem:month>
+<rem:day>8</rem:day>
+</rem:date>
+<rem:description><![CDATA[Propiedad [Text] actualizada [Pieza de barro cocido u otros materiales , con forma acanalada o plana , que se utiliza para cubrir los techos y dejar escurrir el agua de lluvia .] -> [Pieza de barro cocido u otros materiales , con forma acanalada o plana , que se utiliza para cubrir los techos y dejar escurrir el agua de lluvia.
+Al igual que la losa y la loseta, son la principal compra de clientes particulares.]]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>GLO-0038</rem:owner><rem:date>
+<rem:year>2020</rem:year>
+<rem:month>11</rem:month>
+<rem:day>8</rem:day>
+</rem:date>
+<rem:description><![CDATA[Propiedad [Text] actualizada [Forma de pago de un producto a plazos a discutir o ya delimitados con una cantidad de dinero igualitaria en estos pagos. 
+Estos pagos suelen utilizarse en caso de materiales que forman una suma grande.] -> [Forma de pago de un producto a plazos a discutir o ya delimitados con una cantidad de dinero igualitaria en estos pagos. 
+Estos pagos suelen utilizarse en caso de materiales que forman una suma grande.
+En el negocio, no es la forma de pago más habitual. Se ve mucho en obras a gran escala y en clientes dedicados al sector.]]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>GLO-0022</rem:owner><rem:date>
+<rem:year>2020</rem:year>
+<rem:month>11</rem:month>
+<rem:day>8</rem:day>
+</rem:date>
+<rem:description><![CDATA[Propiedad [Text] actualizada [Piedra grande y plana que generalmente se usa para pavimentar suelos, alicatar paredes y cubrir sepulcros.] -> [Piedra grande y plana que generalmente se usa para pavimentar suelos, alicatar paredes y cubrir sepulcros.
+La adquisición más habitual de estos elementos, se dan por parte de clientes casuales. Compras frecuentes en reformas de particulares. Piezas principales de los catálogos, necesitan una exposición mayor al público.]]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>GLO-0017</rem:owner><rem:date>
+<rem:year>2020</rem:year>
+<rem:month>11</rem:month>
+<rem:day>8</rem:day>
+</rem:date>
+<rem:description><![CDATA[Propiedad [Text] actualizada [Es un camión que lleva montada una cuba giratoria, por lo general de eje inclinado, y que se utiliza para transportar el hormigón a la vez que se mantiene el amasado de la mezcla.] -> [Es un camión que lleva montada una cuba giratoria, por lo general de eje inclinado, y que se utiliza para transportar el hormigón a la vez que se mantiene el amasado de la mezcla.
+Es posible el alquiler de este elemento en el negocio.]]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>GLO-0038</rem:owner><rem:date>
+<rem:year>2020</rem:year>
+<rem:month>11</rem:month>
+<rem:day>8</rem:day>
+</rem:date>
+<rem:description><![CDATA[Propiedad [Text] actualizada [Forma de pago de un producto a plazos a discutir o ya delimitados con una cantidad de dinero igualitaria en estos pagos. 
+Estos pagos suelen utilizarse en caso de materiales que forman una suma grande.
+En el negocio, no es la forma de pago más habitual. Se ve mucho en obras a gran escala y en clientes dedicados al sector.] -> [Forma de pago de un producto a plazos a discutir o ya delimitados con una cantidad de dinero igualitaria en estos pagos. 
+Estos pagos suelen utilizarse en caso de materiales que forman una suma grande de dinero.
+En el negocio, no es la forma de pago más habitual. Se ve mucho en obras a gran escala y en clientes dedicados al sector.]]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>SEC-0018</rem:owner><rem:date>
+<rem:year>2020</rem:year>
+<rem:month>11</rem:month>
+<rem:day>8</rem:day>
+</rem:date>
+<rem:description><![CDATA[Intercambiados hijos nº6 ([GLO-0016] Cuba, Cubas) y nº7 ([GLO-0040] Copia de Adaraja, Adarajas)]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>GLO-0040</rem:owner><rem:date>
+<rem:year>2020</rem:year>
+<rem:month>11</rem:month>
+<rem:day>8</rem:day>
+</rem:date>
+<rem:description><![CDATA[Propiedad [Text] actualizada [Resalto entrante que se deja durante el levantamiento de una pared. Se utiliza para realizar el enlace de la parte construida con la que falta por construir.] -> [Lista o relación ordenada con algún criterio de libros, documentos, monedas, objetos en venta, etc., de una persona, empresa o institución, que generalmente contiene una breve descripción del objeto relacionado y ciertos datos de interés.
+Está presente en físico en la tienda, forman un papel importante a la hora de dar más alcance al negocio. Son una pieza base del negocio online a implantar.]]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>GLO-0040</rem:owner><rem:date>
+<rem:year>2020</rem:year>
+<rem:month>11</rem:month>
+<rem:day>8</rem:day>
+</rem:date>
+<rem:description><![CDATA[Propiedad [Name] actualizada [Copia de Adaraja, Adarajas] -> [Catálogo, Catálogos]]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>GLO-0038</rem:owner><rem:date>
+<rem:year>2020</rem:year>
+<rem:month>11</rem:month>
+<rem:day>8</rem:day>
+</rem:date>
+<rem:description><![CDATA[Propiedad [Text] actualizada [Forma de pago de un producto a plazos a discutir o ya delimitados con una cantidad de dinero igualitaria en estos pagos. Estos pagos suele utilizarse en pago de materiales los cuales son una suma grande.] -> [Forma de pago de un producto a plazos a discutir o ya delimitados con una cantidad de dinero igualitaria en estos pagos. 
+Estos pagos suelen utilizarse en caso de materiales que forman una suma grande.]]]></rem:description>
 </rem:change>
 </rem:log>
