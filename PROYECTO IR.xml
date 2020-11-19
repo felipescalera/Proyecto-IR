@@ -158,24 +158,6 @@
 <rem:level>3</rem:level>
 <rem:number>1.2.1 </rem:number>
 <rem:organization
- oid="ORG-0002">
-<rem:name>IR-ADT-13</rem:name>
-<rem:version>
-<rem:major>1</rem:major>
-<rem:minor>0</rem:minor>
-<rem:date>
-<rem:year>2020</rem:year>
-<rem:month>10</rem:month>
-<rem:day>31</rem:day>
-</rem:date>
-</rem:version>
-<rem:authors stakeholders="STK-0003 STK-0004 STK-0005 STK-0002 STK-0001 "/>
-<rem:comments>Ninguno</rem:comments>
-<rem:address>Av. Reina Mercedes</rem:address>
-<rem:telephone><rem:tbd/></rem:telephone>
-<rem:fax><rem:tbd/></rem:fax>
-</rem:organization>
-<rem:organization
  oid="ORG-0001">
 <rem:name>HERMANOS SILES S.L.</rem:name>
 <rem:version>
@@ -189,6 +171,24 @@
 </rem:version>
 <rem:comments>Ninguno</rem:comments>
 <rem:address>Calle Mercurio S/N, Utrera </rem:address>
+<rem:telephone><rem:tbd/></rem:telephone>
+<rem:fax><rem:tbd/></rem:fax>
+</rem:organization>
+<rem:organization
+ oid="ORG-0002">
+<rem:name>IR-ADT-13</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2020</rem:year>
+<rem:month>10</rem:month>
+<rem:day>31</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders="STK-0003 STK-0004 STK-0001 STK-0005 STK-0002 "/>
+<rem:comments>Ninguno</rem:comments>
+<rem:address>Av. Reina Mercedes</rem:address>
 <rem:telephone><rem:tbd/></rem:telephone>
 <rem:fax><rem:tbd/></rem:fax>
 </rem:organization>
@@ -224,8 +224,8 @@
 <rem:isUser/>
 <rem:worksFor organization = "ORG-0002"/>
 </rem:stakeholder>
-<rem:stakeholder oid="STK-0007">
-<rem:name>Rosario Fernandez</rem:name>
+<rem:stakeholder oid="STK-0002">
+<rem:name>Antonio Viñuelas Perales</rem:name>
 <rem:version>
 <rem:major>1</rem:major>
 <rem:minor>0</rem:minor>
@@ -236,9 +236,10 @@
 </rem:date>
 </rem:version>
 <rem:comments>Ninguno</rem:comments>
-<rem:stakeholderRole>Encargada</rem:stakeholderRole>
-<rem:isCustomer/>
-<rem:worksFor organization = "ORG-0001"/>
+<rem:stakeholderRole>Desarrollador</rem:stakeholderRole>
+<rem:isDeveloper/>
+<rem:isUser/>
+<rem:worksFor organization = "ORG-0002"/>
 </rem:stakeholder>
 <rem:stakeholder oid="STK-0003">
 <rem:name>Juan Carlos Gómez Ramírez</rem:name>
@@ -274,22 +275,6 @@
 <rem:isUser/>
 <rem:worksFor organization = "ORG-0002"/>
 </rem:stakeholder>
-<rem:stakeholder oid="STK-0006">
-<rem:name>Jose Antonio Siles</rem:name>
-<rem:version>
-<rem:major>1</rem:major>
-<rem:minor>0</rem:minor>
-<rem:date>
-<rem:year>2020</rem:year>
-<rem:month>10</rem:month>
-<rem:day>31</rem:day>
-</rem:date>
-</rem:version>
-<rem:comments>Ninguno</rem:comments>
-<rem:stakeholderRole>Propietario</rem:stakeholderRole>
-<rem:isCustomer/>
-<rem:worksFor organization = "ORG-0001"/>
-</rem:stakeholder>
 <rem:stakeholder oid="STK-0005">
 <rem:name>Ángel Torregrosa Domínguez</rem:name>
 <rem:version>
@@ -307,8 +292,8 @@
 <rem:isUser/>
 <rem:worksFor organization = "ORG-0002"/>
 </rem:stakeholder>
-<rem:stakeholder oid="STK-0002">
-<rem:name>Antonio Viñuelas Perales</rem:name>
+<rem:stakeholder oid="STK-0006">
+<rem:name>Jose Antonio Siles</rem:name>
 <rem:version>
 <rem:major>1</rem:major>
 <rem:minor>0</rem:minor>
@@ -319,10 +304,25 @@
 </rem:date>
 </rem:version>
 <rem:comments>Ninguno</rem:comments>
-<rem:stakeholderRole>Desarrollador</rem:stakeholderRole>
-<rem:isDeveloper/>
-<rem:isUser/>
-<rem:worksFor organization = "ORG-0002"/>
+<rem:stakeholderRole>Propietario</rem:stakeholderRole>
+<rem:isCustomer/>
+<rem:worksFor organization = "ORG-0001"/>
+</rem:stakeholder>
+<rem:stakeholder oid="STK-0007">
+<rem:name>Rosario Fernandez</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2020</rem:year>
+<rem:month>10</rem:month>
+<rem:day>31</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>Ninguno</rem:comments>
+<rem:stakeholderRole>Encargada</rem:stakeholderRole>
+<rem:isCustomer/>
+<rem:worksFor organization = "ORG-0001"/>
 </rem:stakeholder>
 </rem:section>
 </rem:section>
@@ -1049,7 +1049,7 @@
 <rem:comments>Ninguno</rem:comments>
 <rem:level>3</rem:level>
 <rem:number>3.2.2 </rem:number>
-<rem:paragraph oid="PRG-0030">
+<rem:glossaryItem oid="GLO-0030">
 <rem:name>PNA-001 Proceso Venta Productos</rem:name>
 <rem:version>
 <rem:major>2</rem:major>
@@ -1061,8 +1061,8 @@
 </rem:date>
 </rem:version>
 <rem:comments>Ninguno</rem:comments>
-<rem:text>**1) Venta de <rem:ref oid="GLO-0046">productos</rem:ref> al cliente:**<br/><br/>El proceso de venta de materiales comienza con la realización de un <rem:ref oid="GLO-0047">pedido</rem:ref> por parte del cliente. <br/>Este proceso se realiza físicamente, por teléfono o por correo. Dicho <rem:ref oid="GLO-0047">pedido</rem:ref> se traduce en una orden de compra que llega a atención al cliente, donde se transmite la orden al gestor de almacén, que comprueba la disponibilidad de los <rem:ref oid="GLO-0046">productos</rem:ref> <rem:ref oid="GLO-0047">pedidos</rem:ref> por el cliente.<br/><br/>En este momento se pueden dar dos casos, que no existan unidades suficientes y se deba cancelar el <rem:ref oid="GLO-0047">pedido</rem:ref>; acordándolo previamente con el cliente, o que sí existan unidades suficientes y se continue con el proceso.<br/><br/>En caso de que haya unidades suficientes para atender la petición del cliente, se prepara el <rem:ref oid="GLO-0047">pedido</rem:ref> y se prepara una <rem:ref oid="GLO-0039">factura</rem:ref>, que debe ser pagada por parte del cliente antes de continuar con el trámite del <rem:ref oid="GLO-0047">pedido</rem:ref>.<br/><br/>Cuando se paga la <rem:ref oid="GLO-0039">factura</rem:ref>, existe otra bifurcación, esta vez dependiendo de si se necesita un porte o no. <br/>En caso negativo, se finaliza la compra y el cliente recoge los <rem:ref oid="GLO-0046">productos</rem:ref> en el establecimiento del negocio. <br/>Si necesitase el transporte, el cliente facilitará los detalles del porte al responsable de atención al cliente, que se pone en contacto con el encargado de transportes para que compruebe las fechas disponibles y tramite el porte, éste se confirma con el cliente y se finaliza la compra.</rem:text>
-</rem:paragraph>
+<rem:text><br/><br/>El proceso de venta de materiales comienza con la realización de un <rem:ref oid="GLO-0047">pedido</rem:ref> por parte del cliente. <br/>Este proceso se realiza físicamente, por teléfono o por correo. Dicho <rem:ref oid="GLO-0047">pedido</rem:ref> se traduce en una orden de compra que llega a atención al cliente, donde se transmite la orden al gestor de almacén, que comprueba la disponibilidad de los <rem:ref oid="GLO-0046">productos</rem:ref> <rem:ref oid="GLO-0047">pedidos</rem:ref> por el cliente.<br/><br/>En este momento se pueden dar dos casos, que no existan unidades suficientes y se deba cancelar el <rem:ref oid="GLO-0047">pedido</rem:ref>; acordándolo previamente con el cliente, o que sí existan unidades suficientes y se continue con el proceso.<br/><br/>En caso de que haya unidades suficientes para atender la petición del cliente, se prepara el <rem:ref oid="GLO-0047">pedido</rem:ref> y se prepara una <rem:ref oid="GLO-0039">factura</rem:ref>, que debe ser pagada por parte del cliente antes de continuar con el trámite del <rem:ref oid="GLO-0047">pedido</rem:ref>.<br/><br/>Cuando se paga la <rem:ref oid="GLO-0039">factura</rem:ref>, existe otra bifurcación, esta vez dependiendo de si se necesita un porte o no. <br/>En caso negativo, se finaliza la compra y el cliente recoge los <rem:ref oid="GLO-0046">productos</rem:ref> en el establecimiento del negocio. <br/>Si necesitase el transporte, el cliente facilitará los detalles del porte al responsable de atención al cliente, que se pone en contacto con el encargado de transportes para que compruebe las fechas disponibles y tramite el porte, éste se confirma con el cliente y se finaliza la compra.</rem:text>
+</rem:glossaryItem>
 <rem:graphicFile oid="GRF-0001">
 <rem:name>Proceso Venta <rem:ref oid="GLO-0046">Productos</rem:ref></rem:name>
 <rem:version>
@@ -1077,7 +1077,7 @@
 <rem:comments>Ninguno</rem:comments>
 <rem:fileName><![CDATA[.\diagramas\diagramas actuales\diagram (3).png]]></rem:fileName>
 </rem:graphicFile>
-<rem:paragraph oid="PRG-0031">
+<rem:glossaryItem oid="GLO-0031">
 <rem:name>PNA-002 Proceso Compra al Proveedor</rem:name>
 <rem:version>
 <rem:major>2</rem:major>
@@ -1089,8 +1089,8 @@
 </rem:date>
 </rem:version>
 <rem:comments>Ninguno</rem:comments>
-<rem:text>**2) Compra de <rem:ref oid="GLO-0046">productos</rem:ref> al <rem:ref oid="GLO-0048">proveedor</rem:ref>:**<br/><br/>El proceso de compra al <rem:ref oid="GLO-0048">proveedor</rem:ref> comienza por una notificación por parte del encargado de almacén sobre el stock bajo o inexistente de uno o más materiales.<br/><br/>Esta notificación se transmite al encargado de <rem:ref oid="GLO-0047">pedidos</rem:ref> en una nota de papel o en una hoja de Excel con la que se construye una petición al <rem:ref oid="GLO-0048">proveedor</rem:ref>, que actúa internamente de manera ajena a nuestra organizació. Luego,  nos transmite una <rem:ref oid="GLO-0039">factura</rem:ref>, que se registra y paga.<br/><br/>Tras esto, se almacena la <rem:ref oid="GLO-0039">factura</rem:ref> y se deriva el proceso de vuelta al encargado del almacén para guardar los <rem:ref oid="GLO-0046">productos</rem:ref> y anotar el stock en los registros del sistema.</rem:text>
-</rem:paragraph>
+<rem:text><br/><br/>El proceso de compra al <rem:ref oid="GLO-0048">proveedor</rem:ref> comienza por una notificación por parte del encargado de almacén sobre el stock bajo o inexistente de uno o más materiales.<br/><br/>Esta notificación se transmite al encargado de <rem:ref oid="GLO-0047">pedidos</rem:ref> en una nota de papel o en una hoja de Excel con la que se construye una petición al <rem:ref oid="GLO-0048">proveedor</rem:ref>, que actúa internamente de manera ajena a nuestra organizació. Luego,  nos transmite una <rem:ref oid="GLO-0039">factura</rem:ref>, que se registra y paga.<br/><br/>Tras esto, se almacena la <rem:ref oid="GLO-0039">factura</rem:ref> y se deriva el proceso de vuelta al encargado del almacén para guardar los <rem:ref oid="GLO-0046">productos</rem:ref> y anotar el stock en los registros del sistema.</rem:text>
+</rem:glossaryItem>
 <rem:graphicFile oid="GRF-0002">
 <rem:name>Proceso Compra a <rem:ref oid="GLO-0048">Proveedores</rem:ref></rem:name>
 <rem:version>
@@ -1105,7 +1105,7 @@
 <rem:comments>Ninguno</rem:comments>
 <rem:fileName><![CDATA[.\diagramas\diagramas actuales\diagram2.png]]></rem:fileName>
 </rem:graphicFile>
-<rem:paragraph oid="PRG-0032">
+<rem:glossaryItem oid="GLO-0032">
 <rem:name>PNA-003 Préstamo Cubas</rem:name>
 <rem:version>
 <rem:major>2</rem:major>
@@ -1117,8 +1117,36 @@
 </rem:date>
 </rem:version>
 <rem:comments>Ninguno</rem:comments>
-<rem:text>**3) Préstamo de <rem:ref oid="GLO-0016">cubas</rem:ref>:**<br/><br/>El proceso del alquiler o préstamo de <rem:ref oid="GLO-0016">cubas</rem:ref> comienza con en el contacto por parte del cliente con el dependiente del negocio en la tienda o por teléfono (incluso en correo). <br/>El cliente solicita un servicio de préstamo de <rem:ref oid="GLO-0016">cubas</rem:ref>, que es tramitado por atención al cliente y derivado al encargado de transportes.<br/><br/>El encargado de transportes comprobará la disponibilidad de <rem:ref oid="GLO-0016">cubas</rem:ref>, y en el caso de que no haya <rem:ref oid="GLO-0016">cubas</rem:ref> disponibles, se notificará al cliente y cancelará el préstamo. <br/>En caso positivo, se realizará la <rem:ref oid="GLO-0039">factura</rem:ref> a pagar por el cliente y, una vez pagada, se transportará la <rem:ref oid="GLO-0016">cuba</rem:ref> a la dirección pedida por el cliente.<br/>Una vez acabado el tiempo de préstamo, se recogerá la <rem:ref oid="GLO-0016">cuba</rem:ref> y se cerrará la operación.</rem:text>
-</rem:paragraph>
+<rem:text><br/><br/>El proceso del alquiler o préstamo de <rem:ref oid="GLO-0016">cubas</rem:ref> comienza con en el contacto por parte del cliente con el dependiente del negocio en la tienda o por teléfono (incluso en correo). <br/>El cliente solicita un servicio de préstamo de <rem:ref oid="GLO-0016">cubas</rem:ref>, que es tramitado por atención al cliente y derivado al encargado de transportes.<br/><br/>El encargado de transportes comprobará la disponibilidad de <rem:ref oid="GLO-0016">cubas</rem:ref>, y en el caso de que no haya <rem:ref oid="GLO-0016">cubas</rem:ref> disponibles, se notificará al cliente y cancelará el préstamo. <br/>En caso positivo, se realizará la <rem:ref oid="GLO-0039">factura</rem:ref> a pagar por el cliente y, una vez pagada, se transportará la <rem:ref oid="GLO-0016">cuba</rem:ref> a la dirección pedida por el cliente.<br/>Una vez acabado el tiempo de préstamo, se recogerá la <rem:ref oid="GLO-0016">cuba</rem:ref> y se cerrará la operación.</rem:text>
+</rem:glossaryItem>
+<rem:glossaryItem oid="GLO-0067">
+<rem:name>PNA-004 Recogida de cubas</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2020</rem:year>
+<rem:month>11</rem:month>
+<rem:day>19</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>Ninguno</rem:comments>
+<rem:text><br/><br/>Cuando un alquiler o préstamo de una <rem:ref oid="GLO-0016">cuba</rem:ref> acaba, el encargado de transporte contactará con el cliente para informarle de que irá a recogerla a una hora determinada.<br/><br/>Entonces el encargado irá a por la <rem:ref oid="GLO-0016">cuba</rem:ref>. Cerrará el alquiler con el cliente si la <rem:ref oid="GLO-0016">cuba</rem:ref> no tiene ningún desperfecto, en cambio, si la <rem:ref oid="GLO-0016">cuba</rem:ref> no se encuentra donde la dejaron o tiene en su interior elementos ajenos a la obra, el cliente deberá abonar una cuota como compensación en función de la situación.<br/><br/>En el caso de que la <rem:ref oid="GLO-0016">cuba</rem:ref> esté en buenas condiciones y se haya firmado el cese del alquiller, el encargado de transporte llevará la <rem:ref oid="GLO-0016">cuba</rem:ref> al punto limpio más cercano si está llena o directamente de vuelta a las instalaciones del negocio si está vacía.<br/><br/>Entonces el encargado anotará que esta <rem:ref oid="GLO-0016">cuba</rem:ref> ya está disponible para otro préstamo.</rem:text>
+</rem:glossaryItem>
+<rem:glossaryItem oid="GLO-0068">
+<rem:name>PNA-005 Entrega de pedido</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2020</rem:year>
+<rem:month>11</rem:month>
+<rem:day>19</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>Ninguno</rem:comments>
+<rem:text><br/><br/>Este proceso se asocia a la entrega en el domicilio o lugar acordado con el cliente durante el proceso de venta.<br/><br/>El encargado de atención al cliente anotará la dirección de entrega y consultará con el encargado de transporte qué horas de entrega hay disponibles para dicha dirección.<br/><br/>Una vez acordada la hora, será comunicada al encargado de transporte, que preparará el <rem:ref oid="GLO-0047">pedido</rem:ref> y, cuando se acerque la hora de la entrega, saldrá hacia el punto de entrega, avisando al cliente del tiempo estimado de llegada.<br/><br/>Cuando llegue a la dirección acordada, el transportista llamará al número de teléfono del cliente. Si recibe respuesta, entregará el <rem:ref oid="GLO-0047">pedido</rem:ref> y se rellenará el albarán de entrega. En caso de que el cliente no atienda al teléfono pasados 10 minutos de la hora estimada de entrega, el transportista se retirará y el cliente deberá ponerse en contacto con la empresal para repetir el envío, debiendo abonar de nuevo los gastos de envío.</rem:text>
+</rem:glossaryItem>
 </rem:section>
 </rem:section>
 <rem:section oid="SEC-0025">
@@ -1533,7 +1561,7 @@
 <rem:comments>Ninguno</rem:comments>
 <rem:level>3</rem:level>
 <rem:number>4.2.2 </rem:number>
-<rem:paragraph oid="PRG-0035">
+<rem:glossaryItem oid="GLO-0035">
 <rem:name>PNI-001 Proceso Venta Producto Futuro</rem:name>
 <rem:version>
 <rem:major>2</rem:major>
@@ -1545,8 +1573,8 @@
 </rem:date>
 </rem:version>
 <rem:comments>Ninguno</rem:comments>
-<rem:text>**1) Venta de <rem:ref oid="GLO-0046">productos</rem:ref> al cliente en línea:**<br/><br/>El proceso ahora puede realizarse mediante la página web del negocio. La compra comienza con el inicio de sesión por parte del cliente en nuestra aplicación web.<br/><br/>Al iniciar sesión, podrá ver el <rem:ref oid="GLO-0040">catálogo</rem:ref> de <rem:ref oid="GLO-0046">productos</rem:ref> disponibles en la empresa y podrá construir un carrito de la compra con los <rem:ref oid="GLO-0046">productos</rem:ref> que desee desde su hogar, pudiendo ver el stock del inventario y evitando así el encargo de un <rem:ref oid="GLO-0047">pedido</rem:ref> y su inminente rechazo por falta de stock en el almacén.<br/><br/>Una vez cerrado el carrito, el cliente añadirá su forma de pago y se guardará la <rem:ref oid="GLO-0039">factura</rem:ref> en el sistema para el control financiero de la empresa. <br/>El <rem:ref oid="GLO-0047">pedido</rem:ref> pasará al encargado del almacén, que lo preparará y lo dejará preparado en la tienda si el cliente pidió recogerlo en tienda o lo derivará al encargado de transportes, que tramitará el envío a la dirección proporcionada por el cliente y le transmitirá los detalles del envío mediante la aplicación, haciéndole conocer la fecha estimada de llegada.<br/><br/>El proceso acabará con la confirmación de entrega del <rem:ref oid="GLO-0047">pedido</rem:ref> por parte del encargado de transporte o del dependiente del negocio.</rem:text>
-</rem:paragraph>
+<rem:text> **Venta de <rem:ref oid="GLO-0046">productos</rem:ref> al cliente en línea**<br/><br/>El proceso ahora puede realizarse mediante la página web del negocio. La compra comienza con el inicio de sesión por parte del cliente en nuestra aplicación web.<br/><br/>Al iniciar sesión, podrá ver el <rem:ref oid="GLO-0040">catálogo</rem:ref> de <rem:ref oid="GLO-0046">productos</rem:ref> disponibles en la empresa y podrá construir un carrito de la compra con los <rem:ref oid="GLO-0046">productos</rem:ref> que desee desde su hogar, pudiendo ver el stock del inventario y evitando así el encargo de un <rem:ref oid="GLO-0047">pedido</rem:ref> y su inminente rechazo por falta de stock en el almacén.<br/><br/>Una vez cerrado el carrito, el cliente añadirá su forma de pago y se guardará la <rem:ref oid="GLO-0039">factura</rem:ref> en el sistema para el control financiero de la empresa. <br/>El <rem:ref oid="GLO-0047">pedido</rem:ref> pasará al encargado del almacén, que lo preparará y lo dejará preparado en la tienda si el cliente pidió recogerlo en tienda o lo derivará al encargado de transportes, que tramitará el envío a la dirección proporcionada por el cliente y le transmitirá los detalles del envío mediante la aplicación, haciéndole conocer la fecha estimada de llegada.<br/><br/>El proceso acabará con la confirmación de entrega del <rem:ref oid="GLO-0047">pedido</rem:ref> por parte del encargado de transporte o del dependiente del negocio.</rem:text>
+</rem:glossaryItem>
 <rem:graphicFile oid="GRF-0007">
 <rem:name>Copia de Copia de Proceso Venta <rem:ref oid="GLO-0046">Productos</rem:ref></rem:name>
 <rem:version>
@@ -1561,7 +1589,7 @@
 <rem:comments>Ninguno</rem:comments>
 <rem:fileName><![CDATA[.\diagramas\diagramas a implantar\diagramaPedidoWeb.png]]></rem:fileName>
 </rem:graphicFile>
-<rem:paragraph oid="PRG-0036">
+<rem:glossaryItem oid="GLO-0036">
 <rem:name>PNI-002 Proceso Control Stock Futuro</rem:name>
 <rem:version>
 <rem:major>1</rem:major>
@@ -1573,8 +1601,8 @@
 </rem:date>
 </rem:version>
 <rem:comments>Ninguno</rem:comments>
-<rem:text>**2) Seguimiento y reposición del stock a través de la aplicación:**<br/><br/>El proceso de seguimiento y mantenimiento del stock actualiza y expande el proceso de compra de <rem:ref oid="GLO-0046">productos</rem:ref> al <rem:ref oid="GLO-0048">proveedor</rem:ref>.<br/><br/>El control del stock se realiza mediante el seguimiento del inventario en el nuevo sistema de información de la empresa, donde se van retirando las unidades pedidas en cada envío, y se añaden a un &quot;carrito de alerta&quot; aquellos <rem:ref oid="GLO-0046">productos</rem:ref> que estén al 10% de su capacidad máxima en almacén.<br/><br/>Este &quot;carrito de alerta&quot; sirve para que el encargado de <rem:ref oid="GLO-0047">pedidos</rem:ref> pueda consultar qué <rem:ref oid="GLO-0046">productos</rem:ref> debe pedir a <rem:ref oid="GLO-0048">proveedores</rem:ref> sin consultar al encargado de almacén y agilizar el proceso.<br/><br/>Tras pedir los <rem:ref oid="GLO-0046">productos</rem:ref> anotados en el carrito, se espera a la entrega de éstos y tras guardarlos en el almacén, el &quot;carrito de alerta&quot; se vacía y se mantiene a la espera de nuevas entradas.</rem:text>
-</rem:paragraph>
+<rem:text> **Seguimiento y reposición del stock a través de la aplicación**<br/><br/>El proceso de seguimiento y mantenimiento del stock actualiza y expande el proceso de compra de <rem:ref oid="GLO-0046">productos</rem:ref> al <rem:ref oid="GLO-0048">proveedor</rem:ref>.<br/><br/>El control del stock se realiza mediante el seguimiento del inventario en el nuevo sistema de información de la empresa, donde se van retirando las unidades pedidas en cada envío, y se añaden a un &quot;carrito de alerta&quot; aquellos <rem:ref oid="GLO-0046">productos</rem:ref> que estén al 10% de su capacidad máxima en almacén.<br/><br/>Este &quot;carrito de alerta&quot; sirve para que el encargado de <rem:ref oid="GLO-0047">pedidos</rem:ref> pueda consultar qué <rem:ref oid="GLO-0046">productos</rem:ref> debe pedir a <rem:ref oid="GLO-0048">proveedores</rem:ref> sin consultar al encargado de almacén y agilizar el proceso.<br/><br/>Tras pedir los <rem:ref oid="GLO-0046">productos</rem:ref> anotados en el carrito, se espera a la entrega de éstos y tras guardarlos en el almacén, el &quot;carrito de alerta&quot; se vacía y se mantiene a la espera de nuevas entradas.</rem:text>
+</rem:glossaryItem>
 <rem:graphicFile oid="GRF-0003">
 <rem:name>Copia de Proceso Venta <rem:ref oid="GLO-0046">Productos</rem:ref></rem:name>
 <rem:version>
@@ -2193,7 +2221,7 @@
 </rem:time>
 <rem:place>Lugar del negocio</rem:place>
 <rem:results>Recogida de datos del negocio. (45min)<br/><br/>En esta reunión inicial con los dueños del negocio ...</rem:results>
-	<rem:attenders stakeholders = "STK-0007 STK-0003 STK-0006 "/>
+	<rem:attenders stakeholders = "STK-0003 STK-0006 STK-0007 "/>
 </rem:meeting>
 <rem:meeting oid="MET-0003">
 <rem:name>Reunión de análisis con la Organización</rem:name>
@@ -2218,7 +2246,7 @@
 </rem:time>
 <rem:place>Lugar del negocio</rem:place>
 <rem:results>Recogida de datos e información sobre los actores. (45min)</rem:results>
-	<rem:attenders stakeholders = "STK-0007 STK-0003 STK-0006 "/>
+	<rem:attenders stakeholders = "STK-0003 STK-0006 STK-0007 "/>
 </rem:meeting>
 </rem:section>
 <rem:section oid="SEC-0010">
@@ -2291,31 +2319,112 @@
 </rem:version>
 <rem:comments>Ninguno</rem:comments>
 </rem:changeRequestsSpecification>
-<rem:trace source="GRF-0001"  target="ACT-0003" >
+<rem:trace source="GRF-0007"  target="ACT-0015" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source="GRF-0007"  target="ACT-0013" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source="GRF-0007"  target="ACT-0007" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source="GRF-0007"  target="ACT-0006" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source="ACT-0015"  target="GLO-0035" >
 <rem:isChecked/>
 </rem:trace>
 <rem:trace source="GRF-0002"  target="ACT-0005" >
 <rem:isChecked/>
 </rem:trace>
+<rem:trace source="OBJ-0002"  target="OBJ-0001" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source="GRF-0001"  target="ACT-0010" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source="GRF-0002"  target="ACT-0010" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source="GRF-0001"  target="ACT-0003" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source="GRF-0002"  target="ACT-0001" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source="GRF-0001"  target="ACT-0001" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source="GRF-0001"  target="ACT-0014" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source="ACT-0010"  target="GLO-0036" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source="ACT-0010"  target="GLO-0035" >
+<rem:isChecked/>
+</rem:trace>
 <rem:trace source="GRF-0001"  target="ACT-0004" >
 <rem:isChecked/>
 </rem:trace>
-<rem:trace source="GRF-0002"  target="ACT-0003" >
+<rem:trace source="GRF-0001"  target="ACT-0007" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source="GRF-0001"  target="ACT-0002" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source="GRF-0001"  target="ACT-0015" >
 <rem:isChecked/>
 </rem:trace>
 <rem:trace source="GLO-0015"  target="OBJ-0003" >
 <rem:isChecked/>
 </rem:trace>
-<rem:trace source="OBJ-0002"  target="OBJ-0001" >
+<rem:trace source="GRF-0002"  target="ACT-0002" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source="ACT-0002"  target="GLO-0036" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source="ACT-0002"  target="GLO-0035" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source="GRF-0002"  target="ACT-0008" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source="ACT-0008"  target="GLO-0036" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source="GRF-0002"  target="ACT-0003" >
 <rem:isChecked/>
 </rem:trace>
 <rem:trace source="OBJ-0004"  target="OBJ-0003" >
 <rem:isChecked/>
 </rem:trace>
-<rem:trace source="ACT-0006"  target="PRG-0036" >
+<rem:trace source="OBJ-0006"  target="OBJ-0003" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source="GRF-0001"  target="ACT-0013" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source="GRF-0002"  target="ACT-0014" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source="ACT-0007"  target="GLO-0035" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source="ACT-0006"  target="GLO-0036" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source="GRF-0005"  target="ACT-0007" >
 <rem:isChecked/>
 </rem:trace>
 <rem:trace source="GRF-0003"  target="ACT-0007" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source="GRF-0002"  target="ACT-0006" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source="GRF-0003"  target="ACT-0006" >
 <rem:isChecked/>
 </rem:trace>
 <rem:trace source="GRF-0003"  target="ACT-0013" >
@@ -2324,103 +2433,28 @@
 <rem:trace source="GRF-0003"  target="ACT-0015" >
 <rem:isChecked/>
 </rem:trace>
-<rem:trace source="GRF-0003"  target="ACT-0002" >
-<rem:isChecked/>
-</rem:trace>
-<rem:trace source="GRF-0005"  target="ACT-0003" >
-<rem:isChecked/>
-</rem:trace>
-<rem:trace source="GRF-0005"  target="ACT-0007" >
-<rem:isChecked/>
-</rem:trace>
 <rem:trace source="GRF-0005"  target="ACT-0013" >
 <rem:isChecked/>
 </rem:trace>
-<rem:trace source="GRF-0001"  target="ACT-0001" >
-<rem:isChecked/>
-</rem:trace>
-<rem:trace source="GRF-0003"  target="ACT-0006" >
-<rem:isChecked/>
-</rem:trace>
-<rem:trace source="ACT-0015"  target="PRG-0035" >
-<rem:isChecked/>
-</rem:trace>
-<rem:trace source="GRF-0001"  target="ACT-0014" >
-<rem:isChecked/>
-</rem:trace>
-<rem:trace source="GRF-0001"  target="ACT-0010" >
-<rem:isChecked/>
-</rem:trace>
-<rem:trace source="GRF-0001"  target="ACT-0002" >
-<rem:isChecked/>
-</rem:trace>
-<rem:trace source="GRF-0001"  target="ACT-0007" >
-<rem:isChecked/>
-</rem:trace>
-<rem:trace source="GRF-0002"  target="ACT-0010" >
-<rem:isChecked/>
-</rem:trace>
-<rem:trace source="ACT-0007"  target="PRG-0035" >
-<rem:isChecked/>
-</rem:trace>
-<rem:trace source="GRF-0002"  target="ACT-0014" >
-<rem:isChecked/>
-</rem:trace>
-<rem:trace source="ACT-0008"  target="PRG-0036" >
-<rem:isChecked/>
-</rem:trace>
-<rem:trace source="GRF-0001"  target="ACT-0013" >
-<rem:isChecked/>
-</rem:trace>
-<rem:trace source="ACT-0002"  target="PRG-0035" >
-<rem:isChecked/>
-</rem:trace>
-<rem:trace source="GRF-0002"  target="ACT-0001" >
-<rem:isChecked/>
-</rem:trace>
-<rem:trace source="ACT-0002"  target="PRG-0036" >
-<rem:isChecked/>
-</rem:trace>
-<rem:trace source="GRF-0002"  target="ACT-0002" >
-<rem:isChecked/>
-</rem:trace>
-<rem:trace source="OBJ-0006"  target="OBJ-0003" >
-<rem:isChecked/>
-</rem:trace>
-<rem:trace source="GRF-0001"  target="ACT-0015" >
-<rem:isChecked/>
-</rem:trace>
-<rem:trace source="ACT-0010"  target="PRG-0036" >
-<rem:isChecked/>
-</rem:trace>
-<rem:trace source="ACT-0010"  target="PRG-0035" >
-<rem:isChecked/>
-</rem:trace>
-<rem:trace source="GRF-0002"  target="ACT-0008" >
+<rem:trace source="GRF-0005"  target="ACT-0015" >
 <rem:isChecked/>
 </rem:trace>
 <rem:trace source="GRF-0001"  target="ACT-0006" >
 <rem:isChecked/>
 </rem:trace>
-<rem:trace source="ACT-0006"  target="PRG-0035" >
-<rem:isChecked/>
-</rem:trace>
-<rem:trace source="GRF-0002"  target="ACT-0006" >
-<rem:isChecked/>
-</rem:trace>
-<rem:trace source="GRF-0007"  target="ACT-0006" >
-<rem:isChecked/>
-</rem:trace>
 <rem:trace source="GRF-0006"  target="ACT-0003" >
 <rem:isChecked/>
 </rem:trace>
-<rem:trace source="GRF-0007"  target="ACT-0002" >
+<rem:trace source="GRF-0006"  target="ACT-0007" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source="GRF-0003"  target="ACT-0002" >
 <rem:isChecked/>
 </rem:trace>
 <rem:trace source="GRF-0006"  target="ACT-0013" >
 <rem:isChecked/>
 </rem:trace>
-<rem:trace source="GRF-0006"  target="ACT-0007" >
+<rem:trace source="GRF-0005"  target="ACT-0003" >
 <rem:isChecked/>
 </rem:trace>
 <rem:trace source="GRF-0006"  target="ACT-0015" >
@@ -2429,24 +2463,18 @@
 <rem:trace source="GRF-0006"  target="ACT-0002" >
 <rem:isChecked/>
 </rem:trace>
+<rem:trace source="GRF-0007"  target="ACT-0002" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source="ACT-0006"  target="GLO-0035" >
+<rem:isChecked/>
+</rem:trace>
 <rem:trace source="GRF-0005"  target="ACT-0002" >
 <rem:isChecked/>
 </rem:trace>
-<rem:trace source="GRF-0005"  target="ACT-0015" >
-<rem:isChecked/>
-</rem:trace>
-<rem:trace source="GRF-0007"  target="ACT-0007" >
-<rem:isChecked/>
-</rem:trace>
-<rem:trace source="GRF-0007"  target="ACT-0013" >
-<rem:isChecked/>
-</rem:trace>
-<rem:trace source="GRF-0007"  target="ACT-0015" >
-<rem:isChecked/>
-</rem:trace>
 <rem:predefinedValueTypes>
-<rem:predefinedValueType oid="PVT-0002">
-<rem:name>Real</rem:name>
+<rem:predefinedValueType oid="PVT-0006">
+<rem:name>Date</rem:name>
 <rem:version>
 <rem:major>1</rem:major>
 <rem:minor>0</rem:minor>
@@ -2456,8 +2484,8 @@
 <rem:day>30</rem:day>
 </rem:date>
 </rem:version>
-<rem:comments>Predefined OCL type</rem:comments>
-<rem:description>Real numbers</rem:description>
+<rem:comments>Predefined OCL type (non-standard)</rem:comments>
+<rem:description>Dates</rem:description>
 <rem:definition>(null)</rem:definition>
 </rem:predefinedValueType>
 <rem:predefinedValueType oid="PVT-0003">
@@ -2475,19 +2503,19 @@
 <rem:description>Integer numbers</rem:description>
 <rem:definition>(null)</rem:definition>
 </rem:predefinedValueType>
-<rem:predefinedValueType oid="PVT-0001">
-<rem:name>Enum Literal</rem:name>
+<rem:predefinedValueType oid="PVT-0002">
+<rem:name>Real</rem:name>
 <rem:version>
 <rem:major>1</rem:major>
 <rem:minor>0</rem:minor>
 <rem:date>
-<rem:year>2020</rem:year>
+<rem:year>2000</rem:year>
 <rem:month>10</rem:month>
-<rem:day>11</rem:day>
+<rem:day>30</rem:day>
 </rem:date>
 </rem:version>
-<rem:comments>Predefined OCL type (non-standard)</rem:comments>
-<rem:description>Enumeration literals</rem:description>
+<rem:comments>Predefined OCL type</rem:comments>
+<rem:description>Real numbers</rem:description>
 <rem:definition>(null)</rem:definition>
 </rem:predefinedValueType>
 <rem:predefinedValueType oid="PVT-0004">
@@ -2520,21 +2548,6 @@
 <rem:description>Alphanumeric strings</rem:description>
 <rem:definition>(null)</rem:definition>
 </rem:predefinedValueType>
-<rem:predefinedValueType oid="PVT-0006">
-<rem:name>Date</rem:name>
-<rem:version>
-<rem:major>1</rem:major>
-<rem:minor>0</rem:minor>
-<rem:date>
-<rem:year>2000</rem:year>
-<rem:month>10</rem:month>
-<rem:day>30</rem:day>
-</rem:date>
-</rem:version>
-<rem:comments>Predefined OCL type (non-standard)</rem:comments>
-<rem:description>Dates</rem:description>
-<rem:definition>(null)</rem:definition>
-</rem:predefinedValueType>
 <rem:predefinedValueType oid="PVT-0007">
 <rem:name>Time</rem:name>
 <rem:version>
@@ -2550,43 +2563,58 @@
 <rem:description>Hour:minutes:seconds</rem:description>
 <rem:definition>(null)</rem:definition>
 </rem:predefinedValueType>
+<rem:predefinedValueType oid="PVT-0001">
+<rem:name>Enum Literal</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2020</rem:year>
+<rem:month>10</rem:month>
+<rem:day>11</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>Predefined OCL type (non-standard)</rem:comments>
+<rem:description>Enumeration literals</rem:description>
+<rem:definition>(null)</rem:definition>
+</rem:predefinedValueType>
 </rem:predefinedValueTypes>
 <rem:predefinedValues>
+<rem:changeRequestStatusValue oid = "CRV-0005">
+<rem:name>verificado</rem:name>
+</rem:changeRequestStatusValue>
 <rem:changeRequestStatusValue oid = "CRV-0002">
 <rem:name>pendiente de análisis</rem:name>
 </rem:changeRequestStatusValue>
 <rem:changeRequestStatusValue oid = "CRV-0001">
 <rem:name>PD</rem:name>
 </rem:changeRequestStatusValue>
-<rem:changeRequestStatusValue oid = "CRV-0005">
-<rem:name>verificado</rem:name>
-</rem:changeRequestStatusValue>
-<rem:changeRequestStatusValue oid = "CRV-0006">
-<rem:name>rechazado</rem:name>
+<rem:changeRequestStatusValue oid = "CRV-0003">
+<rem:name>pendiente de aprobar/rechazar</rem:name>
 </rem:changeRequestStatusValue>
 <rem:changeRequestStatusValue oid = "CRV-0004">
 <rem:name>pendiente de realización</rem:name>
 </rem:changeRequestStatusValue>
-<rem:changeRequestStatusValue oid = "CRV-0003">
-<rem:name>pendiente de aprobar/rechazar</rem:name>
+<rem:changeRequestStatusValue oid = "CRV-0006">
+<rem:name>rechazado</rem:name>
 </rem:changeRequestStatusValue>
-<rem:conflictStatusValue oid = "CSV-0001">
-<rem:name>PD</rem:name>
-</rem:conflictStatusValue>
-<rem:conflictStatusValue oid = "CSV-0002">
-<rem:name>no resuelto</rem:name>
-</rem:conflictStatusValue>
 <rem:conflictStatusValue oid = "CSV-0004">
 <rem:name>resuelto</rem:name>
 </rem:conflictStatusValue>
 <rem:conflictStatusValue oid = "CSV-0003">
 <rem:name>en proceso de negociación</rem:name>
 </rem:conflictStatusValue>
-<rem:defectStatusValue oid = "DSV-0001">
+<rem:conflictStatusValue oid = "CSV-0001">
 <rem:name>PD</rem:name>
-</rem:defectStatusValue>
+</rem:conflictStatusValue>
+<rem:conflictStatusValue oid = "CSV-0002">
+<rem:name>no resuelto</rem:name>
+</rem:conflictStatusValue>
 <rem:defectStatusValue oid = "DSV-0002">
 <rem:name>no eliminado</rem:name>
+</rem:defectStatusValue>
+<rem:defectStatusValue oid = "DSV-0001">
+<rem:name>PD</rem:name>
 </rem:defectStatusValue>
 <rem:defectStatusValue oid = "DSV-0003">
 <rem:name>en proceso de negociación</rem:name>
@@ -2600,28 +2628,16 @@
 <![CDATA[El requisito o requisitos no están organizados correctamente según la normativa aplicada o el documento no contiene las secciones obligatorias]]>
 </rem:description>
 </rem:defectTypeValue>
+<rem:defectTypeValue oid = "DTV-0016">
+<rem:name>No rastreabilidad</rem:name>
+<rem:description>
+<![CDATA[El requisito o requisitos no están trazados hacia sus orígenes, bien requisitos de nivel superior (objetivos), bien clientes y usuarios]]>
+</rem:description>
+</rem:defectTypeValue>
 <rem:defectTypeValue oid = "DTV-0023">
 <rem:name>Otro</rem:name>
 <rem:description>
 <![CDATA[El requisito o requisitos presentan otro tipo de defecto]]>
-</rem:description>
-</rem:defectTypeValue>
-<rem:defectTypeValue oid = "DTV-0010">
-<rem:name>Redundancia</rem:name>
-<rem:description>
-<![CDATA[El requisito o requisitos son redundantes o contienen elementos redundantes]]>
-</rem:description>
-</rem:defectTypeValue>
-<rem:defectTypeValue oid = "DTV-0006">
-<rem:name>Inconsistencia</rem:name>
-<rem:description>
-<![CDATA[El requisito o requisitos no son consistentes, es decir, presentan contradicciones internas o entre varios]]>
-</rem:description>
-</rem:defectTypeValue>
-<rem:defectTypeValue oid = "DTV-0015">
-<rem:name>Nivel incorrecto de detalle</rem:name>
-<rem:description>
-<![CDATA[El requisito o requisitos no están expresados con el nivel adecuado de detalle, es decir, son demasiado abstractos o demasiado detallados]]>
 </rem:description>
 </rem:defectTypeValue>
 <rem:defectTypeValue oid = "DTV-0011">
@@ -2636,10 +2652,16 @@
 <![CDATA[El requisito o requisitos no tienen establecida su prioridad, es decir, su importancia y su urgencia]]>
 </rem:description>
 </rem:defectTypeValue>
-<rem:defectTypeValue oid = "DTV-0016">
-<rem:name>No rastreabilidad</rem:name>
+<rem:defectTypeValue oid = "DTV-0014">
+<rem:name>Estabilidad no establecida</rem:name>
 <rem:description>
-<![CDATA[El requisito o requisitos no están trazados hacia sus orígenes, bien requisitos de nivel superior (objetivos), bien clientes y usuarios]]>
+<![CDATA[El requisito o requisitos no tienen estimada su estabilidad]]>
+</rem:description>
+</rem:defectTypeValue>
+<rem:defectTypeValue oid = "DTV-0015">
+<rem:name>Nivel incorrecto de detalle</rem:name>
+<rem:description>
+<![CDATA[El requisito o requisitos no están expresados con el nivel adecuado de detalle, es decir, son demasiado abstractos o demasiado detallados]]>
 </rem:description>
 </rem:defectTypeValue>
 <rem:defectTypeValue oid = "DTV-0012">
@@ -2654,34 +2676,10 @@
 <![CDATA[El requisito o requisitos incluyen elementos dependientes del diseño del sistema]]>
 </rem:description>
 </rem:defectTypeValue>
-<rem:defectTypeValue oid = "DTV-0005">
-<rem:name>No verificabilidad</rem:name>
+<rem:defectTypeValue oid = "DTV-0003">
+<rem:name>No necesidad</rem:name>
 <rem:description>
-<![CDATA[No se puede comprobar que el sistema satisface el requisito o requisitos]]>
-</rem:description>
-</rem:defectTypeValue>
-<rem:defectTypeValue oid = "DTV-0007">
-<rem:name>No implementabilidad</rem:name>
-<rem:description>
-<![CDATA[El requisito o requisitos no pueden ser implementados con la tecnología actual o dentro de un coste razonable]]>
-</rem:description>
-</rem:defectTypeValue>
-<rem:defectTypeValue oid = "DTV-0008">
-<rem:name>Verbosidad excesiva</rem:name>
-<rem:description>
-<![CDATA[El requisito o requisitos pueden expresarse de forma más concisa sin alterar su significado]]>
-</rem:description>
-</rem:defectTypeValue>
-<rem:defectTypeValue oid = "DTV-0004">
-<rem:name>Incomprensibilidad</rem:name>
-<rem:description>
-<![CDATA[El requisito o requisitos no pueden ser entendidos por algún lector]]>
-</rem:description>
-</rem:defectTypeValue>
-<rem:defectTypeValue oid = "DTV-0014">
-<rem:name>Estabilidad no establecida</rem:name>
-<rem:description>
-<![CDATA[El requisito o requisitos no tienen estimada su estabilidad]]>
+<![CDATA[El requisito o requisitos no son necesarios porque no contribuyen a satisfacer ninguna necesidad de clientes o usuarios]]>
 </rem:description>
 </rem:defectTypeValue>
 <rem:defectTypeValue oid = "DTV-0001">
@@ -2690,21 +2688,48 @@
 <![CDATA[Por Determinar]]>
 </rem:description>
 </rem:defectTypeValue>
+<rem:defectTypeValue oid = "DTV-0005">
+<rem:name>No verificabilidad</rem:name>
+<rem:description>
+<![CDATA[No se puede comprobar que el sistema satisface el requisito o requisitos]]>
+</rem:description>
+</rem:defectTypeValue>
+<rem:defectTypeValue oid = "DTV-0006">
+<rem:name>Inconsistencia</rem:name>
+<rem:description>
+<![CDATA[El requisito o requisitos no son consistentes, es decir, presentan contradicciones internas o entre varios]]>
+</rem:description>
+</rem:defectTypeValue>
+<rem:defectTypeValue oid = "DTV-0007">
+<rem:name>No implementabilidad</rem:name>
+<rem:description>
+<![CDATA[El requisito o requisitos no pueden ser implementados con la tecnología actual o dentro de un coste razonable]]>
+</rem:description>
+</rem:defectTypeValue>
+<rem:defectTypeValue oid = "DTV-0004">
+<rem:name>Incomprensibilidad</rem:name>
+<rem:description>
+<![CDATA[El requisito o requisitos no pueden ser entendidos por algún lector]]>
+</rem:description>
+</rem:defectTypeValue>
+<rem:defectTypeValue oid = "DTV-0010">
+<rem:name>Redundancia</rem:name>
+<rem:description>
+<![CDATA[El requisito o requisitos son redundantes o contienen elementos redundantes]]>
+</rem:description>
+</rem:defectTypeValue>
 <rem:defectTypeValue oid = "DTV-0002">
 <rem:name>Ambigüedad</rem:name>
 <rem:description>
 <![CDATA[El requisito o requisitos, aunque comprensibles, tienen más de una interpretación posible]]>
 </rem:description>
 </rem:defectTypeValue>
-<rem:defectTypeValue oid = "DTV-0003">
-<rem:name>No necesidad</rem:name>
+<rem:defectTypeValue oid = "DTV-0008">
+<rem:name>Verbosidad excesiva</rem:name>
 <rem:description>
-<![CDATA[El requisito o requisitos no son necesarios porque no contribuyen a satisfacer ninguna necesidad de clientes o usuarios]]>
+<![CDATA[El requisito o requisitos pueden expresarse de forma más concisa sin alterar su significado]]>
 </rem:description>
 </rem:defectTypeValue>
-<rem:importanceValue oid = "IMV-0003">
-<rem:name>importante</rem:name>
-</rem:importanceValue>
 <rem:importanceValue oid = "IMV-0001">
 <rem:name>PD</rem:name>
 </rem:importanceValue>
@@ -2714,29 +2739,32 @@
 <rem:importanceValue oid = "IMV-0004">
 <rem:name>quedaría bien</rem:name>
 </rem:importanceValue>
+<rem:importanceValue oid = "IMV-0003">
+<rem:name>importante</rem:name>
+</rem:importanceValue>
 <rem:stabilityValue oid = "SBV-0001">
 <rem:name>PD</rem:name>
 </rem:stabilityValue>
 <rem:stabilityValue oid = "SBV-0002">
 <rem:name>baja</rem:name>
 </rem:stabilityValue>
-<rem:stabilityValue oid = "SBV-0004">
-<rem:name>alta</rem:name>
-</rem:stabilityValue>
 <rem:stabilityValue oid = "SBV-0003">
 <rem:name>media</rem:name>
 </rem:stabilityValue>
-<rem:statusValue oid = "STV-0005">
-<rem:name>validado</rem:name>
-</rem:statusValue>
-<rem:statusValue oid = "STV-0004">
-<rem:name>pendiente de validación</rem:name>
-</rem:statusValue>
+<rem:stabilityValue oid = "SBV-0004">
+<rem:name>alta</rem:name>
+</rem:stabilityValue>
 <rem:statusValue oid = "STV-0003">
 <rem:name>pendiente de verificación</rem:name>
 </rem:statusValue>
 <rem:statusValue oid = "STV-0001">
 <rem:name>PD</rem:name>
+</rem:statusValue>
+<rem:statusValue oid = "STV-0004">
+<rem:name>pendiente de validación</rem:name>
+</rem:statusValue>
+<rem:statusValue oid = "STV-0005">
+<rem:name>validado</rem:name>
 </rem:statusValue>
 <rem:statusValue oid = "STV-0002">
 <rem:name>en construcción</rem:name>
@@ -2750,32 +2778,29 @@
 <rem:terminationValue oid = "TEV-0003">
 <rem:name>queda sin efecto</rem:name>
 </rem:terminationValue>
-<rem:timeUnitValue oid = "TUV-0005">
-<rem:name>mes(es)</rem:name>
-</rem:timeUnitValue>
 <rem:timeUnitValue oid = "TUV-0001">
 <rem:name>PD</rem:name>
 </rem:timeUnitValue>
 <rem:timeUnitValue oid = "TUV-0007">
 <rem:name>semana(s)</rem:name>
 </rem:timeUnitValue>
-<rem:timeUnitValue oid = "TUV-0002">
-<rem:name>año(s)</rem:name>
-</rem:timeUnitValue>
-<rem:timeUnitValue oid = "TUV-0010">
-<rem:name>minuto(s)</rem:name>
+<rem:timeUnitValue oid = "TUV-0005">
+<rem:name>mes(es)</rem:name>
 </rem:timeUnitValue>
 <rem:timeUnitValue oid = "TUV-0008">
 <rem:name>día(s)</rem:name>
 </rem:timeUnitValue>
-<rem:timeUnitValue oid = "TUV-0011">
-<rem:name>segundo(s)</rem:name>
-</rem:timeUnitValue>
 <rem:timeUnitValue oid = "TUV-0009">
 <rem:name>hora(s)</rem:name>
 </rem:timeUnitValue>
-<rem:timeUnitValue oid = "TUV-0014">
-<rem:name>milisegundo(s)</rem:name>
+<rem:timeUnitValue oid = "TUV-0010">
+<rem:name>minuto(s)</rem:name>
+</rem:timeUnitValue>
+<rem:timeUnitValue oid = "TUV-0002">
+<rem:name>año(s)</rem:name>
+</rem:timeUnitValue>
+<rem:timeUnitValue oid = "TUV-0011">
+<rem:name>segundo(s)</rem:name>
 </rem:timeUnitValue>
 <rem:timeUnitValue oid = "TUV-0012">
 <rem:name>décima(s) de segundo</rem:name>
@@ -2783,14 +2808,17 @@
 <rem:timeUnitValue oid = "TUV-0013">
 <rem:name>centésima(s) de segundo</rem:name>
 </rem:timeUnitValue>
+<rem:timeUnitValue oid = "TUV-0014">
+<rem:name>milisegundo(s)</rem:name>
+</rem:timeUnitValue>
+<rem:urgencyValue oid = "URV-0003">
+<rem:name>hay presión</rem:name>
+</rem:urgencyValue>
 <rem:urgencyValue oid = "URV-0001">
 <rem:name>PD</rem:name>
 </rem:urgencyValue>
 <rem:urgencyValue oid = "URV-0002">
 <rem:name>inmediatamente</rem:name>
-</rem:urgencyValue>
-<rem:urgencyValue oid = "URV-0003">
-<rem:name>hay presión</rem:name>
 </rem:urgencyValue>
 <rem:urgencyValue oid = "URV-0004">
 <rem:name>puede esperar</rem:name>
