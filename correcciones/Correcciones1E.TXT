@@ -1,14 +1,10 @@
---------------------------------
-Correcciones por hacer
---------------------------------
+NOTAS
+->Alcance bien
+1.2.1 -> organizaciones participantes de g3-13 a ir-adt-13
 
 Añadir fotos al glosario y en el 2.1 incluir más fotos
 
 Glosario -> las fotos, que mejor deben de ser del negocio
-
-Pros y contras -> añadir identificador y un titulo a fortalezas y debilidades
-(creas un parrafo-elemento del glosario, le pones al titulo un codigo identificador -> 
-tienen que ir con todos los elementos que actualmente son parrafos) estaran por separado con su id
 
 Incluir más procesos actuales y a implantar
 
@@ -32,8 +28,3 @@ LAS ENCUESTAS, MEJORAR LAS ACTAS DE LAS REUNIONES (ESPECIFICAR MAS) Y REMOVER LA
 NOSOTROS TENEMOS -> AMPLIAR EL ACTA DE LA PRIMERA REUNION
 
 
-
------------------------------------
-Correcciones hechas
------------------------------------
-1.2.1 -> organizaciones participantes de g3-13 a ir-adt-13
