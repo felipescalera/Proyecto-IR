@@ -19,3 +19,11 @@ Comodín de parejas Felipe
 	Crear BPMNs de procesos
 	Completar el 6.2.2
 	Ayudar parejas
+
+
+
+Presentación modelo conceptual: 3/12/2020
+
+Presentación del prototipo inicial de IU: 10/12/2020
+
+2ª entrega: 13/12/2020
