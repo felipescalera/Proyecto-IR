@@ -10,7 +10,7 @@ Incluir más procesos actuales y a implantar
 
 el flujo de mensaje no cuenta como flujo de salida (bpmn)*arreglar para los procesos
 
-Procesos de negocio, hay que hacer lo mismo que lo anterior, además deberiamos de incluir más
+Procesos de negocio deberiamos de incluir más
 Ej.: Se estropea un camión, pedir una cuba y vas en físico al negocio / otro proceso sería
 llevar la cuba a la localización del cliente -> se pueden especificar más los procesos 
 se pueden extender los que hay ahora
@@ -27,13 +27,3 @@ PENSAR EVENTOS DE NEGOCIOS(EN EL 3. Y 4.), TITULOS A LAS HISTORIAS DE USUARIOS, 
 LAS ENCUESTAS, MEJORAR LAS ACTAS DE LAS REUNIONES (ESPECIFICAR MAS) Y REMOVER LAS QUE 
 NOSOTROS TENEMOS -> AMPLIAR EL ACTA DE LA PRIMERA REUNION
 
-
-
------------------------------------
-Correcciones hechas
------------------------------------
-1.2.1 -> organizaciones participantes de g3-13 a ir-adt-13
-
-Pros y contras -> añadir identificador y un titulo a fortalezas y debilidades
-(creas un parrafo-elemento del glosario, le pones al titulo un codigo identificador -> 
-tienen que ir con todos los elementos que actualmente son parrafos) estaran por separado con su id
