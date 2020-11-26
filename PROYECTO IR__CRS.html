@@ -999,7 +999,7 @@
 <script>generate_markdown("GLO-0057-text");</script>
 </div>
 <div id="GLO-0058" class="glo">
-<textarea id="GLO-0058-text-md" class="markdown">**HU-005 Notificaciones sobre llegada de pedidos a proveedores**: ¬¬**Como** *propietario*,&lt;br&gt;¬**me gustaría que** *el sistema notifique a los trabajadores si en el día de hoy va a llegar algún <a href="#GLO-0047" class="rem_ref">pedido</a>*,&lt;br&gt;¬**para** *que estos <a href="#GLO-0047" class="rem_ref">pedidos</a> no se queden sin atender*.¬</textarea>
+<textarea id="GLO-0058-text-md" class="markdown">**HU-005 Notificaciones sobre llegada de pedidos a trabajadores**: ¬¬**Como** *propietario*,&lt;br&gt;¬**me gustaría que** *el sistema notifique a los trabajadores si en el día de hoy va a llegar algún <a href="#GLO-0047" class="rem_ref">pedido</a>*,&lt;br&gt;¬**para** *que estos <a href="#GLO-0047" class="rem_ref">pedidos</a> no se queden sin atender*.¬</textarea>
 <div id="GLO-0058-text-html" class=""></div>
 <script>generate_markdown("GLO-0058-text");</script>
 </div>
@@ -2107,8 +2107,7 @@
 <tr>
 <th>Postcondición</th>
 <td colspan="2">
-<textarea id="UC-0002-postcondition-md" class="markdown">
-<span class="tbd" title="Por determinar">PD</span></textarea>
+<textarea id="UC-0002-postcondition-md" class="markdown">El <a href="#GLO-0048" class="rem_ref">proveedor</a> tiene el <a href="#GLO-0046" class="rem_ref">producto</a> en stock</textarea>
 <div id="UC-0002-postcondition-html" class=""></div>
 <script>generate_markdown("UC-0002-postcondition");</script>
 </td>
@@ -2120,7 +2119,7 @@
 </tr>
 <tr id="STX-0003">
 <th class="step_number">1</th>
-<td colspan="1"><textarea id="STX-0003--md" class="markdown">Si el dueño intenta solicitar a sus provedores pero no ha seleccionado ningun <a href="#GLO-0046" class="rem_ref">producto</a>,  el sistema no enviará la peticion, a continuación este caso de uso <span class="exception_termination"><span class="tbd" title="Por determinar">PD</span></span>. </textarea>
+<td colspan="1"><textarea id="STX-0003--md" class="markdown">Si El <a href="#GLO-0048" class="rem_ref">proveedor</a> no tiene el <a href="#GLO-0046" class="rem_ref">producto</a> en stock,  el sistema se cancelará el <a href="#GLO-0047" class="rem_ref">pedido</a>, a continuación este caso de uso <span class="exception_termination"><span class="tbd" title="Por determinar">PD</span></span>. </textarea>
 <div id="STX-0003--html" class=""></div>
 <script>generate_markdown("STX-0003-");</script>
 </td>
@@ -2131,6 +2130,257 @@
 <textarea id="UC-0002-comments-md" class="markdown">Ninguno</textarea>
 <div id="UC-0002-comments-html" class="remus_comments"></div>
 <script>generate_markdown("UC-0002-comments");</script>
+</td>
+</tr>
+</table>
+</div>
+<div id="UC-0003">
+<table class="use_case remus_table">
+<thead>
+<tr>
+<th>
+<img src="https://cdn.jsdelivr.net/gh/amador-duran-toro/remus/assets/images/icons/useCase.png" /> UC-0003</th>
+<th class="name_column" colspan="2">Consulta proveedores </th>
+</tr>
+</thead>
+<tr>
+<th>Versión</th>
+<td colspan="2">1.0 (26/11/2020)
+</td>
+</tr>
+<tr>
+<th>Descripción</th>
+<td colspan="2">
+<textarea id="UC-0003--md" class="markdown">El sistema deberá comportarse tal como se describe en el siguiente caso de uso cuando <span class="triggering_event">el cliente, una vez tiene todos los <a href="#GLO-0046" class="rem_ref">productos</a> en su carro de la compra, pulsa sobre el botón pagar</span>. </textarea>
+<div id="UC-0003--html" class=""></div>
+<script>generate_markdown("UC-0003-");</script>
+</td>
+</tr>
+<tr>
+<th>Precondición</th>
+<td colspan="2">
+<textarea id="UC-0003-precondition-md" class="markdown">debe haber iniciado sesión correctamente</textarea>
+<div id="UC-0003-precondition-html" class=""></div>
+<script>generate_markdown("UC-0003-precondition");</script>
+</td>
+</tr>
+<tr>
+<th rowspan="2">Secuencia normal</th>
+<th class="step_number_column">Paso</th>
+<th class="step_action_column">Acción</th>
+</tr>
+<tr id="STP-0005">
+<th class="step_number">1</th>
+<td colspan="1"><textarea id="STP-0005--md" class="markdown">Si Un encargado y/o el dueño inicia sesión correctamente accede al apartado "proveedores" y el sistema le muestra un listado con los datos de los <a href="#GLO-0048" class="rem_ref">proveedores</a>,  el sistema le permitirá proceder a pagar. </textarea>
+<div id="STP-0005--html" class=""></div>
+<script>generate_markdown("STP-0005-");</script>
+</td>
+</tr>
+<tr>
+<th>Postcondición</th>
+<td colspan="2">
+<textarea id="UC-0003-postcondition-md" class="markdown">
+</textarea>
+<div id="UC-0003-postcondition-html" class=""></div>
+<script>generate_markdown("UC-0003-postcondition");</script>
+</td>
+</tr>
+<tr>
+<th rowspan="3">Excepciones</th>
+<th class="step_number_column">Paso</th>
+<th class="exception_action_column">Acción</th>
+</tr>
+<tr id="STX-0004">
+<th class="step_number">1</th>
+<td colspan="1">
+<textarea id="STX-0004--md" class="markdown">Si no se inicia bien la sesión, entonces el sistema le pedirá que introduzca sus datos correctamente,  el sistema no le permitirá terminar el pago, a continuación este caso de uso <span class="exception_termination"><span class="tbd" title="Por determinar">PD</span></span>. </textarea>
+<div id="STX-0004--html" class=""></div>
+<script>generate_markdown("STX-0004-");</script>
+</td>
+</tr>
+<tr id="STX-0005">
+<th class="step_number">1</th>
+<td colspan="1"><textarea id="STX-0005--md" class="markdown">Si No hay ningún <a href="#GLO-0048" class="rem_ref">proveedores</a> en la base de datos, entonces el sistema le mostrará una página vacía y le preguntará si quiere introducir algún <a href="#GLO-0048" class="rem_ref">proveedor</a>,  el sistema no le permitirá terminar el pago, a continuación este caso de uso <span class="exception_termination"><span class="tbd" title="Por determinar">PD</span></span>. </textarea>
+<div id="STX-0005--html" class=""></div>
+<script>generate_markdown("STX-0005-");</script>
+</td>
+</tr>
+<tr>
+<th>Estado</th>
+<td colspan="2">pendiente de verificación</td>
+</tr>
+<tr>
+<th>Comentarios</th>
+<td colspan="2">
+<textarea id="UC-0003-comments-md" class="markdown">Ninguno</textarea>
+<div id="UC-0003-comments-html" class="remus_comments"></div>
+<script>generate_markdown("UC-0003-comments");</script>
+</td>
+</tr>
+</table>
+</div>
+<div id="UC-0004">
+<table class="use_case remus_table">
+<thead>
+<tr>
+<th>
+<img src="https://cdn.jsdelivr.net/gh/amador-duran-toro/remus/assets/images/icons/useCase.png" /> UC-0004</th>
+<th class="name_column" colspan="2">Notificaciones sobre llegada de pedidos a trabajadores </th>
+</tr>
+</thead>
+<tr>
+<th>Versión</th>
+<td colspan="2">1.0 (26/11/2020)
+</td>
+</tr>
+<tr>
+<th>Descripción</th>
+<td colspan="2">
+<textarea id="UC-0004--md" class="markdown">El sistema deberá comportarse tal como se describe en el siguiente caso de uso cuando <span class="triggering_event">Un <a href="#GLO-0048" class="rem_ref">proveedor</a> realizará la entrega de los <a href="#GLO-0046" class="rem_ref">productos</a></span>. </textarea>
+<div id="UC-0004--html" class=""></div>
+<script>generate_markdown("UC-0004-");</script>
+</td>
+</tr>
+<tr>
+<th>Precondición</th>
+<td colspan="2">
+<textarea id="UC-0004-precondition-md" class="markdown">Se ha solicitado un <a href="#GLO-0047" class="rem_ref">pedido</a> al <a href="#GLO-0048" class="rem_ref">proveedor</a>
+</textarea>
+<div id="UC-0004-precondition-html" class=""></div>
+<script>generate_markdown("UC-0004-precondition");</script>
+</td>
+</tr>
+<tr>
+<th rowspan="2">Secuencia normal</th>
+<th class="step_number_column">Paso</th>
+<th class="step_action_column">Acción</th>
+</tr>
+<tr id="STP-0006">
+<th class="step_number">1</th>
+<td colspan="1"><textarea id="STP-0006--md" class="markdown">Si Los trabajadores estan correctamente registrados en la aplicación, por lo cual horas antes se les enviarán una notificación de la recogida del <a href="#GLO-0047" class="rem_ref">pedido</a>,  el sistema le permitirá proceder a pagar. </textarea>
+<div id="STP-0006--html" class=""></div>
+<script>generate_markdown("STP-0006-");</script>
+</td>
+</tr>
+<tr>
+<th>Postcondición</th>
+<td colspan="2">
+<textarea id="UC-0004-postcondition-md" class="markdown">
+</textarea>
+<div id="UC-0004-postcondition-html" class=""></div>
+<script>generate_markdown("UC-0004-postcondition");</script>
+</td>
+</tr>
+<tr>
+<th rowspan="2">Excepciones</th>
+<th class="step_number_column">Paso</th>
+<th class="exception_action_column">Acción</th>
+</tr>
+<tr id="STX-0006">
+<th class="step_number">1</th>
+<td colspan="1">
+<textarea id="STX-0006--md" class="markdown">Si no se registra bien, entonces el sistema no podrá enviar las notificaciones,  el sistema no le permitirá terminar el pago, a continuación este caso de uso <span class="exception_termination"><span class="tbd" title="Por determinar">PD</span></span>. </textarea>
+<div id="STX-0006--html" class=""></div>
+<script>generate_markdown("STX-0006-");</script>
+</td>
+</tr>
+<tr>
+<th>Estado</th>
+<td colspan="2">pendiente de verificación</td>
+</tr>
+<tr>
+<th>Comentarios</th>
+<td colspan="2">
+<textarea id="UC-0004-comments-md" class="markdown">Ninguno</textarea>
+<div id="UC-0004-comments-html" class="remus_comments"></div>
+<script>generate_markdown("UC-0004-comments");</script>
+</td>
+</tr>
+</table>
+</div>
+<div id="UC-0005">
+<table class="use_case remus_table">
+<thead>
+<tr>
+<th>
+<img src="https://cdn.jsdelivr.net/gh/amador-duran-toro/remus/assets/images/icons/useCase.png" /> UC-0005</th>
+<th class="name_column" colspan="2">Consulta empleados </th>
+</tr>
+</thead>
+<tr>
+<th>Versión</th>
+<td colspan="2">1.0 (26/11/2020)
+</td>
+</tr>
+<tr>
+<th>Descripción</th>
+<td colspan="2">
+<textarea id="UC-0005--md" class="markdown">El sistema deberá comportarse tal como se describe en el siguiente caso de uso cuando <span class="triggering_event">El dueño accederá al apartado <a href="#GLO-0048" class="rem_ref">proveedores</a> y el sistema le permitirá ver una lista con los datos de los empleados</span>. </textarea>
+<div id="UC-0005--html" class=""></div>
+<script>generate_markdown("UC-0005-");</script>
+</td>
+</tr>
+<tr>
+<th>Precondición</th>
+<td colspan="2">
+<textarea id="UC-0005-precondition-md" class="markdown">debe haber iniciado sesión correctamente</textarea>
+<div id="UC-0005-precondition-html" class=""></div>
+<script>generate_markdown("UC-0005-precondition");</script>
+</td>
+</tr>
+<tr>
+<th rowspan="2">Secuencia normal</th>
+<th class="step_number_column">Paso</th>
+<th class="step_action_column">Acción</th>
+</tr>
+<tr id="STP-0007">
+<th class="step_number">1</th>
+<td colspan="1">
+<textarea id="STP-0007--md" class="markdown">Si El dueño inicia sesión correctamente y accede al apartado "empleados", se le mostrará un listado de los datos de los empleados,  el sistema le permitirá proceder a pagar. </textarea>
+<div id="STP-0007--html" class=""></div>
+<script>generate_markdown("STP-0007-");</script>
+</td>
+</tr>
+<tr>
+<th>Postcondición</th>
+<td colspan="2">
+<textarea id="UC-0005-postcondition-md" class="markdown">
+<span class="tbd" title="Por determinar">PD</span></textarea>
+<div id="UC-0005-postcondition-html" class=""></div>
+<script>generate_markdown("UC-0005-postcondition");</script>
+</td>
+</tr>
+<tr>
+<th rowspan="3">Excepciones</th>
+<th class="step_number_column">Paso</th>
+<th class="exception_action_column">Acción</th>
+</tr>
+<tr id="STX-0008">
+<th class="step_number">1</th>
+<td colspan="1">
+<textarea id="STX-0008--md" class="markdown">Si No se inicia bien la sesión, el sistema le pedirá que introduzca sus datos correctamente,  el sistema no le permitirá terminar el pago, a continuación este caso de uso <span class="exception_termination"><span class="tbd" title="Por determinar">PD</span></span>. </textarea>
+<div id="STX-0008--html" class=""></div>
+<script>generate_markdown("STX-0008-");</script>
+</td>
+</tr>
+<tr id="STX-0009">
+<th class="step_number">1</th>
+<td colspan="1">
+<textarea id="STX-0009--md" class="markdown">Si No hay ningún empleado en la base de datos, el sistema le mostrará una página vacía y le preguntará si quiere añadir algún empleado,  el sistema no le permitirá terminar el pago, a continuación este caso de uso <span class="exception_termination"><span class="tbd" title="Por determinar">PD</span></span>. </textarea>
+<div id="STX-0009--html" class=""></div>
+<script>generate_markdown("STX-0009-");</script>
+</td>
+</tr>
+<tr>
+<th>Estado</th>
+<td colspan="2">pendiente de verificación</td>
+</tr>
+<tr>
+<th>Comentarios</th>
+<td colspan="2">
+<textarea id="UC-0005-comments-md" class="markdown">Ninguno</textarea>
+<div id="UC-0005-comments-html" class="remus_comments"></div>
+<script>generate_markdown("UC-0005-comments");</script>
 </td>
 </tr>
 </table>
