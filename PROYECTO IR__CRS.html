@@ -13,6 +13,7 @@
             // converter.setOption( "key", "value" );
 
             var converter = new showdown.Converter();
+            converter.setOption( "parseImgDimensions", true );
 
             // function to be used in XLST templates
             // if inline=true, all CRLF tags are replaced
@@ -1983,6 +1984,157 @@
 </table>
 </div>
 <h3 id="SEC-0051" class="section">6.2.3 Especificación de casos de uso del sistema</h3>
+<div id="UC-0001">
+<table class="use_case remus_table">
+<thead>
+<tr>
+<th>
+<img src="https://cdn.jsdelivr.net/gh/amador-duran-toro/remus/assets/images/icons/useCase.png" /> UC-0001</th>
+<th class="name_column" colspan="2">Compra de productos por parte del cliente </th>
+</tr>
+</thead>
+<tr>
+<th>Versión</th>
+<td colspan="2">1.0 (26/11/2020)
+</td>
+</tr>
+<tr>
+<th>Descripción</th>
+<td colspan="2">
+<textarea id="UC-0001--md" class="markdown">El sistema deberá comportarse tal como se describe en el siguiente caso de uso cuando <span class="triggering_event">el cliente, una vez tiene todos los <a href="#GLO-0046" class="rem_ref">productos</a> en su carro de la compra, pulsa sobre el botón pagar</span>. </textarea>
+<div id="UC-0001--html" class=""></div>
+<script>generate_markdown("UC-0001-");</script>
+</td>
+</tr>
+<tr>
+<th>Precondición</th>
+<td colspan="2">
+<textarea id="UC-0001-precondition-md" class="markdown">El cliente de haber iniciado sesión y debe de haber introducido <a href="#GLO-0046" class="rem_ref">productos</a> a su carrito de la compra.</textarea>
+<div id="UC-0001-precondition-html" class=""></div>
+<script>generate_markdown("UC-0001-precondition");</script>
+</td>
+</tr>
+<tr>
+<th rowspan="2">Secuencia normal</th>
+<th class="step_number_column">Paso</th>
+<th class="step_action_column">Acción</th>
+</tr>
+<tr id="STP-0001">
+<th class="step_number">1</th>
+<td colspan="1"><textarea id="STP-0001--md" class="markdown">Si el cliente tiene <a href="#GLO-0046" class="rem_ref">productos</a> en su carro de la compra,  el sistema le permitirá proceder a pagar. </textarea>
+<div id="STP-0001--html" class=""></div>
+<script>generate_markdown("STP-0001-");</script>
+</td>
+</tr>
+<tr>
+<th>Postcondición</th>
+<td colspan="2">
+<textarea id="UC-0001-postcondition-md" class="markdown">El cliente debe de introducir su tarjeta de crédito correctamente</textarea>
+<div id="UC-0001-postcondition-html" class=""></div>
+<script>generate_markdown("UC-0001-postcondition");</script>
+</td>
+</tr>
+<tr>
+<th rowspan="2">Excepciones</th>
+<th class="step_number_column">Paso</th>
+<th class="exception_action_column">Acción</th>
+</tr>
+<tr id="STX-0001">
+<th class="step_number">1</th>
+<td colspan="1">
+<textarea id="STX-0001--md" class="markdown">Si el cliente no introduce correctamente su tarjeta de crédito,  el sistema no le permitirá terminar el pago, a continuación este caso de uso <span class="exception_termination"><span class="tbd" title="Por determinar">PD</span></span>. </textarea>
+<div id="STX-0001--html" class=""></div>
+<script>generate_markdown("STX-0001-");</script>
+</td>
+</tr>
+<tr>
+<th>Estado</th>
+<td colspan="2">pendiente de verificación</td>
+</tr>
+<tr>
+<th>Comentarios</th>
+<td colspan="2">
+<textarea id="UC-0001-comments-md" class="markdown">Ninguno</textarea>
+<div id="UC-0001-comments-html" class="remus_comments"></div>
+<script>generate_markdown("UC-0001-comments");</script>
+</td>
+</tr>
+</table>
+</div>
+<div id="UC-0002">
+<table class="use_case remus_table">
+<thead>
+<tr>
+<th>
+<img src="https://cdn.jsdelivr.net/gh/amador-duran-toro/remus/assets/images/icons/useCase.png" /> UC-0002</th>
+<th class="name_column" colspan="2">Solicitar a proveedores </th>
+</tr>
+</thead>
+<tr>
+<th>Versión</th>
+<td colspan="2">1.0 (26/11/2020)
+</td>
+</tr>
+<tr>
+<th>Descripción</th>
+<td colspan="2">
+<textarea id="UC-0002--md" class="markdown">El sistema deberá comportarse tal como se describe en el siguiente caso de uso cuando <span class="triggering_event">Un encargado y/o el dueño se percatará de las bajas existencias de un determinado <a href="#GLO-0046" class="rem_ref">producto</a>, por lo cual solicitará este <a href="#GLO-0046" class="rem_ref">producto</a> a sus <a href="#GLO-0048" class="rem_ref">proveedores</a></span>. </textarea>
+<div id="UC-0002--html" class=""></div>
+<script>generate_markdown("UC-0002-");</script>
+</td>
+</tr>
+<tr>
+<th>Precondición</th>
+<td colspan="2">
+<textarea id="UC-0002-precondition-md" class="markdown">Debe haberse iniciado sesión</textarea>
+<div id="UC-0002-precondition-html" class=""></div>
+<script>generate_markdown("UC-0002-precondition");</script>
+</td>
+</tr>
+<tr>
+<th rowspan="2">Secuencia normal</th>
+<th class="step_number_column">Paso</th>
+<th class="step_action_column">Acción</th>
+</tr>
+<tr id="STP-0004">
+<th class="step_number">1</th>
+<td colspan="1">
+<textarea id="STP-0004--md" class="markdown">Si el encargado solicita a sus provedores,  el actor <a href="#ACT-0021">Proveedor (ACT-0021)</a> recibe la petición. </textarea>
+<div id="STP-0004--html" class=""></div>
+<script>generate_markdown("STP-0004-");</script>
+</td>
+</tr>
+<tr>
+<th>Postcondición</th>
+<td colspan="2">
+<textarea id="UC-0002-postcondition-md" class="markdown">
+<span class="tbd" title="Por determinar">PD</span></textarea>
+<div id="UC-0002-postcondition-html" class=""></div>
+<script>generate_markdown("UC-0002-postcondition");</script>
+</td>
+</tr>
+<tr>
+<th rowspan="2">Excepciones</th>
+<th class="step_number_column">Paso</th>
+<th class="exception_action_column">Acción</th>
+</tr>
+<tr id="STX-0003">
+<th class="step_number">1</th>
+<td colspan="1"><textarea id="STX-0003--md" class="markdown">Si el dueño intenta solicitar a sus provedores pero no ha seleccionado ningun <a href="#GLO-0046" class="rem_ref">producto</a>,  el sistema no enviará la peticion, a continuación este caso de uso <span class="exception_termination"><span class="tbd" title="Por determinar">PD</span></span>. </textarea>
+<div id="STX-0003--html" class=""></div>
+<script>generate_markdown("STX-0003-");</script>
+</td>
+</tr>
+<tr>
+<th>Comentarios</th>
+<td colspan="2">
+<textarea id="UC-0002-comments-md" class="markdown">Ninguno</textarea>
+<div id="UC-0002-comments-html" class="remus_comments"></div>
+<script>generate_markdown("UC-0002-comments");</script>
+</td>
+</tr>
+</table>
+</div>
 <h2 id="SEC-0034" class="section">6.3 Requisitos funcionales del sistema</h2>
 <h3 id="SEC-0046" class="section">6.3.1 Requisitos de información del sistema</h3>
 <h3 id="SEC-0047" class="section">6.3.2 Requisitos de reglas de negocio del sistema</h3>
