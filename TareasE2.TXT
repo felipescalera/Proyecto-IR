@@ -3,21 +3,25 @@ DIVISIÓN DEL SEGUNDO ENTREGABLE
 ====================== 
 Tareas iniciales
 -----------------
-Pareja Ángel Antonio JSS-
-	Describir 5 procesos de negocio a implementar
+Pareja Ángel Antonio JSS
+	Describir 5 procesos de negocio a implementar (el máximo que se pueda)
 	5. Compartido con la otra pareja (extraer la info del 4.2.2)
+	Completar trabajo para los procesos actuales (a dividir con la otra pareja)
 	6.2.3 con la otra pareja
 								¡OJO! Los procesos que tenemos ahora, 
 								dependiendo del caso, se pueden dividir
 Pareja Antonio V JK
-	Describir 4 procesos de negocios actuales
+	Describir 4 procesos de negocios actuales (el máximo que se pueda)
 	5. Compartido con la otra pareja (extraer la info del 4.2.2)
+	Completar trabajo para los procesos actuales (a dividir con la otra pareja)
 	6.2.3 con la otra pareja
 
 Comodín de parejas Felipe
 	Correcciones de sesiones + formato
 	Crear BPMNs de procesos
 	Completar el 6.2.2
+	Completar trabajo para los procesos a implementar
+	Completar el 5
 	Ayudar parejas
 
 
