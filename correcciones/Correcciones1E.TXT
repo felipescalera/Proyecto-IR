@@ -6,8 +6,6 @@ Añadir fotos al glosario y en el 2.1 incluir más fotos
 
 Glosario -> las fotos, que mejor deben de ser del negocio
 
-Incluir más procesos actuales y a implantar
-
 el flujo de mensaje no cuenta como flujo de salida (bpmn)*arreglar para los procesos
 
 Procesos de negocio deberiamos de incluir más
@@ -17,13 +15,9 @@ se pueden extender los que hay ahora
 
 descripción del entorno hardware actual-> si podemos poner foto mejor
 
-objetivos de negocio-> pueden salir más de los eventos, añadir títulos (+HUs)
-cambiar de objetivos a párrafos (se pueden mover a la sección del catalogo de 
-requisitos generales)
-
 EN GENERAL
 +FOTOS EN GLOSARIO, INTRODUCCION, ENTORNO HARDWARE, AÑADIR IDS Y TITULOS A ALGUNOS ELEMENTOS
 PENSAR EVENTOS DE NEGOCIOS(EN EL 3. Y 4.), TITULOS A LAS HISTORIAS DE USUARIOS, AÑADIR 
 LAS ENCUESTAS, MEJORAR LAS ACTAS DE LAS REUNIONES (ESPECIFICAR MAS) Y REMOVER LAS QUE 
-NOSOTROS TENEMOS -> AMPLIAR EL ACTA DE LA PRIMERA REUNION
+NOSOTROS TENEMOS -> ******AMPLIAR EL ACTA DE LA PRIMERA REUNION
 

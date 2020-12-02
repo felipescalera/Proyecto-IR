@@ -1,0 +1,34 @@
+Sesión 2
+--------------------
+-Obtener información sobre como actúa la empresa
+
+-Ampliar catálogo de requisitos
+
+-Sobre el 2do documento
+	->Desarrollo de modelos
+	->Trabajar en paralelo Modelo-Requisitos funcionales
+	->Trabajar en paralelo Casos de uso-Interfaz de usuario
+	->Que cada pareja se centre en un par Modelo-Requisitos
+
+-Dudas
+	Subdivisiones del sistema -> división del sistema según acciones que podremos tomar (diferentes vistas para clientes, empleados etc)
+		-Ej.: Gestión de cubas y compra/venta de materiales
+	Modelado conceptual -> Modelo de clases de sistema del 3.* del 2do documento
+	Interfaces de usuario -> 5.2 Esquemas de interfaz de usuarios en el 2do documento (se pueden pasar en un zip con jpgs)
+
+Sesión 3
+--------------------
+-Debemos crear el acta de reuniones
+
+-Transmitir información de reuniones a compañeros
+
+-Seguir haciendo las cosas de forma paralela
+
+-Poscondiciones
+	-> Que condiciones se dan en el sistema si el caso de uso se da bien
+
+-Sacar requisitos funcionales de los casos de uso
+
+-Empequeñecer por norma general las imágenes poniendo el atributo [width=X%] en comentarios
+
+-Para pasar a pdf el archivo lo único que hay que hacer es: ir a imprimir, pones el microsoft print to pdf
