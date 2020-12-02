@@ -13,7 +13,6 @@
             // converter.setOption( "key", "value" );
 
             var converter = new showdown.Converter();
-            converter.setOption( "parseImgDimensions", true );
 
             // function to be used in XLST templates
             // if inline=true, all CRLF tags are replaced
@@ -2414,7 +2413,7 @@
 <tr>
 <th>
 <img src="https://cdn.jsdelivr.net/gh/amador-duran-toro/remus/assets/images/icons/constraintRequirement.png" /> CRQ-0001</th>
-<th class="name_column" colspan="1">RN01 - Revisión de cubas</th>
+<th class="name_column" colspan="1">RN001 - Revisión de cubas</th>
 </tr>
 </thead>
 <tr>
@@ -2425,7 +2424,7 @@
 <tr>
 <th>Descripción</th>
 <td colspan="1">
-<textarea id="CRQ-0001-description-md" class="markdown">El sistema deberá respetar la siguiente regla de negocio o restricción: Al utilizar una <a href="#GLO-0016" class="rem_ref">cuba</a>, esta debe dejarse inoperativa durante un (1) día para poder ser revisada.</textarea>
+<textarea id="CRQ-0001-description-md" class="markdown">El sistema deberá respetar la siguiente regla de negocio o restricción: Al utilizar una <a href="#GLO-0016" class="rem_ref">cuba</a>, esta debe dejarse inoperativa durante un día para poder ser revisada.</textarea>
 <div id="CRQ-0001-description-html" class=""></div>
 <script>generate_markdown("CRQ-0001-description");</script>
 </td>
@@ -2446,7 +2445,7 @@
 <tr>
 <th>
 <img src="https://cdn.jsdelivr.net/gh/amador-duran-toro/remus/assets/images/icons/constraintRequirement.png" /> CRQ-0002</th>
-<th class="name_column" colspan="1">RN02 - Empleados en tienda</th>
+<th class="name_column" colspan="1">RN002 - Empleados en tienda</th>
 </tr>
 </thead>
 <tr>
@@ -2457,7 +2456,7 @@
 <tr>
 <th>Descripción</th>
 <td colspan="1">
-<textarea id="CRQ-0002-description-md" class="markdown">El sistema deberá respetar la siguiente regla de negocio o restricción: Debe haber mínimo un (1) empleado en tienda para atender a los clientes.</textarea>
+<textarea id="CRQ-0002-description-md" class="markdown">El sistema deberá respetar la siguiente regla de negocio o restricción: Debe haber un mínimo un empleado en tienda para atender a los clientes.</textarea>
 <div id="CRQ-0002-description-html" class=""></div>
 <script>generate_markdown("CRQ-0002-description");</script>
 </td>
@@ -2478,7 +2477,7 @@
 <tr>
 <th>
 <img src="https://cdn.jsdelivr.net/gh/amador-duran-toro/remus/assets/images/icons/constraintRequirement.png" /> CRQ-0003</th>
-<th class="name_column" colspan="1">RN03 - Pernoctaciones de camiones</th>
+<th class="name_column" colspan="1">RN003 - Pernoctaciones de camiones</th>
 </tr>
 </thead>
 <tr>
@@ -2489,7 +2488,7 @@
 <tr>
 <th>Descripción</th>
 <td colspan="1">
-<textarea id="CRQ-0003-description-md" class="markdown">El sistema deberá respetar la siguiente regla de negocio o restricción: Todos los camiones deben pasar la noche en el garaje/terreno de la tienda.</textarea>
+<textarea id="CRQ-0003-description-md" class="markdown">El sistema deberá respetar la siguiente regla de negocio o restricción: Todos los camiones deben pasar la noche en el garaje de la tienda.</textarea>
 <div id="CRQ-0003-description-html" class=""></div>
 <script>generate_markdown("CRQ-0003-description");</script>
 </td>
@@ -2510,7 +2509,7 @@
 <tr>
 <th>
 <img src="https://cdn.jsdelivr.net/gh/amador-duran-toro/remus/assets/images/icons/constraintRequirement.png" /> CRQ-0004</th>
-<th class="name_column" colspan="1">RN04 - Cubas disponibles</th>
+<th class="name_column" colspan="1">RN004 - Cubas disponibles</th>
 </tr>
 </thead>
 <tr>
@@ -2521,7 +2520,7 @@
 <tr>
 <th>Descripción</th>
 <td colspan="1">
-<textarea id="CRQ-0004-description-md" class="markdown">El sistema deberá respetar la siguiente regla de negocio o restricción: Debe haber mínimo dos (2) <a href="#GLO-0016" class="rem_ref">cubas</a> disponibles (también cuentan las alquiladas).</textarea>
+<textarea id="CRQ-0004-description-md" class="markdown">El sistema deberá respetar la siguiente regla de negocio o restricción: Debe haber un mínimo de 2 <a href="#GLO-0016" class="rem_ref">cubas</a> disponibles en la totalidad del negocio (contando también con las alquiladas).</textarea>
 <div id="CRQ-0004-description-html" class=""></div>
 <script>generate_markdown("CRQ-0004-description");</script>
 </td>
@@ -2542,7 +2541,7 @@
 <tr>
 <th>
 <img src="https://cdn.jsdelivr.net/gh/amador-duran-toro/remus/assets/images/icons/constraintRequirement.png" /> CRQ-0005</th>
-<th class="name_column" colspan="1">RN05 - Camiones disponibles</th>
+<th class="name_column" colspan="1">RN005 - Camiones disponibles</th>
 </tr>
 </thead>
 <tr>
@@ -2553,7 +2552,7 @@
 <tr>
 <th>Descripción</th>
 <td colspan="1">
-<textarea id="CRQ-0005-description-md" class="markdown">El sistema deberá respetar la siguiente regla de negocio o restricción: Debe haber un mínimo de dos (2) camiones disponibles.</textarea>
+<textarea id="CRQ-0005-description-md" class="markdown">El sistema deberá respetar la siguiente regla de negocio o restricción: Debe haber un mínimo de 2 camiones operativos en el negocio para poder llevar a cabo, tanto los <a href="#GLO-0047" class="rem_ref">pedidos</a> de clientes, como los que se hacen a <a href="#GLO-0048" class="rem_ref">proveedores</a> (en caso de ser necesario).</textarea>
 <div id="CRQ-0005-description-html" class=""></div>
 <script>generate_markdown("CRQ-0005-description");</script>
 </td>
@@ -2574,7 +2573,7 @@
 <tr>
 <th>
 <img src="https://cdn.jsdelivr.net/gh/amador-duran-toro/remus/assets/images/icons/constraintRequirement.png" /> CRQ-0006</th>
-<th class="name_column" colspan="1">RN06 - Salario Mínimo Interprofesional</th>
+<th class="name_column" colspan="1">RN006 - Salario Mínimo Interprofesional</th>
 </tr>
 </thead>
 <tr>
@@ -2585,7 +2584,7 @@
 <tr>
 <th>Descripción</th>
 <td colspan="1">
-<textarea id="CRQ-0006-description-md" class="markdown">El sistema deberá respetar la siguiente regla de negocio o restricción: Todos los empleados deben cobrar al menos el SMI (950?/mes, a fecha 27/11/2020).</textarea>
+<textarea id="CRQ-0006-description-md" class="markdown">El sistema deberá respetar la siguiente regla de negocio o restricción: Todos los empleados deben cobrar al menos el SMI actual (950 euros/mes).</textarea>
 <div id="CRQ-0006-description-html" class=""></div>
 <script>generate_markdown("CRQ-0006-description");</script>
 </td>
@@ -2606,7 +2605,7 @@
 <tr>
 <th>
 <img src="https://cdn.jsdelivr.net/gh/amador-duran-toro/remus/assets/images/icons/constraintRequirement.png" /> CRQ-0007</th>
-<th class="name_column" colspan="1">RN07 - Combustible mínimo</th>
+<th class="name_column" colspan="1">RN007 - Combustible mínimo</th>
 </tr>
 </thead>
 <tr>
@@ -2617,7 +2616,7 @@
 <tr>
 <th>Descripción</th>
 <td colspan="1">
-<textarea id="CRQ-0007-description-md" class="markdown">El sistema deberá respetar la siguiente regla de negocio o restricción: Al final del día laboral, todos los camiones deben tener al menos un cuarto del depósito lleno (25%) .</textarea>
+<textarea id="CRQ-0007-description-md" class="markdown">El sistema deberá respetar la siguiente regla de negocio o restricción: Al final del día laboral, todos los camiones deben tener al menos un quinto del depósito lleno (20%) .</textarea>
 <div id="CRQ-0007-description-html" class=""></div>
 <script>generate_markdown("CRQ-0007-description");</script>
 </td>
@@ -2638,7 +2637,7 @@
 <tr>
 <th>
 <img src="https://cdn.jsdelivr.net/gh/amador-duran-toro/remus/assets/images/icons/constraintRequirement.png" /> CRQ-0008</th>
-<th class="name_column" colspan="1">RN08 - Stock productos vitales</th>
+<th class="name_column" colspan="1">RN008 - Stock productos vitales</th>
 </tr>
 </thead>
 <tr>
@@ -2649,7 +2648,7 @@
 <tr>
 <th>Descripción</th>
 <td colspan="1">
-<textarea id="CRQ-0008-description-md" class="markdown">El sistema deberá respetar la siguiente regla de negocio o restricción: Todos los <a href="#GLO-0046" class="rem_ref">productos</a> vitales (<a href="#GLO-0046" class="rem_ref">productos</a> con alta demanda) deben tener un mínimo de 14 unidades en el almacén.</textarea>
+<textarea id="CRQ-0008-description-md" class="markdown">El sistema deberá respetar la siguiente regla de negocio o restricción: Todos los <a href="#GLO-0046" class="rem_ref">productos</a> vitales (<a href="#GLO-0046" class="rem_ref">productos</a> de alta demanda) deben tener un mínimo de 14 unidades (según nuestro sistema de referencia) en el almacén.</textarea>
 <div id="CRQ-0008-description-html" class=""></div>
 <script>generate_markdown("CRQ-0008-description");</script>
 </td>
@@ -2670,7 +2669,7 @@
 <tr>
 <th>
 <img src="https://cdn.jsdelivr.net/gh/amador-duran-toro/remus/assets/images/icons/constraintRequirement.png" /> CRQ-0009</th>
-<th class="name_column" colspan="1">RN09 - Stock productos no vitales</th>
+<th class="name_column" colspan="1">RN009 - Stock productos no vitales</th>
 </tr>
 </thead>
 <tr>
@@ -2681,7 +2680,7 @@
 <tr>
 <th>Descripción</th>
 <td colspan="1">
-<textarea id="CRQ-0009-description-md" class="markdown">El sistema deberá respetar la siguiente regla de negocio o restricción: Todos los <a href="#GLO-0046" class="rem_ref">productos</a> no vitales deben tener un mínimo de 5 unidades en el almacén.</textarea>
+<textarea id="CRQ-0009-description-md" class="markdown">El sistema deberá respetar la siguiente regla de negocio o restricción: Todos los <a href="#GLO-0046" class="rem_ref">productos</a> no vitales deben tener un mínimo de 5 unidades (según nuestro sistema de referencia) en el almacén.</textarea>
 <div id="CRQ-0009-description-html" class=""></div>
 <script>generate_markdown("CRQ-0009-description");</script>
 </td>
@@ -2702,7 +2701,7 @@
 <tr>
 <th>
 <img src="https://cdn.jsdelivr.net/gh/amador-duran-toro/remus/assets/images/icons/constraintRequirement.png" /> CRQ-0010</th>
-<th class="name_column" colspan="1">RN10 - Horarios empleados</th>
+<th class="name_column" colspan="1">RN010 - Horarios empleados</th>
 </tr>
 </thead>
 <tr>
@@ -2713,7 +2712,7 @@
 <tr>
 <th>Descripción</th>
 <td colspan="1">
-<textarea id="CRQ-0010-description-md" class="markdown">El sistema deberá respetar la siguiente regla de negocio o restricción: Todos los empleados deben tener una jornada laboral de 8 horas, para un cómputo de 40 horas semanales.</textarea>
+<textarea id="CRQ-0010-description-md" class="markdown">El sistema deberá respetar la siguiente regla de negocio o restricción: Todos los empleados deben tener una jornada laboral de hasta un máximo de 8 horas, para un cómputo global de 40 horas semanales.</textarea>
 <div id="CRQ-0010-description-html" class=""></div>
 <script>generate_markdown("CRQ-0010-description");</script>
 </td>
@@ -2724,6 +2723,38 @@
 <textarea id="CRQ-0010-comments-md" class="markdown">Ninguno</textarea>
 <div id="CRQ-0010-comments-html" class="remus_comments"></div>
 <script>generate_markdown("CRQ-0010-comments");</script>
+</td>
+</tr>
+</table>
+</div>
+<div id="CRQ-0011">
+<table class="constraint_requirement remus_table">
+<thead>
+<tr>
+<th>
+<img src="https://cdn.jsdelivr.net/gh/amador-duran-toro/remus/assets/images/icons/constraintRequirement.png" /> CRQ-0011</th>
+<th class="name_column" colspan="1">RN011 - Descuento sobre productos</th>
+</tr>
+</thead>
+<tr>
+<th>Versión</th>
+<td colspan="1">1.0 (02/12/2020)
+</td>
+</tr>
+<tr>
+<th>Descripción</th>
+<td colspan="1">
+<textarea id="CRQ-0011-description-md" class="markdown">El sistema deberá respetar la siguiente regla de negocio o restricción: Se podrán acceder a descuentos <a href="#GLO-0046" class="rem_ref">producto</a> a <a href="#GLO-0046" class="rem_ref">producto</a> que no sobrepasen del 50%.</textarea>
+<div id="CRQ-0011-description-html" class=""></div>
+<script>generate_markdown("CRQ-0011-description");</script>
+</td>
+</tr>
+<tr>
+<th>Comentarios</th>
+<td colspan="1">
+<textarea id="CRQ-0011-comments-md" class="markdown">Ninguno</textarea>
+<div id="CRQ-0011-comments-html" class="remus_comments"></div>
+<script>generate_markdown("CRQ-0011-comments");</script>
 </td>
 </tr>
 </table>
