@@ -13,6 +13,7 @@
             // converter.setOption( "key", "value" );
 
             var converter = new showdown.Converter();
+            converter.setOption( "parseImgDimensions", true );
 
             // function to be used in XLST templates
             // if inline=true, all CRLF tags are replaced
@@ -962,6 +963,11 @@
 <div id="GLO-0068-text-html" class=""></div>
 <script>generate_markdown("GLO-0068-text");</script>
 </div>
+<div id="GLO-0075" class="glo">
+<textarea id="GLO-0075-text-md" class="markdown">**PNA-006 Actualización de precio**: ¬¬Este proceso tiene lugar cuando, tras llegar a un acuerdo el dueño de la empresa y el encargado de atención al cliente, se decide cambiar el precio a un <a href="#GLO-0046" class="rem_ref">producto</a>, ya sea durante una rebaja o permanentemente.¬¬Tras el acuerdo, el responsable de atención al cliente anotará los cambios en el precio en la hoja Excel dedicada a la contabilidad y cambiará los precios (si fuese necesario) en los <a href="#GLO-0037" class="rem_ref">expositores</a> de la tienda.</textarea>
+<div id="GLO-0075-text-html" class=""></div>
+<script>generate_markdown("GLO-0075-text");</script>
+</div>
 <h2 id="SEC-0025" class="section">3.3 Entorno tecnológico actual</h2>
 <h3 id="SEC-0026" class="section">3.3.1 Descripción del entorno de hardware actual</h3>
 <div id="PRG-0007">
@@ -1288,6 +1294,16 @@
 <script>generate_markdown("GLO-0072-text");</script>
 </div>
 <h1 id="SEC-0007" class="section">5 Descripción de los subsistemas a desarrollar</h1>
+<div id="GLO-0073" class="glo">
+<textarea id="GLO-0073-text-md" class="markdown">**SUBSISTEMA 1: Venta y compra de productos**: ¬¬**Versión** 1.0 ( 02/12/2020 ) ¬¬**Dependencias**  Cuando tengamos todos los objetivos y procesos a implantar se indican ¬¬**Descripción**  Este subsistema agrupa los requisitos relacionados con la compraventa de <a href="#GLO-0046" class="rem_ref">productos</a> en la empresa. ¬¬**Importancia** Vital </textarea>
+<div id="GLO-0073-text-html" class=""></div>
+<script>generate_markdown("GLO-0073-text");</script>
+</div>
+<div id="GLO-0074" class="glo">
+<textarea id="GLO-0074-text-md" class="markdown">**SUBSISTEMA 2: Control de cubas**: ¬¬**Versión** 1.0 ( 02/12/2020 )¬¬**Dependencias**¬Cuando tengamos todos los objetivos y procesos a implantar se indican¬¬**Descripción** Este subsistema agrupa los requisitos relacionados con el alquiler, mantenimiento y compra a <a href="#GLO-0048" class="rem_ref">proveedores</a> de <a href="#GLO-0016" class="rem_ref">cubas</a>.¬¬**Importancia** Vital</textarea>
+<div id="GLO-0074-text-html" class=""></div>
+<script>generate_markdown("GLO-0074-text");</script>
+</div>
 <h1 id="SEC-0008" class="section">6 Catálogo de los requisitos del sistema a desarrollar</h1>
 <h2 id="SEC-0032" class="section">6.1 Requisitos generales del sistema</h2>
 <div id="OBJ-0001">
@@ -2400,6 +2416,75 @@
 <textarea id="UC-0005-comments-md" class="markdown">Ninguno</textarea>
 <div id="UC-0005-comments-html" class="remus_comments"></div>
 <script>generate_markdown("UC-0005-comments");</script>
+</td>
+</tr>
+</table>
+</div>
+<div id="UC-0006">
+<table class="use_case remus_table">
+<thead>
+<tr>
+<th>
+<img src="https://cdn.jsdelivr.net/gh/amador-duran-toro/remus/assets/images/icons/useCase.png" /> UC-0006</th>
+<th class="name_column" colspan="2">Consulta de cubas para alquilar </th>
+</tr>
+</thead>
+<tr>
+<th>Versión</th>
+<td colspan="2">1.0 (02/12/2020)
+</td>
+</tr>
+<tr>
+<th>Descripción</th>
+<td colspan="2">
+<textarea id="UC-0006--md" class="markdown">El sistema deberá comportarse tal como se describe en el siguiente caso de uso cuando <span class="triggering_event">el cliente inicie sesión y consulte el listado de <a href="#GLO-0016" class="rem_ref">cubas</a></span>. </textarea>
+<div id="UC-0006--html" class=""></div>
+<script>generate_markdown("UC-0006-");</script>
+</td>
+</tr>
+<tr>
+<th>Precondición</th>
+<td colspan="2">
+<textarea id="UC-0006-precondition-md" class="markdown">El cliente debe haber iniciado sesión y accedido a la página de <a href="#GLO-0016" class="rem_ref">cubas</a>
+</textarea>
+<div id="UC-0006-precondition-html" class=""></div>
+<script>generate_markdown("UC-0006-precondition");</script>
+</td>
+</tr>
+<tr>
+<th rowspan="2">Secuencia normal</th>
+<th class="step_number_column">Paso</th>
+<th class="step_action_column">Acción</th>
+</tr>
+<tr id="STP-0008">
+<th class="step_number">1</th>
+<td colspan="1"><textarea id="STP-0008--md" class="markdown">Si el cliente, tras iniciar sesión, accede al apartado de <a href="#GLO-0016" class="rem_ref">cubas</a>, se le mostrará el listado, con sus datos y disponibilidad,  el sistema . </textarea>
+<div id="STP-0008--html" class=""></div>
+<script>generate_markdown("STP-0008-");</script>
+</td>
+</tr>
+<tr>
+<th>Postcondición</th>
+<td colspan="2">
+<textarea id="UC-0006-postcondition-md" class="markdown">El cliente ha consultado las <a href="#GLO-0016" class="rem_ref">cubas</a> disponibles y alquilado una de ellas si quisiera</textarea>
+<div id="UC-0006-postcondition-html" class=""></div>
+<script>generate_markdown("UC-0006-postcondition");</script>
+</td>
+</tr>
+<tr>
+<th>Importancia</th>
+<td colspan="2">importante</td>
+</tr>
+<tr>
+<th>Estado</th>
+<td colspan="2">pendiente de verificación</td>
+</tr>
+<tr>
+<th>Comentarios</th>
+<td colspan="2">
+<textarea id="UC-0006-comments-md" class="markdown">Ninguno</textarea>
+<div id="UC-0006-comments-html" class="remus_comments"></div>
+<script>generate_markdown("UC-0006-comments");</script>
 </td>
 </tr>
 </table>
