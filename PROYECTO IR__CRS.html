@@ -13,7 +13,6 @@
             // converter.setOption( "key", "value" );
 
             var converter = new showdown.Converter();
-            converter.setOption( "parseImgDimensions", true );
 
             // function to be used in XLST templates
             // if inline=true, all CRLF tags are replaced
@@ -3019,7 +3018,7 @@
 <tr>
 <th>Descripción</th>
 <td colspan="1">
-<textarea id="CRQ-0003-description-md" class="markdown">El sistema deberá respetar la siguiente regla de negocio o restricción: Todos los camiones deben pasar la noche en el garaje de la tienda.</textarea>
+<textarea id="CRQ-0003-description-md" class="markdown">El sistema deberá respetar la siguiente regla de negocio o restricción: Todos los camiones que no estén en reparación, deberán pasar la noche en el garaje de la tienda. Para estar disponibles a la mañana siguiente.</textarea>
 <div id="CRQ-0003-description-html" class=""></div>
 <script>generate_markdown("CRQ-0003-description");</script>
 </td>
@@ -3350,6 +3349,38 @@
 <textarea id="CRQ-0013-comments-md" class="markdown">Ninguno</textarea>
 <div id="CRQ-0013-comments-html" class="remus_comments"></div>
 <script>generate_markdown("CRQ-0013-comments");</script>
+</td>
+</tr>
+</table>
+</div>
+<div id="CRQ-0014">
+<table class="constraint_requirement remus_table">
+<thead>
+<tr>
+<th>
+<img src="https://cdn.jsdelivr.net/gh/amador-duran-toro/remus/assets/images/icons/constraintRequirement.png" /> CRQ-0014</th>
+<th class="name_column" colspan="1">RN014 - Empleados con carnet para camiones</th>
+</tr>
+</thead>
+<tr>
+<th>Versión</th>
+<td colspan="1">1.0 (03/12/2020)
+</td>
+</tr>
+<tr>
+<th>Descripción</th>
+<td colspan="1">
+<textarea id="CRQ-0014-description-md" class="markdown">El sistema deberá respetar la siguiente regla de negocio o restricción: Para hacer un porte de un <a href="#GLO-0047" class="rem_ref">pedido</a> o <a href="#GLO-0016" class="rem_ref">cuba</a>, al menos uno de los empleados asignados deberá tener el carnet de conducir C (el específico para camiones).</textarea>
+<div id="CRQ-0014-description-html" class=""></div>
+<script>generate_markdown("CRQ-0014-description");</script>
+</td>
+</tr>
+<tr>
+<th>Comentarios</th>
+<td colspan="1">
+<textarea id="CRQ-0014-comments-md" class="markdown">Ninguno</textarea>
+<div id="CRQ-0014-comments-html" class="remus_comments"></div>
+<script>generate_markdown("CRQ-0014-comments");</script>
 </td>
 </tr>
 </table>
