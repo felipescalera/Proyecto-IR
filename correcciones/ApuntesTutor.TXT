@@ -32,3 +32,66 @@ Sesión 3
 -Empequeñecer por norma general las imágenes poniendo el atributo [width=X%] en comentarios
 
 -Para pasar a pdf el archivo lo único que hay que hacer es: ir a imprimir, pones el microsoft print to pdf
+
+
+Sesión 4 (Corrección UML)
+--------------------
+
+Notas de diagrama (sobre otros compañeros)
+---------------------
+
+-Meter CIF en lo de los proveedores
+
+-Los IDs de las entidades se asumen
+
+-Mirad lo de camión y su disponibilidad ...
+
+-Meter Unidad -> para los pedidos **done
+
+-Transportista no puede 
+
+-Pedido debe tener estado
+
+en twin code hay que poner ir-3
+
+UML
+---------------
+diag1
+en linea pedido cliente y proveedor hace falta el precio ** done
+
+costetotal, descuento total son derivados, hay que ponerles un /   **done
+
+el porte es una composicion    **done
+
+factura cliente es 0..1   **done
+
+
+diag2
+porte es una composicion  **done
+
+relacion camion va a porte 1 0..1        y la de empleado porte es *    *     **done
+
+le quitamos conduce (esa relacion no hace falta)           **done
+
+rns de camión (hay que retocarlas para que se puedan cumplir)   **a revisar
+
+
+diag3
+
+solicitud 0..1 unida con PedidoProveedor (solicitud-pasa a ser confirmacion (no llevara contenido))  **done -> he preferido quitarla para no guardar info muerta
+
+factura proveedor tendria 1->*    **done
+
+incidenciaalquiler orden alquiler seria una composicion    ** done
+
+
+diag4
+
+OrdenAlquiler -> OrdenAlquilerCuba (relacion * 1)   **done
+
+hay que ponerle un tipomodelo a la cuba    **done
+
+cambiar porte a portecuba en la orden de alquiler (+lo de camion no hara falta) tendra relacion 0..1 con camion     **done 
+
+cliente va asociado a orden de alquiler (no a cuba)  **done
+
