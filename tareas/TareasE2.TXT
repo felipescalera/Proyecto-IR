@@ -4,30 +4,71 @@ DIVISIÓN DEL SEGUNDO ENTREGABLE
 Tareas iniciales
 -----------------
 Pareja Ángel Antonio JSS
+	Crear BPMNs de procesos
 	Describir 5 procesos de negocio a implementar (el máximo que se pueda)
 	5. Compartido con la otra pareja (extraer la info del 4.2.2)
 	Completar trabajo para los procesos actuales (a dividir con la otra pareja)
 	6.2.3 con la otra pareja
-								¡OJO! Los procesos que tenemos ahora, 
-								dependiendo del caso, se pueden dividir
+
+	BPMN de procesos a implantar
+	Cada persona individual hace los diagramas de casos de uso correspondientes a su interfaz de usuario
+	Descripción de la arquitectura del sistema
+
+								
 Pareja Antonio V JK
+	Crear BPMNs de procesos
 	Describir 4 procesos de negocios actuales (el máximo que se pueda)
 	5. Compartido con la otra pareja (extraer la info del 4.2.2)
 	Completar trabajo para los procesos actuales (a dividir con la otra pareja)
 	6.2.3 con la otra pareja
 
+	BPMN de procesos actuales
+	Cada persona individual hace los diagramas de casos de uso correspondientes a su interfaz de usuario
+	Descripción de las clases del sistema
+	Diagrama de estado de pedido 
+ 	En requisitos de conducta (Se pone lo que el sistema queremos que haga, generar el costeTotal... son referentes a los informes que el sistema debe de hacer)
+
+
+
 Comodín de parejas Felipe
 	Correcciones de sesiones + formato
-	Crear BPMNs de procesos
 	Completar el 6.2.2
 	Completar trabajo para los procesos a implementar
 	Completar el 5
 	Ayudar parejas
+	Meter en uml aspectos de usuarios
+
+	Ayudar y añadir BPMN junto a las parejas
+	Cada persona individual hace los diagramas de casos de uso correspondientes a su interfaz de usuario
+	Elicitación de requisitos no funcionales del sistema
+	Diagrama de estado de alquiler de cubas
 
 
+Entrega de interfaces de usuario +
+*Descripcion de interfaz de usuario, cada uno hace el suyo* -> meterlo en el 5.3
+ 
+	JK 1 y 2
+	AntJavier 3 y 4
+	Antonio 5 y 6
+	Ángel 9 y 10
+	Felipe 7 y 8
 
-Presentación modelo conceptual: 3/12/2020
 
 Presentación del prototipo inicial de IU: 10/12/2020
 
 2ª entrega: 13/12/2020
+
+------------------------------------
+PROCESOS CON INTERFACES DE USUARIOS usando https://moqups.com/  (ojo que puede haber más de una interfaz, tenemos que fijarnos en los casos de uso)
+------------------------------------
+Log de usuario (done, está hecha como ejemplo)
+1Compra de productos clientes
+2Solicitar productos a proveedores
+3Consulta proveedores
+4Notificaciones sobre llegada de pedidos a trabajadores
+5Consulta de empleados
+6Consulta de cubas para alquilar
+7Creacion de un nuevo contrato en web
+8Añadir proveedor
+9Añadir empleado
+10Registro de un nuevo cliente
