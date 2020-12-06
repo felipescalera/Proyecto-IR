@@ -13,7 +13,6 @@
             // converter.setOption( "key", "value" );
 
             var converter = new showdown.Converter();
-            converter.setOption( "parseImgDimensions", true );
 
             // function to be used in XLST templates
             // if inline=true, all CRLF tags are replaced
@@ -1259,7 +1258,7 @@
 </p>
 </div>
 <div id="GLO-0036" class="glo">
-<textarea id="GLO-0036-text-md" class="markdown">**PNI-002 Proceso Control Stock Futuro**:  **Seguimiento y reposición del stock a través de la aplicación**¬¬El proceso de seguimiento y mantenimiento del stock actualiza y expande el proceso de compra de <a href="#GLO-0046" class="rem_ref">productos</a> al <a href="#GLO-0048" class="rem_ref">proveedor</a>.¬¬El control del stock se realiza mediante el seguimiento del inventario en el nuevo sistema de información de la empresa, donde se van retirando las unidades pedidas en cada envío, y se añaden a un "carrito de alerta" aquellos <a href="#GLO-0046" class="rem_ref">productos</a> que estén al 10% de su capacidad máxima en almacén.¬¬Este "carrito de alerta" sirve para que el encargado de <a href="#GLO-0047" class="rem_ref">pedidos</a> pueda consultar qué <a href="#GLO-0046" class="rem_ref">productos</a> debe pedir a <a href="#GLO-0048" class="rem_ref">proveedores</a> sin consultar al encargado de almacén y agilizar el proceso.¬¬Tras pedir los <a href="#GLO-0046" class="rem_ref">productos</a> anotados en el carrito, se espera a la entrega de éstos y tras guardarlos en el almacén, el "carrito de alerta" se vacía y se mantiene a la espera de nuevas entradas.</textarea>
+<textarea id="GLO-0036-text-md" class="markdown">**PNI-002 Proceso Control Stock Futuro**:  **Seguimiento y reposición del stock a través de la aplicación**¬¬El proceso de seguimiento y mantenimiento del stock actualiza y expande el proceso de compra de <a href="#GLO-0046" class="rem_ref">productos</a> al <a href="#GLO-0048" class="rem_ref">proveedor</a>.¬¬El control del stock se realiza mediante el seguimiento del inventario en el nuevo sistema de información de la empresa, donde se van retirando las unidades pedidas en cada envío, y se añaden a un "carrito de alerta" aquellos <a href="#GLO-0046" class="rem_ref">productos</a> que estén al 10% de su capacidad máxima (10% del <a href="#GLO-0047" class="rem_ref">pedido</a> inicial) en almacén.¬¬Este "carrito de alerta" sirve para que el encargado de <a href="#GLO-0047" class="rem_ref">pedidos</a> pueda consultar qué <a href="#GLO-0046" class="rem_ref">productos</a> debe pedir a <a href="#GLO-0048" class="rem_ref">proveedores</a> sin consultar al encargado de almacén y agilizar el proceso.¬¬Tras pedir los <a href="#GLO-0046" class="rem_ref">productos</a> anotados en el carrito, se espera a la entrega de éstos y tras guardarlos en el almacén, el "carrito de alerta" se vacía y se mantiene a la espera de nuevas entradas.</textarea>
 <div id="GLO-0036-text-html" class=""></div>
 <script>generate_markdown("GLO-0036-text");</script>
 </div>
@@ -1292,6 +1291,11 @@
 <textarea id="GLO-0072-text-md" class="markdown">**PNI-006 Actualización de precios online**: ¬¬En consecuencia de una actualizacición del mercado o de la oferta de los <a href="#GLO-0046" class="rem_ref">productos</a>, será necesario un cambio en los precios de los <a href="#GLO-0046" class="rem_ref">productos</a>.¬¬Este proceso comienza con el propietario accediendo a un apartado del sistema que muestre los datos de su stock, donde podrá modificar los precios de los <a href="#GLO-0046" class="rem_ref">productos</a> de manera individual o aplicar un descuento que englobe ciertos <a href="#GLO-0046" class="rem_ref">producto</a>.¬¬El proceso acaba con la actualización de los precios de los <a href="#GLO-0046" class="rem_ref">productos</a>.</textarea>
 <div id="GLO-0072-text-html" class=""></div>
 <script>generate_markdown("GLO-0072-text");</script>
+</div>
+<div id="GLO-0081" class="glo">
+<textarea id="GLO-0081-text-md" class="markdown">**PNI-007 Creación y actualización de contratos online**: ¬¬Si se da la necesidad de que el propietario necesita cambiar un contrato, obtendríamos este proceso.¬¬Una vez que tanto propietario como empleado hayan acordado un contrato, el dueño deberá acceder a la web con sus credenciales de administrador. Cuando se ha hecho esto, el dueño deberá acceder a su apartado exclusivo de empleados.¬¬Desde su apartado, este podrá actualizar o añadir al empleado desde un formulario. De darse todo el proceso correctamente, el empleado será registrado en la base de datos.</textarea>
+<div id="GLO-0081-text-html" class=""></div>
+<script>generate_markdown("GLO-0081-text");</script>
 </div>
 <h1 id="SEC-0007" class="section">5 Descripción de los subsistemas a desarrollar</h1>
 <div id="GLO-0073" class="glo">
@@ -2258,7 +2262,7 @@
 <tr>
 <th>Postcondición</th>
 <td colspan="2">
-<textarea id="UC-0003-postcondition-md" class="markdown">
+<textarea id="UC-0003-postcondition-md" class="markdown">El propietario accede a la lista completa de <a href="#GLO-0048" class="rem_ref">proveedores</a>
 </textarea>
 <div id="UC-0003-postcondition-html" class=""></div>
 <script>generate_markdown("UC-0003-postcondition");</script>
@@ -2366,7 +2370,7 @@
 <tr>
 <th>Descripción</th>
 <td colspan="2">
-<textarea id="UC-0005--md" class="markdown">El sistema deberá comportarse tal como se describe en el siguiente caso de uso cuando <span class="triggering_event">El dueño accederá al apartado <a href="#GLO-0048" class="rem_ref">proveedores</a> y el sistema le permitirá ver una lista con los datos de los empleados</span>. </textarea>
+<textarea id="UC-0005--md" class="markdown">El sistema deberá comportarse tal como se describe en el siguiente caso de uso cuando <span class="triggering_event">el dueño accederá al apartado empleados y el sistema le permitirá ver una lista con los datos de los empleados</span>. </textarea>
 <div id="UC-0005--html" class=""></div>
 <script>generate_markdown("UC-0005-");</script>
 </td>
@@ -2403,8 +2407,7 @@
 <tr>
 <th>Postcondición</th>
 <td colspan="2">
-<textarea id="UC-0005-postcondition-md" class="markdown">
-</textarea>
+<textarea id="UC-0005-postcondition-md" class="markdown">El dueño podrá acceder al listado completo de empleados</textarea>
 <div id="UC-0005-postcondition-html" class=""></div>
 <script>generate_markdown("UC-0005-postcondition");</script>
 </td>
@@ -2512,6 +2515,88 @@
 </tr>
 </table>
 </div>
+<div id="UC-0007">
+<table class="use_case remus_table">
+<thead>
+<tr>
+<th>
+<img src="https://cdn.jsdelivr.net/gh/amador-duran-toro/remus/assets/images/icons/useCase.png" /> UC-0007</th>
+<th class="name_column" colspan="2">Creación de un nuevo contrato en web </th>
+</tr>
+</thead>
+<tr>
+<th>Versión</th>
+<td colspan="2">1.0 (06/12/2020)
+</td>
+</tr>
+<tr>
+<th>Descripción</th>
+<td colspan="2">
+<textarea id="UC-0007--md" class="markdown">El sistema deberá comportarse tal como se describe en el siguiente caso de uso cuando <span class="triggering_event">el propietario inicie sesión y necesite añadir un contrato nuevo</span>. </textarea>
+<div id="UC-0007--html" class=""></div>
+<script>generate_markdown("UC-0007-");</script>
+</td>
+</tr>
+<tr>
+<th>Precondición</th>
+<td colspan="2">
+<textarea id="UC-0007-precondition-md" class="markdown">El propietario debe haber iniciado sesión correctamente</textarea>
+<div id="UC-0007-precondition-html" class=""></div>
+<script>generate_markdown("UC-0007-precondition");</script>
+</td>
+</tr>
+<tr>
+<th rowspan="3">Secuencia normal</th>
+<th class="step_number_column">Paso</th>
+<th class="step_action_column">Acción</th>
+</tr>
+<tr id="STP-0080">
+<th class="step_number">1</th>
+<td colspan="1">
+<textarea id="STP-0080--md" class="markdown"> El actor <a href="#ACT-0020">Propietario (ACT-0020)</a> accede al apartado de empleados y selecciona el formulario de inserción de empleado. </textarea>
+<div id="STP-0080--html" class=""></div>
+<script>generate_markdown("STP-0080-");</script>
+</td>
+</tr>
+<tr id="STP-0081">
+<th class="step_number">2</th>
+<td colspan="1">
+<textarea id="STP-0081--md" class="markdown">Si los datos del formulario para el empleado son correctos,  el sistema nos da un mensaje de operación exitosa. </textarea>
+<div id="STP-0081--html" class=""></div>
+<script>generate_markdown("STP-0081-");</script>
+</td>
+</tr>
+<tr>
+<th>Postcondición</th>
+<td colspan="2">
+<textarea id="UC-0007-postcondition-md" class="markdown">El propietario introduce los datos correctos y podrá comprobar que se ha insertado el empleado</textarea>
+<div id="UC-0007-postcondition-html" class=""></div>
+<script>generate_markdown("UC-0007-postcondition");</script>
+</td>
+</tr>
+<tr>
+<th rowspan="2">Excepciones</th>
+<th class="step_number_column">Paso</th>
+<th class="exception_action_column">Acción</th>
+</tr>
+<tr id="STX-0015">
+<th class="step_number">2</th>
+<td colspan="1">
+<textarea id="STX-0015--md" class="markdown">Si los datos no son correctos y consistentes,  el sistema reenviará al propietario de vuelta al formulario, a continuación este caso de uso <span class="exception_termination">queda sin efecto</span>. </textarea>
+<div id="STX-0015--html" class=""></div>
+<script>generate_markdown("STX-0015-");</script>
+</td>
+</tr>
+<tr>
+<th>Comentarios</th>
+<td colspan="2">
+<textarea id="UC-0007-comments-md" class="markdown">Ninguno</textarea>
+<div id="UC-0007-comments-html" class="remus_comments"></div>
+<script>generate_markdown("UC-0007-comments");</script>
+</td>
+</tr>
+</table>
+</div>
 <h2 id="SEC-0034" class="section">6.3 Requisitos funcionales del sistema</h2>
 <h3 id="SEC-0046" class="section">6.3.1 Requisitos de información del sistema</h3>
 <div id="IRQ-0001">
@@ -2520,7 +2605,7 @@
 <tr>
 <th>
 <img src="https://cdn.jsdelivr.net/gh/amador-duran-toro/remus/assets/images/icons/informationRequirement.png" /> IRQ-0001</th>
-<th class="name_column" colspan="2">RI001 - Información sobre contratos</th>
+<th class="name_column" colspan="2">RI-001 Información sobre contratos</th>
 </tr>
 </thead>
 <tr>
@@ -2579,7 +2664,7 @@
 <tr>
 <th>
 <img src="https://cdn.jsdelivr.net/gh/amador-duran-toro/remus/assets/images/icons/informationRequirement.png" /> IRQ-0002</th>
-<th class="name_column" colspan="2">RI002 - Información sobre empleados</th>
+<th class="name_column" colspan="2">RI-002 Información sobre empleados</th>
 </tr>
 </thead>
 <tr>
@@ -2648,7 +2733,7 @@
 <tr>
 <th>
 <img src="https://cdn.jsdelivr.net/gh/amador-duran-toro/remus/assets/images/icons/informationRequirement.png" /> IRQ-0003</th>
-<th class="name_column" colspan="2">RI003 - Información sobre productos</th>
+<th class="name_column" colspan="2">RI-003 Información sobre productos</th>
 </tr>
 </thead>
 <tr>
@@ -2717,7 +2802,7 @@
 <tr>
 <th>
 <img src="https://cdn.jsdelivr.net/gh/amador-duran-toro/remus/assets/images/icons/informationRequirement.png" /> IRQ-0004</th>
-<th class="name_column" colspan="2">RI004 - Información sobre clientes</th>
+<th class="name_column" colspan="2">RI-004 Información sobre clientes</th>
 </tr>
 </thead>
 <tr>
@@ -2771,7 +2856,7 @@
 <tr>
 <th>
 <img src="https://cdn.jsdelivr.net/gh/amador-duran-toro/remus/assets/images/icons/informationRequirement.png" /> IRQ-0005</th>
-<th class="name_column" colspan="2">RI005 - Información sobre pedidos de clientes</th>
+<th class="name_column" colspan="2">RI-005 Información sobre pedidos de clientes</th>
 </tr>
 </thead>
 <tr>
@@ -2826,7 +2911,7 @@
 <tr>
 <th>
 <img src="https://cdn.jsdelivr.net/gh/amador-duran-toro/remus/assets/images/icons/informationRequirement.png" /> IRQ-0006</th>
-<th class="name_column" colspan="2">RI006 - Información sobre facturas de clientes</th>
+<th class="name_column" colspan="2">RI-006 Información sobre facturas de clientes</th>
 </tr>
 </thead>
 <tr>
@@ -2874,7 +2959,7 @@
 <tr>
 <th>
 <img src="https://cdn.jsdelivr.net/gh/amador-duran-toro/remus/assets/images/icons/informationRequirement.png" /> IRQ-0007</th>
-<th class="name_column" colspan="2">RI007 - Información sobre cubas</th>
+<th class="name_column" colspan="2">RI-007 Información sobre cubas</th>
 </tr>
 </thead>
 <tr>
@@ -2933,7 +3018,7 @@
 <tr>
 <th>
 <img src="https://cdn.jsdelivr.net/gh/amador-duran-toro/remus/assets/images/icons/informationRequirement.png" /> IRQ-0008</th>
-<th class="name_column" colspan="2">RI008 - Información sobre alquileres de cubas</th>
+<th class="name_column" colspan="2">RI-008 Información sobre alquileres de cubas</th>
 </tr>
 </thead>
 <tr>
@@ -2997,7 +3082,7 @@
 <tr>
 <th>
 <img src="https://cdn.jsdelivr.net/gh/amador-duran-toro/remus/assets/images/icons/informationRequirement.png" /> IRQ-0009</th>
-<th class="name_column" colspan="2">RI009 - Información sobre líneas de pedidos de los clientes</th>
+<th class="name_column" colspan="2">RI-009 Información sobre líneas de pedidos de los clientes</th>
 </tr>
 </thead>
 <tr>
@@ -3051,7 +3136,7 @@
 <tr>
 <th>
 <img src="https://cdn.jsdelivr.net/gh/amador-duran-toro/remus/assets/images/icons/informationRequirement.png" /> IRQ-0010</th>
-<th class="name_column" colspan="2">RI010 - Información sobre portes</th>
+<th class="name_column" colspan="2">RI-010 Información sobre portes</th>
 </tr>
 </thead>
 <tr>
@@ -3105,7 +3190,7 @@
 <tr>
 <th>
 <img src="https://cdn.jsdelivr.net/gh/amador-duran-toro/remus/assets/images/icons/informationRequirement.png" /> IRQ-0011</th>
-<th class="name_column" colspan="2">RI011 - Información sobre horarios semanales</th>
+<th class="name_column" colspan="2">RI-011 Información sobre horarios semanales</th>
 </tr>
 </thead>
 <tr>
@@ -3158,7 +3243,7 @@
 <tr>
 <th>
 <img src="https://cdn.jsdelivr.net/gh/amador-duran-toro/remus/assets/images/icons/informationRequirement.png" /> IRQ-0012</th>
-<th class="name_column" colspan="2">RI012 - Información sobre pedidos a proveedores</th>
+<th class="name_column" colspan="2">RI-012 Información sobre pedidos a proveedores</th>
 </tr>
 </thead>
 <tr>
@@ -3209,7 +3294,7 @@
 <tr>
 <th>
 <img src="https://cdn.jsdelivr.net/gh/amador-duran-toro/remus/assets/images/icons/informationRequirement.png" /> IRQ-0013</th>
-<th class="name_column" colspan="2">RI013 - Información sobre facturas de proveedores</th>
+<th class="name_column" colspan="2">RI-013 Información sobre facturas de proveedores</th>
 </tr>
 </thead>
 <tr>
@@ -3268,7 +3353,7 @@
 <tr>
 <th>
 <img src="https://cdn.jsdelivr.net/gh/amador-duran-toro/remus/assets/images/icons/informationRequirement.png" /> IRQ-0014</th>
-<th class="name_column" colspan="2">RI014 - Información sobre los camiones</th>
+<th class="name_column" colspan="2">RI-014 Información sobre los camiones</th>
 </tr>
 </thead>
 <tr>
@@ -3337,7 +3422,7 @@
 <tr>
 <th>
 <img src="https://cdn.jsdelivr.net/gh/amador-duran-toro/remus/assets/images/icons/informationRequirement.png" /> IRQ-0015</th>
-<th class="name_column" colspan="2">Información sobre las incidencias de alquileres</th>
+<th class="name_column" colspan="2">RI-015 Información sobre las incidencias de alquileres</th>
 </tr>
 </thead>
 <tr>
@@ -3387,7 +3472,7 @@
 <tr>
 <th>
 <img src="https://cdn.jsdelivr.net/gh/amador-duran-toro/remus/assets/images/icons/constraintRequirement.png" /> CRQ-0001</th>
-<th class="name_column" colspan="1">RN001 - Revisión de cubas</th>
+<th class="name_column" colspan="1">RN-001 Revisión de cubas</th>
 </tr>
 </thead>
 <tr>
@@ -3419,7 +3504,7 @@
 <tr>
 <th>
 <img src="https://cdn.jsdelivr.net/gh/amador-duran-toro/remus/assets/images/icons/constraintRequirement.png" /> CRQ-0002</th>
-<th class="name_column" colspan="1">RN002 - Empleados en tienda</th>
+<th class="name_column" colspan="1">RN-002 Empleados en tienda</th>
 </tr>
 </thead>
 <tr>
@@ -3451,7 +3536,7 @@
 <tr>
 <th>
 <img src="https://cdn.jsdelivr.net/gh/amador-duran-toro/remus/assets/images/icons/constraintRequirement.png" /> CRQ-0003</th>
-<th class="name_column" colspan="1">RN003 - Pernoctaciones de camiones</th>
+<th class="name_column" colspan="1">RN-003 Pernoctaciones de camiones</th>
 </tr>
 </thead>
 <tr>
@@ -3483,7 +3568,7 @@
 <tr>
 <th>
 <img src="https://cdn.jsdelivr.net/gh/amador-duran-toro/remus/assets/images/icons/constraintRequirement.png" /> CRQ-0004</th>
-<th class="name_column" colspan="1">RN004 - Cubas disponibles</th>
+<th class="name_column" colspan="1">RN-004 Cubas disponibles</th>
 </tr>
 </thead>
 <tr>
@@ -3515,7 +3600,7 @@
 <tr>
 <th>
 <img src="https://cdn.jsdelivr.net/gh/amador-duran-toro/remus/assets/images/icons/constraintRequirement.png" /> CRQ-0005</th>
-<th class="name_column" colspan="1">RN005 - Camiones disponibles</th>
+<th class="name_column" colspan="1">RN-005 Camiones disponibles</th>
 </tr>
 </thead>
 <tr>
@@ -3547,7 +3632,7 @@
 <tr>
 <th>
 <img src="https://cdn.jsdelivr.net/gh/amador-duran-toro/remus/assets/images/icons/constraintRequirement.png" /> CRQ-0006</th>
-<th class="name_column" colspan="1">RN006 - Salario Mínimo Interprofesional</th>
+<th class="name_column" colspan="1">RN-006 Salario Mínimo Interprofesional</th>
 </tr>
 </thead>
 <tr>
@@ -3579,7 +3664,7 @@
 <tr>
 <th>
 <img src="https://cdn.jsdelivr.net/gh/amador-duran-toro/remus/assets/images/icons/constraintRequirement.png" /> CRQ-0007</th>
-<th class="name_column" colspan="1">RN007 - Combustible mínimo</th>
+<th class="name_column" colspan="1">RN-007 Combustible mínimo</th>
 </tr>
 </thead>
 <tr>
@@ -3611,7 +3696,7 @@
 <tr>
 <th>
 <img src="https://cdn.jsdelivr.net/gh/amador-duran-toro/remus/assets/images/icons/constraintRequirement.png" /> CRQ-0008</th>
-<th class="name_column" colspan="1">RN008 - Stock productos vitales</th>
+<th class="name_column" colspan="1">RN-008 Stock productos vitales</th>
 </tr>
 </thead>
 <tr>
@@ -3643,7 +3728,7 @@
 <tr>
 <th>
 <img src="https://cdn.jsdelivr.net/gh/amador-duran-toro/remus/assets/images/icons/constraintRequirement.png" /> CRQ-0009</th>
-<th class="name_column" colspan="1">RN009 - Stock productos no vitales</th>
+<th class="name_column" colspan="1">RN-009 Stock productos no vitales</th>
 </tr>
 </thead>
 <tr>
@@ -3675,7 +3760,7 @@
 <tr>
 <th>
 <img src="https://cdn.jsdelivr.net/gh/amador-duran-toro/remus/assets/images/icons/constraintRequirement.png" /> CRQ-0010</th>
-<th class="name_column" colspan="1">RN010 - Horarios empleados</th>
+<th class="name_column" colspan="1">RN-010 Horarios empleados</th>
 </tr>
 </thead>
 <tr>
@@ -3707,7 +3792,7 @@
 <tr>
 <th>
 <img src="https://cdn.jsdelivr.net/gh/amador-duran-toro/remus/assets/images/icons/constraintRequirement.png" /> CRQ-0011</th>
-<th class="name_column" colspan="1">RN011 - Descuento sobre productos</th>
+<th class="name_column" colspan="1">RN-011 Descuento sobre productos</th>
 </tr>
 </thead>
 <tr>
@@ -3739,7 +3824,7 @@
 <tr>
 <th>
 <img src="https://cdn.jsdelivr.net/gh/amador-duran-toro/remus/assets/images/icons/constraintRequirement.png" /> CRQ-0012</th>
-<th class="name_column" colspan="1">RN012 - Tipo de empleado</th>
+<th class="name_column" colspan="1">RN-012 Tipo de empleado</th>
 </tr>
 </thead>
 <tr>
@@ -3771,7 +3856,7 @@
 <tr>
 <th>
 <img src="https://cdn.jsdelivr.net/gh/amador-duran-toro/remus/assets/images/icons/constraintRequirement.png" /> CRQ-0013</th>
-<th class="name_column" colspan="1">RN013 - Pago temprano a proveedores</th>
+<th class="name_column" colspan="1">RN-013 Pago temprano a proveedores</th>
 </tr>
 </thead>
 <tr>
@@ -3803,7 +3888,7 @@
 <tr>
 <th>
 <img src="https://cdn.jsdelivr.net/gh/amador-duran-toro/remus/assets/images/icons/constraintRequirement.png" /> CRQ-0014</th>
-<th class="name_column" colspan="1">RN014 - Empleados con carnet para camiones</th>
+<th class="name_column" colspan="1">RN-014 Empleados con carnet para camiones</th>
 </tr>
 </thead>
 <tr>
@@ -3833,13 +3918,178 @@
 <h2 id="SEC-0035" class="section">6.4 Requisitos no funcionales del sistema</h2>
 <h3 id="SEC-0039" class="section">6.4.1 Requisitos de fiabilidad del sistema</h3>
 <h3 id="SEC-0040" class="section">6.4.2 Requisitos de usabilidad del sistema</h3>
+<div id="NFR-0003">
+<table class="nonfunctional_requirement remus_table">
+<thead>
+<tr>
+<th>
+<img src="https://cdn.jsdelivr.net/gh/amador-duran-toro/remus/assets/images/icons/nonFunctionalRequirement.png" /> NFR-0003</th>
+<th class="name_column" colspan="1">RNF-003 Sistema eficaz y directo</th>
+</tr>
+</thead>
+<tr>
+<th>Versión</th>
+<td colspan="1">1.0 (06/12/2020)
+</td>
+</tr>
+<tr>
+<th>Descripción</th>
+<td colspan="1">
+<textarea id="NFR-0003-description-md" class="markdown">El sistema deberá Es necesario que un usuario pueda llegar a la información que busca en menos de 5 clicks.</textarea>
+<div id="NFR-0003-description-html" class=""></div>
+<script>generate_markdown("NFR-0003-description");</script>
+</td>
+</tr>
+<tr>
+<th>Comentarios</th>
+<td colspan="1">
+<textarea id="NFR-0003-comments-md" class="markdown">Ninguno</textarea>
+<div id="NFR-0003-comments-html" class="remus_comments"></div>
+<script>generate_markdown("NFR-0003-comments");</script>
+</td>
+</tr>
+</table>
+</div>
 <h3 id="SEC-0041" class="section">6.4.3 Requisitos de mantenibilidad del sistema</h3>
 <h3 id="SEC-0042" class="section">6.4.4 Requisitos de eficiencia del sistema</h3>
+<div id="NFR-0002">
+<table class="nonfunctional_requirement remus_table">
+<thead>
+<tr>
+<th>
+<img src="https://cdn.jsdelivr.net/gh/amador-duran-toro/remus/assets/images/icons/nonFunctionalRequirement.png" /> NFR-0002</th>
+<th class="name_column" colspan="1">RNF-002 Procesamiento de pedidos eficiente</th>
+</tr>
+</thead>
+<tr>
+<th>Versión</th>
+<td colspan="1">1.0 (06/12/2020)
+</td>
+</tr>
+<tr>
+<th>Descripción</th>
+<td colspan="1">
+<textarea id="NFR-0002-description-md" class="markdown">El sistema deberá Es una necesidad primordial que el sistema tenga los tiempos de cargas mínimos, para dar un servicio de calidad tanto a clientes como empleados.</textarea>
+<div id="NFR-0002-description-html" class=""></div>
+<script>generate_markdown("NFR-0002-description");</script>
+</td>
+</tr>
+<tr>
+<th>Comentarios</th>
+<td colspan="1">
+<textarea id="NFR-0002-comments-md" class="markdown">Ninguno</textarea>
+<div id="NFR-0002-comments-html" class="remus_comments"></div>
+<script>generate_markdown("NFR-0002-comments");</script>
+</td>
+</tr>
+</table>
+</div>
 <h3 id="SEC-0043" class="section">6.4.5 Requisitos de portabilidad del sistema</h3>
 <h3 id="SEC-0044" class="section">6.4.6 Requisitos de seguridad del sistema</h3>
+<div id="NFR-0001">
+<table class="nonfunctional_requirement remus_table">
+<thead>
+<tr>
+<th>
+<img src="https://cdn.jsdelivr.net/gh/amador-duran-toro/remus/assets/images/icons/nonFunctionalRequirement.png" /> NFR-0001</th>
+<th class="name_column" colspan="1">RNF-001 Seguridad de clientes y empleados</th>
+</tr>
+</thead>
+<tr>
+<th>Versión</th>
+<td colspan="1">1.0 (06/12/2020)
+</td>
+</tr>
+<tr>
+<th>Descripción</th>
+<td colspan="1">
+<textarea id="NFR-0001-description-md" class="markdown">El sistema deberá El sistema tendrá que tener la máxima seguridad disponible, ya que se estarán guardando datos bancarios de nuestros empleados y clientes.</textarea>
+<div id="NFR-0001-description-html" class=""></div>
+<script>generate_markdown("NFR-0001-description");</script>
+</td>
+</tr>
+<tr>
+<th>Comentarios</th>
+<td colspan="1">
+<textarea id="NFR-0001-comments-md" class="markdown">Ninguno</textarea>
+<div id="NFR-0001-comments-html" class="remus_comments"></div>
+<script>generate_markdown("NFR-0001-comments");</script>
+</td>
+</tr>
+</table>
+</div>
 <h3 id="SEC-0045" class="section">6.4.7 Otros requisitos no funcionales del sistema</h3>
 <h2 id="SEC-0036" class="section">6.5 Restricciones técnicas del sistema</h2>
+<div id="CRQ-0015">
+<table class="constraint_requirement remus_table">
+<thead>
+<tr>
+<th>
+<img src="https://cdn.jsdelivr.net/gh/amador-duran-toro/remus/assets/images/icons/constraintRequirement.png" /> CRQ-0015</th>
+<th class="name_column" colspan="1">RTS-001 Sistemas en plataformas Web</th>
+</tr>
+</thead>
+<tr>
+<th>Versión</th>
+<td colspan="1">1.0 (06/12/2020)
+</td>
+</tr>
+<tr>
+<th>Descripción</th>
+<td colspan="1">
+<textarea id="CRQ-0015-description-md" class="markdown">El sistema deberá respetar la siguiente regla de negocio o restricción: Es necesario que el sistema sea compatible con los navegadores, Mozilla Firefox v40, Google Chrome v40 e Internet Explorer v11..</textarea>
+<div id="CRQ-0015-description-html" class=""></div>
+<script>generate_markdown("CRQ-0015-description");</script>
+</td>
+</tr>
+<tr>
+<th>Comentarios</th>
+<td colspan="1">
+<textarea id="CRQ-0015-comments-md" class="markdown">Ninguno</textarea>
+<div id="CRQ-0015-comments-html" class="remus_comments"></div>
+<script>generate_markdown("CRQ-0015-comments");</script>
+</td>
+</tr>
+</table>
+</div>
+<div id="CRQ-0016">
+<table class="constraint_requirement remus_table">
+<thead>
+<tr>
+<th>
+<img src="https://cdn.jsdelivr.net/gh/amador-duran-toro/remus/assets/images/icons/constraintRequirement.png" /> CRQ-0016</th>
+<th class="name_column" colspan="1">RTS-002 Sistemas en plataformas móviles</th>
+</tr>
+</thead>
+<tr>
+<th>Versión</th>
+<td colspan="1">1.0 (06/12/2020)
+</td>
+</tr>
+<tr>
+<th>Descripción</th>
+<td colspan="1">
+<textarea id="CRQ-0016-description-md" class="markdown">El sistema deberá respetar la siguiente regla de negocio o restricción: Es necesario que el sistema sea compatible para las versiones Android e iOS de las especificadas en CRQ-0015.</textarea>
+<div id="CRQ-0016-description-html" class=""></div>
+<script>generate_markdown("CRQ-0016-description");</script>
+</td>
+</tr>
+<tr>
+<th>Comentarios</th>
+<td colspan="1">
+<textarea id="CRQ-0016-comments-md" class="markdown">Ninguno</textarea>
+<div id="CRQ-0016-comments-html" class="remus_comments"></div>
+<script>generate_markdown("CRQ-0016-comments");</script>
+</td>
+</tr>
+</table>
+</div>
 <h2 id="SEC-0037" class="section">6.6 Requisitos de integración del sistema</h2>
+<div id="PRG-0082">
+<textarea id="PRG-0082-text-md" class="markdown">El sistema deberá de integrar (*nota para mi mismo -&gt; mirar u en uml)</textarea>
+<div id="PRG-0082-text-html" class=""></div>
+<script>generate_markdown("PRG-0082-text");</script>
+</div>
 <h2 id="SEC-0038" class="section">6.7 Información sobre trazabilidad</h2>
 <h1 id="SEC-0009" class="section">A Acta de reuniones</h1>
 <div id="MET-0001">
