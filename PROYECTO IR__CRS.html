@@ -13,6 +13,7 @@
             // converter.setOption( "key", "value" );
 
             var converter = new showdown.Converter();
+            converter.setOption( "parseImgDimensions", true );
 
             // function to be used in XLST templates
             // if inline=true, all CRLF tags are replaced
@@ -1847,7 +1848,7 @@
 <tr>
 <th>Descripción</th>
 <td colspan="1">
-<textarea id="ACT-0017-actorRole-md" class="markdown">Este actor representa El cliente no habitual, será aquel que principalmente hará <a href="#GLO-0047" class="rem_ref">pedidos</a> en la web y que cumpla el perfil de "clientes paritculares". Sus <a href="#GLO-0047" class="rem_ref">pedidos</a> no suelen ser habituales (<a href="#GLO-0022" class="rem_ref">losas</a>, <a href="#GLO-0021" class="rem_ref">losetas</a>...).</textarea>
+<textarea id="ACT-0017-actorRole-md" class="markdown">Este actor representa El cliente no habitual, será aquel que principalmente hará <a href="#GLO-0047" class="rem_ref">pedidos</a> en la web y que cumpla el perfil de "clientes particulares". Sus <a href="#GLO-0047" class="rem_ref">pedidos</a> no suelen ser habituales (<a href="#GLO-0022" class="rem_ref">losas</a>, <a href="#GLO-0021" class="rem_ref">losetas</a>...).</textarea>
 <div id="ACT-0017-actorRole-html" class=""></div>
 <script>generate_markdown("ACT-0017-actorRole");</script>
 </td>
@@ -2061,7 +2062,7 @@
 <tr id="STP-0001">
 <th class="step_number">1</th>
 <td colspan="1">
-<textarea id="STP-0001--md" class="markdown"> El actor <a href="#ACT-0004">Cliente (ACT-0004)</a> añade <a href="#GLO-0046" class="rem_ref">productos</a> en su carro de la compra. </textarea>
+<textarea id="STP-0001--md" class="markdown"> El actor <a href="#ACT-0017">Cliente no habitual (ACT-0017)</a> añade <a href="#GLO-0046" class="rem_ref">productos</a> en su carro de la compra. </textarea>
 <div id="STP-0001--html" class=""></div>
 <script>generate_markdown("STP-0001-");</script>
 </td>
@@ -2069,7 +2070,7 @@
 <tr id="STP-0072">
 <th class="step_number">2</th>
 <td colspan="1">
-<textarea id="STP-0072--md" class="markdown"> El actor <a href="#ACT-0004">Cliente (ACT-0004)</a> pulsa sobre el botón pagar. </textarea>
+<textarea id="STP-0072--md" class="markdown"> El actor <a href="#ACT-0017">Cliente no habitual (ACT-0017)</a> pulsa sobre el botón pagar. </textarea>
 <div id="STP-0072--html" class=""></div>
 <script>generate_markdown("STP-0072-");</script>
 </td>
@@ -2077,7 +2078,7 @@
 <tr id="STP-0074">
 <th class="step_number">3</th>
 <td colspan="1">
-<textarea id="STP-0074--md" class="markdown"> El actor <a href="#ACT-0004">Cliente (ACT-0004)</a> introduce su tarjeta de crédito. </textarea>
+<textarea id="STP-0074--md" class="markdown"> El actor <a href="#ACT-0017">Cliente no habitual (ACT-0017)</a> introduce su tarjeta de crédito. </textarea>
 <div id="STP-0074--html" class=""></div>
 <script>generate_markdown("STP-0074-");</script>
 </td>
@@ -2166,7 +2167,7 @@
 <tr id="STP-0004">
 <th class="step_number">1</th>
 <td colspan="1">
-<textarea id="STP-0004--md" class="markdown"> El actor <a href="#ACT-0001">Propietario (ACT-0001)</a> solicita a sus provedores los <a href="#GLO-0046" class="rem_ref">productos</a> necesitados. </textarea>
+<textarea id="STP-0004--md" class="markdown"> El actor <a href="#ACT-0020">Propietario (ACT-0020)</a> solicita a sus provedores los <a href="#GLO-0046" class="rem_ref">productos</a> necesitados. </textarea>
 <div id="STP-0004--html" class=""></div>
 <script>generate_markdown("STP-0004-");</script>
 </td>
@@ -2247,7 +2248,7 @@
 <tr id="STP-0005">
 <th class="step_number">1</th>
 <td colspan="1">
-<textarea id="STP-0005--md" class="markdown"> El actor <a href="#ACT-0001">Propietario (ACT-0001)</a> accede al apartado "proveedores". </textarea>
+<textarea id="STP-0005--md" class="markdown"> El actor <a href="#ACT-0020">Propietario (ACT-0020)</a> accede al apartado "proveedores". </textarea>
 <div id="STP-0005--html" class=""></div>
 <script>generate_markdown("STP-0005-");</script>
 </td>
@@ -2391,7 +2392,7 @@
 <tr id="STP-0007">
 <th class="step_number">1</th>
 <td colspan="1">
-<textarea id="STP-0007--md" class="markdown"> El actor <a href="#ACT-0001">Propietario (ACT-0001)</a> accede al apartado "empleados". </textarea>
+<textarea id="STP-0007--md" class="markdown"> El actor <a href="#ACT-0020">Propietario (ACT-0020)</a> accede al apartado "empleados". </textarea>
 <div id="STP-0007--html" class=""></div>
 <script>generate_markdown("STP-0007-");</script>
 </td>
@@ -2473,7 +2474,7 @@
 <tr id="STP-0008">
 <th class="step_number">1</th>
 <td colspan="1">
-<textarea id="STP-0008--md" class="markdown"> El actor <a href="#ACT-0004">Cliente (ACT-0004)</a> accede al apartado de <a href="#GLO-0016" class="rem_ref">cubas</a> y selecciona un periodo para alquilar una <a href="#GLO-0016" class="rem_ref">cuba</a>. </textarea>
+<textarea id="STP-0008--md" class="markdown"> El actor <a href="#ACT-0016">Cliente habitual (ACT-0016)</a> accede al apartado de <a href="#GLO-0016" class="rem_ref">cubas</a> y selecciona un periodo para alquilar una <a href="#GLO-0016" class="rem_ref">cuba</a>. </textarea>
 <div id="STP-0008--html" class=""></div>
 <script>generate_markdown("STP-0008-");</script>
 </td>
@@ -2593,6 +2594,292 @@
 <textarea id="UC-0007-comments-md" class="markdown">Ninguno</textarea>
 <div id="UC-0007-comments-html" class="remus_comments"></div>
 <script>generate_markdown("UC-0007-comments");</script>
+</td>
+</tr>
+</table>
+</div>
+<div id="UC-0008">
+<table class="use_case remus_table">
+<thead>
+<tr>
+<th>
+<img src="https://cdn.jsdelivr.net/gh/amador-duran-toro/remus/assets/images/icons/useCase.png" /> UC-0008</th>
+<th class="name_column" colspan="2">Añadir proveedor </th>
+</tr>
+</thead>
+<tr>
+<th>Versión</th>
+<td colspan="2">1.0 (06/12/2020)
+</td>
+</tr>
+<tr>
+<th>Descripción</th>
+<td colspan="2">
+<textarea id="UC-0008--md" class="markdown">El sistema deberá comportarse tal como se describe en el siguiente caso de uso cuando <span class="triggering_event">el propietario desea añadir un nuevo <a href="#GLO-0048" class="rem_ref">proveedor</a> al sistema</span>. </textarea>
+<div id="UC-0008--html" class=""></div>
+<script>generate_markdown("UC-0008-");</script>
+</td>
+</tr>
+<tr>
+<th>Precondición</th>
+<td colspan="2">
+<textarea id="UC-0008-precondition-md" class="markdown">El propietario debe haber iniciado sesión correctamente y el <a href="#GLO-0048" class="rem_ref">proveedor</a> a añadir no está en la base de datos</textarea>
+<div id="UC-0008-precondition-html" class=""></div>
+<script>generate_markdown("UC-0008-precondition");</script>
+</td>
+</tr>
+<tr>
+<th rowspan="5">Secuencia normal</th>
+<th class="step_number_column">Paso</th>
+<th class="step_action_column">Acción</th>
+</tr>
+<tr id="STP-0082">
+<th class="step_number">1</th>
+<td colspan="1">
+<textarea id="STP-0082--md" class="markdown"> El actor <a href="#ACT-0020">Propietario (ACT-0020)</a> accede a la sección "Proveedores". </textarea>
+<div id="STP-0082--html" class=""></div>
+<script>generate_markdown("STP-0082-");</script>
+</td>
+</tr>
+<tr id="STP-0083">
+<th class="step_number">2</th>
+<td colspan="1">
+<textarea id="STP-0083--md" class="markdown"> El actor <a href="#ACT-0020">Propietario (ACT-0020)</a> clica sobre el botón "Añadir nuevo proveedor". </textarea>
+<div id="STP-0083--html" class=""></div>
+<script>generate_markdown("STP-0083-");</script>
+</td>
+</tr>
+<tr id="STP-0084">
+<th class="step_number">3</th>
+<td colspan="1">
+<textarea id="STP-0084--md" class="markdown"> El actor <a href="#ACT-0020">Propietario (ACT-0020)</a> introduce los datos del <a href="#GLO-0048" class="rem_ref">proveedor</a>. </textarea>
+<div id="STP-0084--html" class=""></div>
+<script>generate_markdown("STP-0084-");</script>
+</td>
+</tr>
+<tr id="STP-0085">
+<th class="step_number">4</th>
+<td colspan="1">
+<textarea id="STP-0085--md" class="markdown">Si el propietario ha introducido los datos correctamente,  el sistema guardará los datos en la base de datos y notificará que el <a href="#GLO-0048" class="rem_ref">proveedor</a> se ha guardado correctamente. </textarea>
+<div id="STP-0085--html" class=""></div>
+<script>generate_markdown("STP-0085-");</script>
+</td>
+</tr>
+<tr>
+<th>Postcondición</th>
+<td colspan="2">
+<textarea id="UC-0008-postcondition-md" class="markdown">El <a href="#GLO-0048" class="rem_ref">proveedor</a> se añadido correctamente, por lo que la base de datos se actualizará</textarea>
+<div id="UC-0008-postcondition-html" class=""></div>
+<script>generate_markdown("UC-0008-postcondition");</script>
+</td>
+</tr>
+<tr>
+<th rowspan="2">Excepciones</th>
+<th class="step_number_column">Paso</th>
+<th class="exception_action_column">Acción</th>
+</tr>
+<tr id="STX-0016">
+<th class="step_number">4</th>
+<td colspan="1">
+<textarea id="STX-0016--md" class="markdown">Si el propietario no ha introducido los datos correctamente,  el sistema hará saltar una excepción indicando en que campo/s debe corregir el/los dato/s, a continuación este caso de uso <span class="exception_termination">continúa</span>. </textarea>
+<div id="STX-0016--html" class=""></div>
+<script>generate_markdown("STX-0016-");</script>
+</td>
+</tr>
+<tr>
+<th>Comentarios</th>
+<td colspan="2">
+<textarea id="UC-0008-comments-md" class="markdown">Ninguno</textarea>
+<div id="UC-0008-comments-html" class="remus_comments"></div>
+<script>generate_markdown("UC-0008-comments");</script>
+</td>
+</tr>
+</table>
+</div>
+<div id="UC-0009">
+<table class="use_case remus_table">
+<thead>
+<tr>
+<th>
+<img src="https://cdn.jsdelivr.net/gh/amador-duran-toro/remus/assets/images/icons/useCase.png" /> UC-0009</th>
+<th class="name_column" colspan="2">Añadir empleado </th>
+</tr>
+</thead>
+<tr>
+<th>Versión</th>
+<td colspan="2">1.0 (06/12/2020)
+</td>
+</tr>
+<tr>
+<th>Descripción</th>
+<td colspan="2">
+<textarea id="UC-0009--md" class="markdown">El sistema deberá comportarse tal como se describe en el siguiente caso de uso cuando <span class="triggering_event">el propietario desea añadir un nuevo empleado al sistema</span>. </textarea>
+<div id="UC-0009--html" class=""></div>
+<script>generate_markdown("UC-0009-");</script>
+</td>
+</tr>
+<tr>
+<th>Precondición</th>
+<td colspan="2">
+<textarea id="UC-0009-precondition-md" class="markdown">El propietario debe haber iniciado sesión correctamente y el empleado a añadir no está en la base de datos</textarea>
+<div id="UC-0009-precondition-html" class=""></div>
+<script>generate_markdown("UC-0009-precondition");</script>
+</td>
+</tr>
+<tr>
+<th rowspan="5">Secuencia normal</th>
+<th class="step_number_column">Paso</th>
+<th class="step_action_column">Acción</th>
+</tr>
+<tr id="STP-0086">
+<th class="step_number">1</th>
+<td colspan="1">
+<textarea id="STP-0086--md" class="markdown"> El actor <a href="#ACT-0020">Propietario (ACT-0020)</a> accede a la sección "Empleados". </textarea>
+<div id="STP-0086--html" class=""></div>
+<script>generate_markdown("STP-0086-");</script>
+</td>
+</tr>
+<tr id="STP-0087">
+<th class="step_number">2</th>
+<td colspan="1">
+<textarea id="STP-0087--md" class="markdown"> El actor <a href="#ACT-0020">Propietario (ACT-0020)</a> clica sobre el botón "Añadir nuevo empleado". </textarea>
+<div id="STP-0087--html" class=""></div>
+<script>generate_markdown("STP-0087-");</script>
+</td>
+</tr>
+<tr id="STP-0088">
+<th class="step_number">3</th>
+<td colspan="1">
+<textarea id="STP-0088--md" class="markdown"> El actor <a href="#ACT-0020">Propietario (ACT-0020)</a> introduce los datos del empleado. </textarea>
+<div id="STP-0088--html" class=""></div>
+<script>generate_markdown("STP-0088-");</script>
+</td>
+</tr>
+<tr id="STP-0089">
+<th class="step_number">4</th>
+<td colspan="1">
+<textarea id="STP-0089--md" class="markdown">Si el propietario ha introducido los datos correctamente,  el sistema guardará los datos en la base de datos y notificará que el empleado se ha guardado correctamente. </textarea>
+<div id="STP-0089--html" class=""></div>
+<script>generate_markdown("STP-0089-");</script>
+</td>
+</tr>
+<tr>
+<th>Postcondición</th>
+<td colspan="2">
+<textarea id="UC-0009-postcondition-md" class="markdown">El empleado se añadido correctamente, por lo que la base de datos se actualizará</textarea>
+<div id="UC-0009-postcondition-html" class=""></div>
+<script>generate_markdown("UC-0009-postcondition");</script>
+</td>
+</tr>
+<tr>
+<th rowspan="2">Excepciones</th>
+<th class="step_number_column">Paso</th>
+<th class="exception_action_column">Acción</th>
+</tr>
+<tr id="STX-0017">
+<th class="step_number">4</th>
+<td colspan="1">
+<textarea id="STX-0017--md" class="markdown">Si el propietario no ha introducido los datos correctamente,  el sistema hará saltar una excepción indicando en que campo/s debe corregir el/los dato/s, a continuación este caso de uso <span class="exception_termination">continúa</span>. </textarea>
+<div id="STX-0017--html" class=""></div>
+<script>generate_markdown("STX-0017-");</script>
+</td>
+</tr>
+<tr>
+<th>Comentarios</th>
+<td colspan="2">
+<textarea id="UC-0009-comments-md" class="markdown">Ninguno</textarea>
+<div id="UC-0009-comments-html" class="remus_comments"></div>
+<script>generate_markdown("UC-0009-comments");</script>
+</td>
+</tr>
+</table>
+</div>
+<div id="UC-0010">
+<table class="use_case remus_table">
+<thead>
+<tr>
+<th>
+<img src="https://cdn.jsdelivr.net/gh/amador-duran-toro/remus/assets/images/icons/useCase.png" /> UC-0010</th>
+<th class="name_column" colspan="2">Registro de un nuevo cliente </th>
+</tr>
+</thead>
+<tr>
+<th>Versión</th>
+<td colspan="2">1.0 (06/12/2020)
+</td>
+</tr>
+<tr>
+<th>Descripción</th>
+<td colspan="2">
+<textarea id="UC-0010--md" class="markdown">El sistema deberá comportarse tal como se describe en el siguiente caso de uso cuando <span class="triggering_event">un cliente quiere crear una cuenta en la web</span>. </textarea>
+<div id="UC-0010--html" class=""></div>
+<script>generate_markdown("UC-0010-");</script>
+</td>
+</tr>
+<tr>
+<th>Precondición</th>
+<td colspan="2">
+<textarea id="UC-0010-precondition-md" class="markdown">El cliente accede a la web</textarea>
+<div id="UC-0010-precondition-html" class=""></div>
+<script>generate_markdown("UC-0010-precondition");</script>
+</td>
+</tr>
+<tr>
+<th rowspan="4">Secuencia normal</th>
+<th class="step_number_column">Paso</th>
+<th class="step_action_column">Acción</th>
+</tr>
+<tr id="STP-0090">
+<th class="step_number">1</th>
+<td colspan="1">
+<textarea id="STP-0090--md" class="markdown"> El actor <a href="#ACT-0017">Cliente no habitual (ACT-0017)</a> pulsa sobre el botón "Registrarse". </textarea>
+<div id="STP-0090--html" class=""></div>
+<script>generate_markdown("STP-0090-");</script>
+</td>
+</tr>
+<tr id="STP-0091">
+<th class="step_number">2</th>
+<td colspan="1">
+<textarea id="STP-0091--md" class="markdown"> El actor <a href="#ACT-0017">Cliente no habitual (ACT-0017)</a> añade sus datos. </textarea>
+<div id="STP-0091--html" class=""></div>
+<script>generate_markdown("STP-0091-");</script>
+</td>
+</tr>
+<tr id="STP-0092">
+<th class="step_number">3</th>
+<td colspan="1">
+<textarea id="STP-0092--md" class="markdown">Si el cliente ha añadido sus datos correctamente,  el sistema añadirá los datos del cliente a la base de datos y redigirá al cliente a la página principal. </textarea>
+<div id="STP-0092--html" class=""></div>
+<script>generate_markdown("STP-0092-");</script>
+</td>
+</tr>
+<tr>
+<th>Postcondición</th>
+<td colspan="2">
+<textarea id="UC-0010-postcondition-md" class="markdown">El cliente puede acceder a las funcionalidades del sistema creados para los clientes</textarea>
+<div id="UC-0010-postcondition-html" class=""></div>
+<script>generate_markdown("UC-0010-postcondition");</script>
+</td>
+</tr>
+<tr>
+<th rowspan="2">Excepciones</th>
+<th class="step_number_column">Paso</th>
+<th class="exception_action_column">Acción</th>
+</tr>
+<tr id="STX-0018">
+<th class="step_number">3</th>
+<td colspan="1">
+<textarea id="STX-0018--md" class="markdown">Si el cliente no ha introducido sus datos correctamente,  el sistema hará saltar una excepción indicando el/los campo/s donde debe introducir correctamente el/los dato/s, a continuación este caso de uso <span class="exception_termination">continúa</span>. </textarea>
+<div id="STX-0018--html" class=""></div>
+<script>generate_markdown("STX-0018-");</script>
+</td>
+</tr>
+<tr>
+<th>Comentarios</th>
+<td colspan="2">
+<textarea id="UC-0010-comments-md" class="markdown">Ninguno</textarea>
+<div id="UC-0010-comments-html" class="remus_comments"></div>
+<script>generate_markdown("UC-0010-comments");</script>
 </td>
 </tr>
 </table>
@@ -3935,7 +4222,7 @@
 <tr>
 <th>Descripción</th>
 <td colspan="1">
-<textarea id="NFR-0003-description-md" class="markdown">El sistema deberá Es necesario que un usuario pueda llegar a la información que busca en menos de 5 clicks.</textarea>
+<textarea id="NFR-0003-description-md" class="markdown">El sistema deberá ser capaz de que un usuario pueda llegar a la información que busca en menos de 5 clicks.</textarea>
 <div id="NFR-0003-description-html" class=""></div>
 <script>generate_markdown("NFR-0003-description");</script>
 </td>
@@ -3969,7 +4256,7 @@
 <tr>
 <th>Descripción</th>
 <td colspan="1">
-<textarea id="NFR-0002-description-md" class="markdown">El sistema deberá Es una necesidad primordial que el sistema tenga los tiempos de cargas mínimos, para dar un servicio de calidad tanto a clientes como empleados.</textarea>
+<textarea id="NFR-0002-description-md" class="markdown">El sistema deberá tener los tiempos de cargas mínimos, para dar un servicio de calidad tanto a clientes como empleados.</textarea>
 <div id="NFR-0002-description-html" class=""></div>
 <script>generate_markdown("NFR-0002-description");</script>
 </td>
@@ -4003,7 +4290,7 @@
 <tr>
 <th>Descripción</th>
 <td colspan="1">
-<textarea id="NFR-0001-description-md" class="markdown">El sistema deberá El sistema tendrá que tener la máxima seguridad disponible, ya que se estarán guardando datos bancarios de nuestros empleados y clientes.</textarea>
+<textarea id="NFR-0001-description-md" class="markdown">El sistema deberá  tener la máxima seguridad disponible, ya que se estarán guardando datos bancarios de nuestros empleados y clientes.</textarea>
 <div id="NFR-0001-description-html" class=""></div>
 <script>generate_markdown("NFR-0001-description");</script>
 </td>
