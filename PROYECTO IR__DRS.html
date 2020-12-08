@@ -13,6 +13,7 @@
             // converter.setOption( "key", "value" );
 
             var converter = new showdown.Converter();
+            converter.setOption( "parseImgDimensions", true );
 
             // function to be used in XLST templates
             // if inline=true, all CRLF tags are replaced
@@ -520,6 +521,11 @@
 </p>
 </div>
 <h2 id="SEC-0077" class="section">2.2 Descripción de la arquitectura del sistema</h2>
+<div id="PRG-0084" class="info">
+<textarea id="PRG-0084-text-md" class="markdown">En nuestro sistema, el usuario accede a la capa de presentación para poder manipular el sistema, esto se consigue gracias a que la capa de presentación está conectada con la capa de lógica de negocio que es la que se encarga de implementar las operaciones. A su vez, la capa de negocio se comunica con la capa de persistencia que es la encargada de leer, guardar y eliminar los datos de la base de datos.</textarea>
+<div id="PRG-0084-text-html" class=""></div>
+<script>generate_markdown("PRG-0084-text");</script>
+</div>
 <h1 id="SEC-0059" class="section">3 Modelo de clases del sistema</h1>
 <h2 id="SEC-0073" class="section">3.1 Diagramas de clases del sistema</h2>
 <div id="GRF-0010" class="figure">
