@@ -31,13 +31,12 @@ Pareja Antonio V JK
 
 
 Comodín de parejas Felipe
-	Correcciones de sesiones + formato
+	Correcciones y redacciones de sesiones + formato
 	Completar el 6.2.2
 	Completar trabajo para los procesos a implementar
 	Completar el 5
 	Ayudar parejas
 	Meter en uml aspectos de usuarios
-
 	Ayudar y añadir BPMN junto a las parejas
 	Cada persona individual hace los diagramas de casos de uso correspondientes a su interfaz de usuario
 	Elicitación de requisitos no funcionales del sistema
