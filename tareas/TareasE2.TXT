@@ -17,16 +17,16 @@ Pareja Ángel Antonio JSS
 								
 Pareja Antonio V JK
 	Crear BPMNs de procesos
-	Describir 4 procesos de negocios actuales (el máximo que se pueda)
+	(HECHO)Describir 4 procesos de negocios actuales (el máximo que se pueda)
 	5. Compartido con la otra pareja (extraer la info del 4.2.2)
 	Completar trabajo para los procesos actuales (a dividir con la otra pareja)
 	6.2.3 con la otra pareja
 
 	BPMN de procesos actuales
 	Cada persona individual hace los diagramas de casos de uso correspondientes a su interfaz de usuario
-	Descripción de las clases del sistema
+	(HECHO)Descripción de las clases del sistema
 	Diagrama de estado de pedido 
- 	En requisitos de conducta (Se pone lo que el sistema queremos que haga, generar el costeTotal... son referentes a los informes que el sistema debe de hacer)
+ 	(HECHO)En requisitos de conducta (Se pone lo que el sistema queremos que haga, generar el costeTotal... son referentes a los informes que el sistema debe de hacer)
 
 
 

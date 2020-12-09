@@ -567,6 +567,1250 @@
 </p>
 </div>
 <h2 id="SEC-0074" class="section">3.2 Descripción de las clases del sistema</h2>
+<div id="VAL-0001" class="object_type">
+<table class="object_type remus_table">
+<thead>
+<tr>
+<th>
+<img src="https://cdn.jsdelivr.net/gh/amador-duran-toro/remus/assets/images/icons/userDefinedValueType.png" /> VAL-0001</th>
+<th class="name_column" colspan="1">TipoEmpleado</th>
+</tr>
+</thead>
+<tr>
+<th>Versión</th>
+<td colspan="1">1.0 (09/12/2020)
+</td>
+</tr>
+<tr>
+<td colspan="2">
+<div class="code">
+<div>
+<span class="code_comment">/**</span>
+<textarea id="VAL-0001-description-md" class="markdown">representa los diferentes cargos de los empleados</textarea>
+<div id="VAL-0001-description-html" class="code_comment code_description"></div>
+<script>generate_markdown("VAL-0001-description");</script>
+<span class="code_comment">*/</span>
+</div>
+<span class="keyword">value type </span>
+<span class="class_name">TipoEmpleado</span>
+<br />
+            {<br />
+<textarea id="VAL-0001-definition-md" class="markdown">DEPENDIENTE, EMPLEADOALMACEN, ENCARGADOALMACEN, TRANSPORTISTA</textarea>
+<div id="VAL-0001-definition-html" class="code_ocl"></div>
+<script>generate_markdown("VAL-0001-definition");</script>
+            }
+        </div>
+</td>
+</tr>
+<tr>
+<th>Comentarios</th>
+<td colspan="1">
+<textarea id="VAL-0001-comments-md" class="markdown">Ninguno</textarea>
+<div id="VAL-0001-comments-html" class="remus_comments"></div>
+<script>generate_markdown("VAL-0001-comments");</script>
+</td>
+</tr>
+</table>
+</div>
+<div id="VAL-0002" class="object_type">
+<table class="object_type remus_table">
+<thead>
+<tr>
+<th>
+<img src="https://cdn.jsdelivr.net/gh/amador-duran-toro/remus/assets/images/icons/userDefinedValueType.png" /> VAL-0002</th>
+<th class="name_column" colspan="1">Boolean</th>
+</tr>
+</thead>
+<tr>
+<th>Versión</th>
+<td colspan="1">1.0 (09/12/2020)
+</td>
+</tr>
+<tr>
+<td colspan="2">
+<div class="code">
+<div>
+<span class="code_comment">/**</span>
+<textarea id="VAL-0002-description-md" class="markdown">el tipo Boolean, especificado aquí ya que no se baraja como tipo ya implementado</textarea>
+<div id="VAL-0002-description-html" class="code_comment code_description"></div>
+<script>generate_markdown("VAL-0002-description");</script>
+<span class="code_comment">*/</span>
+</div>
+<span class="keyword">value type </span>
+<span class="class_name">Boolean</span>
+<br />
+            {<br />
+<textarea id="VAL-0002-definition-md" class="markdown">TRUE, FALSE</textarea>
+<div id="VAL-0002-definition-html" class="code_ocl"></div>
+<script>generate_markdown("VAL-0002-definition");</script>
+            }
+        </div>
+</td>
+</tr>
+<tr>
+<th>Comentarios</th>
+<td colspan="1">
+<textarea id="VAL-0002-comments-md" class="markdown">Ninguno</textarea>
+<div id="VAL-0002-comments-html" class="remus_comments"></div>
+<script>generate_markdown("VAL-0002-comments");</script>
+</td>
+</tr>
+</table>
+</div>
+<div id="VAL-0003" class="object_type">
+<table class="object_type remus_table">
+<thead>
+<tr>
+<th>
+<img src="https://cdn.jsdelivr.net/gh/amador-duran-toro/remus/assets/images/icons/userDefinedValueType.png" /> VAL-0003</th>
+<th class="name_column" colspan="1">TipoPago</th>
+</tr>
+</thead>
+<tr>
+<th>Versión</th>
+<td colspan="1">1.0 (09/12/2020)
+</td>
+</tr>
+<tr>
+<td colspan="2">
+<div class="code">
+<div>
+<span class="code_comment">/**</span>
+<textarea id="VAL-0003-description-md" class="markdown">representa el método de pago elegido por el cliente al pagar una <a href="#GLO-0039" class="rem_ref">factura</a>
+</textarea>
+<div id="VAL-0003-description-html" class="code_comment code_description"></div>
+<script>generate_markdown("VAL-0003-description");</script>
+<span class="code_comment">*/</span>
+</div>
+<span class="keyword">value type </span>
+<span class="class_name">TipoPago</span>
+<br />
+            {<br />
+<textarea id="VAL-0003-definition-md" class="markdown">TARJETACREDITO, EFECTIVO</textarea>
+<div id="VAL-0003-definition-html" class="code_ocl"></div>
+<script>generate_markdown("VAL-0003-definition");</script>
+            }
+        </div>
+</td>
+</tr>
+<tr>
+<th>Comentarios</th>
+<td colspan="1">
+<textarea id="VAL-0003-comments-md" class="markdown">Ninguno</textarea>
+<div id="VAL-0003-comments-html" class="remus_comments"></div>
+<script>generate_markdown("VAL-0003-comments");</script>
+</td>
+</tr>
+</table>
+</div>
+<div id="VAL-0004" class="object_type">
+<table class="object_type remus_table">
+<thead>
+<tr>
+<th>
+<img src="https://cdn.jsdelivr.net/gh/amador-duran-toro/remus/assets/images/icons/userDefinedValueType.png" /> VAL-0004</th>
+<th class="name_column" colspan="1">UnidadProducto</th>
+</tr>
+</thead>
+<tr>
+<th>Versión</th>
+<td colspan="1">1.0 (09/12/2020)
+</td>
+</tr>
+<tr>
+<td colspan="2">
+<div class="code">
+<div>
+<span class="code_comment">/**</span>
+<textarea id="VAL-0004-description-md" class="markdown">representa de qué manera se cuantifican los <a href="#GLO-0046" class="rem_ref">productos</a>
+</textarea>
+<div id="VAL-0004-description-html" class="code_comment code_description"></div>
+<script>generate_markdown("VAL-0004-description");</script>
+<span class="code_comment">*/</span>
+</div>
+<span class="keyword">value type </span>
+<span class="class_name">UnidadProducto</span>
+<br />
+            {<br />
+<textarea id="VAL-0004-definition-md" class="markdown">UNIDADES, M3, SACOS</textarea>
+<div id="VAL-0004-definition-html" class="code_ocl"></div>
+<script>generate_markdown("VAL-0004-definition");</script>
+            }
+        </div>
+</td>
+</tr>
+<tr>
+<th>Comentarios</th>
+<td colspan="1">
+<textarea id="VAL-0004-comments-md" class="markdown">Ninguno</textarea>
+<div id="VAL-0004-comments-html" class="remus_comments"></div>
+<script>generate_markdown("VAL-0004-comments");</script>
+</td>
+</tr>
+</table>
+</div>
+<div id="VAL-0005" class="object_type">
+<table class="object_type remus_table">
+<thead>
+<tr>
+<th>
+<img src="https://cdn.jsdelivr.net/gh/amador-duran-toro/remus/assets/images/icons/userDefinedValueType.png" /> VAL-0005</th>
+<th class="name_column" colspan="1">Estado</th>
+</tr>
+</thead>
+<tr>
+<th>Versión</th>
+<td colspan="1">1.0 (09/12/2020)
+</td>
+</tr>
+<tr>
+<td colspan="2">
+<div class="code">
+<div>
+<span class="code_comment">/**</span>
+<textarea id="VAL-0005-description-md" class="markdown">representa el estado en el que se encuentra una <a href="#GLO-0016" class="rem_ref">cuba</a>
+</textarea>
+<div id="VAL-0005-description-html" class="code_comment code_description"></div>
+<script>generate_markdown("VAL-0005-description");</script>
+<span class="code_comment">*/</span>
+</div>
+<span class="keyword">value type </span>
+<span class="class_name">Estado</span>
+<br />
+            {<br />
+<textarea id="VAL-0005-definition-md" class="markdown">BUENESTADO, MALESTADO</textarea>
+<div id="VAL-0005-definition-html" class="code_ocl"></div>
+<script>generate_markdown("VAL-0005-definition");</script>
+            }
+        </div>
+</td>
+</tr>
+<tr>
+<th>Comentarios</th>
+<td colspan="1">
+<textarea id="VAL-0005-comments-md" class="markdown">Ninguno</textarea>
+<div id="VAL-0005-comments-html" class="remus_comments"></div>
+<script>generate_markdown("VAL-0005-comments");</script>
+</td>
+</tr>
+</table>
+</div>
+<div id="VAL-0006" class="object_type">
+<table class="object_type remus_table">
+<thead>
+<tr>
+<th>
+<img src="https://cdn.jsdelivr.net/gh/amador-duran-toro/remus/assets/images/icons/userDefinedValueType.png" /> VAL-0006</th>
+<th class="name_column" colspan="1">Disponibilidad</th>
+</tr>
+</thead>
+<tr>
+<th>Versión</th>
+<td colspan="1">1.0 (09/12/2020)
+</td>
+</tr>
+<tr>
+<td colspan="2">
+<div class="code">
+<div>
+<span class="code_comment">/**</span>
+<textarea id="VAL-0006-description-md" class="markdown">representa la disponibilidad de un camión o <a href="#GLO-0016" class="rem_ref">cuba</a> para su uso</textarea>
+<div id="VAL-0006-description-html" class="code_comment code_description"></div>
+<script>generate_markdown("VAL-0006-description");</script>
+<span class="code_comment">*/</span>
+</div>
+<span class="keyword">value type </span>
+<span class="class_name">Disponibilidad</span>
+<br />
+            {<br />
+<textarea id="VAL-0006-definition-md" class="markdown">DISPONIBLE, REPARANDO</textarea>
+<div id="VAL-0006-definition-html" class="code_ocl"></div>
+<script>generate_markdown("VAL-0006-definition");</script>
+            }
+        </div>
+</td>
+</tr>
+<tr>
+<th>Comentarios</th>
+<td colspan="1">
+<textarea id="VAL-0006-comments-md" class="markdown">Ninguno</textarea>
+<div id="VAL-0006-comments-html" class="remus_comments"></div>
+<script>generate_markdown("VAL-0006-comments");</script>
+</td>
+</tr>
+</table>
+</div>
+<div id="TYP-0001" class="object_type">
+<table class="object_type remus_table">
+<thead>
+<tr>
+<th>
+<img src="https://cdn.jsdelivr.net/gh/amador-duran-toro/remus/assets/images/icons/objectType.png" /> TYP-0001</th>
+<th class="name_column" colspan="1">Usuario</th>
+</tr>
+</thead>
+<tr>
+<th>Versión</th>
+<td colspan="1">1.0 (09/12/2020)
+</td>
+</tr>
+<tr>
+<td colspan="2">
+<div class="code">
+<div>
+<span class="code_comment">/**</span>
+<textarea id="TYP-0001-description-md" class="markdown">representa un usuario creado para navegar la página de nuestra aplicación asociado a un cliente, empleado o <a href="#GLO-0048" class="rem_ref">proveedor</a> de la empresa</textarea>
+<div id="TYP-0001-description-html" class="code_comment code_description"></div>
+<script>generate_markdown("TYP-0001-description");</script>
+<span class="code_comment">*/</span>
+</div>
+<span class="keyword ">class </span>
+<span class="class_name ">Usuario</span>
+<span class="keyword ">generalizes
+            disjoint </span>
+<span class="class_name "><a href="#TYP-0003" class="rem_ref">Cliente</a></span>, <span class="class_name "><a href="#TYP-0002" class="rem_ref">Empleado</a></span>, <span class="class_name "><a href="#TYP-0004" class="rem_ref">Proveedor</a></span><br />
+
+    {<br />
+<div class="code_comment code_header">// attributes</div>
+<ul class="properties">
+<li id="ATT-0108" class="property">
+<span class="keyword">var </span>idUsuario : Integer</li>
+<li id="ATT-0093" class="property">
+<textarea id="ATT-0093-description-md" class="markdown">/** email usado para iniciar sesión */</textarea>
+<div id="ATT-0093-description-html" class="code_comment"></div>
+<script>generate_markdown("ATT-0093-description");</script>
+<span class="keyword">var </span>email : String</li>
+<li id="ATT-0094" class="property">
+<textarea id="ATT-0094-description-md" class="markdown">/** contraseña usada para iniciar sesión */</textarea>
+<div id="ATT-0094-description-html" class="code_comment"></div>
+<script>generate_markdown("ATT-0094-description");</script>
+<span class="keyword">var </span>contraseña : String</li>
+</ul>
+    }
+</div>
+</td>
+</tr>
+<tr>
+<th>Comentarios</th>
+<td colspan="1">
+<textarea id="TYP-0001-comments-md" class="markdown">Ninguno</textarea>
+<div id="TYP-0001-comments-html" class="remus_comments"></div>
+<script>generate_markdown("TYP-0001-comments");</script>
+</td>
+</tr>
+</table>
+</div>
+<div id="TYP-0002" class="object_type">
+<table class="object_type remus_table">
+<thead>
+<tr>
+<th>
+<img src="https://cdn.jsdelivr.net/gh/amador-duran-toro/remus/assets/images/icons/objectType.png" /> TYP-0002</th>
+<th class="name_column" colspan="1">Empleado</th>
+</tr>
+</thead>
+<tr>
+<th>Versión</th>
+<td colspan="1">1.0 (09/12/2020)
+</td>
+</tr>
+<tr>
+<td colspan="2">
+<div class="code">
+<div>
+<span class="code_comment">/**</span>
+<textarea id="TYP-0002-description-md" class="markdown">representa un empleado de la empresa dado de alta en la base de datos</textarea>
+<div id="TYP-0002-description-html" class="code_comment code_description"></div>
+<script>generate_markdown("TYP-0002-description");</script>
+<span class="code_comment">*/</span>
+</div>
+<span class="keyword ">class </span>
+<span class="class_name ">Empleado</span>
+<span class="keyword ">specializes </span>
+<span class="class_name ">
+<a href="#TYP-0001" class="rem_ref">Usuario</a>
+</span>
+<br />
+
+    {<br />
+<div class="code_comment code_header">// attributes</div>
+<ul class="properties">
+<li id="ATT-0109" class="property">
+<span class="keyword">var </span>idEmpleado : Integer</li>
+<li id="ATT-0095" class="property">
+<span class="keyword">var </span>nombre : String</li>
+<li id="ATT-0096" class="property">
+<span class="keyword">var </span>apellidos : String</li>
+<li id="ATT-0097" class="property">
+<span class="keyword">var </span>dni : String</li>
+<li id="ATT-0098" class="property">
+<span class="keyword">var </span>telefono : String</li>
+<li id="ATT-0099" class="property">
+<span class="keyword">var </span>iban : String</li>
+<li id="ATT-0101" class="property">
+<span class="keyword">var </span>tipo : TipoEmpleado</li>
+<li id="ATT-0103" class="property">
+<span class="keyword">var </span>carnetConducir : Boolean</li>
+</ul>
+    }
+</div>
+</td>
+</tr>
+<tr>
+<th>Comentarios</th>
+<td colspan="1">
+<textarea id="TYP-0002-comments-md" class="markdown">Ninguno</textarea>
+<div id="TYP-0002-comments-html" class="remus_comments"></div>
+<script>generate_markdown("TYP-0002-comments");</script>
+</td>
+</tr>
+</table>
+</div>
+<div id="TYP-0003" class="object_type">
+<table class="object_type remus_table">
+<thead>
+<tr>
+<th>
+<img src="https://cdn.jsdelivr.net/gh/amador-duran-toro/remus/assets/images/icons/objectType.png" /> TYP-0003</th>
+<th class="name_column" colspan="1">Cliente</th>
+</tr>
+</thead>
+<tr>
+<th>Versión</th>
+<td colspan="1">1.0 (09/12/2020)
+</td>
+</tr>
+<tr>
+<td colspan="2">
+<div class="code">
+<div>
+<span class="code_comment">/**</span>
+<textarea id="TYP-0003-description-md" class="markdown">representa un cliente dado de alta en la base de datos</textarea>
+<div id="TYP-0003-description-html" class="code_comment code_description"></div>
+<script>generate_markdown("TYP-0003-description");</script>
+<span class="code_comment">*/</span>
+</div>
+<span class="keyword ">class </span>
+<span class="class_name ">Cliente</span>
+<span class="keyword ">specializes </span>
+<span class="class_name ">
+<a href="#TYP-0001" class="rem_ref">Usuario</a>
+</span>
+<br />
+
+    {<br />
+<div class="code_comment code_header">// attributes</div>
+<ul class="properties">
+<li id="ATT-0110" class="property">
+<span class="keyword">var </span>idCliente : Integer</li>
+<li id="ATT-0104" class="property">
+<span class="keyword">var </span>nombre : String</li>
+<li id="ATT-0105" class="property">
+<span class="keyword">var </span>apellidos : String</li>
+<li id="ATT-0106" class="property">
+<span class="keyword">var </span>dni : String</li>
+<li id="ATT-0107" class="property">
+<span class="keyword">var </span>tarjetaCredito : String</li>
+</ul>
+    }
+</div>
+</td>
+</tr>
+<tr>
+<th>Comentarios</th>
+<td colspan="1">
+<textarea id="TYP-0003-comments-md" class="markdown">Ninguno</textarea>
+<div id="TYP-0003-comments-html" class="remus_comments"></div>
+<script>generate_markdown("TYP-0003-comments");</script>
+</td>
+</tr>
+</table>
+</div>
+<div id="TYP-0004" class="object_type">
+<table class="object_type remus_table">
+<thead>
+<tr>
+<th>
+<img src="https://cdn.jsdelivr.net/gh/amador-duran-toro/remus/assets/images/icons/objectType.png" /> TYP-0004</th>
+<th class="name_column" colspan="1">Proveedor</th>
+</tr>
+</thead>
+<tr>
+<th>Versión</th>
+<td colspan="1">1.0 (09/12/2020)
+</td>
+</tr>
+<tr>
+<td colspan="2">
+<div class="code">
+<div>
+<span class="code_comment">/**</span>
+<textarea id="TYP-0004-description-md" class="markdown">representa un <a href="#GLO-0048" class="rem_ref">proveedor</a> dado de alta en la base de datos</textarea>
+<div id="TYP-0004-description-html" class="code_comment code_description"></div>
+<script>generate_markdown("TYP-0004-description");</script>
+<span class="code_comment">*/</span>
+</div>
+<span class="keyword ">class </span>
+<span class="class_name ">Proveedor</span>
+<span class="keyword ">specializes </span>
+<span class="class_name ">
+<a href="#TYP-0001" class="rem_ref">Usuario</a>
+</span>
+<br />
+
+    {<br />
+<div class="code_comment code_header">// attributes</div>
+<ul class="properties">
+<li id="ATT-0111" class="property">
+<span class="keyword">var </span>idProveedor : Integer</li>
+<li id="ATT-0112" class="property">
+<span class="keyword">var </span>nombre : String</li>
+<li id="ATT-0113" class="property">
+<span class="keyword">var </span>direccion : String</li>
+<li id="ATT-0114" class="property">
+<span class="keyword">var </span>iban : String</li>
+<li id="ATT-0115" class="property">
+<span class="keyword">var </span>telefono : String</li>
+</ul>
+    }
+</div>
+</td>
+</tr>
+<tr>
+<th>Comentarios</th>
+<td colspan="1">
+<textarea id="TYP-0004-comments-md" class="markdown">Ninguno</textarea>
+<div id="TYP-0004-comments-html" class="remus_comments"></div>
+<script>generate_markdown("TYP-0004-comments");</script>
+</td>
+</tr>
+</table>
+</div>
+<div id="TYP-0005" class="object_type">
+<table class="object_type remus_table">
+<thead>
+<tr>
+<th>
+<img src="https://cdn.jsdelivr.net/gh/amador-duran-toro/remus/assets/images/icons/objectType.png" /> TYP-0005</th>
+<th class="name_column" colspan="1">Contrato</th>
+</tr>
+</thead>
+<tr>
+<th>Versión</th>
+<td colspan="1">1.0 (09/12/2020)
+</td>
+</tr>
+<tr>
+<td colspan="2">
+<div class="code">
+<div>
+<span class="code_comment">/**</span>
+<textarea id="TYP-0005-description-md" class="markdown">representa un contrato de trabajo asociado a un empleado de la empresa</textarea>
+<div id="TYP-0005-description-html" class="code_comment code_description"></div>
+<script>generate_markdown("TYP-0005-description");</script>
+<span class="code_comment">*/</span>
+</div>
+<span class="keyword ">class </span>
+<span class="class_name ">Contrato</span>
+<br />
+
+    {<br />
+<div class="code_comment code_header">// attributes</div>
+<ul class="properties">
+<li id="ATT-0136" class="property">
+<span class="keyword">var </span>idContrato : Integer</li>
+<li id="ATT-0116" class="property">
+<span class="keyword">var </span>fechaAlta : Date</li>
+<li id="ATT-0117" class="property">
+<textarea id="ATT-0117-description-md" class="markdown">/** este atributo puede ser nulo (solamente se le puede poner multiplicidad si se pone como set, bag o sequence) */</textarea>
+<div id="ATT-0117-description-html" class="code_comment"></div>
+<script>generate_markdown("ATT-0117-description");</script>
+<span class="keyword">var </span>fechaBaja : Set(Date)
+            [0..1]</li>
+<li id="ATT-0118" class="property">
+<span class="keyword">var </span>salario : Real</li>
+<li id="ATT-0119" class="property">
+<span class="keyword">var </span>horasSemanales : Real</li>
+</ul>
+    }
+</div>
+</td>
+</tr>
+<tr>
+<th>Comentarios</th>
+<td colspan="1">
+<textarea id="TYP-0005-comments-md" class="markdown">Ninguno</textarea>
+<div id="TYP-0005-comments-html" class="remus_comments"></div>
+<script>generate_markdown("TYP-0005-comments");</script>
+</td>
+</tr>
+</table>
+</div>
+<div id="TYP-0006" class="object_type">
+<table class="object_type remus_table">
+<thead>
+<tr>
+<th>
+<img src="https://cdn.jsdelivr.net/gh/amador-duran-toro/remus/assets/images/icons/objectType.png" /> TYP-0006</th>
+<th class="name_column" colspan="1">HorarioSemanal</th>
+</tr>
+</thead>
+<tr>
+<th>Versión</th>
+<td colspan="1">1.0 (09/12/2020)
+</td>
+</tr>
+<tr>
+<td colspan="2">
+<div class="code">
+<div>
+<span class="code_comment">/**</span>
+<textarea id="TYP-0006-description-md" class="markdown">representa el horario de una semana en concreto asociado a un empleado de la empresa</textarea>
+<div id="TYP-0006-description-html" class="code_comment code_description"></div>
+<script>generate_markdown("TYP-0006-description");</script>
+<span class="code_comment">*/</span>
+</div>
+<span class="keyword ">class </span>
+<span class="class_name ">HorarioSemanal</span>
+<br />
+
+    {<br />
+<div class="code_comment code_header">// attributes</div>
+<ul class="properties">
+<li id="ATT-0137" class="property">
+<span class="keyword">var </span>idHorarioSemanal : Integer</li>
+<li id="ATT-0120" class="property">
+<span class="keyword">var </span>fechaSemana : String</li>
+<li id="ATT-0121" class="property">
+<span class="keyword">var </span>horaEntrada : Time</li>
+<li id="ATT-0122" class="property">
+<span class="keyword">var </span>horaSalida : Time</li>
+</ul>
+    }
+</div>
+</td>
+</tr>
+<tr>
+<th>Comentarios</th>
+<td colspan="1">
+<textarea id="TYP-0006-comments-md" class="markdown">Ninguno</textarea>
+<div id="TYP-0006-comments-html" class="remus_comments"></div>
+<script>generate_markdown("TYP-0006-comments");</script>
+</td>
+</tr>
+</table>
+</div>
+<div id="TYP-0007" class="object_type">
+<table class="object_type remus_table">
+<thead>
+<tr>
+<th>
+<img src="https://cdn.jsdelivr.net/gh/amador-duran-toro/remus/assets/images/icons/objectType.png" /> TYP-0007</th>
+<th class="name_column" colspan="1">Producto</th>
+</tr>
+</thead>
+<tr>
+<th>Versión</th>
+<td colspan="1">1.0 (09/12/2020)
+</td>
+</tr>
+<tr>
+<td colspan="2">
+<div class="code">
+<div>
+<span class="code_comment">/**</span>
+<textarea id="TYP-0007-description-md" class="markdown">representa un <a href="#GLO-0046" class="rem_ref">producto</a> vendido o comprado por la empresa</textarea>
+<div id="TYP-0007-description-html" class="code_comment code_description"></div>
+<script>generate_markdown("TYP-0007-description");</script>
+<span class="code_comment">*/</span>
+</div>
+<span class="keyword ">class </span>
+<span class="class_name ">Producto</span>
+<br />
+
+    {<br />
+<div class="code_comment code_header">// attributes</div>
+<ul class="properties">
+<li id="ATT-0138" class="property">
+<span class="keyword">var </span>idProducto : Integer</li>
+<li id="ATT-0123" class="property">
+<span class="keyword">var </span>nombre : String</li>
+<li id="ATT-0124" class="property">
+<span class="keyword">var </span>precio : Real</li>
+<li id="ATT-0125" class="property">
+<span class="keyword">var </span>precioVentaPublico : Real</li>
+<li id="ATT-0126" class="property">
+<span class="keyword">var </span>stock : Real</li>
+<li id="ATT-0127" class="property">
+<span class="keyword">var </span>Vital : Boolean</li>
+<li id="ATT-0128" class="property">
+<span class="keyword">var </span>descripcion : String</li>
+<li id="ATT-0129" class="property">
+<span class="keyword">var </span>tipo : UnidadProducto</li>
+</ul>
+    }
+</div>
+</td>
+</tr>
+<tr>
+<th>Comentarios</th>
+<td colspan="1">
+<textarea id="TYP-0007-comments-md" class="markdown">Ninguno</textarea>
+<div id="TYP-0007-comments-html" class="remus_comments"></div>
+<script>generate_markdown("TYP-0007-comments");</script>
+</td>
+</tr>
+</table>
+</div>
+<div id="TYP-0008" class="object_type">
+<table class="object_type remus_table">
+<thead>
+<tr>
+<th>
+<img src="https://cdn.jsdelivr.net/gh/amador-duran-toro/remus/assets/images/icons/objectType.png" /> TYP-0008</th>
+<th class="name_column" colspan="1">PedidoCliente</th>
+</tr>
+</thead>
+<tr>
+<th>Versión</th>
+<td colspan="1">1.0 (09/12/2020)
+</td>
+</tr>
+<tr>
+<td colspan="2">
+<div class="code">
+<div>
+<span class="code_comment">/**</span>
+<textarea id="TYP-0008-description-md" class="markdown">representa un <a href="#GLO-0047" class="rem_ref">pedido</a> realizado por un cliente</textarea>
+<div id="TYP-0008-description-html" class="code_comment code_description"></div>
+<script>generate_markdown("TYP-0008-description");</script>
+<span class="code_comment">*/</span>
+</div>
+<span class="keyword ">class </span>
+<span class="class_name ">PedidoCliente</span>
+<br />
+
+    {<br />
+<div class="code_comment code_header">// attributes</div>
+<ul class="properties">
+<li id="ATT-0139" class="property">
+<span class="keyword">var </span>idPedidoCliente : Integer</li>
+<li id="ATT-0131" class="property">
+<span class="keyword">derived </span>costeTotal : Real<textarea id="ATT-0131-ocl-md" class="markdown">=  <span class="code_ocl">sumatorio de los precios de las líneas de pedido asociadas a este pedido</span>
+</textarea>
+<span id="ATT-0131-ocl-html"></span>
+<script>generate_markdown("ATT-0131-ocl",true);</script>
+</li>
+<li id="ATT-0132" class="property">
+<span class="keyword">var </span>iva : Real</li>
+<li id="ATT-0133" class="property">
+<span class="keyword">derived </span>descuentoTotal : Real<textarea id="ATT-0133-ocl-md" class="markdown">=  <span class="code_ocl">sumatorio de los precios descontados en cada uno de los descuentos de las líneas de pedido asociadas a este pedido</span>
+</textarea>
+<span id="ATT-0133-ocl-html"></span>
+<script>generate_markdown("ATT-0133-ocl",true);</script>
+</li>
+<li id="ATT-0134" class="property">
+<span class="keyword">var </span>fechaEntregaEstimada : Date</li>
+</ul>
+<br />
+<div class="code_comment code_header">// components</div>
+<ul class="properties">
+<li id="COM-0143" class="property">
+<span class="keyword">var </span>lineaProducto : Set(LineaPedidoCliente)
+            [1..*]</li>
+<li id="COM-0147" class="property">
+<span class="keyword">var </span>facturaCliente : Set(FacturaCliente)
+            [0..1]</li>
+<li id="COM-0151" class="property">
+<span class="keyword">var </span>porte : Set(Porte)
+            [0..1]</li>
+</ul>
+    }
+</div>
+</td>
+</tr>
+<tr>
+<th>Comentarios</th>
+<td colspan="1">
+<textarea id="TYP-0008-comments-md" class="markdown">Ninguno</textarea>
+<div id="TYP-0008-comments-html" class="remus_comments"></div>
+<script>generate_markdown("TYP-0008-comments");</script>
+</td>
+</tr>
+</table>
+</div>
+<div id="TYP-0009" class="object_type">
+<table class="object_type remus_table">
+<thead>
+<tr>
+<th>
+<img src="https://cdn.jsdelivr.net/gh/amador-duran-toro/remus/assets/images/icons/objectType.png" /> TYP-0009</th>
+<th class="name_column" colspan="1">LineaPedidoCliente</th>
+</tr>
+</thead>
+<tr>
+<th>Versión</th>
+<td colspan="1">1.0 (09/12/2020)
+</td>
+</tr>
+<tr>
+<td colspan="2">
+<div class="code">
+<div>
+<span class="code_comment">/**</span>
+<textarea id="TYP-0009-description-md" class="markdown">representa las líneas de <a href="#GLO-0047" class="rem_ref">pedido</a> relacionadas con cada <a href="#GLO-0046" class="rem_ref">producto</a> que conforman un <a href="#GLO-0047" class="rem_ref">pedido</a> de cliente</textarea>
+<div id="TYP-0009-description-html" class="code_comment code_description"></div>
+<script>generate_markdown("TYP-0009-description");</script>
+<span class="code_comment">*/</span>
+</div>
+<span class="keyword ">class </span>
+<span class="class_name ">LineaPedidoCliente</span>
+<br />
+
+    {<br />
+<div class="code_comment code_header">// attributes</div>
+<ul class="properties">
+<li id="ATT-0140" class="property">
+<span class="keyword">var </span>idLineaPedidoCliente : Integer</li>
+<li id="ATT-0135" class="property">
+<span class="keyword">var </span>cantidad : Integer</li>
+<li id="ATT-0141" class="property">
+<span class="keyword">var </span>descuento : Real</li>
+<li id="ATT-0142" class="property">
+<textarea id="ATT-0142-description-md" class="markdown">/** el precio de cada <a href="#GLO-0046" class="rem_ref">producto</a> por separado (su pvp multiplicado por la cantidad) */</textarea>
+<div id="ATT-0142-description-html" class="code_comment"></div>
+<script>generate_markdown("ATT-0142-description");</script>
+<span class="keyword">var </span>precio : Real</li>
+</ul>
+    }
+</div>
+</td>
+</tr>
+<tr>
+<th>Comentarios</th>
+<td colspan="1">
+<textarea id="TYP-0009-comments-md" class="markdown">Ninguno</textarea>
+<div id="TYP-0009-comments-html" class="remus_comments"></div>
+<script>generate_markdown("TYP-0009-comments");</script>
+</td>
+</tr>
+</table>
+</div>
+<div id="TYP-0010" class="object_type">
+<table class="object_type remus_table">
+<thead>
+<tr>
+<th>
+<img src="https://cdn.jsdelivr.net/gh/amador-duran-toro/remus/assets/images/icons/objectType.png" /> TYP-0010</th>
+<th class="name_column" colspan="1">FacturaCliente</th>
+</tr>
+</thead>
+<tr>
+<th>Versión</th>
+<td colspan="1">1.0 (09/12/2020)
+</td>
+</tr>
+<tr>
+<td colspan="2">
+<div class="code">
+<div>
+<span class="code_comment">/**</span>
+<textarea id="TYP-0010-description-md" class="markdown">representa a una <a href="#GLO-0039" class="rem_ref">factura</a> asociada al <a href="#GLO-0047" class="rem_ref">pedido</a> de un cliente</textarea>
+<div id="TYP-0010-description-html" class="code_comment code_description"></div>
+<script>generate_markdown("TYP-0010-description");</script>
+<span class="code_comment">*/</span>
+</div>
+<span class="keyword ">class </span>
+<span class="class_name ">FacturaCliente</span>
+<br />
+
+    {<br />
+<div class="code_comment code_header">// attributes</div>
+<ul class="properties">
+<li id="ATT-0144" class="property">
+<span class="keyword">var </span>idFacturaCliente : Integer</li>
+<li id="ATT-0145" class="property">
+<span class="keyword">var </span>fechaFacturacion : Date</li>
+<li id="ATT-0146" class="property">
+<span class="keyword">var </span>tipo : TipoPago</li>
+</ul>
+    }
+</div>
+</td>
+</tr>
+<tr>
+<th>Comentarios</th>
+<td colspan="1">
+<textarea id="TYP-0010-comments-md" class="markdown">Ninguno</textarea>
+<div id="TYP-0010-comments-html" class="remus_comments"></div>
+<script>generate_markdown("TYP-0010-comments");</script>
+</td>
+</tr>
+</table>
+</div>
+<div id="TYP-0011" class="object_type">
+<table class="object_type remus_table">
+<thead>
+<tr>
+<th>
+<img src="https://cdn.jsdelivr.net/gh/amador-duran-toro/remus/assets/images/icons/objectType.png" /> TYP-0011</th>
+<th class="name_column" colspan="1">Porte</th>
+</tr>
+</thead>
+<tr>
+<th>Versión</th>
+<td colspan="1">1.0 (09/12/2020)
+</td>
+</tr>
+<tr>
+<td colspan="2">
+<div class="code">
+<div>
+<span class="code_comment">/**</span>
+<textarea id="TYP-0011-description-md" class="markdown">representa el porte asociado a un <a href="#GLO-0047" class="rem_ref">pedido</a> de <a href="#GLO-0046" class="rem_ref">productos</a> por parte de un cliente </textarea>
+<div id="TYP-0011-description-html" class="code_comment code_description"></div>
+<script>generate_markdown("TYP-0011-description");</script>
+<span class="code_comment">*/</span>
+</div>
+<span class="keyword ">class </span>
+<span class="class_name ">Porte</span>
+<br />
+
+    {<br />
+<div class="code_comment code_header">// attributes</div>
+<ul class="properties">
+<li id="ATT-0148" class="property">
+<span class="keyword">var </span>idPorte : Integer</li>
+<li id="ATT-0149" class="property">
+<span class="keyword">var </span>fechaEntrega : Date</li>
+<li id="ATT-0170" class="property">
+<span class="keyword">var </span>direccionEnvio : String</li>
+<li id="ATT-0150" class="property">
+<span class="keyword">var </span>costePorte : Real</li>
+</ul>
+    }
+</div>
+</td>
+</tr>
+<tr>
+<th>Comentarios</th>
+<td colspan="1">
+<textarea id="TYP-0011-comments-md" class="markdown">Ninguno</textarea>
+<div id="TYP-0011-comments-html" class="remus_comments"></div>
+<script>generate_markdown("TYP-0011-comments");</script>
+</td>
+</tr>
+</table>
+</div>
+<div id="TYP-0012" class="object_type">
+<table class="object_type remus_table">
+<thead>
+<tr>
+<th>
+<img src="https://cdn.jsdelivr.net/gh/amador-duran-toro/remus/assets/images/icons/objectType.png" /> TYP-0012</th>
+<th class="name_column" colspan="1">Camion</th>
+</tr>
+</thead>
+<tr>
+<th>Versión</th>
+<td colspan="1">1.0 (09/12/2020)
+</td>
+</tr>
+<tr>
+<td colspan="2">
+<div class="code">
+<div>
+<span class="code_comment">/**</span>
+<textarea id="TYP-0012-description-md" class="markdown">representa un camión de la flota de la empresa, usado para el porte de <a href="#GLO-0046" class="rem_ref">productos</a> o de <a href="#GLO-0016" class="rem_ref">cubas</a>
+</textarea>
+<div id="TYP-0012-description-html" class="code_comment code_description"></div>
+<script>generate_markdown("TYP-0012-description");</script>
+<span class="code_comment">*/</span>
+</div>
+<span class="keyword ">class </span>
+<span class="class_name ">Camion</span>
+<br />
+
+    {<br />
+<div class="code_comment code_header">// attributes</div>
+<ul class="properties">
+<li id="ATT-0152" class="property">
+<span class="keyword">var </span>idCamion : Integer</li>
+<li id="ATT-0153" class="property">
+<span class="keyword">var </span>matricula : String</li>
+<li id="ATT-0154" class="property">
+<span class="keyword">var </span>combustible : Real</li>
+<li id="ATT-0155" class="property">
+<textarea id="ATT-0155-description-md" class="markdown">/** medida en kilogramos */</textarea>
+<div id="ATT-0155-description-html" class="code_comment"></div>
+<script>generate_markdown("ATT-0155-description");</script>
+<span class="keyword">var </span>cargaMaxima : Real</li>
+<li id="ATT-0156" class="property">
+<textarea id="ATT-0156-description-md" class="markdown">/** medida en kilogramos */</textarea>
+<div id="ATT-0156-description-html" class="code_comment"></div>
+<script>generate_markdown("ATT-0156-description");</script>
+<span class="keyword">var </span>tara : Real</li>
+<li id="ATT-0157" class="property">
+<span class="keyword">var </span>tipo : Disponibilidad</li>
+</ul>
+    }
+</div>
+</td>
+</tr>
+<tr>
+<th>Comentarios</th>
+<td colspan="1">
+<textarea id="TYP-0012-comments-md" class="markdown">Ninguno</textarea>
+<div id="TYP-0012-comments-html" class="remus_comments"></div>
+<script>generate_markdown("TYP-0012-comments");</script>
+</td>
+</tr>
+</table>
+</div>
+<div id="TYP-0013" class="object_type">
+<table class="object_type remus_table">
+<thead>
+<tr>
+<th>
+<img src="https://cdn.jsdelivr.net/gh/amador-duran-toro/remus/assets/images/icons/objectType.png" /> TYP-0013</th>
+<th class="name_column" colspan="1">Cuba</th>
+</tr>
+</thead>
+<tr>
+<th>Versión</th>
+<td colspan="1">1.0 (09/12/2020)
+</td>
+</tr>
+<tr>
+<td colspan="2">
+<div class="code">
+<div>
+<span class="code_comment">/**</span>
+<textarea id="TYP-0013-description-md" class="markdown">representa una <a href="#GLO-0016" class="rem_ref">cuba</a>, con la información necesaria para su alquiler</textarea>
+<div id="TYP-0013-description-html" class="code_comment code_description"></div>
+<script>generate_markdown("TYP-0013-description");</script>
+<span class="code_comment">*/</span>
+</div>
+<span class="keyword ">class </span>
+<span class="class_name ">Cuba</span>
+<br />
+
+    {<br />
+<div class="code_comment code_header">// attributes</div>
+<ul class="properties">
+<li id="ATT-0158" class="property">
+<span class="keyword">var </span>idCuba : Integer</li>
+<li id="ATT-0159" class="property">
+<textarea id="ATT-0159-description-md" class="markdown">/** medida en metros cúbicos */</textarea>
+<div id="ATT-0159-description-html" class="code_comment"></div>
+<script>generate_markdown("ATT-0159-description");</script>
+<span class="keyword">var </span>capacidad : Real</li>
+<li id="ATT-0160" class="property">
+<span class="keyword">var </span>tipo1 : Estado</li>
+<li id="ATT-0161" class="property">
+<span class="keyword">var </span>tipo2 : Disponibilidad</li>
+<li id="ATT-0162" class="property">
+<textarea id="ATT-0162-description-md" class="markdown">/** descripción de la <a href="#GLO-0016" class="rem_ref">cuba</a> para diferenciarlas */</textarea>
+<div id="ATT-0162-description-html" class="code_comment"></div>
+<script>generate_markdown("ATT-0162-description");</script>
+<span class="keyword">var </span>modeloDeCuba : String</li>
+</ul>
+<br />
+<div class="code_comment code_header">// components</div>
+<ul class="properties">
+<li id="COM-0169" class="property">
+<span class="keyword">var </span>ordenAlquilerCuba : Set(OrdenAlquilerCuba)
+            [*..*]</li>
+</ul>
+    }
+</div>
+</td>
+</tr>
+<tr>
+<th>Comentarios</th>
+<td colspan="1">
+<textarea id="TYP-0013-comments-md" class="markdown">Ninguno</textarea>
+<div id="TYP-0013-comments-html" class="remus_comments"></div>
+<script>generate_markdown("TYP-0013-comments");</script>
+</td>
+</tr>
+</table>
+</div>
+<div id="TYP-0014" class="object_type">
+<table class="object_type remus_table">
+<thead>
+<tr>
+<th>
+<img src="https://cdn.jsdelivr.net/gh/amador-duran-toro/remus/assets/images/icons/objectType.png" /> TYP-0014</th>
+<th class="name_column" colspan="1">OrdenAlquilerCuba</th>
+</tr>
+</thead>
+<tr>
+<th>Versión</th>
+<td colspan="1">1.0 (09/12/2020)
+</td>
+</tr>
+<tr>
+<td colspan="2">
+<div class="code">
+<div>
+<span class="code_comment">/**</span>
+<textarea id="TYP-0014-description-md" class="markdown">representa un registro de un alquiler de <a href="#GLO-0016" class="rem_ref">cuba</a> a la empresa por parte de un cliente</textarea>
+<div id="TYP-0014-description-html" class="code_comment code_description"></div>
+<script>generate_markdown("TYP-0014-description");</script>
+<span class="code_comment">*/</span>
+</div>
+<span class="keyword ">class </span>
+<span class="class_name ">OrdenAlquilerCuba</span>
+<br />
+
+    {<br />
+<div class="code_comment code_header">// attributes</div>
+<ul class="properties">
+<li id="ATT-0168" class="property">
+<span class="keyword">var </span>idOrdenAlquilerCuba : Integer</li>
+<li id="ATT-0163" class="property">
+<span class="keyword">var </span>coste : Real</li>
+<li id="ATT-0164" class="property">
+<span class="keyword">var </span>fechaInicio : Date</li>
+<li id="ATT-0165" class="property">
+<span class="keyword">var </span>fechaFin : Date</li>
+<li id="ATT-0166" class="property">
+<span class="keyword">var </span>fechaDevolución : Date</li>
+<li id="ATT-0167" class="property">
+<span class="keyword">var </span>fianza : Real</li>
+</ul>
+<br />
+<div class="code_comment code_header">// components</div>
+<ul class="properties">
+<li id="COM-0175" class="property">
+<span class="keyword">var </span>porteCuba : Set(PorteCuba)
+            [0..1]</li>
+<li id="COM-0179" class="property">
+<span class="keyword">var </span>incidenciaAlquiler : Set(IncidenciaAlquiler)
+            [0..1]</li>
+</ul>
+    }
+</div>
+</td>
+</tr>
+<tr>
+<th>Comentarios</th>
+<td colspan="1">
+<textarea id="TYP-0014-comments-md" class="markdown">Ninguno</textarea>
+<div id="TYP-0014-comments-html" class="remus_comments"></div>
+<script>generate_markdown("TYP-0014-comments");</script>
+</td>
+</tr>
+</table>
+</div>
+<div id="TYP-0015" class="object_type">
+<table class="object_type remus_table">
+<thead>
+<tr>
+<th>
+<img src="https://cdn.jsdelivr.net/gh/amador-duran-toro/remus/assets/images/icons/objectType.png" /> TYP-0015</th>
+<th class="name_column" colspan="1">PorteCuba</th>
+</tr>
+</thead>
+<tr>
+<th>Versión</th>
+<td colspan="1">1.0 (09/12/2020)
+</td>
+</tr>
+<tr>
+<td colspan="2">
+<div class="code">
+<div>
+<span class="code_comment">/**</span>
+<textarea id="TYP-0015-description-md" class="markdown">representa el porte asociado a una <a href="#GLO-0016" class="rem_ref">cuba</a> alquilada por un cliente </textarea>
+<div id="TYP-0015-description-html" class="code_comment code_description"></div>
+<script>generate_markdown("TYP-0015-description");</script>
+<span class="code_comment">*/</span>
+</div>
+<span class="keyword ">class </span>
+<span class="class_name ">PorteCuba</span>
+<br />
+
+    {<br />
+<div class="code_comment code_header">// attributes</div>
+<ul class="properties">
+<li id="ATT-0171" class="property">
+<span class="keyword">var </span>idPorteCuba : Integer</li>
+<li id="ATT-0172" class="property">
+<span class="keyword">var </span>fechaEntrega : Date</li>
+<li id="ATT-0173" class="property">
+<span class="keyword">var </span>direccionEnvio : String</li>
+<li id="ATT-0174" class="property">
+<span class="keyword">var </span>costePorte : Real</li>
+</ul>
+    }
+</div>
+</td>
+</tr>
+<tr>
+<th>Comentarios</th>
+<td colspan="1">
+<textarea id="TYP-0015-comments-md" class="markdown">Ninguno</textarea>
+<div id="TYP-0015-comments-html" class="remus_comments"></div>
+<script>generate_markdown("TYP-0015-comments");</script>
+</td>
+</tr>
+</table>
+</div>
+<div id="TYP-0016" class="object_type">
+<table class="object_type remus_table">
+<thead>
+<tr>
+<th>
+<img src="https://cdn.jsdelivr.net/gh/amador-duran-toro/remus/assets/images/icons/objectType.png" /> TYP-0016</th>
+<th class="name_column" colspan="1">IncidenciaAlquiler</th>
+</tr>
+</thead>
+<tr>
+<th>Versión</th>
+<td colspan="1">1.0 (09/12/2020)
+</td>
+</tr>
+<tr>
+<td colspan="2">
+<div class="code">
+<div>
+<span class="code_comment">/**</span>
+<textarea id="TYP-0016-description-md" class="markdown">representa una incidencia asociada al alquiler de una <a href="#GLO-0016" class="rem_ref">cuba</a>
+</textarea>
+<div id="TYP-0016-description-html" class="code_comment code_description"></div>
+<script>generate_markdown("TYP-0016-description");</script>
+<span class="code_comment">*/</span>
+</div>
+<span class="keyword ">class </span>
+<span class="class_name ">IncidenciaAlquiler</span>
+<br />
+
+    {<br />
+<div class="code_comment code_header">// attributes</div>
+<ul class="properties">
+<li id="ATT-0176" class="property">
+<span class="keyword">var </span>idIncidenciaCuba : Integer</li>
+<li id="ATT-0177" class="property">
+<span class="keyword">var </span>fechaIncidencia : Date</li>
+<li id="ATT-0178" class="property">
+<span class="keyword">var </span>sobrecoste : Real</li>
+</ul>
+    }
+</div>
+</td>
+</tr>
+<tr>
+<th>Comentarios</th>
+<td colspan="1">
+<textarea id="TYP-0016-comments-md" class="markdown">Ninguno</textarea>
+<div id="TYP-0016-comments-html" class="remus_comments"></div>
+<script>generate_markdown("TYP-0016-comments");</script>
+</td>
+</tr>
+</table>
+</div>
 <h2 id="SEC-0075" class="section">3.3 Diagramas de estado de las clases del sistema</h2>
 <h1 id="SEC-0060" class="section">4 Modelo de casos de uso del sistema</h1>
 <h2 id="SEC-0071" class="section">4.1 Diagramas de secuencia del sistema</h2>
