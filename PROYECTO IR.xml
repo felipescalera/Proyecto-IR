@@ -186,7 +186,7 @@
 <rem:day>31</rem:day>
 </rem:date>
 </rem:version>
-<rem:authors stakeholders="STK-0002 STK-0001 STK-0005 STK-0003 STK-0004 "/>
+<rem:authors stakeholders="STK-0005 STK-0002 STK-0003 STK-0004 STK-0001 "/>
 <rem:comments>Ninguno</rem:comments>
 <rem:address>Av. Reina Mercedes</rem:address>
 <rem:telephone><rem:tbd/></rem:telephone>
@@ -3718,6 +3718,96 @@
 <rem:comments>Ninguno</rem:comments>
 <rem:level>3</rem:level>
 <rem:number>6.3.3 </rem:number>
+<rem:functionalRequirement oid="FRQ-0001">
+<rem:name>RC001 - Informe de ingresos</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2020</rem:year>
+<rem:month>12</rem:month>
+<rem:day>9</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>Ninguno</rem:comments>
+<rem:importance><rem:tbd/></rem:importance>
+<rem:urgency><rem:tbd/></rem:urgency>
+<rem:status><rem:tbd/></rem:status>
+<rem:stability><rem:tbd/></rem:stability>
+<rem:description>realizar un informe con todos los ingresos por ventas o alquileres mensualmente</rem:description>
+</rem:functionalRequirement>
+<rem:functionalRequirement oid="FRQ-0002">
+<rem:name>RC002 - Informe de gastos</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2020</rem:year>
+<rem:month>12</rem:month>
+<rem:day>9</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>Ninguno</rem:comments>
+<rem:importance><rem:tbd/></rem:importance>
+<rem:urgency><rem:tbd/></rem:urgency>
+<rem:status><rem:tbd/></rem:status>
+<rem:stability><rem:tbd/></rem:stability>
+<rem:description>realizar un informe con todos los gastos por compra de <rem:ref oid="GLO-0046">productos</rem:ref>, pago de salarios, etcétera... mensualmente</rem:description>
+</rem:functionalRequirement>
+<rem:functionalRequirement oid="FRQ-0003">
+<rem:name>RC003 - Informe de beneficio</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2020</rem:year>
+<rem:month>12</rem:month>
+<rem:day>9</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>Ninguno</rem:comments>
+<rem:importance><rem:tbd/></rem:importance>
+<rem:urgency><rem:tbd/></rem:urgency>
+<rem:status><rem:tbd/></rem:status>
+<rem:stability><rem:tbd/></rem:stability>
+<rem:description>realizar un informe con el balance final del mes para observar el beneficio económico que genera la empresa</rem:description>
+</rem:functionalRequirement>
+<rem:functionalRequirement oid="FRQ-0004">
+<rem:name>RC004 - Informe de horas trabajadas</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2020</rem:year>
+<rem:month>12</rem:month>
+<rem:day>9</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>Ninguno</rem:comments>
+<rem:importance><rem:tbd/></rem:importance>
+<rem:urgency><rem:tbd/></rem:urgency>
+<rem:status><rem:tbd/></rem:status>
+<rem:stability><rem:tbd/></rem:stability>
+<rem:description>realizar un informe general con la cantidad de horas trabajadas por cada empleado durante el mes, para comprobar si ha cumplido su contrato y contemplar pagas extras</rem:description>
+</rem:functionalRequirement>
+<rem:functionalRequirement oid="FRQ-0005">
+<rem:name>RC005 - Informe de venta</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2020</rem:year>
+<rem:month>12</rem:month>
+<rem:day>9</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>Ninguno</rem:comments>
+<rem:importance><rem:tbd/></rem:importance>
+<rem:urgency><rem:tbd/></rem:urgency>
+<rem:status><rem:tbd/></rem:status>
+<rem:stability><rem:tbd/></rem:stability>
+<rem:description>generar un informe con los <rem:ref oid="GLO-0046">productos</rem:ref> y la cantidad de unidades vendidas, para contemplar cambios de precio y convertir <rem:ref oid="GLO-0046">productos</rem:ref> no vitales en vitales o viceversa</rem:description>
+</rem:functionalRequirement>
 </rem:section>
 </rem:section>
 <rem:section oid="SEC-0035">
@@ -4137,7 +4227,7 @@
 </rem:time>
 <rem:place>Lugar del negocio</rem:place>
 <rem:results>Esta reunión, fue dediicada a la recogida de datos inicial. La principal motivación fue el acordar la disponibilidad del negocio y generar una implicación, además de empezar a recoger los primeros datos acerca de este.<br/><br/>* Los procesos más frecuentes del negocio son 3, el alquiler de <rem:ref oid="GLO-0016">cubas</rem:ref>, la compra  de materiales a <rem:ref oid="GLO-0048">proveedores</rem:ref> y la venta de los mismos al público.<br/><br/>* Como regla general, siempre hay un encargado de almacén, que suele llevar a cabo los portes de alquiler o venta. También habrá una persona atendiendo el mostrador y el peón dedicado a ayudar con el almacén, No obstante, no hay una distinción clara de los trabajos, ya que entre empleados siempre se intenta suplir los &quot;huecos del negocio&quot;.<br/><br/>* Los dueños del negocio, están abiertos a poner a disposición todo tipo de información. Además, ven con buenos ojos la implantación de un sistema que expanda y ayude a la empresa.<br/><br/>* Los <rem:ref oid="GLO-0046">productos</rem:ref> más vendidos son los referentes a reformas. Engloban cementos, ladrillos, <rem:ref oid="GLO-0022">losas</rem:ref>...<br/><br/>* Es un negocio con una informatización baja, que tiene mucho margen de trabajo. El sistema implantado iría orientado a mejorar la gestión y tener una función de <rem:ref oid="GLO-0047">pedidos</rem:ref> web.</rem:results>
-	<rem:attenders stakeholders = "STK-0003 STK-0007 STK-0006 "/>
+	<rem:attenders stakeholders = "STK-0003 STK-0006 STK-0007 "/>
 </rem:meeting>
 <rem:meeting oid="MET-0003">
 <rem:name>Reunión de análisis con la Organización  (45min)</rem:name>
@@ -4162,7 +4252,7 @@
 </rem:time>
 <rem:place>Lugar del negocio</rem:place>
 <rem:results>En esta reunión, la idea principal fue reducir las dudas sobre la información actual. Se recogieron datos sobre los procesos y los actores de negocio.<br/><br/>* Hay 2 perfiles de clientes en este negocio. Los habituales y los ocasionales. Para los habituales, siempre se dispone de los <rem:ref oid="GLO-0046">productos</rem:ref> más vendidos, que son los que suelen comprar. En el caso de clientes ocasionales, es probable que no se disponga de su <rem:ref oid="GLO-0046">producto</rem:ref>; este <rem:ref oid="GLO-0046">producto</rem:ref> suele ser algún elemento del <rem:ref oid="GLO-0040">catálogo</rem:ref> de la empresa, <rem:ref oid="GLO-0022">losas</rem:ref>, azulejos...<br/><br/>* Hemos ampliado el conocimiento y el repertorio de procesos. Principalmente acerca de los <rem:ref oid="GLO-0047">pedidos</rem:ref> de clientes, a <rem:ref oid="GLO-0048">proveedores</rem:ref> y alquileres de <rem:ref oid="GLO-0016">cubas</rem:ref>.<br/><br/>* Acordamos el que hagan un formulario para extender incluso más nuestra información.<br/><br/>* Entendimos que la web podría ir orientada a los clientes ocasionales, para poder extender el negocio y gestionar sus <rem:ref oid="GLO-0047">pedidos</rem:ref> de forma más rápida.<br/><br/>* Los <rem:ref oid="GLO-0047">pedidos</rem:ref> y alquileres aceptan portes, este porte es incluido en el precio del <rem:ref oid="GLO-0047">pedido</rem:ref>. Para este se acuerda una fecha y sitio de entrega.</rem:results>
-	<rem:attenders stakeholders = "STK-0003 STK-0007 STK-0006 "/>
+	<rem:attenders stakeholders = "STK-0003 STK-0006 STK-0007 "/>
 </rem:meeting>
 <rem:meeting oid="MET-0004">
 <rem:name>Reunión para aclarar procesos y obtener imágenes (1h)</rem:name>
@@ -4403,7 +4493,7 @@
 <rem:day>5</rem:day>
 </rem:date>
 </rem:version>
-<rem:authors stakeholders="STK-0002 STK-0001 STK-0005 STK-0003 STK-0004 "/>
+<rem:authors stakeholders="STK-0005 STK-0002 STK-0003 STK-0004 STK-0001 "/>
 <rem:comments>Ninguno</rem:comments>
 <rem:address>Av. Reina Mercedes</rem:address>
 <rem:telephone><rem:tbd/></rem:telephone>
@@ -4850,8 +4940,8 @@
 <rem:comments>Ninguno</rem:comments>
 <rem:level>2</rem:level>
 <rem:number>5.2 </rem:number>
-<rem:glossaryItem oid="GLO-0085">
-<rem:name>IU009 - Creación empleado</rem:name>
+<rem:graphicFile oid="GRF-0020">
+<rem:name><rem:ref oid="GLO-0087">IU005 - Consulta de empleados</rem:ref></rem:name>
 <rem:version>
 <rem:major>1</rem:major>
 <rem:minor>0</rem:minor>
@@ -4862,8 +4952,64 @@
 </rem:date>
 </rem:version>
 <rem:comments>Ninguno</rem:comments>
-<rem:text>En esta interfaz de usuario representamos el escenario que el propietario, una vez entrado en la sección &quot;Empleados&quot; y clicado sobre &quot;Nuevo Empleado&quot;, vería. En esta ventana el propietario deberá de introducir los datos del nuevo empleado a registrar. Si unos de los datos no son introducidos correctamente, se mostrará el campo que se ha introducido erróneamente de color rojo con un texto indicativo. Tal como se muestra en la siguiente imagen:</rem:text>
-</rem:glossaryItem>
+<rem:fileName><![CDATA[.\diagramas\interfaz usuario consulta empleados\UIConsultaEmpleados.PNG]]></rem:fileName>
+</rem:graphicFile>
+<rem:graphicFile oid="GRF-0021">
+<rem:name>IU005E - Consulta de empleados error</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2020</rem:year>
+<rem:month>12</rem:month>
+<rem:day>9</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>Ninguno</rem:comments>
+<rem:fileName><![CDATA[.\diagramas\interfaz usuario consulta empleados\UIConsultaEmpleadosError.PNG]]></rem:fileName>
+</rem:graphicFile>
+<rem:graphicFile oid="GRF-0022">
+<rem:name><rem:ref oid="GLO-0088">IU006 - Consulta de cubas</rem:ref> (elegir fecha)</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2020</rem:year>
+<rem:month>12</rem:month>
+<rem:day>9</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>Ninguno</rem:comments>
+<rem:fileName><![CDATA[.\diagramas\interfaz usuario consulta cubas\UIConsultaCubasFecha.PNG]]></rem:fileName>
+</rem:graphicFile>
+<rem:graphicFile oid="GRF-0023">
+<rem:name><rem:ref oid="GLO-0088">IU006 - Consulta de cubas</rem:ref></rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2020</rem:year>
+<rem:month>12</rem:month>
+<rem:day>9</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>Ninguno</rem:comments>
+<rem:fileName><![CDATA[.\diagramas\interfaz usuario consulta cubas\UIConsultaCubasExito.PNG]]></rem:fileName>
+</rem:graphicFile>
+<rem:graphicFile oid="GRF-0024">
+<rem:name>IU006E - Consulta de <rem:ref oid="GLO-0016">cubas</rem:ref> error</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2020</rem:year>
+<rem:month>12</rem:month>
+<rem:day>9</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>Ninguno</rem:comments>
+<rem:fileName><![CDATA[.\diagramas\interfaz usuario consulta cubas\UIConsultaCubasError.PNG]]></rem:fileName>
+</rem:graphicFile>
 <rem:graphicFile oid="GRF-0017">
 <rem:name><rem:ref oid="GLO-0085">IU009 - Creación empleado</rem:ref></rem:name>
 <rem:version>
@@ -4892,20 +5038,6 @@
 <rem:comments>Ninguno</rem:comments>
 <rem:fileName><![CDATA[.\diagramas\UICreacionEmpleadoFallo.png]]></rem:fileName>
 </rem:graphicFile>
-<rem:glossaryItem oid="GLO-0086">
-<rem:name>IU010 - Registro de cliente</rem:name>
-<rem:version>
-<rem:major>1</rem:major>
-<rem:minor>0</rem:minor>
-<rem:date>
-<rem:year>2020</rem:year>
-<rem:month>12</rem:month>
-<rem:day>9</rem:day>
-</rem:date>
-</rem:version>
-<rem:comments>Ninguno</rem:comments>
-<rem:text>En esta interfaz de usuario representamos el escenario que se da cuando un cliente clica sobre el botón &quot;Registrarse&quot; en nuestra web. Aquí el cliente en cuestión deberá introducir sus datos personales correctamente, en el caso de no hacerlo el sistema mostrará el/los campo/s erróneos en rojo con un texto indicativo.</rem:text>
-</rem:glossaryItem>
 <rem:graphicFile oid="GRF-0016">
 <rem:name><rem:ref oid="GLO-0086">IU010 - Registro de Cliente</rem:ref></rem:name>
 <rem:version>
@@ -4949,6 +5081,62 @@
 <rem:comments>Ninguno</rem:comments>
 <rem:level>2</rem:level>
 <rem:number>5.3 </rem:number>
+<rem:glossaryItem oid="GLO-0087">
+<rem:name>IU005 - Consulta de empleados</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2020</rem:year>
+<rem:month>12</rem:month>
+<rem:day>9</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>Ninguno</rem:comments>
+<rem:text>En esta interfaz de usuario se representa la consulta, por parte del dueño del negocio o de algún usuario administrador, de empleados con sus datos. También se contempla el caso de acceder a una lista de empleados vacía, donde se mostrará un enlace para dar de alta a un nuevo empleado.</rem:text>
+</rem:glossaryItem>
+<rem:glossaryItem oid="GLO-0088">
+<rem:name>IU006 - Consulta de cubas</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2020</rem:year>
+<rem:month>12</rem:month>
+<rem:day>9</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>Ninguno</rem:comments>
+<rem:text>En esta interfaz de usuario se representa la consulta, por parte de cualquier usuario de la aplicación, de la página de alquiler de <rem:ref oid="GLO-0016">cubas</rem:ref>.<br/>Primero se accede a una página de selección de fecha para comenzar el alquiler, al elegirla nos mostrará las <rem:ref oid="GLO-0016">cubas</rem:ref> (con sus datos de interés) disponibles para la fecha seleccionada. Si no hubiese <rem:ref oid="GLO-0016">cubas</rem:ref> disponibles para alquilar en la fecha elegida, la aplicación nos mostrará una ventana de error y nos proporcionará un enlace para volver a elegir una fecha diferente.</rem:text>
+</rem:glossaryItem>
+<rem:glossaryItem oid="GLO-0085">
+<rem:name>IU009 - Creación empleado</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2020</rem:year>
+<rem:month>12</rem:month>
+<rem:day>9</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>Ninguno</rem:comments>
+<rem:text>En esta interfaz de usuario representamos el escenario que el propietario, una vez entrado en la sección &quot;Empleados&quot; y clicado sobre &quot;Nuevo Empleado&quot;, vería. En esta ventana el propietario deberá de introducir los datos del nuevo empleado a registrar. Si unos de los datos no son introducidos correctamente, se mostrará el campo que se ha introducido erróneamente de color rojo con un texto indicativo. Tal como se muestra en la siguiente imagen:</rem:text>
+</rem:glossaryItem>
+<rem:glossaryItem oid="GLO-0086">
+<rem:name>IU010 - Registro de cliente</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2020</rem:year>
+<rem:month>12</rem:month>
+<rem:day>9</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>Ninguno</rem:comments>
+<rem:text>En esta interfaz de usuario representamos el escenario que se da cuando un cliente clica sobre el botón &quot;Registrarse&quot; en nuestra web. Aquí el cliente en cuestión deberá introducir sus datos personales correctamente, en el caso de no hacerlo el sistema mostrará el/los campo/s erróneos en rojo con un texto indicativo.</rem:text>
+</rem:glossaryItem>
 </rem:section>
 </rem:section>
 <rem:section oid="SEC-0062">
@@ -5068,109 +5256,10 @@
 </rem:version>
 <rem:comments>Ninguno</rem:comments>
 </rem:changeRequestsSpecification>
-<rem:trace source="GRF-0001"  target="ACT-0003" >
+<rem:trace source="GRF-0006"  target="ACT-0013" >
 <rem:isChecked/>
 </rem:trace>
-<rem:trace source="GRF-0001"  target="ACT-0004" >
-<rem:isChecked/>
-</rem:trace>
-<rem:trace source="GLO-0015"  target="OBJ-0003" >
-<rem:isChecked/>
-</rem:trace>
-<rem:trace source="GRF-0002"  target="ACT-0003" >
-<rem:isChecked/>
-</rem:trace>
-<rem:trace source="OBJ-0002"  target="OBJ-0001" >
-<rem:isChecked/>
-</rem:trace>
-<rem:trace source="GRF-0001"  target="ACT-0001" >
-<rem:isChecked/>
-</rem:trace>
-<rem:trace source="OBJ-0006"  target="OBJ-0003" >
-<rem:isChecked/>
-</rem:trace>
-<rem:trace source="GRF-0002"  target="ACT-0014" >
-<rem:isChecked/>
-</rem:trace>
-<rem:trace source="GRF-0001"  target="ACT-0007" >
-<rem:isChecked/>
-</rem:trace>
-<rem:trace source="ACT-0007"  target="GLO-0035" >
-<rem:isChecked/>
-</rem:trace>
-<rem:trace source="GRF-0001"  target="ACT-0010" >
-<rem:isChecked/>
-</rem:trace>
-<rem:trace source="GRF-0002"  target="ACT-0010" >
-<rem:isChecked/>
-</rem:trace>
-<rem:trace source="ACT-0002"  target="GLO-0036" >
-<rem:isChecked/>
-</rem:trace>
-<rem:trace source="ACT-0008"  target="GLO-0036" >
-<rem:isChecked/>
-</rem:trace>
-<rem:trace source="ACT-0010"  target="GLO-0035" >
-<rem:isChecked/>
-</rem:trace>
-<rem:trace source="GRF-0002"  target="ACT-0002" >
-<rem:isChecked/>
-</rem:trace>
-<rem:trace source="GRF-0001"  target="ACT-0006" >
-<rem:isChecked/>
-</rem:trace>
-<rem:trace source="GRF-0002"  target="ACT-0006" >
-<rem:isChecked/>
-</rem:trace>
-<rem:trace source="ACT-0006"  target="GLO-0036" >
-<rem:isChecked/>
-</rem:trace>
-<rem:trace source="GRF-0003"  target="ACT-0007" >
-<rem:isChecked/>
-</rem:trace>
-<rem:trace source="ACT-0015"  target="GLO-0035" >
-<rem:isChecked/>
-</rem:trace>
-<rem:trace source="GRF-0001"  target="ACT-0013" >
-<rem:isChecked/>
-</rem:trace>
-<rem:trace source="OBJ-0004"  target="OBJ-0003" >
-<rem:isChecked/>
-</rem:trace>
-<rem:trace source="GRF-0002"  target="ACT-0001" >
-<rem:isChecked/>
-</rem:trace>
-<rem:trace source="GRF-0001"  target="ACT-0015" >
-<rem:isChecked/>
-</rem:trace>
-<rem:trace source="GRF-0001"  target="ACT-0002" >
-<rem:isChecked/>
-</rem:trace>
-<rem:trace source="ACT-0010"  target="GLO-0036" >
-<rem:isChecked/>
-</rem:trace>
-<rem:trace source="ACT-0002"  target="GLO-0035" >
-<rem:isChecked/>
-</rem:trace>
-<rem:trace source="GRF-0002"  target="ACT-0008" >
-<rem:isChecked/>
-</rem:trace>
-<rem:trace source="ACT-0006"  target="GLO-0035" >
-<rem:isChecked/>
-</rem:trace>
-<rem:trace source="GRF-0003"  target="ACT-0006" >
-<rem:isChecked/>
-</rem:trace>
-<rem:trace source="GRF-0003"  target="ACT-0013" >
-<rem:isChecked/>
-</rem:trace>
-<rem:trace source="GRF-0002"  target="ACT-0005" >
-<rem:isChecked/>
-</rem:trace>
-<rem:trace source="GRF-0001"  target="ACT-0014" >
-<rem:isChecked/>
-</rem:trace>
-<rem:trace source="GRF-0003"  target="ACT-0002" >
+<rem:trace source="GRF-0005"  target="ACT-0015" >
 <rem:isChecked/>
 </rem:trace>
 <rem:trace source="GRF-0005"  target="ACT-0002" >
@@ -5182,52 +5271,10 @@
 <rem:trace source="GRF-0006"  target="ACT-0007" >
 <rem:isChecked/>
 </rem:trace>
-<rem:trace source="GRF-0005"  target="ACT-0003" >
-<rem:isChecked/>
-</rem:trace>
-<rem:trace source="GRF-0005"  target="ACT-0007" >
-<rem:isChecked/>
-</rem:trace>
-<rem:trace source="GRF-0003"  target="ACT-0015" >
-<rem:isChecked/>
-</rem:trace>
-<rem:trace source="GRF-0005"  target="ACT-0013" >
-<rem:isChecked/>
-</rem:trace>
-<rem:trace source="GRF-0005"  target="ACT-0015" >
-<rem:isChecked/>
-</rem:trace>
-<rem:trace source="GRF-0009"  target="ACT-0007" >
-<rem:isChecked/>
-</rem:trace>
-<rem:trace source="GRF-0009"  target="ACT-0020" >
-<rem:isChecked/>
-</rem:trace>
-<rem:trace source="GRF-0008"  target="ACT-0020" >
-<rem:isChecked/>
-</rem:trace>
-<rem:trace source="GRF-0007"  target="ACT-0007" >
+<rem:trace source="GRF-0006"  target="ACT-0015" >
 <rem:isChecked/>
 </rem:trace>
 <rem:trace source="GRF-0006"  target="ACT-0002" >
-<rem:isChecked/>
-</rem:trace>
-<rem:trace source="ACT-0020"  target="GLO-0036" >
-<rem:isChecked/>
-</rem:trace>
-<rem:trace source="GRF-0007"  target="ACT-0015" >
-<rem:isChecked/>
-</rem:trace>
-<rem:trace source="GRF-0008"  target="ACT-0022" >
-<rem:isChecked/>
-</rem:trace>
-<rem:trace source="GRF-0009"  target="ACT-0022" >
-<rem:isChecked/>
-</rem:trace>
-<rem:trace source="ACT-0019"  target="GLO-0035" >
-<rem:isChecked/>
-</rem:trace>
-<rem:trace source="ACT-0019"  target="GLO-0036" >
 <rem:isChecked/>
 </rem:trace>
 <rem:trace source="GRF-0007"  target="ACT-0002" >
@@ -5236,31 +5283,148 @@
 <rem:trace source="GRF-0007"  target="ACT-0006" >
 <rem:isChecked/>
 </rem:trace>
-<rem:trace source="GRF-0007"  target="ACT-0013" >
+<rem:trace source="GRF-0007"  target="ACT-0007" >
 <rem:isChecked/>
 </rem:trace>
-<rem:trace source="GRF-0009"  target="ACT-0019" >
+<rem:trace source="GRF-0002"  target="ACT-0003" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source="GRF-0001"  target="ACT-0004" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source="ACT-0006"  target="GLO-0035" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source="GRF-0001"  target="ACT-0015" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source="OBJ-0006"  target="OBJ-0003" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source="GRF-0001"  target="ACT-0014" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source="OBJ-0002"  target="OBJ-0001" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source="GRF-0002"  target="ACT-0001" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source="GRF-0001"  target="ACT-0010" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source="GRF-0001"  target="ACT-0013" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source="GRF-0001"  target="ACT-0003" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source="ACT-0010"  target="GLO-0035" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source="GRF-0002"  target="ACT-0006" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source="ACT-0010"  target="GLO-0036" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source="GRF-0002"  target="ACT-0002" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source="OBJ-0004"  target="OBJ-0003" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source="GRF-0001"  target="ACT-0001" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source="GRF-0002"  target="ACT-0014" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source="GLO-0015"  target="OBJ-0003" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source="GRF-0002"  target="ACT-0005" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source="GRF-0001"  target="ACT-0007" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source="GRF-0002"  target="ACT-0010" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source="GRF-0001"  target="ACT-0002" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source="ACT-0002"  target="GLO-0036" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source="ACT-0007"  target="GLO-0035" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source="ACT-0015"  target="GLO-0035" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source="ACT-0002"  target="GLO-0035" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source="GRF-0002"  target="ACT-0008" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source="ACT-0008"  target="GLO-0036" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source="GRF-0001"  target="ACT-0006" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source="GRF-0003"  target="ACT-0002" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source="GRF-0003"  target="ACT-0007" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source="GRF-0003"  target="ACT-0013" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source="GRF-0003"  target="ACT-0015" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source="GRF-0005"  target="ACT-0003" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source="GRF-0005"  target="ACT-0007" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source="ACT-0006"  target="GLO-0036" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source="GRF-0003"  target="ACT-0006" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source="GRF-0005"  target="ACT-0013" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source="ACT-0019"  target="GLO-0035" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source="ACT-0021"  target="GLO-0036" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source="GRF-0008"  target="ACT-0007" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source="GRF-0009"  target="ACT-0007" >
 <rem:isChecked/>
 </rem:trace>
 <rem:trace source="ACT-0022"  target="GLO-0036" >
 <rem:isChecked/>
 </rem:trace>
-<rem:trace source="ACT-0022"  target="GLO-0035" >
+<rem:trace source="GRF-0007"  target="ACT-0013" >
 <rem:isChecked/>
 </rem:trace>
-<rem:trace source="GRF-0006"  target="ACT-0013" >
-<rem:isChecked/>
-</rem:trace>
-<rem:trace source="GRF-0009"  target="ACT-0018" >
-<rem:isChecked/>
-</rem:trace>
-<rem:trace source="GRF-0006"  target="ACT-0015" >
+<rem:trace source="GRF-0008"  target="ACT-0018" >
 <rem:isChecked/>
 </rem:trace>
 <rem:trace source="ACT-0020"  target="GLO-0035" >
-<rem:isChecked/>
-</rem:trace>
-<rem:trace source="GRF-0008"  target="ACT-0019" >
 <rem:isChecked/>
 </rem:trace>
 <rem:trace source="CRQ-0016"  target="CRQ-0015" >
@@ -5269,46 +5433,40 @@
 <rem:trace source="ACT-0018"  target="GLO-0035" >
 <rem:isChecked/>
 </rem:trace>
-<rem:trace source="GRF-0008"  target="ACT-0007" >
+<rem:trace source="GRF-0008"  target="ACT-0019" >
 <rem:isChecked/>
 </rem:trace>
-<rem:trace source="GRF-0008"  target="ACT-0018" >
+<rem:trace source="GRF-0007"  target="ACT-0015" >
 <rem:isChecked/>
 </rem:trace>
-<rem:trace source="ACT-0021"  target="GLO-0036" >
+<rem:trace source="GRF-0009"  target="ACT-0020" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source="GRF-0009"  target="ACT-0018" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source="GRF-0008"  target="ACT-0022" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source="GRF-0009"  target="ACT-0019" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source="ACT-0022"  target="GLO-0035" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source="ACT-0020"  target="GLO-0036" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source="GRF-0009"  target="ACT-0022" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source="GRF-0008"  target="ACT-0020" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source="ACT-0019"  target="GLO-0036" >
 <rem:isChecked/>
 </rem:trace>
 <rem:predefinedValueTypes>
-<rem:predefinedValueType oid="PVT-0003">
-<rem:name>Integer</rem:name>
-<rem:version>
-<rem:major>1</rem:major>
-<rem:minor>0</rem:minor>
-<rem:date>
-<rem:year>2000</rem:year>
-<rem:month>10</rem:month>
-<rem:day>30</rem:day>
-</rem:date>
-</rem:version>
-<rem:comments>Predefined OCL type</rem:comments>
-<rem:description>Integer numbers</rem:description>
-<rem:definition>(null)</rem:definition>
-</rem:predefinedValueType>
-<rem:predefinedValueType oid="PVT-0006">
-<rem:name>Date</rem:name>
-<rem:version>
-<rem:major>1</rem:major>
-<rem:minor>0</rem:minor>
-<rem:date>
-<rem:year>2000</rem:year>
-<rem:month>10</rem:month>
-<rem:day>30</rem:day>
-</rem:date>
-</rem:version>
-<rem:comments>Predefined OCL type (non-standard)</rem:comments>
-<rem:description>Dates</rem:description>
-<rem:definition>(null)</rem:definition>
-</rem:predefinedValueType>
 <rem:predefinedValueType oid="PVT-0001">
 <rem:name>Enum Literal</rem:name>
 <rem:version>
@@ -5322,21 +5480,6 @@
 </rem:version>
 <rem:comments>Predefined OCL type (non-standard)</rem:comments>
 <rem:description>Enumeration literals</rem:description>
-<rem:definition>(null)</rem:definition>
-</rem:predefinedValueType>
-<rem:predefinedValueType oid="PVT-0007">
-<rem:name>Time</rem:name>
-<rem:version>
-<rem:major>1</rem:major>
-<rem:minor>0</rem:minor>
-<rem:date>
-<rem:year>2000</rem:year>
-<rem:month>10</rem:month>
-<rem:day>30</rem:day>
-</rem:date>
-</rem:version>
-<rem:comments>Predefined OCL type (non-standard)</rem:comments>
-<rem:description>Hour:minutes:seconds</rem:description>
 <rem:definition>(null)</rem:definition>
 </rem:predefinedValueType>
 <rem:predefinedValueType oid="PVT-0004">
@@ -5369,6 +5512,21 @@
 <rem:description>Alphanumeric strings</rem:description>
 <rem:definition>(null)</rem:definition>
 </rem:predefinedValueType>
+<rem:predefinedValueType oid="PVT-0007">
+<rem:name>Time</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2000</rem:year>
+<rem:month>10</rem:month>
+<rem:day>30</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>Predefined OCL type (non-standard)</rem:comments>
+<rem:description>Hour:minutes:seconds</rem:description>
+<rem:definition>(null)</rem:definition>
+</rem:predefinedValueType>
 <rem:predefinedValueType oid="PVT-0002">
 <rem:name>Real</rem:name>
 <rem:version>
@@ -5384,31 +5542,58 @@
 <rem:description>Real numbers</rem:description>
 <rem:definition>(null)</rem:definition>
 </rem:predefinedValueType>
+<rem:predefinedValueType oid="PVT-0003">
+<rem:name>Integer</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2000</rem:year>
+<rem:month>10</rem:month>
+<rem:day>30</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>Predefined OCL type</rem:comments>
+<rem:description>Integer numbers</rem:description>
+<rem:definition>(null)</rem:definition>
+</rem:predefinedValueType>
+<rem:predefinedValueType oid="PVT-0006">
+<rem:name>Date</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2000</rem:year>
+<rem:month>10</rem:month>
+<rem:day>30</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>Predefined OCL type (non-standard)</rem:comments>
+<rem:description>Dates</rem:description>
+<rem:definition>(null)</rem:definition>
+</rem:predefinedValueType>
 </rem:predefinedValueTypes>
 <rem:predefinedValues>
 <rem:changeRequestStatusValue oid = "CRV-0001">
 <rem:name>PD</rem:name>
 </rem:changeRequestStatusValue>
-<rem:changeRequestStatusValue oid = "CRV-0006">
-<rem:name>rechazado</rem:name>
-</rem:changeRequestStatusValue>
 <rem:changeRequestStatusValue oid = "CRV-0002">
 <rem:name>pendiente de análisis</rem:name>
-</rem:changeRequestStatusValue>
-<rem:changeRequestStatusValue oid = "CRV-0003">
-<rem:name>pendiente de aprobar/rechazar</rem:name>
-</rem:changeRequestStatusValue>
-<rem:changeRequestStatusValue oid = "CRV-0004">
-<rem:name>pendiente de realización</rem:name>
 </rem:changeRequestStatusValue>
 <rem:changeRequestStatusValue oid = "CRV-0005">
 <rem:name>verificado</rem:name>
 </rem:changeRequestStatusValue>
+<rem:changeRequestStatusValue oid = "CRV-0006">
+<rem:name>rechazado</rem:name>
+</rem:changeRequestStatusValue>
+<rem:changeRequestStatusValue oid = "CRV-0004">
+<rem:name>pendiente de realización</rem:name>
+</rem:changeRequestStatusValue>
+<rem:changeRequestStatusValue oid = "CRV-0003">
+<rem:name>pendiente de aprobar/rechazar</rem:name>
+</rem:changeRequestStatusValue>
 <rem:conflictStatusValue oid = "CSV-0001">
 <rem:name>PD</rem:name>
-</rem:conflictStatusValue>
-<rem:conflictStatusValue oid = "CSV-0004">
-<rem:name>resuelto</rem:name>
 </rem:conflictStatusValue>
 <rem:conflictStatusValue oid = "CSV-0002">
 <rem:name>no resuelto</rem:name>
@@ -5416,11 +5601,14 @@
 <rem:conflictStatusValue oid = "CSV-0003">
 <rem:name>en proceso de negociación</rem:name>
 </rem:conflictStatusValue>
-<rem:defectStatusValue oid = "DSV-0001">
-<rem:name>PD</rem:name>
-</rem:defectStatusValue>
+<rem:conflictStatusValue oid = "CSV-0004">
+<rem:name>resuelto</rem:name>
+</rem:conflictStatusValue>
 <rem:defectStatusValue oid = "DSV-0004">
 <rem:name>eliminado</rem:name>
+</rem:defectStatusValue>
+<rem:defectStatusValue oid = "DSV-0001">
+<rem:name>PD</rem:name>
 </rem:defectStatusValue>
 <rem:defectStatusValue oid = "DSV-0002">
 <rem:name>no eliminado</rem:name>
@@ -5428,10 +5616,52 @@
 <rem:defectStatusValue oid = "DSV-0003">
 <rem:name>en proceso de negociación</rem:name>
 </rem:defectStatusValue>
-<rem:defectTypeValue oid = "DTV-0001">
-<rem:name>PD</rem:name>
+<rem:defectTypeValue oid = "DTV-0015">
+<rem:name>Nivel incorrecto de detalle</rem:name>
 <rem:description>
-<![CDATA[Por Determinar]]>
+<![CDATA[El requisito o requisitos no están expresados con el nivel adecuado de detalle, es decir, son demasiado abstractos o demasiado detallados]]>
+</rem:description>
+</rem:defectTypeValue>
+<rem:defectTypeValue oid = "DTV-0016">
+<rem:name>No rastreabilidad</rem:name>
+<rem:description>
+<![CDATA[El requisito o requisitos no están trazados hacia sus orígenes, bien requisitos de nivel superior (objetivos), bien clientes y usuarios]]>
+</rem:description>
+</rem:defectTypeValue>
+<rem:defectTypeValue oid = "DTV-0017">
+<rem:name>Organización incorrecta</rem:name>
+<rem:description>
+<![CDATA[El requisito o requisitos no están organizados correctamente según la normativa aplicada o el documento no contiene las secciones obligatorias]]>
+</rem:description>
+</rem:defectTypeValue>
+<rem:defectTypeValue oid = "DTV-0014">
+<rem:name>Estabilidad no establecida</rem:name>
+<rem:description>
+<![CDATA[El requisito o requisitos no tienen estimada su estabilidad]]>
+</rem:description>
+</rem:defectTypeValue>
+<rem:defectTypeValue oid = "DTV-0023">
+<rem:name>Otro</rem:name>
+<rem:description>
+<![CDATA[El requisito o requisitos presentan otro tipo de defecto]]>
+</rem:description>
+</rem:defectTypeValue>
+<rem:defectTypeValue oid = "DTV-0012">
+<rem:name>Incompleción</rem:name>
+<rem:description>
+<![CDATA[El requisito o requisitos no describen todo lo que el sistema se supone que deberá hacer, no describen las respuestas del sistema a todas las posibles situaciones o incluyen elementos por determinar (PD)]]>
+</rem:description>
+</rem:defectTypeValue>
+<rem:defectTypeValue oid = "DTV-0013">
+<rem:name>Prioridad no establecida</rem:name>
+<rem:description>
+<![CDATA[El requisito o requisitos no tienen establecida su prioridad, es decir, su importancia y su urgencia]]>
+</rem:description>
+</rem:defectTypeValue>
+<rem:defectTypeValue oid = "DTV-0002">
+<rem:name>Ambigüedad</rem:name>
+<rem:description>
+<![CDATA[El requisito o requisitos, aunque comprensibles, tienen más de una interpretación posible]]>
 </rem:description>
 </rem:defectTypeValue>
 <rem:defectTypeValue oid = "DTV-0003">
@@ -5452,16 +5682,10 @@
 <![CDATA[No se puede comprobar que el sistema satisface el requisito o requisitos]]>
 </rem:description>
 </rem:defectTypeValue>
-<rem:defectTypeValue oid = "DTV-0008">
-<rem:name>Verbosidad excesiva</rem:name>
+<rem:defectTypeValue oid = "DTV-0001">
+<rem:name>PD</rem:name>
 <rem:description>
-<![CDATA[El requisito o requisitos pueden expresarse de forma más concisa sin alterar su significado]]>
-</rem:description>
-</rem:defectTypeValue>
-<rem:defectTypeValue oid = "DTV-0002">
-<rem:name>Ambigüedad</rem:name>
-<rem:description>
-<![CDATA[El requisito o requisitos, aunque comprensibles, tienen más de una interpretación posible]]>
+<![CDATA[Por Determinar]]>
 </rem:description>
 </rem:defectTypeValue>
 <rem:defectTypeValue oid = "DTV-0006">
@@ -5476,52 +5700,16 @@
 <![CDATA[El requisito o requisitos no pueden ser implementados con la tecnología actual o dentro de un coste razonable]]>
 </rem:description>
 </rem:defectTypeValue>
+<rem:defectTypeValue oid = "DTV-0008">
+<rem:name>Verbosidad excesiva</rem:name>
+<rem:description>
+<![CDATA[El requisito o requisitos pueden expresarse de forma más concisa sin alterar su significado]]>
+</rem:description>
+</rem:defectTypeValue>
 <rem:defectTypeValue oid = "DTV-0010">
 <rem:name>Redundancia</rem:name>
 <rem:description>
 <![CDATA[El requisito o requisitos son redundantes o contienen elementos redundantes]]>
-</rem:description>
-</rem:defectTypeValue>
-<rem:defectTypeValue oid = "DTV-0013">
-<rem:name>Prioridad no establecida</rem:name>
-<rem:description>
-<![CDATA[El requisito o requisitos no tienen establecida su prioridad, es decir, su importancia y su urgencia]]>
-</rem:description>
-</rem:defectTypeValue>
-<rem:defectTypeValue oid = "DTV-0014">
-<rem:name>Estabilidad no establecida</rem:name>
-<rem:description>
-<![CDATA[El requisito o requisitos no tienen estimada su estabilidad]]>
-</rem:description>
-</rem:defectTypeValue>
-<rem:defectTypeValue oid = "DTV-0015">
-<rem:name>Nivel incorrecto de detalle</rem:name>
-<rem:description>
-<![CDATA[El requisito o requisitos no están expresados con el nivel adecuado de detalle, es decir, son demasiado abstractos o demasiado detallados]]>
-</rem:description>
-</rem:defectTypeValue>
-<rem:defectTypeValue oid = "DTV-0016">
-<rem:name>No rastreabilidad</rem:name>
-<rem:description>
-<![CDATA[El requisito o requisitos no están trazados hacia sus orígenes, bien requisitos de nivel superior (objetivos), bien clientes y usuarios]]>
-</rem:description>
-</rem:defectTypeValue>
-<rem:defectTypeValue oid = "DTV-0017">
-<rem:name>Organización incorrecta</rem:name>
-<rem:description>
-<![CDATA[El requisito o requisitos no están organizados correctamente según la normativa aplicada o el documento no contiene las secciones obligatorias]]>
-</rem:description>
-</rem:defectTypeValue>
-<rem:defectTypeValue oid = "DTV-0023">
-<rem:name>Otro</rem:name>
-<rem:description>
-<![CDATA[El requisito o requisitos presentan otro tipo de defecto]]>
-</rem:description>
-</rem:defectTypeValue>
-<rem:defectTypeValue oid = "DTV-0011">
-<rem:name>Imprecisión</rem:name>
-<rem:description>
-<![CDATA[El requisito o requisitos no se expresan de forma precisa, es decir, usando cantidades numéricas siempre que sea posible con el nivel adecuado de precisión]]>
 </rem:description>
 </rem:defectTypeValue>
 <rem:defectTypeValue oid = "DTV-0009">
@@ -5530,44 +5718,38 @@
 <![CDATA[El requisito o requisitos incluyen elementos dependientes del diseño del sistema]]>
 </rem:description>
 </rem:defectTypeValue>
-<rem:defectTypeValue oid = "DTV-0012">
-<rem:name>Incompleción</rem:name>
+<rem:defectTypeValue oid = "DTV-0011">
+<rem:name>Imprecisión</rem:name>
 <rem:description>
-<![CDATA[El requisito o requisitos no describen todo lo que el sistema se supone que deberá hacer, no describen las respuestas del sistema a todas las posibles situaciones o incluyen elementos por determinar (PD)]]>
+<![CDATA[El requisito o requisitos no se expresan de forma precisa, es decir, usando cantidades numéricas siempre que sea posible con el nivel adecuado de precisión]]>
 </rem:description>
 </rem:defectTypeValue>
-<rem:importanceValue oid = "IMV-0001">
-<rem:name>PD</rem:name>
-</rem:importanceValue>
-<rem:importanceValue oid = "IMV-0002">
-<rem:name>vital</rem:name>
+<rem:importanceValue oid = "IMV-0004">
+<rem:name>quedaría bien</rem:name>
 </rem:importanceValue>
 <rem:importanceValue oid = "IMV-0003">
 <rem:name>importante</rem:name>
 </rem:importanceValue>
-<rem:importanceValue oid = "IMV-0004">
-<rem:name>quedaría bien</rem:name>
+<rem:importanceValue oid = "IMV-0002">
+<rem:name>vital</rem:name>
 </rem:importanceValue>
-<rem:stabilityValue oid = "SBV-0003">
-<rem:name>media</rem:name>
-</rem:stabilityValue>
-<rem:stabilityValue oid = "SBV-0004">
-<rem:name>alta</rem:name>
+<rem:importanceValue oid = "IMV-0001">
+<rem:name>PD</rem:name>
+</rem:importanceValue>
+<rem:stabilityValue oid = "SBV-0002">
+<rem:name>baja</rem:name>
 </rem:stabilityValue>
 <rem:stabilityValue oid = "SBV-0001">
 <rem:name>PD</rem:name>
 </rem:stabilityValue>
-<rem:stabilityValue oid = "SBV-0002">
-<rem:name>baja</rem:name>
+<rem:stabilityValue oid = "SBV-0004">
+<rem:name>alta</rem:name>
 </rem:stabilityValue>
-<rem:statusValue oid = "STV-0004">
-<rem:name>pendiente de validación</rem:name>
-</rem:statusValue>
+<rem:stabilityValue oid = "SBV-0003">
+<rem:name>media</rem:name>
+</rem:stabilityValue>
 <rem:statusValue oid = "STV-0001">
 <rem:name>PD</rem:name>
-</rem:statusValue>
-<rem:statusValue oid = "STV-0002">
-<rem:name>en construcción</rem:name>
 </rem:statusValue>
 <rem:statusValue oid = "STV-0005">
 <rem:name>validado</rem:name>
@@ -5575,59 +5757,65 @@
 <rem:statusValue oid = "STV-0003">
 <rem:name>pendiente de verificación</rem:name>
 </rem:statusValue>
-<rem:terminationValue oid = "TEV-0001">
-<rem:name>PD</rem:name>
+<rem:statusValue oid = "STV-0002">
+<rem:name>en construcción</rem:name>
+</rem:statusValue>
+<rem:statusValue oid = "STV-0004">
+<rem:name>pendiente de validación</rem:name>
+</rem:statusValue>
+<rem:terminationValue oid = "TEV-0002">
+<rem:name>continúa</rem:name>
 </rem:terminationValue>
 <rem:terminationValue oid = "TEV-0003">
 <rem:name>queda sin efecto</rem:name>
 </rem:terminationValue>
-<rem:terminationValue oid = "TEV-0002">
-<rem:name>continúa</rem:name>
+<rem:terminationValue oid = "TEV-0001">
+<rem:name>PD</rem:name>
 </rem:terminationValue>
-<rem:timeUnitValue oid = "TUV-0005">
-<rem:name>mes(es)</rem:name>
+<rem:timeUnitValue oid = "TUV-0001">
+<rem:name>PD</rem:name>
 </rem:timeUnitValue>
 <rem:timeUnitValue oid = "TUV-0002">
 <rem:name>año(s)</rem:name>
 </rem:timeUnitValue>
-<rem:timeUnitValue oid = "TUV-0009">
-<rem:name>hora(s)</rem:name>
-</rem:timeUnitValue>
-<rem:timeUnitValue oid = "TUV-0007">
-<rem:name>semana(s)</rem:name>
-</rem:timeUnitValue>
-<rem:timeUnitValue oid = "TUV-0001">
-<rem:name>PD</rem:name>
-</rem:timeUnitValue>
-<rem:timeUnitValue oid = "TUV-0008">
-<rem:name>día(s)</rem:name>
-</rem:timeUnitValue>
 <rem:timeUnitValue oid = "TUV-0012">
 <rem:name>décima(s) de segundo</rem:name>
-</rem:timeUnitValue>
-<rem:timeUnitValue oid = "TUV-0011">
-<rem:name>segundo(s)</rem:name>
-</rem:timeUnitValue>
-<rem:timeUnitValue oid = "TUV-0010">
-<rem:name>minuto(s)</rem:name>
-</rem:timeUnitValue>
-<rem:timeUnitValue oid = "TUV-0014">
-<rem:name>milisegundo(s)</rem:name>
 </rem:timeUnitValue>
 <rem:timeUnitValue oid = "TUV-0013">
 <rem:name>centésima(s) de segundo</rem:name>
 </rem:timeUnitValue>
+<rem:timeUnitValue oid = "TUV-0005">
+<rem:name>mes(es)</rem:name>
+</rem:timeUnitValue>
+<rem:timeUnitValue oid = "TUV-0009">
+<rem:name>hora(s)</rem:name>
+</rem:timeUnitValue>
+<rem:timeUnitValue oid = "TUV-0010">
+<rem:name>minuto(s)</rem:name>
+</rem:timeUnitValue>
+<rem:timeUnitValue oid = "TUV-0011">
+<rem:name>segundo(s)</rem:name>
+</rem:timeUnitValue>
+<rem:timeUnitValue oid = "TUV-0007">
+<rem:name>semana(s)</rem:name>
+</rem:timeUnitValue>
+<rem:timeUnitValue oid = "TUV-0008">
+<rem:name>día(s)</rem:name>
+</rem:timeUnitValue>
+<rem:timeUnitValue oid = "TUV-0014">
+<rem:name>milisegundo(s)</rem:name>
+</rem:timeUnitValue>
+<rem:urgencyValue oid = "URV-0001">
+<rem:name>PD</rem:name>
+</rem:urgencyValue>
 <rem:urgencyValue oid = "URV-0002">
 <rem:name>inmediatamente</rem:name>
-</rem:urgencyValue>
-<rem:urgencyValue oid = "URV-0004">
-<rem:name>puede esperar</rem:name>
 </rem:urgencyValue>
 <rem:urgencyValue oid = "URV-0003">
 <rem:name>hay presión</rem:name>
 </rem:urgencyValue>
-<rem:urgencyValue oid = "URV-0001">
-<rem:name>PD</rem:name>
+<rem:urgencyValue oid = "URV-0004">
+<rem:name>puede esperar</rem:name>
 </rem:urgencyValue>
 </rem:predefinedValues>
 </rem:requirementsProject>
