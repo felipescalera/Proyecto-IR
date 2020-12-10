@@ -101,5 +101,9 @@ Sesión 5
 
 -Añadir IU de ventana de pedido
 
+-Añadir IU de facturas
+
 -MensajeEnvioProveedor cambiar lo de Iniciar Sesión
+
+-Añadir lápices y cubos de basuras
 
