@@ -91,7 +91,15 @@ OrdenAlquiler -> OrdenAlquilerCuba (relacion * 1)   **done
 
 hay que ponerle un tipomodelo a la cuba    **done
 
-cambiar porte a portecuba en la orden de alquiler (+lo de camion no hara falta) tendra relacion 0..1 con camion     **done 
 
-cliente va asociado a orden de alquiler (no a cuba)  **done
+
+Sesión 5
+--------------------
+-Añadir IU de update de ***
+
+-Añadir IU de incidencias de clientes
+
+-Añadir IU de ventana de pedido
+
+-MensajeEnvioProveedor cambiar lo de Iniciar Sesión
 
