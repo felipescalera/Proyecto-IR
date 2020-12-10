@@ -107,3 +107,21 @@ Sesión 5
 
 -Añadir lápices y cubos de basuras
 
+
+Sesión IU
+------------------------
+En cada IU:  Cambiar las secciones de arriba, añadir inicio de sesión en otra parte, mostrar a que usuario va dirigido
+(Ej: en el carrito de alerta, debería de aparecer arriba "Bienvenido, Propietario"), especificar en que sitio de la aplicación se encuentra en cada interfaz, mantener el mismo esquema (no poner una selección en vertical y otro en horizontal)
+
+Productos: Poner datos realistas y fotos.
+
+Cesta de Compra: añadir foto en chico de los productos. Añadir precio unitario y el total de la compra.
+
+Carrito de alerta: debería de haber un cuadro donde poder marcar los productos para solicitar a los proveedores, (incluso uno de seleccionar todos). Saber para cada producto el proveedor que lo da y el precio de cada producto (unitario y total).
+
+Empleados: Añadir Id de Seguridad social. Al crear el empleado, deberíamos de poner el tipo de carnet de conducir que tiene.
+
+En los clientes: Añadir telefono y dirección.
+
+Alquiler de cubas: En el calendario deberíamos de añadir información sobre los días en los que las cubas están disponibles (Marcar en verde los días que están disponibles todas las cubas, rojo los que no, amarillo si están solo ciertas cubas disponibles).
+Arreglar el calendario (poner el primer día de la semana los lunes). Añadir filtro donde poder seleccionar la cuba deseada y cuanto tiempo la necesita, entonces cambia el calendario. Añadir el tiempo de alquiler y el precio por día.
