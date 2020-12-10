@@ -13,6 +13,7 @@
             // converter.setOption( "key", "value" );
 
             var converter = new showdown.Converter();
+            converter.setOption( "parseImgDimensions", true );
 
             // function to be used in XLST templates
             // if inline=true, all CRLF tags are replaced
@@ -511,7 +512,7 @@
 <h1 id="SEC-0058" class="section">2 Arquitectura lógica del sistema</h1>
 <h2 id="SEC-0076" class="section">2.1 Diagramas de la arquitectura del sistema</h2>
 <div id="GRF-0014" class="figure">
-<img class="figure_image" src=".\diagramas\diagramas del modelado conceptual\diagramaDeArquitecturaSistema.png" />
+<img class="figure_image" src=".\diagramas\diagramas de arquitectura de sistema\Arquitectura sistema.png" />
 <p class="figure_caption">
 <span class="figure_caption_label">Figura 10: </span>
 <textarea id="GRF-0014-name-md" class="markdown">Diagrama UML de la Arquitectura del Sistema</textarea>
@@ -528,7 +529,7 @@
 <h1 id="SEC-0059" class="section">3 Modelo de clases del sistema</h1>
 <h2 id="SEC-0073" class="section">3.1 Diagramas de clases del sistema</h2>
 <div id="GRF-0010" class="figure">
-<img class="figure_image" src=".\diagramas\diagramas del modelado conceptual\diagramaDePedidoClienteyEmpleados.png" width="50%%" />
+<img class="figure_image" src=".\diagramas\diagramas del modelado conceptual\diagramaDePedidoDeCliente.png" width="50%%" />
 <p class="figure_caption">
 <span class="figure_caption_label">Figura 11: </span>
 <textarea id="GRF-0010-name-md" class="markdown">Diagrama de <a href="#GLO-0047" class="rem_ref">pedido</a> de cliente y empleados</textarea>
@@ -1890,7 +1891,7 @@
 </p>
 </div>
 <div id="GRF-0016" class="figure">
-<img class="figure_image" src=".\diagramas\UICreacionUsuario.png" />
+<img class="figure_image" src=".\diagramas\interfaz usuario creación usuario\UICreacionUsuario.png" />
 <p class="figure_caption">
 <span class="figure_caption_label">Figura 22: </span>
 <textarea id="GRF-0016-name-md" class="markdown">
@@ -1901,7 +1902,7 @@
 </p>
 </div>
 <div id="GRF-0019" class="figure">
-<img class="figure_image" src=".\diagramas\UICreacionUsuarioFallo.png" />
+<img class="figure_image" src=".\diagramas\interfaz usuario creación usuario\UICreacionUsuarioFallo.png" />
 <p class="figure_caption">
 <span class="figure_caption_label">Figura 23: </span>
 <textarea id="GRF-0019-name-md" class="markdown">IU-010E Registro de Cliente Fallo</textarea>
@@ -1971,7 +1972,7 @@
 <script>generate_markdown("GLO-0088-text");</script>
 </div>
 <div id="GLO-0085" class="glo">
-<textarea id="GLO-0085-text-md" class="markdown">**IU-009 Creación empleado**: En esta interfaz de usuario, representamos el escenario que el propietario, una vez entrado en la sección "Empleados" y clicado sobre "Nuevo Empleado", vería. En esta ventana el propietario deberá de introducir los datos del nuevo empleado a registrar. Si unos de los datos no son introducidos correctamente, se mostrará el campo que se ha introducido erróneamente de color rojo con un texto indicativo. Tal como se muestra en la siguiente imagen:</textarea>
+<textarea id="GLO-0085-text-md" class="markdown">**IU-009 Creación empleado**: En esta interfaz de usuario, representamos el escenario que el propietario, una vez entrado en la sección "Empleados" y clicado sobre "Nuevo Empleado", vería. En esta ventana el propietario deberá de introducir los datos del nuevo empleado a registrar. Si unos de los datos no son introducidos correctamente, se mostrará el campo que se ha introducido erróneamente de color rojo con un texto indicativo. </textarea>
 <div id="GLO-0085-text-html" class=""></div>
 <script>generate_markdown("GLO-0085-text");</script>
 </div>
