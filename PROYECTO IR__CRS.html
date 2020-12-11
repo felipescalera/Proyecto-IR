@@ -3373,6 +3373,96 @@
 </tr>
 </table>
 </div>
+<div id="UC-0016">
+<table class="use_case remus_table">
+<thead>
+<tr>
+<th>
+<img src="https://cdn.jsdelivr.net/gh/amador-duran-toro/remus/assets/images/icons/useCase.png" /> UC-0016</th>
+<th class="name_column" colspan="2">Acceso a informes </th>
+</tr>
+</thead>
+<tr>
+<th>Versión</th>
+<td colspan="2">1.0 (11/12/2020)
+</td>
+</tr>
+<tr>
+<th>Descripción</th>
+<td colspan="2">
+<textarea id="UC-0016--md" class="markdown">El sistema deberá comportarse tal como se describe en el siguiente caso de uso cuando <span class="triggering_event">un empleado quiere ver los informes generados por el sistema</span>. </textarea>
+<div id="UC-0016--html" class=""></div>
+<script>generate_markdown("UC-0016-");</script>
+</td>
+</tr>
+<tr>
+<th>Precondición</th>
+<td colspan="2">
+<textarea id="UC-0016-precondition-md" class="markdown">El empleado accede a la pestaña de informe, donde podrá consultar los informes creados por el sistema</textarea>
+<div id="UC-0016-precondition-html" class=""></div>
+<script>generate_markdown("UC-0016-precondition");</script>
+</td>
+</tr>
+<tr>
+<th rowspan="4">Secuencia normal</th>
+<th class="step_number_column">Paso</th>
+<th class="step_action_column">Acción</th>
+</tr>
+<tr id="STP-0199">
+<th class="step_number">1</th>
+<td colspan="1">
+<textarea id="STP-0199--md" class="markdown"> El actor <a href="#ACT-0018">Empleado de la tienda (ACT-0018)</a> pulsa en la herramienta de informes. </textarea>
+<div id="STP-0199--html" class=""></div>
+<script>generate_markdown("STP-0199-");</script>
+</td>
+</tr>
+<tr id="STP-0200">
+<th class="step_number">2</th>
+<td colspan="1">
+<textarea id="STP-0200--md" class="markdown"> El actor <a href="#ACT-0018">Empleado de la tienda (ACT-0018)</a> accede a una categoría específica de los informes y le da click en el botón de generar. </textarea>
+<div id="STP-0200--html" class=""></div>
+<script>generate_markdown("STP-0200-");</script>
+</td>
+</tr>
+<tr id="STP-0201">
+<th class="step_number">3</th>
+<td colspan="1">
+<textarea id="STP-0201--md" class="markdown">Si el empleado añade la descriptión correcta,  el sistema el sistema hace crea el informe y lo muestra por pantalla. </textarea>
+<div id="STP-0201--html" class=""></div>
+<script>generate_markdown("STP-0201-");</script>
+</td>
+</tr>
+<tr>
+<th>Postcondición</th>
+<td colspan="2">
+<textarea id="UC-0016-postcondition-md" class="markdown">El empleado accede a la pestaña, pudiendo así consultar los informes por categorías</textarea>
+<div id="UC-0016-postcondition-html" class=""></div>
+<script>generate_markdown("UC-0016-postcondition");</script>
+</td>
+</tr>
+<tr>
+<th rowspan="2">Excepciones</th>
+<th class="step_number_column">Paso</th>
+<th class="exception_action_column">Acción</th>
+</tr>
+<tr id="STX-0025">
+<th class="step_number">3</th>
+<td colspan="1">
+<textarea id="STX-0025--md" class="markdown">Si el sistema no encuentra datos con los que generar el informe, muestra una excepción por pantalla,  el sistema hará saltar una excepción indicando el/los campo/s donde debe introducir correctamente el/los dato/s, a continuación este caso de uso <span class="exception_termination">continúa</span>. </textarea>
+<div id="STX-0025--html" class=""></div>
+<script>generate_markdown("STX-0025-");</script>
+</td>
+</tr>
+<tr>
+<th>Comentarios</th>
+<td colspan="2">
+<textarea id="UC-0016-comments-md" class="markdown">Ninguno</textarea>
+<div id="UC-0016-comments-html" class="remus_comments"></div>
+<script>generate_markdown("UC-0016-comments");</script>
+</td>
+</tr>
+</table>
+</div>
 <h2 id="SEC-0034" class="section">6.3 Requisitos funcionales del sistema</h2>
 <h3 id="SEC-0046" class="section">6.3.1 Requisitos de información del sistema</h3>
 <div id="IRQ-0001">
@@ -5654,6 +5744,56 @@
 </table>
 </div>
 <h1 id="SEC-0010" class="section">B Documentación relevante</h1>
+<div id="PRG-0092">
+<textarea id="PRG-0092-text-md" class="markdown">Esta es la encuesta inicial que emitimos al principio del análisis del proyecto. En general, nos permite obtener los datos más básicos de la empresa de la forma más sencilla posible. Esta pensada para una duración aproximada de 10 minutos.</textarea>
+<div id="PRG-0092-text-html" class=""></div>
+<script>generate_markdown("PRG-0092-text");</script>
+</div>
+<div id="GRF-0030" class="figure">
+<img class="figure_image" src=".\imagenes\1encuesta.png" />
+<p class="figure_caption">
+<span class="figure_caption_label">Figura 8: </span>
+<textarea id="GRF-0030-name-md" class="markdown">Parte 1 de la encuesta</textarea>
+<span id="GRF-0030-name-html"></span>
+<script>generate_markdown("GRF-0030-name",true);</script>
+</p>
+</div>
+<div id="GRF-0031" class="figure">
+<img class="figure_image" src=".\imagenes\2encuesta.png" />
+<p class="figure_caption">
+<span class="figure_caption_label">Figura 9: </span>
+<textarea id="GRF-0031-name-md" class="markdown">Parte 2 de la encuesta</textarea>
+<span id="GRF-0031-name-html"></span>
+<script>generate_markdown("GRF-0031-name",true);</script>
+</p>
+</div>
+<div id="GRF-0032" class="figure">
+<img class="figure_image" src=".\imagenes\3encuesta.png" />
+<p class="figure_caption">
+<span class="figure_caption_label">Figura 10: </span>
+<textarea id="GRF-0032-name-md" class="markdown">Parte 3 de la encuesta</textarea>
+<span id="GRF-0032-name-html"></span>
+<script>generate_markdown("GRF-0032-name",true);</script>
+</p>
+</div>
+<div id="GRF-0033" class="figure">
+<img class="figure_image" src=".\imagenes\4encuesta.png" />
+<p class="figure_caption">
+<span class="figure_caption_label">Figura 11: </span>
+<textarea id="GRF-0033-name-md" class="markdown">Parte 4 de la encuesta</textarea>
+<span id="GRF-0033-name-html"></span>
+<script>generate_markdown("GRF-0033-name",true);</script>
+</p>
+</div>
+<div id="GRF-0034" class="figure">
+<img class="figure_image" src=".\imagenes\5encuesta.png" />
+<p class="figure_caption">
+<span class="figure_caption_label">Figura 12: </span>
+<textarea id="GRF-0034-name-md" class="markdown">Parte 5 de la encuesta</textarea>
+<span id="GRF-0034-name-html"></span>
+<script>generate_markdown("GRF-0034-name",true);</script>
+</p>
+</div>
 <h1 id="SEC-0011" class="section">C Glosario de acrónimos y abreviaturas</h1>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <script>
