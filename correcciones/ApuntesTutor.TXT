@@ -97,15 +97,17 @@ Sesión 5
 --------------------
 -Añadir IU de update de ***
 
--Añadir IU de incidencias de clientes
+-Añadir incidencias a los clientes en la IU
 
 -Añadir IU de ventana de pedido
 
--Añadir IU de facturas
+-Añadir IU de facturas 
 
 -MensajeEnvioProveedor cambiar lo de Iniciar Sesión
 
--Añadir lápices y cubos de basuras
+-Añadir lápices y cubos de basura
+
+-Añadir lo de ordenes de alquiler
 
 
 Sesión IU
