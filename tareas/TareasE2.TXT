@@ -1,5 +1,6 @@
 ======================
-DIVISIÓN DEL SEGUNDO ENTREGABLE
+DIVISIÓN DEL SEGUNDO ENTREGABLE    
+***ESTO ES UN ESQUEMA DE TRABAJO, PARA CONSULTAR LAS TAREAS REALIZADAS, IR A GITHUB***
 ====================== 
 Tareas iniciales
 -----------------
@@ -41,6 +42,7 @@ Comodín de parejas Felipe
 	Cada persona individual hace los diagramas de casos de uso correspondientes a su interfaz de usuario
 	Elicitación de requisitos no funcionales del sistema
 	Diagrama de estado de alquiler de cubas
+	Completar diagrama de casos de uso
 
 
 Entrega de interfaces de usuario +
@@ -71,3 +73,5 @@ Log de usuario (done, está hecha como ejemplo)
 8Añadir proveedor
 9Añadir empleado
 10Registro de un nuevo cliente
+
+*Se han añadido más IUs*
