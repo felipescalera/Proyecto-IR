@@ -13,6 +13,7 @@
             // converter.setOption( "key", "value" );
 
             var converter = new showdown.Converter();
+            converter.setOption( "parseImgDimensions", true );
 
             // function to be used in XLST templates
             // if inline=true, all CRLF tags are replaced
@@ -1842,7 +1843,212 @@
 </tr>
 </table>
 </div>
+<div id="TYP-0017" class="object_type">
+<table class="object_type remus_table">
+<thead>
+<tr>
+<th>
+<img src="https://cdn.jsdelivr.net/gh/amador-duran-toro/remus/assets/images/icons/objectType.png" /> TYP-0017</th>
+<th class="name_column" colspan="1">PedidoProveedor</th>
+</tr>
+</thead>
+<tr>
+<th>Versión</th>
+<td colspan="1">1.0 (12/12/2020)
+</td>
+</tr>
+<tr>
+<td colspan="2">
+<div class="code">
+<div>
+<span class="code_comment">/**</span>
+<textarea id="TYP-0017-description-md" class="markdown">representa un <a href="#GLO-0047" class="rem_ref">pedido</a> realizado por la empresa a un <a href="#GLO-0048" class="rem_ref">proveedor</a>
+</textarea>
+<div id="TYP-0017-description-html" class="code_comment code_description"></div>
+<script>generate_markdown("TYP-0017-description");</script>
+<span class="code_comment">*/</span>
+</div>
+<span class="keyword ">class </span>
+<span class="class_name ">PedidoProveedor</span>
+<br />
+
+    {<br />
+<div class="code_comment code_header">// attributes</div>
+<ul class="properties">
+<li id="ATT-0237" class="property">
+<span class="keyword">var </span>idPedidoProveedor : Integer</li>
+<li id="ATT-0238" class="property">
+<span class="keyword">derived </span>costeTotal : Real<textarea id="ATT-0238-ocl-md" class="markdown">=  <span class="code_ocl">sumatorio de los precios de las líneas de pedido asociadas a este pedido</span>
+</textarea>
+<span id="ATT-0238-ocl-html"></span>
+<script>generate_markdown("ATT-0238-ocl",true);</script>
+</li>
+<li id="ATT-0239" class="property">
+<span class="keyword">var </span>iva : Real</li>
+<li id="ATT-0240" class="property">
+<span class="keyword">derived </span>descuentoTotal : Real<textarea id="ATT-0240-ocl-md" class="markdown">=  <span class="code_ocl">sumatorio de los precios descontados en cada uno de los descuentos de las líneas de pedido asociadas a este pedido</span>
+</textarea>
+<span id="ATT-0240-ocl-html"></span>
+<script>generate_markdown("ATT-0240-ocl",true);</script>
+</li>
+</ul>
+<br />
+<div class="code_comment code_header">// components</div>
+<ul class="properties">
+<li id="COM-0250" class="property">
+<span class="keyword">var </span>lineaPedidoProveedor : Set(LineaPedidoProveedor)
+            [1..*]</li>
+<li id="COM-0251" class="property">
+<span class="keyword">var </span>facturaProveedor : Set(FacturaProveedor)
+            [0..1]</li>
+</ul>
+    }
+</div>
+</td>
+</tr>
+<tr>
+<th>Comentarios</th>
+<td colspan="1">
+<textarea id="TYP-0017-comments-md" class="markdown">Ninguno</textarea>
+<div id="TYP-0017-comments-html" class="remus_comments"></div>
+<script>generate_markdown("TYP-0017-comments");</script>
+</td>
+</tr>
+</table>
+</div>
+<div id="TYP-0018" class="object_type">
+<table class="object_type remus_table">
+<thead>
+<tr>
+<th>
+<img src="https://cdn.jsdelivr.net/gh/amador-duran-toro/remus/assets/images/icons/objectType.png" /> TYP-0018</th>
+<th class="name_column" colspan="1">FacturaProveedor</th>
+</tr>
+</thead>
+<tr>
+<th>Versión</th>
+<td colspan="1">1.0 (12/12/2020)
+</td>
+</tr>
+<tr>
+<td colspan="2">
+<div class="code">
+<div>
+<span class="code_comment">/**</span>
+<textarea id="TYP-0018-description-md" class="markdown">representa una <a href="#GLO-0039" class="rem_ref">factura</a> asociada a un <a href="#GLO-0047" class="rem_ref">pedido</a> de la empresa a un <a href="#GLO-0048" class="rem_ref">proveedor</a>
+</textarea>
+<div id="TYP-0018-description-html" class="code_comment code_description"></div>
+<script>generate_markdown("TYP-0018-description");</script>
+<span class="code_comment">*/</span>
+</div>
+<span class="keyword ">class </span>
+<span class="class_name ">FacturaProveedor</span>
+<br />
+
+    {<br />
+<div class="code_comment code_header">// attributes</div>
+<ul class="properties">
+<li id="ATT-0241" class="property">
+<span class="keyword">var </span>idFacturaProveedor : Integer</li>
+<li id="ATT-0242" class="property">
+<span class="keyword">var </span>fechaEmision : Date</li>
+<li id="ATT-0243" class="property">
+<span class="keyword">var </span>fechaVencimiento : Date</li>
+<li id="ATT-0244" class="property">
+<span class="keyword">var </span>fechaPago : Date</li>
+<li id="ATT-0245" class="property">
+<span class="keyword">var </span>tipo : TipoPago</li>
+</ul>
+    }
+</div>
+</td>
+</tr>
+<tr>
+<th>Comentarios</th>
+<td colspan="1">
+<textarea id="TYP-0018-comments-md" class="markdown">Ninguno</textarea>
+<div id="TYP-0018-comments-html" class="remus_comments"></div>
+<script>generate_markdown("TYP-0018-comments");</script>
+</td>
+</tr>
+</table>
+</div>
+<div id="TYP-0019" class="object_type">
+<table class="object_type remus_table">
+<thead>
+<tr>
+<th>
+<img src="https://cdn.jsdelivr.net/gh/amador-duran-toro/remus/assets/images/icons/objectType.png" /> TYP-0019</th>
+<th class="name_column" colspan="1">LineaPedidoProveedor</th>
+</tr>
+</thead>
+<tr>
+<th>Versión</th>
+<td colspan="1">1.0 (12/12/2020)
+</td>
+</tr>
+<tr>
+<td colspan="2">
+<div class="code">
+<div>
+<span class="code_comment">/**</span>
+<textarea id="TYP-0019-description-md" class="markdown">representa las líneas de <a href="#GLO-0047" class="rem_ref">pedido</a> relacionadas con cada <a href="#GLO-0046" class="rem_ref">producto</a> que conforman un <a href="#GLO-0047" class="rem_ref">pedido</a> de la empresa a un <a href="#GLO-0048" class="rem_ref">proveedor</a>
+</textarea>
+<div id="TYP-0019-description-html" class="code_comment code_description"></div>
+<script>generate_markdown("TYP-0019-description");</script>
+<span class="code_comment">*/</span>
+</div>
+<span class="keyword ">class </span>
+<span class="class_name ">LineaPedidoProveedor</span>
+<br />
+
+    {<br />
+<div class="code_comment code_header">// attributes</div>
+<ul class="properties">
+<li id="ATT-0246" class="property">
+<span class="keyword">var </span>idLineaPedidoProveedor : Integer</li>
+<li id="ATT-0247" class="property">
+<span class="keyword">var </span>cantidad : Integer</li>
+<li id="ATT-0248" class="property">
+<span class="keyword">var </span>descuento : Real</li>
+<li id="ATT-0249" class="property">
+<span class="keyword">var </span>precio : Real</li>
+</ul>
+    }
+</div>
+</td>
+</tr>
+<tr>
+<th>Comentarios</th>
+<td colspan="1">
+<textarea id="TYP-0019-comments-md" class="markdown">Ninguno</textarea>
+<div id="TYP-0019-comments-html" class="remus_comments"></div>
+<script>generate_markdown("TYP-0019-comments");</script>
+</td>
+</tr>
+</table>
+</div>
 <h2 id="SEC-0075" class="section">3.3 Diagramas de estado de las clases del sistema</h2>
+<div id="GRF-0056" class="figure">
+<img class="figure_image" src=".\diagramas\diagramas de estado\diagrama estado envio pedido.PNG" />
+<p class="figure_caption">
+<span class="figure_caption_label">Figura 41: </span>
+<textarea id="GRF-0056-name-md" class="markdown">Diagrama estado - Envío <a href="#GLO-0047" class="rem_ref">pedidos</a>
+</textarea>
+<span id="GRF-0056-name-html"></span>
+<script>generate_markdown("GRF-0056-name",true);</script>
+</p>
+</div>
+<div id="GRF-0057" class="figure">
+<img class="figure_image" src=".\diagramas\diagramas de estado\diagrama estado alquiler cuba.PNG" />
+<p class="figure_caption">
+<span class="figure_caption_label">Figura 42: </span>
+<textarea id="GRF-0057-name-md" class="markdown">Diagrama estado - Alquiler <a href="#GLO-0016" class="rem_ref">cubas</a>
+</textarea>
+<span id="GRF-0057-name-html"></span>
+<script>generate_markdown("GRF-0057-name",true);</script>
+</p>
+</div>
 <h1 id="SEC-0060" class="section">4 Modelo de casos de uso del sistema</h1>
 <h2 id="SEC-0071" class="section">4.1 Diagramas de secuencia del sistema</h2>
 <h2 id="SEC-0072" class="section">4.2 Descripción de los diagramas de secuencia del sistema</h2>
@@ -1852,7 +2058,7 @@
 <div id="GRF-0020" class="figure">
 <img class="figure_image" src=".\diagramas\interfaz usuario consulta empleados\UIConsultaEmpleados.PNG" />
 <p class="figure_caption">
-<span class="figure_caption_label">Figura 41: </span>
+<span class="figure_caption_label">Figura 43: </span>
 <textarea id="GRF-0020-name-md" class="markdown">
 <a href="#GLO-0087" class="rem_ref">IU-005 Consulta de empleados</a>
 </textarea>
@@ -1863,7 +2069,7 @@
 <div id="GRF-0021" class="figure">
 <img class="figure_image" src=".\diagramas\interfaz usuario consulta empleados\UIConsultaEmpleadosError.PNG" />
 <p class="figure_caption">
-<span class="figure_caption_label">Figura 42: </span>
+<span class="figure_caption_label">Figura 44: </span>
 <textarea id="GRF-0021-name-md" class="markdown">IU-005E Consulta de empleados error</textarea>
 <span id="GRF-0021-name-html"></span>
 <script>generate_markdown("GRF-0021-name",true);</script>
@@ -1872,7 +2078,7 @@
 <div id="GRF-0022" class="figure">
 <img class="figure_image" src=".\diagramas\interfaz usuario consulta cubas\UIConsultaCubasFecha.PNG" />
 <p class="figure_caption">
-<span class="figure_caption_label">Figura 43: </span>
+<span class="figure_caption_label">Figura 45: </span>
 <textarea id="GRF-0022-name-md" class="markdown">
 <a href="#GLO-0088" class="rem_ref">IU-006 Consulta de cubas</a> (elegir fecha)</textarea>
 <span id="GRF-0022-name-html"></span>
@@ -1882,7 +2088,7 @@
 <div id="GRF-0023" class="figure">
 <img class="figure_image" src=".\diagramas\interfaz usuario consulta cubas\UIConsultaCubasExito.PNG" />
 <p class="figure_caption">
-<span class="figure_caption_label">Figura 44: </span>
+<span class="figure_caption_label">Figura 46: </span>
 <textarea id="GRF-0023-name-md" class="markdown">
 <a href="#GLO-0088" class="rem_ref">IU-006 Consulta de cubas</a>
 </textarea>
@@ -1893,7 +2099,7 @@
 <div id="GRF-0024" class="figure">
 <img class="figure_image" src=".\diagramas\interfaz usuario consulta cubas\UIConsultaCubasError.PNG" />
 <p class="figure_caption">
-<span class="figure_caption_label">Figura 45: </span>
+<span class="figure_caption_label">Figura 47: </span>
 <textarea id="GRF-0024-name-md" class="markdown">IU-006E Consulta de <a href="#GLO-0016" class="rem_ref">cubas</a> error</textarea>
 <span id="GRF-0024-name-html"></span>
 <script>generate_markdown("GRF-0024-name",true);</script>
@@ -1902,7 +2108,7 @@
 <div id="GRF-0017" class="figure">
 <img class="figure_image" src=".\diagramas\interfaz usuario creación empleados\UICreacionEmpleado.png" />
 <p class="figure_caption">
-<span class="figure_caption_label">Figura 46: </span>
+<span class="figure_caption_label">Figura 48: </span>
 <textarea id="GRF-0017-name-md" class="markdown">
 <a href="#GLO-0085" class="rem_ref">IU-009 Creación empleado</a>
 </textarea>
@@ -1913,7 +2119,7 @@
 <div id="GRF-0018" class="figure">
 <img class="figure_image" src=".\diagramas\interfaz usuario creación empleados\UICreacionEmpleadoFallo.png" />
 <p class="figure_caption">
-<span class="figure_caption_label">Figura 47: </span>
+<span class="figure_caption_label">Figura 49: </span>
 <textarea id="GRF-0018-name-md" class="markdown">IU-009E Creación empleado Fallo</textarea>
 <span id="GRF-0018-name-html"></span>
 <script>generate_markdown("GRF-0018-name",true);</script>
@@ -1922,7 +2128,7 @@
 <div id="GRF-0016" class="figure">
 <img class="figure_image" src=".\diagramas\interfaz usuario creación usuario\UICreacionUsuario.png" />
 <p class="figure_caption">
-<span class="figure_caption_label">Figura 48: </span>
+<span class="figure_caption_label">Figura 50: </span>
 <textarea id="GRF-0016-name-md" class="markdown">
 <a href="#GLO-0086" class="rem_ref">IU-010 Registro de Cliente</a>
 </textarea>
@@ -1933,7 +2139,7 @@
 <div id="GRF-0019" class="figure">
 <img class="figure_image" src=".\diagramas\interfaz usuario creación usuario\UICreacionUsuarioFallo.png" />
 <p class="figure_caption">
-<span class="figure_caption_label">Figura 49: </span>
+<span class="figure_caption_label">Figura 51: </span>
 <textarea id="GRF-0019-name-md" class="markdown">IU-010E Registro de Cliente Fallo</textarea>
 <span id="GRF-0019-name-html"></span>
 <script>generate_markdown("GRF-0019-name",true);</script>
@@ -1942,7 +2148,7 @@
 <div id="GRF-0025" class="figure">
 <img class="figure_image" src=".\diagramas\interfaz creación contrato\UIcreacioncontrato.png" />
 <p class="figure_caption">
-<span class="figure_caption_label">Figura 50: </span>
+<span class="figure_caption_label">Figura 52: </span>
 <textarea id="GRF-0025-name-md" class="markdown">
 <a href="#GLO-0089" class="rem_ref">IU-XXX Creación de contratos</a>
 </textarea>
@@ -1953,7 +2159,7 @@
 <div id="GRF-0026" class="figure">
 <img class="figure_image" src=".\diagramas\interfaz creación contrato\UIcreacioncontratoFallo.png" />
 <p class="figure_caption">
-<span class="figure_caption_label">Figura 51: </span>
+<span class="figure_caption_label">Figura 53: </span>
 <textarea id="GRF-0026-name-md" class="markdown">IU-XXXE Creación de contratos con fallo</textarea>
 <span id="GRF-0026-name-html"></span>
 <script>generate_markdown("GRF-0026-name",true);</script>
@@ -1962,7 +2168,7 @@
 <div id="GRF-0027" class="figure">
 <img class="figure_image" src=".\diagramas\interfaz usuario creacion proveedor\UIcreacionproveedor.png" />
 <p class="figure_caption">
-<span class="figure_caption_label">Figura 52: </span>
+<span class="figure_caption_label">Figura 54: </span>
 <textarea id="GRF-0027-name-md" class="markdown">
 <a href="#GLO-0090" class="rem_ref">IU-XXX Creación de proveedores</a>
 </textarea>
@@ -1973,7 +2179,7 @@
 <div id="GRF-0028" class="figure">
 <img class="figure_image" src=".\diagramas\interfaz usuario creacion proveedor\UIcreacionproveedorFallo.png" />
 <p class="figure_caption">
-<span class="figure_caption_label">Figura 53: </span>
+<span class="figure_caption_label">Figura 55: </span>
 <textarea id="GRF-0028-name-md" class="markdown">
 <a href="#GLO-0090" class="rem_ref">IU-XXX Creación de proveedores</a> con fallo</textarea>
 <span id="GRF-0028-name-html"></span>
@@ -1983,7 +2189,7 @@
 <div id="GRF-0029" class="figure">
 <img class="figure_image" src=".\diagramas\interfaz de usuario home\Home.png" />
 <p class="figure_caption">
-<span class="figure_caption_label">Figura 54: </span>
+<span class="figure_caption_label">Figura 56: </span>
 <textarea id="GRF-0029-name-md" class="markdown">IU-XXX Página principal con log</textarea>
 <span id="GRF-0029-name-html"></span>
 <script>generate_markdown("GRF-0029-name",true);</script>
