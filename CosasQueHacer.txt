@@ -1,0 +1,16 @@
+Clientes -- HECHO --
+
+Empleados: - Vista creación facturas (vale con hacer una ya que solo cambiaría el campo cliente por proveedor)
+	   - Vista productos donde poder ver un listado de todos los productos, un filtro para seleccionar un 
+	     tipo de producto en concreto, poder añadir un nuevo producto como editarlo y borrarlo.
+	   - Vista Registro Cubas, listado con las cubas de la empresa, capacidad para añadir,editar y borrar
+	   - Vista Registro Camiones, listado con los camiones de la empresa, capacidad para añadir,editar y borrar
+	   
+	   - Vista Registro Cubas, añadir sección Alquileres, donde se podría añadir una incidencia a un alquiler en concreto. 
+	     Añadir sección portes de Alquileres.
+
+Propietarios: - Vista de informes (Ver requisitos de conducta del sistema)
+	      - Vista de selección de horarios de empleados (añadir en la vista de empleados un botón de horarios).
+
+
+Cambiar tipo: Disponibilidad en Cuba pasa a ser boolean y en camion añadir "No disponible"
