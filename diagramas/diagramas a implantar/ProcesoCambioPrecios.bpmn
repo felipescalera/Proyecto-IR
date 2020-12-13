@@ -29,10 +29,12 @@
       <bpmn:outgoing>Flow_1wes3di</bpmn:outgoing>
     </bpmn:task>
     <bpmn:task id="Activity_0qi87lf" name="Comprueba los cambios">
+      <bpmn:incoming>Flow_136fjtf</bpmn:incoming>
       <bpmn:outgoing>Flow_06xrqy1</bpmn:outgoing>
     </bpmn:task>
     <bpmn:task id="Activity_0nxw9si" name="Aplicar descuento/s o cambio/s de precio">
       <bpmn:incoming>Flow_1uc8rwr</bpmn:incoming>
+      <bpmn:outgoing>Flow_136fjtf</bpmn:outgoing>
     </bpmn:task>
     <bpmn:task id="Activity_00b6kth" name="Seleccionar producto/s a cambiar">
       <bpmn:incoming>Flow_1wes3di</bpmn:incoming>
@@ -42,6 +44,7 @@
       <bpmn:incoming>Flow_06xrqy1</bpmn:incoming>
       <bpmn:terminateEventDefinition id="TerminateEventDefinition_1e4ywfr" />
     </bpmn:endEvent>
+    <bpmn:sequenceFlow id="Flow_136fjtf" sourceRef="Activity_0nxw9si" targetRef="Activity_0qi87lf" />
   </bpmn:process>
   <bpmn:process id="Process_0c5o7kw" />
   <bpmndi:BPMNDiagram id="BPMNDiagram_1">
@@ -67,6 +70,10 @@
       <bpmndi:BPMNEdge id="Flow_06xrqy1_di" bpmnElement="Flow_06xrqy1">
         <di:waypoint x="1010" y="340" />
         <di:waypoint x="1082" y="340" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_136fjtf_di" bpmnElement="Flow_136fjtf">
+        <di:waypoint x="785" y="340" />
+        <di:waypoint x="910" y="340" />
       </bpmndi:BPMNEdge>
       <bpmndi:BPMNShape id="Event_1cpx9zy_di" bpmnElement="Event_1cpx9zy">
         <dc:Bounds x="232" y="322" width="36" height="36" />

@@ -97,13 +97,17 @@
   </bpmn:process>
   <bpmn:process id="Process_0elgqtx">
     <bpmn:task id="Activity_0r8ryf1" name="Volver a ponerse en contacto para nueva entrega">
+      <bpmn:incoming>Flow_0xp36fe</bpmn:incoming>
       <bpmn:outgoing>Flow_1xopk00</bpmn:outgoing>
     </bpmn:task>
-    <bpmn:task id="Activity_1xff6yp" name="Acordar horario de entrega" />
+    <bpmn:task id="Activity_1xff6yp" name="Acordar horario de entrega">
+      <bpmn:outgoing>Flow_0xp36fe</bpmn:outgoing>
+    </bpmn:task>
     <bpmn:task id="Activity_1wl3ep6" name="Pagar porte cancelado">
       <bpmn:incoming>Flow_1xopk00</bpmn:incoming>
     </bpmn:task>
     <bpmn:sequenceFlow id="Flow_1xopk00" sourceRef="Activity_0r8ryf1" targetRef="Activity_1wl3ep6" />
+    <bpmn:sequenceFlow id="Flow_0xp36fe" sourceRef="Activity_1xff6yp" targetRef="Activity_0r8ryf1" />
   </bpmn:process>
   <bpmndi:BPMNDiagram id="BPMNDiagram_1">
     <bpmndi:BPMNPlane id="BPMNPlane_1" bpmnElement="Collaboration_10q19y5">
@@ -228,6 +232,10 @@
         <di:waypoint x="1340" y="200" />
         <di:waypoint x="1390" y="200" />
       </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_0xp36fe_di" bpmnElement="Flow_0xp36fe">
+        <di:waypoint x="580" y="200" />
+        <di:waypoint x="1240" y="200" />
+      </bpmndi:BPMNEdge>
       <bpmndi:BPMNShape id="Activity_0r8ryf1_di" bpmnElement="Activity_0r8ryf1">
         <dc:Bounds x="1240" y="160" width="100" height="80" />
       </bpmndi:BPMNShape>
@@ -242,10 +250,10 @@
         <di:waypoint x="1280" y="240" />
       </bpmndi:BPMNEdge>
       <bpmndi:BPMNEdge id="Flow_12k9jke_di" bpmnElement="Flow_12k9jke">
-        <di:waypoint x="580" y="200" />
-        <di:waypoint x="620" y="200" />
-        <di:waypoint x="620" y="840" />
-        <di:waypoint x="650" y="840" />
+        <di:waypoint x="560" y="240" />
+        <di:waypoint x="560" y="330" />
+        <di:waypoint x="660" y="330" />
+        <di:waypoint x="660" y="800" />
       </bpmndi:BPMNEdge>
       <bpmndi:BPMNEdge id="Flow_14rfogu_di" bpmnElement="Flow_14rfogu">
         <di:waypoint x="530" y="530" />
