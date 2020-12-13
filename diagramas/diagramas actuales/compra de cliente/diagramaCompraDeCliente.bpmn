@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<bpmn:definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bpmn="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:dc="http://www.omg.org/spec/DD/20100524/DC" xmlns:di="http://www.omg.org/spec/DD/20100524/DI" id="Definitions_10o7p1f" targetNamespace="http://bpmn.io/schema/bpmn" exporter="bpmn-js (https://demo.bpmn.io)" exporterVersion="7.3.0">
+<bpmn:definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bpmn="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:dc="http://www.omg.org/spec/DD/20100524/DC" xmlns:di="http://www.omg.org/spec/DD/20100524/DI" id="Definitions_10o7p1f" targetNamespace="http://bpmn.io/schema/bpmn" exporter="bpmn-js (https://demo.bpmn.io)" exporterVersion="7.5.0">
   <bpmn:collaboration id="Collaboration_10q19y5">
     <bpmn:participant id="Participant_1awejln" name="Gestión de comras de clientes" processRef="Process_0ejk5ni" />
     <bpmn:participant id="Participant_0150bz5" name="Cliente interesado" processRef="Process_0elgqtx" />
@@ -31,61 +31,6 @@
         <bpmn:flowNodeRef>Activity_0095im8</bpmn:flowNodeRef>
       </bpmn:lane>
     </bpmn:laneSet>
-    <bpmn:startEvent id="Event_00j9ru7" name="Recibir orden">
-      <bpmn:outgoing>Flow_1ezugag</bpmn:outgoing>
-      <bpmn:messageEventDefinition id="MessageEventDefinition_0b27pr5" />
-    </bpmn:startEvent>
-    <bpmn:task id="Activity_15p2lte" name="Lanzar orden">
-      <bpmn:incoming>Flow_1ezugag</bpmn:incoming>
-      <bpmn:outgoing>Flow_0nvjyt9</bpmn:outgoing>
-    </bpmn:task>
-    <bpmn:task id="Activity_0qh5cwt" name="Comprobar stock de productos">
-      <bpmn:incoming>Flow_0nvjyt9</bpmn:incoming>
-      <bpmn:outgoing>Flow_1sb8ztx</bpmn:outgoing>
-      <bpmn:property id="Property_1rx46n5" name="__targetRef_placeholder" />
-      <bpmn:dataInputAssociation id="DataInputAssociation_18h6z79">
-        <bpmn:sourceRef>DataObjectReference_1s7p0tq</bpmn:sourceRef>
-        <bpmn:targetRef>Property_1rx46n5</bpmn:targetRef>
-      </bpmn:dataInputAssociation>
-    </bpmn:task>
-    <bpmn:dataObjectReference id="DataObjectReference_1s7p0tq" name="Orden de pedido" dataObjectRef="DataObject_0rbpxd5" />
-    <bpmn:dataObject id="DataObject_0rbpxd5" />
-    <bpmn:exclusiveGateway id="Gateway_104rjrk">
-      <bpmn:incoming>Flow_1sb8ztx</bpmn:incoming>
-      <bpmn:outgoing>Flow_0lcg311</bpmn:outgoing>
-      <bpmn:outgoing>Flow_1ezr6jc</bpmn:outgoing>
-    </bpmn:exclusiveGateway>
-    <bpmn:task id="Activity_1mgoc5p" name="Preparar pedido">
-      <bpmn:incoming>Flow_0lcg311</bpmn:incoming>
-      <bpmn:outgoing>Flow_1sc5pwv</bpmn:outgoing>
-    </bpmn:task>
-    <bpmn:task id="Activity_0l9wty6" name="Registrar factura">
-      <bpmn:incoming>Flow_1sc5pwv</bpmn:incoming>
-      <bpmn:outgoing>Flow_0nhswn7</bpmn:outgoing>
-    </bpmn:task>
-    <bpmn:task id="Activity_07gucy5" name="Procesar pedido">
-      <bpmn:incoming>Flow_0nhswn7</bpmn:incoming>
-      <bpmn:property id="Property_0u1uhje" name="__targetRef_placeholder" />
-      <bpmn:dataInputAssociation id="DataInputAssociation_131aapt">
-        <bpmn:sourceRef>DataObjectReference_0ay6yi9</bpmn:sourceRef>
-        <bpmn:targetRef>Property_0u1uhje</bpmn:targetRef>
-      </bpmn:dataInputAssociation>
-    </bpmn:task>
-    <bpmn:dataObjectReference id="DataObjectReference_0ay6yi9" name="Factura" dataObjectRef="DataObject_0kaxl1p" />
-    <bpmn:dataObject id="DataObject_0kaxl1p" />
-    <bpmn:task id="Activity_1te34br" name="Cancelar compra">
-      <bpmn:incoming>Flow_1ezr6jc</bpmn:incoming>
-    </bpmn:task>
-    <bpmn:task id="Activity_08tywjn" name="Acordar porte">
-      <bpmn:outgoing>Flow_13br6l2</bpmn:outgoing>
-    </bpmn:task>
-    <bpmn:task id="Activity_04cl916" name="Comprobar fechas disponibles">
-      <bpmn:incoming>Flow_13br6l2</bpmn:incoming>
-      <bpmn:outgoing>Flow_1o2nkd9</bpmn:outgoing>
-    </bpmn:task>
-    <bpmn:task id="Activity_0095im8" name="Tramitar el porte">
-      <bpmn:incoming>Flow_1o2nkd9</bpmn:incoming>
-    </bpmn:task>
     <bpmn:sequenceFlow id="Flow_1ezugag" sourceRef="Event_00j9ru7" targetRef="Activity_15p2lte" />
     <bpmn:sequenceFlow id="Flow_0nvjyt9" sourceRef="Activity_15p2lte" targetRef="Activity_0qh5cwt" />
     <bpmn:sequenceFlow id="Flow_1sb8ztx" sourceRef="Activity_0qh5cwt" targetRef="Gateway_104rjrk" />
@@ -95,6 +40,61 @@
     <bpmn:sequenceFlow id="Flow_1ezr6jc" name="Unidades insuficientes" sourceRef="Gateway_104rjrk" targetRef="Activity_1te34br" />
     <bpmn:sequenceFlow id="Flow_13br6l2" sourceRef="Activity_08tywjn" targetRef="Activity_04cl916" />
     <bpmn:sequenceFlow id="Flow_1o2nkd9" sourceRef="Activity_04cl916" targetRef="Activity_0095im8" />
+    <bpmn:task id="Activity_0095im8" name="Tramitar el porte">
+      <bpmn:incoming>Flow_1o2nkd9</bpmn:incoming>
+    </bpmn:task>
+    <bpmn:task id="Activity_04cl916" name="Comprobar fechas disponibles">
+      <bpmn:incoming>Flow_13br6l2</bpmn:incoming>
+      <bpmn:outgoing>Flow_1o2nkd9</bpmn:outgoing>
+    </bpmn:task>
+    <bpmn:task id="Activity_08tywjn" name="Acordar porte">
+      <bpmn:outgoing>Flow_13br6l2</bpmn:outgoing>
+    </bpmn:task>
+    <bpmn:task id="Activity_1te34br" name="Cancelar compra">
+      <bpmn:incoming>Flow_1ezr6jc</bpmn:incoming>
+    </bpmn:task>
+    <bpmn:dataObjectReference id="DataObjectReference_0ay6yi9" name="Factura" dataObjectRef="DataObject_0kaxl1p" />
+    <bpmn:dataObject id="DataObject_0kaxl1p" />
+    <bpmn:task id="Activity_07gucy5" name="Procesar pedido">
+      <bpmn:incoming>Flow_0nhswn7</bpmn:incoming>
+      <bpmn:property id="Property_0u1uhje" name="__targetRef_placeholder" />
+      <bpmn:dataInputAssociation id="DataInputAssociation_131aapt">
+        <bpmn:sourceRef>DataObjectReference_0ay6yi9</bpmn:sourceRef>
+        <bpmn:targetRef>Property_0u1uhje</bpmn:targetRef>
+      </bpmn:dataInputAssociation>
+    </bpmn:task>
+    <bpmn:task id="Activity_0l9wty6" name="Registrar factura">
+      <bpmn:incoming>Flow_1sc5pwv</bpmn:incoming>
+      <bpmn:outgoing>Flow_0nhswn7</bpmn:outgoing>
+    </bpmn:task>
+    <bpmn:task id="Activity_1mgoc5p" name="Preparar pedido">
+      <bpmn:incoming>Flow_0lcg311</bpmn:incoming>
+      <bpmn:outgoing>Flow_1sc5pwv</bpmn:outgoing>
+    </bpmn:task>
+    <bpmn:exclusiveGateway id="Gateway_104rjrk">
+      <bpmn:incoming>Flow_1sb8ztx</bpmn:incoming>
+      <bpmn:outgoing>Flow_0lcg311</bpmn:outgoing>
+      <bpmn:outgoing>Flow_1ezr6jc</bpmn:outgoing>
+    </bpmn:exclusiveGateway>
+    <bpmn:dataObjectReference id="DataObjectReference_1s7p0tq" name="Orden de pedido" dataObjectRef="DataObject_0rbpxd5" />
+    <bpmn:dataObject id="DataObject_0rbpxd5" />
+    <bpmn:task id="Activity_0qh5cwt" name="Comprobar stock de productos">
+      <bpmn:incoming>Flow_0nvjyt9</bpmn:incoming>
+      <bpmn:outgoing>Flow_1sb8ztx</bpmn:outgoing>
+      <bpmn:property id="Property_1rx46n5" name="__targetRef_placeholder" />
+      <bpmn:dataInputAssociation id="DataInputAssociation_18h6z79">
+        <bpmn:sourceRef>DataObjectReference_1s7p0tq</bpmn:sourceRef>
+        <bpmn:targetRef>Property_1rx46n5</bpmn:targetRef>
+      </bpmn:dataInputAssociation>
+    </bpmn:task>
+    <bpmn:task id="Activity_15p2lte" name="Lanzar orden">
+      <bpmn:incoming>Flow_1ezugag</bpmn:incoming>
+      <bpmn:outgoing>Flow_0nvjyt9</bpmn:outgoing>
+    </bpmn:task>
+    <bpmn:startEvent id="Event_00j9ru7" name="Recibir orden">
+      <bpmn:outgoing>Flow_1ezugag</bpmn:outgoing>
+      <bpmn:messageEventDefinition id="MessageEventDefinition_0b27pr5" />
+    </bpmn:startEvent>
   </bpmn:process>
   <bpmn:process id="Process_0elgqtx">
     <bpmn:startEvent id="StartEvent_18wdxzy" name="Necesita materiales">
@@ -102,8 +102,10 @@
     </bpmn:startEvent>
     <bpmn:task id="Activity_1lhs3il" name="Realizar pedido">
       <bpmn:incoming>Flow_0yuqo85</bpmn:incoming>
+      <bpmn:outgoing>Flow_1ox7ikh</bpmn:outgoing>
     </bpmn:task>
     <bpmn:task id="Activity_0y7kcr2" name="Pagar pedido">
+      <bpmn:incoming>Flow_1ox7ikh</bpmn:incoming>
       <bpmn:outgoing>Flow_1uhy41v</bpmn:outgoing>
     </bpmn:task>
     <bpmn:exclusiveGateway id="Gateway_0isb9gy">
@@ -139,6 +141,7 @@
     <bpmn:sequenceFlow id="Flow_0vjeq7m" sourceRef="Gateway_0udvf7q" targetRef="Activity_0xmo49f" />
     <bpmn:sequenceFlow id="Flow_1fau6b0" name="Necesita transporte" sourceRef="Gateway_0isb9gy" targetRef="Activity_184s9wr" />
     <bpmn:sequenceFlow id="Flow_0uvaspl" sourceRef="Activity_184s9wr" targetRef="Gateway_0udvf7q" />
+    <bpmn:sequenceFlow id="Flow_1ox7ikh" sourceRef="Activity_1lhs3il" targetRef="Activity_0y7kcr2" />
     <bpmn:textAnnotation id="TextAnnotation_1v4v800">
       <bpmn:text>El porte estaría incluido</bpmn:text>
     </bpmn:textAnnotation>
@@ -176,7 +179,7 @@
         <di:waypoint x="1020" y="860" />
         <di:waypoint x="1020" y="800" />
         <bpmndi:BPMNLabel>
-          <dc:Bounds x="715" y="826" width="61" height="27" />
+          <dc:Bounds x="715" y="826" width="62" height="27" />
         </bpmndi:BPMNLabel>
       </bpmndi:BPMNEdge>
       <bpmndi:BPMNEdge id="Flow_0nhswn7_di" bpmnElement="Flow_0nhswn7">
@@ -221,7 +224,7 @@
       <bpmndi:BPMNShape id="DataObjectReference_1s7p0tq_di" bpmnElement="DataObjectReference_1s7p0tq">
         <dc:Bounds x="262" y="655" width="36" height="50" />
         <bpmndi:BPMNLabel>
-          <dc:Bounds x="218" y="712" width="83" height="14" />
+          <dc:Bounds x="219" y="712" width="82" height="14" />
         </bpmndi:BPMNLabel>
       </bpmndi:BPMNShape>
       <bpmndi:BPMNShape id="Gateway_1hxzocf_di" bpmnElement="Gateway_104rjrk" isMarkerVisible="true">
@@ -297,6 +300,10 @@
         <di:waypoint x="238" y="230" />
         <di:waypoint x="270" y="230" />
       </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_1ox7ikh_di" bpmnElement="Flow_1ox7ikh">
+        <di:waypoint x="370" y="230" />
+        <di:waypoint x="710" y="230" />
+      </bpmndi:BPMNEdge>
       <bpmndi:BPMNShape id="_BPMNShape_StartEvent_2" bpmnElement="StartEvent_18wdxzy">
         <dc:Bounds x="202" y="212" width="36" height="36" />
         <bpmndi:BPMNLabel>
@@ -327,19 +334,19 @@
       <bpmndi:BPMNShape id="Activity_184s9wr_di" bpmnElement="Activity_184s9wr">
         <dc:Bounds x="930" y="190" width="100" height="80" />
       </bpmndi:BPMNShape>
-      <bpmndi:BPMNShape id="TextAnnotation_1mg2hfe_di" bpmnElement="TextAnnotation_1mg2hfe">
-        <dc:Bounds x="370" y="110" width="99.99999822778292" height="53.426248548199766" />
-      </bpmndi:BPMNShape>
       <bpmndi:BPMNShape id="TextAnnotation_1v4v800_di" bpmnElement="TextAnnotation_1v4v800">
         <dc:Bounds x="580" y="150" width="100" height="39" />
       </bpmndi:BPMNShape>
-      <bpmndi:BPMNEdge id="Association_0iqzq5k_di" bpmnElement="Association_0iqzq5k">
-        <di:waypoint x="358" y="190" />
-        <di:waypoint x="383" y="163" />
-      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNShape id="TextAnnotation_1mg2hfe_di" bpmnElement="TextAnnotation_1mg2hfe">
+        <dc:Bounds x="370" y="110" width="99.99999822778292" height="53.426248548199766" />
+      </bpmndi:BPMNShape>
       <bpmndi:BPMNEdge id="Association_0k9cyx4_di" bpmnElement="Association_0k9cyx4">
         <di:waypoint x="710" y="205" />
         <di:waypoint x="678" y="189" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Association_0iqzq5k_di" bpmnElement="Association_0iqzq5k">
+        <di:waypoint x="358" y="190" />
+        <di:waypoint x="383" y="163" />
       </bpmndi:BPMNEdge>
       <bpmndi:BPMNEdge id="DataInputAssociation_18h6z79_di" bpmnElement="DataInputAssociation_18h6z79">
         <di:waypoint x="298" y="680" />
