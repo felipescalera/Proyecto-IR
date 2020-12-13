@@ -1,0 +1,17 @@
+Tareas - Juan Carlos Gómez Ramírez
+
+Primer entregable:
+- ERS Apartados 1.2.1 y 1.2.2: Trabajo en grupo, hecho en una sesión de trabajo (~15min)
+- ERS Apartado 2.2: Glosario de términos, trabajo en grupo a lo largo de las sesiones de trabajo (~30min)
+- ERS Apartado 4.1: Objetivos de negocio, trabajo en grupo (~1h30min)
+- Reunión inicial con organización: Recogida de datos iniciales sobre el negocio y disponibilidad del negocio para el proyecto. (~1h)
+- Segunda reunión con organización: Decretar dudas sobre información actual y recoger datos de actores. (~1h)
+TOTAL PRIMER ENTREGABLE: ~4h15min
+
+Segundo entregable:
+- ERS Apartado 6.3.2: Añadidas todas las RN en grupo, trabajo en común del grupo (~45min)
+- DAS Apartado 3.1: Desarrollo de los diagramas de clases del sistema, trabajo en grupo, varias sesiones con sus correciones (~3h)
+- DAS Apartado 3.2.2: Creación BPMN de los procesos de negocios actuales (~3h)
+- DAS Apartado 5.2: Mockups de la interfaz de usuario para: Lista de productos, Pedido a proveedores error, Pedido a proveedor, Cesta, Datos para pedido, Información producto, Pago (introducir tarjeta), Pago procesado exito, Creación factura, Facturas(~8h)
+- Tercera reunión con organización: Decretar dudas sobre información actual y recoger datos de actores. (~1h)
+TOTAL SEGUNDO ENTREGABLE: ~15h45min
