@@ -1,0 +1,14 @@
+Actualización de todos los procesos de negocio a implantar junto a Antonio Javier Sánchez Soria (1h 30min)
+Creación bpms de los procesos de negocio 1,4,6 y 7 (2h 30min)
+Creación y actualización de los casos de uso 1-10 (4h)
+Actualización de algunos requisitos de información (45 min)
+Creación de reglas de negocio 1-13 con todo el grupo (2h)
+Creación de algunos requisitos generales del sistema (1h)
+Creación del diagrama de arquitectura lógica del sistema (30 min)
+Descripción del diagrama de arquitectura lógica del sistema junto a Antonio Javier Sánchez Soria (10 min)
+Creación del modelo de clases del sistema junto a todo el grupo (3h)
+Creación de los diagramas de navegación del sistema para cliente y empleado (1h 30min)
+Interfaces de usuario del sistema y añadirlos al proyecto (14h)
+Descripciones de interfaz de usuario 3,9,10,11,12,13,14,39 (1h)
+
+Total: 31h 55min
