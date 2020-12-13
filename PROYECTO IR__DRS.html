@@ -13,6 +13,7 @@
             // converter.setOption( "key", "value" );
 
             var converter = new showdown.Converter();
+            converter.setOption( "parseImgDimensions", true );
 
             // function to be used in XLST templates
             // if inline=true, all CRLF tags are replaced
@@ -164,7 +165,18 @@
 <ul class="toc_list">
 <li>5.1 <a href="#SEC-0068">Diagramas de navegación del sistema</a></li>
 <li>5.2 <a href="#SEC-0069">Esquemas de la interfaz de usuario del sistema</a></li>
+<ul class="toc_list">
+<li>5.2.1 <a href="#SEC-0078">Interfaz de usuario para cliente</a></li>
+<li>5.2.2 <a href="#SEC-0079">Interfaz de usuario para empleado y administrador</a></li>
+<ul class="toc_list">
+<li>5.2.2.1 <a href="#SEC-0080">Perfil Empleado</a></li>
+</ul>
+</ul>
 <li>5.3 <a href="#SEC-0070">Descripción de la interfaz de usuario del sistema</a></li>
+<ul class="toc_list">
+<li>5.3.1 <a href="#SEC-0081">Descripción de la interfaz de usuario para cliente</a></li>
+<li>5.3.2 <a href="#SEC-0082">Descripción de la interfaz de usuario para empleado y administrador</a></li>
+</ul>
 </ul>
 <li>6 <a href="#SEC-0062">Interfaz de servicios del sistema</a></li>
 <ul class="toc_list">
@@ -2099,176 +2111,437 @@
 </p>
 </div>
 <h2 id="SEC-0069" class="section">5.2 Esquemas de la interfaz de usuario del sistema</h2>
-<div id="GRF-0020" class="figure">
-<img class="figure_image" src=".\diagramas\IU_V2\Interfaz Usuario Cliente\Login.png" width="90%%" />
+<div id="GRF-0063" class="figure">
+<img class="figure_image" src=".\diagramas\IU_V2\Interfaz Usuario Cliente\Productos\Página Principal.png" />
 <p class="figure_caption">
 <span class="figure_caption_label">Figura 48: </span>
-<textarea id="GRF-0020-name-md" class="markdown">
-<a href="#GLO-0087" class="rem_ref">IU-001 Login de usuarios</a>
+<textarea id="GRF-0063-name-md" class="markdown">
+<a href="#GLO-0085" class="rem_ref">IU-001 Página Principal</a>
 </textarea>
-<span id="GRF-0020-name-html"></span>
-<script>generate_markdown("GRF-0020-name",true);</script>
+<span id="GRF-0063-name-html"></span>
+<script>generate_markdown("GRF-0063-name",true);</script>
 </p>
 </div>
-<div id="GRF-0021" class="figure">
-<img class="figure_image" src=".\diagramas\IU_V2\Interfaz Usuario Cliente\RegistroCliente.png" width="90%%" />
+<div id="GRF-0064" class="figure">
+<img class="figure_image" src=".\diagramas\IU_V2\Interfaz Usuario Cliente\Login.png" />
 <p class="figure_caption">
 <span class="figure_caption_label">Figura 49: </span>
-<textarea id="GRF-0021-name-md" class="markdown">
-<a href="#GLO-0088" class="rem_ref">IU-002 Registro de cliente</a>
-</textarea>
-<span id="GRF-0021-name-html"></span>
-<script>generate_markdown("GRF-0021-name",true);</script>
+<textarea id="GRF-0064-name-md" class="markdown">IU-002 Login</textarea>
+<span id="GRF-0064-name-html"></span>
+<script>generate_markdown("GRF-0064-name",true);</script>
 </p>
 </div>
-<div id="GRF-0022" class="figure">
-<img class="figure_image" src=".\diagramas\IU_V2\Interfaz Usuario Cliente\Productos\Página Principal.png" width="90%%" />
+<h3 id="SEC-0078" class="section">5.2.1 Interfaz de usuario para cliente</h3>
+<div id="GRF-0065" class="figure">
+<img class="figure_image" src=".\diagramas\IU_V2\Interfaz Usuario Cliente\RegistroCliente.png" />
 <p class="figure_caption">
 <span class="figure_caption_label">Figura 50: </span>
-<textarea id="GRF-0022-name-md" class="markdown">
-<a href="#GLO-0085" class="rem_ref">IU-003 Página principal de cliente</a>
+<textarea id="GRF-0065-name-md" class="markdown">
+<a href="#GLO-0088" class="rem_ref">IU-003 Registro de cliente</a>
 </textarea>
-<span id="GRF-0022-name-html"></span>
-<script>generate_markdown("GRF-0022-name",true);</script>
+<span id="GRF-0065-name-html"></span>
+<script>generate_markdown("GRF-0065-name",true);</script>
 </p>
 </div>
-<div id="GRF-0023" class="figure">
-<img class="figure_image" src=".\diagramas\IU_V2\Interfaz Usuario Cliente\Productos\InfoProducto.png" width="90%%" />
+<div id="GRF-0066" class="figure">
+<img class="figure_image" src=".\diagramas\IU_V2\Interfaz Usuario Cliente\Productos\InfoProducto.png" />
 <p class="figure_caption">
 <span class="figure_caption_label">Figura 51: </span>
-<textarea id="GRF-0023-name-md" class="markdown">
-<a href="#GLO-0086" class="rem_ref">IU-004 Información de producto</a>
+<textarea id="GRF-0066-name-md" class="markdown">
+<a href="#GLO-0086" class="rem_ref">IU-004 Datos de un producto</a>
 </textarea>
-<span id="GRF-0023-name-html"></span>
-<script>generate_markdown("GRF-0023-name",true);</script>
+<span id="GRF-0066-name-html"></span>
+<script>generate_markdown("GRF-0066-name",true);</script>
 </p>
 </div>
-<div id="GRF-0024" class="figure">
-<img class="figure_image" src=".\diagramas\IU_V2\Interfaz Usuario Cliente\Productos\Cesta.png" width="90%%" />
+<div id="GRF-0067" class="figure">
+<img class="figure_image" src=".\diagramas\IU_V2\Interfaz Usuario Cliente\Productos\Cesta.png" />
 <p class="figure_caption">
 <span class="figure_caption_label">Figura 52: </span>
-<textarea id="GRF-0024-name-md" class="markdown">
-<a href="#GLO-0089" class="rem_ref">IU-005 Carrito de compra</a>
+<textarea id="GRF-0067-name-md" class="markdown">
+<a href="#GLO-0089" class="rem_ref">IU-005 Cesta de compra</a>
 </textarea>
-<span id="GRF-0024-name-html"></span>
-<script>generate_markdown("GRF-0024-name",true);</script>
+<span id="GRF-0067-name-html"></span>
+<script>generate_markdown("GRF-0067-name",true);</script>
 </p>
 </div>
-<div id="GRF-0017" class="figure">
-<img class="figure_image" src=".\diagramas\IU_V2\Interfaz Usuario Cliente\Productos\DatosParaPedido.png" width="90%%" />
+<div id="GRF-0068" class="figure">
+<img class="figure_image" src=".\diagramas\IU_V2\Interfaz Usuario Cliente\Productos\DatosParaPedido.png" />
 <p class="figure_caption">
 <span class="figure_caption_label">Figura 53: </span>
-<textarea id="GRF-0017-name-md" class="markdown">
+<textarea id="GRF-0068-name-md" class="markdown">
 <a href="#GLO-0090" class="rem_ref">IU-006 Datos para el pedido</a>
 </textarea>
-<span id="GRF-0017-name-html"></span>
-<script>generate_markdown("GRF-0017-name",true);</script>
+<span id="GRF-0068-name-html"></span>
+<script>generate_markdown("GRF-0068-name",true);</script>
 </p>
 </div>
-<div id="GRF-0018" class="figure">
-<img class="figure_image" src=".\diagramas\IU_V2\Interfaz Usuario Cliente\Productos\Pago.png" width="90%%" />
+<div id="GRF-0069" class="figure">
+<img class="figure_image" src=".\diagramas\IU_V2\Interfaz Usuario Cliente\Productos\Pago.png" />
 <p class="figure_caption">
 <span class="figure_caption_label">Figura 54: </span>
-<textarea id="GRF-0018-name-md" class="markdown">
+<textarea id="GRF-0069-name-md" class="markdown">
 <a href="#GLO-0091" class="rem_ref">IU-007 Pago</a>
 </textarea>
-<span id="GRF-0018-name-html"></span>
-<script>generate_markdown("GRF-0018-name",true);</script>
+<span id="GRF-0069-name-html"></span>
+<script>generate_markdown("GRF-0069-name",true);</script>
 </p>
 </div>
-<div id="GRF-0016" class="figure">
-<img class="figure_image" src=".\diagramas\IU_V2\Interfaz Usuario Cliente\Productos\PagoExitoso.png" width="90%%" />
+<div id="GRF-0070" class="figure">
+<img class="figure_image" src=".\diagramas\IU_V2\Interfaz Usuario Cliente\Productos\PagoExitoso.png" />
 <p class="figure_caption">
 <span class="figure_caption_label">Figura 55: </span>
-<textarea id="GRF-0016-name-md" class="markdown">
-<a href="#GLO-0094" class="rem_ref">IU-008 Pago exitoso</a>
+<textarea id="GRF-0070-name-md" class="markdown">
+<a href="#GLO-0094" class="rem_ref">IU-008 Pago realizado</a>
 </textarea>
-<span id="GRF-0016-name-html"></span>
-<script>generate_markdown("GRF-0016-name",true);</script>
+<span id="GRF-0070-name-html"></span>
+<script>generate_markdown("GRF-0070-name",true);</script>
 </p>
 </div>
-<div id="GRF-0019" class="figure">
-<img class="figure_image" src=".\diagramas\interfaz usuario creación usuario\UICreacionUsuarioFallo.png" />
+<div id="GRF-0071" class="figure">
+<img class="figure_image" src=".\diagramas\IU_V2\Interfaz Usuario Cliente\Perfil\DatosPersonales.png" />
 <p class="figure_caption">
 <span class="figure_caption_label">Figura 56: </span>
-<textarea id="GRF-0019-name-md" class="markdown">IU-010E Registro de Cliente Fallo</textarea>
-<span id="GRF-0019-name-html"></span>
-<script>generate_markdown("GRF-0019-name",true);</script>
+<textarea id="GRF-0071-name-md" class="markdown">
+<a href="#GLO-0095" class="rem_ref">IU-009 Perfil cliente</a>
+</textarea>
+<span id="GRF-0071-name-html"></span>
+<script>generate_markdown("GRF-0071-name",true);</script>
 </p>
 </div>
-<div id="GRF-0025" class="figure">
-<img class="figure_image" src=".\diagramas\interfaz creación contrato\UIcreacioncontrato.png" />
+<div id="GRF-0072" class="figure">
+<img class="figure_image" src=".\diagramas\IU_V2\Interfaz Usuario Cliente\Perfil\Pedidos_V2.png" />
 <p class="figure_caption">
 <span class="figure_caption_label">Figura 57: </span>
-<textarea id="GRF-0025-name-md" class="markdown">
-<a href="#GLO-0089" class="rem_ref">IU-XXX Creación de contratos</a>
+<textarea id="GRF-0072-name-md" class="markdown">
+<a href="#GLO-0096" class="rem_ref">IU-010 Pedidos del cliente</a>
 </textarea>
-<span id="GRF-0025-name-html"></span>
-<script>generate_markdown("GRF-0025-name",true);</script>
+<span id="GRF-0072-name-html"></span>
+<script>generate_markdown("GRF-0072-name",true);</script>
 </p>
 </div>
-<div id="GRF-0026" class="figure">
-<img class="figure_image" src=".\diagramas\interfaz creación contrato\UIcreacioncontratoFallo.png" />
+<div id="GRF-0077" class="figure">
+<img class="figure_image" src=".\diagramas\IU_V2\Interfaz Usuario Cliente\Perfil\Facturas.png" />
 <p class="figure_caption">
 <span class="figure_caption_label">Figura 58: </span>
-<textarea id="GRF-0026-name-md" class="markdown">IU-XXXE Creación de contratos con fallo</textarea>
-<span id="GRF-0026-name-html"></span>
-<script>generate_markdown("GRF-0026-name",true);</script>
+<textarea id="GRF-0077-name-md" class="markdown">
+<a href="#GLO-0097" class="rem_ref">IU-011 Datos Factura cliente</a>
+</textarea>
+<span id="GRF-0077-name-html"></span>
+<script>generate_markdown("GRF-0077-name",true);</script>
 </p>
 </div>
-<div id="GRF-0027" class="figure">
-<img class="figure_image" src=".\diagramas\interfaz usuario creacion proveedor\UIcreacionproveedor.png" />
+<div id="GRF-0074" class="figure">
+<img class="figure_image" src=".\diagramas\IU_V2\Interfaz Usuario Cliente\Perfil\Alquileres.png" />
 <p class="figure_caption">
 <span class="figure_caption_label">Figura 59: </span>
-<textarea id="GRF-0027-name-md" class="markdown">
-<a href="#GLO-0090" class="rem_ref">IU-XXX Creación de proveedores</a>
+<textarea id="GRF-0074-name-md" class="markdown">
+<a href="#GLO-0098" class="rem_ref">IU-012 Alquileres del cliente</a>
 </textarea>
-<span id="GRF-0027-name-html"></span>
-<script>generate_markdown("GRF-0027-name",true);</script>
+<span id="GRF-0074-name-html"></span>
+<script>generate_markdown("GRF-0074-name",true);</script>
 </p>
 </div>
-<div id="GRF-0028" class="figure">
-<img class="figure_image" src=".\diagramas\interfaz usuario creacion proveedor\UIcreacionproveedorFallo.png" />
+<div id="GRF-0075" class="figure">
+<img class="figure_image" src=".\diagramas\IU_V2\Interfaz Usuario Cliente\AlquilerCubas\Alquilar.png" />
 <p class="figure_caption">
 <span class="figure_caption_label">Figura 60: </span>
-<textarea id="GRF-0028-name-md" class="markdown">
-<a href="#GLO-0090" class="rem_ref">IU-XXX Creación de proveedores</a> con fallo</textarea>
-<span id="GRF-0028-name-html"></span>
-<script>generate_markdown("GRF-0028-name",true);</script>
+<textarea id="GRF-0075-name-md" class="markdown">IU-013 Alquiler de <a href="#GLO-0016" class="rem_ref">cubas</a>
+</textarea>
+<span id="GRF-0075-name-html"></span>
+<script>generate_markdown("GRF-0075-name",true);</script>
 </p>
 </div>
-<div id="GRF-0029" class="figure">
-<img class="figure_image" src=".\diagramas\interfaz de usuario home\Home.png" />
+<div id="GRF-0076" class="figure">
+<img class="figure_image" src=".\diagramas\IU_V2\Interfaz Usuario Cliente\AlquilerCubas\DetallesAlquiler.png" />
 <p class="figure_caption">
 <span class="figure_caption_label">Figura 61: </span>
-<textarea id="GRF-0029-name-md" class="markdown">IU-XXX Página principal con log</textarea>
-<span id="GRF-0029-name-html"></span>
-<script>generate_markdown("GRF-0029-name",true);</script>
+<textarea id="GRF-0076-name-md" class="markdown">
+<a href="#GLO-0100" class="rem_ref">IU-014 Detalles Alquiler cuba</a>
+</textarea>
+<span id="GRF-0076-name-html"></span>
+<script>generate_markdown("GRF-0076-name",true);</script>
+</p>
+</div>
+<h3 id="SEC-0079" class="section">5.2.2 Interfaz de usuario para empleado y administrador</h3>
+<div id="GRF-0078" class="figure">
+<img class="figure_image" src=".\diagramas\IU_V2\Contabilidad\Clientes\BusquedaClientes.png" />
+<p class="figure_caption">
+<span class="figure_caption_label">Figura 62: </span>
+<textarea id="GRF-0078-name-md" class="markdown">IU-015 Búsqueda de clientes</textarea>
+<span id="GRF-0078-name-html"></span>
+<script>generate_markdown("GRF-0078-name",true);</script>
+</p>
+</div>
+<div id="GRF-0079" class="figure">
+<img class="figure_image" src=".\diagramas\IU_V2\Contabilidad\Clientes\VistaCliente.png" />
+<p class="figure_caption">
+<span class="figure_caption_label">Figura 63: </span>
+<textarea id="GRF-0079-name-md" class="markdown">IU-016 Datos Cliente</textarea>
+<span id="GRF-0079-name-html"></span>
+<script>generate_markdown("GRF-0079-name",true);</script>
+</p>
+</div>
+<div id="GRF-0080" class="figure">
+<img class="figure_image" src=".\diagramas\IU_V2\Contabilidad\Informes\InformeEmpleados.png" />
+<p class="figure_caption">
+<span class="figure_caption_label">Figura 64: </span>
+<textarea id="GRF-0080-name-md" class="markdown">IU-017 Informes Empleados</textarea>
+<span id="GRF-0080-name-html"></span>
+<script>generate_markdown("GRF-0080-name",true);</script>
+</p>
+</div>
+<div id="GRF-0081" class="figure">
+<img class="figure_image" src=".\diagramas\IU_V2\Contabilidad\Informes\InformeVentas.png" />
+<p class="figure_caption">
+<span class="figure_caption_label">Figura 65: </span>
+<textarea id="GRF-0081-name-md" class="markdown">IU-018 Informes Ventas</textarea>
+<span id="GRF-0081-name-html"></span>
+<script>generate_markdown("GRF-0081-name",true);</script>
+</p>
+</div>
+<div id="GRF-0082" class="figure">
+<img class="figure_image" src=".\diagramas\IU_V2\Contabilidad\Productos\ListaProductos.png" />
+<p class="figure_caption">
+<span class="figure_caption_label">Figura 66: </span>
+<textarea id="GRF-0082-name-md" class="markdown">IU-019 Listado <a href="#GLO-0046" class="rem_ref">Productos</a>
+</textarea>
+<span id="GRF-0082-name-html"></span>
+<script>generate_markdown("GRF-0082-name",true);</script>
+</p>
+</div>
+<div id="GRF-0083" class="figure">
+<img class="figure_image" src=".\diagramas\IU_V2\Contabilidad\Productos\RegistroProductos.png" />
+<p class="figure_caption">
+<span class="figure_caption_label">Figura 67: </span>
+<textarea id="GRF-0083-name-md" class="markdown">IU-020 Registro <a href="#GLO-0046" class="rem_ref">Producto</a>
+</textarea>
+<span id="GRF-0083-name-html"></span>
+<script>generate_markdown("GRF-0083-name",true);</script>
+</p>
+</div>
+<div id="GRF-0084" class="figure">
+<img class="figure_image" src=".\diagramas\IU_V2\Contabilidad\Proveedor\Proveedores.png" />
+<p class="figure_caption">
+<span class="figure_caption_label">Figura 68: </span>
+<textarea id="GRF-0084-name-md" class="markdown">IU-021 Datos de <a href="#GLO-0048" class="rem_ref">Proveedor</a>
+</textarea>
+<span id="GRF-0084-name-html"></span>
+<script>generate_markdown("GRF-0084-name",true);</script>
+</p>
+</div>
+<div id="GRF-0085" class="figure">
+<img class="figure_image" src=".\diagramas\IU_V2\Contabilidad\Proveedor\RegistroProveedor.png" />
+<p class="figure_caption">
+<span class="figure_caption_label">Figura 69: </span>
+<textarea id="GRF-0085-name-md" class="markdown">IU-022 Registro <a href="#GLO-0048" class="rem_ref">Proveedor</a>
+</textarea>
+<span id="GRF-0085-name-html"></span>
+<script>generate_markdown("GRF-0085-name",true);</script>
+</p>
+</div>
+<div id="GRF-0086" class="figure">
+<img class="figure_image" src=".\diagramas\IU_V2\Contabilidad\Mensajes.png" />
+<p class="figure_caption">
+<span class="figure_caption_label">Figura 70: </span>
+<textarea id="GRF-0086-name-md" class="markdown">IU-023 Mensajes</textarea>
+<span id="GRF-0086-name-html"></span>
+<script>generate_markdown("GRF-0086-name",true);</script>
+</p>
+</div>
+<div id="GRF-0087" class="figure">
+<img class="figure_image" src=".\diagramas\IU_V2\Contabilidad\Proveedor\PedidoProveedor.png" />
+<p class="figure_caption">
+<span class="figure_caption_label">Figura 71: </span>
+<textarea id="GRF-0087-name-md" class="markdown">IU-024 <a href="#GLO-0047" class="rem_ref">Pedido</a> a <a href="#GLO-0048" class="rem_ref">Proveedores</a>
+</textarea>
+<span id="GRF-0087-name-html"></span>
+<script>generate_markdown("GRF-0087-name",true);</script>
+</p>
+</div>
+<div id="GRF-0088" class="figure">
+<img class="figure_image" src=".\diagramas\IU_V2\Registro\Camiones.png" />
+<p class="figure_caption">
+<span class="figure_caption_label">Figura 72: </span>
+<textarea id="GRF-0088-name-md" class="markdown">IU-025 Listado Camiones</textarea>
+<span id="GRF-0088-name-html"></span>
+<script>generate_markdown("GRF-0088-name",true);</script>
+</p>
+</div>
+<div id="GRF-0089" class="figure">
+<img class="figure_image" src=".\diagramas\IU_V2\Registro\CreacionCamiones.png" />
+<p class="figure_caption">
+<span class="figure_caption_label">Figura 73: </span>
+<textarea id="GRF-0089-name-md" class="markdown">IU-026 Creación de Camión</textarea>
+<span id="GRF-0089-name-html"></span>
+<script>generate_markdown("GRF-0089-name",true);</script>
+</p>
+</div>
+<div id="GRF-0090" class="figure">
+<img class="figure_image" src=".\diagramas\IU_V2\Registro\Cubas.png" />
+<p class="figure_caption">
+<span class="figure_caption_label">Figura 74: </span>
+<textarea id="GRF-0090-name-md" class="markdown">IU-027 Listado <a href="#GLO-0016" class="rem_ref">Cubas</a>
+</textarea>
+<span id="GRF-0090-name-html"></span>
+<script>generate_markdown("GRF-0090-name",true);</script>
+</p>
+</div>
+<div id="GRF-0091" class="figure">
+<img class="figure_image" src=".\diagramas\IU_V2\Registro\PorteCubas.png" />
+<p class="figure_caption">
+<span class="figure_caption_label">Figura 75: </span>
+<textarea id="GRF-0091-name-md" class="markdown">IU-028 Portes <a href="#GLO-0016" class="rem_ref">Cubas</a>
+</textarea>
+<span id="GRF-0091-name-html"></span>
+<script>generate_markdown("GRF-0091-name",true);</script>
+</p>
+</div>
+<div id="GRF-0092" class="figure">
+<img class="figure_image" src=".\diagramas\IU_V2\Registro\CreacionCuba.png" />
+<p class="figure_caption">
+<span class="figure_caption_label">Figura 76: </span>
+<textarea id="GRF-0092-name-md" class="markdown">IU-029 Creación <a href="#GLO-0016" class="rem_ref">Cubas</a>
+</textarea>
+<span id="GRF-0092-name-html"></span>
+<script>generate_markdown("GRF-0092-name",true);</script>
+</p>
+</div>
+<div id="GRF-0093" class="figure">
+<img class="figure_image" src=".\diagramas\IU_V2\Interfaz Usuario Empleado\Alertas.png" />
+<p class="figure_caption">
+<span class="figure_caption_label">Figura 77: </span>
+<textarea id="GRF-0093-name-md" class="markdown">IU-030 Alertas</textarea>
+<span id="GRF-0093-name-html"></span>
+<script>generate_markdown("GRF-0093-name",true);</script>
+</p>
+</div>
+<h4 id="SEC-0080" class="section">5.2.2.1 Perfil Empleado</h4>
+<div id="GRF-0094" class="figure">
+<img class="figure_image" src=".\diagramas\IU_V2\Interfaz Usuario Empleado\Perfil Empleado\Horario.png" />
+<p class="figure_caption">
+<span class="figure_caption_label">Figura 78: </span>
+<textarea id="GRF-0094-name-md" class="markdown">IU-031 Horario Empleado</textarea>
+<span id="GRF-0094-name-html"></span>
+<script>generate_markdown("GRF-0094-name",true);</script>
+</p>
+</div>
+<div id="GRF-0095" class="figure">
+<img class="figure_image" src=".\diagramas\IU_V2\Interfaz Usuario Empleado\Perfil Empleado\Facturas.png" />
+<p class="figure_caption">
+<span class="figure_caption_label">Figura 79: </span>
+<textarea id="GRF-0095-name-md" class="markdown">IU-032 <a href="#GLO-0039" class="rem_ref">Facturas</a> Clientes y <a href="#GLO-0048" class="rem_ref">Proveedores</a>
+</textarea>
+<span id="GRF-0095-name-html"></span>
+<script>generate_markdown("GRF-0095-name",true);</script>
+</p>
+</div>
+<div id="GRF-0096" class="figure">
+<img class="figure_image" src=".\diagramas\IU_V2\Interfaz Usuario Empleado\Perfil Empleado\CreacionFactura.png" />
+<p class="figure_caption">
+<span class="figure_caption_label">Figura 80: </span>
+<textarea id="GRF-0096-name-md" class="markdown">IU-033 Creación <a href="#GLO-0039" class="rem_ref">Factura</a>
+</textarea>
+<span id="GRF-0096-name-html"></span>
+<script>generate_markdown("GRF-0096-name",true);</script>
+</p>
+</div>
+<div id="GRF-0097" class="figure">
+<img class="figure_image" src=".\diagramas\IU_V2\Interfaz Usuario Empleado\Perfil Empleado\Porte.png" />
+<p class="figure_caption">
+<span class="figure_caption_label">Figura 81: </span>
+<textarea id="GRF-0097-name-md" class="markdown">IU-034 Portes de Clientes </textarea>
+<span id="GRF-0097-name-html"></span>
+<script>generate_markdown("GRF-0097-name",true);</script>
+</p>
+</div>
+<div id="GRF-0098" class="figure">
+<img class="figure_image" src=".\diagramas\IU_V2\Interfaz Usuario Empleado\Perfil Empleado\CreacionPorte.png" />
+<p class="figure_caption">
+<span class="figure_caption_label">Figura 82: </span>
+<textarea id="GRF-0098-name-md" class="markdown">IU-035 Creación Porte</textarea>
+<span id="GRF-0098-name-html"></span>
+<script>generate_markdown("GRF-0098-name",true);</script>
+</p>
+</div>
+<div id="GRF-0099" class="figure">
+<img class="figure_image" src=".\diagramas\IU_V2\Interfaz Usuario Administrador\Empleados\ListaEmpleadosVacia.png" />
+<p class="figure_caption">
+<span class="figure_caption_label">Figura 83: </span>
+<textarea id="GRF-0099-name-md" class="markdown">IU-036 Listado Empleados Vacía</textarea>
+<span id="GRF-0099-name-html"></span>
+<script>generate_markdown("GRF-0099-name",true);</script>
+</p>
+</div>
+<div id="GRF-0100" class="figure">
+<img class="figure_image" src=".\diagramas\IU_V2\Interfaz Usuario Administrador\Empleados\ListaEmpleados.png" />
+<p class="figure_caption">
+<span class="figure_caption_label">Figura 84: </span>
+<textarea id="GRF-0100-name-md" class="markdown">IU-037 Listado Empleados</textarea>
+<span id="GRF-0100-name-html"></span>
+<script>generate_markdown("GRF-0100-name",true);</script>
+</p>
+</div>
+<div id="GRF-0101" class="figure">
+<img class="figure_image" src=".\diagramas\IU_V2\Interfaz Usuario Administrador\Empleados\DetallesEmpleado.png" />
+<p class="figure_caption">
+<span class="figure_caption_label">Figura 85: </span>
+<textarea id="GRF-0101-name-md" class="markdown">IU-038 Datos de un Empleado</textarea>
+<span id="GRF-0101-name-html"></span>
+<script>generate_markdown("GRF-0101-name",true);</script>
+</p>
+</div>
+<div id="GRF-0102" class="figure">
+<img class="figure_image" src=".\diagramas\IU_V2\Interfaz Usuario Administrador\Empleados\RegistroEmpleado.png" />
+<p class="figure_caption">
+<span class="figure_caption_label">Figura 86: </span>
+<textarea id="GRF-0102-name-md" class="markdown">IU-039 Registro Empleado</textarea>
+<span id="GRF-0102-name-html"></span>
+<script>generate_markdown("GRF-0102-name",true);</script>
+</p>
+</div>
+<div id="GRF-0103" class="figure">
+<img class="figure_image" src=".\diagramas\IU_V2\Interfaz Usuario Administrador\Empleados\RegistroContrato.png" />
+<p class="figure_caption">
+<span class="figure_caption_label">Figura 87: </span>
+<textarea id="GRF-0103-name-md" class="markdown">IU-040 Registro Contrato Empleado</textarea>
+<span id="GRF-0103-name-html"></span>
+<script>generate_markdown("GRF-0103-name",true);</script>
+</p>
+</div>
+<div id="GRF-0104" class="figure">
+<img class="figure_image" src=".\diagramas\IU_V2\Interfaz Usuario Administrador\Empleados\RegistroHorario.png" />
+<p class="figure_caption">
+<span class="figure_caption_label">Figura 88: </span>
+<textarea id="GRF-0104-name-md" class="markdown">IU-041 Selección de Horarios</textarea>
+<span id="GRF-0104-name-html"></span>
+<script>generate_markdown("GRF-0104-name",true);</script>
 </p>
 </div>
 <h2 id="SEC-0070" class="section">5.3 Descripción de la interfaz de usuario del sistema</h2>
-<div id="GLO-0087" class="glo">
-<textarea id="GLO-0087-text-md" class="markdown">**IU-001 Login de usuarios**: En esta interfaz de usuarios, se muestra la página a la que se accede para el log in. De no tener cuenta, un usuario se podría registrar como cliente a través del enlace que aparece abajo.</textarea>
-<div id="GLO-0087-text-html" class=""></div>
-<script>generate_markdown("GLO-0087-text");</script>
-</div>
-<div id="GLO-0088" class="glo">
-<textarea id="GLO-0088-text-md" class="markdown">**IU-002 Registro de cliente**: En esta interfaz de usuario, los clientes se podrán registrar como usuarios.</textarea>
-<div id="GLO-0088-text-html" class=""></div>
-<script>generate_markdown("GLO-0088-text");</script>
-</div>
 <div id="GLO-0085" class="glo">
-<textarea id="GLO-0085-text-md" class="markdown">**IU-003 Página principal de cliente**: En esta interfaz de usuario, representamos el escenario de página principal para usuarios. Desde esta página se podrán ver los <a href="#GLO-0046" class="rem_ref">productos</a> principales. Se podrán seleccionar por categoría, filtrarlos por precio y entrar en las páginas de los <a href="#GLO-0046" class="rem_ref">productos</a> en sí.¬¬Una vez el cliente decida que no va a comprar nada más, solo tendría que darle al carrito y desde ahí, podría tramitar el <a href="#GLO-0047" class="rem_ref">pedido</a>.¬De haber iniciado sesión el cliente, en la barra superior se mostraría la pestaña Mi Perfil.</textarea>
+<textarea id="GLO-0085-text-md" class="markdown">**IU-001 Página principal**: En esta interfaz de usuario, representamos el escenario de página principal. Aquí los empleados/propietario tendrán que clicar sobre iniciar sesión para ver sus respectivas secciones.¬¬Los clientes podrán ver los <a href="#GLO-0046" class="rem_ref">productos</a> principales. Se podrán seleccionar por categoría, filtrarlos por precio y entrar en las páginas de los <a href="#GLO-0046" class="rem_ref">productos</a> en sí.¬¬Una vez el cliente decida que no va a comprar nada más, solo tendría que darle al carrito y desde ahí, podría tramitar el <a href="#GLO-0047" class="rem_ref">pedido</a>.¬De haber iniciado sesión el cliente, en la barra superior se mostraría la pestaña Mi Perfil.</textarea>
 <div id="GLO-0085-text-html" class=""></div>
 <script>generate_markdown("GLO-0085-text");</script>
 </div>
+<div id="GLO-0087" class="glo">
+<textarea id="GLO-0087-text-md" class="markdown">**IU-002 Login de usuarios**: En esta interfaz de usuarios, se muestra la página a la que se accede para el log in. De no tener cuenta, un cliente se podría registrar a través del enlace que aparece abajo.</textarea>
+<div id="GLO-0087-text-html" class=""></div>
+<script>generate_markdown("GLO-0087-text");</script>
+</div>
+<h3 id="SEC-0081" class="section">5.3.1 Descripción de la interfaz de usuario para cliente</h3>
+<div id="GLO-0088" class="glo">
+<textarea id="GLO-0088-text-md" class="markdown">**IU-003 Registro de cliente**: En esta interfaz de usuario, los clientes se podrán registrar como usuarios.</textarea>
+<div id="GLO-0088-text-html" class=""></div>
+<script>generate_markdown("GLO-0088-text");</script>
+</div>
 <div id="GLO-0086" class="glo">
-<textarea id="GLO-0086-text-md" class="markdown">**IU-004 Información de producto**: En esta interfaz de usuario, se representa la vista de <a href="#GLO-0046" class="rem_ref">producto</a> desde cliente. Desde esta, podríamos ver el precio del <a href="#GLO-0046" class="rem_ref">producto</a> y sus características principales. ¬Si al cliente le convence, pordría añadirlo al carrito (para el que también tiene un enlace).</textarea>
+<textarea id="GLO-0086-text-md" class="markdown">**IU-004 Datos de un producto**: En esta interfaz de usuario, se representa la vista de <a href="#GLO-0046" class="rem_ref">producto</a> desde cliente. Desde esta, podríamos ver el precio del <a href="#GLO-0046" class="rem_ref">producto</a> y sus características principales. ¬Si al cliente le convence, pordría añadirlo a la cesta de la compra(para el que también tiene un enlace).</textarea>
 <div id="GLO-0086-text-html" class=""></div>
 <script>generate_markdown("GLO-0086-text");</script>
 </div>
 <div id="GLO-0089" class="glo">
-<textarea id="GLO-0089-text-md" class="markdown">**IU-005 Carrito de compra**: En esta interfaz de usuario, representamos el escenario que se da cuando el cliente accede a un carrito de compra con artículos. Desde aquí, podría seleccionar las unidades a comprar, además de comprobar el coste total.¬Una vez comprobado el <a href="#GLO-0047" class="rem_ref">pedido</a>, este podría proceder a la ventana de pago.</textarea>
+<textarea id="GLO-0089-text-md" class="markdown">**IU-005 Cesta de compra**: En esta interfaz de usuario, representamos el escenario que se da cuando el cliente accede a un carrito de compra con artículos. Desde aquí, podría seleccionar las unidades a comprar, además de comprobar el coste total.¬Una vez comprobado el <a href="#GLO-0047" class="rem_ref">pedido</a>, este podría proceder a la ventana de pago.</textarea>
 <div id="GLO-0089-text-html" class=""></div>
 <script>generate_markdown("GLO-0089-text");</script>
 </div>
@@ -2283,10 +2556,41 @@
 <script>generate_markdown("GLO-0091-text");</script>
 </div>
 <div id="GLO-0094" class="glo">
-<textarea id="GLO-0094-text-md" class="markdown">**IU-008 Pago exitoso**: En esta interfaz de usuario, informamos a nuestro cliente de que se ha procesado el pago correctamente.</textarea>
+<textarea id="GLO-0094-text-md" class="markdown">**IU-008 Pago realizado**: En esta interfaz de usuario, informamos a nuestro cliente de que se ha procesado el pago correctamente.</textarea>
 <div id="GLO-0094-text-html" class=""></div>
 <script>generate_markdown("GLO-0094-text");</script>
 </div>
+<div id="GLO-0095" class="glo">
+<textarea id="GLO-0095-text-md" class="markdown">**IU-009 Perfil cliente**: En esta vista el cliente podrá ver sus datos personales así como editar algún dato si lo necesita, además podrá cambia su contraseña. Desde aquí podrá navegar a un registro de sus <a href="#GLO-0047" class="rem_ref">pedidos</a> y de sus alquileres.</textarea>
+<div id="GLO-0095-text-html" class=""></div>
+<script>generate_markdown("GLO-0095-text");</script>
+</div>
+<div id="GLO-0096" class="glo">
+<textarea id="GLO-0096-text-md" class="markdown">**IU-010 Pedidos del cliente**: En esta vista el cliente podrá ver sus <a href="#GLO-0047" class="rem_ref">pedidos</a> realizados así como el estado de un <a href="#GLO-0047" class="rem_ref">pedido</a> a entregar, además podrá visualizar la <a href="#GLO-0039" class="rem_ref">factura</a> de cada <a href="#GLO-0047" class="rem_ref">pedido</a> si así lo desea.</textarea>
+<div id="GLO-0096-text-html" class=""></div>
+<script>generate_markdown("GLO-0096-text");</script>
+</div>
+<div id="GLO-0097" class="glo">
+<textarea id="GLO-0097-text-md" class="markdown">**IU-011 Datos Factura cliente**: En esta vista el cliente podrá ver los datos de una <a href="#GLO-0039" class="rem_ref">factura</a> de un <a href="#GLO-0047" class="rem_ref">pedido</a> en concreto.</textarea>
+<div id="GLO-0097-text-html" class=""></div>
+<script>generate_markdown("GLO-0097-text");</script>
+</div>
+<div id="GLO-0098" class="glo">
+<textarea id="GLO-0098-text-md" class="markdown">**IU-012 Alquileres del cliente**: En esta vista el cliente podrá ver sus alquileres realizados en el transcurso del tiempo.</textarea>
+<div id="GLO-0098-text-html" class=""></div>
+<script>generate_markdown("GLO-0098-text");</script>
+</div>
+<div id="GLO-0099" class="glo">
+<textarea id="GLO-0099-text-md" class="markdown">**IU-013 Alquiler de cuba**: En esta vista, el cliente podrá ser capaz de alquilar una <a href="#GLO-0016" class="rem_ref">cuba</a>, podrá seleccionar la <a href="#GLO-0016" class="rem_ref">cuba</a> que desee alquilar y la fecha en la que quiere alquilarla. En el momento de seleccionar una <a href="#GLO-0016" class="rem_ref">cuba</a>, podrá ver con claridad las fechas en la que dicha <a href="#GLO-0016" class="rem_ref">cuba</a> está disponible.</textarea>
+<div id="GLO-0099-text-html" class=""></div>
+<script>generate_markdown("GLO-0099-text");</script>
+</div>
+<div id="GLO-0100" class="glo">
+<textarea id="GLO-0100-text-md" class="markdown">**IU-014 Detalles Alquiler cuba**: En esta vista, el cliente puede ver cuánto le saldrá el alquiler de la <a href="#GLO-0016" class="rem_ref">cuba</a> seleccionada. Así como un desglose de la <a href="#GLO-0039" class="rem_ref">factura</a>. Desde esta vista pasaría a la vista  <a href="#GLO-0091" class="rem_ref">IU-007 Pago</a>  para tramitar el pago.</textarea>
+<div id="GLO-0100-text-html" class=""></div>
+<script>generate_markdown("GLO-0100-text");</script>
+</div>
+<h3 id="SEC-0082" class="section">5.3.2 Descripción de la interfaz de usuario para empleado y administrador</h3>
 <h1 id="SEC-0062" class="section">6 Interfaz de servicios del sistema</h1>
 <h2 id="SEC-0065" class="section">6.1 Diagramas de la interfaz de servicios del sistema</h2>
 <h2 id="SEC-0066" class="section">6.2 Descripción de la interfaz de servicios del sistema</h2>

@@ -13,6 +13,7 @@
             // converter.setOption( "key", "value" );
 
             var converter = new showdown.Converter();
+            converter.setOption( "parseImgDimensions", true );
 
             // function to be used in XLST templates
             // if inline=true, all CRLF tags are replaced
@@ -3684,7 +3685,7 @@
 <tr>
 <th>Descripción</th>
 <td colspan="2">
-<textarea id="UC-0016--md" class="markdown">El sistema deberá comportarse tal como se describe en el siguiente caso de uso cuando <span class="triggering_event">un empleado quiere ver los informes generados por el sistema</span>. </textarea>
+<textarea id="UC-0016--md" class="markdown">El sistema deberá comportarse tal como se describe en el siguiente caso de uso cuando <span class="triggering_event">el propietario quiere ver los informes generados por el sistema</span>. </textarea>
 <div id="UC-0016--html" class=""></div>
 <script>generate_markdown("UC-0016-");</script>
 </td>
@@ -3705,7 +3706,7 @@
 <tr id="STP-0199">
 <th class="step_number">1</th>
 <td colspan="1">
-<textarea id="STP-0199--md" class="markdown"> El actor <a href="#ACT-0018">Empleado de la tienda (ACT-0018)</a> pulsa en la herramienta de informes. </textarea>
+<textarea id="STP-0199--md" class="markdown"> El actor <a href="#ACT-0020">Propietario (ACT-0020)</a> pulsa en la herramienta de informes. </textarea>
 <div id="STP-0199--html" class=""></div>
 <script>generate_markdown("STP-0199-");</script>
 </td>
@@ -3713,7 +3714,7 @@
 <tr id="STP-0200">
 <th class="step_number">2</th>
 <td colspan="1">
-<textarea id="STP-0200--md" class="markdown"> El actor <a href="#ACT-0018">Empleado de la tienda (ACT-0018)</a> accede a una categoría específica de los informes y le da click en el botón de generar. </textarea>
+<textarea id="STP-0200--md" class="markdown"> El actor <a href="#ACT-0020">Propietario (ACT-0020)</a> accede a una categoría específica de los informes y le da click en el botón de generar. </textarea>
 <div id="STP-0200--html" class=""></div>
 <script>generate_markdown("STP-0200-");</script>
 </td>
@@ -3721,7 +3722,7 @@
 <tr id="STP-0201">
 <th class="step_number">3</th>
 <td colspan="1">
-<textarea id="STP-0201--md" class="markdown">Si el empleado añade la descriptión correcta,  el sistema el sistema hace crea el informe y lo muestra por pantalla. </textarea>
+<textarea id="STP-0201--md" class="markdown">Si el propietario añade la descriptión correcta,  el sistema el sistema hace crea el informe y lo muestra por pantalla. </textarea>
 <div id="STP-0201--html" class=""></div>
 <script>generate_markdown("STP-0201-");</script>
 </td>
