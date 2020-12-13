@@ -1,14 +1,20 @@
-Actualización de todos los procesos de negocio a implantar junto a Antonio Javier Sánchez Soria (1h 30min)
-Creación bpms de los procesos de negocio 1,4,6 y 7 (2h 30min)
-Creación y actualización de los casos de uso 1-10 (4h)
-Actualización de algunos requisitos de información (45 min)
-Creación de reglas de negocio 1-13 con todo el grupo (2h)
-Creación de algunos requisitos generales del sistema (1h)
-Creación del diagrama de arquitectura lógica del sistema (30 min)
-Descripción del diagrama de arquitectura lógica del sistema junto a Antonio Javier Sánchez Soria (10 min)
-Creación del modelo de clases del sistema junto a todo el grupo (3h)
-Creación de los diagramas de navegación del sistema para cliente y empleado (1h 30min)
-Interfaces de usuario del sistema y añadirlos al proyecto (14h)
-Descripciones de interfaz de usuario 3,9,10,11,12,13,14,39 (1h)
+-----PRIMER ENTREGABLE-------
+Creación cuestionario con el grupo (30 min)
+4.1,4.2.1,3.2.1 junto a Antonio Javier Sánchez Soria y glosario de términos (5h)
+TOTAL: 5h 30 min
 
-Total: 31h 55min
+-----SEGUNDO ENTREGABLE-------
+Actualización de todos los procesos de negocio a implantar junto a Antonio Javier Sánchez Soria (1h)-
+Creación bpms de los procesos de negocio 1,4,6 y 7 (1h 30min)-
+Creación y actualización de los casos de uso 1-10 (2h 30 min)-
+Actualización de algunos requisitos de información (45 min) -
+Creación de reglas de negocio 1-13 con todo el grupo (45min) -
+Creación de algunos requisitos generales del sistema (45min) -
+Creación del diagrama de arquitectura lógica del sistema (30 min) -
+Descripción del diagrama de arquitectura lógica del sistema junto a Antonio Javier Sánchez Soria (10 min)-
+Creación del modelo de clases del sistema junto a todo el grupo (3h)-
+Creación de los diagramas de navegación del sistema para cliente y empleado (1h 30min)-
+Interfaces de usuario del sistema y añadirlos al proyecto (13h)-
+Descripciones de interfaz de usuario 3,9,10,11,12,13,14,39 (35min)
+
+Total: 25 h 55min
