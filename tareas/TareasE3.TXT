@@ -26,4 +26,6 @@ DAS (no me importaria retocar lo que sea del uml)
 
 
 Ángel
--¿
+-Cambios del DAS según el profesor
+
+Falta por hacer las descripciones de la interfaz de usuario de empleado

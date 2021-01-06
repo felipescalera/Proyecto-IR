@@ -13,6 +13,7 @@
             // converter.setOption( "key", "value" );
 
             var converter = new showdown.Converter();
+            converter.setOption( "parseImgDimensions", true );
 
             // function to be used in XLST templates
             // if inline=true, all CRLF tags are replaced
@@ -169,14 +170,6 @@
 <li>5.2.2 <a href="#SEC-0079">Interfaz de usuario para empleado y administrador</a></li>
 <ul class="toc_list">
 <li>5.2.2.1 <a href="#SEC-0080">Perfil Empleado</a></li>
-</ul>
-</ul>
-<li>5.3 <a href="#SEC-0070">Descripción de la interfaz de usuario del sistema</a></li>
-<ul class="toc_list">
-<li>5.3.1 <a href="#SEC-0081">Descripción de la interfaz de usuario para cliente</a></li>
-<li>5.3.2 <a href="#SEC-0082">Descripción de la interfaz de usuario para empleado y administrador</a></li>
-<ul class="toc_list">
-<li>5.3.2.1 <a href="#SEC-0083">Perfil empleado</a></li>
 </ul>
 </ul>
 </ul>
@@ -619,13 +612,17 @@
 <script>generate_markdown("VAL-0001-description");</script>
 <span class="code_comment">*/</span>
 </div>
-<span class="keyword">value type </span>
+<span class="keyword">enumerated type </span>
 <span class="class_name">TipoEmpleado</span>
 <br />
-            {<br />
-<textarea id="VAL-0001-definition-md" class="markdown">DEPENDIENTE, EMPLEADOALMACEN, ENCARGADOALMACEN, TRANSPORTISTA</textarea>
-<div id="VAL-0001-definition-html" class="code_ocl"></div>
-<script>generate_markdown("VAL-0001-definition");</script>
+            {
+
+            <ul class="properties">
+<li id="ATT-0252" class="property">DEPENDIENTE</li>
+<li id="ATT-0253" class="property">EMPLEADOALMACEN</li>
+<li id="ATT-0254" class="property">ENCARGADOALMACEN</li>
+<li id="ATT-0255" class="property">TRANSPORTISTA</li>
+</ul>
             }
         </div>
 </td>
@@ -710,13 +707,15 @@
 <script>generate_markdown("VAL-0003-description");</script>
 <span class="code_comment">*/</span>
 </div>
-<span class="keyword">value type </span>
+<span class="keyword">enumerated type </span>
 <span class="class_name">TipoPago</span>
 <br />
-            {<br />
-<textarea id="VAL-0003-definition-md" class="markdown">TARJETACREDITO, EFECTIVO</textarea>
-<div id="VAL-0003-definition-html" class="code_ocl"></div>
-<script>generate_markdown("VAL-0003-definition");</script>
+            {
+
+            <ul class="properties">
+<li id="ATT-0257" class="property">TARJETACREDITO</li>
+<li id="ATT-0258" class="property">EFECTIVO</li>
+</ul>
             }
         </div>
 </td>
@@ -756,13 +755,16 @@
 <script>generate_markdown("VAL-0004-description");</script>
 <span class="code_comment">*/</span>
 </div>
-<span class="keyword">value type </span>
+<span class="keyword">enumerated type </span>
 <span class="class_name">UnidadProducto</span>
 <br />
-            {<br />
-<textarea id="VAL-0004-definition-md" class="markdown">UNIDADES, M3, SACOS</textarea>
-<div id="VAL-0004-definition-html" class="code_ocl"></div>
-<script>generate_markdown("VAL-0004-definition");</script>
+            {
+
+            <ul class="properties">
+<li id="ATT-0259" class="property">UNIDADES</li>
+<li id="ATT-0260" class="property">M3</li>
+<li id="ATT-0261" class="property">SACOS</li>
+</ul>
             }
         </div>
 </td>
@@ -802,13 +804,15 @@
 <script>generate_markdown("VAL-0005-description");</script>
 <span class="code_comment">*/</span>
 </div>
-<span class="keyword">value type </span>
+<span class="keyword">enumerated type </span>
 <span class="class_name">Estado</span>
 <br />
-            {<br />
-<textarea id="VAL-0005-definition-md" class="markdown">BUENESTADO, MALESTADO</textarea>
-<div id="VAL-0005-definition-html" class="code_ocl"></div>
-<script>generate_markdown("VAL-0005-definition");</script>
+            {
+
+            <ul class="properties">
+<li id="ATT-0262" class="property">BUENESTADO</li>
+<li id="ATT-0263" class="property">MALESTADO</li>
+</ul>
             }
         </div>
 </td>
@@ -847,13 +851,16 @@
 <script>generate_markdown("VAL-0006-description");</script>
 <span class="code_comment">*/</span>
 </div>
-<span class="keyword">value type </span>
+<span class="keyword">enumerated type </span>
 <span class="class_name">Disponibilidad</span>
 <br />
-            {<br />
-<textarea id="VAL-0006-definition-md" class="markdown">DISPONIBLE, NO DISPONIBLE, REPARANDO</textarea>
-<div id="VAL-0006-definition-html" class="code_ocl"></div>
-<script>generate_markdown("VAL-0006-definition");</script>
+            {
+
+            <ul class="properties">
+<li id="ATT-0264" class="property">DISPONIBLE</li>
+<li id="ATT-0265" class="property">NO DISPONIBLE</li>
+<li id="ATT-0266" class="property">REPARANDO</li>
+</ul>
             }
         </div>
 </td>
@@ -976,7 +983,7 @@
 <li id="ATT-0099" class="property">
 <span class="keyword">var </span>iban : String</li>
 <li id="ATT-0101" class="property">
-<span class="keyword">var </span>tipo : TipoEmpleado</li>
+<span class="keyword">var </span>tipo : [enum] TipoEmpleado</li>
 <li id="ATT-0103" class="property">
 <span class="keyword">var </span>carnetConducirB : Boolean</li>
 <li id="ATT-0233" class="property">
@@ -1280,7 +1287,7 @@
 <li id="ATT-0128" class="property">
 <span class="keyword">var </span>descripcion : String</li>
 <li id="ATT-0129" class="property">
-<span class="keyword">var </span>tipo : UnidadProducto</li>
+<span class="keyword">var </span>tipo : [enum] UnidadProducto</li>
 <li id="ATT-0228" class="property">
 <span class="keyword">var </span>peso : Integer</li>
 <li id="ATT-0229" class="property">
@@ -1470,7 +1477,7 @@
 <li id="ATT-0145" class="property">
 <span class="keyword">var </span>fechaFacturacion : Date</li>
 <li id="ATT-0146" class="property">
-<span class="keyword">var </span>tipo : TipoPago</li>
+<span class="keyword">var </span>tipo : [enum] TipoPago</li>
 </ul>
     }
 </div>
@@ -1589,7 +1596,7 @@
 <script>generate_markdown("ATT-0156-description");</script>
 <span class="keyword">var </span>tara : Real</li>
 <li id="ATT-0157" class="property">
-<span class="keyword">var </span>tipo : Disponibilidad</li>
+<span class="keyword">var </span>tipo : [enum] Disponibilidad</li>
 <li id="ATT-0232" class="property">
 <span class="keyword">var </span>volumen : Integer</li>
 </ul>
@@ -1646,7 +1653,7 @@
 <script>generate_markdown("ATT-0159-description");</script>
 <span class="keyword">var </span>capacidad : Real</li>
 <li id="ATT-0160" class="property">
-<span class="keyword">var </span>tipo1 : Estado</li>
+<span class="keyword">var </span>tipo1 : [enum] Estado</li>
 <li id="ATT-0161" class="property">
 <span class="keyword">var </span>Disponibilidad : Boolean</li>
 <li id="ATT-0162" class="property">
@@ -1970,7 +1977,7 @@
 <li id="ATT-0244" class="property">
 <span class="keyword">var </span>fechaPago : Date</li>
 <li id="ATT-0245" class="property">
-<span class="keyword">var </span>tipo : TipoPago</li>
+<span class="keyword">var </span>tipo : [enum] TipoPago</li>
 </ul>
     }
 </div>
@@ -2124,6 +2131,11 @@
 <script>generate_markdown("GRF-0063-name",true);</script>
 </p>
 </div>
+<div id="GLO-0085" class="glo">
+<textarea id="GLO-0085-text-md" class="markdown">**IU-001 Página principal**: En esta interfaz de usuario, representamos el escenario de página principal. Aquí los empleados/propietario tendrán que clicar sobre iniciar sesión para ver sus respectivas secciones.¬¬Los clientes podrán ver los <a href="#GLO-0046" class="rem_ref">productos</a> principales. Se podrán seleccionar por categoría, filtrarlos por precio y entrar en las páginas de los <a href="#GLO-0046" class="rem_ref">productos</a> en sí.¬¬Una vez el cliente decida que no va a comprar nada más, solo tendría que darle al carrito y desde ahí, podría tramitar el <a href="#GLO-0047" class="rem_ref">pedido</a>.¬De haber iniciado sesión el cliente, en la barra superior se mostraría la pestaña Mi Perfil.</textarea>
+<div id="GLO-0085-text-html" class=""></div>
+<script>generate_markdown("GLO-0085-text");</script>
+</div>
 <div id="GRF-0064" class="figure">
 <img class="figure_image" src=".\diagramas\IU_V2\Interfaz Usuario Cliente\Login.png" />
 <p class="figure_caption">
@@ -2132,6 +2144,11 @@
 <span id="GRF-0064-name-html"></span>
 <script>generate_markdown("GRF-0064-name",true);</script>
 </p>
+</div>
+<div id="GLO-0087" class="glo">
+<textarea id="GLO-0087-text-md" class="markdown">**IU-002 Login de usuarios**: En esta interfaz de usuarios, se muestra la página a la que se accede para el log in. De no tener cuenta, un cliente se podría registrar a través del enlace que aparece abajo.</textarea>
+<div id="GLO-0087-text-html" class=""></div>
+<script>generate_markdown("GLO-0087-text");</script>
 </div>
 <h3 id="SEC-0078" class="section">5.2.1 Interfaz de usuario para cliente</h3>
 <div id="GRF-0065" class="figure">
@@ -2145,6 +2162,11 @@
 <script>generate_markdown("GRF-0065-name",true);</script>
 </p>
 </div>
+<div id="GLO-0088" class="glo">
+<textarea id="GLO-0088-text-md" class="markdown">**IU-003 Registro de cliente**: En esta interfaz de usuario, los clientes se podrán registrar como usuarios.</textarea>
+<div id="GLO-0088-text-html" class=""></div>
+<script>generate_markdown("GLO-0088-text");</script>
+</div>
 <div id="GRF-0066" class="figure">
 <img class="figure_image" src=".\diagramas\IU_V2\Interfaz Usuario Cliente\Productos\InfoProducto.png" />
 <p class="figure_caption">
@@ -2155,6 +2177,11 @@
 <span id="GRF-0066-name-html"></span>
 <script>generate_markdown("GRF-0066-name",true);</script>
 </p>
+</div>
+<div id="GLO-0086" class="glo">
+<textarea id="GLO-0086-text-md" class="markdown">**IU-004 Datos de un producto**: En esta interfaz de usuario, se representa la vista de <a href="#GLO-0046" class="rem_ref">producto</a> desde cliente. Desde esta, podríamos ver el precio del <a href="#GLO-0046" class="rem_ref">producto</a> y sus características principales. ¬Si al cliente le convence, pordría añadirlo a la cesta de la compra(para el que también tiene un enlace).</textarea>
+<div id="GLO-0086-text-html" class=""></div>
+<script>generate_markdown("GLO-0086-text");</script>
 </div>
 <div id="GRF-0067" class="figure">
 <img class="figure_image" src=".\diagramas\IU_V2\Interfaz Usuario Cliente\Productos\Cesta.png" />
@@ -2167,6 +2194,11 @@
 <script>generate_markdown("GRF-0067-name",true);</script>
 </p>
 </div>
+<div id="GLO-0089" class="glo">
+<textarea id="GLO-0089-text-md" class="markdown">**IU-005 Cesta de compra**: En esta interfaz de usuario, representamos el escenario que se da cuando el cliente accede a un carrito de compra con artículos. Desde aquí, podría seleccionar las unidades a comprar, además de comprobar el coste total.¬Una vez comprobado el <a href="#GLO-0047" class="rem_ref">pedido</a>, este podría proceder a la ventana de pago.</textarea>
+<div id="GLO-0089-text-html" class=""></div>
+<script>generate_markdown("GLO-0089-text");</script>
+</div>
 <div id="GRF-0068" class="figure">
 <img class="figure_image" src=".\diagramas\IU_V2\Interfaz Usuario Cliente\Productos\DatosParaPedido.png" />
 <p class="figure_caption">
@@ -2177,6 +2209,11 @@
 <span id="GRF-0068-name-html"></span>
 <script>generate_markdown("GRF-0068-name",true);</script>
 </p>
+</div>
+<div id="GLO-0090" class="glo">
+<textarea id="GLO-0090-text-md" class="markdown">**IU-006 Datos para el pedido**: Una vez que se desea tramitar la compra del carrito, pasamos a esta vista. En ella se procesan los datos básicos del cliente; que de haber iniciado sesión, tendría sus datos autocompletados.</textarea>
+<div id="GLO-0090-text-html" class=""></div>
+<script>generate_markdown("GLO-0090-text");</script>
 </div>
 <div id="GRF-0069" class="figure">
 <img class="figure_image" src=".\diagramas\IU_V2\Interfaz Usuario Cliente\Productos\Pago.png" />
@@ -2189,6 +2226,11 @@
 <script>generate_markdown("GRF-0069-name",true);</script>
 </p>
 </div>
+<div id="GLO-0091" class="glo">
+<textarea id="GLO-0091-text-md" class="markdown">**IU-007 Pago**: A esta vista se pasa una vez el cliente desea pagar el <a href="#GLO-0047" class="rem_ref">pedido</a>. Es la plataforma de pago de la web, haciéndole click en pago mandaríamos una orden de procesamiento, que de dar éxito se registraría el <a href="#GLO-0047" class="rem_ref">pedido</a> en la base de datos.</textarea>
+<div id="GLO-0091-text-html" class=""></div>
+<script>generate_markdown("GLO-0091-text");</script>
+</div>
 <div id="GRF-0070" class="figure">
 <img class="figure_image" src=".\diagramas\IU_V2\Interfaz Usuario Cliente\Productos\PagoExitoso.png" />
 <p class="figure_caption">
@@ -2199,6 +2241,11 @@
 <span id="GRF-0070-name-html"></span>
 <script>generate_markdown("GRF-0070-name",true);</script>
 </p>
+</div>
+<div id="GLO-0094" class="glo">
+<textarea id="GLO-0094-text-md" class="markdown">**IU-008 Pago realizado**: En esta interfaz de usuario, informamos a nuestro cliente de que se ha procesado el pago correctamente.</textarea>
+<div id="GLO-0094-text-html" class=""></div>
+<script>generate_markdown("GLO-0094-text");</script>
 </div>
 <div id="GRF-0071" class="figure">
 <img class="figure_image" src=".\diagramas\IU_V2\Interfaz Usuario Cliente\Perfil\DatosPersonales.png" />
@@ -2211,6 +2258,11 @@
 <script>generate_markdown("GRF-0071-name",true);</script>
 </p>
 </div>
+<div id="GLO-0095" class="glo">
+<textarea id="GLO-0095-text-md" class="markdown">**IU-009 Perfil cliente**: En esta vista el cliente podrá ver sus datos personales así como editar algún dato si lo necesita, además podrá cambia su contraseña. Desde aquí podrá navegar a un registro de sus <a href="#GLO-0047" class="rem_ref">pedidos</a> y de sus alquileres.</textarea>
+<div id="GLO-0095-text-html" class=""></div>
+<script>generate_markdown("GLO-0095-text");</script>
+</div>
 <div id="GRF-0072" class="figure">
 <img class="figure_image" src=".\diagramas\IU_V2\Interfaz Usuario Cliente\Perfil\Pedidos_V2.png" />
 <p class="figure_caption">
@@ -2221,6 +2273,11 @@
 <span id="GRF-0072-name-html"></span>
 <script>generate_markdown("GRF-0072-name",true);</script>
 </p>
+</div>
+<div id="GLO-0096" class="glo">
+<textarea id="GLO-0096-text-md" class="markdown">**IU-010 Pedidos del cliente**: En esta vista el cliente podrá ver sus <a href="#GLO-0047" class="rem_ref">pedidos</a> realizados así como el estado de un <a href="#GLO-0047" class="rem_ref">pedido</a> a entregar, además podrá visualizar la <a href="#GLO-0039" class="rem_ref">factura</a> de cada <a href="#GLO-0047" class="rem_ref">pedido</a> si así lo desea.</textarea>
+<div id="GLO-0096-text-html" class=""></div>
+<script>generate_markdown("GLO-0096-text");</script>
 </div>
 <div id="GRF-0077" class="figure">
 <img class="figure_image" src=".\diagramas\IU_V2\Interfaz Usuario Cliente\Perfil\Facturas.png" />
@@ -2233,6 +2290,11 @@
 <script>generate_markdown("GRF-0077-name",true);</script>
 </p>
 </div>
+<div id="GLO-0097" class="glo">
+<textarea id="GLO-0097-text-md" class="markdown">**IU-011 Datos Factura cliente**: En esta vista el cliente podrá ver los datos de una <a href="#GLO-0039" class="rem_ref">factura</a> de un <a href="#GLO-0047" class="rem_ref">pedido</a> en concreto.</textarea>
+<div id="GLO-0097-text-html" class=""></div>
+<script>generate_markdown("GLO-0097-text");</script>
+</div>
 <div id="GRF-0074" class="figure">
 <img class="figure_image" src=".\diagramas\IU_V2\Interfaz Usuario Cliente\Perfil\Alquileres.png" />
 <p class="figure_caption">
@@ -2244,6 +2306,11 @@
 <script>generate_markdown("GRF-0074-name",true);</script>
 </p>
 </div>
+<div id="GLO-0098" class="glo">
+<textarea id="GLO-0098-text-md" class="markdown">**IU-012 Alquileres del cliente**: En esta vista el cliente podrá ver sus alquileres realizados en el transcurso del tiempo.</textarea>
+<div id="GLO-0098-text-html" class=""></div>
+<script>generate_markdown("GLO-0098-text");</script>
+</div>
 <div id="GRF-0075" class="figure">
 <img class="figure_image" src=".\diagramas\IU_V2\Interfaz Usuario Cliente\AlquilerCubas\Alquilar.png" />
 <p class="figure_caption">
@@ -2253,6 +2320,11 @@
 <span id="GRF-0075-name-html"></span>
 <script>generate_markdown("GRF-0075-name",true);</script>
 </p>
+</div>
+<div id="GLO-0099" class="glo">
+<textarea id="GLO-0099-text-md" class="markdown">**IU-013 Alquiler de cuba**: En esta vista, el cliente podrá ser capaz de alquilar una <a href="#GLO-0016" class="rem_ref">cuba</a>, podrá seleccionar la <a href="#GLO-0016" class="rem_ref">cuba</a> que desee alquilar y la fecha en la que quiere alquilarla. En el momento de seleccionar una <a href="#GLO-0016" class="rem_ref">cuba</a>, podrá ver con claridad las fechas en la que dicha <a href="#GLO-0016" class="rem_ref">cuba</a> está disponible.</textarea>
+<div id="GLO-0099-text-html" class=""></div>
+<script>generate_markdown("GLO-0099-text");</script>
 </div>
 <div id="GRF-0076" class="figure">
 <img class="figure_image" src=".\diagramas\IU_V2\Interfaz Usuario Cliente\AlquilerCubas\DetallesAlquiler.png" />
@@ -2264,6 +2336,11 @@
 <span id="GRF-0076-name-html"></span>
 <script>generate_markdown("GRF-0076-name",true);</script>
 </p>
+</div>
+<div id="GLO-0100" class="glo">
+<textarea id="GLO-0100-text-md" class="markdown">**IU-014 Detalles Alquiler cuba**: En esta vista, el cliente puede ver cuánto le saldrá el alquiler de la <a href="#GLO-0016" class="rem_ref">cuba</a> seleccionada. Así como un desglose de la <a href="#GLO-0039" class="rem_ref">factura</a>. Desde esta vista pasaría a la vista  <a href="#GLO-0091" class="rem_ref">IU-007 Pago</a>  para tramitar el pago.</textarea>
+<div id="GLO-0100-text-html" class=""></div>
+<script>generate_markdown("GLO-0100-text");</script>
 </div>
 <h3 id="SEC-0079" class="section">5.2.2 Interfaz de usuario para empleado y administrador</h3>
 <div id="GRF-0078" class="figure">
@@ -2277,6 +2354,11 @@
 <script>generate_markdown("GRF-0078-name",true);</script>
 </p>
 </div>
+<div id="GLO-0101" class="glo">
+<textarea id="GLO-0101-text-md" class="markdown">**IU-015 Búsqueda de clientes**: En esta interfaz para propietarios, se podrá buscar a un usuario por su NIF. De existir, esta vista nos pasaría a la de datos de cliente.</textarea>
+<div id="GLO-0101-text-html" class=""></div>
+<script>generate_markdown("GLO-0101-text");</script>
+</div>
 <div id="GRF-0079" class="figure">
 <img class="figure_image" src=".\diagramas\IU_V2\Contabilidad\Clientes\VistaCliente.png" />
 <p class="figure_caption">
@@ -2287,6 +2369,11 @@
 <span id="GRF-0079-name-html"></span>
 <script>generate_markdown("GRF-0079-name",true);</script>
 </p>
+</div>
+<div id="GLO-0102" class="glo">
+<textarea id="GLO-0102-text-md" class="markdown">**IU-016 Datos cliente**: A partir de esta vista, el propietario podrá consultar los datos principales del cliente. ¬También se da la opción de eliminar cliente y de buscar otros.</textarea>
+<div id="GLO-0102-text-html" class=""></div>
+<script>generate_markdown("GLO-0102-text");</script>
 </div>
 <div id="GRF-0080" class="figure">
 <img class="figure_image" src=".\diagramas\IU_V2\Contabilidad\Informes\InformeEmpleados.png" />
@@ -2299,6 +2386,11 @@
 <script>generate_markdown("GRF-0080-name",true);</script>
 </p>
 </div>
+<div id="GLO-0103" class="glo">
+<textarea id="GLO-0103-text-md" class="markdown">**IU-017 Informes Empleados**: El propietario, podrá solicitar un informe sobre los empleados. En esta vista, se podrán comprobar las horas trabajadas por cada empleado, que en caso de ser horas superiores o inferiores a la estipuladas, daría un recordatorio. ¬También contiene un filtro de fechas para seleccionar las que son de su interés.</textarea>
+<div id="GLO-0103-text-html" class=""></div>
+<script>generate_markdown("GLO-0103-text");</script>
+</div>
 <div id="GRF-0081" class="figure">
 <img class="figure_image" src=".\diagramas\IU_V2\Contabilidad\Informes\InformeVentas.png" />
 <p class="figure_caption">
@@ -2309,6 +2401,11 @@
 <span id="GRF-0081-name-html"></span>
 <script>generate_markdown("GRF-0081-name",true);</script>
 </p>
+</div>
+<div id="GLO-0104" class="glo">
+<textarea id="GLO-0104-text-md" class="markdown">**IU-018 Informes Ventas**: El propietario, podrá solicitar un informe sobre las ventas. En esta vista, se podrá consultar los datos generados por el sistema, acerca de los gastos, beneficios e ingresos de la tienda. ¬También contiene un filtro de fechas para seleccionar las que son de su interés, además de un selector de <a href="#GLO-0046" class="rem_ref">productos</a> (para generar el informe sobre este).</textarea>
+<div id="GLO-0104-text-html" class=""></div>
+<script>generate_markdown("GLO-0104-text");</script>
 </div>
 <div id="GRF-0082" class="figure">
 <img class="figure_image" src=".\diagramas\IU_V2\Contabilidad\Productos\ListaProductos.png" />
@@ -2321,6 +2418,11 @@
 <script>generate_markdown("GRF-0082-name",true);</script>
 </p>
 </div>
+<div id="GLO-0105" class="glo">
+<textarea id="GLO-0105-text-md" class="markdown">**IU-019 Listado Productos**: Esta vista, representa la ventana general de gestión de <a href="#GLO-0046" class="rem_ref">productos</a>. Desde ella se podrán modificar, eliminar y añadir.</textarea>
+<div id="GLO-0105-text-html" class=""></div>
+<script>generate_markdown("GLO-0105-text");</script>
+</div>
 <div id="GRF-0083" class="figure">
 <img class="figure_image" src=".\diagramas\IU_V2\Contabilidad\Productos\RegistroProductos.png" />
 <p class="figure_caption">
@@ -2331,6 +2433,11 @@
 <span id="GRF-0083-name-html"></span>
 <script>generate_markdown("GRF-0083-name",true);</script>
 </p>
+</div>
+<div id="GLO-0106" class="glo">
+<textarea id="GLO-0106-text-md" class="markdown">**IU-020 Registro producto**: Con esta vista los empleados podrán añadir un <a href="#GLO-0046" class="rem_ref">producto</a> a la base de datos, teniendo en cuenta todos los atributos que estos tienen.</textarea>
+<div id="GLO-0106-text-html" class=""></div>
+<script>generate_markdown("GLO-0106-text");</script>
 </div>
 <div id="GRF-0084" class="figure">
 <img class="figure_image" src=".\diagramas\IU_V2\Contabilidad\Proveedor\Proveedores.png" />
@@ -2343,6 +2450,11 @@
 <script>generate_markdown("GRF-0084-name",true);</script>
 </p>
 </div>
+<div id="GLO-0107" class="glo">
+<textarea id="GLO-0107-text-md" class="markdown">**IU-021 Datos de proveedor**: Esta es la página principal de los <a href="#GLO-0048" class="rem_ref">proveedores</a>. Un empleado cualquiera, podrá seleccionar el <a href="#GLO-0048" class="rem_ref">proveedor</a> deseado, donde se verán los <a href="#GLO-0047" class="rem_ref">pedidos</a> relacionados y datos generales de este.¬Desde aquí también se podrá acceder al formulario de creación de <a href="#GLO-0048" class="rem_ref">proveedores</a>.</textarea>
+<div id="GLO-0107-text-html" class=""></div>
+<script>generate_markdown("GLO-0107-text");</script>
+</div>
 <div id="GRF-0085" class="figure">
 <img class="figure_image" src=".\diagramas\IU_V2\Contabilidad\Proveedor\RegistroProveedor.png" />
 <p class="figure_caption">
@@ -2353,6 +2465,11 @@
 <span id="GRF-0085-name-html"></span>
 <script>generate_markdown("GRF-0085-name",true);</script>
 </p>
+</div>
+<div id="GLO-0108" class="glo">
+<textarea id="GLO-0108-text-md" class="markdown">**IU-022 Registro proveedor**: Con esta interfaz de usuario, cualquier empleado podrá introducir un <a href="#GLO-0048" class="rem_ref">proveedor</a> (una vez rellenados los campos).</textarea>
+<div id="GLO-0108-text-html" class=""></div>
+<script>generate_markdown("GLO-0108-text");</script>
 </div>
 <div id="GRF-0086" class="figure">
 <img class="figure_image" src=".\diagramas\IU_V2\Contabilidad\Mensajes.png" />
@@ -2365,6 +2482,11 @@
 <script>generate_markdown("GRF-0086-name",true);</script>
 </p>
 </div>
+<div id="GLO-0109" class="glo">
+<textarea id="GLO-0109-text-md" class="markdown">**IU-023 Mensajes**: Cualquier integrante del negocio, accederá a esta vista para la revisión de los <a href="#GLO-0047" class="rem_ref">pedidos</a> de <a href="#GLO-0048" class="rem_ref">proveedores</a>. Es un sistema de mensajes para informar mejor a la empresa.</textarea>
+<div id="GLO-0109-text-html" class=""></div>
+<script>generate_markdown("GLO-0109-text");</script>
+</div>
 <div id="GRF-0087" class="figure">
 <img class="figure_image" src=".\diagramas\IU_V2\Contabilidad\Proveedor\PedidoProveedor.png" />
 <p class="figure_caption">
@@ -2375,6 +2497,11 @@
 <span id="GRF-0087-name-html"></span>
 <script>generate_markdown("GRF-0087-name",true);</script>
 </p>
+</div>
+<div id="GLO-0110" class="glo">
+<textarea id="GLO-0110-text-md" class="markdown">**IU-024 Pedido a Proveedores**: Una vez queramos renovar el stock, los empleados emplearán esta vista para lanzar un correo automatizado, donde se pedirán los <a href="#GLO-0046" class="rem_ref">productos</a> al <a href="#GLO-0048" class="rem_ref">proveedor</a> que se desee.</textarea>
+<div id="GLO-0110-text-html" class=""></div>
+<script>generate_markdown("GLO-0110-text");</script>
 </div>
 <div id="GRF-0088" class="figure">
 <img class="figure_image" src=".\diagramas\IU_V2\Registro\Camiones.png" />
@@ -2387,6 +2514,11 @@
 <script>generate_markdown("GRF-0088-name",true);</script>
 </p>
 </div>
+<div id="GLO-0111" class="glo">
+<textarea id="GLO-0111-text-md" class="markdown">**IU-025 Listado Camiones**: En esta vista simple, los empleados podrán consultar los camiones de la base de datos. Estos tienen asociados las opciones de borrado y edición; contemplando también que se puedan añadir nuevos camiones.</textarea>
+<div id="GLO-0111-text-html" class=""></div>
+<script>generate_markdown("GLO-0111-text");</script>
+</div>
 <div id="GRF-0089" class="figure">
 <img class="figure_image" src=".\diagramas\IU_V2\Registro\CreacionCamiones.png" />
 <p class="figure_caption">
@@ -2397,6 +2529,11 @@
 <span id="GRF-0089-name-html"></span>
 <script>generate_markdown("GRF-0089-name",true);</script>
 </p>
+</div>
+<div id="GLO-0112" class="glo">
+<textarea id="GLO-0112-text-md" class="markdown">**IU-026 Creación de Camión**: Aquí podemos encontrar el formulario de creación de camión. Una vez creado, debería de poder apreciarse en la vista anterior.</textarea>
+<div id="GLO-0112-text-html" class=""></div>
+<script>generate_markdown("GLO-0112-text");</script>
 </div>
 <div id="GRF-0090" class="figure">
 <img class="figure_image" src=".\diagramas\IU_V2\Registro\Cubas.png" />
@@ -2409,6 +2546,11 @@
 <script>generate_markdown("GRF-0090-name",true);</script>
 </p>
 </div>
+<div id="GLO-0113" class="glo">
+<textarea id="GLO-0113-text-md" class="markdown">**IU-027 Listado Cubas**: En esta vista simple, los empleados podrán consultar las <a href="#GLO-0016" class="rem_ref">cubas</a> de la base de datos. Estos tienen asociados las opciones de borrado y edición; contemplando también que se puedan añadir nuevas <a href="#GLO-0016" class="rem_ref">cubas</a>.</textarea>
+<div id="GLO-0113-text-html" class=""></div>
+<script>generate_markdown("GLO-0113-text");</script>
+</div>
 <div id="GRF-0091" class="figure">
 <img class="figure_image" src=".\diagramas\IU_V2\Registro\PorteCubas.png" />
 <p class="figure_caption">
@@ -2419,6 +2561,11 @@
 <span id="GRF-0091-name-html"></span>
 <script>generate_markdown("GRF-0091-name",true);</script>
 </p>
+</div>
+<div id="GLO-0114" class="glo">
+<textarea id="GLO-0114-text-md" class="markdown">**IU-028 Portes Cubas**: Con esta representación, se busca poder añadirle portes a las ordenes de alquiler sobre <a href="#GLO-0016" class="rem_ref">cubas</a> (por ID).¬Las <a href="#GLO-0016" class="rem_ref">cubas</a> son consultables a través de la pestaña "Listado de cubas".</textarea>
+<div id="GLO-0114-text-html" class=""></div>
+<script>generate_markdown("GLO-0114-text");</script>
 </div>
 <div id="GRF-0092" class="figure">
 <img class="figure_image" src=".\diagramas\IU_V2\Registro\CreacionCuba.png" />
@@ -2431,6 +2578,11 @@
 <script>generate_markdown("GRF-0092-name",true);</script>
 </p>
 </div>
+<div id="GLO-0115" class="glo">
+<textarea id="GLO-0115-text-md" class="markdown">**IU-029 Creación Cubas**: Aquí podemos encontrar el formulario de creación de <a href="#GLO-0016" class="rem_ref">cubas</a>. Una vez creado, debería de poder apreciarse en la vista anterior.¬A través de coste unitario, se expresará el coste diario por alquilar la <a href="#GLO-0016" class="rem_ref">cuba</a>.</textarea>
+<div id="GLO-0115-text-html" class=""></div>
+<script>generate_markdown("GLO-0115-text");</script>
+</div>
 <div id="GRF-0093" class="figure">
 <img class="figure_image" src=".\diagramas\IU_V2\Interfaz Usuario Empleado\Alertas.png" />
 <p class="figure_caption">
@@ -2441,6 +2593,11 @@
 <span id="GRF-0093-name-html"></span>
 <script>generate_markdown("GRF-0093-name",true);</script>
 </p>
+</div>
+<div id="GLO-0116" class="glo">
+<textarea id="GLO-0116-text-md" class="markdown">**IU-030 Alertas**: Esta vista representa el carrito de alertas. A través de ella, el empleado podrá consultar los <a href="#GLO-0046" class="rem_ref">productos</a> que están en riesgo de stock bajo.¬Si el empleado desea solicitar un <a href="#GLO-0047" class="rem_ref">pedido</a>, pasaría a la vista de <a href="#GLO-0047" class="rem_ref">Pedido</a> a <a href="#GLO-0048" class="rem_ref">Proveedores</a>, pudiendo seleccionar desde allí el <a href="#GLO-0048" class="rem_ref">proveedor</a> a contactar.</textarea>
+<div id="GLO-0116-text-html" class=""></div>
+<script>generate_markdown("GLO-0116-text");</script>
 </div>
 <h4 id="SEC-0080" class="section">5.2.2.1 Perfil Empleado</h4>
 <div id="GRF-0094" class="figure">
@@ -2499,6 +2656,11 @@
 <script>generate_markdown("GRF-0099-name",true);</script>
 </p>
 </div>
+<div id="GLO-0117" class="glo">
+<textarea id="GLO-0117-text-md" class="markdown">**IU-036 Listado Empleados Vacío**: Esta es la vista que se muestra cuando el listado de empleados es vacío. El propietario podrá acceder al formulario de creación, pulsando en el link.</textarea>
+<div id="GLO-0117-text-html" class=""></div>
+<script>generate_markdown("GLO-0117-text");</script>
+</div>
 <div id="GRF-0100" class="figure">
 <img class="figure_image" src=".\diagramas\IU_V2\Interfaz Usuario Administrador\Empleados\ListaEmpleados.png" />
 <p class="figure_caption">
@@ -2509,6 +2671,11 @@
 <span id="GRF-0100-name-html"></span>
 <script>generate_markdown("GRF-0100-name",true);</script>
 </p>
+</div>
+<div id="GLO-0118" class="glo">
+<textarea id="GLO-0118-text-md" class="markdown">**IU-037 Listado Empleados**: Una vez que la base registra empleados, podríamos consultar todos sus datos más relevantes. También se podrán modificar y eliminar los empleados.¬¬Esta vista también incluye un link directo al perfil de cada empleado.</textarea>
+<div id="GLO-0118-text-html" class=""></div>
+<script>generate_markdown("GLO-0118-text");</script>
 </div>
 <div id="GRF-0101" class="figure">
 <img class="figure_image" src=".\diagramas\IU_V2\Interfaz Usuario Administrador\Empleados\DetallesEmpleado.png" />
@@ -2521,6 +2688,11 @@
 <script>generate_markdown("GRF-0101-name",true);</script>
 </p>
 </div>
+<div id="GLO-0119" class="glo">
+<textarea id="GLO-0119-text-md" class="markdown">**IU-038 Datos de un empleado**: Esta vista, solo accesible por propietarios, se corresponde a la de perfil de empleados. A través de ella, nuestro propietario podrá comprobar los datos completos del empleado (incluyendo los de su contrato), además de tener la opción de modificarlos.</textarea>
+<div id="GLO-0119-text-html" class=""></div>
+<script>generate_markdown("GLO-0119-text");</script>
+</div>
 <div id="GRF-0102" class="figure">
 <img class="figure_image" src=".\diagramas\IU_V2\Interfaz Usuario Administrador\Empleados\RegistroEmpleado.png" />
 <p class="figure_caption">
@@ -2531,6 +2703,11 @@
 <span id="GRF-0102-name-html"></span>
 <script>generate_markdown("GRF-0102-name",true);</script>
 </p>
+</div>
+<div id="GLO-0120" class="glo">
+<textarea id="GLO-0120-text-md" class="markdown">**IU-039 Registro Empleado**: Este formulario se corresponde al de creación de empleados. Es solo accesible por el propietario, una vez rellenado nos redirecciona a los detalles de contrato.</textarea>
+<div id="GLO-0120-text-html" class=""></div>
+<script>generate_markdown("GLO-0120-text");</script>
 </div>
 <div id="GRF-0103" class="figure">
 <img class="figure_image" src=".\diagramas\IU_V2\Interfaz Usuario Administrador\Empleados\RegistroContrato.png" />
@@ -2543,6 +2720,11 @@
 <script>generate_markdown("GRF-0103-name",true);</script>
 </p>
 </div>
+<div id="GLO-0121" class="glo">
+<textarea id="GLO-0121-text-md" class="markdown">**IU-040 Registro Contrato Empleado**: Este formulario se corresponde al de creación de contato. Es solo accesible por el propietario, una vez rellenado,  podríamos comprobar que el empleado se ha añadido al listado de la base de datos.</textarea>
+<div id="GLO-0121-text-html" class=""></div>
+<script>generate_markdown("GLO-0121-text");</script>
+</div>
 <div id="GRF-0104" class="figure">
 <img class="figure_image" src=".\diagramas\IU_V2\Interfaz Usuario Administrador\Empleados\RegistroHorario.png" />
 <p class="figure_caption">
@@ -2553,185 +2735,6 @@
 <span id="GRF-0104-name-html"></span>
 <script>generate_markdown("GRF-0104-name",true);</script>
 </p>
-</div>
-<h2 id="SEC-0070" class="section">5.3 Descripción de la interfaz de usuario del sistema</h2>
-<div id="GLO-0085" class="glo">
-<textarea id="GLO-0085-text-md" class="markdown">**IU-001 Página principal**: En esta interfaz de usuario, representamos el escenario de página principal. Aquí los empleados/propietario tendrán que clicar sobre iniciar sesión para ver sus respectivas secciones.¬¬Los clientes podrán ver los <a href="#GLO-0046" class="rem_ref">productos</a> principales. Se podrán seleccionar por categoría, filtrarlos por precio y entrar en las páginas de los <a href="#GLO-0046" class="rem_ref">productos</a> en sí.¬¬Una vez el cliente decida que no va a comprar nada más, solo tendría que darle al carrito y desde ahí, podría tramitar el <a href="#GLO-0047" class="rem_ref">pedido</a>.¬De haber iniciado sesión el cliente, en la barra superior se mostraría la pestaña Mi Perfil.</textarea>
-<div id="GLO-0085-text-html" class=""></div>
-<script>generate_markdown("GLO-0085-text");</script>
-</div>
-<div id="GLO-0087" class="glo">
-<textarea id="GLO-0087-text-md" class="markdown">**IU-002 Login de usuarios**: En esta interfaz de usuarios, se muestra la página a la que se accede para el log in. De no tener cuenta, un cliente se podría registrar a través del enlace que aparece abajo.</textarea>
-<div id="GLO-0087-text-html" class=""></div>
-<script>generate_markdown("GLO-0087-text");</script>
-</div>
-<h3 id="SEC-0081" class="section">5.3.1 Descripción de la interfaz de usuario para cliente</h3>
-<div id="GLO-0088" class="glo">
-<textarea id="GLO-0088-text-md" class="markdown">**IU-003 Registro de cliente**: En esta interfaz de usuario, los clientes se podrán registrar como usuarios.</textarea>
-<div id="GLO-0088-text-html" class=""></div>
-<script>generate_markdown("GLO-0088-text");</script>
-</div>
-<div id="GLO-0086" class="glo">
-<textarea id="GLO-0086-text-md" class="markdown">**IU-004 Datos de un producto**: En esta interfaz de usuario, se representa la vista de <a href="#GLO-0046" class="rem_ref">producto</a> desde cliente. Desde esta, podríamos ver el precio del <a href="#GLO-0046" class="rem_ref">producto</a> y sus características principales. ¬Si al cliente le convence, pordría añadirlo a la cesta de la compra(para el que también tiene un enlace).</textarea>
-<div id="GLO-0086-text-html" class=""></div>
-<script>generate_markdown("GLO-0086-text");</script>
-</div>
-<div id="GLO-0089" class="glo">
-<textarea id="GLO-0089-text-md" class="markdown">**IU-005 Cesta de compra**: En esta interfaz de usuario, representamos el escenario que se da cuando el cliente accede a un carrito de compra con artículos. Desde aquí, podría seleccionar las unidades a comprar, además de comprobar el coste total.¬Una vez comprobado el <a href="#GLO-0047" class="rem_ref">pedido</a>, este podría proceder a la ventana de pago.</textarea>
-<div id="GLO-0089-text-html" class=""></div>
-<script>generate_markdown("GLO-0089-text");</script>
-</div>
-<div id="GLO-0090" class="glo">
-<textarea id="GLO-0090-text-md" class="markdown">**IU-006 Datos para el pedido**: Una vez que se desea tramitar la compra del carrito, pasamos a esta vista. En ella se procesan los datos básicos del cliente; que de haber iniciado sesión, tendría sus datos autocompletados.</textarea>
-<div id="GLO-0090-text-html" class=""></div>
-<script>generate_markdown("GLO-0090-text");</script>
-</div>
-<div id="GLO-0091" class="glo">
-<textarea id="GLO-0091-text-md" class="markdown">**IU-007 Pago**: A esta vista se pasa una vez el cliente desea pagar el <a href="#GLO-0047" class="rem_ref">pedido</a>. Es la plataforma de pago de la web, haciéndole click en pago mandaríamos una orden de procesamiento, que de dar éxito se registraría el <a href="#GLO-0047" class="rem_ref">pedido</a> en la base de datos.</textarea>
-<div id="GLO-0091-text-html" class=""></div>
-<script>generate_markdown("GLO-0091-text");</script>
-</div>
-<div id="GLO-0094" class="glo">
-<textarea id="GLO-0094-text-md" class="markdown">**IU-008 Pago realizado**: En esta interfaz de usuario, informamos a nuestro cliente de que se ha procesado el pago correctamente.</textarea>
-<div id="GLO-0094-text-html" class=""></div>
-<script>generate_markdown("GLO-0094-text");</script>
-</div>
-<div id="GLO-0095" class="glo">
-<textarea id="GLO-0095-text-md" class="markdown">**IU-009 Perfil cliente**: En esta vista el cliente podrá ver sus datos personales así como editar algún dato si lo necesita, además podrá cambia su contraseña. Desde aquí podrá navegar a un registro de sus <a href="#GLO-0047" class="rem_ref">pedidos</a> y de sus alquileres.</textarea>
-<div id="GLO-0095-text-html" class=""></div>
-<script>generate_markdown("GLO-0095-text");</script>
-</div>
-<div id="GLO-0096" class="glo">
-<textarea id="GLO-0096-text-md" class="markdown">**IU-010 Pedidos del cliente**: En esta vista el cliente podrá ver sus <a href="#GLO-0047" class="rem_ref">pedidos</a> realizados así como el estado de un <a href="#GLO-0047" class="rem_ref">pedido</a> a entregar, además podrá visualizar la <a href="#GLO-0039" class="rem_ref">factura</a> de cada <a href="#GLO-0047" class="rem_ref">pedido</a> si así lo desea.</textarea>
-<div id="GLO-0096-text-html" class=""></div>
-<script>generate_markdown("GLO-0096-text");</script>
-</div>
-<div id="GLO-0097" class="glo">
-<textarea id="GLO-0097-text-md" class="markdown">**IU-011 Datos Factura cliente**: En esta vista el cliente podrá ver los datos de una <a href="#GLO-0039" class="rem_ref">factura</a> de un <a href="#GLO-0047" class="rem_ref">pedido</a> en concreto.</textarea>
-<div id="GLO-0097-text-html" class=""></div>
-<script>generate_markdown("GLO-0097-text");</script>
-</div>
-<div id="GLO-0098" class="glo">
-<textarea id="GLO-0098-text-md" class="markdown">**IU-012 Alquileres del cliente**: En esta vista el cliente podrá ver sus alquileres realizados en el transcurso del tiempo.</textarea>
-<div id="GLO-0098-text-html" class=""></div>
-<script>generate_markdown("GLO-0098-text");</script>
-</div>
-<div id="GLO-0099" class="glo">
-<textarea id="GLO-0099-text-md" class="markdown">**IU-013 Alquiler de cuba**: En esta vista, el cliente podrá ser capaz de alquilar una <a href="#GLO-0016" class="rem_ref">cuba</a>, podrá seleccionar la <a href="#GLO-0016" class="rem_ref">cuba</a> que desee alquilar y la fecha en la que quiere alquilarla. En el momento de seleccionar una <a href="#GLO-0016" class="rem_ref">cuba</a>, podrá ver con claridad las fechas en la que dicha <a href="#GLO-0016" class="rem_ref">cuba</a> está disponible.</textarea>
-<div id="GLO-0099-text-html" class=""></div>
-<script>generate_markdown("GLO-0099-text");</script>
-</div>
-<div id="GLO-0100" class="glo">
-<textarea id="GLO-0100-text-md" class="markdown">**IU-014 Detalles Alquiler cuba**: En esta vista, el cliente puede ver cuánto le saldrá el alquiler de la <a href="#GLO-0016" class="rem_ref">cuba</a> seleccionada. Así como un desglose de la <a href="#GLO-0039" class="rem_ref">factura</a>. Desde esta vista pasaría a la vista  <a href="#GLO-0091" class="rem_ref">IU-007 Pago</a>  para tramitar el pago.</textarea>
-<div id="GLO-0100-text-html" class=""></div>
-<script>generate_markdown("GLO-0100-text");</script>
-</div>
-<h3 id="SEC-0082" class="section">5.3.2 Descripción de la interfaz de usuario para empleado y administrador</h3>
-<div id="GLO-0101" class="glo">
-<textarea id="GLO-0101-text-md" class="markdown">**IU-015 Búsqueda de clientes**: En esta interfaz para propietarios, se podrá buscar a un usuario por su NIF. De existir, esta vista nos pasaría a la de datos de cliente.</textarea>
-<div id="GLO-0101-text-html" class=""></div>
-<script>generate_markdown("GLO-0101-text");</script>
-</div>
-<div id="GLO-0102" class="glo">
-<textarea id="GLO-0102-text-md" class="markdown">**IU-016 Datos cliente**: A partir de esta vista, el propietario podrá consultar los datos principales del cliente. ¬También se da la opción de eliminar cliente y de buscar otros.</textarea>
-<div id="GLO-0102-text-html" class=""></div>
-<script>generate_markdown("GLO-0102-text");</script>
-</div>
-<div id="GLO-0103" class="glo">
-<textarea id="GLO-0103-text-md" class="markdown">**IU-017 Informes Empleados**: El propietario, podrá solicitar un informe sobre los empleados. En esta vista, se podrán comprobar las horas trabajadas por cada empleado, que en caso de ser horas superiores o inferiores a la estipuladas, daría un recordatorio. ¬También contiene un filtro de fechas para seleccionar las que son de su interés.</textarea>
-<div id="GLO-0103-text-html" class=""></div>
-<script>generate_markdown("GLO-0103-text");</script>
-</div>
-<div id="GLO-0104" class="glo">
-<textarea id="GLO-0104-text-md" class="markdown">**IU-018 Informes Ventas**: El propietario, podrá solicitar un informe sobre las ventas. En esta vista, se podrá consultar los datos generados por el sistema, acerca de los gastos, beneficios e ingresos de la tienda. ¬También contiene un filtro de fechas para seleccionar las que son de su interés, además de un selector de <a href="#GLO-0046" class="rem_ref">productos</a> (para generar el informe sobre este).</textarea>
-<div id="GLO-0104-text-html" class=""></div>
-<script>generate_markdown("GLO-0104-text");</script>
-</div>
-<div id="GLO-0105" class="glo">
-<textarea id="GLO-0105-text-md" class="markdown">**IU-019 Listado Productos**: Esta vista, representa la ventana general de gestión de <a href="#GLO-0046" class="rem_ref">productos</a>. Desde ella se podrán modificar, eliminar y añadir.</textarea>
-<div id="GLO-0105-text-html" class=""></div>
-<script>generate_markdown("GLO-0105-text");</script>
-</div>
-<div id="GLO-0106" class="glo">
-<textarea id="GLO-0106-text-md" class="markdown">**IU-020 Registro producto**: Con esta vista los empleados podrán añadir un <a href="#GLO-0046" class="rem_ref">producto</a> a la base de datos, teniendo en cuenta todos los atributos que estos tienen.</textarea>
-<div id="GLO-0106-text-html" class=""></div>
-<script>generate_markdown("GLO-0106-text");</script>
-</div>
-<div id="GLO-0107" class="glo">
-<textarea id="GLO-0107-text-md" class="markdown">**IU-021 Datos de proveedor**: Esta es la página principal de los <a href="#GLO-0048" class="rem_ref">proveedores</a>. Un empleado cualquiera, podrá seleccionar el <a href="#GLO-0048" class="rem_ref">proveedor</a> deseado, donde se verán los <a href="#GLO-0047" class="rem_ref">pedidos</a> relacionados y datos generales de este.¬Desde aquí también se podrá acceder al formulario de creación de <a href="#GLO-0048" class="rem_ref">proveedores</a>.</textarea>
-<div id="GLO-0107-text-html" class=""></div>
-<script>generate_markdown("GLO-0107-text");</script>
-</div>
-<div id="GLO-0108" class="glo">
-<textarea id="GLO-0108-text-md" class="markdown">**IU-022 Registro proveedor**: Con esta interfaz de usuario, cualquier empleado podrá introducir un <a href="#GLO-0048" class="rem_ref">proveedor</a> (una vez rellenados los campos).</textarea>
-<div id="GLO-0108-text-html" class=""></div>
-<script>generate_markdown("GLO-0108-text");</script>
-</div>
-<div id="GLO-0109" class="glo">
-<textarea id="GLO-0109-text-md" class="markdown">**IU-023 Mensajes**: Cualquier integrante del negocio, accederá a esta vista para la revisión de los <a href="#GLO-0047" class="rem_ref">pedidos</a> de <a href="#GLO-0048" class="rem_ref">proveedores</a>. Es un sistema de mensajes para informar mejor a la empresa.</textarea>
-<div id="GLO-0109-text-html" class=""></div>
-<script>generate_markdown("GLO-0109-text");</script>
-</div>
-<div id="GLO-0110" class="glo">
-<textarea id="GLO-0110-text-md" class="markdown">**IU-024 Pedido a Proveedores**: Una vez queramos renovar el stock, los empleados emplearán esta vista para lanzar un correo automatizado, donde se pedirán los <a href="#GLO-0046" class="rem_ref">productos</a> al <a href="#GLO-0048" class="rem_ref">proveedor</a> que se desee.</textarea>
-<div id="GLO-0110-text-html" class=""></div>
-<script>generate_markdown("GLO-0110-text");</script>
-</div>
-<div id="GLO-0111" class="glo">
-<textarea id="GLO-0111-text-md" class="markdown">**IU-025 Listado Camiones**: En esta vista simple, los empleados podrán consultar los camiones de la base de datos. Estos tienen asociados las opciones de borrado y edición; contemplando también que se puedan añadir nuevos camiones.</textarea>
-<div id="GLO-0111-text-html" class=""></div>
-<script>generate_markdown("GLO-0111-text");</script>
-</div>
-<div id="GLO-0112" class="glo">
-<textarea id="GLO-0112-text-md" class="markdown">**IU-026 Creación de Camión**: Aquí podemos encontrar el formulario de creación de camión. Una vez creado, debería de poder apreciarse en la vista anterior.</textarea>
-<div id="GLO-0112-text-html" class=""></div>
-<script>generate_markdown("GLO-0112-text");</script>
-</div>
-<div id="GLO-0113" class="glo">
-<textarea id="GLO-0113-text-md" class="markdown">**IU-027 Listado Cubas**: En esta vista simple, los empleados podrán consultar las <a href="#GLO-0016" class="rem_ref">cubas</a> de la base de datos. Estos tienen asociados las opciones de borrado y edición; contemplando también que se puedan añadir nuevas <a href="#GLO-0016" class="rem_ref">cubas</a>.</textarea>
-<div id="GLO-0113-text-html" class=""></div>
-<script>generate_markdown("GLO-0113-text");</script>
-</div>
-<div id="GLO-0114" class="glo">
-<textarea id="GLO-0114-text-md" class="markdown">**IU-028 Portes Cubas**: Con esta representación, se busca poder añadirle portes a las ordenes de alquiler sobre <a href="#GLO-0016" class="rem_ref">cubas</a> (por ID).¬Las <a href="#GLO-0016" class="rem_ref">cubas</a> son consultables a través de la pestaña "Listado de cubas".</textarea>
-<div id="GLO-0114-text-html" class=""></div>
-<script>generate_markdown("GLO-0114-text");</script>
-</div>
-<div id="GLO-0115" class="glo">
-<textarea id="GLO-0115-text-md" class="markdown">**IU-029 Creación Cubas**: Aquí podemos encontrar el formulario de creación de <a href="#GLO-0016" class="rem_ref">cubas</a>. Una vez creado, debería de poder apreciarse en la vista anterior.¬A través de coste unitario, se expresará el coste diario por alquilar la <a href="#GLO-0016" class="rem_ref">cuba</a>.</textarea>
-<div id="GLO-0115-text-html" class=""></div>
-<script>generate_markdown("GLO-0115-text");</script>
-</div>
-<div id="GLO-0116" class="glo">
-<textarea id="GLO-0116-text-md" class="markdown">**IU-030 Alertas**: Esta vista representa el carrito de alertas. A través de ella, el empleado podrá consultar los <a href="#GLO-0046" class="rem_ref">productos</a> que están en riesgo de stock bajo.¬Si el empleado desea solicitar un <a href="#GLO-0047" class="rem_ref">pedido</a>, pasaría a la vista de <a href="#GLO-0047" class="rem_ref">Pedido</a> a <a href="#GLO-0048" class="rem_ref">Proveedores</a>, pudiendo seleccionar desde allí el <a href="#GLO-0048" class="rem_ref">proveedor</a> a contactar.</textarea>
-<div id="GLO-0116-text-html" class=""></div>
-<script>generate_markdown("GLO-0116-text");</script>
-</div>
-<h4 id="SEC-0083" class="section">5.3.2.1 Perfil empleado</h4>
-<div id="GLO-0117" class="glo">
-<textarea id="GLO-0117-text-md" class="markdown">**IU-036 Listado Empleados Vacío**: Esta es la vista que se muestra cuando el listado de empleados es vacío. El propietario podrá acceder al formulario de creación, pulsando en el link.</textarea>
-<div id="GLO-0117-text-html" class=""></div>
-<script>generate_markdown("GLO-0117-text");</script>
-</div>
-<div id="GLO-0118" class="glo">
-<textarea id="GLO-0118-text-md" class="markdown">**IU-037 Listado Empleados**: Una vez que la base registra empleados, podríamos consultar todos sus datos más relevantes. También se podrán modificar y eliminar los empleados.¬¬Esta vista también incluye un link directo al perfil de cada empleado.</textarea>
-<div id="GLO-0118-text-html" class=""></div>
-<script>generate_markdown("GLO-0118-text");</script>
-</div>
-<div id="GLO-0119" class="glo">
-<textarea id="GLO-0119-text-md" class="markdown">**IU-038 Datos de un empleado**: Esta vista, solo accesible por propietarios, se corresponde a la de perfil de empleados. A través de ella, nuestro propietario podrá comprobar los datos completos del empleado (incluyendo los de su contrato), además de tener la opción de modificarlos.</textarea>
-<div id="GLO-0119-text-html" class=""></div>
-<script>generate_markdown("GLO-0119-text");</script>
-</div>
-<div id="GLO-0120" class="glo">
-<textarea id="GLO-0120-text-md" class="markdown">**IU-039 Registro Empleado**: Este formulario se corresponde al de creación de empleados. Es solo accesible por el propietario, una vez rellenado nos redirecciona a los detalles de contrato.</textarea>
-<div id="GLO-0120-text-html" class=""></div>
-<script>generate_markdown("GLO-0120-text");</script>
-</div>
-<div id="GLO-0121" class="glo">
-<textarea id="GLO-0121-text-md" class="markdown">**IU-040 Registro Contrato Empleado**: Este formulario se corresponde al de creación de contato. Es solo accesible por el propietario, una vez rellenado,  podríamos comprobar que el empleado se ha añadido al listado de la base de datos.</textarea>
-<div id="GLO-0121-text-html" class=""></div>
-<script>generate_markdown("GLO-0121-text");</script>
 </div>
 <div id="GLO-0122" class="glo">
 <textarea id="GLO-0122-text-md" class="markdown">**IU-041 Selección de Horarios**: Este formulario para propietarios, servirá para establecer los turnos semanales de los empleados. La idea es que se acceda a esta pestaña el sábado de cada semana, para obtener los turnos de la siguiente (será evaluado por el propietario según las circunstancias de la semana).¬¬Cabe decir que estamos teniendo en cuenta que la semana laboral del empleado va de lunes a sábado.</textarea>
