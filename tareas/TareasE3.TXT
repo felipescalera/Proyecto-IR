@@ -1,0 +1,29 @@
+======================
+DIVISIÓN DEL TERCER ENTREGABLE    
+***ESTO ES UN ESQUEMA DE TRABAJO, PARA CONSULTAR LAS TAREAS REALIZADAS, IR A GITHUB***
+====================== 
+Tareas iniciales
+-----------------
+Pareja 
+
+
+								
+Pareja 
+
+
+
+Comodín de parejas 
+
+Corrección
+
+Felipe io dejame lo de por aqui:    *** me gustaria retocarlo entero
+ERS
+	-El nombre del subsistema 3 debe tener sentido en el dominio del problema.
+***	-14-15 requisitos generales son demasiados para un sistema de vuestro tamaño. Probablemente algunos se puedan agrupar o poner como subobjetivos hasta quedaros en 4-5.
+	-No es esencial, pero hay que seguir las notaciones estándar y en los diagramas de casos de uso, los casos de uso se representan como elipses, no como rectángulos con las esquinas redondeadas.
+	-Para que salgan las flechas en las matrices de rastreabilidad al generar los PDFs hay que indicar que se impriman las imágenes de fondo. Ya os lo comento en la revisión.
+DAS (no me importaria retocar lo que sea del uml)
+
+
+Ángel
+-¿
