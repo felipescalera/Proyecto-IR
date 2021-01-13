@@ -4,28 +4,38 @@ DIVISIÓN DEL TERCER ENTREGABLE
 ====================== 
 Tareas iniciales
 -----------------
-Pareja 
-
-
+Pareja Antonio JK
+	-Diagrama de interfaz de servicios (enlazar con sendgrid el servicio de pedidos)
+		(servicio de administrador, servicio de cliente, servicio de pedidos(incluir portes y alquiler / proveedores->incluir enlace a sendgrid), servicio de productos, servicio de empleados)
+	
 								
-Pareja 
+Pareja Ángel Antonio J
+	-Mejora de casos de uso
+	-Hay que seguir las notaciones estándar y en los diagramas de casos de uso, los casos de uso se representan como elipses, no como rectángulos con las esquinas redondeadas.
 
 
 
-Comodín de parejas 
-
-Corrección
-
-Felipe io dejame lo de por aqui:    *** me gustaria retocarlo entero
-ERS
+Comodín de parejas Felipe
+	-Acta de reunión siguiente
 	-El nombre del subsistema 3 debe tener sentido en el dominio del problema.
-***	-14-15 requisitos generales son demasiados para un sistema de vuestro tamaño. Probablemente algunos se puedan agrupar o poner como subobjetivos hasta quedaros en 4-5.
-	-No es esencial, pero hay que seguir las notaciones estándar y en los diagramas de casos de uso, los casos de uso se representan como elipses, no como rectángulos con las esquinas redondeadas.
+	-14-15 requisitos generales son demasiados para un sistema de vuestro tamaño. Probablemente algunos se puedan agrupar o poner como subobjetivos hasta quedaros en 4-5.
 	-Para que salgan las flechas en las matrices de rastreabilidad al generar los PDFs hay que indicar que se impriman las imágenes de fondo. Ya os lo comento en la revisión.
-DAS (no me importaria retocar lo que sea del uml)
+	-Falta por hacer las descripciones de la interfaz de usuario de empleado
+	-Descripción de interfaz de servicios
+	-Matrices
 
 
-Ángel
--Cambios del DAS según el profesor
+ERS apuntes
+	-En los casos de uso, hacéis muchas referencias a elementos de interfaz de usuario que deberían evitarse. También dais muchos pasos por sentados. Quizás hubiera sido mejor describir los casos de uso de forma resumida en muchos casos.
+		Hay que detallar todo
+		Reducir las referencias a interfaces de usuario
 
-Falta por hacer las descripciones de la interfaz de usuario de empleado
+****Para que salgan las flechas en las matrices de rastreabilidad al generar los PDFs hay que indicar que se impriman las imágenes de fondo. Ya os lo comento en la revisión.
+
+Posibles casos de uso
+Compra de productos 
+Alquiler de cubas
+Pedir productos a proveedores
+Añadir datos a las tablas de administrador o empleados 
+Modificar datos de las tablas
+(Eliminar datos de las tablas)
