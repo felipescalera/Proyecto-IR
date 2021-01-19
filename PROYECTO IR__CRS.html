@@ -2087,13 +2087,13 @@ Cuando tengamos todos los objetivos y procesos a implantar se indican</p>
 </tr>
 <tr>
 <th>Descripción</th>
-<td colspan="2"><div id="UC-0001--html" class=""><p>El sistema deberá comportarse tal como se describe en el siguiente caso de uso cuando el cliente, una vez tiene todos los <a href='#GLO-0046' class="rem_ref">productos</a> en su carro de la compra, pulsa sobre el botón pagar (puede incluir descuento o no). </p></div>
+<td colspan="2"><div id="UC-0001--html" class=""><p>El sistema deberá comportarse tal como se describe en el siguiente caso de uso cuando el cliente entra en nuestra web para comprar <a href='#GLO-0046' class="rem_ref">productos</a>. </p></div>
 </td>
 </tr>
 <tr>
 <th>Precondición</th>
 <td colspan="2">
-<div id="UC-0001-precondition-html" class=""><p>El cliente debe haber iniciado sesión</p></div>
+<div id="UC-0001-precondition-html" class=""></div>
 </td>
 </tr>
 <tr>
@@ -2103,49 +2103,39 @@ Cuando tengamos todos los objetivos y procesos a implantar se indican</p>
 </tr>
 <tr id="STP-0001">
 <th class="step_number">1</th>
-<td colspan="1"><div id="STP-0001--html" class=""><p>El actor Cliente (ACT-0016) añade <a href='#GLO-0046' class="rem_ref">productos</a> en su carro de la compra. </p></div>
+<td colspan="1"><div id="STP-0001--html" class=""><p>El actor Cliente (ACT-0016) selecciona <a href='#GLO-0046' class="rem_ref">productos</a>. </p></div>
 </td>
 </tr>
 <tr id="STP-0072">
 <th class="step_number">2</th>
-<td colspan="1"><div id="STP-0072--html" class=""><p>El actor Cliente (ACT-0016) pulsa sobre el botón pagar. </p></div>
+<td colspan="1"><div id="STP-0072--html" class=""><p>El actor Cliente (ACT-0016) introduce sus datos personales. </p></div>
 </td>
 </tr>
 <tr id="STP-0074">
 <th class="step_number">3</th>
-<td colspan="1"><div id="STP-0074--html" class=""><p>El actor Cliente (ACT-0016) introduce su tarjeta de crédito. </p></div>
+<td colspan="1"><div id="STP-0074--html" class=""><p>El actor Cliente (ACT-0016) paga el porte a través de la opción de pago que haya escogido. </p></div>
 </td>
 </tr>
 <tr id="STP-0073">
 <th class="step_number">4</th>
 <td colspan="1">
-<div id="STP-0073--html" class=""><p>Si el cliente ha introducido correctamente su tarjeta de crédito,  el sistema tramitará el <a href='#GLO-0047' class="rem_ref">pedido</a>. </p></div>
+<div id="STP-0073--html" class=""><p>El sistema tramitará el <a href='#GLO-0047' class="rem_ref">pedido</a>. </p></div>
 </td>
 </tr>
 <tr>
 <th>Postcondición</th>
 <td colspan="2">
-<div id="UC-0001-postcondition-html" class=""><p>Un empleado recibirá una notificación de compra para tener  los <a href='#GLO-0046' class="rem_ref">productos</a> guardados para el cliente y se emitirá una <a href='#GLO-0039' class="rem_ref">factura</a>. En caso de ser a domicilio, se notificará al encargado del almacén el cuál asignará a un transportista para que lleve el <a href='#GLO-0047' class="rem_ref">pedido</a> y se hará un porte en el momento de entrega</p></div>
+<div id="UC-0001-postcondition-html" class=""><p>Un empleado recibirá una notificación de compra para tener  los <a href='#GLO-0046' class="rem_ref">productos</a> guardados para el cliente y se emitirá una <a href='#GLO-0039' class="rem_ref">factura</a>. En caso de ser a domicilio, se notificará al encargado del almacén el cuál asignará a un transportista para que lleve el <a href='#GLO-0047' class="rem_ref">pedido</a> y se hará un porte en el momento de entrega. El cliente podrá acceder al historial de compras del cliente donde podrá ver el estado del <a href='#GLO-0047' class="rem_ref">pedido</a>.</p></div>
 </td>
 </tr>
 <tr>
-<th rowspan="4">Excepciones</th>
+<th rowspan="2">Excepciones</th>
 <th class="step_number_column">Paso</th>
 <th class="exception_action_column">Acción</th>
 </tr>
 <tr id="STX-0010">
 <th class="step_number">2</th>
-<td colspan="1"><div id="STX-0010--html" class=""><p>Si el cliente no ha introducido <a href='#GLO-0046' class="rem_ref">productos</a> a su carro de la compra ,  el sistema no le permitirá pulsar sobre el botón pagar, a continuación este caso de uso queda sin efecto. </p></div>
-</td>
-</tr>
-<tr id="STX-0011">
-<th class="step_number">3</th>
-<td colspan="1"><div id="STX-0011--html" class=""><p>Si el cliente no introduce su tarjeta de crédito,  el sistema le pedirá que introduzca su tarjeta de crédito para poder tramitar el <a href='#GLO-0047' class="rem_ref">pedido</a>, a continuación este caso de uso continúa. </p></div>
-</td>
-</tr>
-<tr id="STX-0034">
-<th class="step_number">3</th>
-<td colspan="1"><div id="STX-0034--html" class=""><p>Si el cliente no introduce un descuento válido,  el sistema le pedirá que introduzca su tarjeta de crédito para poder tramitar el <a href='#GLO-0047' class="rem_ref">pedido</a>, a continuación este caso de uso continúa. </p></div>
+<td colspan="1"><div id="STX-0010--html" class=""><p>Si el cliente no ha introducido <a href='#GLO-0046' class="rem_ref">productos</a> a su carro de la compra ,  el sistema no le permitirá efectuar la compra, a continuación este caso de uso queda sin efecto. </p></div>
 </td>
 </tr>
 <tr>
@@ -2178,7 +2168,7 @@ Cuando tengamos todos los objetivos y procesos a implantar se indican</p>
 <tr>
 <th>Precondición</th>
 <td colspan="2">
-<div id="UC-0002-precondition-html" class=""><p>El encargado y/o propietario debe haber iniciado sesión correctamente</p></div>
+<div id="UC-0002-precondition-html" class=""><p>El encargado y/o propietario debe haber iniciado sesión correctamente y debe haber <a href='#GLO-0048' class="rem_ref">proveedores</a> registrados <a href='#GLO-0048' class="rem_ref">proveedores</a> en el sistema</p></div>
 </td>
 </tr>
 <tr>
@@ -2188,7 +2178,7 @@ Cuando tengamos todos los objetivos y procesos a implantar se indican</p>
 </tr>
 <tr id="STP-0004">
 <th class="step_number">1</th>
-<td colspan="1"><div id="STP-0004--html" class=""><p>El actor Propietario (ACT-0020) solicita a sus provedores los <a href='#GLO-0046' class="rem_ref">productos</a> necesitados (mediante correo). </p></div>
+<td colspan="1"><div id="STP-0004--html" class=""><p>El actor Propietario (ACT-0020) selecciona los <a href='#GLO-0046' class="rem_ref">productos</a> a comprar y los <a href='#GLO-0048' class="rem_ref">proveedores</a> a los cuales quiere enviar la solicitud de compra (mediante correo). </p></div>
 </td>
 </tr>
 <tr id="STP-0076">
@@ -2199,7 +2189,7 @@ Cuando tengamos todos los objetivos y procesos a implantar se indican</p>
 <tr>
 <th>Postcondición</th>
 <td colspan="2">
-<div id="UC-0002-postcondition-html" class=""><p>El <a href='#GLO-0048' class="rem_ref">proveedor</a> enviará los <a href='#GLO-0046' class="rem_ref">productos</a> y se emitirá una <a href='#GLO-0039' class="rem_ref">factura</a></p></div>
+<div id="UC-0002-postcondition-html" class=""><p>El <a href='#GLO-0048' class="rem_ref">proveedor</a> enviará los <a href='#GLO-0046' class="rem_ref">productos</a> y se emitirá una <a href='#GLO-0039' class="rem_ref">factura</a>. Horas antes de que se efectúe la entrega del <a href='#GLO-0047' class="rem_ref">pedido</a> se le notificará a los empleados</p></div>
 </td>
 </tr>
 <tr>
@@ -2216,121 +2206,6 @@ Cuando tengamos todos los objetivos y procesos a implantar se indican</p>
 <th>Comentarios</th>
 <td colspan="2">
 <div id="UC-0002-comments-html" class="remus_comments"><p>Ninguno</p></div>
-</td>
-</tr>
-</table>
-</div>
-<div id="UC-0003">
-<table class="use_case remus_table">
-<thead>
-<tr>
-<th>
-<img src="https://cdn.jsdelivr.net/gh/amador-duran-toro/remus/assets/images/icons/useCase.png" /> UC-0003</th>
-<th class="name_column" colspan="2">Consulta proveedores </th>
-</tr>
-</thead>
-<tr>
-<th>Versión</th>
-<td colspan="2">1.0 (26/11/2020)
-</td>
-</tr>
-<tr>
-<th>Descripción</th>
-<td colspan="2"><div id="UC-0003--html" class=""><p>El sistema deberá comportarse tal como se describe en el siguiente caso de uso cuando el propietario los <a href='#GLO-0048' class="rem_ref">proveedores</a> que de la empresa. </p></div>
-</td>
-</tr>
-<tr>
-<th>Precondición</th>
-<td colspan="2">
-<div id="UC-0003-precondition-html" class=""><p>El propietario debe haber iniciado sesión correctamente</p></div>
-</td>
-</tr>
-<tr>
-<th rowspan="3">Secuencia normal</th>
-<th class="step_number_column">Paso</th>
-<th class="step_action_column">Acción</th>
-</tr>
-<tr id="STP-0005">
-<th class="step_number">1</th>
-<td colspan="1"><div id="STP-0005--html" class=""><p>El actor Propietario (ACT-0020) accede al apartado "proveedores". </p></div>
-</td>
-</tr>
-<tr id="STP-0077">
-<th class="step_number">2</th>
-<td colspan="1">
-<div id="STP-0077--html" class=""><p>Si hay datos de <a href='#GLO-0048' class="rem_ref">proveedores</a> en el sistema,  el sistema mostrará una página con los datos de los <a href='#GLO-0048' class="rem_ref">proveedores</a>. </p></div>
-</td>
-</tr>
-<tr>
-<th>Postcondición</th>
-<td colspan="2">
-<div id="UC-0003-postcondition-html" class=""><p>El propietario accede a la lista completa de <a href='#GLO-0048' class="rem_ref">proveedores</a></p></div>
-</td>
-</tr>
-<tr>
-<th rowspan="2">Excepciones</th>
-<th class="step_number_column">Paso</th>
-<th class="exception_action_column">Acción</th>
-</tr>
-<tr id="STX-0005">
-<th class="step_number">2</th>
-<td colspan="1"><div id="STX-0005--html" class=""><p>Si no hay ningún <a href='#GLO-0048' class="rem_ref">proveedores</a> en la base de datos,  el sistema mostrará una página vacía y le preguntará si quiere introducir algún <a href='#GLO-0048' class="rem_ref">proveedor</a>, a continuación este caso de uso continúa. </p></div>
-</td>
-</tr>
-<tr>
-<th>Comentarios</th>
-<td colspan="2">
-<div id="UC-0003-comments-html" class="remus_comments"><p>Ninguno</p></div>
-</td>
-</tr>
-</table>
-</div>
-<div id="UC-0004">
-<table class="use_case remus_table">
-<thead>
-<tr>
-<th>
-<img src="https://cdn.jsdelivr.net/gh/amador-duran-toro/remus/assets/images/icons/useCase.png" /> UC-0004</th>
-<th class="name_column" colspan="2">Notificaciones sobre llegada de pedidos a trabajadores </th>
-</tr>
-</thead>
-<tr>
-<th>Versión</th>
-<td colspan="2">1.0 (26/11/2020)
-</td>
-</tr>
-<tr>
-<th>Descripción</th>
-<td colspan="2"><div id="UC-0004--html" class=""><p>El sistema deberá comportarse tal como se describe en el siguiente caso de uso cuando un <a href='#GLO-0048' class="rem_ref">proveedor</a> realiza la entrega de los <a href='#GLO-0046' class="rem_ref">productos</a>/<a href='#GLO-0047' class="rem_ref">pedidos</a>. </p></div>
-</td>
-</tr>
-<tr>
-<th>Precondición</th>
-<td colspan="2">
-<div id="UC-0004-precondition-html" class=""><p>Se ha solicitado un <a href='#GLO-0047' class="rem_ref">pedido</a> al <a href='#GLO-0048' class="rem_ref">proveedor</a></p></div>
-</td>
-</tr>
-<tr>
-<th rowspan="2">Secuencia normal</th>
-<th class="step_number_column">Paso</th>
-<th class="step_action_column">Acción</th>
-</tr>
-<tr id="STP-0006">
-<th class="step_number">1</th>
-<td colspan="1">
-<div id="STP-0006--html" class=""><p>Si los trabajadores estan correctamente registrados en la aplicación,  el sistema  les enviarán una notificación (por pantalla) horas antes de que se efectúe la entrega del <a href='#GLO-0047' class="rem_ref">pedido</a> por parte del <a href='#GLO-0048' class="rem_ref">proveedor</a>. </p></div>
-</td>
-</tr>
-<tr>
-<th>Postcondición</th>
-<td colspan="2">
-<div id="UC-0004-postcondition-html" class=""><p>Un empleado recoge el <a href='#GLO-0047' class="rem_ref">pedido</a> y registra la <a href='#GLO-0039' class="rem_ref">factura</a></p></div>
-</td>
-</tr>
-<tr>
-<th>Comentarios</th>
-<td colspan="2">
-<div id="UC-0004-comments-html" class="remus_comments"><p>Ninguno</p></div>
 </td>
 </tr>
 </table>
@@ -2357,21 +2232,16 @@ Cuando tengamos todos los objetivos y procesos a implantar se indican</p>
 <tr>
 <th>Precondición</th>
 <td colspan="2">
-<div id="UC-0005-precondition-html" class=""><p>El propietario debe haber iniciado sesión correctamente</p></div>
+<div id="UC-0005-precondition-html" class=""><p>El propietario debe haber iniciado sesión correctamente y accede a la lista de empleados</p></div>
 </td>
 </tr>
 <tr>
-<th rowspan="3">Secuencia normal</th>
+<th rowspan="2">Secuencia normal</th>
 <th class="step_number_column">Paso</th>
 <th class="step_action_column">Acción</th>
 </tr>
-<tr id="STP-0007">
-<th class="step_number">1</th>
-<td colspan="1"><div id="STP-0007--html" class=""><p>El actor Propietario (ACT-0020) accede al apartado "empleados". </p></div>
-</td>
-</tr>
 <tr id="STP-0078">
-<th class="step_number">2</th>
+<th class="step_number">1</th>
 <td colspan="1">
 <div id="STP-0078--html" class=""><p>Si hay datos de empleados en el sistema,  el sistema  le mostrará un listado de los datos de los empleados. </p></div>
 </td>
@@ -2379,7 +2249,7 @@ Cuando tengamos todos los objetivos y procesos a implantar se indican</p>
 <tr>
 <th>Postcondición</th>
 <td colspan="2">
-<div id="UC-0005-postcondition-html" class=""><p>El dueño podrá acceder al listado completo de empleados</p></div>
+<div id="UC-0005-postcondition-html" class=""></div>
 </td>
 </tr>
 <tr>
@@ -2388,7 +2258,7 @@ Cuando tengamos todos los objetivos y procesos a implantar se indican</p>
 <th class="exception_action_column">Acción</th>
 </tr>
 <tr id="STX-0009">
-<th class="step_number">2</th>
+<th class="step_number">1</th>
 <td colspan="1"><div id="STX-0009--html" class=""><p>Si no hay ningún empleado en la base de datos,  el sistema mostrará una página vacía y  preguntará si quiere añadir algún empleado, a continuación este caso de uso continúa. </p></div>
 </td>
 </tr>
@@ -2416,7 +2286,7 @@ Cuando tengamos todos los objetivos y procesos a implantar se indican</p>
 </tr>
 <tr>
 <th>Descripción</th>
-<td colspan="2"><div id="UC-0006--html" class=""><p>El sistema deberá comportarse tal como se describe en el siguiente caso de uso cuando el cliente inicie sesión y quiera alquilar una <a href='#GLO-0016' class="rem_ref">cuba</a> de un listado. </p></div>
+<td colspan="2"><div id="UC-0006--html" class=""><p>El sistema deberá comportarse tal como se describe en el siguiente caso de uso cuando el cliente quiera alquilar una <a href='#GLO-0016' class="rem_ref">cuba</a> a través de la web. </p></div>
 </td>
 </tr>
 <tr>
@@ -2426,28 +2296,17 @@ Cuando tengamos todos los objetivos y procesos a implantar se indican</p>
 </td>
 </tr>
 <tr>
-<th rowspan="5">Secuencia normal</th>
+<th rowspan="3">Secuencia normal</th>
 <th class="step_number_column">Paso</th>
 <th class="step_action_column">Acción</th>
 </tr>
 <tr id="STP-0008">
 <th class="step_number">1</th>
-<td colspan="1"><div id="STP-0008--html" class=""><p>El actor Cliente (ACT-0016) accede al apartado de <a href='#GLO-0016' class="rem_ref">cubas</a> y selecciona un periodo para alquilar una <a href='#GLO-0016' class="rem_ref">cuba</a>. </p></div>
-</td>
-</tr>
-<tr id="STP-0079">
-<th class="step_number">2</th>
-<td colspan="1">
-<div id="STP-0079--html" class=""><p>Si hay <a href='#GLO-0016' class="rem_ref">cubas</a> disponibles en la fecha seleccionada,  el sistema muestra un listado de <a href='#GLO-0016' class="rem_ref">cubas</a> con sus datos . </p></div>
-</td>
-</tr>
-<tr id="STP-0202">
-<th class="step_number">3</th>
-<td colspan="1"><div id="STP-0202--html" class=""><p>El actor Cliente (ACT-0016) pulsa la <a href='#GLO-0016' class="rem_ref">cuba</a> deseada. </p></div>
+<td colspan="1"><div id="STP-0008--html" class=""><p>El actor Cliente (ACT-0016) selecciona una <a href='#GLO-0016' class="rem_ref">cuba</a> y una fecha para alquilar. </p></div>
 </td>
 </tr>
 <tr id="STP-0203">
-<th class="step_number">4</th>
+<th class="step_number">2</th>
 <td colspan="1">
 <div id="STP-0203--html" class=""><p>Si rellena los datos de alquiler de <a href='#GLO-0016' class="rem_ref">cubas</a> correctamente,  el sistema tramita su <a href='#GLO-0047' class="rem_ref">pedido</a> con éxito. </p></div>
 </td>
@@ -2455,7 +2314,7 @@ Cuando tengamos todos los objetivos y procesos a implantar se indican</p>
 <tr>
 <th>Postcondición</th>
 <td colspan="2">
-<div id="UC-0006-postcondition-html" class=""><p>El encargado del almacén recibe una notificación el día que haya que llevar la <a href='#GLO-0016' class="rem_ref">cuba</a> y asigna un transportista para que lleve la <a href='#GLO-0016' class="rem_ref">cuba</a> a la dirección de envío proporcionada por el cliente</p></div>
+<div id="UC-0006-postcondition-html" class=""><p>Se le notifica al empleado el día que haya que llevar la <a href='#GLO-0016' class="rem_ref">cuba</a> y asigna un transportista para que lleve la <a href='#GLO-0016' class="rem_ref">cuba</a> a la dirección de envío proporcionada por el cliente</p></div>
 </td>
 </tr>
 <tr>
@@ -2463,13 +2322,13 @@ Cuando tengamos todos los objetivos y procesos a implantar se indican</p>
 <th class="step_number_column">Paso</th>
 <th class="exception_action_column">Acción</th>
 </tr>
-<tr id="STX-0014">
-<th class="step_number">2</th>
-<td colspan="1"><div id="STX-0014--html" class=""><p>Si no hay <a href='#GLO-0016' class="rem_ref">cubas</a> disponibles en la fecha seleccionada,  el sistema notificará que en dichas fechas no hay <a href='#GLO-0016' class="rem_ref">cubas</a> disponibles, a continuación este caso de uso queda sin efecto. </p></div>
+<tr id="STX-0035">
+<th class="step_number">1</th>
+<td colspan="1"><div id="STX-0035--html" class=""><p>Si no está la <a href='#GLO-0016' class="rem_ref">cuba</a> disponible en esa,  el sistema le pedirá al cliente que seleccione otra fecha, a continuación este caso de uso <span class="tbd" title='Por determinar'>PD</span>. </p></div>
 </td>
 </tr>
 <tr id="STX-0027">
-<th class="step_number">4</th>
+<th class="step_number">2</th>
 <td colspan="1"><div id="STX-0027--html" class=""><p>Si no se han rellenado los datos correctamente,  el sistema resaltará los campos que se deben modificar, a continuación este caso de uso queda sin efecto. </p></div>
 </td>
 </tr>
@@ -2487,7 +2346,7 @@ Cuando tengamos todos los objetivos y procesos a implantar se indican</p>
 <tr>
 <th>
 <img src="https://cdn.jsdelivr.net/gh/amador-duran-toro/remus/assets/images/icons/useCase.png" /> UC-0007</th>
-<th class="name_column" colspan="2">Creación de un nuevo contrato en web </th>
+<th class="name_column" colspan="2">Actualización de contrato en web </th>
 </tr>
 </thead>
 <tr>
@@ -2497,13 +2356,13 @@ Cuando tengamos todos los objetivos y procesos a implantar se indican</p>
 </tr>
 <tr>
 <th>Descripción</th>
-<td colspan="2"><div id="UC-0007--html" class=""><p>El sistema deberá comportarse tal como se describe en el siguiente caso de uso cuando el propietario inicie sesión y necesite añadir un contrato nuevo. </p></div>
+<td colspan="2"><div id="UC-0007--html" class=""><p>El sistema deberá comportarse tal como se describe en el siguiente caso de uso cuando necesite añadir un contrato nuevo. </p></div>
 </td>
 </tr>
 <tr>
 <th>Precondición</th>
 <td colspan="2">
-<div id="UC-0007-precondition-html" class=""><p>El propietario debe haber iniciado sesión correctamente</p></div>
+<div id="UC-0007-precondition-html" class=""><p>El propietario debe haber iniciado sesión correctamente y selecciona en la lista de empleados al empleado que quiere actualizar su contrato</p></div>
 </td>
 </tr>
 <tr>
@@ -2513,19 +2372,19 @@ Cuando tengamos todos los objetivos y procesos a implantar se indican</p>
 </tr>
 <tr id="STP-0080">
 <th class="step_number">1</th>
-<td colspan="1"><div id="STP-0080--html" class=""><p>El actor Propietario (ACT-0020) accede al apartado de empleados y selecciona el formulario de inserción de empleado. </p></div>
+<td colspan="1"><div id="STP-0080--html" class=""><p>El actor Propietario (ACT-0020) introduce los datos del contrato. </p></div>
 </td>
 </tr>
 <tr id="STP-0081">
 <th class="step_number">2</th>
 <td colspan="1">
-<div id="STP-0081--html" class=""><p>Si los datos del formulario para el empleado son correctos,  el sistema nos da un mensaje de operación exitosa. </p></div>
+<div id="STP-0081--html" class=""><p>Si los datos del formulario para el contrato son correctos,  el sistema nos da un mensaje de operación exitosa. </p></div>
 </td>
 </tr>
 <tr>
 <th>Postcondición</th>
 <td colspan="2">
-<div id="UC-0007-postcondition-html" class=""><p>El propietario introduce los datos correctos y podrá comprobar que se ha insertado el empleado</p></div>
+<div id="UC-0007-postcondition-html" class=""></div>
 </td>
 </tr>
 <tr>
@@ -2572,27 +2431,17 @@ Cuando tengamos todos los objetivos y procesos a implantar se indican</p>
 </td>
 </tr>
 <tr>
-<th rowspan="5">Secuencia normal</th>
+<th rowspan="3">Secuencia normal</th>
 <th class="step_number_column">Paso</th>
 <th class="step_action_column">Acción</th>
 </tr>
-<tr id="STP-0082">
-<th class="step_number">1</th>
-<td colspan="1"><div id="STP-0082--html" class=""><p>El actor Propietario (ACT-0020) accede a la sección "Proveedores". </p></div>
-</td>
-</tr>
-<tr id="STP-0083">
-<th class="step_number">2</th>
-<td colspan="1"><div id="STP-0083--html" class=""><p>El actor Propietario (ACT-0020) clica sobre el botón "Añadir nuevo proveedor". </p></div>
-</td>
-</tr>
 <tr id="STP-0084">
-<th class="step_number">3</th>
+<th class="step_number">1</th>
 <td colspan="1"><div id="STP-0084--html" class=""><p>El actor Propietario (ACT-0020) introduce los datos del <a href='#GLO-0048' class="rem_ref">proveedor</a>. </p></div>
 </td>
 </tr>
 <tr id="STP-0085">
-<th class="step_number">4</th>
+<th class="step_number">2</th>
 <td colspan="1">
 <div id="STP-0085--html" class=""><p>Si el propietario ha introducido los datos correctamente,  el sistema guardará los datos en la base de datos y notificará que el <a href='#GLO-0048' class="rem_ref">proveedor</a> se ha guardado correctamente. </p></div>
 </td>
@@ -2609,7 +2458,7 @@ Cuando tengamos todos los objetivos y procesos a implantar se indican</p>
 <th class="exception_action_column">Acción</th>
 </tr>
 <tr id="STX-0016">
-<th class="step_number">4</th>
+<th class="step_number">2</th>
 <td colspan="1"><div id="STX-0016--html" class=""><p>Si el propietario no ha introducido los datos correctamente,  el sistema hará saltar una excepción indicando en que campo/s debe corregir el/los dato/s, a continuación este caso de uso continúa. </p></div>
 </td>
 </tr>
@@ -2647,27 +2496,17 @@ Cuando tengamos todos los objetivos y procesos a implantar se indican</p>
 </td>
 </tr>
 <tr>
-<th rowspan="5">Secuencia normal</th>
+<th rowspan="3">Secuencia normal</th>
 <th class="step_number_column">Paso</th>
 <th class="step_action_column">Acción</th>
 </tr>
-<tr id="STP-0086">
-<th class="step_number">1</th>
-<td colspan="1"><div id="STP-0086--html" class=""><p>El actor Propietario (ACT-0020) accede a la sección "Empleados". </p></div>
-</td>
-</tr>
-<tr id="STP-0087">
-<th class="step_number">2</th>
-<td colspan="1"><div id="STP-0087--html" class=""><p>El actor Propietario (ACT-0020) clica sobre el botón "Añadir nuevo empleado". </p></div>
-</td>
-</tr>
 <tr id="STP-0088">
-<th class="step_number">3</th>
+<th class="step_number">1</th>
 <td colspan="1"><div id="STP-0088--html" class=""><p>El actor Propietario (ACT-0020) introduce los datos del empleado. </p></div>
 </td>
 </tr>
 <tr id="STP-0089">
-<th class="step_number">4</th>
+<th class="step_number">2</th>
 <td colspan="1">
 <div id="STP-0089--html" class=""><p>Si el propietario ha introducido los datos correctamente,  el sistema guardará los datos en la base de datos y notificará que el empleado se ha guardado correctamente. </p></div>
 </td>
@@ -2684,7 +2523,7 @@ Cuando tengamos todos los objetivos y procesos a implantar se indican</p>
 <th class="exception_action_column">Acción</th>
 </tr>
 <tr id="STX-0017">
-<th class="step_number">4</th>
+<th class="step_number">2</th>
 <td colspan="1"><div id="STX-0017--html" class=""><p>Si el propietario no ha introducido los datos correctamente,  el sistema hará saltar una excepción indicando en que campo/s debe corregir el/los dato/s, a continuación este caso de uso continúa. </p></div>
 </td>
 </tr>
@@ -2722,22 +2561,17 @@ Cuando tengamos todos los objetivos y procesos a implantar se indican</p>
 </td>
 </tr>
 <tr>
-<th rowspan="4">Secuencia normal</th>
+<th rowspan="3">Secuencia normal</th>
 <th class="step_number_column">Paso</th>
 <th class="step_action_column">Acción</th>
 </tr>
-<tr id="STP-0090">
-<th class="step_number">1</th>
-<td colspan="1"><div id="STP-0090--html" class=""><p>El actor Cliente (ACT-0016) pulsa sobre el botón "Registrarse". </p></div>
-</td>
-</tr>
 <tr id="STP-0091">
-<th class="step_number">2</th>
-<td colspan="1"><div id="STP-0091--html" class=""><p>El actor Cliente (ACT-0016) añade sus datos. </p></div>
+<th class="step_number">1</th>
+<td colspan="1"><div id="STP-0091--html" class=""><p>El actor Cliente (ACT-0016) añade sus datos en el formulario de registro. </p></div>
 </td>
 </tr>
 <tr id="STP-0092">
-<th class="step_number">3</th>
+<th class="step_number">2</th>
 <td colspan="1">
 <div id="STP-0092--html" class=""><p>Si el cliente ha añadido sus datos correctamente,  el sistema añadirá los datos del cliente a la base de datos y redigirá al cliente a la página principal. </p></div>
 </td>
@@ -2754,7 +2588,7 @@ Cuando tengamos todos los objetivos y procesos a implantar se indican</p>
 <th class="exception_action_column">Acción</th>
 </tr>
 <tr id="STX-0018">
-<th class="step_number">3</th>
+<th class="step_number">2</th>
 <td colspan="1"><div id="STX-0018--html" class=""><p>Si el cliente no ha introducido sus datos correctamente,  el sistema hará saltar una excepción indicando el/los campo/s donde debe introducir correctamente el/los dato/s, a continuación este caso de uso continúa. </p></div>
 </td>
 </tr>
@@ -2788,34 +2622,29 @@ Cuando tengamos todos los objetivos y procesos a implantar se indican</p>
 <tr>
 <th>Precondición</th>
 <td colspan="2">
-<div id="UC-0011-precondition-html" class=""><p>El empleado accede a la web</p></div>
+<div id="UC-0011-precondition-html" class=""><p>El empleado accede a la web e inicia sesión</p></div>
 </td>
 </tr>
 <tr>
-<th rowspan="4">Secuencia normal</th>
+<th rowspan="3">Secuencia normal</th>
 <th class="step_number_column">Paso</th>
 <th class="step_action_column">Acción</th>
 </tr>
-<tr id="STP-0181">
-<th class="step_number">1</th>
-<td colspan="1"><div id="STP-0181--html" class=""><p>El actor Empleado de la tienda (ACT-0018) pulsa sobre el botón de registrar <a href='#GLO-0039' class="rem_ref">facturas</a>. </p></div>
-</td>
-</tr>
-<tr id="STP-0182">
-<th class="step_number">2</th>
-<td colspan="1"><div id="STP-0182--html" class=""><p>El actor Empleado de la tienda (ACT-0018) añade sus datos de la <a href='#GLO-0039' class="rem_ref">factura</a>. </p></div>
-</td>
-</tr>
 <tr id="STP-0183">
-<th class="step_number">3</th>
+<th class="step_number">1</th>
 <td colspan="1">
 <div id="STP-0183--html" class=""><p>Si el empleado ha añadido los datos correctamente,  el sistema añadirá los datos de la <a href='#GLO-0039' class="rem_ref">factura</a> a la base de datos y redigirá al empleado a la lista de <a href='#GLO-0039' class="rem_ref">facturas</a>. </p></div>
+</td>
+</tr>
+<tr id="STP-0268">
+<th class="step_number">2</th>
+<td colspan="1"><div id="STP-0268--html" class=""><p>El actor Empleado de la tienda (ACT-0015) introduce los datos de la <a href='#GLO-0039' class="rem_ref">factura</a>. </p></div>
 </td>
 </tr>
 <tr>
 <th>Postcondición</th>
 <td colspan="2">
-<div id="UC-0011-postcondition-html" class=""><p>El empleado puede acceder a las funcionalidades del sistema creadas para la creación de <a href='#GLO-0039' class="rem_ref">facturas</a></p></div>
+<div id="UC-0011-postcondition-html" class=""></div>
 </td>
 </tr>
 <tr>
@@ -2824,7 +2653,7 @@ Cuando tengamos todos los objetivos y procesos a implantar se indican</p>
 <th class="exception_action_column">Acción</th>
 </tr>
 <tr id="STX-0019">
-<th class="step_number">3</th>
+<th class="step_number">1</th>
 <td colspan="1"><div id="STX-0019--html" class=""><p>Si el empleado no introduce los datos correctamente,  el sistema hará saltar una excepción indicando el/los campo/s donde debe introducir correctamente el/los dato/s, a continuación este caso de uso continúa. </p></div>
 </td>
 </tr>
@@ -2858,26 +2687,21 @@ Cuando tengamos todos los objetivos y procesos a implantar se indican</p>
 <tr>
 <th>Precondición</th>
 <td colspan="2">
-<div id="UC-0012-precondition-html" class=""><p>El empleado accede a la web</p></div>
+<div id="UC-0012-precondition-html" class=""><p>El empleado accede a la web y selecciona la entidad a editar</p></div>
 </td>
 </tr>
 <tr>
-<th rowspan="4">Secuencia normal</th>
+<th rowspan="3">Secuencia normal</th>
 <th class="step_number_column">Paso</th>
 <th class="step_action_column">Acción</th>
 </tr>
-<tr id="STP-0184">
-<th class="step_number">1</th>
-<td colspan="1"><div id="STP-0184--html" class=""><p>El actor Empleado de la tienda (ACT-0018) pulsa sobre el botón de editar entidad. </p></div>
-</td>
-</tr>
 <tr id="STP-0185">
-<th class="step_number">2</th>
+<th class="step_number">1</th>
 <td colspan="1"><div id="STP-0185--html" class=""><p>El actor Empleado de la tienda (ACT-0018) añade los datos modificados. </p></div>
 </td>
 </tr>
 <tr id="STP-0186">
-<th class="step_number">3</th>
+<th class="step_number">2</th>
 <td colspan="1">
 <div id="STP-0186--html" class=""><p>Si el empleado ha añadido los datos correctamente,  el sistema modificará los datos de la entidad sobre la base de datos y redigirá al empleado a la página de consulta. </p></div>
 </td>
@@ -2894,7 +2718,7 @@ Cuando tengamos todos los objetivos y procesos a implantar se indican</p>
 <th class="exception_action_column">Acción</th>
 </tr>
 <tr id="STX-0020">
-<th class="step_number">3</th>
+<th class="step_number">2</th>
 <td colspan="1"><div id="STX-0020--html" class=""><p>Si el empleado no ha introducido los datos correctamente,  el sistema hará saltar una excepción indicando el/los campo/s donde debe introducir correctamente el/los dato/s, a continuación este caso de uso continúa. </p></div>
 </td>
 </tr>
@@ -2902,71 +2726,6 @@ Cuando tengamos todos los objetivos y procesos a implantar se indican</p>
 <th>Comentarios</th>
 <td colspan="2">
 <div id="UC-0012-comments-html" class="remus_comments"><p>Ninguno</p></div>
-</td>
-</tr>
-</table>
-</div>
-<div id="UC-0013">
-<table class="use_case remus_table">
-<thead>
-<tr>
-<th>
-<img src="https://cdn.jsdelivr.net/gh/amador-duran-toro/remus/assets/images/icons/useCase.png" /> UC-0013</th>
-<th class="name_column" colspan="2">Consulta de facturas (de clientes o proveedores) </th>
-</tr>
-</thead>
-<tr>
-<th>Versión</th>
-<td colspan="2">1.0 (10/12/2020)
-</td>
-</tr>
-<tr>
-<th>Descripción</th>
-<td colspan="2"><div id="UC-0013--html" class=""><p>El sistema deberá comportarse tal como se describe en el siguiente caso de uso cuando un empleado accede al apartado de <a href='#GLO-0039' class="rem_ref">facturas</a>. </p></div>
-</td>
-</tr>
-<tr>
-<th>Precondición</th>
-<td colspan="2">
-<div id="UC-0013-precondition-html" class=""><p>El empleado accede a a la web</p></div>
-</td>
-</tr>
-<tr>
-<th rowspan="3">Secuencia normal</th>
-<th class="step_number_column">Paso</th>
-<th class="step_action_column">Acción</th>
-</tr>
-<tr id="STP-0187">
-<th class="step_number">1</th>
-<td colspan="1"><div id="STP-0187--html" class=""><p>El actor Empleado de la tienda (ACT-0018) pulsa sobre el botón de consulta de <a href='#GLO-0039' class="rem_ref">facturas</a>. </p></div>
-</td>
-</tr>
-<tr id="STP-0189">
-<th class="step_number">2</th>
-<td colspan="1">
-<div id="STP-0189--html" class=""><p>Si el empleado accede a los datos correctamente,  el sistema muestra todos los datos disponibles sobre las <a href='#GLO-0039' class="rem_ref">facturas</a> del negocio. </p></div>
-</td>
-</tr>
-<tr>
-<th>Postcondición</th>
-<td colspan="2">
-<div id="UC-0013-postcondition-html" class=""><p>El empleado puede acceder a las funcionalidades del sistema creados para la consulta de <a href='#GLO-0039' class="rem_ref">facturas</a></p></div>
-</td>
-</tr>
-<tr>
-<th rowspan="2">Excepciones</th>
-<th class="step_number_column">Paso</th>
-<th class="exception_action_column">Acción</th>
-</tr>
-<tr id="STX-0021">
-<th class="step_number">2</th>
-<td colspan="1"><div id="STX-0021--html" class=""><p>Si la base de datos no ha recibido alta de <a href='#GLO-0039' class="rem_ref">facturas</a>,  el sistema hará saltar una excepción indicando que no hay <a href='#GLO-0039' class="rem_ref">facturas</a> registradas, acto seguido se indica si se quiere añadir alguna, a continuación este caso de uso continúa. </p></div>
-</td>
-</tr>
-<tr>
-<th>Comentarios</th>
-<td colspan="2">
-<div id="UC-0013-comments-html" class="remus_comments"><p>Ninguno</p></div>
 </td>
 </tr>
 </table>
@@ -2997,22 +2756,17 @@ Cuando tengamos todos los objetivos y procesos a implantar se indican</p>
 </td>
 </tr>
 <tr>
-<th rowspan="4">Secuencia normal</th>
+<th rowspan="3">Secuencia normal</th>
 <th class="step_number_column">Paso</th>
 <th class="step_action_column">Acción</th>
 </tr>
-<tr id="STP-0193">
-<th class="step_number">1</th>
-<td colspan="1"><div id="STP-0193--html" class=""><p>El actor Empleado del almacén (ACT-0019) pulsa sobre el botón de añadir incidencia en la lista de órdenes de alquiler. </p></div>
-</td>
-</tr>
 <tr id="STP-0194">
-<th class="step_number">2</th>
+<th class="step_number">1</th>
 <td colspan="1"><div id="STP-0194--html" class=""><p>El actor Empleado del almacén (ACT-0019) añade los datos de la incidencia. </p></div>
 </td>
 </tr>
 <tr id="STP-0195">
-<th class="step_number">3</th>
+<th class="step_number">2</th>
 <td colspan="1">
 <div id="STP-0195--html" class=""><p>Si el empleado añade unos datos consistentes de la incidencia,  el sistema añadirá la incidencia a la orden de alquiler (que internamente se relaciona con el cliente). </p></div>
 </td>
@@ -3029,7 +2783,7 @@ Cuando tengamos todos los objetivos y procesos a implantar se indican</p>
 <th class="exception_action_column">Acción</th>
 </tr>
 <tr id="STX-0023">
-<th class="step_number">3</th>
+<th class="step_number">2</th>
 <td colspan="1"><div id="STX-0023--html" class=""><p>Si el empleado no añade datos correctos en el formulario,  el sistema hará saltar una excepción indicando el/los campo/s donde debe introducir correctamente el/los dato/s, a continuación este caso de uso continúa. </p></div>
 </td>
 </tr>
@@ -3037,76 +2791,6 @@ Cuando tengamos todos los objetivos y procesos a implantar se indican</p>
 <th>Comentarios</th>
 <td colspan="2">
 <div id="UC-0014-comments-html" class="remus_comments"><p>Ninguno</p></div>
-</td>
-</tr>
-</table>
-</div>
-<div id="UC-0015">
-<table class="use_case remus_table">
-<thead>
-<tr>
-<th>
-<img src="https://cdn.jsdelivr.net/gh/amador-duran-toro/remus/assets/images/icons/useCase.png" /> UC-0015</th>
-<th class="name_column" colspan="2">Compra en el carrito de alertas </th>
-</tr>
-</thead>
-<tr>
-<th>Versión</th>
-<td colspan="2">1.0 (11/12/2020)
-</td>
-</tr>
-<tr>
-<th>Descripción</th>
-<td colspan="2"><div id="UC-0015--html" class=""><p>El sistema deberá comportarse tal como se describe en el siguiente caso de uso cuando un empleado quiere ver que <a href='#GLO-0046' class="rem_ref">productos</a> tienen un stock bajo. </p></div>
-</td>
-</tr>
-<tr>
-<th>Precondición</th>
-<td colspan="2">
-<div id="UC-0015-precondition-html" class=""><p>El empleado accede a el carrito de alertas, donde podrá ver que <a href='#GLO-0047' class="rem_ref">pedidos</a> están en stock de riesgo</p></div>
-</td>
-</tr>
-<tr>
-<th rowspan="4">Secuencia normal</th>
-<th class="step_number_column">Paso</th>
-<th class="step_action_column">Acción</th>
-</tr>
-<tr id="STP-0196">
-<th class="step_number">1</th>
-<td colspan="1"><div id="STP-0196--html" class=""><p>El actor Empleado de la tienda (ACT-0018) pulsa sobre el botón de ejecutar la solicitud del carrito de alerta. </p></div>
-</td>
-</tr>
-<tr id="STP-0197">
-<th class="step_number">2</th>
-<td colspan="1"><div id="STP-0197--html" class=""><p>El actor Empleado de la tienda (ACT-0018) añada los datos necesarios para el envío del correo, pulsará el botón de enviar. </p></div>
-</td>
-</tr>
-<tr id="STP-0198">
-<th class="step_number">3</th>
-<td colspan="1">
-<div id="STP-0198--html" class=""><p>Si el empleado añade la descriptión correcta,  el sistema el sistema hace el envío del correo. </p></div>
-</td>
-</tr>
-<tr>
-<th>Postcondición</th>
-<td colspan="2">
-<div id="UC-0015-postcondition-html" class=""><p>El empleado puede pasar al carrito de alertas donde, podrá seleccionar que <a href='#GLO-0046' class="rem_ref">productos</a> pedirle a que <a href='#GLO-0048' class="rem_ref">proveedores</a> por correo</p></div>
-</td>
-</tr>
-<tr>
-<th rowspan="2">Excepciones</th>
-<th class="step_number_column">Paso</th>
-<th class="exception_action_column">Acción</th>
-</tr>
-<tr id="STX-0024">
-<th class="step_number">3</th>
-<td colspan="1"><div id="STX-0024--html" class=""><p>Si el empleado no añade datos correctos en la descripción,  el sistema hará saltar una excepción indicando el/los campo/s donde debe introducir correctamente el/los dato/s, a continuación este caso de uso continúa. </p></div>
-</td>
-</tr>
-<tr>
-<th>Comentarios</th>
-<td colspan="2">
-<div id="UC-0015-comments-html" class="remus_comments"><p>Ninguno</p></div>
 </td>
 </tr>
 </table>
@@ -3137,24 +2821,19 @@ Cuando tengamos todos los objetivos y procesos a implantar se indican</p>
 </td>
 </tr>
 <tr>
-<th rowspan="4">Secuencia normal</th>
+<th rowspan="3">Secuencia normal</th>
 <th class="step_number_column">Paso</th>
 <th class="step_action_column">Acción</th>
 </tr>
-<tr id="STP-0199">
-<th class="step_number">1</th>
-<td colspan="1"><div id="STP-0199--html" class=""><p>El actor Propietario (ACT-0020) pulsa en la herramienta de informes. </p></div>
-</td>
-</tr>
 <tr id="STP-0200">
-<th class="step_number">2</th>
-<td colspan="1"><div id="STP-0200--html" class=""><p>El actor Propietario (ACT-0020) accede a una categoría específica de los informes y le da click en el botón de generar. </p></div>
+<th class="step_number">1</th>
+<td colspan="1"><div id="STP-0200--html" class=""><p>El actor Propietario (ACT-0020) accede a una categoría específica de los informes. </p></div>
 </td>
 </tr>
 <tr id="STP-0201">
-<th class="step_number">3</th>
+<th class="step_number">2</th>
 <td colspan="1">
-<div id="STP-0201--html" class=""><p>Si el propietario añade la descriptión correcta,  el sistema el sistema hace crea el informe y lo muestra por pantalla. </p></div>
+<div id="STP-0201--html" class=""><p>Si el propietario genera el informe con los datos correctos,  el sistema crea el informe y lo muestra por pantalla. </p></div>
 </td>
 </tr>
 <tr>
@@ -3169,8 +2848,8 @@ Cuando tengamos todos los objetivos y procesos a implantar se indican</p>
 <th class="exception_action_column">Acción</th>
 </tr>
 <tr id="STX-0025">
-<th class="step_number">3</th>
-<td colspan="1"><div id="STX-0025--html" class=""><p>Si el sistema no encuentra datos con los que generar el informe, muestra una excepción por pantalla,  el sistema hará saltar una excepción indicando el/los campo/s donde debe introducir correctamente el/los dato/s, a continuación este caso de uso continúa. </p></div>
+<th class="step_number">2</th>
+<td colspan="1"><div id="STX-0025--html" class=""><p>Si el sistema no encuentra datos con los que generar el informe,  el sistema hará saltar una excepción indicando el/los campo/s donde debe introducir correctamente el/los dato/s, a continuación este caso de uso continúa. </p></div>
 </td>
 </tr>
 <tr>
@@ -3197,40 +2876,35 @@ Cuando tengamos todos los objetivos y procesos a implantar se indican</p>
 </tr>
 <tr>
 <th>Descripción</th>
-<td colspan="2"><div id="UC-0017--html" class=""><p>El sistema deberá comportarse tal como se describe en el siguiente caso de uso cuando un empleado quiere asociar a un porte el camión y los empleados que se encargarán de él. </p></div>
+<td colspan="2"><div id="UC-0017--html" class=""><p>El sistema deberá comportarse tal como se describe en el siguiente caso de uso cuando un empleado quiere asociar a un porte, el camión y los empleados que se encargarán de él. </p></div>
 </td>
 </tr>
 <tr>
 <th>Precondición</th>
 <td colspan="2">
-<div id="UC-0017-precondition-html" class=""><p>El empleado accede a la pestaña de <a href='#GLO-0047' class="rem_ref">pedidos</a>, donde podrá consultar los <a href='#GLO-0047' class="rem_ref">pedidos</a> que se han ejecutado</p></div>
+<div id="UC-0017-precondition-html" class=""><p>El empleado accede a lista de <a href='#GLO-0047' class="rem_ref">pedidos</a></p></div>
 </td>
 </tr>
 <tr>
-<th rowspan="4">Secuencia normal</th>
+<th rowspan="3">Secuencia normal</th>
 <th class="step_number_column">Paso</th>
 <th class="step_action_column">Acción</th>
 </tr>
-<tr id="STP-0204">
-<th class="step_number">1</th>
-<td colspan="1"><div id="STP-0204--html" class=""><p>El actor Empleado del almacén (ACT-0019) entra en el listado de <a href='#GLO-0047' class="rem_ref">pedidos</a>. </p></div>
-</td>
-</tr>
 <tr id="STP-0205">
-<th class="step_number">2</th>
-<td colspan="1"><div id="STP-0205--html" class=""><p>El actor Empleado del almacén (ACT-0019) pulsa sobre el botón de añadir porte. </p></div>
+<th class="step_number">1</th>
+<td colspan="1"><div id="STP-0205--html" class=""><p>El actor Empleado del almacén (ACT-0019) añade los datos para crear el porte. </p></div>
 </td>
 </tr>
 <tr id="STP-0206">
-<th class="step_number">3</th>
+<th class="step_number">2</th>
 <td colspan="1">
-<div id="STP-0206--html" class=""><p>Si rellena el formulario con datos consistentes,  el sistema el sistema hace crea el porte asociado y lo tramita con éxito. </p></div>
+<div id="STP-0206--html" class=""><p>Si rellena el formulario con datos consistentes,  el sistema crea el porte asociado y lo tramita con éxito. </p></div>
 </td>
 </tr>
 <tr>
 <th>Postcondición</th>
 <td colspan="2">
-<div id="UC-0017-postcondition-html" class=""><p>El empleado asigna a un porte de <a href='#GLO-0047' class="rem_ref">pedido</a>, qué camión y empleados lo llevarán a cabo</p></div>
+<div id="UC-0017-postcondition-html" class=""></div>
 </td>
 </tr>
 <tr>
@@ -3239,84 +2913,14 @@ Cuando tengamos todos los objetivos y procesos a implantar se indican</p>
 <th class="exception_action_column">Acción</th>
 </tr>
 <tr id="STX-0028">
-<th class="step_number">3</th>
-<td colspan="1"><div id="STX-0028--html" class=""><p>Si el sistema no encuentra datos con los que asociar el porte, muestra un mensaje de error por pantalla,  el sistema hará saltar una excepción indicando el/los campo/s donde debe introducir correctamente el/los dato/s, a continuación este caso de uso continúa. </p></div>
+<th class="step_number">2</th>
+<td colspan="1"><div id="STX-0028--html" class=""><p>Si el sistema no encuentra datos con los que asociar el porte,  el sistema hará saltar una excepción indicando el/los campo/s donde debe introducir correctamente el/los dato/s, a continuación este caso de uso continúa. </p></div>
 </td>
 </tr>
 <tr>
 <th>Comentarios</th>
 <td colspan="2">
 <div id="UC-0017-comments-html" class="remus_comments"><p>Ninguno</p></div>
-</td>
-</tr>
-</table>
-</div>
-<div id="UC-0018">
-<table class="use_case remus_table">
-<thead>
-<tr>
-<th>
-<img src="https://cdn.jsdelivr.net/gh/amador-duran-toro/remus/assets/images/icons/useCase.png" /> UC-0018</th>
-<th class="name_column" colspan="2">Asociación de portes a alquileres de cubas </th>
-</tr>
-</thead>
-<tr>
-<th>Versión</th>
-<td colspan="2">1.0 (12/12/2020)
-</td>
-</tr>
-<tr>
-<th>Descripción</th>
-<td colspan="2"><div id="UC-0018--html" class=""><p>El sistema deberá comportarse tal como se describe en el siguiente caso de uso cuando un empleado quiere asociar a un porte de alquiler el camión y los empleados que se encargarán de él. </p></div>
-</td>
-</tr>
-<tr>
-<th>Precondición</th>
-<td colspan="2">
-<div id="UC-0018-precondition-html" class=""><p>El empleado accede a la pestaña de alquileres, donde podrá consultar los alquileres ejecutados</p></div>
-</td>
-</tr>
-<tr>
-<th rowspan="4">Secuencia normal</th>
-<th class="step_number_column">Paso</th>
-<th class="step_action_column">Acción</th>
-</tr>
-<tr id="STP-0210">
-<th class="step_number">1</th>
-<td colspan="1"><div id="STP-0210--html" class=""><p>El actor Empleado del almacén (ACT-0019) entra en el listado de alquileres de <a href='#GLO-0016' class="rem_ref">cubas</a>. </p></div>
-</td>
-</tr>
-<tr id="STP-0211">
-<th class="step_number">2</th>
-<td colspan="1"><div id="STP-0211--html" class=""><p>El actor Empleado del almacén (ACT-0019) pulsa sobre el botón de añadir porte. </p></div>
-</td>
-</tr>
-<tr id="STP-0212">
-<th class="step_number">3</th>
-<td colspan="1">
-<div id="STP-0212--html" class=""><p>Si rellena el formulario con datos consistentes,  el sistema el sistema hace crea el porte asociado y lo tramita con éxito. </p></div>
-</td>
-</tr>
-<tr>
-<th>Postcondición</th>
-<td colspan="2">
-<div id="UC-0018-postcondition-html" class=""><p>El empleado asigna a un porte de alquiler, qué camión y empleados lo llevarán a cabo</p></div>
-</td>
-</tr>
-<tr>
-<th rowspan="2">Excepciones</th>
-<th class="step_number_column">Paso</th>
-<th class="exception_action_column">Acción</th>
-</tr>
-<tr id="STX-0030">
-<th class="step_number">3</th>
-<td colspan="1"><div id="STX-0030--html" class=""><p>Si el sistema no encuentra datos con los que asociar el porte, muestra un mensaje de error por pantalla,  el sistema hará saltar una excepción indicando el/los campo/s donde debe introducir correctamente el/los dato/s, a continuación este caso de uso continúa. </p></div>
-</td>
-</tr>
-<tr>
-<th>Comentarios</th>
-<td colspan="2">
-<div id="UC-0018-comments-html" class="remus_comments"><p>Ninguno</p></div>
 </td>
 </tr>
 </table>
@@ -3343,26 +2947,21 @@ Cuando tengamos todos los objetivos y procesos a implantar se indican</p>
 <tr>
 <th>Precondición</th>
 <td colspan="2">
-<div id="UC-0019-precondition-html" class=""><p>El empleado accede a la web</p></div>
+<div id="UC-0019-precondition-html" class=""><p>El empleado inicia sesión y accede a la lista de camiones</p></div>
 </td>
 </tr>
 <tr>
-<th rowspan="4">Secuencia normal</th>
+<th rowspan="3">Secuencia normal</th>
 <th class="step_number_column">Paso</th>
 <th class="step_action_column">Acción</th>
 </tr>
-<tr id="STP-0213">
-<th class="step_number">1</th>
-<td colspan="1"><div id="STP-0213--html" class=""><p>El actor Empleado del almacén (ACT-0019) accede a la vista de añadir camiones. </p></div>
-</td>
-</tr>
 <tr id="STP-0214">
-<th class="step_number">2</th>
-<td colspan="1"><div id="STP-0214--html" class=""><p>El actor Empleado del almacén (ACT-0019) añade los datos del camión. </p></div>
+<th class="step_number">1</th>
+<td colspan="1"><div id="STP-0214--html" class=""><p>El actor Empleado del almacén (ACT-0019) añade los datos del camión a guardar en el sistema. </p></div>
 </td>
 </tr>
 <tr id="STP-0215">
-<th class="step_number">3</th>
+<th class="step_number">2</th>
 <td colspan="1">
 <div id="STP-0215--html" class=""><p>Si el empleado ha añadido los datos correctamente,  el sistema añadirá los datos del camión a la base de datos. </p></div>
 </td>
@@ -3370,7 +2969,7 @@ Cuando tengamos todos los objetivos y procesos a implantar se indican</p>
 <tr>
 <th>Postcondición</th>
 <td colspan="2">
-<div id="UC-0019-postcondition-html" class=""><p>El empleado logra crear una nueva instancia para un camión</p></div>
+<div id="UC-0019-postcondition-html" class=""></div>
 </td>
 </tr>
 <tr>
@@ -3379,7 +2978,7 @@ Cuando tengamos todos los objetivos y procesos a implantar se indican</p>
 <th class="exception_action_column">Acción</th>
 </tr>
 <tr id="STX-0031">
-<th class="step_number">3</th>
+<th class="step_number">2</th>
 <td colspan="1"><div id="STX-0031--html" class=""><p>Si el empleado no ha introducido los datos correctamente,  el sistema hará saltar una excepción indicando el/los campo/s donde debe introducir correctamente el/los dato/s, a continuación este caso de uso continúa. </p></div>
 </td>
 </tr>
@@ -3413,7 +3012,7 @@ Cuando tengamos todos los objetivos y procesos a implantar se indican</p>
 <tr>
 <th>Precondición</th>
 <td colspan="2">
-<div id="UC-0020-precondition-html" class=""><p>El propietario accede a la web</p></div>
+<div id="UC-0020-precondition-html" class=""><p>El propietario inicia sesión y accede a la lista de empleados</p></div>
 </td>
 </tr>
 <tr>
@@ -3421,9 +3020,9 @@ Cuando tengamos todos los objetivos y procesos a implantar se indican</p>
 <th class="step_number_column">Paso</th>
 <th class="step_action_column">Acción</th>
 </tr>
-<tr id="STP-0219">
+<tr id="STP-0269">
 <th class="step_number">1</th>
-<td colspan="1"><div id="STP-0219--html" class=""><p>El actor Propietario (ACT-0020) pulsa sobre el botón de editar entidad relacionada con empleado. </p></div>
+<td colspan="1"><div id="STP-0269--html" class=""><p>El actor Propietario (ACT-0020) selecciona el empleado a modificar. </p></div>
 </td>
 </tr>
 <tr id="STP-0220">
@@ -3440,7 +3039,7 @@ Cuando tengamos todos los objetivos y procesos a implantar se indican</p>
 <tr>
 <th>Postcondición</th>
 <td colspan="2">
-<div id="UC-0020-postcondition-html" class=""><p>El propietario accede a la vista en cuestión, donde modificará los datos de empleados</p></div>
+<div id="UC-0020-postcondition-html" class=""></div>
 </td>
 </tr>
 <tr>

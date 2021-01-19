@@ -2572,28 +2572,28 @@
 <rem:urgency><rem:tbd/></rem:urgency>
 <rem:status><rem:tbd/></rem:status>
 <rem:stability><rem:tbd/></rem:stability>
-<rem:triggeringEvent>el cliente, una vez tiene todos los <rem:ref oid="GLO-0046">productos</rem:ref> en su carro de la compra, pulsa sobre el botón pagar (puede incluir descuento o no)</rem:triggeringEvent>
-<rem:precondition>El cliente debe haber iniciado sesión</rem:precondition>
-<rem:postcondition>Un empleado recibirá una notificación de compra para tener  los <rem:ref oid="GLO-0046">productos</rem:ref> guardados para el cliente y se emitirá una <rem:ref oid="GLO-0039">factura</rem:ref>. En caso de ser a domicilio, se notificará al encargado del almacén el cuál asignará a un transportista para que lleve el <rem:ref oid="GLO-0047">pedido</rem:ref> y se hará un porte en el momento de entrega</rem:postcondition>
+<rem:triggeringEvent>el cliente entra en nuestra web para comprar <rem:ref oid="GLO-0046">productos</rem:ref></rem:triggeringEvent>
+<rem:precondition></rem:precondition>
+<rem:postcondition>Un empleado recibirá una notificación de compra para tener  los <rem:ref oid="GLO-0046">productos</rem:ref> guardados para el cliente y se emitirá una <rem:ref oid="GLO-0039">factura</rem:ref>. En caso de ser a domicilio, se notificará al encargado del almacén el cuál asignará a un transportista para que lleve el <rem:ref oid="GLO-0047">pedido</rem:ref> y se hará un porte en el momento de entrega. El cliente podrá acceder al historial de compras del cliente donde podrá ver el estado del <rem:ref oid="GLO-0047">pedido</rem:ref>.</rem:postcondition>
 <rem:frequency>
 <rem:tbd/>
 </rem:frequency>
 <rem:step oid = "STP-0001">
 <rem:number>1</rem:number>
 <rem:actorAction actor = "ACT-0016">
-<rem:description>añade <rem:ref oid="GLO-0046">productos</rem:ref> en su carro de la compra</rem:description>
+<rem:description>selecciona <rem:ref oid="GLO-0046">productos</rem:ref></rem:description>
 </rem:actorAction>
 <rem:comments>Ninguno</rem:comments>
 </rem:step>
 <rem:step oid = "STP-0072">
 <rem:number>2</rem:number>
 <rem:actorAction actor = "ACT-0016">
-<rem:description>pulsa sobre el botón pagar</rem:description>
+<rem:description>introduce sus datos personales</rem:description>
 </rem:actorAction>
 <rem:stepException oid = "STX-0010">
 <rem:condition>el cliente no ha introducido <rem:ref oid="GLO-0046">productos</rem:ref> a su carro de la compra </rem:condition>
 <rem:systemAction>
-<rem:description>no le permitirá pulsar sobre el botón pagar</rem:description>
+<rem:description>no le permitirá efectuar la compra</rem:description>
 </rem:systemAction>
 <rem:termination value = "TEV-0003"/>
 <rem:comments>Ninguno</rem:comments>
@@ -2603,29 +2603,12 @@
 <rem:step oid = "STP-0074">
 <rem:number>3</rem:number>
 <rem:actorAction actor = "ACT-0016">
-<rem:description>introduce su tarjeta de crédito</rem:description>
+<rem:description>paga el porte a través de la opción de pago que haya escogido</rem:description>
 </rem:actorAction>
-<rem:stepException oid = "STX-0011">
-<rem:condition>el cliente no introduce su tarjeta de crédito</rem:condition>
-<rem:systemAction>
-<rem:description>le pedirá que introduzca su tarjeta de crédito para poder tramitar el <rem:ref oid="GLO-0047">pedido</rem:ref></rem:description>
-</rem:systemAction>
-<rem:termination value = "TEV-0002"/>
-<rem:comments>Ninguno</rem:comments>
-</rem:stepException>
-<rem:stepException oid = "STX-0034">
-<rem:condition>el cliente no introduce un descuento válido</rem:condition>
-<rem:systemAction>
-<rem:description>le pedirá que introduzca su tarjeta de crédito para poder tramitar el <rem:ref oid="GLO-0047">pedido</rem:ref></rem:description>
-</rem:systemAction>
-<rem:termination value = "TEV-0002"/>
-<rem:comments>Ninguno</rem:comments>
-</rem:stepException>
 <rem:comments>Ninguno</rem:comments>
 </rem:step>
 <rem:step oid = "STP-0073">
 <rem:number>4</rem:number>
-<rem:condition>el cliente ha introducido correctamente su tarjeta de crédito</rem:condition>
 <rem:systemAction>
 <rem:description>tramitará el <rem:ref oid="GLO-0047">pedido</rem:ref></rem:description>
 </rem:systemAction>
@@ -2649,15 +2632,15 @@
 <rem:status><rem:tbd/></rem:status>
 <rem:stability><rem:tbd/></rem:stability>
 <rem:triggeringEvent>un encargado y/o el dueño se percatará de las bajas existencias de un determinado <rem:ref oid="GLO-0046">producto</rem:ref>, por lo cual solicitará este <rem:ref oid="GLO-0046">producto</rem:ref> a sus <rem:ref oid="GLO-0048">proveedores</rem:ref></rem:triggeringEvent>
-<rem:precondition>El encargado y/o propietario debe haber iniciado sesión correctamente</rem:precondition>
-<rem:postcondition>El <rem:ref oid="GLO-0048">proveedor</rem:ref> enviará los <rem:ref oid="GLO-0046">productos</rem:ref> y se emitirá una <rem:ref oid="GLO-0039">factura</rem:ref></rem:postcondition>
+<rem:precondition>El encargado y/o propietario debe haber iniciado sesión correctamente y debe haber <rem:ref oid="GLO-0048">proveedores</rem:ref> registrados <rem:ref oid="GLO-0048">proveedores</rem:ref> en el sistema</rem:precondition>
+<rem:postcondition>El <rem:ref oid="GLO-0048">proveedor</rem:ref> enviará los <rem:ref oid="GLO-0046">productos</rem:ref> y se emitirá una <rem:ref oid="GLO-0039">factura</rem:ref>. Horas antes de que se efectúe la entrega del <rem:ref oid="GLO-0047">pedido</rem:ref> se le notificará a los empleados</rem:postcondition>
 <rem:frequency>
 <rem:tbd/>
 </rem:frequency>
 <rem:step oid = "STP-0004">
 <rem:number>1</rem:number>
 <rem:actorAction actor = "ACT-0020">
-<rem:description>solicita a sus provedores los <rem:ref oid="GLO-0046">productos</rem:ref> necesitados (mediante correo)</rem:description>
+<rem:description>selecciona los <rem:ref oid="GLO-0046">productos</rem:ref> a comprar y los <rem:ref oid="GLO-0048">proveedores</rem:ref> a los cuales quiere enviar la solicitud de compra (mediante correo)</rem:description>
 </rem:actorAction>
 <rem:comments>Ninguno</rem:comments>
 </rem:step>
@@ -2678,83 +2661,6 @@
 <rem:comments>Ninguno</rem:comments>
 </rem:step>
 </rem:useCase>
-<rem:useCase oid="UC-0003">
-<rem:name>Consulta proveedores</rem:name>
-<rem:version>
-<rem:major>1</rem:major>
-<rem:minor>0</rem:minor>
-<rem:date>
-<rem:year>2020</rem:year>
-<rem:month>11</rem:month>
-<rem:day>26</rem:day>
-</rem:date>
-</rem:version>
-<rem:comments>Ninguno</rem:comments>
-<rem:importance><rem:tbd/></rem:importance>
-<rem:urgency><rem:tbd/></rem:urgency>
-<rem:status><rem:tbd/></rem:status>
-<rem:stability><rem:tbd/></rem:stability>
-<rem:triggeringEvent>el propietario los <rem:ref oid="GLO-0048">proveedores</rem:ref> que de la empresa</rem:triggeringEvent>
-<rem:precondition>El propietario debe haber iniciado sesión correctamente</rem:precondition>
-<rem:postcondition>El propietario accede a la lista completa de <rem:ref oid="GLO-0048">proveedores</rem:ref></rem:postcondition>
-<rem:frequency>
-<rem:tbd/>
-</rem:frequency>
-<rem:step oid = "STP-0005">
-<rem:number>1</rem:number>
-<rem:actorAction actor = "ACT-0020">
-<rem:description>accede al apartado &quot;proveedores&quot;</rem:description>
-</rem:actorAction>
-<rem:comments>Ninguno</rem:comments>
-</rem:step>
-<rem:step oid = "STP-0077">
-<rem:number>2</rem:number>
-<rem:condition>hay datos de <rem:ref oid="GLO-0048">proveedores</rem:ref> en el sistema</rem:condition>
-<rem:systemAction>
-<rem:description>mostrará una página con los datos de los <rem:ref oid="GLO-0048">proveedores</rem:ref></rem:description>
-</rem:systemAction>
-<rem:stepException oid = "STX-0005">
-<rem:condition>no hay ningún <rem:ref oid="GLO-0048">proveedores</rem:ref> en la base de datos</rem:condition>
-<rem:systemAction>
-<rem:description>mostrará una página vacía y le preguntará si quiere introducir algún <rem:ref oid="GLO-0048">proveedor</rem:ref></rem:description>
-</rem:systemAction>
-<rem:termination value = "TEV-0002"/>
-<rem:comments>Ninguno</rem:comments>
-</rem:stepException>
-<rem:comments>Ninguno</rem:comments>
-</rem:step>
-</rem:useCase>
-<rem:useCase oid="UC-0004">
-<rem:name>Notificaciones sobre llegada de pedidos a trabajadores</rem:name>
-<rem:version>
-<rem:major>1</rem:major>
-<rem:minor>0</rem:minor>
-<rem:date>
-<rem:year>2020</rem:year>
-<rem:month>11</rem:month>
-<rem:day>26</rem:day>
-</rem:date>
-</rem:version>
-<rem:comments>Ninguno</rem:comments>
-<rem:importance><rem:tbd/></rem:importance>
-<rem:urgency><rem:tbd/></rem:urgency>
-<rem:status><rem:tbd/></rem:status>
-<rem:stability><rem:tbd/></rem:stability>
-<rem:triggeringEvent>un <rem:ref oid="GLO-0048">proveedor</rem:ref> realiza la entrega de los <rem:ref oid="GLO-0046">productos</rem:ref>/<rem:ref oid="GLO-0047">pedidos</rem:ref></rem:triggeringEvent>
-<rem:precondition>Se ha solicitado un <rem:ref oid="GLO-0047">pedido</rem:ref> al <rem:ref oid="GLO-0048">proveedor</rem:ref></rem:precondition>
-<rem:postcondition>Un empleado recoge el <rem:ref oid="GLO-0047">pedido</rem:ref> y registra la <rem:ref oid="GLO-0039">factura</rem:ref></rem:postcondition>
-<rem:frequency>
-<rem:tbd/>
-</rem:frequency>
-<rem:step oid = "STP-0006">
-<rem:number>1</rem:number>
-<rem:condition>los trabajadores estan correctamente registrados en la aplicación</rem:condition>
-<rem:systemAction>
-<rem:description> les enviarán una notificación (por pantalla) horas antes de que se efectúe la entrega del <rem:ref oid="GLO-0047">pedido</rem:ref> por parte del <rem:ref oid="GLO-0048">proveedor</rem:ref></rem:description>
-</rem:systemAction>
-<rem:comments>Ninguno</rem:comments>
-</rem:step>
-</rem:useCase>
 <rem:useCase oid="UC-0005">
 <rem:name>Consulta empleados</rem:name>
 <rem:version>
@@ -2772,20 +2678,13 @@
 <rem:status><rem:tbd/></rem:status>
 <rem:stability><rem:tbd/></rem:stability>
 <rem:triggeringEvent>el dueño accederá al apartado empleados y el sistema le permitirá ver una lista con los datos de los empleados</rem:triggeringEvent>
-<rem:precondition>El propietario debe haber iniciado sesión correctamente</rem:precondition>
-<rem:postcondition>El dueño podrá acceder al listado completo de empleados</rem:postcondition>
+<rem:precondition>El propietario debe haber iniciado sesión correctamente y accede a la lista de empleados</rem:precondition>
+<rem:postcondition></rem:postcondition>
 <rem:frequency>
 <rem:tbd/>
 </rem:frequency>
-<rem:step oid = "STP-0007">
-<rem:number>1</rem:number>
-<rem:actorAction actor = "ACT-0020">
-<rem:description>accede al apartado &quot;empleados&quot;</rem:description>
-</rem:actorAction>
-<rem:comments>Ninguno</rem:comments>
-</rem:step>
 <rem:step oid = "STP-0078">
-<rem:number>2</rem:number>
+<rem:number>1</rem:number>
 <rem:condition>hay datos de empleados en el sistema</rem:condition>
 <rem:systemAction>
 <rem:description> le mostrará un listado de los datos de los empleados</rem:description>
@@ -2817,44 +2716,31 @@
 <rem:urgency><rem:tbd/></rem:urgency>
 <rem:status><rem:tbd/></rem:status>
 <rem:stability><rem:tbd/></rem:stability>
-<rem:triggeringEvent>el cliente inicie sesión y quiera alquilar una <rem:ref oid="GLO-0016">cuba</rem:ref> de un listado</rem:triggeringEvent>
+<rem:triggeringEvent>el cliente quiera alquilar una <rem:ref oid="GLO-0016">cuba</rem:ref> a través de la web</rem:triggeringEvent>
 <rem:precondition>El cliente debe haber iniciado sesión correctamente</rem:precondition>
-<rem:postcondition>El encargado del almacén recibe una notificación el día que haya que llevar la <rem:ref oid="GLO-0016">cuba</rem:ref> y asigna un transportista para que lleve la <rem:ref oid="GLO-0016">cuba</rem:ref> a la dirección de envío proporcionada por el cliente</rem:postcondition>
+<rem:postcondition>Se le notifica al empleado el día que haya que llevar la <rem:ref oid="GLO-0016">cuba</rem:ref> y asigna un transportista para que lleve la <rem:ref oid="GLO-0016">cuba</rem:ref> a la dirección de envío proporcionada por el cliente</rem:postcondition>
 <rem:frequency>
 <rem:tbd/>
 </rem:frequency>
 <rem:step oid = "STP-0008">
 <rem:number>1</rem:number>
 <rem:actorAction actor = "ACT-0016">
-<rem:description>accede al apartado de <rem:ref oid="GLO-0016">cubas</rem:ref> y selecciona un periodo para alquilar una <rem:ref oid="GLO-0016">cuba</rem:ref></rem:description>
+<rem:description>selecciona una <rem:ref oid="GLO-0016">cuba</rem:ref> y una fecha para alquilar</rem:description>
 </rem:actorAction>
-<rem:comments>Ninguno</rem:comments>
-</rem:step>
-<rem:step oid = "STP-0079">
-<rem:number>2</rem:number>
-<rem:condition>hay <rem:ref oid="GLO-0016">cubas</rem:ref> disponibles en la fecha seleccionada</rem:condition>
+<rem:stepException oid = "STX-0035">
+<rem:condition>no está la <rem:ref oid="GLO-0016">cuba</rem:ref> disponible en esa</rem:condition>
 <rem:systemAction>
-<rem:description>muestra un listado de <rem:ref oid="GLO-0016">cubas</rem:ref> con sus datos </rem:description>
+<rem:description>le pedirá al cliente que seleccione otra fecha</rem:description>
 </rem:systemAction>
-<rem:stepException oid = "STX-0014">
-<rem:condition>no hay <rem:ref oid="GLO-0016">cubas</rem:ref> disponibles en la fecha seleccionada</rem:condition>
-<rem:systemAction>
-<rem:description>notificará que en dichas fechas no hay <rem:ref oid="GLO-0016">cubas</rem:ref> disponibles</rem:description>
-</rem:systemAction>
-<rem:termination value = "TEV-0003"/>
+<rem:termination>
+<rem:tbd/>
+</rem:termination>
 <rem:comments>Ninguno</rem:comments>
 </rem:stepException>
 <rem:comments>Ninguno</rem:comments>
 </rem:step>
-<rem:step oid = "STP-0202">
-<rem:number>3</rem:number>
-<rem:actorAction actor = "ACT-0016">
-<rem:description>pulsa la <rem:ref oid="GLO-0016">cuba</rem:ref> deseada</rem:description>
-</rem:actorAction>
-<rem:comments>Ninguno</rem:comments>
-</rem:step>
 <rem:step oid = "STP-0203">
-<rem:number>4</rem:number>
+<rem:number>2</rem:number>
 <rem:condition>rellena los datos de alquiler de <rem:ref oid="GLO-0016">cubas</rem:ref> correctamente</rem:condition>
 <rem:systemAction>
 <rem:description>tramita su <rem:ref oid="GLO-0047">pedido</rem:ref> con éxito</rem:description>
@@ -2871,7 +2757,7 @@
 </rem:step>
 </rem:useCase>
 <rem:useCase oid="UC-0007">
-<rem:name>Creación de un nuevo contrato en web</rem:name>
+<rem:name>Actualización de contrato en web</rem:name>
 <rem:version>
 <rem:major>1</rem:major>
 <rem:minor>0</rem:minor>
@@ -2886,22 +2772,22 @@
 <rem:urgency><rem:tbd/></rem:urgency>
 <rem:status><rem:tbd/></rem:status>
 <rem:stability><rem:tbd/></rem:stability>
-<rem:triggeringEvent>el propietario inicie sesión y necesite añadir un contrato nuevo</rem:triggeringEvent>
-<rem:precondition>El propietario debe haber iniciado sesión correctamente</rem:precondition>
-<rem:postcondition>El propietario introduce los datos correctos y podrá comprobar que se ha insertado el empleado</rem:postcondition>
+<rem:triggeringEvent>necesite añadir un contrato nuevo</rem:triggeringEvent>
+<rem:precondition>El propietario debe haber iniciado sesión correctamente y selecciona en la lista de empleados al empleado que quiere actualizar su contrato</rem:precondition>
+<rem:postcondition></rem:postcondition>
 <rem:frequency>
 <rem:tbd/>
 </rem:frequency>
 <rem:step oid = "STP-0080">
 <rem:number>1</rem:number>
 <rem:actorAction actor = "ACT-0020">
-<rem:description>accede al apartado de empleados y selecciona el formulario de inserción de empleado</rem:description>
+<rem:description>introduce los datos del contrato</rem:description>
 </rem:actorAction>
 <rem:comments>Ninguno</rem:comments>
 </rem:step>
 <rem:step oid = "STP-0081">
 <rem:number>2</rem:number>
-<rem:condition>los datos del formulario para el empleado son correctos</rem:condition>
+<rem:condition>los datos del formulario para el contrato son correctos</rem:condition>
 <rem:systemAction>
 <rem:description>nos da un mensaje de operación exitosa</rem:description>
 </rem:systemAction>
@@ -2938,29 +2824,15 @@
 <rem:frequency>
 <rem:tbd/>
 </rem:frequency>
-<rem:step oid = "STP-0082">
-<rem:number>1</rem:number>
-<rem:actorAction actor = "ACT-0020">
-<rem:description>accede a la sección &quot;Proveedores&quot;</rem:description>
-</rem:actorAction>
-<rem:comments>Ninguno</rem:comments>
-</rem:step>
-<rem:step oid = "STP-0083">
-<rem:number>2</rem:number>
-<rem:actorAction actor = "ACT-0020">
-<rem:description>clica sobre el botón &quot;Añadir nuevo proveedor&quot;</rem:description>
-</rem:actorAction>
-<rem:comments>Ninguno</rem:comments>
-</rem:step>
 <rem:step oid = "STP-0084">
-<rem:number>3</rem:number>
+<rem:number>1</rem:number>
 <rem:actorAction actor = "ACT-0020">
 <rem:description>introduce los datos del <rem:ref oid="GLO-0048">proveedor</rem:ref></rem:description>
 </rem:actorAction>
 <rem:comments>Ninguno</rem:comments>
 </rem:step>
 <rem:step oid = "STP-0085">
-<rem:number>4</rem:number>
+<rem:number>2</rem:number>
 <rem:condition>el propietario ha introducido los datos correctamente</rem:condition>
 <rem:systemAction>
 <rem:description>guardará los datos en la base de datos y notificará que el <rem:ref oid="GLO-0048">proveedor</rem:ref> se ha guardado correctamente</rem:description>
@@ -2998,29 +2870,15 @@
 <rem:frequency>
 <rem:tbd/>
 </rem:frequency>
-<rem:step oid = "STP-0086">
-<rem:number>1</rem:number>
-<rem:actorAction actor = "ACT-0020">
-<rem:description>accede a la sección &quot;Empleados&quot;</rem:description>
-</rem:actorAction>
-<rem:comments>Ninguno</rem:comments>
-</rem:step>
-<rem:step oid = "STP-0087">
-<rem:number>2</rem:number>
-<rem:actorAction actor = "ACT-0020">
-<rem:description>clica sobre el botón &quot;Añadir nuevo empleado&quot;</rem:description>
-</rem:actorAction>
-<rem:comments>Ninguno</rem:comments>
-</rem:step>
 <rem:step oid = "STP-0088">
-<rem:number>3</rem:number>
+<rem:number>1</rem:number>
 <rem:actorAction actor = "ACT-0020">
 <rem:description>introduce los datos del empleado</rem:description>
 </rem:actorAction>
 <rem:comments>Ninguno</rem:comments>
 </rem:step>
 <rem:step oid = "STP-0089">
-<rem:number>4</rem:number>
+<rem:number>2</rem:number>
 <rem:condition>el propietario ha introducido los datos correctamente</rem:condition>
 <rem:systemAction>
 <rem:description>guardará los datos en la base de datos y notificará que el empleado se ha guardado correctamente</rem:description>
@@ -3058,22 +2916,15 @@
 <rem:frequency>
 <rem:tbd/>
 </rem:frequency>
-<rem:step oid = "STP-0090">
+<rem:step oid = "STP-0091">
 <rem:number>1</rem:number>
 <rem:actorAction actor = "ACT-0016">
-<rem:description>pulsa sobre el botón &quot;Registrarse&quot;</rem:description>
-</rem:actorAction>
-<rem:comments>Ninguno</rem:comments>
-</rem:step>
-<rem:step oid = "STP-0091">
-<rem:number>2</rem:number>
-<rem:actorAction actor = "ACT-0016">
-<rem:description>añade sus datos</rem:description>
+<rem:description>añade sus datos en el formulario de registro</rem:description>
 </rem:actorAction>
 <rem:comments>Ninguno</rem:comments>
 </rem:step>
 <rem:step oid = "STP-0092">
-<rem:number>3</rem:number>
+<rem:number>2</rem:number>
 <rem:condition>el cliente ha añadido sus datos correctamente</rem:condition>
 <rem:systemAction>
 <rem:description>añadirá los datos del cliente a la base de datos y redigirá al cliente a la página principal</rem:description>
@@ -3106,27 +2957,13 @@
 <rem:status><rem:tbd/></rem:status>
 <rem:stability><rem:tbd/></rem:stability>
 <rem:triggeringEvent>un empleado (de cualquier rol) quiere añadir una <rem:ref oid="GLO-0039">factura</rem:ref> en la web</rem:triggeringEvent>
-<rem:precondition>El empleado accede a la web</rem:precondition>
-<rem:postcondition>El empleado puede acceder a las funcionalidades del sistema creadas para la creación de <rem:ref oid="GLO-0039">facturas</rem:ref></rem:postcondition>
+<rem:precondition>El empleado accede a la web e inicia sesión</rem:precondition>
+<rem:postcondition></rem:postcondition>
 <rem:frequency>
 <rem:tbd/>
 </rem:frequency>
-<rem:step oid = "STP-0181">
-<rem:number>1</rem:number>
-<rem:actorAction actor = "ACT-0018">
-<rem:description>pulsa sobre el botón de registrar <rem:ref oid="GLO-0039">facturas</rem:ref></rem:description>
-</rem:actorAction>
-<rem:comments>Ninguno</rem:comments>
-</rem:step>
-<rem:step oid = "STP-0182">
-<rem:number>2</rem:number>
-<rem:actorAction actor = "ACT-0018">
-<rem:description>añade sus datos de la <rem:ref oid="GLO-0039">factura</rem:ref></rem:description>
-</rem:actorAction>
-<rem:comments>Ninguno</rem:comments>
-</rem:step>
 <rem:step oid = "STP-0183">
-<rem:number>3</rem:number>
+<rem:number>1</rem:number>
 <rem:condition>el empleado ha añadido los datos correctamente</rem:condition>
 <rem:systemAction>
 <rem:description>añadirá los datos de la <rem:ref oid="GLO-0039">factura</rem:ref> a la base de datos y redigirá al empleado a la lista de <rem:ref oid="GLO-0039">facturas</rem:ref></rem:description>
@@ -3139,6 +2976,13 @@
 <rem:termination value = "TEV-0002"/>
 <rem:comments>Ninguno</rem:comments>
 </rem:stepException>
+<rem:comments>Ninguno</rem:comments>
+</rem:step>
+<rem:step oid = "STP-0268">
+<rem:number>2</rem:number>
+<rem:actorAction actor = "ACT-0015">
+<rem:description>introduce los datos de la <rem:ref oid="GLO-0039">factura</rem:ref></rem:description>
+</rem:actorAction>
 <rem:comments>Ninguno</rem:comments>
 </rem:step>
 </rem:useCase>
@@ -3159,27 +3003,20 @@
 <rem:status><rem:tbd/></rem:status>
 <rem:stability><rem:tbd/></rem:stability>
 <rem:triggeringEvent>un empleado desea modificar una entidad</rem:triggeringEvent>
-<rem:precondition>El empleado accede a la web</rem:precondition>
+<rem:precondition>El empleado accede a la web y selecciona la entidad a editar</rem:precondition>
 <rem:postcondition>El empleado puede acceder a las funcionalidades del sistema creados para los empleados, donde hace el cambio de la entidad</rem:postcondition>
 <rem:frequency>
 <rem:tbd/>
 </rem:frequency>
-<rem:step oid = "STP-0184">
-<rem:number>1</rem:number>
-<rem:actorAction actor = "ACT-0018">
-<rem:description>pulsa sobre el botón de editar entidad</rem:description>
-</rem:actorAction>
-<rem:comments>Ninguno</rem:comments>
-</rem:step>
 <rem:step oid = "STP-0185">
-<rem:number>2</rem:number>
+<rem:number>1</rem:number>
 <rem:actorAction actor = "ACT-0018">
 <rem:description>añade los datos modificados</rem:description>
 </rem:actorAction>
 <rem:comments>Ninguno</rem:comments>
 </rem:step>
 <rem:step oid = "STP-0186">
-<rem:number>3</rem:number>
+<rem:number>2</rem:number>
 <rem:condition>el empleado ha añadido los datos correctamente</rem:condition>
 <rem:systemAction>
 <rem:description>modificará los datos de la entidad sobre la base de datos y redigirá al empleado a la página de consulta</rem:description>
@@ -3188,52 +3025,6 @@
 <rem:condition>el empleado no ha introducido los datos correctamente</rem:condition>
 <rem:systemAction>
 <rem:description>hará saltar una excepción indicando el/los campo/s donde debe introducir correctamente el/los dato/s</rem:description>
-</rem:systemAction>
-<rem:termination value = "TEV-0002"/>
-<rem:comments>Ninguno</rem:comments>
-</rem:stepException>
-<rem:comments>Ninguno</rem:comments>
-</rem:step>
-</rem:useCase>
-<rem:useCase oid="UC-0013">
-<rem:name>Consulta de facturas (de clientes o proveedores)</rem:name>
-<rem:version>
-<rem:major>1</rem:major>
-<rem:minor>0</rem:minor>
-<rem:date>
-<rem:year>2020</rem:year>
-<rem:month>12</rem:month>
-<rem:day>10</rem:day>
-</rem:date>
-</rem:version>
-<rem:comments>Ninguno</rem:comments>
-<rem:importance><rem:tbd/></rem:importance>
-<rem:urgency><rem:tbd/></rem:urgency>
-<rem:status><rem:tbd/></rem:status>
-<rem:stability><rem:tbd/></rem:stability>
-<rem:triggeringEvent>un empleado accede al apartado de <rem:ref oid="GLO-0039">facturas</rem:ref></rem:triggeringEvent>
-<rem:precondition>El empleado accede a a la web</rem:precondition>
-<rem:postcondition>El empleado puede acceder a las funcionalidades del sistema creados para la consulta de <rem:ref oid="GLO-0039">facturas</rem:ref></rem:postcondition>
-<rem:frequency>
-<rem:tbd/>
-</rem:frequency>
-<rem:step oid = "STP-0187">
-<rem:number>1</rem:number>
-<rem:actorAction actor = "ACT-0018">
-<rem:description>pulsa sobre el botón de consulta de <rem:ref oid="GLO-0039">facturas</rem:ref></rem:description>
-</rem:actorAction>
-<rem:comments>Ninguno</rem:comments>
-</rem:step>
-<rem:step oid = "STP-0189">
-<rem:number>2</rem:number>
-<rem:condition>el empleado accede a los datos correctamente</rem:condition>
-<rem:systemAction>
-<rem:description>muestra todos los datos disponibles sobre las <rem:ref oid="GLO-0039">facturas</rem:ref> del negocio</rem:description>
-</rem:systemAction>
-<rem:stepException oid = "STX-0021">
-<rem:condition>la base de datos no ha recibido alta de <rem:ref oid="GLO-0039">facturas</rem:ref></rem:condition>
-<rem:systemAction>
-<rem:description>hará saltar una excepción indicando que no hay <rem:ref oid="GLO-0039">facturas</rem:ref> registradas, acto seguido se indica si se quiere añadir alguna</rem:description>
 </rem:systemAction>
 <rem:termination value = "TEV-0002"/>
 <rem:comments>Ninguno</rem:comments>
@@ -3263,81 +3054,21 @@
 <rem:frequency>
 <rem:tbd/>
 </rem:frequency>
-<rem:step oid = "STP-0193">
-<rem:number>1</rem:number>
-<rem:actorAction actor = "ACT-0019">
-<rem:description>pulsa sobre el botón de añadir incidencia en la lista de órdenes de alquiler</rem:description>
-</rem:actorAction>
-<rem:comments>Ninguno</rem:comments>
-</rem:step>
 <rem:step oid = "STP-0194">
-<rem:number>2</rem:number>
+<rem:number>1</rem:number>
 <rem:actorAction actor = "ACT-0019">
 <rem:description>añade los datos de la incidencia</rem:description>
 </rem:actorAction>
 <rem:comments>Ninguno</rem:comments>
 </rem:step>
 <rem:step oid = "STP-0195">
-<rem:number>3</rem:number>
+<rem:number>2</rem:number>
 <rem:condition>el empleado añade unos datos consistentes de la incidencia</rem:condition>
 <rem:systemAction>
 <rem:description>añadirá la incidencia a la orden de alquiler (que internamente se relaciona con el cliente)</rem:description>
 </rem:systemAction>
 <rem:stepException oid = "STX-0023">
 <rem:condition>el empleado no añade datos correctos en el formulario</rem:condition>
-<rem:systemAction>
-<rem:description>hará saltar una excepción indicando el/los campo/s donde debe introducir correctamente el/los dato/s</rem:description>
-</rem:systemAction>
-<rem:termination value = "TEV-0002"/>
-<rem:comments>Ninguno</rem:comments>
-</rem:stepException>
-<rem:comments>Ninguno</rem:comments>
-</rem:step>
-</rem:useCase>
-<rem:useCase oid="UC-0015">
-<rem:name>Compra en el carrito de alertas</rem:name>
-<rem:version>
-<rem:major>1</rem:major>
-<rem:minor>0</rem:minor>
-<rem:date>
-<rem:year>2020</rem:year>
-<rem:month>12</rem:month>
-<rem:day>11</rem:day>
-</rem:date>
-</rem:version>
-<rem:comments>Ninguno</rem:comments>
-<rem:importance><rem:tbd/></rem:importance>
-<rem:urgency><rem:tbd/></rem:urgency>
-<rem:status><rem:tbd/></rem:status>
-<rem:stability><rem:tbd/></rem:stability>
-<rem:triggeringEvent>un empleado quiere ver que <rem:ref oid="GLO-0046">productos</rem:ref> tienen un stock bajo</rem:triggeringEvent>
-<rem:precondition>El empleado accede a el carrito de alertas, donde podrá ver que <rem:ref oid="GLO-0047">pedidos</rem:ref> están en stock de riesgo</rem:precondition>
-<rem:postcondition>El empleado puede pasar al carrito de alertas donde, podrá seleccionar que <rem:ref oid="GLO-0046">productos</rem:ref> pedirle a que <rem:ref oid="GLO-0048">proveedores</rem:ref> por correo</rem:postcondition>
-<rem:frequency>
-<rem:tbd/>
-</rem:frequency>
-<rem:step oid = "STP-0196">
-<rem:number>1</rem:number>
-<rem:actorAction actor = "ACT-0018">
-<rem:description>pulsa sobre el botón de ejecutar la solicitud del carrito de alerta</rem:description>
-</rem:actorAction>
-<rem:comments>Ninguno</rem:comments>
-</rem:step>
-<rem:step oid = "STP-0197">
-<rem:number>2</rem:number>
-<rem:actorAction actor = "ACT-0018">
-<rem:description>añada los datos necesarios para el envío del correo, pulsará el botón de enviar</rem:description>
-</rem:actorAction>
-<rem:comments>Ninguno</rem:comments>
-</rem:step>
-<rem:step oid = "STP-0198">
-<rem:number>3</rem:number>
-<rem:condition>el empleado añade la descriptión correcta</rem:condition>
-<rem:systemAction>
-<rem:description>el sistema hace el envío del correo</rem:description>
-</rem:systemAction>
-<rem:stepException oid = "STX-0024">
-<rem:condition>el empleado no añade datos correctos en la descripción</rem:condition>
 <rem:systemAction>
 <rem:description>hará saltar una excepción indicando el/los campo/s donde debe introducir correctamente el/los dato/s</rem:description>
 </rem:systemAction>
@@ -3369,28 +3100,21 @@
 <rem:frequency>
 <rem:tbd/>
 </rem:frequency>
-<rem:step oid = "STP-0199">
+<rem:step oid = "STP-0200">
 <rem:number>1</rem:number>
 <rem:actorAction actor = "ACT-0020">
-<rem:description>pulsa en la herramienta de informes</rem:description>
-</rem:actorAction>
-<rem:comments>Ninguno</rem:comments>
-</rem:step>
-<rem:step oid = "STP-0200">
-<rem:number>2</rem:number>
-<rem:actorAction actor = "ACT-0020">
-<rem:description>accede a una categoría específica de los informes y le da click en el botón de generar</rem:description>
+<rem:description>accede a una categoría específica de los informes</rem:description>
 </rem:actorAction>
 <rem:comments>Ninguno</rem:comments>
 </rem:step>
 <rem:step oid = "STP-0201">
-<rem:number>3</rem:number>
-<rem:condition>el propietario añade la descriptión correcta</rem:condition>
+<rem:number>2</rem:number>
+<rem:condition>el propietario genera el informe con los datos correctos</rem:condition>
 <rem:systemAction>
-<rem:description>el sistema hace crea el informe y lo muestra por pantalla</rem:description>
+<rem:description>crea el informe y lo muestra por pantalla</rem:description>
 </rem:systemAction>
 <rem:stepException oid = "STX-0025">
-<rem:condition>el sistema no encuentra datos con los que generar el informe, muestra una excepción por pantalla</rem:condition>
+<rem:condition>el sistema no encuentra datos con los que generar el informe</rem:condition>
 <rem:systemAction>
 <rem:description>hará saltar una excepción indicando el/los campo/s donde debe introducir correctamente el/los dato/s</rem:description>
 </rem:systemAction>
@@ -3416,87 +3140,27 @@
 <rem:urgency><rem:tbd/></rem:urgency>
 <rem:status><rem:tbd/></rem:status>
 <rem:stability><rem:tbd/></rem:stability>
-<rem:triggeringEvent>un empleado quiere asociar a un porte el camión y los empleados que se encargarán de él</rem:triggeringEvent>
-<rem:precondition>El empleado accede a la pestaña de <rem:ref oid="GLO-0047">pedidos</rem:ref>, donde podrá consultar los <rem:ref oid="GLO-0047">pedidos</rem:ref> que se han ejecutado</rem:precondition>
-<rem:postcondition>El empleado asigna a un porte de <rem:ref oid="GLO-0047">pedido</rem:ref>, qué camión y empleados lo llevarán a cabo</rem:postcondition>
+<rem:triggeringEvent>un empleado quiere asociar a un porte, el camión y los empleados que se encargarán de él</rem:triggeringEvent>
+<rem:precondition>El empleado accede a lista de <rem:ref oid="GLO-0047">pedidos</rem:ref></rem:precondition>
+<rem:postcondition></rem:postcondition>
 <rem:frequency>
 <rem:tbd/>
 </rem:frequency>
-<rem:step oid = "STP-0204">
+<rem:step oid = "STP-0205">
 <rem:number>1</rem:number>
 <rem:actorAction actor = "ACT-0019">
-<rem:description>entra en el listado de <rem:ref oid="GLO-0047">pedidos</rem:ref></rem:description>
-</rem:actorAction>
-<rem:comments>Ninguno</rem:comments>
-</rem:step>
-<rem:step oid = "STP-0205">
-<rem:number>2</rem:number>
-<rem:actorAction actor = "ACT-0019">
-<rem:description>pulsa sobre el botón de añadir porte</rem:description>
+<rem:description>añade los datos para crear el porte</rem:description>
 </rem:actorAction>
 <rem:comments>Ninguno</rem:comments>
 </rem:step>
 <rem:step oid = "STP-0206">
-<rem:number>3</rem:number>
+<rem:number>2</rem:number>
 <rem:condition>rellena el formulario con datos consistentes</rem:condition>
 <rem:systemAction>
-<rem:description>el sistema hace crea el porte asociado y lo tramita con éxito</rem:description>
+<rem:description>crea el porte asociado y lo tramita con éxito</rem:description>
 </rem:systemAction>
 <rem:stepException oid = "STX-0028">
-<rem:condition>el sistema no encuentra datos con los que asociar el porte, muestra un mensaje de error por pantalla</rem:condition>
-<rem:systemAction>
-<rem:description>hará saltar una excepción indicando el/los campo/s donde debe introducir correctamente el/los dato/s</rem:description>
-</rem:systemAction>
-<rem:termination value = "TEV-0002"/>
-<rem:comments>Ninguno</rem:comments>
-</rem:stepException>
-<rem:comments>Ninguno</rem:comments>
-</rem:step>
-</rem:useCase>
-<rem:useCase oid="UC-0018">
-<rem:name>Asociación de portes a alquileres de cubas</rem:name>
-<rem:version>
-<rem:major>1</rem:major>
-<rem:minor>0</rem:minor>
-<rem:date>
-<rem:year>2020</rem:year>
-<rem:month>12</rem:month>
-<rem:day>12</rem:day>
-</rem:date>
-</rem:version>
-<rem:comments>Ninguno</rem:comments>
-<rem:importance><rem:tbd/></rem:importance>
-<rem:urgency><rem:tbd/></rem:urgency>
-<rem:status><rem:tbd/></rem:status>
-<rem:stability><rem:tbd/></rem:stability>
-<rem:triggeringEvent>un empleado quiere asociar a un porte de alquiler el camión y los empleados que se encargarán de él</rem:triggeringEvent>
-<rem:precondition>El empleado accede a la pestaña de alquileres, donde podrá consultar los alquileres ejecutados</rem:precondition>
-<rem:postcondition>El empleado asigna a un porte de alquiler, qué camión y empleados lo llevarán a cabo</rem:postcondition>
-<rem:frequency>
-<rem:tbd/>
-</rem:frequency>
-<rem:step oid = "STP-0210">
-<rem:number>1</rem:number>
-<rem:actorAction actor = "ACT-0019">
-<rem:description>entra en el listado de alquileres de <rem:ref oid="GLO-0016">cubas</rem:ref></rem:description>
-</rem:actorAction>
-<rem:comments>Ninguno</rem:comments>
-</rem:step>
-<rem:step oid = "STP-0211">
-<rem:number>2</rem:number>
-<rem:actorAction actor = "ACT-0019">
-<rem:description>pulsa sobre el botón de añadir porte</rem:description>
-</rem:actorAction>
-<rem:comments>Ninguno</rem:comments>
-</rem:step>
-<rem:step oid = "STP-0212">
-<rem:number>3</rem:number>
-<rem:condition>rellena el formulario con datos consistentes</rem:condition>
-<rem:systemAction>
-<rem:description>el sistema hace crea el porte asociado y lo tramita con éxito</rem:description>
-</rem:systemAction>
-<rem:stepException oid = "STX-0030">
-<rem:condition>el sistema no encuentra datos con los que asociar el porte, muestra un mensaje de error por pantalla</rem:condition>
+<rem:condition>el sistema no encuentra datos con los que asociar el porte</rem:condition>
 <rem:systemAction>
 <rem:description>hará saltar una excepción indicando el/los campo/s donde debe introducir correctamente el/los dato/s</rem:description>
 </rem:systemAction>
@@ -3523,27 +3187,20 @@
 <rem:status><rem:tbd/></rem:status>
 <rem:stability><rem:tbd/></rem:stability>
 <rem:triggeringEvent>un empleado desea añadir un nuevo camión</rem:triggeringEvent>
-<rem:precondition>El empleado accede a la web</rem:precondition>
-<rem:postcondition>El empleado logra crear una nueva instancia para un camión</rem:postcondition>
+<rem:precondition>El empleado inicia sesión y accede a la lista de camiones</rem:precondition>
+<rem:postcondition></rem:postcondition>
 <rem:frequency>
 <rem:tbd/>
 </rem:frequency>
-<rem:step oid = "STP-0213">
+<rem:step oid = "STP-0214">
 <rem:number>1</rem:number>
 <rem:actorAction actor = "ACT-0019">
-<rem:description>accede a la vista de añadir camiones</rem:description>
-</rem:actorAction>
-<rem:comments>Ninguno</rem:comments>
-</rem:step>
-<rem:step oid = "STP-0214">
-<rem:number>2</rem:number>
-<rem:actorAction actor = "ACT-0019">
-<rem:description>añade los datos del camión</rem:description>
+<rem:description>añade los datos del camión a guardar en el sistema</rem:description>
 </rem:actorAction>
 <rem:comments>Ninguno</rem:comments>
 </rem:step>
 <rem:step oid = "STP-0215">
-<rem:number>3</rem:number>
+<rem:number>2</rem:number>
 <rem:condition>el empleado ha añadido los datos correctamente</rem:condition>
 <rem:systemAction>
 <rem:description>añadirá los datos del camión a la base de datos</rem:description>
@@ -3576,15 +3233,15 @@
 <rem:status><rem:tbd/></rem:status>
 <rem:stability><rem:tbd/></rem:stability>
 <rem:triggeringEvent>el propietario desea modificar una entidad relacionada con empleados</rem:triggeringEvent>
-<rem:precondition>El propietario accede a la web</rem:precondition>
-<rem:postcondition>El propietario accede a la vista en cuestión, donde modificará los datos de empleados</rem:postcondition>
+<rem:precondition>El propietario inicia sesión y accede a la lista de empleados</rem:precondition>
+<rem:postcondition></rem:postcondition>
 <rem:frequency>
 <rem:tbd/>
 </rem:frequency>
-<rem:step oid = "STP-0219">
+<rem:step oid = "STP-0269">
 <rem:number>1</rem:number>
 <rem:actorAction actor = "ACT-0020">
-<rem:description>pulsa sobre el botón de editar entidad relacionada con empleado</rem:description>
+<rem:description>selecciona el empleado a modificar</rem:description>
 </rem:actorAction>
 <rem:comments>Ninguno</rem:comments>
 </rem:step>

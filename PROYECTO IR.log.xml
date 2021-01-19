@@ -154,6 +154,15 @@
 <rem:description><![CDATA[Eliminado el objeto [ORG-0001] OrgOG con 0 hijos y 1 cambios]]></rem:description>
 </rem:change>
 <rem:change>
+<rem:type>U</rem:type>
+<rem:owner>UC-0011</rem:owner><rem:date>
+<rem:year>2021</rem:year>
+<rem:month>1</rem:month>
+<rem:day>19</rem:day>
+</rem:date>
+<rem:description><![CDATA[Añadido hijo nº2 (Actor Empleado de la tienda in...)]]></rem:description>
+</rem:change>
+<rem:change>
 <rem:type>C</rem:type>
 <rem:owner>CHS-0004</rem:owner><rem:date>
 <rem:year>2020</rem:year>
@@ -9982,15 +9991,6 @@ En esta reunión inicial con los dueños del negocio ...]]]></rem:description>
 </rem:change>
 <rem:change>
 <rem:type>U</rem:type>
-<rem:owner>UC-0003</rem:owner><rem:date>
-<rem:year>2020</rem:year>
-<rem:month>11</rem:month>
-<rem:day>26</rem:day>
-</rem:date>
-<rem:description><![CDATA[Propiedad [Postcondition] actualizada [mente] -> []]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>U</rem:type>
 <rem:owner>GRF-0003</rem:owner><rem:date>
 <rem:year>2020</rem:year>
 <rem:month>11</rem:month>
@@ -12289,15 +12289,6 @@ El proceso acabará con la confirmación de entrega del pedido por parte del encar
 </rem:change>
 <rem:change>
 <rem:type>U</rem:type>
-<rem:owner>UC-0003</rem:owner><rem:date>
-<rem:year>2020</rem:year>
-<rem:month>11</rem:month>
-<rem:day>26</rem:day>
-</rem:date>
-<rem:description><![CDATA[Propiedad [Condition] del hijo nº1 actualizada: [el cliente tiene productos en su carro de la compra] -> [Un encargado y/o el dueño inicia sesión correctamente accede al apartado "proveedores"]]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>U</rem:type>
 <rem:owner>UC-0002</rem:owner><rem:date>
 <rem:year>2020</rem:year>
 <rem:month>11</rem:month>
@@ -12316,15 +12307,6 @@ El proceso acabará con la confirmación de entrega del pedido por parte del encar
 </rem:change>
 <rem:change>
 <rem:type>U</rem:type>
-<rem:owner>UC-0003</rem:owner><rem:date>
-<rem:year>2020</rem:year>
-<rem:month>11</rem:month>
-<rem:day>26</rem:day>
-</rem:date>
-<rem:description><![CDATA[Propiedad [Name] actualizada [Copia de Compra de productos por parte del cliente] -> [Consulta proveedores]]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>U</rem:type>
 <rem:owner>UC-0001</rem:owner><rem:date>
 <rem:year>2020</rem:year>
 <rem:month>11</rem:month>
@@ -12334,30 +12316,12 @@ El proceso acabará con la confirmación de entrega del pedido por parte del encar
 </rem:change>
 <rem:change>
 <rem:type>U</rem:type>
-<rem:owner>UC-0003</rem:owner><rem:date>
-<rem:year>2020</rem:year>
-<rem:month>11</rem:month>
-<rem:day>26</rem:day>
-</rem:date>
-<rem:description><![CDATA[Propiedad [Condition] del hijo nº1 actualizada: [Un encargado y/o el dueño inicia sesión correctamente accede al apartado "proveedores"] -> [Un encargado y/o el dueño inicia sesión correctamente accede al apartado "proveedores" y el sistema le muestra un listado con los datos de los proveedores]]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>U</rem:type>
 <rem:owner>GLO-0058</rem:owner><rem:date>
 <rem:year>2020</rem:year>
 <rem:month>11</rem:month>
 <rem:day>26</rem:day>
 </rem:date>
 <rem:description><![CDATA[Propiedad [Name] actualizada [HU-005 Notificaciones sobre llegada de pedidos a proveedores] -> [HU-005 Notificaciones sobre llegada de pedidos a trabajadores]]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>U</rem:type>
-<rem:owner>UC-0004</rem:owner><rem:date>
-<rem:year>2020</rem:year>
-<rem:month>11</rem:month>
-<rem:day>26</rem:day>
-</rem:date>
-<rem:description><![CDATA[Propiedad [Condition] del hijo nº1 actualizada: [Un encargado y/o el dueño inicia sesión correctamente accede al apartado "proveedores" y el sistema le muestra un listado con los datos de los proveedores] -> [Los trabajadores estan correctamente registrados en la aplicación, por lo cual horas antes se les enviarán una notificación de la recogida del pedido]]]></rem:description>
 </rem:change>
 <rem:change>
 <rem:type>C</rem:type>
@@ -12370,39 +12334,12 @@ El proceso acabará con la confirmación de entrega del pedido por parte del encar
 </rem:change>
 <rem:change>
 <rem:type>U</rem:type>
-<rem:owner>UC-0004</rem:owner><rem:date>
-<rem:year>2020</rem:year>
-<rem:month>11</rem:month>
-<rem:day>26</rem:day>
-</rem:date>
-<rem:description><![CDATA[Propiedad [TriggeringEvent] actualizada [el cliente, una vez tiene todos los productos en su carro de la compra, pulsa sobre el botón pagar] -> [Un proveedor realizará la entrega de los productos]]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>U</rem:type>
 <rem:owner>SEC-0051</rem:owner><rem:date>
 <rem:year>2020</rem:year>
 <rem:month>11</rem:month>
 <rem:day>26</rem:day>
 </rem:date>
 <rem:description><![CDATA[Añadido hijo nº4 ([UC-0004] Copia de Consulta proveedores)]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>U</rem:type>
-<rem:owner>UC-0003</rem:owner><rem:date>
-<rem:year>2020</rem:year>
-<rem:month>11</rem:month>
-<rem:day>26</rem:day>
-</rem:date>
-<rem:description><![CDATA[Propiedad [Postcondition] actualizada [El cliente debe de introducir su tarjeta de crédito correctamente] -> [mente]]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>U</rem:type>
-<rem:owner>UC-0004</rem:owner><rem:date>
-<rem:year>2020</rem:year>
-<rem:month>11</rem:month>
-<rem:day>26</rem:day>
-</rem:date>
-<rem:description><![CDATA[Propiedad [Postcondition] actualizada [mente] -> []]]></rem:description>
 </rem:change>
 <rem:change>
 <rem:type>C</rem:type>
@@ -12412,15 +12349,6 @@ El proceso acabará con la confirmación de entrega del pedido por parte del encar
 <rem:day>26</rem:day>
 </rem:date>
 <rem:description><![CDATA[Clonado a partir de [UC-0004] Notificaciones sobre llegada de pedidos a trabajadores del proyecto C:\Users\DarkD\Documents\Proyecto-IR-master\Proyecto-IR-master (3)\Proyecto-IR-master\PROYECTO IR.rem]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>C</rem:type>
-<rem:owner>UC-0004</rem:owner><rem:date>
-<rem:year>2020</rem:year>
-<rem:month>11</rem:month>
-<rem:day>26</rem:day>
-</rem:date>
-<rem:description><![CDATA[Clonado a partir de [UC-0003] Consulta proveedores del proyecto C:\Users\DarkD\Documents\Proyecto-IR-master\Proyecto-IR-master (3)\Proyecto-IR-master\PROYECTO IR.rem]]></rem:description>
 </rem:change>
 <rem:change>
 <rem:type>U</rem:type>
@@ -12439,15 +12367,6 @@ El proceso acabará con la confirmación de entrega del pedido por parte del encar
 <rem:day>26</rem:day>
 </rem:date>
 <rem:description><![CDATA[Propiedad [Name] actualizada [Copia de Notificaciones sobre llegada de pedidos a trabajadores] -> [Consulta empleados]]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>U</rem:type>
-<rem:owner>UC-0004</rem:owner><rem:date>
-<rem:year>2020</rem:year>
-<rem:month>11</rem:month>
-<rem:day>26</rem:day>
-</rem:date>
-<rem:description><![CDATA[Propiedad [Precondition] actualizada [debe haber iniciado sesión correctamente] -> [Se ha solicitado un pedido al proveedor]]]></rem:description>
 </rem:change>
 <rem:change>
 <rem:type>U</rem:type>
@@ -12477,15 +12396,6 @@ El proceso acabará con la confirmación de entrega del pedido por parte del encar
 <rem:description><![CDATA[Propiedad [Condition] del hijo nº1 actualizada: [el cliente no tiene nada en su carro de la compra] -> [el cliente tiene productos en su carro de la compra]]]></rem:description>
 </rem:change>
 <rem:change>
-<rem:type>C</rem:type>
-<rem:owner>UC-0003</rem:owner><rem:date>
-<rem:year>2020</rem:year>
-<rem:month>11</rem:month>
-<rem:day>26</rem:day>
-</rem:date>
-<rem:description><![CDATA[Clonado a partir de [UC-0001] Compra de productos por parte del cliente del proyecto C:\Users\DarkD\Documents\Proyecto-IR-master\Proyecto-IR-master (3)\Proyecto-IR-master\PROYECTO IR.rem]]></rem:description>
-</rem:change>
-<rem:change>
 <rem:type>U</rem:type>
 <rem:owner>SEC-0051</rem:owner><rem:date>
 <rem:year>2020</rem:year>
@@ -12493,24 +12403,6 @@ El proceso acabará con la confirmación de entrega del pedido por parte del encar
 <rem:day>26</rem:day>
 </rem:date>
 <rem:description><![CDATA[Añadido hijo nº3 ([UC-0003] Copia de Compra de productos por parte del cliente)]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>U</rem:type>
-<rem:owner>UC-0004</rem:owner><rem:date>
-<rem:year>2020</rem:year>
-<rem:month>11</rem:month>
-<rem:day>26</rem:day>
-</rem:date>
-<rem:description><![CDATA[Propiedad [Name] actualizada [Copia de Consulta proveedores] -> [Notificaciones sobre llegada de pedidos a trabajadores]]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>U</rem:type>
-<rem:owner>UC-0003</rem:owner><rem:date>
-<rem:year>2020</rem:year>
-<rem:month>11</rem:month>
-<rem:day>26</rem:day>
-</rem:date>
-<rem:description><![CDATA[Propiedad [Precondition] actualizada [El cliente de haber iniciado sesión y debe de haber introducido productos a su carrito de la compra.] -> [debe haber iniciado sesión correctamente]]]></rem:description>
 </rem:change>
 <rem:change>
 <rem:type>U</rem:type>
@@ -15367,15 +15259,6 @@ Tras pedir los productos anotados en el carrito, se espera a la entrega de éstos
 </rem:change>
 <rem:change>
 <rem:type>U</rem:type>
-<rem:owner>UC-0003</rem:owner><rem:date>
-<rem:year>2020</rem:year>
-<rem:month>12</rem:month>
-<rem:day>6</rem:day>
-</rem:date>
-<rem:description><![CDATA[Propiedad [Postcondition] actualizada [] -> [El propietario accede a la lista completa de proveedores]]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>U</rem:type>
 <rem:owner>UC-0007</rem:owner><rem:date>
 <rem:year>2020</rem:year>
 <rem:month>12</rem:month>
@@ -16620,24 +16503,6 @@ Tras pedir los productos anotados en el carrito, se espera a la entrega de éstos
 </rem:change>
 <rem:change>
 <rem:type>U</rem:type>
-<rem:owner>UC-0004</rem:owner><rem:date>
-<rem:year>2020</rem:year>
-<rem:month>12</rem:month>
-<rem:day>5</rem:day>
-</rem:date>
-<rem:description><![CDATA[Propiedad [TriggeringEvent] actualizada [Un proveedor realizará la entrega de los productos] -> [un proveedor realiza la entrega de los productos pedidos]]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>U</rem:type>
-<rem:owner>UC-0004</rem:owner><rem:date>
-<rem:year>2020</rem:year>
-<rem:month>12</rem:month>
-<rem:day>5</rem:day>
-</rem:date>
-<rem:description><![CDATA[Propiedad [Description] del hijo nº1 actualizada: [le permitirá proceder a pagar] -> [ les enviarán una notificación horas antes de que se efectúe la entrega del pedido por parte del proveedor]]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>U</rem:type>
 <rem:owner>UC-0002</rem:owner><rem:date>
 <rem:year>2020</rem:year>
 <rem:month>12</rem:month>
@@ -16647,48 +16512,12 @@ Tras pedir los productos anotados en el carrito, se espera a la entrega de éstos
 </rem:change>
 <rem:change>
 <rem:type>U</rem:type>
-<rem:owner>UC-0003</rem:owner><rem:date>
-<rem:year>2020</rem:year>
-<rem:month>12</rem:month>
-<rem:day>5</rem:day>
-</rem:date>
-<rem:description><![CDATA[Propiedad [Description] del hijo nº1 actualizada: [le permitirá proceder a pagar] -> [accede al apartado "proveedores"]]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>U</rem:type>
-<rem:owner>UC-0003</rem:owner><rem:date>
-<rem:year>2020</rem:year>
-<rem:month>12</rem:month>
-<rem:day>5</rem:day>
-</rem:date>
-<rem:description><![CDATA[Propiedad [Precondition] actualizada [el propietario debe haber iniciado sesión correctamente] -> [El propietario debe haber iniciado sesión correctamente]]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>U</rem:type>
-<rem:owner>UC-0004</rem:owner><rem:date>
-<rem:year>2020</rem:year>
-<rem:month>12</rem:month>
-<rem:day>5</rem:day>
-</rem:date>
-<rem:description><![CDATA[Propiedad [Postcondition] actualizada [] -> [Un empleado recoge el pedido y registra la factura]]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>U</rem:type>
 <rem:owner>UC-0001</rem:owner><rem:date>
 <rem:year>2020</rem:year>
 <rem:month>12</rem:month>
 <rem:day>5</rem:day>
 </rem:date>
 <rem:description><![CDATA[Propiedad [Status] actualizada [pendiente de verificación] -> [PD]]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>U</rem:type>
-<rem:owner>UC-0003</rem:owner><rem:date>
-<rem:year>2020</rem:year>
-<rem:month>12</rem:month>
-<rem:day>5</rem:day>
-</rem:date>
-<rem:description><![CDATA[Propiedad [Condition] del hijo nº1 actualizada: [Un encargado y/o el dueño inicia sesión correctamente accede al apartado "proveedores" y el sistema le muestra un listado con los datos de los proveedores] -> [Un encargado y/o el dueño inicia sesión correctamente  y el sistema le muestra un listado con los datos de los proveedores]]]></rem:description>
 </rem:change>
 <rem:change>
 <rem:type>U</rem:type>
@@ -16764,42 +16593,6 @@ Tras pedir los productos anotados en el carrito, se espera a la entrega de éstos
 </rem:change>
 <rem:change>
 <rem:type>U</rem:type>
-<rem:owner>UC-0003</rem:owner><rem:date>
-<rem:year>2020</rem:year>
-<rem:month>12</rem:month>
-<rem:day>5</rem:day>
-</rem:date>
-<rem:description><![CDATA[Propiedad [TriggeringEvent] actualizada [el cliente, una vez tiene todos los productos en su carro de la compra, pulsa sobre el botón pagar] -> [el propietario los proveedores que de la empresa]]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>U</rem:type>
-<rem:owner>UC-0003</rem:owner><rem:date>
-<rem:year>2020</rem:year>
-<rem:month>12</rem:month>
-<rem:day>5</rem:day>
-</rem:date>
-<rem:description><![CDATA[Propiedad [Precondition] actualizada [debe haber iniciado sesión correctamente] -> [el propietario debe haber iniciado sesión correctamente]]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>U</rem:type>
-<rem:owner>UC-0003</rem:owner><rem:date>
-<rem:year>2020</rem:year>
-<rem:month>12</rem:month>
-<rem:day>5</rem:day>
-</rem:date>
-<rem:description><![CDATA[Propiedad [Description] de la excepción nº1 del paso #2 actualizada: [no le permitirá terminar el pago] -> [mostrará una página vacía y le preguntará si quiere introducir algún proveedor]]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>U</rem:type>
-<rem:owner>UC-0003</rem:owner><rem:date>
-<rem:year>2020</rem:year>
-<rem:month>12</rem:month>
-<rem:day>5</rem:day>
-</rem:date>
-<rem:description><![CDATA[Propiedad [Condition] del hijo nº2 actualizada: [Si hay datos de proveedores en el sistema] -> [hay datos de proveedores en el sistema]]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>U</rem:type>
 <rem:owner>UC-0002</rem:owner><rem:date>
 <rem:year>2020</rem:year>
 <rem:month>12</rem:month>
@@ -16827,75 +16620,12 @@ Tras pedir los productos anotados en el carrito, se espera a la entrega de éstos
 </rem:change>
 <rem:change>
 <rem:type>U</rem:type>
-<rem:owner>UC-0003</rem:owner><rem:date>
-<rem:year>2020</rem:year>
-<rem:month>12</rem:month>
-<rem:day>5</rem:day>
-</rem:date>
-<rem:description><![CDATA[Propiedad [IsConditional] del hijo nº1 actualizada: [true] -> [false]]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>U</rem:type>
 <rem:owner>UC-0002</rem:owner><rem:date>
 <rem:year>2020</rem:year>
 <rem:month>12</rem:month>
 <rem:day>5</rem:day>
 </rem:date>
 <rem:description><![CDATA[Propiedad [Postcondition] actualizada [El proveedor enviará los productos] -> [El proveedor enviará los productos y se emitirá una factura]]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>U</rem:type>
-<rem:owner>UC-0003</rem:owner><rem:date>
-<rem:year>2020</rem:year>
-<rem:month>12</rem:month>
-<rem:day>5</rem:day>
-</rem:date>
-<rem:description><![CDATA[Propiedad [Actor] del hijo nº1 actualizada: [] -> [[ACT-0001] Propietario]]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>U</rem:type>
-<rem:owner>UC-0003</rem:owner><rem:date>
-<rem:year>2020</rem:year>
-<rem:month>12</rem:month>
-<rem:day>5</rem:day>
-</rem:date>
-<rem:description><![CDATA[Añadido hijo nº2 (Si Si hay datos de proveedores...)]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>U</rem:type>
-<rem:owner>UC-0003</rem:owner><rem:date>
-<rem:year>2020</rem:year>
-<rem:month>12</rem:month>
-<rem:day>5</rem:day>
-</rem:date>
-<rem:description><![CDATA[Propiedad [Status] actualizada [pendiente de verificación] -> [PD]]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>U</rem:type>
-<rem:owner>UC-0004</rem:owner><rem:date>
-<rem:year>2020</rem:year>
-<rem:month>12</rem:month>
-<rem:day>5</rem:day>
-</rem:date>
-<rem:description><![CDATA[Propiedad [Status] actualizada [pendiente de verificación] -> [PD]]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>U</rem:type>
-<rem:owner>UC-0003</rem:owner><rem:date>
-<rem:year>2020</rem:year>
-<rem:month>12</rem:month>
-<rem:day>5</rem:day>
-</rem:date>
-<rem:description><![CDATA[Propiedad [IsActorAction] del hijo nº1 actualizada: [false] -> [true]]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>U</rem:type>
-<rem:owner>UC-0004</rem:owner><rem:date>
-<rem:year>2020</rem:year>
-<rem:month>12</rem:month>
-<rem:day>5</rem:day>
-</rem:date>
-<rem:description><![CDATA[Propiedad [Condition] del hijo nº1 actualizada: [Los trabajadores estan correctamente registrados en la aplicación, por lo cual horas antes se les enviarán una notificación de la recogida del pedido] -> [los trabajadores estan correctamente registrados en la aplicación]]]></rem:description>
 </rem:change>
 <rem:change>
 <rem:type>U</rem:type>
@@ -18047,15 +17777,6 @@ TRANSPORTISTA]]]></rem:description>
 </rem:change>
 <rem:change>
 <rem:type>U</rem:type>
-<rem:owner>UC-0003</rem:owner><rem:date>
-<rem:year>2020</rem:year>
-<rem:month>12</rem:month>
-<rem:day>6</rem:day>
-</rem:date>
-<rem:description><![CDATA[Propiedad [Actor] del hijo nº1 actualizada: [[ACT-0001] Propietario] -> [[ACT-0020] Propietario]]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>U</rem:type>
 <rem:owner>UC-0009</rem:owner><rem:date>
 <rem:year>2020</rem:year>
 <rem:month>12</rem:month>
@@ -18217,15 +17938,6 @@ TRANSPORTISTA]]]></rem:description>
 <rem:description><![CDATA[Propiedad [Description] actualizada [El sistema tendrá que tener la máxima seguridad disponible, ya que se estarán guardando datos bancarios de nuestros empleados y clientes] -> [ tener la máxima seguridad disponible, ya que se estarán guardando datos bancarios de nuestros empleados y clientes]]]></rem:description>
 </rem:change>
 <rem:change>
-<rem:type>U</rem:type>
-<rem:owner>UC-0004</rem:owner><rem:date>
-<rem:year>2020</rem:year>
-<rem:month>12</rem:month>
-<rem:day>6</rem:day>
-</rem:date>
-<rem:description><![CDATA[Propiedad [TriggeringEvent] actualizada [un proveedor realiza la entrega de los productos pedidos] -> [un proveedor realiza la entrega de los productos/pedidos]]]></rem:description>
-</rem:change>
-<rem:change>
 <rem:type>C</rem:type>
 <rem:owner>NFR-0004</rem:owner><rem:date>
 <rem:year>2020</rem:year>
@@ -18260,15 +17972,6 @@ TRANSPORTISTA]]]></rem:description>
 <rem:day>6</rem:day>
 </rem:date>
 <rem:description><![CDATA[Propiedad [Postcondition] actualizada [El proveedor se añadido correctamente, por lo que la base de datos se actualizará] -> [El empleado se añadido correctamente, por lo que la base de datos se actualizará]]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>U</rem:type>
-<rem:owner>UC-0004</rem:owner><rem:date>
-<rem:year>2020</rem:year>
-<rem:month>12</rem:month>
-<rem:day>6</rem:day>
-</rem:date>
-<rem:description><![CDATA[Propiedad [Description] del hijo nº1 actualizada: [ les enviarán una notificación horas antes de que se efectúe la entrega del pedido por parte del proveedor] -> [ les enviarán una notificación (por pantalla) horas antes de que se efectúe la entrega del pedido por parte del proveedor]]]></rem:description>
 </rem:change>
 <rem:change>
 <rem:type>U</rem:type>
@@ -20084,15 +19787,6 @@ Buscan formas de informatizar el negocio y ampliar el alcance; de esta forma se 
 <rem:description><![CDATA[Eliminado el objeto [UC-0018] Copia de Asociación de portes a pedidos con 3 hijos y 1 cambios]]></rem:description>
 </rem:change>
 <rem:change>
-<rem:type>C</rem:type>
-<rem:owner>UC-0018</rem:owner><rem:date>
-<rem:year>2020</rem:year>
-<rem:month>12</rem:month>
-<rem:day>12</rem:day>
-</rem:date>
-<rem:description><![CDATA[Clonado a partir de [UC-0017] Asociación de portes a pedidos del proyecto C:\Users\felip\workspaceIR\Proyecto IR\PROYECTO IR.rem]]></rem:description>
-</rem:change>
-<rem:change>
 <rem:type>U</rem:type>
 <rem:owner>UC-0006</rem:owner><rem:date>
 <rem:year>2020</rem:year>
@@ -20118,15 +19812,6 @@ Buscan formas de informatizar el negocio y ampliar el alcance; de esta forma se 
 <rem:day>12</rem:day>
 </rem:date>
 <rem:description><![CDATA[Añadido hijo nº18 ([UC-0018] Copia de Asociación de portes a pedidos)]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>U</rem:type>
-<rem:owner>UC-0018</rem:owner><rem:date>
-<rem:year>2020</rem:year>
-<rem:month>12</rem:month>
-<rem:day>12</rem:day>
-</rem:date>
-<rem:description><![CDATA[Propiedad [TriggeringEvent] actualizada [un empleado quiere ver asociar a un porte el camión y los empleados que se encargaran de él] -> [un empleado quiere asociar a un porte de alquiler el camión y los empleados que se encargarán de él]]]></rem:description>
 </rem:change>
 <rem:change>
 <rem:type>U</rem:type>
@@ -20163,24 +19848,6 @@ Buscan formas de informatizar el negocio y ampliar el alcance; de esta forma se 
 <rem:day>12</rem:day>
 </rem:date>
 <rem:description><![CDATA[Propiedad [TriggeringEvent] actualizada [un empleado quiere ver asociar a un porte el camión y los empleados que se encargaran de él] -> [un empleado quiere asociar a un porte el camión y los empleados que se encargarán de él]]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>U</rem:type>
-<rem:owner>UC-0018</rem:owner><rem:date>
-<rem:year>2020</rem:year>
-<rem:month>12</rem:month>
-<rem:day>12</rem:day>
-</rem:date>
-<rem:description><![CDATA[Propiedad [Name] actualizada [Copia de Asociación de portes a pedidos] -> [Asociación de portes a alquileres de cubas]]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>U</rem:type>
-<rem:owner>UC-0018</rem:owner><rem:date>
-<rem:year>2020</rem:year>
-<rem:month>12</rem:month>
-<rem:day>12</rem:day>
-</rem:date>
-<rem:description><![CDATA[Propiedad [Precondition] actualizada [El empleado accede a la pestaña de pedidos, donde podrá consultar los informes creados por el sistema] -> [El empleado accede a la pestaña de alquileres, donde podrá consultar los informes creados por el sistema]]]></rem:description>
 </rem:change>
 <rem:change>
 <rem:type>U</rem:type>
@@ -20301,24 +19968,6 @@ Buscan formas de informatizar el negocio y ampliar el alcance; de esta forma se 
 </rem:change>
 <rem:change>
 <rem:type>U</rem:type>
-<rem:owner>UC-0018</rem:owner><rem:date>
-<rem:year>2020</rem:year>
-<rem:month>12</rem:month>
-<rem:day>12</rem:day>
-</rem:date>
-<rem:description><![CDATA[Propiedad [Postcondition] actualizada [El empleado asigna a un porte de pedido, que camión y empleados lo llevarán a cabo] -> [El empleado asigna a un porte de alquiler, qué camión y empleados lo llevarán a cabo]]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>U</rem:type>
-<rem:owner>UC-0018</rem:owner><rem:date>
-<rem:year>2020</rem:year>
-<rem:month>12</rem:month>
-<rem:day>12</rem:day>
-</rem:date>
-<rem:description><![CDATA[Propiedad [Description] del hijo nº2 actualizada: [pulsa sobre el porte] -> [pulsa sobre el botón de añadir porte]]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>U</rem:type>
 <rem:owner>UC-0012</rem:owner><rem:date>
 <rem:year>2020</rem:year>
 <rem:month>12</rem:month>
@@ -20379,15 +20028,6 @@ Buscan formas de informatizar el negocio y ampliar el alcance; de esta forma se 
 <rem:day>12</rem:day>
 </rem:date>
 <rem:description><![CDATA[Propiedad [Name] actualizada [Copia de Registro de un nuevo cliente] -> [Registro de un nuevo camión]]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>U</rem:type>
-<rem:owner>UC-0018</rem:owner><rem:date>
-<rem:year>2020</rem:year>
-<rem:month>12</rem:month>
-<rem:day>12</rem:day>
-</rem:date>
-<rem:description><![CDATA[Propiedad [Description] del hijo nº1 actualizada: [entra en el listado de pedidos] -> [entra en el listado de alquileres de cubas]]]></rem:description>
 </rem:change>
 <rem:change>
 <rem:type>U</rem:type>
@@ -20472,15 +20112,6 @@ Buscan formas de informatizar el negocio y ampliar el alcance; de esta forma se 
 </rem:change>
 <rem:change>
 <rem:type>U</rem:type>
-<rem:owner>UC-0018</rem:owner><rem:date>
-<rem:year>2020</rem:year>
-<rem:month>12</rem:month>
-<rem:day>12</rem:day>
-</rem:date>
-<rem:description><![CDATA[Propiedad [Actor] del hijo nº2 actualizada: [[ACT-0018] Empleado de la tienda] -> [[ACT-0019] Empleado del almacén]]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>U</rem:type>
 <rem:owner>UC-0019</rem:owner><rem:date>
 <rem:year>2020</rem:year>
 <rem:month>12</rem:month>
@@ -20514,15 +20145,6 @@ Buscan formas de informatizar el negocio y ampliar el alcance; de esta forma se 
 <rem:day>12</rem:day>
 </rem:date>
 <rem:description><![CDATA[Clonado a partir de [UC-0012] Modificar datos generales (para empleados) del proyecto C:\Users\felip\workspaceIR\Proyecto IR\PROYECTO IR.rem]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>U</rem:type>
-<rem:owner>UC-0018</rem:owner><rem:date>
-<rem:year>2020</rem:year>
-<rem:month>12</rem:month>
-<rem:day>12</rem:day>
-</rem:date>
-<rem:description><![CDATA[Propiedad [Precondition] actualizada [El empleado accede a la pestaña de alquileres, donde podrá consultar los informes creados por el sistema] -> [El empleado accede a la pestaña de alquileres, donde podrá consultar los alquileres ejecutados]]]></rem:description>
 </rem:change>
 <rem:change>
 <rem:type>U</rem:type>
@@ -22373,15 +21995,6 @@ Primero se accede a una página de selección de fecha para comenzar el alquiler, 
 <rem:description><![CDATA[Propiedad [Name] actualizada [Copia de IU-XXX Creación de proveedores] -> [Copia de IU-XXX Página principal]]]></rem:description>
 </rem:change>
 <rem:change>
-<rem:type>C</rem:type>
-<rem:owner>UC-0013</rem:owner><rem:date>
-<rem:year>2020</rem:year>
-<rem:month>12</rem:month>
-<rem:day>10</rem:day>
-</rem:date>
-<rem:description><![CDATA[Clonado a partir de [UC-0011] Añadir nueva factura del proyecto C:\Users\felip\workspaceIR\Proyecto IR\PROYECTO IR.rem]]></rem:description>
-</rem:change>
-<rem:change>
 <rem:type>U</rem:type>
 <rem:owner>SEC-0051</rem:owner><rem:date>
 <rem:year>2020</rem:year>
@@ -22565,15 +22178,6 @@ Cualquier empleado estará enlazado a un enlace en el que se podrán actualizar su
 </rem:change>
 <rem:change>
 <rem:type>U</rem:type>
-<rem:owner>UC-0013</rem:owner><rem:date>
-<rem:year>2020</rem:year>
-<rem:month>12</rem:month>
-<rem:day>10</rem:day>
-</rem:date>
-<rem:description><![CDATA[Propiedad [Name] actualizada [Copia de Añadir nueva factura] -> [Modificar una factura]]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>U</rem:type>
 <rem:owner>UC-0011</rem:owner><rem:date>
 <rem:year>2020</rem:year>
 <rem:month>12</rem:month>
@@ -22661,15 +22265,6 @@ Cualquier empleado estará enlazado a un enlace en el que se podrán actualizar su
 <rem:day>10</rem:day>
 </rem:date>
 <rem:description><![CDATA[Propiedad [Name] actualizada [Copia de Modificar una factura] -> [Modificar una factura]]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>U</rem:type>
-<rem:owner>UC-0013</rem:owner><rem:date>
-<rem:year>2020</rem:year>
-<rem:month>12</rem:month>
-<rem:day>10</rem:day>
-</rem:date>
-<rem:description><![CDATA[Propiedad [Name] actualizada [Consulta de facturas] -> [Consulta de facturas (de clientes y proveedores)]]]></rem:description>
 </rem:change>
 <rem:change>
 <rem:type>U</rem:type>
@@ -22826,15 +22421,6 @@ Cualquier empleado estará enlazado a un enlace en el que se podrán actualizar su
 </rem:change>
 <rem:change>
 <rem:type>U</rem:type>
-<rem:owner>UC-0013</rem:owner><rem:date>
-<rem:year>2020</rem:year>
-<rem:month>12</rem:month>
-<rem:day>10</rem:day>
-</rem:date>
-<rem:description><![CDATA[Propiedad [Name] actualizada [Modificar una factura] -> [Consulta de facturas]]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>U</rem:type>
 <rem:owner>UC-0012</rem:owner><rem:date>
 <rem:year>2020</rem:year>
 <rem:month>12</rem:month>
@@ -22862,48 +22448,12 @@ Cualquier empleado estará enlazado a un enlace en el que se podrán actualizar su
 </rem:change>
 <rem:change>
 <rem:type>U</rem:type>
-<rem:owner>UC-0013</rem:owner><rem:date>
-<rem:year>2020</rem:year>
-<rem:month>12</rem:month>
-<rem:day>11</rem:day>
-</rem:date>
-<rem:description><![CDATA[Propiedad [Description] de la excepción nº1 del paso #2 actualizada: [hará saltar una excepción indicando el/los campo/s donde debe introducir correctamente el/los dato/s] -> [hará saltar una excepción indicando que no hay facturas registradas, acto seguido se indica si se quiere añadir alguna]]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>U</rem:type>
-<rem:owner>UC-0013</rem:owner><rem:date>
-<rem:year>2020</rem:year>
-<rem:month>12</rem:month>
-<rem:day>11</rem:day>
-</rem:date>
-<rem:description><![CDATA[Propiedad [Description] del hijo nº1 actualizada: [pulsa sobre el botón "Registrarse"] -> [pulsa sobre el botón de consulta de facturas]]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>U</rem:type>
-<rem:owner>UC-0013</rem:owner><rem:date>
-<rem:year>2020</rem:year>
-<rem:month>12</rem:month>
-<rem:day>11</rem:day>
-</rem:date>
-<rem:description><![CDATA[Propiedad [Postcondition] actualizada [El cliente puede acceder a las funcionalidades del sistema creados para los clientes] -> [El empleado puede acceder a las funcionalidades del sistema creados para la consulta de facturas]]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>U</rem:type>
 <rem:owner>UC-0014</rem:owner><rem:date>
 <rem:year>2020</rem:year>
 <rem:month>12</rem:month>
 <rem:day>11</rem:day>
 </rem:date>
 <rem:description><![CDATA[Propiedad [Description] del hijo nº1 actualizada: [pulsa sobre el botón "Registrarse"] -> [pulsa sobre el botón de añadir incidencia en la lista de órdenes de alquiler]]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>U</rem:type>
-<rem:owner>UC-0013</rem:owner><rem:date>
-<rem:year>2020</rem:year>
-<rem:month>12</rem:month>
-<rem:day>11</rem:day>
-</rem:date>
-<rem:description><![CDATA[Propiedad [TriggeringEvent] actualizada [un cliente quiere añadir una factura en la web] -> [un empleado accede al apartado de facturas]]]></rem:description>
 </rem:change>
 <rem:change>
 <rem:type>U</rem:type>
@@ -22915,51 +22465,6 @@ Cualquier empleado estará enlazado a un enlace en el que se podrán actualizar su
 <rem:description><![CDATA[Propiedad [Precondition] actualizada [El cliente accede a la web] -> [El empleado accede a el formulario a través de la consulta de órdenes de alquiler]]]></rem:description>
 </rem:change>
 <rem:change>
-<rem:type>C</rem:type>
-<rem:owner>UC-0015</rem:owner><rem:date>
-<rem:year>2020</rem:year>
-<rem:month>12</rem:month>
-<rem:day>11</rem:day>
-</rem:date>
-<rem:description><![CDATA[Clonado a partir de [UC-0014] Añadir incidencias de clientes del proyecto C:\Users\felip\workspaceIR\Proyecto IR\PROYECTO IR.rem]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>U</rem:type>
-<rem:owner>UC-0015</rem:owner><rem:date>
-<rem:year>2020</rem:year>
-<rem:month>12</rem:month>
-<rem:day>11</rem:day>
-</rem:date>
-<rem:description><![CDATA[Propiedad [TriggeringEvent] actualizada [un empleado quiere registrar sobre una orden de alquiler una incidencia] -> [un empleado quiere ver que productos tienen un stock bajo]]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>U</rem:type>
-<rem:owner>UC-0015</rem:owner><rem:date>
-<rem:year>2020</rem:year>
-<rem:month>12</rem:month>
-<rem:day>11</rem:day>
-</rem:date>
-<rem:description><![CDATA[Propiedad [Postcondition] actualizada [El empleado puede acceder al formulario completo de incidencias] -> [El empleado puede pasar al carrito de alertas donde, podrá seleccionar que productos pedirle a que proveedores]]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>U</rem:type>
-<rem:owner>UC-0015</rem:owner><rem:date>
-<rem:year>2020</rem:year>
-<rem:month>12</rem:month>
-<rem:day>11</rem:day>
-</rem:date>
-<rem:description><![CDATA[Propiedad [Precondition] actualizada [El empleado accede a el formulario a través de la consulta de órdenes de alquiler] -> [El empleado accede a el carrito de alertas, donde podrá ver que pedidos están en stock de riesgo]]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>U</rem:type>
-<rem:owner>UC-0015</rem:owner><rem:date>
-<rem:year>2020</rem:year>
-<rem:month>12</rem:month>
-<rem:day>11</rem:day>
-</rem:date>
-<rem:description><![CDATA[Propiedad [Description] del hijo nº1 actualizada: [pulsa sobre el botón de añadir incidencia en la lista de órdenes de alquiler] -> [pulsa sobre el botón de ejecutar la solicitud del carrito de alerta]]]></rem:description>
-</rem:change>
-<rem:change>
 <rem:type>U</rem:type>
 <rem:owner>SEC-0051</rem:owner><rem:date>
 <rem:year>2020</rem:year>
@@ -22967,24 +22472,6 @@ Cualquier empleado estará enlazado a un enlace en el que se podrán actualizar su
 <rem:day>11</rem:day>
 </rem:date>
 <rem:description><![CDATA[Añadido hijo nº15 ([UC-0015] Copia de Añadir incidencias de clientes)]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>U</rem:type>
-<rem:owner>UC-0013</rem:owner><rem:date>
-<rem:year>2020</rem:year>
-<rem:month>12</rem:month>
-<rem:day>11</rem:day>
-</rem:date>
-<rem:description><![CDATA[Propiedad [Actor] del hijo nº1 actualizada: [[ACT-0017] Cliente no habitual] -> [[ACT-0018] Empleado de la tienda]]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>U</rem:type>
-<rem:owner>UC-0013</rem:owner><rem:date>
-<rem:year>2020</rem:year>
-<rem:month>12</rem:month>
-<rem:day>11</rem:day>
-</rem:date>
-<rem:description><![CDATA[Propiedad [Condition] del hijo nº2 actualizada: [el cliente ha añadido sus datos correctamente] -> [el empleado accede a los datos correctamente]]]></rem:description>
 </rem:change>
 <rem:change>
 <rem:type>U</rem:type>
@@ -23012,24 +22499,6 @@ Cualquier empleado estará enlazado a un enlace en el que se podrán actualizar su
 <rem:day>11</rem:day>
 </rem:date>
 <rem:description><![CDATA[Propiedad [Name] actualizada [Modificar  facturas (de clientes y proveedores)] -> [Modificar  facturas (de clientes o proveedores)]]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>U</rem:type>
-<rem:owner>UC-0013</rem:owner><rem:date>
-<rem:year>2020</rem:year>
-<rem:month>12</rem:month>
-<rem:day>11</rem:day>
-</rem:date>
-<rem:description><![CDATA[Propiedad [Precondition] actualizada [El cliente accede a la web] -> [El empleado accede a a la web]]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>U</rem:type>
-<rem:owner>UC-0013</rem:owner><rem:date>
-<rem:year>2020</rem:year>
-<rem:month>12</rem:month>
-<rem:day>11</rem:day>
-</rem:date>
-<rem:description><![CDATA[Propiedad [Name] actualizada [Consulta de facturas (de clientes y proveedores)] -> [Consulta de facturas (de clientes o proveedores)]]]></rem:description>
 </rem:change>
 <rem:change>
 <rem:type>U</rem:type>
@@ -23069,15 +22538,6 @@ Cualquier empleado estará enlazado a un enlace en el que se podrán actualizar su
 </rem:change>
 <rem:change>
 <rem:type>U</rem:type>
-<rem:owner>UC-0013</rem:owner><rem:date>
-<rem:year>2020</rem:year>
-<rem:month>12</rem:month>
-<rem:day>11</rem:day>
-</rem:date>
-<rem:description><![CDATA[Eliminado hijo nº2 (Actor Cliente no habitual añad...)]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>U</rem:type>
 <rem:owner>UC-0014</rem:owner><rem:date>
 <rem:year>2020</rem:year>
 <rem:month>12</rem:month>
@@ -23105,30 +22565,12 @@ Cualquier empleado estará enlazado a un enlace en el que se podrán actualizar su
 </rem:change>
 <rem:change>
 <rem:type>U</rem:type>
-<rem:owner>UC-0015</rem:owner><rem:date>
-<rem:year>2020</rem:year>
-<rem:month>12</rem:month>
-<rem:day>11</rem:day>
-</rem:date>
-<rem:description><![CDATA[Propiedad [Name] actualizada [Copia de Añadir incidencias de clientes] -> [Compra en el carrito de alertas]]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>U</rem:type>
 <rem:owner>UC-0012</rem:owner><rem:date>
 <rem:year>2020</rem:year>
 <rem:month>12</rem:month>
 <rem:day>11</rem:day>
 </rem:date>
 <rem:description><![CDATA[Propiedad [Actor] del hijo nº2 actualizada: [[ACT-0017] Cliente no habitual] -> [[ACT-0018] Empleado de la tienda]]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>U</rem:type>
-<rem:owner>UC-0013</rem:owner><rem:date>
-<rem:year>2020</rem:year>
-<rem:month>12</rem:month>
-<rem:day>11</rem:day>
-</rem:date>
-<rem:description><![CDATA[Propiedad [Description] del hijo nº2 actualizada: [añadirá los datos del cliente a la base de datos y redigirá al cliente a la página principal] -> [muestra todos los datos disponibles sobre las facturas del negocio]]]></rem:description>
 </rem:change>
 <rem:change>
 <rem:type>U</rem:type>
@@ -23186,24 +22628,6 @@ Cualquier empleado estará enlazado a un enlace en el que se podrán actualizar su
 </rem:change>
 <rem:change>
 <rem:type>U</rem:type>
-<rem:owner>UC-0015</rem:owner><rem:date>
-<rem:year>2020</rem:year>
-<rem:month>12</rem:month>
-<rem:day>11</rem:day>
-</rem:date>
-<rem:description><![CDATA[Propiedad [Condition] del hijo nº3 actualizada: [el empleado añade unos datos consistentes de la incidencia] -> [el empleado añade la descriptión correcta]]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>U</rem:type>
-<rem:owner>UC-0015</rem:owner><rem:date>
-<rem:year>2020</rem:year>
-<rem:month>12</rem:month>
-<rem:day>11</rem:day>
-</rem:date>
-<rem:description><![CDATA[Propiedad [Description] del hijo nº2 actualizada: [añade los datos de la incidencia] -> [añada ]]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>U</rem:type>
 <rem:owner>NFR-0002</rem:owner><rem:date>
 <rem:year>2020</rem:year>
 <rem:month>12</rem:month>
@@ -23219,15 +22643,6 @@ Cualquier empleado estará enlazado a un enlace en el que se podrán actualizar su
 <rem:day>11</rem:day>
 </rem:date>
 <rem:description><![CDATA[Eliminado el objeto [CRQ-0017] Copia de RN-014 Empleados con carnet para camiones con 0 hijos y 1 cambios]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>U</rem:type>
-<rem:owner>UC-0015</rem:owner><rem:date>
-<rem:year>2020</rem:year>
-<rem:month>12</rem:month>
-<rem:day>11</rem:day>
-</rem:date>
-<rem:description><![CDATA[Propiedad [Description] del hijo nº2 actualizada: [añada ] -> [añada los datos necesarios para el envio del correo, pulsará el botón de enviar]]]></rem:description>
 </rem:change>
 <rem:change>
 <rem:type>U</rem:type>
@@ -23258,15 +22673,6 @@ Cualquier empleado estará enlazado a un enlace en el que se podrán actualizar su
 </rem:change>
 <rem:change>
 <rem:type>U</rem:type>
-<rem:owner>UC-0015</rem:owner><rem:date>
-<rem:year>2020</rem:year>
-<rem:month>12</rem:month>
-<rem:day>11</rem:day>
-</rem:date>
-<rem:description><![CDATA[Propiedad [Actor] del hijo nº1 actualizada: [[ACT-0019] Empleado del almacén] -> [[ACT-0018] Empleado de la tienda]]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>U</rem:type>
 <rem:owner>SEC-0047</rem:owner><rem:date>
 <rem:year>2020</rem:year>
 <rem:month>12</rem:month>
@@ -23282,15 +22688,6 @@ Cualquier empleado estará enlazado a un enlace en el que se podrán actualizar su
 <rem:day>11</rem:day>
 </rem:date>
 <rem:description><![CDATA[Propiedad [Name] actualizada [RNF-002 Sistema eficaz y directo] -> [RU-001 Sistema eficaz y directo]]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>U</rem:type>
-<rem:owner>UC-0015</rem:owner><rem:date>
-<rem:year>2020</rem:year>
-<rem:month>12</rem:month>
-<rem:day>11</rem:day>
-</rem:date>
-<rem:description><![CDATA[Propiedad [Description] del hijo nº3 actualizada: [el sistema hace el envío del correo correctamente] -> [el sistema hace el envío del correo]]]></rem:description>
 </rem:change>
 <rem:change>
 <rem:type>U</rem:type>
@@ -23336,33 +22733,6 @@ Cualquier empleado estará enlazado a un enlace en el que se podrán actualizar su
 <rem:day>11</rem:day>
 </rem:date>
 <rem:description><![CDATA[Propiedad [Name] actualizada [RF-001 Tolerancia mínima de fallos] -> [RF-002 Tolerancia mínima de fallos]]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>U</rem:type>
-<rem:owner>UC-0015</rem:owner><rem:date>
-<rem:year>2020</rem:year>
-<rem:month>12</rem:month>
-<rem:day>11</rem:day>
-</rem:date>
-<rem:description><![CDATA[Propiedad [Actor] del hijo nº2 actualizada: [[ACT-0019] Empleado del almacén] -> [[ACT-0018] Empleado de la tienda]]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>U</rem:type>
-<rem:owner>UC-0015</rem:owner><rem:date>
-<rem:year>2020</rem:year>
-<rem:month>12</rem:month>
-<rem:day>11</rem:day>
-</rem:date>
-<rem:description><![CDATA[Propiedad [Description] del hijo nº2 actualizada: [añada los datos necesarios para el envio del correo, pulsará el botón de enviar] -> [añada los datos necesarios para el envío del correo, pulsará el botón de enviar]]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>U</rem:type>
-<rem:owner>UC-0015</rem:owner><rem:date>
-<rem:year>2020</rem:year>
-<rem:month>12</rem:month>
-<rem:day>11</rem:day>
-</rem:date>
-<rem:description><![CDATA[Propiedad [Postcondition] actualizada [El empleado puede pasar al carrito de alertas donde, podrá seleccionar que productos pedirle a que proveedores] -> [El empleado puede pasar al carrito de alertas donde, podrá seleccionar que productos pedirle a que proveedores por correo]]]></rem:description>
 </rem:change>
 <rem:change>
 <rem:type>U</rem:type>
@@ -23417,15 +22787,6 @@ Cualquier empleado estará enlazado a un enlace en el que se podrán actualizar su
 <rem:day>11</rem:day>
 </rem:date>
 <rem:description><![CDATA[Propiedad [Name] actualizada [RM-002 Entorno de pruebas sólido] -> [RM-003 Entorno de pruebas sólido]]]></rem:description>
-</rem:change>
-<rem:change>
-<rem:type>U</rem:type>
-<rem:owner>UC-0015</rem:owner><rem:date>
-<rem:year>2020</rem:year>
-<rem:month>12</rem:month>
-<rem:day>11</rem:day>
-</rem:date>
-<rem:description><![CDATA[Propiedad [Description] del hijo nº3 actualizada: [añadirá la incidencia a la orden de alquiler (que internamente se relaciona con el cliente)] -> [el sistema hace el envío del correo correctamente]]]></rem:description>
 </rem:change>
 <rem:change>
 <rem:type>U</rem:type>
@@ -33546,6 +32907,519 @@ Si al cliente le convence, pordría añadirlo a la cesta de la compra(para el que 
 </rem:change>
 <rem:change>
 <rem:type>U</rem:type>
+<rem:owner>SEC-0051</rem:owner><rem:date>
+<rem:year>2021</rem:year>
+<rem:month>1</rem:month>
+<rem:day>19</rem:day>
+</rem:date>
+<rem:description><![CDATA[Intercambiados hijos nº2 ([UC-0001] Compra de productos (cliente)) y nº1 ([UC-0010] Registro de un nuevo cliente)]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>UC-0001</rem:owner><rem:date>
+<rem:year>2021</rem:year>
+<rem:month>1</rem:month>
+<rem:day>19</rem:day>
+</rem:date>
+<rem:description><![CDATA[Propiedad [Postcondition] actualizada [Un empleado recibirá una notificación de compra para tener  los productos guardados para el cliente y se emitirá una factura. En caso de ser a domicilio, se notificará al encargado del almacén el cuál asignará a un transportista para que lleve el pedido y se hará un porte en el momento de entrega] -> [Un empleado recibirá una notificación de compra para tener  los productos guardados para el cliente y se emitirá una factura. En caso de ser a domicilio, se notificará al encargado del almacén el cuál asignará a un transportista para que lleve el pedido y se hará un porte en el momento de entrega. El cliente podrá acceder al historial de compras del cliente donde podrá ver el estado del pedido.]]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>UC-0006</rem:owner><rem:date>
+<rem:year>2021</rem:year>
+<rem:month>1</rem:month>
+<rem:day>19</rem:day>
+</rem:date>
+<rem:description><![CDATA[Eliminado hijo nº2 (Si hay cubas disponibles en la...)]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>UC-0001</rem:owner><rem:date>
+<rem:year>2021</rem:year>
+<rem:month>1</rem:month>
+<rem:day>19</rem:day>
+</rem:date>
+<rem:description><![CDATA[Propiedad [Description] del hijo nº2 actualizada: [pulsa sobre el botón pagar] -> [introduce sus datos personales.]]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>UC-0001</rem:owner><rem:date>
+<rem:year>2021</rem:year>
+<rem:month>1</rem:month>
+<rem:day>19</rem:day>
+</rem:date>
+<rem:description><![CDATA[Propiedad [TriggeringEvent] actualizada [el cliente, una vez tiene todos los productos en su carro de la compra, pulsa sobre el botón pagar (puede incluir descuento o no)] -> [el cliente entra en nuestra web para comprar productos.]]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>SEC-0051</rem:owner><rem:date>
+<rem:year>2021</rem:year>
+<rem:month>1</rem:month>
+<rem:day>19</rem:day>
+</rem:date>
+<rem:description><![CDATA[Intercambiados hijos nº5 ([UC-0004] Notificaciones sobre llegada de pedidos a trabajadores) y nº4 ([UC-0010] Registro de un nuevo cliente)]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>SEC-0051</rem:owner><rem:date>
+<rem:year>2021</rem:year>
+<rem:month>1</rem:month>
+<rem:day>19</rem:day>
+</rem:date>
+<rem:description><![CDATA[Intercambiados hijos nº8 ([UC-0007] Creación de un nuevo contrato en web) y nº7 ([UC-0010] Registro de un nuevo cliente)]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>SEC-0051</rem:owner><rem:date>
+<rem:year>2021</rem:year>
+<rem:month>1</rem:month>
+<rem:day>19</rem:day>
+</rem:date>
+<rem:description><![CDATA[Intercambiados hijos nº10 ([UC-0009] Añadir empleado) y nº9 ([UC-0010] Registro de un nuevo cliente)]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>UC-0006</rem:owner><rem:date>
+<rem:year>2021</rem:year>
+<rem:month>1</rem:month>
+<rem:day>19</rem:day>
+</rem:date>
+<rem:description><![CDATA[Propiedad [Description] del hijo nº1 actualizada: [accede al apartado de cubas y selecciona un periodo para alquilar una cuba] -> [selecciona una cuba y una fecha para alquilar]]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>UC-0006</rem:owner><rem:date>
+<rem:year>2021</rem:year>
+<rem:month>1</rem:month>
+<rem:day>19</rem:day>
+</rem:date>
+<rem:description><![CDATA[Eliminado hijo nº2 (Actor Cliente pulsa la cuba de...)]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>UC-0001</rem:owner><rem:date>
+<rem:year>2021</rem:year>
+<rem:month>1</rem:month>
+<rem:day>19</rem:day>
+</rem:date>
+<rem:description><![CDATA[Propiedad [Description] del hijo nº1 actualizada: [añade productos en su carro de la compra] -> [selecciona productos]]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>SEC-0051</rem:owner><rem:date>
+<rem:year>2021</rem:year>
+<rem:month>1</rem:month>
+<rem:day>19</rem:day>
+</rem:date>
+<rem:description><![CDATA[Intercambiados hijos nº6 ([UC-0005] Consulta empleados) y nº5 ([UC-0010] Registro de un nuevo cliente)]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>UC-0010</rem:owner><rem:date>
+<rem:year>2021</rem:year>
+<rem:month>1</rem:month>
+<rem:day>19</rem:day>
+</rem:date>
+<rem:description><![CDATA[Eliminado hijo nº1 (Actor Cliente pulsa sobre el b...)]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>SEC-0051</rem:owner><rem:date>
+<rem:year>2021</rem:year>
+<rem:month>1</rem:month>
+<rem:day>19</rem:day>
+</rem:date>
+<rem:description><![CDATA[Intercambiados hijos nº7 ([UC-0006] Alquiler de cubas) y nº6 ([UC-0010] Registro de un nuevo cliente)]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>UC-0001</rem:owner><rem:date>
+<rem:year>2021</rem:year>
+<rem:month>1</rem:month>
+<rem:day>19</rem:day>
+</rem:date>
+<rem:description><![CDATA[Propiedad [Description] del hijo nº3 actualizada: [introduce su tarjeta de crédito] -> [paga el porte a través de la opción de pago que haya escogido]]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>UC-0001</rem:owner><rem:date>
+<rem:year>2021</rem:year>
+<rem:month>1</rem:month>
+<rem:day>19</rem:day>
+</rem:date>
+<rem:description><![CDATA[Propiedad [Description] de la excepción nº1 del paso #2 actualizada: [no le permitirá pulsar sobre el botón pagar] -> [no le permitirá efectuar la compra]]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>UC-0001</rem:owner><rem:date>
+<rem:year>2021</rem:year>
+<rem:month>1</rem:month>
+<rem:day>19</rem:day>
+</rem:date>
+<rem:description><![CDATA[Propiedad [Precondition] actualizada [El cliente debe haber iniciado sesión] -> []]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>SEC-0051</rem:owner><rem:date>
+<rem:year>2021</rem:year>
+<rem:month>1</rem:month>
+<rem:day>19</rem:day>
+</rem:date>
+<rem:description><![CDATA[Eliminado hijo nº3 ([UC-0003] Consulta proveedores)]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>UC-0001</rem:owner><rem:date>
+<rem:year>2021</rem:year>
+<rem:month>1</rem:month>
+<rem:day>19</rem:day>
+</rem:date>
+<rem:description><![CDATA[Propiedad [Description] del hijo nº2 actualizada: [introduce sus datos personales.] -> [introduce sus datos personales]]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>SEC-0051</rem:owner><rem:date>
+<rem:year>2021</rem:year>
+<rem:month>1</rem:month>
+<rem:day>19</rem:day>
+</rem:date>
+<rem:description><![CDATA[Intercambiados hijos nº9 ([UC-0008] Añadir proveedor) y nº8 ([UC-0010] Registro de un nuevo cliente)]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>SEC-0051</rem:owner><rem:date>
+<rem:year>2021</rem:year>
+<rem:month>1</rem:month>
+<rem:day>19</rem:day>
+</rem:date>
+<rem:description><![CDATA[Intercambiados hijos nº1 ([UC-0001] Compra de productos (cliente)) y nº2 ([UC-0010] Registro de un nuevo cliente)]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>SEC-0051</rem:owner><rem:date>
+<rem:year>2021</rem:year>
+<rem:month>1</rem:month>
+<rem:day>19</rem:day>
+</rem:date>
+<rem:description><![CDATA[Intercambiados hijos nº2 ([UC-0002] Solicitar productos a proveedores) y nº3 ([UC-0010] Registro de un nuevo cliente)]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>UC-0001</rem:owner><rem:date>
+<rem:year>2021</rem:year>
+<rem:month>1</rem:month>
+<rem:day>19</rem:day>
+</rem:date>
+<rem:description><![CDATA[Propiedad [TriggeringEvent] actualizada [el cliente entra en nuestra web para comprar productos.] -> [el cliente entra en nuestra web para comprar productos]]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>UC-0001</rem:owner><rem:date>
+<rem:year>2021</rem:year>
+<rem:month>1</rem:month>
+<rem:day>19</rem:day>
+</rem:date>
+<rem:description><![CDATA[Propiedad [Condition] del hijo nº4 actualizada: [el cliente ha introducido correctamente su tarjeta de crédito] -> []]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>SEC-0051</rem:owner><rem:date>
+<rem:year>2021</rem:year>
+<rem:month>1</rem:month>
+<rem:day>19</rem:day>
+</rem:date>
+<rem:description><![CDATA[Eliminado hijo nº3 ([UC-0004] Notificaciones sobre llegada de pedidos a trabajadores)]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>UC-0006</rem:owner><rem:date>
+<rem:year>2021</rem:year>
+<rem:month>1</rem:month>
+<rem:day>19</rem:day>
+</rem:date>
+<rem:description><![CDATA[Propiedad [TriggeringEvent] actualizada [el cliente inicie sesión y quiera alquilar una cuba de un listado] -> [el cliente quiera alquilar una cuba a través de la web]]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>UC-0001</rem:owner><rem:date>
+<rem:year>2021</rem:year>
+<rem:month>1</rem:month>
+<rem:day>19</rem:day>
+</rem:date>
+<rem:description><![CDATA[Propiedad [IsConditional] del hijo nº4 actualizada: [true] -> [false]]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>SEC-0051</rem:owner><rem:date>
+<rem:year>2021</rem:year>
+<rem:month>1</rem:month>
+<rem:day>19</rem:day>
+</rem:date>
+<rem:description><![CDATA[Intercambiados hijos nº4 ([UC-0003] Consulta proveedores) y nº3 ([UC-0010] Registro de un nuevo cliente)]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>SEC-0051</rem:owner><rem:date>
+<rem:year>2021</rem:year>
+<rem:month>1</rem:month>
+<rem:day>19</rem:day>
+</rem:date>
+<rem:description><![CDATA[Intercambiados hijos nº3 ([UC-0002] Solicitar productos a proveedores) y nº2 ([UC-0010] Registro de un nuevo cliente)]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>UC-0006</rem:owner><rem:date>
+<rem:year>2021</rem:year>
+<rem:month>1</rem:month>
+<rem:day>19</rem:day>
+</rem:date>
+<rem:description><![CDATA[Propiedad [Postcondition] actualizada [El encargado del almacén recibe una notificación el día que haya que llevar la cuba y asigna un transportista para que lleve la cuba a la dirección de envío proporcionada por el cliente] -> [Se le notifica al empleado el día que haya que llevar la cuba y asigna un transportista para que lleve la cuba a la dirección de envío proporcionada por el cliente]]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>SEC-0051</rem:owner><rem:date>
+<rem:year>2021</rem:year>
+<rem:month>1</rem:month>
+<rem:day>19</rem:day>
+</rem:date>
+<rem:description><![CDATA[Eliminado hijo nº13 ([UC-0013] Consulta de facturas (de clientes o proveedores))]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>D</rem:type>
+<rem:owner>CRS-0001</rem:owner><rem:date>
+<rem:year>2021</rem:year>
+<rem:month>1</rem:month>
+<rem:day>19</rem:day>
+</rem:date>
+<rem:description><![CDATA[Eliminado el objeto [UC-0013] Consulta de facturas (de clientes o proveedores) con 2 hijos y 14 cambios]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>UC-0007</rem:owner><rem:date>
+<rem:year>2021</rem:year>
+<rem:month>1</rem:month>
+<rem:day>19</rem:day>
+</rem:date>
+<rem:description><![CDATA[Propiedad [Postcondition] actualizada [El propietario introduce los datos correctos y podrá comprobar que se ha insertado el empleado] -> []]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>UC-0005</rem:owner><rem:date>
+<rem:year>2021</rem:year>
+<rem:month>1</rem:month>
+<rem:day>19</rem:day>
+</rem:date>
+<rem:description><![CDATA[Propiedad [Postcondition] actualizada [El dueño podrá acceder al listado completo de empleados] -> []]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>UC-0007</rem:owner><rem:date>
+<rem:year>2021</rem:year>
+<rem:month>1</rem:month>
+<rem:day>19</rem:day>
+</rem:date>
+<rem:description><![CDATA[Propiedad [Precondition] actualizada [El propietario debe haber iniciado sesión correctamente] -> [El propietario debe haber iniciado sesión correctamente y selecciona en la lista de empleados al empleado que quiere actualizar su contrato]]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>UC-0007</rem:owner><rem:date>
+<rem:year>2021</rem:year>
+<rem:month>1</rem:month>
+<rem:day>19</rem:day>
+</rem:date>
+<rem:description><![CDATA[Propiedad [Condition] del hijo nº2 actualizada: [los datos del formulario para el empleado son correctos] -> [los datos del formulario para el contrato son correctos]]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>UC-0005</rem:owner><rem:date>
+<rem:year>2021</rem:year>
+<rem:month>1</rem:month>
+<rem:day>19</rem:day>
+</rem:date>
+<rem:description><![CDATA[Eliminado hijo nº1 (Actor Propietario accede a la ...)]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>UC-0005</rem:owner><rem:date>
+<rem:year>2021</rem:year>
+<rem:month>1</rem:month>
+<rem:day>19</rem:day>
+</rem:date>
+<rem:description><![CDATA[Propiedad [Precondition] actualizada [El propietario debe haber iniciado sesión correctamente] -> [El propietario debe haber iniciado sesión correctamente y accede a la lista de empleados]]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>UC-0002</rem:owner><rem:date>
+<rem:year>2021</rem:year>
+<rem:month>1</rem:month>
+<rem:day>19</rem:day>
+</rem:date>
+<rem:description><![CDATA[Propiedad [Precondition] actualizada [El encargado y/o propietario debe haber iniciado sesión correctamente] -> [El encargado y/o propietario debe haber iniciado sesión correctamente y debe haber proveedores registrados proveedores en el sistema]]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>UC-0011</rem:owner><rem:date>
+<rem:year>2021</rem:year>
+<rem:month>1</rem:month>
+<rem:day>19</rem:day>
+</rem:date>
+<rem:description><![CDATA[Propiedad [Precondition] actualizada [El empleado accede a la web] -> [El empleado accede a la web e inicia sesión]]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>UC-0007</rem:owner><rem:date>
+<rem:year>2021</rem:year>
+<rem:month>1</rem:month>
+<rem:day>19</rem:day>
+</rem:date>
+<rem:description><![CDATA[Propiedad [Name] actualizada [Creación de un nuevo contrato en web] -> [Actualización de contrato en web]]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>UC-0007</rem:owner><rem:date>
+<rem:year>2021</rem:year>
+<rem:month>1</rem:month>
+<rem:day>19</rem:day>
+</rem:date>
+<rem:description><![CDATA[Propiedad [TriggeringEvent] actualizada [el propietario inicie sesión y necesite añadir un contrato nuevo] -> [necesite añadir un contrato nuevo]]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>UC-0002</rem:owner><rem:date>
+<rem:year>2021</rem:year>
+<rem:month>1</rem:month>
+<rem:day>19</rem:day>
+</rem:date>
+<rem:description><![CDATA[Propiedad [Description] del hijo nº1 actualizada: [solicita a sus provedores los productos necesitados (mediante correo)] -> [selecciona los productos a comprar y los proveedores a los cuales quiere enviar la solicitud de compra (mediante correo)]]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>D</rem:type>
+<rem:owner>CRS-0001</rem:owner><rem:date>
+<rem:year>2021</rem:year>
+<rem:month>1</rem:month>
+<rem:day>19</rem:day>
+</rem:date>
+<rem:description><![CDATA[Eliminado el objeto [UC-0003] Consulta proveedores con 2 hijos y 21 cambios]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>UC-0002</rem:owner><rem:date>
+<rem:year>2021</rem:year>
+<rem:month>1</rem:month>
+<rem:day>19</rem:day>
+</rem:date>
+<rem:description><![CDATA[Propiedad [Postcondition] actualizada [El proveedor enviará los productos y se emitirá una factura] -> [El proveedor enviará los productos y se emitirá una factura. Horas antes de que se efectúe la entrega del pedido se le notificará a los empleados]]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>UC-0009</rem:owner><rem:date>
+<rem:year>2021</rem:year>
+<rem:month>1</rem:month>
+<rem:day>19</rem:day>
+</rem:date>
+<rem:description><![CDATA[Eliminado hijo nº2 (Actor Propietario clica sobre ...)]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>UC-0005</rem:owner><rem:date>
+<rem:year>2021</rem:year>
+<rem:month>1</rem:month>
+<rem:day>19</rem:day>
+</rem:date>
+<rem:description><![CDATA[Propiedad [Description] del hijo nº1 actualizada: [accede al apartado "empleados"] -> [accede a la lista de empleados]]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>UC-0011</rem:owner><rem:date>
+<rem:year>2021</rem:year>
+<rem:month>1</rem:month>
+<rem:day>19</rem:day>
+</rem:date>
+<rem:description><![CDATA[Propiedad [Description] del hijo nº2 actualizada: [añade sus datos de la factura] -> [introduce los datos de la factura]]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>D</rem:type>
+<rem:owner>CRS-0001</rem:owner><rem:date>
+<rem:year>2021</rem:year>
+<rem:month>1</rem:month>
+<rem:day>19</rem:day>
+</rem:date>
+<rem:description><![CDATA[Eliminado el objeto [UC-0004] Notificaciones sobre llegada de pedidos a trabajadores con 1 hijos y 13 cambios]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>UC-0008</rem:owner><rem:date>
+<rem:year>2021</rem:year>
+<rem:month>1</rem:month>
+<rem:day>19</rem:day>
+</rem:date>
+<rem:description><![CDATA[Eliminado hijo nº1 (Actor Propietario accede a la ...)]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>UC-0011</rem:owner><rem:date>
+<rem:year>2021</rem:year>
+<rem:month>1</rem:month>
+<rem:day>19</rem:day>
+</rem:date>
+<rem:description><![CDATA[Eliminado hijo nº1 (Actor Empleado de la tienda pu...)]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>UC-0011</rem:owner><rem:date>
+<rem:year>2021</rem:year>
+<rem:month>1</rem:month>
+<rem:day>19</rem:day>
+</rem:date>
+<rem:description><![CDATA[Propiedad [Postcondition] actualizada [El empleado puede acceder a las funcionalidades del sistema creadas para la creación de facturas] -> []]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>UC-0008</rem:owner><rem:date>
+<rem:year>2021</rem:year>
+<rem:month>1</rem:month>
+<rem:day>19</rem:day>
+</rem:date>
+<rem:description><![CDATA[Eliminado hijo nº1 (Actor Propietario clica sobre ...)]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>UC-0009</rem:owner><rem:date>
+<rem:year>2021</rem:year>
+<rem:month>1</rem:month>
+<rem:day>19</rem:day>
+</rem:date>
+<rem:description><![CDATA[Eliminado hijo nº1 (Actor Propietario accede a la ...)]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>UC-0011</rem:owner><rem:date>
+<rem:year>2021</rem:year>
+<rem:month>1</rem:month>
+<rem:day>19</rem:day>
+</rem:date>
+<rem:description><![CDATA[Eliminado hijo nº1 (Actor Empleado de la tienda in...)]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>UC-0007</rem:owner><rem:date>
+<rem:year>2021</rem:year>
+<rem:month>1</rem:month>
+<rem:day>19</rem:day>
+</rem:date>
+<rem:description><![CDATA[Propiedad [Description] del hijo nº1 actualizada: [accede al apartado de empleados y selecciona el formulario de inserción de empleado] -> [introduce los datos del contrato]]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>UC-0010</rem:owner><rem:date>
+<rem:year>2021</rem:year>
+<rem:month>1</rem:month>
+<rem:day>19</rem:day>
+</rem:date>
+<rem:description><![CDATA[Propiedad [Description] del hijo nº1 actualizada: [añade sus datos] -> [añade sus datos en el formulario de registro]]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
 <rem:owner>VAL-0001</rem:owner><rem:date>
 <rem:year>2021</rem:year>
 <rem:month>1</rem:month>
@@ -37307,11 +37181,353 @@ Cabe decir que estamos teniendo en cuenta que la semana laboral del empleado va 
 </rem:change>
 <rem:change>
 <rem:type>U</rem:type>
+<rem:owner>UC-0012</rem:owner><rem:date>
+<rem:year>2021</rem:year>
+<rem:month>1</rem:month>
+<rem:day>19</rem:day>
+</rem:date>
+<rem:description><![CDATA[Propiedad [Precondition] actualizada [El empleado accede a la web] -> [El empleado accede a la web y selecciona la entidad a editar]]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>SEC-0051</rem:owner><rem:date>
+<rem:year>2021</rem:year>
+<rem:month>1</rem:month>
+<rem:day>19</rem:day>
+</rem:date>
+<rem:description><![CDATA[Intercambiados hijos nº9 ([UC-0009] Añadir empleado) y nº10 ([UC-0010] Registro de un nuevo cliente)]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>SEC-0051</rem:owner><rem:date>
+<rem:year>2021</rem:year>
+<rem:month>1</rem:month>
+<rem:day>19</rem:day>
+</rem:date>
+<rem:description><![CDATA[Eliminado hijo nº12 ([UC-0015] Compra en el carrito de alertas)]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
 <rem:owner>SEC-0079</rem:owner><rem:date>
 <rem:year>2021</rem:year>
 <rem:month>1</rem:month>
 <rem:day>6</rem:day>
 </rem:date>
 <rem:description><![CDATA[Intercambiados hijos nº41 ([GRF-0103] IU-040 Registro Contrato Empleado) y nº42 ([GLO-0120] IU-039 Registro Empleado)]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>SEC-0051</rem:owner><rem:date>
+<rem:year>2021</rem:year>
+<rem:month>1</rem:month>
+<rem:day>19</rem:day>
+</rem:date>
+<rem:description><![CDATA[Intercambiados hijos nº6 ([UC-0006] Alquiler de cubas) y nº7 ([UC-0010] Registro de un nuevo cliente)]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>D</rem:type>
+<rem:owner>CRS-0001</rem:owner><rem:date>
+<rem:year>2021</rem:year>
+<rem:month>1</rem:month>
+<rem:day>19</rem:day>
+</rem:date>
+<rem:description><![CDATA[Eliminado el objeto [UC-0015] Compra en el carrito de alertas con 3 hijos y 15 cambios]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>SEC-0051</rem:owner><rem:date>
+<rem:year>2021</rem:year>
+<rem:month>1</rem:month>
+<rem:day>19</rem:day>
+</rem:date>
+<rem:description><![CDATA[Intercambiados hijos nº5 ([UC-0005] Consulta empleados) y nº6 ([UC-0010] Registro de un nuevo cliente)]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>UC-0016</rem:owner><rem:date>
+<rem:year>2021</rem:year>
+<rem:month>1</rem:month>
+<rem:day>19</rem:day>
+</rem:date>
+<rem:description><![CDATA[Eliminado hijo nº1 (Actor Propietario pulsa en la ...)]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>SEC-0051</rem:owner><rem:date>
+<rem:year>2021</rem:year>
+<rem:month>1</rem:month>
+<rem:day>19</rem:day>
+</rem:date>
+<rem:description><![CDATA[Intercambiados hijos nº8 ([UC-0008] Añadir proveedor) y nº9 ([UC-0010] Registro de un nuevo cliente)]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>UC-0012</rem:owner><rem:date>
+<rem:year>2021</rem:year>
+<rem:month>1</rem:month>
+<rem:day>19</rem:day>
+</rem:date>
+<rem:description><![CDATA[Eliminado hijo nº1 (Actor Empleado de la tienda pu...)]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>SEC-0051</rem:owner><rem:date>
+<rem:year>2021</rem:year>
+<rem:month>1</rem:month>
+<rem:day>19</rem:day>
+</rem:date>
+<rem:description><![CDATA[Intercambiados hijos nº4 ([UC-0004] Notificaciones sobre llegada de pedidos a trabajadores) y nº5 ([UC-0010] Registro de un nuevo cliente)]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>SEC-0051</rem:owner><rem:date>
+<rem:year>2021</rem:year>
+<rem:month>1</rem:month>
+<rem:day>19</rem:day>
+</rem:date>
+<rem:description><![CDATA[Intercambiados hijos nº3 ([UC-0003] Consulta proveedores) y nº4 ([UC-0010] Registro de un nuevo cliente)]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>UC-0014</rem:owner><rem:date>
+<rem:year>2021</rem:year>
+<rem:month>1</rem:month>
+<rem:day>19</rem:day>
+</rem:date>
+<rem:description><![CDATA[Eliminado hijo nº1 (Actor Empleado del almacén pul...)]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>SEC-0051</rem:owner><rem:date>
+<rem:year>2021</rem:year>
+<rem:month>1</rem:month>
+<rem:day>19</rem:day>
+</rem:date>
+<rem:description><![CDATA[Intercambiados hijos nº7 ([UC-0007] Creación de un nuevo contrato en web) y nº8 ([UC-0010] Registro de un nuevo cliente)]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>UC-0019</rem:owner><rem:date>
+<rem:year>2021</rem:year>
+<rem:month>1</rem:month>
+<rem:day>19</rem:day>
+</rem:date>
+<rem:description><![CDATA[Propiedad [Description] del hijo nº1 actualizada: [añade los datos del camión] -> [añade los datos del camión a guardar en el sistema]]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>UC-0020</rem:owner><rem:date>
+<rem:year>2021</rem:year>
+<rem:month>1</rem:month>
+<rem:day>19</rem:day>
+</rem:date>
+<rem:description><![CDATA[Intercambiados hijos nº3 (El sistema PD) y nº2 (Si el propietario ha añadido l...)]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>UC-0017</rem:owner><rem:date>
+<rem:year>2021</rem:year>
+<rem:month>1</rem:month>
+<rem:day>19</rem:day>
+</rem:date>
+<rem:description><![CDATA[Propiedad [Precondition] actualizada [El empleado accede a lista de pedidos de alquiler de cubas] -> [El empleado accede a lista de pedidos]]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>UC-0020</rem:owner><rem:date>
+<rem:year>2021</rem:year>
+<rem:month>1</rem:month>
+<rem:day>19</rem:day>
+</rem:date>
+<rem:description><![CDATA[Eliminado hijo nº1 (Actor Propietario pulsa sobre ...)]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>UC-0016</rem:owner><rem:date>
+<rem:year>2021</rem:year>
+<rem:month>1</rem:month>
+<rem:day>19</rem:day>
+</rem:date>
+<rem:description><![CDATA[Propiedad [Description] del hijo nº1 actualizada: [accede a una categoría específica de los informes y le da click en el botón de generar] -> [accede a una categoría específica de los informes]]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>UC-0020</rem:owner><rem:date>
+<rem:year>2021</rem:year>
+<rem:month>1</rem:month>
+<rem:day>19</rem:day>
+</rem:date>
+<rem:description><![CDATA[Propiedad [Postcondition] actualizada [El propietario accede a la vista en cuestión, donde modificará los datos de empleados] -> []]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>SEC-0051</rem:owner><rem:date>
+<rem:year>2021</rem:year>
+<rem:month>1</rem:month>
+<rem:day>19</rem:day>
+</rem:date>
+<rem:description><![CDATA[Eliminado hijo nº14 ([UC-0018] Asociación de portes a alquileres de cubas)]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>D</rem:type>
+<rem:owner>CRS-0001</rem:owner><rem:date>
+<rem:year>2021</rem:year>
+<rem:month>1</rem:month>
+<rem:day>19</rem:day>
+</rem:date>
+<rem:description><![CDATA[Eliminado el objeto [UC-0018] Asociación de portes a alquileres de cubas con 3 hijos y 9 cambios]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>UC-0017</rem:owner><rem:date>
+<rem:year>2021</rem:year>
+<rem:month>1</rem:month>
+<rem:day>19</rem:day>
+</rem:date>
+<rem:description><![CDATA[Propiedad [Description] del hijo nº2 actualizada: [el sistema hace crea el porte asociado y lo tramita con éxito] -> [crea el porte asociado y lo tramita con éxito]]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>UC-0017</rem:owner><rem:date>
+<rem:year>2021</rem:year>
+<rem:month>1</rem:month>
+<rem:day>19</rem:day>
+</rem:date>
+<rem:description><![CDATA[Propiedad [TriggeringEvent] actualizada [un empleado quiere asociar a un porte el camión y los empleados que se encargarán de él] -> [un empleado quiere asociar a un porte, el camión y los empleados que se encargarán de él]]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>UC-0016</rem:owner><rem:date>
+<rem:year>2021</rem:year>
+<rem:month>1</rem:month>
+<rem:day>19</rem:day>
+</rem:date>
+<rem:description><![CDATA[Propiedad [Description] del hijo nº2 actualizada: [el sistema hace crea el informe y lo muestra por pantalla] -> [crea el informe y lo muestra por pantalla]]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>UC-0019</rem:owner><rem:date>
+<rem:year>2021</rem:year>
+<rem:month>1</rem:month>
+<rem:day>19</rem:day>
+</rem:date>
+<rem:description><![CDATA[Propiedad [Postcondition] actualizada [El empleado logra crear una nueva instancia para un camión] -> []]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>UC-0016</rem:owner><rem:date>
+<rem:year>2021</rem:year>
+<rem:month>1</rem:month>
+<rem:day>19</rem:day>
+</rem:date>
+<rem:description><![CDATA[Propiedad [Condition] del hijo nº2 actualizada: [el propietario añade la descriptión correcta] -> [el propietario genera el informe con los datos correctos]]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>UC-0017</rem:owner><rem:date>
+<rem:year>2021</rem:year>
+<rem:month>1</rem:month>
+<rem:day>19</rem:day>
+</rem:date>
+<rem:description><![CDATA[Propiedad [Precondition] actualizada [El empleado accede a la pestaña de pedidos, donde podrá consultar los pedidos que se han ejecutado] -> [El empleado accede a lista de pedidos de alquiler de cubas]]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>UC-0020</rem:owner><rem:date>
+<rem:year>2021</rem:year>
+<rem:month>1</rem:month>
+<rem:day>19</rem:day>
+</rem:date>
+<rem:description><![CDATA[Intercambiados hijos nº2 (El sistema PD) y nº1 (Actor Propietario añade los da...)]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>UC-0019</rem:owner><rem:date>
+<rem:year>2021</rem:year>
+<rem:month>1</rem:month>
+<rem:day>19</rem:day>
+</rem:date>
+<rem:description><![CDATA[Eliminado hijo nº1 (Actor Empleado del almacén acc...)]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>UC-0017</rem:owner><rem:date>
+<rem:year>2021</rem:year>
+<rem:month>1</rem:month>
+<rem:day>19</rem:day>
+</rem:date>
+<rem:description><![CDATA[Propiedad [Description] del hijo nº1 actualizada: [pulsa sobre el botón de añadir porte] -> [añade los datos para crear el porte]]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>UC-0017</rem:owner><rem:date>
+<rem:year>2021</rem:year>
+<rem:month>1</rem:month>
+<rem:day>19</rem:day>
+</rem:date>
+<rem:description><![CDATA[Propiedad [Postcondition] actualizada [El empleado asigna a un porte de pedido, qué camión y empleados lo llevarán a cabo] -> []]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>UC-0019</rem:owner><rem:date>
+<rem:year>2021</rem:year>
+<rem:month>1</rem:month>
+<rem:day>19</rem:day>
+</rem:date>
+<rem:description><![CDATA[Propiedad [Precondition] actualizada [El empleado accede a la web] -> [El empleado inicia sesión y accede a la lista de camiones]]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>UC-0020</rem:owner><rem:date>
+<rem:year>2021</rem:year>
+<rem:month>1</rem:month>
+<rem:day>19</rem:day>
+</rem:date>
+<rem:description><![CDATA[Añadido hijo nº3 (El sistema PD)]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>UC-0020</rem:owner><rem:date>
+<rem:year>2021</rem:year>
+<rem:month>1</rem:month>
+<rem:day>19</rem:day>
+</rem:date>
+<rem:description><![CDATA[Propiedad [Precondition] actualizada [El propietario accede a la web] -> [El propietario inicia sesión y accede a la lista de empleados]]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>UC-0017</rem:owner><rem:date>
+<rem:year>2021</rem:year>
+<rem:month>1</rem:month>
+<rem:day>19</rem:day>
+</rem:date>
+<rem:description><![CDATA[Eliminado hijo nº1 (Actor Empleado del almacén ent...)]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>UC-0020</rem:owner><rem:date>
+<rem:year>2021</rem:year>
+<rem:month>1</rem:month>
+<rem:day>19</rem:day>
+</rem:date>
+<rem:description><![CDATA[Propiedad [Actor] del hijo nº1 actualizada: [] -> [[ACT-0020] Propietario]]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>UC-0020</rem:owner><rem:date>
+<rem:year>2021</rem:year>
+<rem:month>1</rem:month>
+<rem:day>19</rem:day>
+</rem:date>
+<rem:description><![CDATA[Propiedad [Description] del hijo nº1 actualizada: [PD] -> [selecciona el empleado a modificar]]]></rem:description>
+</rem:change>
+<rem:change>
+<rem:type>U</rem:type>
+<rem:owner>UC-0020</rem:owner><rem:date>
+<rem:year>2021</rem:year>
+<rem:month>1</rem:month>
+<rem:day>19</rem:day>
+</rem:date>
+<rem:description><![CDATA[Propiedad [IsActorAction] del hijo nº1 actualizada: [false] -> [true]]]></rem:description>
 </rem:change>
 </rem:log>
