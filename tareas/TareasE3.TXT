@@ -15,13 +15,8 @@ Pareja Ángel Antonio J
 
 
 Comodín de parejas Felipe
-	-Acta de reunión siguiente
-	-El nombre del subsistema 3 debe tener sentido en el dominio del problema.
-	-14-15 requisitos generales son demasiados para un sistema de vuestro tamaño. Probablemente algunos se puedan agrupar o poner como subobjetivos hasta quedaros en 4-5.
 	-Para que salgan las flechas en las matrices de rastreabilidad al generar los PDFs hay que indicar que se impriman las imágenes de fondo. Ya os lo comento en la revisión.
-	-Falta por hacer las descripciones de la interfaz de usuario de empleado
 	-Descripción de interfaz de servicios
-	-Matrices
 
 
 ERS apuntes

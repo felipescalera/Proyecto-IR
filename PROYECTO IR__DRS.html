@@ -2,11 +2,97 @@
 <html lang="es">
 <head>
 <meta charset="iso-8859-1" />
-<meta name="generatedBy" content="REMUS" />
+<meta name="generatedBy" content="REMUS (REM 1.3)" />
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/amador-duran-toro/remus/assets/stylesheets/remus.css" />
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/amador-duran-toro/remus/assets/stylesheets/madeja.css" />
 <title>Proyecto PROYECTO IR</title>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/showdown/1.0.2/showdown.js"></script>
 <script>
+            // showdown 1.0.2 (supported in IE 7 without es5-shim)
+            // Usage
+            // var result = converter.makeHtml(text);
+            // converter.setOption( "key", "value" );
+
+            var converter = new showdown.Converter();
+
+            // function to be used in XLST templates
+            // if inline=true, all CRLF tags are replaced
+            // by spaces to avoid internal <p>..</p> and
+            // the enclosing <p>..</p> (if any) is discarded.
+
+            function generate_markdown( id, inline )
+            {
+                // optional parameter
+                if ( inline === undefined ) {
+                    inline = false;
+                }
+
+                var md_id   = id + "-md";
+                var html_id = id + "-html";
+
+                var md_container   = document.getElementById( md_id );
+                var html_container = document.getElementById( html_id );
+
+                var md_text = md_container.value;
+
+                md_container.value = "remus_text = " + md_text; // for debugging
+
+                // Simple text replace can be performed using split and join faster
+                // than using replace with a regular expression as described in:
+                // https://dmitripavlutin.com/replace-all-string-occurrences-javascript/
+
+                /* no internal <p>...</p> in inline mode */
+                var newline = inline ? " " : "\n";
+                var two_newlines = newline + newline;
+
+                var crlf_tag             = "¬";
+                var two_crlf_tags        = crlf_tag + crlf_tag;
+                var three_spaces_newline = "   " + newline;
+                var reg_exp = new RegExp( "(" + crlf_tag + ")(?!(\\d\\.)|\\*|\\+|\\-|\\<)", 'g' );
+
+                // if ( inline )
+                //      replace all CRLF by spaces
+                // else
+                //      replace all CRLF+CRLF into \n\n
+                //      replace all CRLF not followed by *,+,-,&gt; or a digit+period into 3 spaces + \n
+                //      replace all remaining CRLF into \n
+                // endif
+                //
+                // try regular expressions at: https://regexr.com/
+
+                if ( inline ) {
+                    md_text = md_text.split( crlf_tag ).join( newline );
+                }
+                else {
+                    md_text = md_text.split( two_crlf_tags ).join( newline + newline );
+                    md_text = md_text.replace( reg_exp, three_spaces_newline + "$2" );
+                    md_text = md_text.split( crlf_tag ).join( newline );
+                }
+
+                md_container.value += "\n\nmd_text = " + md_text; // for debugging
+
+                // Don't get rid of enclosing <p>...</p> in paragraph mode,
+                // double \n inside markdown will close the first <p> generating an
+                // unbalanced </p> later and wrong html that will raise an
+                // error when assigned to innerHTML.
+
+                var html_text = converter.makeHtml( md_text );
+
+                if ( inline ) {
+                    // get rid of enclosing <p>...</p> (if any)
+                    // warning: generated item lists are not inside <p>...</p>
+                    // length("<p>") == 3, length("</p>") == 4
+                    if ( html_text.indexOf("<p>")       == 0 &&
+                         html_text.lastIndexOf("</p>")  == html_text.length - 4 )
+                    {
+                        html_text = html_text.slice( 3, -4 );
+                    }
+                }
+
+                md_container.value += ("\n\nhtml_text = " + html_text); // for debugging
+
+                html_container.innerHTML = html_text;
+            }
+
             // array for user warnings
             var warnings = new Array();
         </script>
@@ -19,7 +105,13 @@
 <div id="document_cover">
 <div id="browser_info">
 <script>
-                document.write( navigator.userAgent );
+                document.write( navigator.userAgent + "<br />" );
+                for( var opt in converter.getOptions() ) {
+                    document.write( "local option : " + opt + " = " + converter.getOption(opt) + "<br />" );
+                }
+                for( var opt in showdown.getOptions() ) {
+                    document.write( "global option : " + opt + " = " + showdown.getOption(opt) + "<br />" );
+                }
             </script>
 </div>
 <div id="project_name">Proyecto PROYECTO IR</div>
@@ -87,43 +179,51 @@
 <li>6.3 <a href="#SEC-0067">Servicios consumidos por el sistema</a></li>
 </ul>
 <li>7 <a href="#SEC-0063">Información sobre trazabilidad</a></li>
+<li>A <a href="#SEC-0064">Glosario de acrónimos y abreviaturas</a></li>
 </ul>
 </nav>
 <div class="pagebreak"></div>
 <div id="PRG-0076">
+<textarea id="PRG-0076-text-md" class="markdown">
+</textarea>
 <div id="PRG-0076-text-html" class=""></div>
+<script>generate_markdown("PRG-0076-text");</script>
 </div>
 <div id="PRG-0077">
+<textarea id="PRG-0077-text-md" class="markdown">
+</textarea>
 <div id="PRG-0077-text-html" class=""></div>
+<script>generate_markdown("PRG-0077-text");</script>
 </div>
 <div id="PRG-0078">
+<textarea id="PRG-0078-text-md" class="markdown">
+</textarea>
 <div id="PRG-0078-text-html" class=""></div>
+<script>generate_markdown("PRG-0078-text");</script>
 </div>
 <h1 id="SEC-0052" class="section">1 Introducción</h1>
 <h2 id="SEC-0053" class="section">1.1 Alcance del proyecto</h2>
 <div id="PRG-0079" class="info">
-<div id="PRG-0079-text-html" class=""><p>El alcance del sistema "InfoSiles" afectará a los siguientes aspectos de la organización HERMANOS SILES S.L :</p>
-<ul>
-<li><p><strong>Gestión de <a href='#GLO-0047' class="rem_ref">pedidos</a></strong> de los clientes mediante una <strong>plataforma online</strong> donde podrán comprar los <a href='#GLO-0046' class="rem_ref">productos</a> y elegir si desean que se les envíen a domicilio o recogerlo en tienda.</p></li>
-<li><p><strong>Gestón de empleados</strong> mediante una <strong>lista con los datos de los empleados</strong> de la empresa y sus respectivos <strong>contratos</strong>.</p></li>
-<li><p><strong>Gestión de <a href='#GLO-0048' class="rem_ref">proveedores</a></strong> mediante una <strong>lista</strong> con los <strong>datos de los <a href='#GLO-0048' class="rem_ref">proveedores</a></strong> y un historial <strong>de <a href='#GLO-0046' class="rem_ref">productos</a></strong> <strong><a href='#GLO-0047' class="rem_ref">pedidos</a> a estos</strong>.</p></li>
-<li><p><strong>Gestión del inventario</strong> de <a href='#GLO-0046' class="rem_ref">productos</a> mediante un <strong><a href='#GLO-0040' class="rem_ref">catálogo</a> de <a href='#GLO-0046' class="rem_ref">productos</a></strong> y su <strong>stock</strong> en el almacén. Además con la posibilidad de renovación de stock con la <strong>automatización de <a href='#GLO-0047' class="rem_ref">pedidos</a></strong>.</p></li>
-</ul></div>
+<textarea id="PRG-0079-text-md" class="markdown">El alcance del sistema "InfoSiles" afectará a los siguientes aspectos de la organización HERMANOS SILES S.L :¬¬* **Gestión de <a href="#GLO-0047" class="rem_ref">pedidos</a>** de los clientes mediante una **plataforma online** donde podrán comprar los <a href="#GLO-0046" class="rem_ref">productos</a> y elegir si desean que se les envíen a domicilio o recogerlo en tienda.¬¬* **Gestón de empleados** mediante una **lista con los datos de los empleados** de la empresa y sus respectivos **contratos**.¬¬* **Gestión de <a href="#GLO-0048" class="rem_ref">proveedores</a>** mediante una **lista** con los **datos de los <a href="#GLO-0048" class="rem_ref">proveedores</a>** y un historial **de <a href="#GLO-0046" class="rem_ref">productos</a>** **<a href="#GLO-0047" class="rem_ref">pedidos</a> a estos**.¬¬* **Gestión del inventario** de <a href="#GLO-0046" class="rem_ref">productos</a> mediante un **<a href="#GLO-0040" class="rem_ref">catálogo</a> de <a href="#GLO-0046" class="rem_ref">productos</a>** y su **stock** en el almacén. Además con la posibilidad de renovación de stock con la **automatización de <a href="#GLO-0047" class="rem_ref">pedidos</a>**.¬¬</textarea>
+<div id="PRG-0079-text-html" class=""></div>
+<script>generate_markdown("PRG-0079-text");</script>
 </div>
 <div id="GRF-0008" class="figure">
 <img class="figure_image" src=".\imagenes\download.jpg" />
 <p class="figure_caption">
-<span class="figure_caption_label">Figura 1:
-                 </span>
-<span id="GRF-0008-name-html" class="">Fachada del negocio</span>
+<span class="figure_caption_label">Figura 35: </span>
+<textarea id="GRF-0008-name-md" class="markdown">Fachada del negocio</textarea>
+<span id="GRF-0008-name-html"></span>
+<script>generate_markdown("GRF-0008-name",true);</script>
 </p>
 </div>
 <div id="GRF-0009" class="figure">
 <img class="figure_image" src=".\imagenes\WhatsApp Image 2020-11-04 at 18.33.39.png" />
 <p class="figure_caption">
-<span class="figure_caption_label">Figura 2:
-                 </span>
-<span id="GRF-0009-name-html" class="">Interior del negocio</span>
+<span class="figure_caption_label">Figura 36: </span>
+<textarea id="GRF-0009-name-md" class="markdown">Interior del negocio</textarea>
+<span id="GRF-0009-name-html"></span>
+<script>generate_markdown("GRF-0009-name",true);</script>
 </p>
 </div>
 <h2 id="SEC-0054" class="section">1.2 Participantes del proyecto</h2>
@@ -140,13 +240,17 @@
 <tr>
 <th>Dirección</th>
 <td colspan="1">
-<div id="ORG-0003-address-html" class=""><p>Calle Mercurio S/N, Utrera </p></div>
+<textarea id="ORG-0003-address-md" class="markdown">Calle Mercurio S/N, Utrera </textarea>
+<div id="ORG-0003-address-html" class=""></div>
+<script>generate_markdown("ORG-0003-address");</script>
 </td>
 </tr>
 <tr>
 <th>Comentarios</th>
 <td colspan="1">
-<div id="ORG-0003-comments-html" class="remus_comments"><p>Ninguno</p></div>
+<textarea id="ORG-0003-comments-md" class="markdown">Ninguno</textarea>
+<div id="ORG-0003-comments-html" class="remus_comments"></div>
+<script>generate_markdown("ORG-0003-comments");</script>
 </td>
 </tr>
 </table>
@@ -163,13 +267,17 @@
 <tr>
 <th>Dirección</th>
 <td colspan="1">
-<div id="ORG-0004-address-html" class=""><p>Av. Reina Mercedes</p></div>
+<textarea id="ORG-0004-address-md" class="markdown">Av. Reina Mercedes</textarea>
+<div id="ORG-0004-address-html" class=""></div>
+<script>generate_markdown("ORG-0004-address");</script>
 </td>
 </tr>
 <tr>
 <th>Comentarios</th>
 <td colspan="1">
-<div id="ORG-0004-comments-html" class="remus_comments"><p>Ninguno</p></div>
+<textarea id="ORG-0004-comments-md" class="markdown">Ninguno</textarea>
+<div id="ORG-0004-comments-html" class="remus_comments"></div>
+<script>generate_markdown("ORG-0004-comments");</script>
 </td>
 </tr>
 </table>
@@ -193,13 +301,17 @@
 <tr>
 <th>Rol</th>
 <td colspan="1">
-<span id="STK-0008-stakeholderRole-html" class="">Desarrollador                        (es desarrollador, es usuario)                    </span>
+<textarea id="STK-0008-stakeholderRole-md" class="markdown">Desarrollador                        (es desarrollador, es usuario)                    </textarea>
+<span id="STK-0008-stakeholderRole-html"></span>
+<script>generate_markdown("STK-0008-stakeholderRole",true);</script>
 </td>
 </tr>
 <tr>
 <th>Comentarios</th>
 <td colspan="1">
-<div id="STK-0008-comments-html" class="remus_comments"><p>Ninguno</p></div>
+<textarea id="STK-0008-comments-md" class="markdown">Ninguno</textarea>
+<div id="STK-0008-comments-html" class="remus_comments"></div>
+<script>generate_markdown("STK-0008-comments");</script>
 </td>
 </tr>
 </table>
@@ -222,13 +334,17 @@
 <tr>
 <th>Rol</th>
 <td colspan="1">
-<span id="STK-0009-stakeholderRole-html" class="">Desarrollador                        (es desarrollador, es usuario)                    </span>
+<textarea id="STK-0009-stakeholderRole-md" class="markdown">Desarrollador                        (es desarrollador, es usuario)                    </textarea>
+<span id="STK-0009-stakeholderRole-html"></span>
+<script>generate_markdown("STK-0009-stakeholderRole",true);</script>
 </td>
 </tr>
 <tr>
 <th>Comentarios</th>
 <td colspan="1">
-<div id="STK-0009-comments-html" class="remus_comments"><p>Ninguno</p></div>
+<textarea id="STK-0009-comments-md" class="markdown">Ninguno</textarea>
+<div id="STK-0009-comments-html" class="remus_comments"></div>
+<script>generate_markdown("STK-0009-comments");</script>
 </td>
 </tr>
 </table>
@@ -251,13 +367,17 @@
 <tr>
 <th>Rol</th>
 <td colspan="1">
-<span id="STK-0010-stakeholderRole-html" class="">Desarrollador                        (es desarrollador, es usuario)                    </span>
+<textarea id="STK-0010-stakeholderRole-md" class="markdown">Desarrollador                        (es desarrollador, es usuario)                    </textarea>
+<span id="STK-0010-stakeholderRole-html"></span>
+<script>generate_markdown("STK-0010-stakeholderRole",true);</script>
 </td>
 </tr>
 <tr>
 <th>Comentarios</th>
 <td colspan="1">
-<div id="STK-0010-comments-html" class="remus_comments"><p>Ninguno</p></div>
+<textarea id="STK-0010-comments-md" class="markdown">Ninguno</textarea>
+<div id="STK-0010-comments-html" class="remus_comments"></div>
+<script>generate_markdown("STK-0010-comments");</script>
 </td>
 </tr>
 </table>
@@ -280,13 +400,17 @@
 <tr>
 <th>Rol</th>
 <td colspan="1">
-<span id="STK-0011-stakeholderRole-html" class="">Desarrollador                        (es desarrollador, es usuario)                    </span>
+<textarea id="STK-0011-stakeholderRole-md" class="markdown">Desarrollador                        (es desarrollador, es usuario)                    </textarea>
+<span id="STK-0011-stakeholderRole-html"></span>
+<script>generate_markdown("STK-0011-stakeholderRole",true);</script>
 </td>
 </tr>
 <tr>
 <th>Comentarios</th>
 <td colspan="1">
-<div id="STK-0011-comments-html" class="remus_comments"><p>Ninguno</p></div>
+<textarea id="STK-0011-comments-md" class="markdown">Ninguno</textarea>
+<div id="STK-0011-comments-html" class="remus_comments"></div>
+<script>generate_markdown("STK-0011-comments");</script>
 </td>
 </tr>
 </table>
@@ -309,13 +433,17 @@
 <tr>
 <th>Rol</th>
 <td colspan="1">
-<span id="STK-0012-stakeholderRole-html" class="">Desarrollador                        (es desarrollador, es usuario)                    </span>
+<textarea id="STK-0012-stakeholderRole-md" class="markdown">Desarrollador                        (es desarrollador, es usuario)                    </textarea>
+<span id="STK-0012-stakeholderRole-html"></span>
+<script>generate_markdown("STK-0012-stakeholderRole",true);</script>
 </td>
 </tr>
 <tr>
 <th>Comentarios</th>
 <td colspan="1">
-<div id="STK-0012-comments-html" class="remus_comments"><p>Ninguno</p></div>
+<textarea id="STK-0012-comments-md" class="markdown">Ninguno</textarea>
+<div id="STK-0012-comments-html" class="remus_comments"></div>
+<script>generate_markdown("STK-0012-comments");</script>
 </td>
 </tr>
 </table>
@@ -338,13 +466,17 @@
 <tr>
 <th>Rol</th>
 <td colspan="1">
-<span id="STK-0013-stakeholderRole-html" class="">Propietario                        (es cliente)                    </span>
+<textarea id="STK-0013-stakeholderRole-md" class="markdown">Propietario                        (es cliente)                    </textarea>
+<span id="STK-0013-stakeholderRole-html"></span>
+<script>generate_markdown("STK-0013-stakeholderRole",true);</script>
 </td>
 </tr>
 <tr>
 <th>Comentarios</th>
 <td colspan="1">
-<div id="STK-0013-comments-html" class="remus_comments"><p>Ninguno</p></div>
+<textarea id="STK-0013-comments-md" class="markdown">Ninguno</textarea>
+<div id="STK-0013-comments-html" class="remus_comments"></div>
+<script>generate_markdown("STK-0013-comments");</script>
 </td>
 </tr>
 </table>
@@ -367,91 +499,96 @@
 <tr>
 <th>Rol</th>
 <td colspan="1">
-<span id="STK-0014-stakeholderRole-html" class="">Encargada                        (es cliente)                    </span>
+<textarea id="STK-0014-stakeholderRole-md" class="markdown">Encargada                        (es cliente)                    </textarea>
+<span id="STK-0014-stakeholderRole-html"></span>
+<script>generate_markdown("STK-0014-stakeholderRole",true);</script>
 </td>
 </tr>
 <tr>
 <th>Comentarios</th>
 <td colspan="1">
-<div id="STK-0014-comments-html" class="remus_comments"><p>Ninguno</p></div>
+<textarea id="STK-0014-comments-md" class="markdown">Ninguno</textarea>
+<div id="STK-0014-comments-html" class="remus_comments"></div>
+<script>generate_markdown("STK-0014-comments");</script>
 </td>
 </tr>
 </table>
 </div>
 <h2 id="SEC-0057" class="section">1.3 Objetivos del proyecto</h2>
 <div id="PRG-0080" class="info">
-<div id="PRG-0080-text-html" class=""><p>Los principales objetivos que se esperan alcanzar con el nuevo sistema son:</p>
-<ul>
-<li><p>Mejora de visibilidad del sistema.</p></li>
-<li><p>Aumentar el alcance del negocio</p></li>
-<li><p>Aumento de las ventas.</p></li>
-<li><p>Automatización de los <a href='#GLO-0047' class="rem_ref">pedidos</a> a los <a href='#GLO-0048' class="rem_ref">proveedores</a>.</p></li>
-<li><p>Mejora de gestión del inventario.</p></li>
-<li><p>Mejora de gestión de <a href='#GLO-0047' class="rem_ref">pedidos</a>.</p></li>
-<li><p>Mejora en la venta de <a href='#GLO-0046' class="rem_ref">productos</a>.</p></li>
-<li><p>Informatizar el negocio de forma general.   </p></li>
-</ul></div>
+<textarea id="PRG-0080-text-md" class="markdown">Los principales objetivos que se esperan alcanzar con el nuevo sistema son:¬¬* Mejora de visibilidad del sistema.¬¬* Aumentar el alcance del negocio¬¬* Aumento de las ventas.¬¬* Automatización de los <a href="#GLO-0047" class="rem_ref">pedidos</a> a los <a href="#GLO-0048" class="rem_ref">proveedores</a>.¬¬* Mejora de gestión del inventario.¬¬* Mejora de gestión de <a href="#GLO-0047" class="rem_ref">pedidos</a>.¬¬* Mejora en la venta de <a href="#GLO-0046" class="rem_ref">productos</a>.¬¬* Informatizar el negocio de forma general.¬</textarea>
+<div id="PRG-0080-text-html" class=""></div>
+<script>generate_markdown("PRG-0080-text");</script>
 </div>
 <h1 id="SEC-0058" class="section">2 Arquitectura lógica del sistema</h1>
 <h2 id="SEC-0076" class="section">2.1 Diagramas de la arquitectura del sistema</h2>
 <div id="GRF-0014" class="figure">
 <img class="figure_image" src=".\diagramas\diagramas de arquitectura de sistema\Arquitectura sistema.png" />
 <p class="figure_caption">
-<span class="figure_caption_label">Figura 3:
-                 </span>
-<span id="GRF-0014-name-html" class="">Diagrama UML de la Arquitectura del Sistema</span>
+<span class="figure_caption_label">Figura 37: </span>
+<textarea id="GRF-0014-name-md" class="markdown">Diagrama UML de la Arquitectura del Sistema</textarea>
+<span id="GRF-0014-name-html"></span>
+<script>generate_markdown("GRF-0014-name",true);</script>
 </p>
 </div>
 <h2 id="SEC-0077" class="section">2.2 Descripción de la arquitectura del sistema</h2>
 <div id="PRG-0084" class="info">
-<div id="PRG-0084-text-html" class=""><p>En nuestro sistema, el usuario accede a la capa de presentación para poder manipular el sistema, esto se consigue gracias a que la capa de presentación está conectada con la capa de lógica de negocio que es la que se encarga de implementar las operaciones. A su vez, la capa de negocio se comunica con la capa de persistencia que es la encargada de leer, guardar y eliminar los datos de la base de datos.</p>
-<p>En caso de que el usuario sea un empleado, podría acceder a una API externa con el fin de enviar correos a <a href='#GLO-0048' class="rem_ref">proveedores</a> de forma semiautomatizada.</p></div>
+<textarea id="PRG-0084-text-md" class="markdown">En nuestro sistema, el usuario accede a la capa de presentación para poder manipular el sistema, esto se consigue gracias a que la capa de presentación está conectada con la capa de lógica de negocio que es la que se encarga de implementar las operaciones. A su vez, la capa de negocio se comunica con la capa de persistencia que es la encargada de leer, guardar y eliminar los datos de la base de datos.¬¬En caso de que el usuario sea un empleado, podría acceder a una API externa con el fin de enviar correos a <a href="#GLO-0048" class="rem_ref">proveedores</a> de forma semiautomatizada.</textarea>
+<div id="PRG-0084-text-html" class=""></div>
+<script>generate_markdown("PRG-0084-text");</script>
 </div>
 <h1 id="SEC-0059" class="section">3 Modelo de clases del sistema</h1>
 <h2 id="SEC-0073" class="section">3.1 Diagramas de clases del sistema</h2>
 <div id="GRF-0010" class="figure">
 <img class="figure_image" src=".\diagramas\diagramas del modelado conceptual\diagramaDePedidoDeCliente.png" width="50%%" />
 <p class="figure_caption">
-<span class="figure_caption_label">Figura 4:
-                 </span>
-<span id="GRF-0010-name-html" class="">Diagrama de <a href='#GLO-0047' class="rem_ref">pedido</a> de cliente y empleados</span>
+<span class="figure_caption_label">Figura 38: </span>
+<textarea id="GRF-0010-name-md" class="markdown">Diagrama de <a href="#GLO-0047" class="rem_ref">pedido</a> de cliente y empleados</textarea>
+<span id="GRF-0010-name-html"></span>
+<script>generate_markdown("GRF-0010-name",true);</script>
 </p>
 </div>
 <div id="GRF-0011" class="figure">
 <img class="figure_image" src=".\diagramas\diagramas del modelado conceptual\diagramaDePedidoDeProveedor.png" width="45%%" />
 <p class="figure_caption">
-<span class="figure_caption_label">Figura 5:
-                 </span>
-<span id="GRF-0011-name-html" class="">Diagrama de <a href='#GLO-0047' class="rem_ref">pedido</a> a <a href='#GLO-0048' class="rem_ref">proveedor</a></span>
+<span class="figure_caption_label">Figura 39: </span>
+<textarea id="GRF-0011-name-md" class="markdown">Diagrama de <a href="#GLO-0047" class="rem_ref">pedido</a> a <a href="#GLO-0048" class="rem_ref">proveedor</a>
+</textarea>
+<span id="GRF-0011-name-html"></span>
+<script>generate_markdown("GRF-0011-name",true);</script>
 </p>
 </div>
 <div id="GRF-0012" class="figure">
 <img class="figure_image" src=".\diagramas\diagramas del modelado conceptual\diagramaDeAlquilerCuba.png" width="50%%" />
 <p class="figure_caption">
-<span class="figure_caption_label">Figura 6:
-                 </span>
-<span id="GRF-0012-name-html" class="">Diagrama de alquiler de <a href='#GLO-0016' class="rem_ref">cuba</a></span>
+<span class="figure_caption_label">Figura 40: </span>
+<textarea id="GRF-0012-name-md" class="markdown">Diagrama de alquiler de <a href="#GLO-0016" class="rem_ref">cuba</a>
+</textarea>
+<span id="GRF-0012-name-html"></span>
+<script>generate_markdown("GRF-0012-name",true);</script>
 </p>
 </div>
 <div id="GRF-0013" class="figure">
 <img class="figure_image" src=".\diagramas\diagramas del modelado conceptual\diagramaPorteDeCamiones.png" width="30%%" />
 <p class="figure_caption">
-<span class="figure_caption_label">Figura 7:
-                 </span>
-<span id="GRF-0013-name-html" class="">Diagrama porte de camiones</span>
+<span class="figure_caption_label">Figura 41: </span>
+<textarea id="GRF-0013-name-md" class="markdown">Diagrama porte de camiones</textarea>
+<span id="GRF-0013-name-html"></span>
+<script>generate_markdown("GRF-0013-name",true);</script>
 </p>
 </div>
 <div id="GRF-0049" class="figure">
 <img class="figure_image" src=".\diagramas\diagramas del modelado conceptual\diagramaDeUser.png" width="30%%" />
 <p class="figure_caption">
-<span class="figure_caption_label">Figura 8:
-                 </span>
-<span id="GRF-0049-name-html" class="">Diagrama de usuarios</span>
+<span class="figure_caption_label">Figura 42: </span>
+<textarea id="GRF-0049-name-md" class="markdown">Diagrama de usuarios</textarea>
+<span id="GRF-0049-name-html"></span>
+<script>generate_markdown("GRF-0049-name",true);</script>
 </p>
 </div>
 <h2 id="SEC-0074" class="section">3.2 Descripción de las clases del sistema</h2>
-<div id="VAL-0001" class="value_type">
-<table class="value_type remus_table">
+<div id="VAL-0001" class="object_type">
+<table class="object_type remus_table">
 <thead>
 <tr>
 <th>
@@ -469,7 +606,9 @@
 <div class="code">
 <div>
 <span class="code_comment">/**</span>
-<div id="VAL-0001-description-html" class="code_comment code_description"><p>representa los diferentes cargos de los empleados</p></div>
+<textarea id="VAL-0001-description-md" class="markdown">representa los diferentes cargos de los empleados</textarea>
+<div id="VAL-0001-description-html" class="code_comment code_description"></div>
+<script>generate_markdown("VAL-0001-description");</script>
 <span class="code_comment">*/</span>
 </div>
 <span class="keyword">enumerated type </span>
@@ -483,7 +622,6 @@
 <li id="ATT-0254" class="property">ENCARGADOALMACEN</li>
 <li id="ATT-0255" class="property">TRANSPORTISTA</li>
 </ul>
-
             }
         </div>
 </td>
@@ -491,13 +629,15 @@
 <tr>
 <th>Comentarios</th>
 <td colspan="1">
-<div id="VAL-0001-comments-html" class="remus_comments"><p>Ninguno</p></div>
+<textarea id="VAL-0001-comments-md" class="markdown">Ninguno</textarea>
+<div id="VAL-0001-comments-html" class="remus_comments"></div>
+<script>generate_markdown("VAL-0001-comments");</script>
 </td>
 </tr>
 </table>
 </div>
-<div id="VAL-0002" class="value_type">
-<table class="value_type remus_table">
+<div id="VAL-0002" class="object_type">
+<table class="object_type remus_table">
 <thead>
 <tr>
 <th>
@@ -515,14 +655,18 @@
 <div class="code">
 <div>
 <span class="code_comment">/**</span>
-<div id="VAL-0002-description-html" class="code_comment code_description"><p>el tipo Boolean, especificado aquí ya que no se baraja como tipo ya implementado</p></div>
+<textarea id="VAL-0002-description-md" class="markdown">el tipo Boolean, especificado aquí ya que no se baraja como tipo ya implementado</textarea>
+<div id="VAL-0002-description-html" class="code_comment code_description"></div>
+<script>generate_markdown("VAL-0002-description");</script>
 <span class="code_comment">*/</span>
 </div>
 <span class="keyword">value type </span>
 <span class="class_name">Boolean</span>
 <br />
             {<br />
-<div id="VAL-0002-definition-html" class="code_ocl"><p>TRUE, FALSE</p></div>
+<textarea id="VAL-0002-definition-md" class="markdown">TRUE, FALSE</textarea>
+<div id="VAL-0002-definition-html" class="code_ocl"></div>
+<script>generate_markdown("VAL-0002-definition");</script>
             }
         </div>
 </td>
@@ -530,13 +674,15 @@
 <tr>
 <th>Comentarios</th>
 <td colspan="1">
-<div id="VAL-0002-comments-html" class="remus_comments"><p>Ninguno</p></div>
+<textarea id="VAL-0002-comments-md" class="markdown">Ninguno</textarea>
+<div id="VAL-0002-comments-html" class="remus_comments"></div>
+<script>generate_markdown("VAL-0002-comments");</script>
 </td>
 </tr>
 </table>
 </div>
-<div id="VAL-0003" class="value_type">
-<table class="value_type remus_table">
+<div id="VAL-0003" class="object_type">
+<table class="object_type remus_table">
 <thead>
 <tr>
 <th>
@@ -554,7 +700,10 @@
 <div class="code">
 <div>
 <span class="code_comment">/**</span>
-<div id="VAL-0003-description-html" class="code_comment code_description"><p>representa el método de pago elegido por el cliente al pagar una <a href='#GLO-0039' class="rem_ref">factura</a></p></div>
+<textarea id="VAL-0003-description-md" class="markdown">representa el método de pago elegido por el cliente al pagar una <a href="#GLO-0039" class="rem_ref">factura</a>
+</textarea>
+<div id="VAL-0003-description-html" class="code_comment code_description"></div>
+<script>generate_markdown("VAL-0003-description");</script>
 <span class="code_comment">*/</span>
 </div>
 <span class="keyword">enumerated type </span>
@@ -566,7 +715,6 @@
 <li id="ATT-0257" class="property">TARJETACREDITO</li>
 <li id="ATT-0258" class="property">EFECTIVO</li>
 </ul>
-
             }
         </div>
 </td>
@@ -574,13 +722,15 @@
 <tr>
 <th>Comentarios</th>
 <td colspan="1">
-<div id="VAL-0003-comments-html" class="remus_comments"><p>Ninguno</p></div>
+<textarea id="VAL-0003-comments-md" class="markdown">Ninguno</textarea>
+<div id="VAL-0003-comments-html" class="remus_comments"></div>
+<script>generate_markdown("VAL-0003-comments");</script>
 </td>
 </tr>
 </table>
 </div>
-<div id="VAL-0004" class="value_type">
-<table class="value_type remus_table">
+<div id="VAL-0004" class="object_type">
+<table class="object_type remus_table">
 <thead>
 <tr>
 <th>
@@ -598,7 +748,10 @@
 <div class="code">
 <div>
 <span class="code_comment">/**</span>
-<div id="VAL-0004-description-html" class="code_comment code_description"><p>representa de qué manera se cuantifican los <a href='#GLO-0046' class="rem_ref">productos</a></p></div>
+<textarea id="VAL-0004-description-md" class="markdown">representa de qué manera se cuantifican los <a href="#GLO-0046" class="rem_ref">productos</a>
+</textarea>
+<div id="VAL-0004-description-html" class="code_comment code_description"></div>
+<script>generate_markdown("VAL-0004-description");</script>
 <span class="code_comment">*/</span>
 </div>
 <span class="keyword">enumerated type </span>
@@ -611,7 +764,6 @@
 <li id="ATT-0260" class="property">M3</li>
 <li id="ATT-0261" class="property">SACOS</li>
 </ul>
-
             }
         </div>
 </td>
@@ -619,13 +771,15 @@
 <tr>
 <th>Comentarios</th>
 <td colspan="1">
-<div id="VAL-0004-comments-html" class="remus_comments"><p>Ninguno</p></div>
+<textarea id="VAL-0004-comments-md" class="markdown">Ninguno</textarea>
+<div id="VAL-0004-comments-html" class="remus_comments"></div>
+<script>generate_markdown("VAL-0004-comments");</script>
 </td>
 </tr>
 </table>
 </div>
-<div id="VAL-0005" class="value_type">
-<table class="value_type remus_table">
+<div id="VAL-0005" class="object_type">
+<table class="object_type remus_table">
 <thead>
 <tr>
 <th>
@@ -643,7 +797,10 @@
 <div class="code">
 <div>
 <span class="code_comment">/**</span>
-<div id="VAL-0005-description-html" class="code_comment code_description"><p>representa el estado en el que se encuentra una <a href='#GLO-0016' class="rem_ref">cuba</a></p></div>
+<textarea id="VAL-0005-description-md" class="markdown">representa el estado en el que se encuentra una <a href="#GLO-0016" class="rem_ref">cuba</a>
+</textarea>
+<div id="VAL-0005-description-html" class="code_comment code_description"></div>
+<script>generate_markdown("VAL-0005-description");</script>
 <span class="code_comment">*/</span>
 </div>
 <span class="keyword">enumerated type </span>
@@ -655,7 +812,6 @@
 <li id="ATT-0262" class="property">BUENESTADO</li>
 <li id="ATT-0263" class="property">MALESTADO</li>
 </ul>
-
             }
         </div>
 </td>
@@ -663,13 +819,15 @@
 <tr>
 <th>Comentarios</th>
 <td colspan="1">
-<div id="VAL-0005-comments-html" class="remus_comments"><p>Ninguno</p></div>
+<textarea id="VAL-0005-comments-md" class="markdown">Ninguno</textarea>
+<div id="VAL-0005-comments-html" class="remus_comments"></div>
+<script>generate_markdown("VAL-0005-comments");</script>
 </td>
 </tr>
 </table>
 </div>
-<div id="VAL-0006" class="value_type">
-<table class="value_type remus_table">
+<div id="VAL-0006" class="object_type">
+<table class="object_type remus_table">
 <thead>
 <tr>
 <th>
@@ -687,7 +845,9 @@
 <div class="code">
 <div>
 <span class="code_comment">/**</span>
-<div id="VAL-0006-description-html" class="code_comment code_description"><p>representa la disponibilidad de un camión o <a href='#GLO-0016' class="rem_ref">cuba</a> para su uso</p></div>
+<textarea id="VAL-0006-description-md" class="markdown">representa la disponibilidad de un camión o <a href="#GLO-0016" class="rem_ref">cuba</a> para su uso</textarea>
+<div id="VAL-0006-description-html" class="code_comment code_description"></div>
+<script>generate_markdown("VAL-0006-description");</script>
 <span class="code_comment">*/</span>
 </div>
 <span class="keyword">enumerated type </span>
@@ -700,7 +860,6 @@
 <li id="ATT-0265" class="property">NO DISPONIBLE</li>
 <li id="ATT-0266" class="property">REPARANDO</li>
 </ul>
-
             }
         </div>
 </td>
@@ -708,7 +867,9 @@
 <tr>
 <th>Comentarios</th>
 <td colspan="1">
-<div id="VAL-0006-comments-html" class="remus_comments"><p>Ninguno</p></div>
+<textarea id="VAL-0006-comments-md" class="markdown">Ninguno</textarea>
+<div id="VAL-0006-comments-html" class="remus_comments"></div>
+<script>generate_markdown("VAL-0006-comments");</script>
 </td>
 </tr>
 </table>
@@ -732,7 +893,9 @@
 <div class="code">
 <div>
 <span class="code_comment">/**</span>
-<div id="TYP-0001-description-html" class="code_comment code_description"><p>representa un usuario creado para navegar la página de nuestra aplicación asociado a un cliente, empleado o <a href='#GLO-0048' class="rem_ref">proveedor</a> de la empresa</p></div>
+<textarea id="TYP-0001-description-md" class="markdown">representa un usuario creado para navegar la página de nuestra aplicación asociado a un cliente, empleado o <a href="#GLO-0048" class="rem_ref">proveedor</a> de la empresa</textarea>
+<div id="TYP-0001-description-html" class="code_comment code_description"></div>
+<script>generate_markdown("TYP-0001-description");</script>
 <span class="code_comment">*/</span>
 </div>
 <span class="keyword ">class </span>
@@ -742,15 +905,19 @@
 <span class="class_name "><a href="#TYP-0003" class="rem_ref">Cliente</a></span>, <span class="class_name "><a href="#TYP-0002" class="rem_ref">Empleado</a></span>, <span class="class_name "><a href="#TYP-0004" class="rem_ref">Proveedor</a></span><br />
 
     {<br />
-<div class="code_comment code_header">// atributos</div>
+<div class="code_comment code_header">// attributes</div>
 <ul class="properties">
 <li id="ATT-0108" class="property">
-<br /><span class="keyword">var </span>idUsuario : Integer</li>
+<span class="keyword">var </span>idUsuario : Integer</li>
 <li id="ATT-0093" class="property">
-<div id="ATT-0093-description-html" class="code_comment"><p>/** email usado para iniciar sesión */</p></div>
+<textarea id="ATT-0093-description-md" class="markdown">/** email usado para iniciar sesión */</textarea>
+<div id="ATT-0093-description-html" class="code_comment"></div>
+<script>generate_markdown("ATT-0093-description");</script>
 <span class="keyword">var </span>email : String</li>
 <li id="ATT-0094" class="property">
-<div id="ATT-0094-description-html" class="code_comment"><p>/** contraseña usada para iniciar sesión */</p></div>
+<textarea id="ATT-0094-description-md" class="markdown">/** contraseña usada para iniciar sesión */</textarea>
+<div id="ATT-0094-description-html" class="code_comment"></div>
+<script>generate_markdown("ATT-0094-description");</script>
 <span class="keyword">var </span>contraseña : String</li>
 </ul>
     }
@@ -760,7 +927,9 @@
 <tr>
 <th>Comentarios</th>
 <td colspan="1">
-<div id="TYP-0001-comments-html" class="remus_comments"><p>Ninguno</p></div>
+<textarea id="TYP-0001-comments-md" class="markdown">Ninguno</textarea>
+<div id="TYP-0001-comments-html" class="remus_comments"></div>
+<script>generate_markdown("TYP-0001-comments");</script>
 </td>
 </tr>
 </table>
@@ -784,7 +953,9 @@
 <div class="code">
 <div>
 <span class="code_comment">/**</span>
-<div id="TYP-0002-description-html" class="code_comment code_description"><p>representa un empleado de la empresa dado de alta en la base de datos</p></div>
+<textarea id="TYP-0002-description-md" class="markdown">representa un empleado de la empresa dado de alta en la base de datos</textarea>
+<div id="TYP-0002-description-html" class="code_comment code_description"></div>
+<script>generate_markdown("TYP-0002-description");</script>
 <span class="code_comment">*/</span>
 </div>
 <span class="keyword ">class </span>
@@ -796,28 +967,28 @@
 <br />
 
     {<br />
-<div class="code_comment code_header">// atributos</div>
+<div class="code_comment code_header">// attributes</div>
 <ul class="properties">
 <li id="ATT-0109" class="property">
-<br /><span class="keyword">var </span>idEmpleado : Integer</li>
+<span class="keyword">var </span>idEmpleado : Integer</li>
 <li id="ATT-0095" class="property">
-<br /><span class="keyword">var </span>nombre : String</li>
+<span class="keyword">var </span>nombre : String</li>
 <li id="ATT-0096" class="property">
-<br /><span class="keyword">var </span>apellidos : String</li>
+<span class="keyword">var </span>apellidos : String</li>
 <li id="ATT-0097" class="property">
-<br /><span class="keyword">var </span>dni : String</li>
+<span class="keyword">var </span>dni : String</li>
 <li id="ATT-0098" class="property">
-<br /><span class="keyword">var </span>telefono : String</li>
+<span class="keyword">var </span>telefono : String</li>
 <li id="ATT-0099" class="property">
-<br /><span class="keyword">var </span>iban : String</li>
+<span class="keyword">var </span>iban : String</li>
 <li id="ATT-0101" class="property">
-<br /><span class="keyword">var </span>tipo : [enum] TipoEmpleado</li>
+<span class="keyword">var </span>tipo : [enum] TipoEmpleado</li>
 <li id="ATT-0103" class="property">
-<br /><span class="keyword">var </span>carnetConducirB : Boolean</li>
+<span class="keyword">var </span>carnetConducirB : Boolean</li>
 <li id="ATT-0233" class="property">
-<br /><span class="keyword">var </span>carnetConducirC : Boolean</li>
+<span class="keyword">var </span>carnetConducirC : Boolean</li>
 <li id="ATT-0234" class="property">
-<br /><span class="keyword">var </span>carnetConducirC1 : Boolean</li>
+<span class="keyword">var </span>carnetConducirC1 : Boolean</li>
 </ul>
     }
 </div>
@@ -826,7 +997,9 @@
 <tr>
 <th>Comentarios</th>
 <td colspan="1">
-<div id="TYP-0002-comments-html" class="remus_comments"><p>Ninguno</p></div>
+<textarea id="TYP-0002-comments-md" class="markdown">Ninguno</textarea>
+<div id="TYP-0002-comments-html" class="remus_comments"></div>
+<script>generate_markdown("TYP-0002-comments");</script>
 </td>
 </tr>
 </table>
@@ -850,7 +1023,9 @@
 <div class="code">
 <div>
 <span class="code_comment">/**</span>
-<div id="TYP-0003-description-html" class="code_comment code_description"><p>representa un cliente dado de alta en la base de datos</p></div>
+<textarea id="TYP-0003-description-md" class="markdown">representa un cliente dado de alta en la base de datos</textarea>
+<div id="TYP-0003-description-html" class="code_comment code_description"></div>
+<script>generate_markdown("TYP-0003-description");</script>
 <span class="code_comment">*/</span>
 </div>
 <span class="keyword ">class </span>
@@ -862,18 +1037,18 @@
 <br />
 
     {<br />
-<div class="code_comment code_header">// atributos</div>
+<div class="code_comment code_header">// attributes</div>
 <ul class="properties">
 <li id="ATT-0110" class="property">
-<br /><span class="keyword">var </span>idCliente : Integer</li>
+<span class="keyword">var </span>idCliente : Integer</li>
 <li id="ATT-0104" class="property">
-<br /><span class="keyword">var </span>nombre : String</li>
+<span class="keyword">var </span>nombre : String</li>
 <li id="ATT-0105" class="property">
-<br /><span class="keyword">var </span>apellidos : String</li>
+<span class="keyword">var </span>apellidos : String</li>
 <li id="ATT-0106" class="property">
-<br /><span class="keyword">var </span>dni : String</li>
+<span class="keyword">var </span>dni : String</li>
 <li id="ATT-0107" class="property">
-<br /><span class="keyword">var </span>tarjetaCredito : String</li>
+<span class="keyword">var </span>tarjetaCredito : String</li>
 </ul>
     }
 </div>
@@ -882,7 +1057,9 @@
 <tr>
 <th>Comentarios</th>
 <td colspan="1">
-<div id="TYP-0003-comments-html" class="remus_comments"><p>Ninguno</p></div>
+<textarea id="TYP-0003-comments-md" class="markdown">Ninguno</textarea>
+<div id="TYP-0003-comments-html" class="remus_comments"></div>
+<script>generate_markdown("TYP-0003-comments");</script>
 </td>
 </tr>
 </table>
@@ -906,7 +1083,9 @@
 <div class="code">
 <div>
 <span class="code_comment">/**</span>
-<div id="TYP-0004-description-html" class="code_comment code_description"><p>representa un <a href='#GLO-0048' class="rem_ref">proveedor</a> dado de alta en la base de datos</p></div>
+<textarea id="TYP-0004-description-md" class="markdown">representa un <a href="#GLO-0048" class="rem_ref">proveedor</a> dado de alta en la base de datos</textarea>
+<div id="TYP-0004-description-html" class="code_comment code_description"></div>
+<script>generate_markdown("TYP-0004-description");</script>
 <span class="code_comment">*/</span>
 </div>
 <span class="keyword ">class </span>
@@ -918,20 +1097,20 @@
 <br />
 
     {<br />
-<div class="code_comment code_header">// atributos</div>
+<div class="code_comment code_header">// attributes</div>
 <ul class="properties">
 <li id="ATT-0111" class="property">
-<br /><span class="keyword">var </span>idProveedor : Integer</li>
+<span class="keyword">var </span>idProveedor : Integer</li>
 <li id="ATT-0112" class="property">
-<br /><span class="keyword">var </span>nombre : String</li>
+<span class="keyword">var </span>nombre : String</li>
 <li id="ATT-0113" class="property">
-<br /><span class="keyword">var </span>direccion : String</li>
+<span class="keyword">var </span>direccion : String</li>
 <li id="ATT-0114" class="property">
-<br /><span class="keyword">var </span>iban : String</li>
+<span class="keyword">var </span>iban : String</li>
 <li id="ATT-0115" class="property">
-<br /><span class="keyword">var </span>telefono : String</li>
+<span class="keyword">var </span>telefono : String</li>
 <li id="ATT-0180" class="property">
-<br /><span class="keyword">var </span>correo : String</li>
+<span class="keyword">var </span>correo : String</li>
 </ul>
     }
 </div>
@@ -940,7 +1119,9 @@
 <tr>
 <th>Comentarios</th>
 <td colspan="1">
-<div id="TYP-0004-comments-html" class="remus_comments"><p>Ninguno</p></div>
+<textarea id="TYP-0004-comments-md" class="markdown">Ninguno</textarea>
+<div id="TYP-0004-comments-html" class="remus_comments"></div>
+<script>generate_markdown("TYP-0004-comments");</script>
 </td>
 </tr>
 </table>
@@ -964,7 +1145,9 @@
 <div class="code">
 <div>
 <span class="code_comment">/**</span>
-<div id="TYP-0005-description-html" class="code_comment code_description"><p>representa un contrato de trabajo asociado a un empleado de la empresa</p></div>
+<textarea id="TYP-0005-description-md" class="markdown">representa un contrato de trabajo asociado a un empleado de la empresa</textarea>
+<div id="TYP-0005-description-html" class="code_comment code_description"></div>
+<script>generate_markdown("TYP-0005-description");</script>
 <span class="code_comment">*/</span>
 </div>
 <span class="keyword ">class </span>
@@ -972,20 +1155,22 @@
 <br />
 
     {<br />
-<div class="code_comment code_header">// atributos</div>
+<div class="code_comment code_header">// attributes</div>
 <ul class="properties">
 <li id="ATT-0136" class="property">
-<br /><span class="keyword">var </span>idContrato : Integer</li>
+<span class="keyword">var </span>idContrato : Integer</li>
 <li id="ATT-0116" class="property">
-<br /><span class="keyword">var </span>fechaAlta : Date</li>
+<span class="keyword">var </span>fechaAlta : Date</li>
 <li id="ATT-0117" class="property">
-<div id="ATT-0117-description-html" class="code_comment"><p>/** este atributo puede ser nulo (solamente se le puede poner multiplicidad si se pone como set, bag o sequence) */</p></div>
+<textarea id="ATT-0117-description-md" class="markdown">/** este atributo puede ser nulo (solamente se le puede poner multiplicidad si se pone como set, bag o sequence) */</textarea>
+<div id="ATT-0117-description-html" class="code_comment"></div>
+<script>generate_markdown("ATT-0117-description");</script>
 <span class="keyword">var </span>fechaBaja : Set(Date)
             [0..1]</li>
 <li id="ATT-0118" class="property">
-<br /><span class="keyword">var </span>salario : Real</li>
+<span class="keyword">var </span>salario : Real</li>
 <li id="ATT-0119" class="property">
-<br /><span class="keyword">var </span>horasSemanales : Real</li>
+<span class="keyword">var </span>horasSemanales : Real</li>
 </ul>
     }
 </div>
@@ -994,7 +1179,9 @@
 <tr>
 <th>Comentarios</th>
 <td colspan="1">
-<div id="TYP-0005-comments-html" class="remus_comments"><p>Ninguno</p></div>
+<textarea id="TYP-0005-comments-md" class="markdown">Ninguno</textarea>
+<div id="TYP-0005-comments-html" class="remus_comments"></div>
+<script>generate_markdown("TYP-0005-comments");</script>
 </td>
 </tr>
 </table>
@@ -1018,7 +1205,9 @@
 <div class="code">
 <div>
 <span class="code_comment">/**</span>
-<div id="TYP-0006-description-html" class="code_comment code_description"><p>representa el horario de una semana en concreto asociado a un empleado de la empresa</p></div>
+<textarea id="TYP-0006-description-md" class="markdown">representa el horario de una semana en concreto asociado a un empleado de la empresa</textarea>
+<div id="TYP-0006-description-html" class="code_comment code_description"></div>
+<script>generate_markdown("TYP-0006-description");</script>
 <span class="code_comment">*/</span>
 </div>
 <span class="keyword ">class </span>
@@ -1026,16 +1215,16 @@
 <br />
 
     {<br />
-<div class="code_comment code_header">// atributos</div>
+<div class="code_comment code_header">// attributes</div>
 <ul class="properties">
 <li id="ATT-0137" class="property">
-<br /><span class="keyword">var </span>idHorarioSemanal : Integer</li>
+<span class="keyword">var </span>idHorarioSemanal : Integer</li>
 <li id="ATT-0120" class="property">
-<br /><span class="keyword">var </span>fechaSemana : String</li>
+<span class="keyword">var </span>fechaSemana : String</li>
 <li id="ATT-0121" class="property">
-<br /><span class="keyword">var </span>horaEntrada : Time</li>
+<span class="keyword">var </span>horaEntrada : Time</li>
 <li id="ATT-0122" class="property">
-<br /><span class="keyword">var </span>horaSalida : Time</li>
+<span class="keyword">var </span>horaSalida : Time</li>
 </ul>
     }
 </div>
@@ -1044,7 +1233,9 @@
 <tr>
 <th>Comentarios</th>
 <td colspan="1">
-<div id="TYP-0006-comments-html" class="remus_comments"><p>Ninguno</p></div>
+<textarea id="TYP-0006-comments-md" class="markdown">Ninguno</textarea>
+<div id="TYP-0006-comments-html" class="remus_comments"></div>
+<script>generate_markdown("TYP-0006-comments");</script>
 </td>
 </tr>
 </table>
@@ -1068,7 +1259,9 @@
 <div class="code">
 <div>
 <span class="code_comment">/**</span>
-<div id="TYP-0007-description-html" class="code_comment code_description"><p>representa un <a href='#GLO-0046' class="rem_ref">producto</a> vendido o comprado por la empresa</p></div>
+<textarea id="TYP-0007-description-md" class="markdown">representa un <a href="#GLO-0046" class="rem_ref">producto</a> vendido o comprado por la empresa</textarea>
+<div id="TYP-0007-description-html" class="code_comment code_description"></div>
+<script>generate_markdown("TYP-0007-description");</script>
 <span class="code_comment">*/</span>
 </div>
 <span class="keyword ">class </span>
@@ -1076,28 +1269,28 @@
 <br />
 
     {<br />
-<div class="code_comment code_header">// atributos</div>
+<div class="code_comment code_header">// attributes</div>
 <ul class="properties">
 <li id="ATT-0138" class="property">
-<br /><span class="keyword">var </span>idProducto : Integer</li>
+<span class="keyword">var </span>idProducto : Integer</li>
 <li id="ATT-0123" class="property">
-<br /><span class="keyword">var </span>nombre : String</li>
+<span class="keyword">var </span>nombre : String</li>
 <li id="ATT-0124" class="property">
-<br /><span class="keyword">var </span>precio : Real</li>
+<span class="keyword">var </span>precio : Real</li>
 <li id="ATT-0125" class="property">
-<br /><span class="keyword">var </span>precioVentaPublico : Real</li>
+<span class="keyword">var </span>precioVentaPublico : Real</li>
 <li id="ATT-0126" class="property">
-<br /><span class="keyword">var </span>stock : Real</li>
+<span class="keyword">var </span>stock : Real</li>
 <li id="ATT-0127" class="property">
-<br /><span class="keyword">var </span>Vital : Boolean</li>
+<span class="keyword">var </span>Vital : Boolean</li>
 <li id="ATT-0128" class="property">
-<br /><span class="keyword">var </span>descripcion : String</li>
+<span class="keyword">var </span>descripcion : String</li>
 <li id="ATT-0129" class="property">
-<br /><span class="keyword">var </span>tipo : [enum] UnidadProducto</li>
+<span class="keyword">var </span>tipo : [enum] UnidadProducto</li>
 <li id="ATT-0228" class="property">
-<br /><span class="keyword">var </span>peso : Integer</li>
+<span class="keyword">var </span>peso : Integer</li>
 <li id="ATT-0229" class="property">
-<br /><span class="keyword">var </span>volumen : Integer</li>
+<span class="keyword">var </span>volumen : Integer</li>
 </ul>
     }
 </div>
@@ -1106,7 +1299,9 @@
 <tr>
 <th>Comentarios</th>
 <td colspan="1">
-<div id="TYP-0007-comments-html" class="remus_comments"><p>Ninguno</p></div>
+<textarea id="TYP-0007-comments-md" class="markdown">Ninguno</textarea>
+<div id="TYP-0007-comments-html" class="remus_comments"></div>
+<script>generate_markdown("TYP-0007-comments");</script>
 </td>
 </tr>
 </table>
@@ -1130,7 +1325,9 @@
 <div class="code">
 <div>
 <span class="code_comment">/**</span>
-<div id="TYP-0008-description-html" class="code_comment code_description"><p>representa un <a href='#GLO-0047' class="rem_ref">pedido</a> realizado por un cliente</p></div>
+<textarea id="TYP-0008-description-md" class="markdown">representa un <a href="#GLO-0047" class="rem_ref">pedido</a> realizado por un cliente</textarea>
+<div id="TYP-0008-description-html" class="code_comment code_description"></div>
+<script>generate_markdown("TYP-0008-description");</script>
 <span class="code_comment">*/</span>
 </div>
 <span class="keyword ">class </span>
@@ -1138,32 +1335,38 @@
 <br />
 
     {<br />
-<div class="code_comment code_header">// atributos</div>
+<div class="code_comment code_header">// attributes</div>
 <ul class="properties">
 <li id="ATT-0139" class="property">
-<br /><span class="keyword">var </span>idPedidoCliente : Integer</li>
+<span class="keyword">var </span>idPedidoCliente : Integer</li>
 <li id="ATT-0131" class="property">
-<br /><span class="keyword">derived </span>costeTotal : Real<span id="ATT-0131-ocl-html" class="code_ocl">=  sumatorio de los precios de las líneas de pedido asociadas a este pedido</span>
+<span class="keyword">derived </span>costeTotal : Real<textarea id="ATT-0131-ocl-md" class="markdown">=  <span class="code_ocl">sumatorio de los precios de las líneas de pedido asociadas a este pedido</span>
+</textarea>
+<span id="ATT-0131-ocl-html"></span>
+<script>generate_markdown("ATT-0131-ocl",true);</script>
 </li>
 <li id="ATT-0132" class="property">
-<br /><span class="keyword">var </span>iva : Real</li>
+<span class="keyword">var </span>iva : Real</li>
 <li id="ATT-0133" class="property">
-<br /><span class="keyword">derived </span>descuentoTotal : Real<span id="ATT-0133-ocl-html" class="code_ocl">=  sumatorio de los precios descontados en cada uno de los descuentos de las líneas de pedido asociadas a este pedido</span>
+<span class="keyword">derived </span>descuentoTotal : Real<textarea id="ATT-0133-ocl-md" class="markdown">=  <span class="code_ocl">sumatorio de los precios descontados en cada uno de los descuentos de las líneas de pedido asociadas a este pedido</span>
+</textarea>
+<span id="ATT-0133-ocl-html"></span>
+<script>generate_markdown("ATT-0133-ocl",true);</script>
 </li>
 <li id="ATT-0134" class="property">
-<br /><span class="keyword">var </span>fechaEntregaEstimada : Date</li>
+<span class="keyword">var </span>fechaEntregaEstimada : Date</li>
 </ul>
 <br />
-<div class="code_comment code_header">// componentes</div>
+<div class="code_comment code_header">// components</div>
 <ul class="properties">
 <li id="COM-0143" class="property">
-<br /><span class="keyword">var </span>lineaProducto : Set(LineaPedidoCliente)
+<span class="keyword">var </span>lineaProducto : Set(LineaPedidoCliente)
             [1..*]</li>
 <li id="COM-0147" class="property">
-<br /><span class="keyword">var </span>facturaCliente : Set(FacturaCliente)
+<span class="keyword">var </span>facturaCliente : Set(FacturaCliente)
             [0..1]</li>
 <li id="COM-0151" class="property">
-<br /><span class="keyword">var </span>porte : Set(Porte)
+<span class="keyword">var </span>porte : Set(Porte)
             [0..1]</li>
 </ul>
     }
@@ -1173,7 +1376,9 @@
 <tr>
 <th>Comentarios</th>
 <td colspan="1">
-<div id="TYP-0008-comments-html" class="remus_comments"><p>Ninguno</p></div>
+<textarea id="TYP-0008-comments-md" class="markdown">Ninguno</textarea>
+<div id="TYP-0008-comments-html" class="remus_comments"></div>
+<script>generate_markdown("TYP-0008-comments");</script>
 </td>
 </tr>
 </table>
@@ -1197,7 +1402,9 @@
 <div class="code">
 <div>
 <span class="code_comment">/**</span>
-<div id="TYP-0009-description-html" class="code_comment code_description"><p>representa las líneas de <a href='#GLO-0047' class="rem_ref">pedido</a> relacionadas con cada <a href='#GLO-0046' class="rem_ref">producto</a> que conforman un <a href='#GLO-0047' class="rem_ref">pedido</a> de cliente</p></div>
+<textarea id="TYP-0009-description-md" class="markdown">representa las líneas de <a href="#GLO-0047" class="rem_ref">pedido</a> relacionadas con cada <a href="#GLO-0046" class="rem_ref">producto</a> que conforman un <a href="#GLO-0047" class="rem_ref">pedido</a> de cliente</textarea>
+<div id="TYP-0009-description-html" class="code_comment code_description"></div>
+<script>generate_markdown("TYP-0009-description");</script>
 <span class="code_comment">*/</span>
 </div>
 <span class="keyword ">class </span>
@@ -1205,16 +1412,18 @@
 <br />
 
     {<br />
-<div class="code_comment code_header">// atributos</div>
+<div class="code_comment code_header">// attributes</div>
 <ul class="properties">
 <li id="ATT-0140" class="property">
-<br /><span class="keyword">var </span>idLineaPedidoCliente : Integer</li>
+<span class="keyword">var </span>idLineaPedidoCliente : Integer</li>
 <li id="ATT-0135" class="property">
-<br /><span class="keyword">var </span>cantidad : Integer</li>
+<span class="keyword">var </span>cantidad : Integer</li>
 <li id="ATT-0141" class="property">
-<br /><span class="keyword">var </span>descuento : Real</li>
+<span class="keyword">var </span>descuento : Real</li>
 <li id="ATT-0142" class="property">
-<div id="ATT-0142-description-html" class="code_comment"><p>/** el precio de cada <a href='#GLO-0046' class="rem_ref">producto</a> por separado (su pvp multiplicado por la cantidad) */</p></div>
+<textarea id="ATT-0142-description-md" class="markdown">/** el precio de cada <a href="#GLO-0046" class="rem_ref">producto</a> por separado (su pvp multiplicado por la cantidad) */</textarea>
+<div id="ATT-0142-description-html" class="code_comment"></div>
+<script>generate_markdown("ATT-0142-description");</script>
 <span class="keyword">var </span>precio : Real</li>
 </ul>
     }
@@ -1224,7 +1433,9 @@
 <tr>
 <th>Comentarios</th>
 <td colspan="1">
-<div id="TYP-0009-comments-html" class="remus_comments"><p>Ninguno</p></div>
+<textarea id="TYP-0009-comments-md" class="markdown">Ninguno</textarea>
+<div id="TYP-0009-comments-html" class="remus_comments"></div>
+<script>generate_markdown("TYP-0009-comments");</script>
 </td>
 </tr>
 </table>
@@ -1248,7 +1459,9 @@
 <div class="code">
 <div>
 <span class="code_comment">/**</span>
-<div id="TYP-0010-description-html" class="code_comment code_description"><p>representa a una <a href='#GLO-0039' class="rem_ref">factura</a> asociada al <a href='#GLO-0047' class="rem_ref">pedido</a> de un cliente</p></div>
+<textarea id="TYP-0010-description-md" class="markdown">representa a una <a href="#GLO-0039" class="rem_ref">factura</a> asociada al <a href="#GLO-0047" class="rem_ref">pedido</a> de un cliente</textarea>
+<div id="TYP-0010-description-html" class="code_comment code_description"></div>
+<script>generate_markdown("TYP-0010-description");</script>
 <span class="code_comment">*/</span>
 </div>
 <span class="keyword ">class </span>
@@ -1256,14 +1469,14 @@
 <br />
 
     {<br />
-<div class="code_comment code_header">// atributos</div>
+<div class="code_comment code_header">// attributes</div>
 <ul class="properties">
 <li id="ATT-0144" class="property">
-<br /><span class="keyword">var </span>idFacturaCliente : Integer</li>
+<span class="keyword">var </span>idFacturaCliente : Integer</li>
 <li id="ATT-0145" class="property">
-<br /><span class="keyword">var </span>fechaFacturacion : Date</li>
+<span class="keyword">var </span>fechaFacturacion : Date</li>
 <li id="ATT-0146" class="property">
-<br /><span class="keyword">var </span>tipo : [enum] TipoPago</li>
+<span class="keyword">var </span>tipo : [enum] TipoPago</li>
 </ul>
     }
 </div>
@@ -1272,7 +1485,9 @@
 <tr>
 <th>Comentarios</th>
 <td colspan="1">
-<div id="TYP-0010-comments-html" class="remus_comments"><p>Ninguno</p></div>
+<textarea id="TYP-0010-comments-md" class="markdown">Ninguno</textarea>
+<div id="TYP-0010-comments-html" class="remus_comments"></div>
+<script>generate_markdown("TYP-0010-comments");</script>
 </td>
 </tr>
 </table>
@@ -1296,7 +1511,9 @@
 <div class="code">
 <div>
 <span class="code_comment">/**</span>
-<div id="TYP-0011-description-html" class="code_comment code_description"><p>representa el porte asociado a un <a href='#GLO-0047' class="rem_ref">pedido</a> de <a href='#GLO-0046' class="rem_ref">productos</a> por parte de un cliente </p></div>
+<textarea id="TYP-0011-description-md" class="markdown">representa el porte asociado a un <a href="#GLO-0047" class="rem_ref">pedido</a> de <a href="#GLO-0046" class="rem_ref">productos</a> por parte de un cliente </textarea>
+<div id="TYP-0011-description-html" class="code_comment code_description"></div>
+<script>generate_markdown("TYP-0011-description");</script>
 <span class="code_comment">*/</span>
 </div>
 <span class="keyword ">class </span>
@@ -1304,16 +1521,16 @@
 <br />
 
     {<br />
-<div class="code_comment code_header">// atributos</div>
+<div class="code_comment code_header">// attributes</div>
 <ul class="properties">
 <li id="ATT-0148" class="property">
-<br /><span class="keyword">var </span>idPorte : Integer</li>
+<span class="keyword">var </span>idPorte : Integer</li>
 <li id="ATT-0149" class="property">
-<br /><span class="keyword">var </span>fechaEntrega : Date</li>
+<span class="keyword">var </span>fechaEntrega : Date</li>
 <li id="ATT-0170" class="property">
-<br /><span class="keyword">var </span>direccionEnvio : String</li>
+<span class="keyword">var </span>direccionEnvio : String</li>
 <li id="ATT-0150" class="property">
-<br /><span class="keyword">var </span>costePorte : Real</li>
+<span class="keyword">var </span>costePorte : Real</li>
 </ul>
     }
 </div>
@@ -1322,7 +1539,9 @@
 <tr>
 <th>Comentarios</th>
 <td colspan="1">
-<div id="TYP-0011-comments-html" class="remus_comments"><p>Ninguno</p></div>
+<textarea id="TYP-0011-comments-md" class="markdown">Ninguno</textarea>
+<div id="TYP-0011-comments-html" class="remus_comments"></div>
+<script>generate_markdown("TYP-0011-comments");</script>
 </td>
 </tr>
 </table>
@@ -1346,7 +1565,10 @@
 <div class="code">
 <div>
 <span class="code_comment">/**</span>
-<div id="TYP-0012-description-html" class="code_comment code_description"><p>representa un camión de la flota de la empresa, usado para el porte de <a href='#GLO-0046' class="rem_ref">productos</a> o de <a href='#GLO-0016' class="rem_ref">cubas</a></p></div>
+<textarea id="TYP-0012-description-md" class="markdown">representa un camión de la flota de la empresa, usado para el porte de <a href="#GLO-0046" class="rem_ref">productos</a> o de <a href="#GLO-0016" class="rem_ref">cubas</a>
+</textarea>
+<div id="TYP-0012-description-html" class="code_comment code_description"></div>
+<script>generate_markdown("TYP-0012-description");</script>
 <span class="code_comment">*/</span>
 </div>
 <span class="keyword ">class </span>
@@ -1354,24 +1576,28 @@
 <br />
 
     {<br />
-<div class="code_comment code_header">// atributos</div>
+<div class="code_comment code_header">// attributes</div>
 <ul class="properties">
 <li id="ATT-0152" class="property">
-<br /><span class="keyword">var </span>idCamion : Integer</li>
+<span class="keyword">var </span>idCamion : Integer</li>
 <li id="ATT-0153" class="property">
-<br /><span class="keyword">var </span>matricula : String</li>
+<span class="keyword">var </span>matricula : String</li>
 <li id="ATT-0154" class="property">
-<br /><span class="keyword">var </span>combustible : Real</li>
+<span class="keyword">var </span>combustible : Real</li>
 <li id="ATT-0155" class="property">
-<div id="ATT-0155-description-html" class="code_comment"><p>/** medida en kilogramos */</p></div>
+<textarea id="ATT-0155-description-md" class="markdown">/** medida en kilogramos */</textarea>
+<div id="ATT-0155-description-html" class="code_comment"></div>
+<script>generate_markdown("ATT-0155-description");</script>
 <span class="keyword">var </span>cargaMaxima : Real</li>
 <li id="ATT-0156" class="property">
-<div id="ATT-0156-description-html" class="code_comment"><p>/** medida en kilogramos */</p></div>
+<textarea id="ATT-0156-description-md" class="markdown">/** medida en kilogramos */</textarea>
+<div id="ATT-0156-description-html" class="code_comment"></div>
+<script>generate_markdown("ATT-0156-description");</script>
 <span class="keyword">var </span>tara : Real</li>
 <li id="ATT-0157" class="property">
-<br /><span class="keyword">var </span>tipo : [enum] Disponibilidad</li>
+<span class="keyword">var </span>tipo : [enum] Disponibilidad</li>
 <li id="ATT-0232" class="property">
-<br /><span class="keyword">var </span>volumen : Integer</li>
+<span class="keyword">var </span>volumen : Integer</li>
 </ul>
     }
 </div>
@@ -1380,7 +1606,9 @@
 <tr>
 <th>Comentarios</th>
 <td colspan="1">
-<div id="TYP-0012-comments-html" class="remus_comments"><p>Ninguno</p></div>
+<textarea id="TYP-0012-comments-md" class="markdown">Ninguno</textarea>
+<div id="TYP-0012-comments-html" class="remus_comments"></div>
+<script>generate_markdown("TYP-0012-comments");</script>
 </td>
 </tr>
 </table>
@@ -1404,7 +1632,9 @@
 <div class="code">
 <div>
 <span class="code_comment">/**</span>
-<div id="TYP-0013-description-html" class="code_comment code_description"><p>representa una <a href='#GLO-0016' class="rem_ref">cuba</a>, con la información necesaria para su alquiler</p></div>
+<textarea id="TYP-0013-description-md" class="markdown">representa una <a href="#GLO-0016" class="rem_ref">cuba</a>, con la información necesaria para su alquiler</textarea>
+<div id="TYP-0013-description-html" class="code_comment code_description"></div>
+<script>generate_markdown("TYP-0013-description");</script>
 <span class="code_comment">*/</span>
 </div>
 <span class="keyword ">class </span>
@@ -1412,29 +1642,35 @@
 <br />
 
     {<br />
-<div class="code_comment code_header">// atributos</div>
+<div class="code_comment code_header">// attributes</div>
 <ul class="properties">
 <li id="ATT-0158" class="property">
-<br /><span class="keyword">var </span>idCuba : Integer</li>
+<span class="keyword">var </span>idCuba : Integer</li>
 <li id="ATT-0159" class="property">
-<div id="ATT-0159-description-html" class="code_comment"><p>/** medida en metros cúbicos */</p></div>
+<textarea id="ATT-0159-description-md" class="markdown">/** medida en metros cúbicos */</textarea>
+<div id="ATT-0159-description-html" class="code_comment"></div>
+<script>generate_markdown("ATT-0159-description");</script>
 <span class="keyword">var </span>capacidad : Real</li>
 <li id="ATT-0160" class="property">
-<br /><span class="keyword">var </span>tipo1 : [enum] Estado</li>
+<span class="keyword">var </span>tipo1 : [enum] Estado</li>
 <li id="ATT-0161" class="property">
-<br /><span class="keyword">var </span>Disponibilidad : Boolean</li>
+<span class="keyword">var </span>Disponibilidad : Boolean</li>
 <li id="ATT-0162" class="property">
-<div id="ATT-0162-description-html" class="code_comment"><p>/** descripción de la <a href='#GLO-0016' class="rem_ref">cuba</a> para diferenciarlas */</p></div>
+<textarea id="ATT-0162-description-md" class="markdown">/** descripción de la <a href="#GLO-0016" class="rem_ref">cuba</a> para diferenciarlas */</textarea>
+<div id="ATT-0162-description-html" class="code_comment"></div>
+<script>generate_markdown("ATT-0162-description");</script>
 <span class="keyword">var </span>modeloDeCuba : String</li>
 <li id="ATT-0224" class="property">
-<div id="ATT-0224-description-html" class="code_comment"><p>/** medida en metros cúbicos */</p></div>
+<textarea id="ATT-0224-description-md" class="markdown">/** medida en metros cúbicos */</textarea>
+<div id="ATT-0224-description-html" class="code_comment"></div>
+<script>generate_markdown("ATT-0224-description");</script>
 <span class="keyword">var </span>peso : Integer</li>
 </ul>
 <br />
-<div class="code_comment code_header">// componentes</div>
+<div class="code_comment code_header">// components</div>
 <ul class="properties">
 <li id="COM-0169" class="property">
-<br /><span class="keyword">var </span>ordenAlquilerCuba : Set(OrdenAlquilerCuba)
+<span class="keyword">var </span>ordenAlquilerCuba : Set(OrdenAlquilerCuba)
             [*..*]</li>
 </ul>
     }
@@ -1444,7 +1680,9 @@
 <tr>
 <th>Comentarios</th>
 <td colspan="1">
-<div id="TYP-0013-comments-html" class="remus_comments"><p>Ninguno</p></div>
+<textarea id="TYP-0013-comments-md" class="markdown">Ninguno</textarea>
+<div id="TYP-0013-comments-html" class="remus_comments"></div>
+<script>generate_markdown("TYP-0013-comments");</script>
 </td>
 </tr>
 </table>
@@ -1468,7 +1706,9 @@
 <div class="code">
 <div>
 <span class="code_comment">/**</span>
-<div id="TYP-0014-description-html" class="code_comment code_description"><p>representa un registro de un alquiler de <a href='#GLO-0016' class="rem_ref">cuba</a> a la empresa por parte de un cliente</p></div>
+<textarea id="TYP-0014-description-md" class="markdown">representa un registro de un alquiler de <a href="#GLO-0016" class="rem_ref">cuba</a> a la empresa por parte de un cliente</textarea>
+<div id="TYP-0014-description-html" class="code_comment code_description"></div>
+<script>generate_markdown("TYP-0014-description");</script>
 <span class="code_comment">*/</span>
 </div>
 <span class="keyword ">class </span>
@@ -1476,29 +1716,29 @@
 <br />
 
     {<br />
-<div class="code_comment code_header">// atributos</div>
+<div class="code_comment code_header">// attributes</div>
 <ul class="properties">
 <li id="ATT-0168" class="property">
-<br /><span class="keyword">var </span>idOrdenAlquilerCuba : Integer</li>
+<span class="keyword">var </span>idOrdenAlquilerCuba : Integer</li>
 <li id="ATT-0163" class="property">
-<br /><span class="keyword">var </span>coste : Real</li>
+<span class="keyword">var </span>coste : Real</li>
 <li id="ATT-0164" class="property">
-<br /><span class="keyword">var </span>fechaInicio : Date</li>
+<span class="keyword">var </span>fechaInicio : Date</li>
 <li id="ATT-0165" class="property">
-<br /><span class="keyword">var </span>fechaFin : Date</li>
+<span class="keyword">var </span>fechaFin : Date</li>
 <li id="ATT-0166" class="property">
-<br /><span class="keyword">var </span>fechaDevolución : Date</li>
+<span class="keyword">var </span>fechaDevolución : Date</li>
 <li id="ATT-0167" class="property">
-<br /><span class="keyword">var </span>fianza : Real</li>
+<span class="keyword">var </span>fianza : Real</li>
 </ul>
 <br />
-<div class="code_comment code_header">// componentes</div>
+<div class="code_comment code_header">// components</div>
 <ul class="properties">
 <li id="COM-0175" class="property">
-<br /><span class="keyword">var </span>porteCuba : Set(PorteCuba)
+<span class="keyword">var </span>porteCuba : Set(PorteCuba)
             [0..1]</li>
 <li id="COM-0179" class="property">
-<br /><span class="keyword">var </span>incidenciaAlquiler : Set(IncidenciaAlquiler)
+<span class="keyword">var </span>incidenciaAlquiler : Set(IncidenciaAlquiler)
             [0..1]</li>
 </ul>
     }
@@ -1508,7 +1748,9 @@
 <tr>
 <th>Comentarios</th>
 <td colspan="1">
-<div id="TYP-0014-comments-html" class="remus_comments"><p>Ninguno</p></div>
+<textarea id="TYP-0014-comments-md" class="markdown">Ninguno</textarea>
+<div id="TYP-0014-comments-html" class="remus_comments"></div>
+<script>generate_markdown("TYP-0014-comments");</script>
 </td>
 </tr>
 </table>
@@ -1532,7 +1774,9 @@
 <div class="code">
 <div>
 <span class="code_comment">/**</span>
-<div id="TYP-0015-description-html" class="code_comment code_description"><p>representa el porte asociado a una <a href='#GLO-0016' class="rem_ref">cuba</a> alquilada por un cliente </p></div>
+<textarea id="TYP-0015-description-md" class="markdown">representa el porte asociado a una <a href="#GLO-0016" class="rem_ref">cuba</a> alquilada por un cliente </textarea>
+<div id="TYP-0015-description-html" class="code_comment code_description"></div>
+<script>generate_markdown("TYP-0015-description");</script>
 <span class="code_comment">*/</span>
 </div>
 <span class="keyword ">class </span>
@@ -1540,16 +1784,16 @@
 <br />
 
     {<br />
-<div class="code_comment code_header">// atributos</div>
+<div class="code_comment code_header">// attributes</div>
 <ul class="properties">
 <li id="ATT-0171" class="property">
-<br /><span class="keyword">var </span>idPorteCuba : Integer</li>
+<span class="keyword">var </span>idPorteCuba : Integer</li>
 <li id="ATT-0172" class="property">
-<br /><span class="keyword">var </span>fechaEntrega : Date</li>
+<span class="keyword">var </span>fechaEntrega : Date</li>
 <li id="ATT-0173" class="property">
-<br /><span class="keyword">var </span>direccionEnvio : String</li>
+<span class="keyword">var </span>direccionEnvio : String</li>
 <li id="ATT-0174" class="property">
-<br /><span class="keyword">var </span>costePorte : Real</li>
+<span class="keyword">var </span>costePorte : Real</li>
 </ul>
     }
 </div>
@@ -1558,7 +1802,9 @@
 <tr>
 <th>Comentarios</th>
 <td colspan="1">
-<div id="TYP-0015-comments-html" class="remus_comments"><p>Ninguno</p></div>
+<textarea id="TYP-0015-comments-md" class="markdown">Ninguno</textarea>
+<div id="TYP-0015-comments-html" class="remus_comments"></div>
+<script>generate_markdown("TYP-0015-comments");</script>
 </td>
 </tr>
 </table>
@@ -1582,7 +1828,10 @@
 <div class="code">
 <div>
 <span class="code_comment">/**</span>
-<div id="TYP-0016-description-html" class="code_comment code_description"><p>representa una incidencia asociada al alquiler de una <a href='#GLO-0016' class="rem_ref">cuba</a></p></div>
+<textarea id="TYP-0016-description-md" class="markdown">representa una incidencia asociada al alquiler de una <a href="#GLO-0016" class="rem_ref">cuba</a>
+</textarea>
+<div id="TYP-0016-description-html" class="code_comment code_description"></div>
+<script>generate_markdown("TYP-0016-description");</script>
 <span class="code_comment">*/</span>
 </div>
 <span class="keyword ">class </span>
@@ -1590,14 +1839,14 @@
 <br />
 
     {<br />
-<div class="code_comment code_header">// atributos</div>
+<div class="code_comment code_header">// attributes</div>
 <ul class="properties">
 <li id="ATT-0176" class="property">
-<br /><span class="keyword">var </span>idIncidenciaCuba : Integer</li>
+<span class="keyword">var </span>idIncidenciaCuba : Integer</li>
 <li id="ATT-0177" class="property">
-<br /><span class="keyword">var </span>fechaIncidencia : Date</li>
+<span class="keyword">var </span>fechaIncidencia : Date</li>
 <li id="ATT-0178" class="property">
-<br /><span class="keyword">var </span>sobrecoste : Real</li>
+<span class="keyword">var </span>sobrecoste : Real</li>
 </ul>
     }
 </div>
@@ -1606,7 +1855,9 @@
 <tr>
 <th>Comentarios</th>
 <td colspan="1">
-<div id="TYP-0016-comments-html" class="remus_comments"><p>Ninguno</p></div>
+<textarea id="TYP-0016-comments-md" class="markdown">Ninguno</textarea>
+<div id="TYP-0016-comments-html" class="remus_comments"></div>
+<script>generate_markdown("TYP-0016-comments");</script>
 </td>
 </tr>
 </table>
@@ -1630,7 +1881,10 @@
 <div class="code">
 <div>
 <span class="code_comment">/**</span>
-<div id="TYP-0017-description-html" class="code_comment code_description"><p>representa un <a href='#GLO-0047' class="rem_ref">pedido</a> realizado por la empresa a un <a href='#GLO-0048' class="rem_ref">proveedor</a></p></div>
+<textarea id="TYP-0017-description-md" class="markdown">representa un <a href="#GLO-0047" class="rem_ref">pedido</a> realizado por la empresa a un <a href="#GLO-0048" class="rem_ref">proveedor</a>
+</textarea>
+<div id="TYP-0017-description-html" class="code_comment code_description"></div>
+<script>generate_markdown("TYP-0017-description");</script>
 <span class="code_comment">*/</span>
 </div>
 <span class="keyword ">class </span>
@@ -1638,27 +1892,33 @@
 <br />
 
     {<br />
-<div class="code_comment code_header">// atributos</div>
+<div class="code_comment code_header">// attributes</div>
 <ul class="properties">
 <li id="ATT-0237" class="property">
-<br /><span class="keyword">var </span>idPedidoProveedor : Integer</li>
+<span class="keyword">var </span>idPedidoProveedor : Integer</li>
 <li id="ATT-0238" class="property">
-<br /><span class="keyword">derived </span>costeTotal : Real<span id="ATT-0238-ocl-html" class="code_ocl">=  sumatorio de los precios de las líneas de pedido asociadas a este pedido</span>
+<span class="keyword">derived </span>costeTotal : Real<textarea id="ATT-0238-ocl-md" class="markdown">=  <span class="code_ocl">sumatorio de los precios de las líneas de pedido asociadas a este pedido</span>
+</textarea>
+<span id="ATT-0238-ocl-html"></span>
+<script>generate_markdown("ATT-0238-ocl",true);</script>
 </li>
 <li id="ATT-0239" class="property">
-<br /><span class="keyword">var </span>iva : Real</li>
+<span class="keyword">var </span>iva : Real</li>
 <li id="ATT-0240" class="property">
-<br /><span class="keyword">derived </span>descuentoTotal : Real<span id="ATT-0240-ocl-html" class="code_ocl">=  sumatorio de los precios descontados en cada uno de los descuentos de las líneas de pedido asociadas a este pedido</span>
+<span class="keyword">derived </span>descuentoTotal : Real<textarea id="ATT-0240-ocl-md" class="markdown">=  <span class="code_ocl">sumatorio de los precios descontados en cada uno de los descuentos de las líneas de pedido asociadas a este pedido</span>
+</textarea>
+<span id="ATT-0240-ocl-html"></span>
+<script>generate_markdown("ATT-0240-ocl",true);</script>
 </li>
 </ul>
 <br />
-<div class="code_comment code_header">// componentes</div>
+<div class="code_comment code_header">// components</div>
 <ul class="properties">
 <li id="COM-0250" class="property">
-<br /><span class="keyword">var </span>lineaPedidoProveedor : Set(LineaPedidoProveedor)
+<span class="keyword">var </span>lineaPedidoProveedor : Set(LineaPedidoProveedor)
             [1..*]</li>
 <li id="COM-0251" class="property">
-<br /><span class="keyword">var </span>facturaProveedor : Set(FacturaProveedor)
+<span class="keyword">var </span>facturaProveedor : Set(FacturaProveedor)
             [0..1]</li>
 </ul>
     }
@@ -1668,7 +1928,9 @@
 <tr>
 <th>Comentarios</th>
 <td colspan="1">
-<div id="TYP-0017-comments-html" class="remus_comments"><p>Ninguno</p></div>
+<textarea id="TYP-0017-comments-md" class="markdown">Ninguno</textarea>
+<div id="TYP-0017-comments-html" class="remus_comments"></div>
+<script>generate_markdown("TYP-0017-comments");</script>
 </td>
 </tr>
 </table>
@@ -1692,7 +1954,10 @@
 <div class="code">
 <div>
 <span class="code_comment">/**</span>
-<div id="TYP-0018-description-html" class="code_comment code_description"><p>representa una <a href='#GLO-0039' class="rem_ref">factura</a> asociada a un <a href='#GLO-0047' class="rem_ref">pedido</a> de la empresa a un <a href='#GLO-0048' class="rem_ref">proveedor</a></p></div>
+<textarea id="TYP-0018-description-md" class="markdown">representa una <a href="#GLO-0039" class="rem_ref">factura</a> asociada a un <a href="#GLO-0047" class="rem_ref">pedido</a> de la empresa a un <a href="#GLO-0048" class="rem_ref">proveedor</a>
+</textarea>
+<div id="TYP-0018-description-html" class="code_comment code_description"></div>
+<script>generate_markdown("TYP-0018-description");</script>
 <span class="code_comment">*/</span>
 </div>
 <span class="keyword ">class </span>
@@ -1700,18 +1965,18 @@
 <br />
 
     {<br />
-<div class="code_comment code_header">// atributos</div>
+<div class="code_comment code_header">// attributes</div>
 <ul class="properties">
 <li id="ATT-0241" class="property">
-<br /><span class="keyword">var </span>idFacturaProveedor : Integer</li>
+<span class="keyword">var </span>idFacturaProveedor : Integer</li>
 <li id="ATT-0242" class="property">
-<br /><span class="keyword">var </span>fechaEmision : Date</li>
+<span class="keyword">var </span>fechaEmision : Date</li>
 <li id="ATT-0243" class="property">
-<br /><span class="keyword">var </span>fechaVencimiento : Date</li>
+<span class="keyword">var </span>fechaVencimiento : Date</li>
 <li id="ATT-0244" class="property">
-<br /><span class="keyword">var </span>fechaPago : Date</li>
+<span class="keyword">var </span>fechaPago : Date</li>
 <li id="ATT-0245" class="property">
-<br /><span class="keyword">var </span>tipo : [enum] TipoPago</li>
+<span class="keyword">var </span>tipo : [enum] TipoPago</li>
 </ul>
     }
 </div>
@@ -1720,7 +1985,9 @@
 <tr>
 <th>Comentarios</th>
 <td colspan="1">
-<div id="TYP-0018-comments-html" class="remus_comments"><p>Ninguno</p></div>
+<textarea id="TYP-0018-comments-md" class="markdown">Ninguno</textarea>
+<div id="TYP-0018-comments-html" class="remus_comments"></div>
+<script>generate_markdown("TYP-0018-comments");</script>
 </td>
 </tr>
 </table>
@@ -1744,7 +2011,10 @@
 <div class="code">
 <div>
 <span class="code_comment">/**</span>
-<div id="TYP-0019-description-html" class="code_comment code_description"><p>representa las líneas de <a href='#GLO-0047' class="rem_ref">pedido</a> relacionadas con cada <a href='#GLO-0046' class="rem_ref">producto</a> que conforman un <a href='#GLO-0047' class="rem_ref">pedido</a> de la empresa a un <a href='#GLO-0048' class="rem_ref">proveedor</a></p></div>
+<textarea id="TYP-0019-description-md" class="markdown">representa las líneas de <a href="#GLO-0047" class="rem_ref">pedido</a> relacionadas con cada <a href="#GLO-0046" class="rem_ref">producto</a> que conforman un <a href="#GLO-0047" class="rem_ref">pedido</a> de la empresa a un <a href="#GLO-0048" class="rem_ref">proveedor</a>
+</textarea>
+<div id="TYP-0019-description-html" class="code_comment code_description"></div>
+<script>generate_markdown("TYP-0019-description");</script>
 <span class="code_comment">*/</span>
 </div>
 <span class="keyword ">class </span>
@@ -1752,16 +2022,16 @@
 <br />
 
     {<br />
-<div class="code_comment code_header">// atributos</div>
+<div class="code_comment code_header">// attributes</div>
 <ul class="properties">
 <li id="ATT-0246" class="property">
-<br /><span class="keyword">var </span>idLineaPedidoProveedor : Integer</li>
+<span class="keyword">var </span>idLineaPedidoProveedor : Integer</li>
 <li id="ATT-0247" class="property">
-<br /><span class="keyword">var </span>cantidad : Integer</li>
+<span class="keyword">var </span>cantidad : Integer</li>
 <li id="ATT-0248" class="property">
-<br /><span class="keyword">var </span>descuento : Real</li>
+<span class="keyword">var </span>descuento : Real</li>
 <li id="ATT-0249" class="property">
-<br /><span class="keyword">var </span>precio : Real</li>
+<span class="keyword">var </span>precio : Real</li>
 </ul>
     }
 </div>
@@ -1770,7 +2040,9 @@
 <tr>
 <th>Comentarios</th>
 <td colspan="1">
-<div id="TYP-0019-comments-html" class="remus_comments"><p>Ninguno</p></div>
+<textarea id="TYP-0019-comments-md" class="markdown">Ninguno</textarea>
+<div id="TYP-0019-comments-html" class="remus_comments"></div>
+<script>generate_markdown("TYP-0019-comments");</script>
 </td>
 </tr>
 </table>
@@ -1779,17 +2051,21 @@
 <div id="GRF-0056" class="figure">
 <img class="figure_image" src=".\diagramas\diagramas de estado\diagrama estado envio pedido.PNG" />
 <p class="figure_caption">
-<span class="figure_caption_label">Figura 9:
-                 </span>
-<span id="GRF-0056-name-html" class="">Diagrama estado - Envío <a href='#GLO-0047' class="rem_ref">pedidos</a></span>
+<span class="figure_caption_label">Figura 43: </span>
+<textarea id="GRF-0056-name-md" class="markdown">Diagrama estado - Envío <a href="#GLO-0047" class="rem_ref">pedidos</a>
+</textarea>
+<span id="GRF-0056-name-html"></span>
+<script>generate_markdown("GRF-0056-name",true);</script>
 </p>
 </div>
 <div id="GRF-0057" class="figure">
 <img class="figure_image" src=".\diagramas\diagramas de estado\diagrama estado alquiler cuba.PNG" />
 <p class="figure_caption">
-<span class="figure_caption_label">Figura 10:
-                 </span>
-<span id="GRF-0057-name-html" class="">Diagrama estado - Alquiler <a href='#GLO-0016' class="rem_ref">cubas</a></span>
+<span class="figure_caption_label">Figura 44: </span>
+<textarea id="GRF-0057-name-md" class="markdown">Diagrama estado - Alquiler <a href="#GLO-0016" class="rem_ref">cubas</a>
+</textarea>
+<span id="GRF-0057-name-html"></span>
+<script>generate_markdown("GRF-0057-name",true);</script>
 </p>
 </div>
 <h1 id="SEC-0060" class="section">4 Modelo de casos de uso del sistema</h1>
@@ -1800,503 +2076,707 @@
 <div id="GRF-0058" class="figure">
 <img class="figure_image" src=".\diagramas\diagramas navegación\diagramaNavegacionCliente.PNG" />
 <p class="figure_caption">
-<span class="figure_caption_label">Figura 11:
-                 </span>
-<span id="GRF-0058-name-html" class="">Diagrama de navegación - Cliente</span>
+<span class="figure_caption_label">Figura 45: </span>
+<textarea id="GRF-0058-name-md" class="markdown">Diagrama de navegación - Cliente</textarea>
+<span id="GRF-0058-name-html"></span>
+<script>generate_markdown("GRF-0058-name",true);</script>
 </p>
 </div>
 <div id="GRF-0059" class="figure">
 <img class="figure_image" src=".\diagramas\diagramas navegación\diagramaNavegacionEmpleado1.PNG" />
 <p class="figure_caption">
-<span class="figure_caption_label">Figura 12:
-                 </span>
-<span id="GRF-0059-name-html" class="">Diagrama de navegación - Empleado (Parte 1)</span>
+<span class="figure_caption_label">Figura 46: </span>
+<textarea id="GRF-0059-name-md" class="markdown">Diagrama de navegación - Empleado (Parte 1)</textarea>
+<span id="GRF-0059-name-html"></span>
+<script>generate_markdown("GRF-0059-name",true);</script>
 </p>
 </div>
 <div id="GRF-0060" class="figure">
 <img class="figure_image" src=".\diagramas\diagramas navegación\diagramaNavegacionEmpleado2.PNG" />
 <p class="figure_caption">
-<span class="figure_caption_label">Figura 13:
-                 </span>
-<span id="GRF-0060-name-html" class="">Diagrama de navegación - Empleado (Parte 2)</span>
+<span class="figure_caption_label">Figura 47: </span>
+<textarea id="GRF-0060-name-md" class="markdown">Diagrama de navegación - Empleado (Parte 2)</textarea>
+<span id="GRF-0060-name-html"></span>
+<script>generate_markdown("GRF-0060-name",true);</script>
 </p>
 </div>
 <div id="GRF-0061" class="figure">
 <img class="figure_image" src=".\diagramas\diagramas navegación\diagramaNavegacionAdmin1.PNG" />
 <p class="figure_caption">
-<span class="figure_caption_label">Figura 14:
-                 </span>
-<span id="GRF-0061-name-html" class="">Diagrama de navegación - Administrador (Parte 1)</span>
+<span class="figure_caption_label">Figura 48: </span>
+<textarea id="GRF-0061-name-md" class="markdown">Diagrama de navegación - Administrador (Parte 1)</textarea>
+<span id="GRF-0061-name-html"></span>
+<script>generate_markdown("GRF-0061-name",true);</script>
 </p>
 </div>
 <div id="GRF-0062" class="figure">
 <img class="figure_image" src=".\diagramas\diagramas navegación\diagramaNavegacionAdmin2.PNG" />
 <p class="figure_caption">
-<span class="figure_caption_label">Figura 15:
-                 </span>
-<span id="GRF-0062-name-html" class="">Diagrama de navegación - Administrador (Parte 2)</span>
+<span class="figure_caption_label">Figura 49: </span>
+<textarea id="GRF-0062-name-md" class="markdown">Diagrama de navegación - Administrador (Parte 2)</textarea>
+<span id="GRF-0062-name-html"></span>
+<script>generate_markdown("GRF-0062-name",true);</script>
 </p>
 </div>
 <h2 id="SEC-0069" class="section">5.2 Esquemas de la interfaz de usuario del sistema</h2>
 <div id="GRF-0063" class="figure">
 <img class="figure_image" src=".\diagramas\IU_V2\Interfaz Usuario Cliente\Productos\Página Principal.png" />
 <p class="figure_caption">
-<span class="figure_caption_label">Figura 16:
-                 </span>
-<span id="GRF-0063-name-html" class=""><a href='#GLO-0085' class="rem_ref">IU-001 Página Principal</a></span>
+<span class="figure_caption_label">Figura 50: </span>
+<textarea id="GRF-0063-name-md" class="markdown">
+<a href="#GLO-0085" class="rem_ref">IU-001 Página Principal</a>
+</textarea>
+<span id="GRF-0063-name-html"></span>
+<script>generate_markdown("GRF-0063-name",true);</script>
 </p>
 </div>
 <div id="GLO-0085" class="glo">
-<div id="GLO-0085-text-html" class=""><p><strong>IU-001 Página principal</strong>: En esta interfaz de usuario, representamos el escenario de página principal. Aquí los empleados/propietario tendrán que clicar sobre iniciar sesión para ver sus respectivas secciones.</p>
-<p>Los clientes podrán ver los <a href='#GLO-0046' class="rem_ref">productos</a> principales. Se podrán seleccionar por categoría, filtrarlos por precio y entrar en las páginas de los <a href='#GLO-0046' class="rem_ref">productos</a> en sí.</p>
-<p>Una vez el cliente decida que no va a comprar nada más, solo tendría que darle al carrito y desde ahí, podría tramitar el <a href='#GLO-0047' class="rem_ref">pedido</a>.<br />
-De haber iniciado sesión el cliente, en la barra superior se mostraría la pestaña Mi Perfil.</p></div>
+<textarea id="GLO-0085-text-md" class="markdown">**IU-001 Página principal**: En esta interfaz de usuario, representamos el escenario de página principal. Aquí los empleados/propietario tendrán que clicar sobre iniciar sesión para ver sus respectivas secciones.¬¬Los clientes podrán ver los <a href="#GLO-0046" class="rem_ref">productos</a> principales. Se podrán seleccionar por categoría, filtrarlos por precio y entrar en las páginas de los <a href="#GLO-0046" class="rem_ref">productos</a> en sí.¬¬Una vez el cliente decida que no va a comprar nada más, solo tendría que darle al carrito y desde ahí, podría tramitar el <a href="#GLO-0047" class="rem_ref">pedido</a>.¬De haber iniciado sesión el cliente, en la barra superior se mostraría la pestaña Mi Perfil.</textarea>
+<div id="GLO-0085-text-html" class=""></div>
+<script>generate_markdown("GLO-0085-text");</script>
 </div>
 <div id="GRF-0064" class="figure">
 <img class="figure_image" src=".\diagramas\IU_V2\Interfaz Usuario Cliente\Login.png" />
 <p class="figure_caption">
-<span class="figure_caption_label">Figura 17:
-                 </span>
-<span id="GRF-0064-name-html" class="">IU-002 Login</span>
+<span class="figure_caption_label">Figura 51: </span>
+<textarea id="GRF-0064-name-md" class="markdown">IU-002 Login</textarea>
+<span id="GRF-0064-name-html"></span>
+<script>generate_markdown("GRF-0064-name",true);</script>
 </p>
 </div>
 <div id="GLO-0087" class="glo">
-<div id="GLO-0087-text-html" class=""><p><strong>IU-002 Login de usuarios</strong>: En esta interfaz de usuarios, se muestra la página a la que se accede para el log in. De no tener cuenta, un cliente se podría registrar a través del enlace que aparece abajo.</p></div>
+<textarea id="GLO-0087-text-md" class="markdown">**IU-002 Login de usuarios**: En esta interfaz de usuarios, se muestra la página a la que se accede para el log in. De no tener cuenta, un cliente se podría registrar a través del enlace que aparece abajo.</textarea>
+<div id="GLO-0087-text-html" class=""></div>
+<script>generate_markdown("GLO-0087-text");</script>
 </div>
 <h3 id="SEC-0078" class="section">5.2.1 Interfaz de usuario para cliente</h3>
 <div id="GRF-0065" class="figure">
 <img class="figure_image" src=".\diagramas\IU_V2\Interfaz Usuario Cliente\RegistroCliente.png" />
 <p class="figure_caption">
-<span class="figure_caption_label">Figura 18:
-                 </span>
-<span id="GRF-0065-name-html" class=""><a href='#GLO-0088' class="rem_ref">IU-003 Registro de cliente</a></span>
+<span class="figure_caption_label">Figura 52: </span>
+<textarea id="GRF-0065-name-md" class="markdown">
+<a href="#GLO-0088" class="rem_ref">IU-003 Registro de cliente</a>
+</textarea>
+<span id="GRF-0065-name-html"></span>
+<script>generate_markdown("GRF-0065-name",true);</script>
 </p>
 </div>
 <div id="GLO-0088" class="glo">
-<div id="GLO-0088-text-html" class=""><p><strong>IU-003 Registro de cliente</strong>: En esta interfaz de usuario, los clientes se podrán registrar como usuarios.</p></div>
+<textarea id="GLO-0088-text-md" class="markdown">**IU-003 Registro de cliente**: En esta interfaz de usuario, los clientes se podrán registrar como usuarios.</textarea>
+<div id="GLO-0088-text-html" class=""></div>
+<script>generate_markdown("GLO-0088-text");</script>
 </div>
 <div id="GRF-0066" class="figure">
 <img class="figure_image" src=".\diagramas\IU_V2\Interfaz Usuario Cliente\Productos\InfoProducto.png" />
 <p class="figure_caption">
-<span class="figure_caption_label">Figura 19:
-                 </span>
-<span id="GRF-0066-name-html" class=""><a href='#GLO-0086' class="rem_ref">IU-004 Datos de un producto</a></span>
+<span class="figure_caption_label">Figura 53: </span>
+<textarea id="GRF-0066-name-md" class="markdown">
+<a href="#GLO-0086" class="rem_ref">IU-004 Datos de un producto</a>
+</textarea>
+<span id="GRF-0066-name-html"></span>
+<script>generate_markdown("GRF-0066-name",true);</script>
 </p>
 </div>
 <div id="GLO-0086" class="glo">
-<div id="GLO-0086-text-html" class=""><p><strong>IU-004 Datos de un producto</strong>: En esta interfaz de usuario, se representa la vista de <a href='#GLO-0046' class="rem_ref">producto</a> desde cliente. Desde esta, podríamos ver el precio del <a href='#GLO-0046' class="rem_ref">producto</a> y sus características principales.<br />
-Si al cliente le convence, pordría añadirlo a la cesta de la compra(para el que también tiene un enlace).</p></div>
+<textarea id="GLO-0086-text-md" class="markdown">**IU-004 Datos de un producto**: En esta interfaz de usuario, se representa la vista de <a href="#GLO-0046" class="rem_ref">producto</a> desde cliente. Desde esta, podríamos ver el precio del <a href="#GLO-0046" class="rem_ref">producto</a> y sus características principales. ¬Si al cliente le convence, pordría añadirlo a la cesta de la compra(para el que también tiene un enlace).</textarea>
+<div id="GLO-0086-text-html" class=""></div>
+<script>generate_markdown("GLO-0086-text");</script>
 </div>
 <div id="GRF-0067" class="figure">
 <img class="figure_image" src=".\diagramas\IU_V2\Interfaz Usuario Cliente\Productos\Cesta.png" />
 <p class="figure_caption">
-<span class="figure_caption_label">Figura 20:
-                 </span>
-<span id="GRF-0067-name-html" class=""><a href='#GLO-0089' class="rem_ref">IU-005 Cesta de compra</a></span>
+<span class="figure_caption_label">Figura 54: </span>
+<textarea id="GRF-0067-name-md" class="markdown">
+<a href="#GLO-0089" class="rem_ref">IU-005 Cesta de compra</a>
+</textarea>
+<span id="GRF-0067-name-html"></span>
+<script>generate_markdown("GRF-0067-name",true);</script>
 </p>
 </div>
 <div id="GLO-0089" class="glo">
-<div id="GLO-0089-text-html" class=""><p><strong>IU-005 Cesta de compra</strong>: En esta interfaz de usuario, representamos el escenario que se da cuando el cliente accede a un carrito de compra con artículos. Desde aquí, podría seleccionar las unidades a comprar, además de comprobar el coste total.<br />
-Una vez comprobado el <a href='#GLO-0047' class="rem_ref">pedido</a>, este podría proceder a la ventana de pago.</p></div>
+<textarea id="GLO-0089-text-md" class="markdown">**IU-005 Cesta de compra**: En esta interfaz de usuario, representamos el escenario que se da cuando el cliente accede a un carrito de compra con artículos. Desde aquí, podría seleccionar las unidades a comprar, además de comprobar el coste total.¬Una vez comprobado el <a href="#GLO-0047" class="rem_ref">pedido</a>, este podría proceder a la ventana de pago.</textarea>
+<div id="GLO-0089-text-html" class=""></div>
+<script>generate_markdown("GLO-0089-text");</script>
 </div>
 <div id="GRF-0068" class="figure">
 <img class="figure_image" src=".\diagramas\IU_V2\Interfaz Usuario Cliente\Productos\DatosParaPedido.png" />
 <p class="figure_caption">
-<span class="figure_caption_label">Figura 21:
-                 </span>
-<span id="GRF-0068-name-html" class=""><a href='#GLO-0090' class="rem_ref">IU-006 Datos para el pedido</a></span>
+<span class="figure_caption_label">Figura 55: </span>
+<textarea id="GRF-0068-name-md" class="markdown">
+<a href="#GLO-0090" class="rem_ref">IU-006 Datos para el pedido</a>
+</textarea>
+<span id="GRF-0068-name-html"></span>
+<script>generate_markdown("GRF-0068-name",true);</script>
 </p>
 </div>
 <div id="GLO-0090" class="glo">
-<div id="GLO-0090-text-html" class=""><p><strong>IU-006 Datos para el pedido</strong>: Una vez que se desea tramitar la compra del carrito, pasamos a esta vista. En ella se procesan los datos básicos del cliente; que de haber iniciado sesión, tendría sus datos autocompletados.</p></div>
+<textarea id="GLO-0090-text-md" class="markdown">**IU-006 Datos para el pedido**: Una vez que se desea tramitar la compra del carrito, pasamos a esta vista. En ella se procesan los datos básicos del cliente; que de haber iniciado sesión, tendría sus datos autocompletados.</textarea>
+<div id="GLO-0090-text-html" class=""></div>
+<script>generate_markdown("GLO-0090-text");</script>
 </div>
 <div id="GRF-0069" class="figure">
 <img class="figure_image" src=".\diagramas\IU_V2\Interfaz Usuario Cliente\Productos\Pago.png" />
 <p class="figure_caption">
-<span class="figure_caption_label">Figura 22:
-                 </span>
-<span id="GRF-0069-name-html" class=""><a href='#GLO-0091' class="rem_ref">IU-007 Pago</a></span>
+<span class="figure_caption_label">Figura 56: </span>
+<textarea id="GRF-0069-name-md" class="markdown">
+<a href="#GLO-0091" class="rem_ref">IU-007 Pago</a>
+</textarea>
+<span id="GRF-0069-name-html"></span>
+<script>generate_markdown("GRF-0069-name",true);</script>
 </p>
 </div>
 <div id="GLO-0091" class="glo">
-<div id="GLO-0091-text-html" class=""><p><strong>IU-007 Pago</strong>: A esta vista se pasa una vez el cliente desea pagar el <a href='#GLO-0047' class="rem_ref">pedido</a>. Es la plataforma de pago de la web, haciéndole click en pago mandaríamos una orden de procesamiento, que de dar éxito se registraría el <a href='#GLO-0047' class="rem_ref">pedido</a> en la base de datos.</p></div>
+<textarea id="GLO-0091-text-md" class="markdown">**IU-007 Pago**: A esta vista se pasa una vez el cliente desea pagar el <a href="#GLO-0047" class="rem_ref">pedido</a>. Es la plataforma de pago de la web, haciéndole click en pago mandaríamos una orden de procesamiento, que de dar éxito se registraría el <a href="#GLO-0047" class="rem_ref">pedido</a> en la base de datos.</textarea>
+<div id="GLO-0091-text-html" class=""></div>
+<script>generate_markdown("GLO-0091-text");</script>
 </div>
 <div id="GRF-0070" class="figure">
 <img class="figure_image" src=".\diagramas\IU_V2\Interfaz Usuario Cliente\Productos\PagoExitoso.png" />
 <p class="figure_caption">
-<span class="figure_caption_label">Figura 23:
-                 </span>
-<span id="GRF-0070-name-html" class=""><a href='#GLO-0094' class="rem_ref">IU-008 Pago realizado</a></span>
+<span class="figure_caption_label">Figura 57: </span>
+<textarea id="GRF-0070-name-md" class="markdown">
+<a href="#GLO-0094" class="rem_ref">IU-008 Pago realizado</a>
+</textarea>
+<span id="GRF-0070-name-html"></span>
+<script>generate_markdown("GRF-0070-name",true);</script>
 </p>
 </div>
 <div id="GLO-0094" class="glo">
-<div id="GLO-0094-text-html" class=""><p><strong>IU-008 Pago realizado</strong>: En esta interfaz de usuario, informamos a nuestro cliente de que se ha procesado el pago correctamente.</p></div>
+<textarea id="GLO-0094-text-md" class="markdown">**IU-008 Pago realizado**: En esta interfaz de usuario, informamos a nuestro cliente de que se ha procesado el pago correctamente.</textarea>
+<div id="GLO-0094-text-html" class=""></div>
+<script>generate_markdown("GLO-0094-text");</script>
 </div>
 <div id="GRF-0071" class="figure">
 <img class="figure_image" src=".\diagramas\IU_V2\Interfaz Usuario Cliente\Perfil\DatosPersonales.png" />
 <p class="figure_caption">
-<span class="figure_caption_label">Figura 24:
-                 </span>
-<span id="GRF-0071-name-html" class=""><a href='#GLO-0095' class="rem_ref">IU-009 Perfil cliente</a></span>
+<span class="figure_caption_label">Figura 58: </span>
+<textarea id="GRF-0071-name-md" class="markdown">
+<a href="#GLO-0095" class="rem_ref">IU-009 Perfil cliente</a>
+</textarea>
+<span id="GRF-0071-name-html"></span>
+<script>generate_markdown("GRF-0071-name",true);</script>
 </p>
 </div>
 <div id="GLO-0095" class="glo">
-<div id="GLO-0095-text-html" class=""><p><strong>IU-009 Perfil cliente</strong>: En esta vista el cliente podrá ver sus datos personales así como editar algún dato si lo necesita, además podrá cambia su contraseña. Desde aquí podrá navegar a un registro de sus <a href='#GLO-0047' class="rem_ref">pedidos</a> y de sus alquileres.</p></div>
+<textarea id="GLO-0095-text-md" class="markdown">**IU-009 Perfil cliente**: En esta vista el cliente podrá ver sus datos personales así como editar algún dato si lo necesita, además podrá cambia su contraseña. Desde aquí podrá navegar a un registro de sus <a href="#GLO-0047" class="rem_ref">pedidos</a> y de sus alquileres.</textarea>
+<div id="GLO-0095-text-html" class=""></div>
+<script>generate_markdown("GLO-0095-text");</script>
 </div>
 <div id="GRF-0072" class="figure">
 <img class="figure_image" src=".\diagramas\IU_V2\Interfaz Usuario Cliente\Perfil\Pedidos_V2.png" />
 <p class="figure_caption">
-<span class="figure_caption_label">Figura 25:
-                 </span>
-<span id="GRF-0072-name-html" class=""><a href='#GLO-0096' class="rem_ref">IU-010 Pedidos del cliente</a></span>
+<span class="figure_caption_label">Figura 59: </span>
+<textarea id="GRF-0072-name-md" class="markdown">
+<a href="#GLO-0096" class="rem_ref">IU-010 Pedidos del cliente</a>
+</textarea>
+<span id="GRF-0072-name-html"></span>
+<script>generate_markdown("GRF-0072-name",true);</script>
 </p>
 </div>
 <div id="GLO-0096" class="glo">
-<div id="GLO-0096-text-html" class=""><p><strong>IU-010 Pedidos del cliente</strong>: En esta vista el cliente podrá ver sus <a href='#GLO-0047' class="rem_ref">pedidos</a> realizados así como el estado de un <a href='#GLO-0047' class="rem_ref">pedido</a> a entregar, además podrá visualizar la <a href='#GLO-0039' class="rem_ref">factura</a> de cada <a href='#GLO-0047' class="rem_ref">pedido</a> si así lo desea.</p></div>
+<textarea id="GLO-0096-text-md" class="markdown">**IU-010 Pedidos del cliente**: En esta vista el cliente podrá ver sus <a href="#GLO-0047" class="rem_ref">pedidos</a> realizados así como el estado de un <a href="#GLO-0047" class="rem_ref">pedido</a> a entregar, además podrá visualizar la <a href="#GLO-0039" class="rem_ref">factura</a> de cada <a href="#GLO-0047" class="rem_ref">pedido</a> si así lo desea.</textarea>
+<div id="GLO-0096-text-html" class=""></div>
+<script>generate_markdown("GLO-0096-text");</script>
 </div>
 <div id="GRF-0077" class="figure">
 <img class="figure_image" src=".\diagramas\IU_V2\Interfaz Usuario Cliente\Perfil\Facturas.png" />
 <p class="figure_caption">
-<span class="figure_caption_label">Figura 26:
-                 </span>
-<span id="GRF-0077-name-html" class=""><a href='#GLO-0097' class="rem_ref">IU-011 Datos Factura cliente</a></span>
+<span class="figure_caption_label">Figura 60: </span>
+<textarea id="GRF-0077-name-md" class="markdown">
+<a href="#GLO-0097" class="rem_ref">IU-011 Datos Factura cliente</a>
+</textarea>
+<span id="GRF-0077-name-html"></span>
+<script>generate_markdown("GRF-0077-name",true);</script>
 </p>
 </div>
 <div id="GLO-0097" class="glo">
-<div id="GLO-0097-text-html" class=""><p><strong>IU-011 Datos Factura cliente</strong>: En esta vista el cliente podrá ver los datos de una <a href='#GLO-0039' class="rem_ref">factura</a> de un <a href='#GLO-0047' class="rem_ref">pedido</a> en concreto.</p></div>
+<textarea id="GLO-0097-text-md" class="markdown">**IU-011 Datos Factura cliente**: En esta vista el cliente podrá ver los datos de una <a href="#GLO-0039" class="rem_ref">factura</a> de un <a href="#GLO-0047" class="rem_ref">pedido</a> en concreto.</textarea>
+<div id="GLO-0097-text-html" class=""></div>
+<script>generate_markdown("GLO-0097-text");</script>
 </div>
 <div id="GRF-0074" class="figure">
 <img class="figure_image" src=".\diagramas\IU_V2\Interfaz Usuario Cliente\Perfil\Alquileres.png" />
 <p class="figure_caption">
-<span class="figure_caption_label">Figura 27:
-                 </span>
-<span id="GRF-0074-name-html" class=""><a href='#GLO-0098' class="rem_ref">IU-012 Alquileres del cliente</a></span>
+<span class="figure_caption_label">Figura 61: </span>
+<textarea id="GRF-0074-name-md" class="markdown">
+<a href="#GLO-0098" class="rem_ref">IU-012 Alquileres del cliente</a>
+</textarea>
+<span id="GRF-0074-name-html"></span>
+<script>generate_markdown("GRF-0074-name",true);</script>
 </p>
 </div>
 <div id="GLO-0098" class="glo">
-<div id="GLO-0098-text-html" class=""><p><strong>IU-012 Alquileres del cliente</strong>: En esta vista el cliente podrá ver sus alquileres realizados en el transcurso del tiempo.</p></div>
+<textarea id="GLO-0098-text-md" class="markdown">**IU-012 Alquileres del cliente**: En esta vista el cliente podrá ver sus alquileres realizados en el transcurso del tiempo.</textarea>
+<div id="GLO-0098-text-html" class=""></div>
+<script>generate_markdown("GLO-0098-text");</script>
 </div>
 <div id="GRF-0075" class="figure">
 <img class="figure_image" src=".\diagramas\IU_V2\Interfaz Usuario Cliente\AlquilerCubas\Alquilar.png" />
 <p class="figure_caption">
-<span class="figure_caption_label">Figura 28:
-                 </span>
-<span id="GRF-0075-name-html" class="">IU-013 Alquiler de <a href='#GLO-0016' class="rem_ref">cubas</a></span>
+<span class="figure_caption_label">Figura 62: </span>
+<textarea id="GRF-0075-name-md" class="markdown">IU-013 Alquiler de <a href="#GLO-0016" class="rem_ref">cubas</a>
+</textarea>
+<span id="GRF-0075-name-html"></span>
+<script>generate_markdown("GRF-0075-name",true);</script>
 </p>
 </div>
 <div id="GLO-0099" class="glo">
-<div id="GLO-0099-text-html" class=""><p><strong>IU-013 Alquiler de cuba</strong>: En esta vista, el cliente podrá ser capaz de alquilar una <a href='#GLO-0016' class="rem_ref">cuba</a>, podrá seleccionar la <a href='#GLO-0016' class="rem_ref">cuba</a> que desee alquilar y la fecha en la que quiere alquilarla. En el momento de seleccionar una <a href='#GLO-0016' class="rem_ref">cuba</a>, podrá ver con claridad las fechas en la que dicha <a href='#GLO-0016' class="rem_ref">cuba</a> está disponible.</p></div>
+<textarea id="GLO-0099-text-md" class="markdown">**IU-013 Alquiler de cuba**: En esta vista, el cliente podrá ser capaz de alquilar una <a href="#GLO-0016" class="rem_ref">cuba</a>, podrá seleccionar la <a href="#GLO-0016" class="rem_ref">cuba</a> que desee alquilar y la fecha en la que quiere alquilarla. En el momento de seleccionar una <a href="#GLO-0016" class="rem_ref">cuba</a>, podrá ver con claridad las fechas en la que dicha <a href="#GLO-0016" class="rem_ref">cuba</a> está disponible.</textarea>
+<div id="GLO-0099-text-html" class=""></div>
+<script>generate_markdown("GLO-0099-text");</script>
 </div>
 <div id="GRF-0076" class="figure">
 <img class="figure_image" src=".\diagramas\IU_V2\Interfaz Usuario Cliente\AlquilerCubas\DetallesAlquiler.png" />
 <p class="figure_caption">
-<span class="figure_caption_label">Figura 29:
-                 </span>
-<span id="GRF-0076-name-html" class=""><a href='#GLO-0100' class="rem_ref">IU-014 Detalles Alquiler cuba</a></span>
+<span class="figure_caption_label">Figura 63: </span>
+<textarea id="GRF-0076-name-md" class="markdown">
+<a href="#GLO-0100" class="rem_ref">IU-014 Detalles Alquiler cuba</a>
+</textarea>
+<span id="GRF-0076-name-html"></span>
+<script>generate_markdown("GRF-0076-name",true);</script>
 </p>
 </div>
 <div id="GLO-0100" class="glo">
-<div id="GLO-0100-text-html" class=""><p><strong>IU-014 Detalles Alquiler cuba</strong>: En esta vista, el cliente puede ver cuánto le saldrá el alquiler de la <a href='#GLO-0016' class="rem_ref">cuba</a> seleccionada. Así como un desglose de la <a href='#GLO-0039' class="rem_ref">factura</a>. Desde esta vista pasaría a la vista  <a href='#GLO-0091' class="rem_ref">IU-007 Pago</a>  para tramitar el pago.</p></div>
+<textarea id="GLO-0100-text-md" class="markdown">**IU-014 Detalles Alquiler cuba**: En esta vista, el cliente puede ver cuánto le saldrá el alquiler de la <a href="#GLO-0016" class="rem_ref">cuba</a> seleccionada. Así como un desglose de la <a href="#GLO-0039" class="rem_ref">factura</a>. Desde esta vista pasaría a la vista  <a href="#GLO-0091" class="rem_ref">IU-007 Pago</a>  para tramitar el pago.</textarea>
+<div id="GLO-0100-text-html" class=""></div>
+<script>generate_markdown("GLO-0100-text");</script>
 </div>
 <h3 id="SEC-0079" class="section">5.2.2 Interfaz de usuario para empleado y administrador</h3>
 <div id="GRF-0078" class="figure">
 <img class="figure_image" src=".\diagramas\IU_V2\Contabilidad\Clientes\BusquedaClientes.png" />
 <p class="figure_caption">
-<span class="figure_caption_label">Figura 30:
-                 </span>
-<span id="GRF-0078-name-html" class=""><a href='#GLO-0101' class="rem_ref">IU-015 Búsqueda de clientes</a></span>
+<span class="figure_caption_label">Figura 64: </span>
+<textarea id="GRF-0078-name-md" class="markdown">
+<a href="#GLO-0101" class="rem_ref">IU-015 Búsqueda de clientes</a>
+</textarea>
+<span id="GRF-0078-name-html"></span>
+<script>generate_markdown("GRF-0078-name",true);</script>
 </p>
 </div>
 <div id="GLO-0101" class="glo">
-<div id="GLO-0101-text-html" class=""><p><strong>IU-015 Búsqueda de clientes</strong>: En esta interfaz para propietarios, se podrá buscar a un usuario por su NIF. De existir, esta vista nos pasaría a la de datos de cliente.</p></div>
+<textarea id="GLO-0101-text-md" class="markdown">**IU-015 Búsqueda de clientes**: En esta interfaz para propietarios, se podrá buscar a un usuario por su NIF. De existir, esta vista nos pasaría a la de datos de cliente.</textarea>
+<div id="GLO-0101-text-html" class=""></div>
+<script>generate_markdown("GLO-0101-text");</script>
 </div>
 <div id="GRF-0079" class="figure">
 <img class="figure_image" src=".\diagramas\IU_V2\Contabilidad\Clientes\VistaCliente.png" />
 <p class="figure_caption">
-<span class="figure_caption_label">Figura 31:
-                 </span>
-<span id="GRF-0079-name-html" class=""><a href='#GLO-0102' class="rem_ref">IU-016 Datos Cliente</a></span>
+<span class="figure_caption_label">Figura 65: </span>
+<textarea id="GRF-0079-name-md" class="markdown">
+<a href="#GLO-0102" class="rem_ref">IU-016 Datos Cliente</a>
+</textarea>
+<span id="GRF-0079-name-html"></span>
+<script>generate_markdown("GRF-0079-name",true);</script>
 </p>
 </div>
 <div id="GLO-0102" class="glo">
-<div id="GLO-0102-text-html" class=""><p><strong>IU-016 Datos cliente</strong>: A partir de esta vista, el propietario podrá consultar los datos principales del cliente.<br />
-También se da la opción de eliminar cliente y de buscar otros.</p></div>
+<textarea id="GLO-0102-text-md" class="markdown">**IU-016 Datos cliente**: A partir de esta vista, el propietario podrá consultar los datos principales del cliente. ¬También se da la opción de eliminar cliente y de buscar otros.</textarea>
+<div id="GLO-0102-text-html" class=""></div>
+<script>generate_markdown("GLO-0102-text");</script>
 </div>
 <div id="GRF-0080" class="figure">
 <img class="figure_image" src=".\diagramas\IU_V2\Contabilidad\Informes\InformeEmpleados.png" />
 <p class="figure_caption">
-<span class="figure_caption_label">Figura 32:
-                 </span>
-<span id="GRF-0080-name-html" class=""><a href='#GLO-0103' class="rem_ref">IU-017 Informes Empleados</a></span>
+<span class="figure_caption_label">Figura 66: </span>
+<textarea id="GRF-0080-name-md" class="markdown">
+<a href="#GLO-0103" class="rem_ref">IU-017 Informes Empleados</a>
+</textarea>
+<span id="GRF-0080-name-html"></span>
+<script>generate_markdown("GRF-0080-name",true);</script>
 </p>
 </div>
 <div id="GLO-0103" class="glo">
-<div id="GLO-0103-text-html" class=""><p><strong>IU-017 Informes Empleados</strong>: El propietario, podrá solicitar un informe sobre los empleados. En esta vista, se podrán comprobar las horas trabajadas por cada empleado, que en caso de ser horas superiores o inferiores a la estipuladas, daría un recordatorio.<br />
-También contiene un filtro de fechas para seleccionar las que son de su interés.</p></div>
+<textarea id="GLO-0103-text-md" class="markdown">**IU-017 Informes Empleados**: El propietario, podrá solicitar un informe sobre los empleados. En esta vista, se podrán comprobar las horas trabajadas por cada empleado, que en caso de ser horas superiores o inferiores a la estipuladas, daría un recordatorio. ¬También contiene un filtro de fechas para seleccionar las que son de su interés.</textarea>
+<div id="GLO-0103-text-html" class=""></div>
+<script>generate_markdown("GLO-0103-text");</script>
 </div>
 <div id="GRF-0081" class="figure">
 <img class="figure_image" src=".\diagramas\IU_V2\Contabilidad\Informes\InformeVentas.png" />
 <p class="figure_caption">
-<span class="figure_caption_label">Figura 33:
-                 </span>
-<span id="GRF-0081-name-html" class=""><a href='#GLO-0104' class="rem_ref">IU-018 Informes Ventas</a></span>
+<span class="figure_caption_label">Figura 67: </span>
+<textarea id="GRF-0081-name-md" class="markdown">
+<a href="#GLO-0104" class="rem_ref">IU-018 Informes Ventas</a>
+</textarea>
+<span id="GRF-0081-name-html"></span>
+<script>generate_markdown("GRF-0081-name",true);</script>
 </p>
 </div>
 <div id="GLO-0104" class="glo">
-<div id="GLO-0104-text-html" class=""><p><strong>IU-018 Informes Ventas</strong>: El propietario, podrá solicitar un informe sobre las ventas. En esta vista, se podrá consultar los datos generados por el sistema, acerca de los gastos, beneficios e ingresos de la tienda.<br />
-También contiene un filtro de fechas para seleccionar las que son de su interés, además de un selector de <a href='#GLO-0046' class="rem_ref">productos</a> (para generar el informe sobre este).</p></div>
+<textarea id="GLO-0104-text-md" class="markdown">**IU-018 Informes Ventas**: El propietario, podrá solicitar un informe sobre las ventas. En esta vista, se podrá consultar los datos generados por el sistema, acerca de los gastos, beneficios e ingresos de la tienda. ¬También contiene un filtro de fechas para seleccionar las que son de su interés, además de un selector de <a href="#GLO-0046" class="rem_ref">productos</a> (para generar el informe sobre este).</textarea>
+<div id="GLO-0104-text-html" class=""></div>
+<script>generate_markdown("GLO-0104-text");</script>
 </div>
 <div id="GRF-0082" class="figure">
 <img class="figure_image" src=".\diagramas\IU_V2\Contabilidad\Productos\ListaProductos.png" />
 <p class="figure_caption">
-<span class="figure_caption_label">Figura 34:
-                 </span>
-<span id="GRF-0082-name-html" class=""><a href='#GLO-0105' class="rem_ref">IU-019 Listado Productos</a></span>
+<span class="figure_caption_label">Figura 68: </span>
+<textarea id="GRF-0082-name-md" class="markdown">
+<a href="#GLO-0105" class="rem_ref">IU-019 Listado Productos</a>
+</textarea>
+<span id="GRF-0082-name-html"></span>
+<script>generate_markdown("GRF-0082-name",true);</script>
 </p>
 </div>
 <div id="GLO-0105" class="glo">
-<div id="GLO-0105-text-html" class=""><p><strong>IU-019 Listado Productos</strong>: Esta vista, representa la ventana general de gestión de <a href='#GLO-0046' class="rem_ref">productos</a>. Desde ella se podrán modificar, eliminar y añadir.</p></div>
+<textarea id="GLO-0105-text-md" class="markdown">**IU-019 Listado Productos**: Esta vista, representa la ventana general de gestión de <a href="#GLO-0046" class="rem_ref">productos</a>. Desde ella se podrán modificar, eliminar y añadir.</textarea>
+<div id="GLO-0105-text-html" class=""></div>
+<script>generate_markdown("GLO-0105-text");</script>
 </div>
 <div id="GRF-0083" class="figure">
 <img class="figure_image" src=".\diagramas\IU_V2\Contabilidad\Productos\RegistroProductos.png" />
 <p class="figure_caption">
-<span class="figure_caption_label">Figura 35:
-                 </span>
-<span id="GRF-0083-name-html" class=""><a href='#GLO-0106' class="rem_ref">IU-020 Registro Producto</a></span>
+<span class="figure_caption_label">Figura 69: </span>
+<textarea id="GRF-0083-name-md" class="markdown">
+<a href="#GLO-0106" class="rem_ref">IU-020 Registro Producto</a>
+</textarea>
+<span id="GRF-0083-name-html"></span>
+<script>generate_markdown("GRF-0083-name",true);</script>
 </p>
 </div>
 <div id="GLO-0106" class="glo">
-<div id="GLO-0106-text-html" class=""><p><strong>IU-020 Registro producto</strong>: Con esta vista los empleados podrán añadir un <a href='#GLO-0046' class="rem_ref">producto</a> a la base de datos, teniendo en cuenta todos los atributos que estos tienen.</p></div>
+<textarea id="GLO-0106-text-md" class="markdown">**IU-020 Registro producto**: Con esta vista los empleados podrán añadir un <a href="#GLO-0046" class="rem_ref">producto</a> a la base de datos, teniendo en cuenta todos los atributos que estos tienen.</textarea>
+<div id="GLO-0106-text-html" class=""></div>
+<script>generate_markdown("GLO-0106-text");</script>
 </div>
 <div id="GRF-0084" class="figure">
 <img class="figure_image" src=".\diagramas\IU_V2\Contabilidad\Proveedor\Proveedores.png" />
 <p class="figure_caption">
-<span class="figure_caption_label">Figura 36:
-                 </span>
-<span id="GRF-0084-name-html" class=""><a href='#GLO-0107' class="rem_ref">IU-021 Datos de Proveedor</a></span>
+<span class="figure_caption_label">Figura 70: </span>
+<textarea id="GRF-0084-name-md" class="markdown">
+<a href="#GLO-0107" class="rem_ref">IU-021 Datos de Proveedor</a>
+</textarea>
+<span id="GRF-0084-name-html"></span>
+<script>generate_markdown("GRF-0084-name",true);</script>
 </p>
 </div>
 <div id="GLO-0107" class="glo">
-<div id="GLO-0107-text-html" class=""><p><strong>IU-021 Datos de proveedor</strong>: Esta es la página principal de los <a href='#GLO-0048' class="rem_ref">proveedores</a>. Un empleado cualquiera, podrá seleccionar el <a href='#GLO-0048' class="rem_ref">proveedor</a> deseado, donde se verán los <a href='#GLO-0047' class="rem_ref">pedidos</a> relacionados y datos generales de este.<br />
-Desde aquí también se podrá acceder al formulario de creación de <a href='#GLO-0048' class="rem_ref">proveedores</a>.</p></div>
+<textarea id="GLO-0107-text-md" class="markdown">**IU-021 Datos de proveedor**: Esta es la página principal de los <a href="#GLO-0048" class="rem_ref">proveedores</a>. Un empleado cualquiera, podrá seleccionar el <a href="#GLO-0048" class="rem_ref">proveedor</a> deseado, donde se verán los <a href="#GLO-0047" class="rem_ref">pedidos</a> relacionados y datos generales de este.¬Desde aquí también se podrá acceder al formulario de creación de <a href="#GLO-0048" class="rem_ref">proveedores</a>.</textarea>
+<div id="GLO-0107-text-html" class=""></div>
+<script>generate_markdown("GLO-0107-text");</script>
 </div>
 <div id="GRF-0085" class="figure">
 <img class="figure_image" src=".\diagramas\IU_V2\Contabilidad\Proveedor\RegistroProveedor.png" />
 <p class="figure_caption">
-<span class="figure_caption_label">Figura 37:
-                 </span>
-<span id="GRF-0085-name-html" class=""><a href='#GLO-0108' class="rem_ref">IU-022 Registro Proveedor</a></span>
+<span class="figure_caption_label">Figura 71: </span>
+<textarea id="GRF-0085-name-md" class="markdown">
+<a href="#GLO-0108" class="rem_ref">IU-022 Registro Proveedor</a>
+</textarea>
+<span id="GRF-0085-name-html"></span>
+<script>generate_markdown("GRF-0085-name",true);</script>
 </p>
 </div>
 <div id="GLO-0108" class="glo">
-<div id="GLO-0108-text-html" class=""><p><strong>IU-022 Registro proveedor</strong>: Con esta interfaz de usuario, cualquier empleado podrá introducir un <a href='#GLO-0048' class="rem_ref">proveedor</a> (una vez rellenados los campos).</p></div>
+<textarea id="GLO-0108-text-md" class="markdown">**IU-022 Registro proveedor**: Con esta interfaz de usuario, cualquier empleado podrá introducir un <a href="#GLO-0048" class="rem_ref">proveedor</a> (una vez rellenados los campos).</textarea>
+<div id="GLO-0108-text-html" class=""></div>
+<script>generate_markdown("GLO-0108-text");</script>
 </div>
 <div id="GRF-0086" class="figure">
 <img class="figure_image" src=".\diagramas\IU_V2\Contabilidad\Mensajes.png" />
 <p class="figure_caption">
-<span class="figure_caption_label">Figura 38:
-                 </span>
-<span id="GRF-0086-name-html" class=""><a href='#GLO-0109' class="rem_ref">IU-023 Mensajes</a></span>
+<span class="figure_caption_label">Figura 72: </span>
+<textarea id="GRF-0086-name-md" class="markdown">
+<a href="#GLO-0109" class="rem_ref">IU-023 Mensajes</a>
+</textarea>
+<span id="GRF-0086-name-html"></span>
+<script>generate_markdown("GRF-0086-name",true);</script>
 </p>
 </div>
 <div id="GLO-0109" class="glo">
-<div id="GLO-0109-text-html" class=""><p><strong>IU-023 Mensajes</strong>: Cualquier integrante del negocio, accederá a esta vista para la revisión de los <a href='#GLO-0047' class="rem_ref">pedidos</a> de <a href='#GLO-0048' class="rem_ref">proveedores</a>. Es un sistema de mensajes para informar mejor a la empresa.</p></div>
+<textarea id="GLO-0109-text-md" class="markdown">**IU-023 Mensajes**: Cualquier integrante del negocio, accederá a esta vista para la revisión de los <a href="#GLO-0047" class="rem_ref">pedidos</a> de <a href="#GLO-0048" class="rem_ref">proveedores</a>. Es un sistema de mensajes para informar mejor a la empresa.</textarea>
+<div id="GLO-0109-text-html" class=""></div>
+<script>generate_markdown("GLO-0109-text");</script>
 </div>
 <div id="GRF-0087" class="figure">
 <img class="figure_image" src=".\diagramas\IU_V2\Contabilidad\Proveedor\PedidoProveedor.png" />
 <p class="figure_caption">
-<span class="figure_caption_label">Figura 39:
-                 </span>
-<span id="GRF-0087-name-html" class=""><a href='#GLO-0110' class="rem_ref">IU-024 Pedido a Proveedores</a></span>
+<span class="figure_caption_label">Figura 73: </span>
+<textarea id="GRF-0087-name-md" class="markdown">
+<a href="#GLO-0110" class="rem_ref">IU-024 Pedido a Proveedores</a>
+</textarea>
+<span id="GRF-0087-name-html"></span>
+<script>generate_markdown("GRF-0087-name",true);</script>
 </p>
 </div>
 <div id="GLO-0110" class="glo">
-<div id="GLO-0110-text-html" class=""><p><strong>IU-024 Pedido a Proveedores</strong>: Una vez queramos renovar el stock, los empleados emplearán esta vista para lanzar un correo automatizado, donde se pedirán los <a href='#GLO-0046' class="rem_ref">productos</a> al <a href='#GLO-0048' class="rem_ref">proveedor</a> que se desee.</p></div>
+<textarea id="GLO-0110-text-md" class="markdown">**IU-024 Pedido a Proveedores**: Una vez queramos renovar el stock, los empleados emplearán esta vista para lanzar un correo automatizado, donde se pedirán los <a href="#GLO-0046" class="rem_ref">productos</a> al <a href="#GLO-0048" class="rem_ref">proveedor</a> que se desee.</textarea>
+<div id="GLO-0110-text-html" class=""></div>
+<script>generate_markdown("GLO-0110-text");</script>
 </div>
 <div id="GRF-0088" class="figure">
 <img class="figure_image" src=".\diagramas\IU_V2\Registro\Camiones.png" />
 <p class="figure_caption">
-<span class="figure_caption_label">Figura 40:
-                 </span>
-<span id="GRF-0088-name-html" class=""><a href='#GLO-0111' class="rem_ref">IU-025 Listado Camiones</a></span>
+<span class="figure_caption_label">Figura 74: </span>
+<textarea id="GRF-0088-name-md" class="markdown">
+<a href="#GLO-0111" class="rem_ref">IU-025 Listado Camiones</a>
+</textarea>
+<span id="GRF-0088-name-html"></span>
+<script>generate_markdown("GRF-0088-name",true);</script>
 </p>
 </div>
 <div id="GLO-0111" class="glo">
-<div id="GLO-0111-text-html" class=""><p><strong>IU-025 Listado Camiones</strong>: En esta vista simple, los empleados podrán consultar los camiones de la base de datos. Estos tienen asociados las opciones de borrado y edición; contemplando también que se puedan añadir nuevos camiones.</p></div>
+<textarea id="GLO-0111-text-md" class="markdown">**IU-025 Listado Camiones**: En esta vista simple, los empleados podrán consultar los camiones de la base de datos. Estos tienen asociados las opciones de borrado y edición; contemplando también que se puedan añadir nuevos camiones.</textarea>
+<div id="GLO-0111-text-html" class=""></div>
+<script>generate_markdown("GLO-0111-text");</script>
 </div>
 <div id="GRF-0089" class="figure">
 <img class="figure_image" src=".\diagramas\IU_V2\Registro\CreacionCamiones.png" />
 <p class="figure_caption">
-<span class="figure_caption_label">Figura 41:
-                 </span>
-<span id="GRF-0089-name-html" class=""><a href='#GLO-0112' class="rem_ref">IU-026 Creación de Camión</a></span>
+<span class="figure_caption_label">Figura 75: </span>
+<textarea id="GRF-0089-name-md" class="markdown">
+<a href="#GLO-0112" class="rem_ref">IU-026 Creación de Camión</a>
+</textarea>
+<span id="GRF-0089-name-html"></span>
+<script>generate_markdown("GRF-0089-name",true);</script>
 </p>
 </div>
 <div id="GLO-0112" class="glo">
-<div id="GLO-0112-text-html" class=""><p><strong>IU-026 Creación de Camión</strong>: Aquí podemos encontrar el formulario de creación de camión. Una vez creado, debería de poder apreciarse en la vista anterior.</p></div>
+<textarea id="GLO-0112-text-md" class="markdown">**IU-026 Creación de Camión**: Aquí podemos encontrar el formulario de creación de camión. Una vez creado, debería de poder apreciarse en la vista anterior.</textarea>
+<div id="GLO-0112-text-html" class=""></div>
+<script>generate_markdown("GLO-0112-text");</script>
 </div>
 <div id="GRF-0090" class="figure">
 <img class="figure_image" src=".\diagramas\IU_V2\Registro\Cubas.png" />
 <p class="figure_caption">
-<span class="figure_caption_label">Figura 42:
-                 </span>
-<span id="GRF-0090-name-html" class=""><a href='#GLO-0113' class="rem_ref">IU-027 Listado Cubas</a></span>
+<span class="figure_caption_label">Figura 76: </span>
+<textarea id="GRF-0090-name-md" class="markdown">
+<a href="#GLO-0113" class="rem_ref">IU-027 Listado Cubas</a>
+</textarea>
+<span id="GRF-0090-name-html"></span>
+<script>generate_markdown("GRF-0090-name",true);</script>
 </p>
 </div>
 <div id="GLO-0113" class="glo">
-<div id="GLO-0113-text-html" class=""><p><strong>IU-027 Listado Cubas</strong>: En esta vista simple, los empleados podrán consultar las <a href='#GLO-0016' class="rem_ref">cubas</a> de la base de datos. Estos tienen asociados las opciones de borrado y edición; contemplando también que se puedan añadir nuevas <a href='#GLO-0016' class="rem_ref">cubas</a>.</p></div>
+<textarea id="GLO-0113-text-md" class="markdown">**IU-027 Listado Cubas**: En esta vista simple, los empleados podrán consultar las <a href="#GLO-0016" class="rem_ref">cubas</a> de la base de datos. Estos tienen asociados las opciones de borrado y edición; contemplando también que se puedan añadir nuevas <a href="#GLO-0016" class="rem_ref">cubas</a>.</textarea>
+<div id="GLO-0113-text-html" class=""></div>
+<script>generate_markdown("GLO-0113-text");</script>
 </div>
 <div id="GRF-0091" class="figure">
 <img class="figure_image" src=".\diagramas\IU_V2\Registro\PorteCubas.png" />
 <p class="figure_caption">
-<span class="figure_caption_label">Figura 43:
-                 </span>
-<span id="GRF-0091-name-html" class=""><a href='#GLO-0114' class="rem_ref">IU-028 Portes Cubas</a></span>
+<span class="figure_caption_label">Figura 77: </span>
+<textarea id="GRF-0091-name-md" class="markdown">
+<a href="#GLO-0114" class="rem_ref">IU-028 Portes Cubas</a>
+</textarea>
+<span id="GRF-0091-name-html"></span>
+<script>generate_markdown("GRF-0091-name",true);</script>
 </p>
 </div>
 <div id="GLO-0114" class="glo">
-<div id="GLO-0114-text-html" class=""><p><strong>IU-028 Portes Cubas</strong>: Con esta representación, se busca poder añadirle portes a las ordenes de alquiler sobre <a href='#GLO-0016' class="rem_ref">cubas</a> (por ID).<br />
-Las <a href='#GLO-0016' class="rem_ref">cubas</a> son consultables a través de la pestaña "Listado de cubas".</p></div>
+<textarea id="GLO-0114-text-md" class="markdown">**IU-028 Portes Cubas**: Con esta representación, se busca poder añadirle portes a las ordenes de alquiler sobre <a href="#GLO-0016" class="rem_ref">cubas</a> (por ID).¬Las <a href="#GLO-0016" class="rem_ref">cubas</a> son consultables a través de la pestaña "Listado de cubas".</textarea>
+<div id="GLO-0114-text-html" class=""></div>
+<script>generate_markdown("GLO-0114-text");</script>
 </div>
 <div id="GRF-0092" class="figure">
 <img class="figure_image" src=".\diagramas\IU_V2\Registro\CreacionCuba.png" />
 <p class="figure_caption">
-<span class="figure_caption_label">Figura 44:
-                 </span>
-<span id="GRF-0092-name-html" class=""><a href='#GLO-0115' class="rem_ref">IU-029 Creación Cubas</a></span>
+<span class="figure_caption_label">Figura 78: </span>
+<textarea id="GRF-0092-name-md" class="markdown">
+<a href="#GLO-0115" class="rem_ref">IU-029 Creación Cubas</a>
+</textarea>
+<span id="GRF-0092-name-html"></span>
+<script>generate_markdown("GRF-0092-name",true);</script>
 </p>
 </div>
 <div id="GLO-0115" class="glo">
-<div id="GLO-0115-text-html" class=""><p><strong>IU-029 Creación Cubas</strong>: Aquí podemos encontrar el formulario de creación de <a href='#GLO-0016' class="rem_ref">cubas</a>. Una vez creado, debería de poder apreciarse en la vista anterior.<br />
-A través de coste unitario, se expresará el coste diario por alquilar la <a href='#GLO-0016' class="rem_ref">cuba</a>.</p></div>
+<textarea id="GLO-0115-text-md" class="markdown">**IU-029 Creación Cubas**: Aquí podemos encontrar el formulario de creación de <a href="#GLO-0016" class="rem_ref">cubas</a>. Una vez creado, debería de poder apreciarse en la vista anterior.¬A través de coste unitario, se expresará el coste diario por alquilar la <a href="#GLO-0016" class="rem_ref">cuba</a>.</textarea>
+<div id="GLO-0115-text-html" class=""></div>
+<script>generate_markdown("GLO-0115-text");</script>
 </div>
 <div id="GRF-0093" class="figure">
 <img class="figure_image" src=".\diagramas\IU_V2\Interfaz Usuario Empleado\Alertas.png" />
 <p class="figure_caption">
-<span class="figure_caption_label">Figura 45:
-                 </span>
-<span id="GRF-0093-name-html" class=""><a href='#GLO-0116' class="rem_ref">IU-030 Alertas</a></span>
+<span class="figure_caption_label">Figura 79: </span>
+<textarea id="GRF-0093-name-md" class="markdown">
+<a href="#GLO-0116" class="rem_ref">IU-030 Alertas</a>
+</textarea>
+<span id="GRF-0093-name-html"></span>
+<script>generate_markdown("GRF-0093-name",true);</script>
 </p>
 </div>
 <div id="GLO-0116" class="glo">
-<div id="GLO-0116-text-html" class=""><p><strong>IU-030 Alertas</strong>: Esta vista representa el carrito de alertas. A través de ella, el empleado podrá consultar los <a href='#GLO-0046' class="rem_ref">productos</a> que están en riesgo de stock bajo.<br />
-Si el empleado desea solicitar un <a href='#GLO-0047' class="rem_ref">pedido</a>, pasaría a la vista de <a href='#GLO-0047' class="rem_ref">Pedido</a> a <a href='#GLO-0048' class="rem_ref">Proveedores</a>, pudiendo seleccionar desde allí el <a href='#GLO-0048' class="rem_ref">proveedor</a> a contactar.</p></div>
+<textarea id="GLO-0116-text-md" class="markdown">**IU-030 Alertas**: Esta vista representa el carrito de alertas. A través de ella, el empleado podrá consultar los <a href="#GLO-0046" class="rem_ref">productos</a> que están en riesgo de stock bajo.¬Si el empleado desea solicitar un <a href="#GLO-0047" class="rem_ref">pedido</a>, pasaría a la vista de <a href="#GLO-0047" class="rem_ref">Pedido</a> a <a href="#GLO-0048" class="rem_ref">Proveedores</a>, pudiendo seleccionar desde allí el <a href="#GLO-0048" class="rem_ref">proveedor</a> a contactar.</textarea>
+<div id="GLO-0116-text-html" class=""></div>
+<script>generate_markdown("GLO-0116-text");</script>
 </div>
 <h4 id="SEC-0080" class="section">5.2.2.1 Perfil Empleado</h4>
 <div id="GRF-0094" class="figure">
 <img class="figure_image" src=".\diagramas\IU_V2\Interfaz Usuario Empleado\Perfil Empleado\Horario.png" />
 <p class="figure_caption">
-<span class="figure_caption_label">Figura 46:
-                 </span>
-<span id="GRF-0094-name-html" class="">IU-031 Horario Empleado</span>
+<span class="figure_caption_label">Figura 80: </span>
+<textarea id="GRF-0094-name-md" class="markdown">
+<a href="#GLO-0123" class="rem_ref">IU-031 Horario Empleado</a>
+</textarea>
+<span id="GRF-0094-name-html"></span>
+<script>generate_markdown("GRF-0094-name",true);</script>
 </p>
+</div>
+<div id="GLO-0123" class="glo">
+<textarea id="GLO-0123-text-md" class="markdown">**IU-031 Horario Empleado**: Esta vista nos mostrará el horario de cada usuario empleado particular. En ella se podrán consultar las entradas y salidas de trabajo por cada semana del año (según el administrador las actualice).</textarea>
+<div id="GLO-0123-text-html" class=""></div>
+<script>generate_markdown("GLO-0123-text");</script>
 </div>
 <div id="GRF-0095" class="figure">
 <img class="figure_image" src=".\diagramas\IU_V2\Interfaz Usuario Empleado\Perfil Empleado\Facturas.png" />
 <p class="figure_caption">
-<span class="figure_caption_label">Figura 47:
-                 </span>
-<span id="GRF-0095-name-html" class="">IU-032 <a href='#GLO-0039' class="rem_ref">Facturas</a> Clientes y <a href='#GLO-0048' class="rem_ref">Proveedores</a></span>
+<span class="figure_caption_label">Figura 81: </span>
+<textarea id="GRF-0095-name-md" class="markdown">
+<a href="#GLO-0124" class="rem_ref">IU-032 Facturas Clientes y Proveedores</a>
+</textarea>
+<span id="GRF-0095-name-html"></span>
+<script>generate_markdown("GRF-0095-name",true);</script>
 </p>
+</div>
+<div id="GLO-0124" class="glo">
+<textarea id="GLO-0124-text-md" class="markdown">**IU-032 Facturas Clientes y Proveedores**: Para esta interfaz, se le mostrará al empleado las diferentes <a href="#GLO-0039" class="rem_ref">facturas</a> del negocio. En ella se podrán añadir nuevas <a href="#GLO-0039" class="rem_ref">facturas</a> y consultar datos de las antiguas.</textarea>
+<div id="GLO-0124-text-html" class=""></div>
+<script>generate_markdown("GLO-0124-text");</script>
 </div>
 <div id="GRF-0096" class="figure">
 <img class="figure_image" src=".\diagramas\IU_V2\Interfaz Usuario Empleado\Perfil Empleado\CreacionFactura.png" />
 <p class="figure_caption">
-<span class="figure_caption_label">Figura 48:
-                 </span>
-<span id="GRF-0096-name-html" class="">IU-033 Creación <a href='#GLO-0039' class="rem_ref">Factura</a></span>
+<span class="figure_caption_label">Figura 82: </span>
+<textarea id="GRF-0096-name-md" class="markdown">
+<a href="#GLO-0125" class="rem_ref">IU-033 Creación Factura</a>
+</textarea>
+<span id="GRF-0096-name-html"></span>
+<script>generate_markdown("GRF-0096-name",true);</script>
 </p>
+</div>
+<div id="GLO-0125" class="glo">
+<textarea id="GLO-0125-text-md" class="markdown">**IU-033 Creación Factura**: Este formulario predeterminado, nos dejará añadir <a href="#GLO-0039" class="rem_ref">facturas</a> de cliente desde un perfil administrador o empleado.¬Para ello se podrán añadir los artículos de la compra.</textarea>
+<div id="GLO-0125-text-html" class=""></div>
+<script>generate_markdown("GLO-0125-text");</script>
 </div>
 <div id="GRF-0097" class="figure">
 <img class="figure_image" src=".\diagramas\IU_V2\Interfaz Usuario Empleado\Perfil Empleado\Porte.png" />
 <p class="figure_caption">
-<span class="figure_caption_label">Figura 49:
-                 </span>
-<span id="GRF-0097-name-html" class="">IU-034 Portes de Clientes </span>
+<span class="figure_caption_label">Figura 83: </span>
+<textarea id="GRF-0097-name-md" class="markdown">
+<a href="#GLO-0126" class="rem_ref">IU-034 Portes de Clientes</a>
+</textarea>
+<span id="GRF-0097-name-html"></span>
+<script>generate_markdown("GRF-0097-name",true);</script>
 </p>
+</div>
+<div id="GLO-0126" class="glo">
+<textarea id="GLO-0126-text-md" class="markdown">**IU-034 Portes de clientes**: Con esta vista, el empleado podrá consultar los diferentes portes que recoge el sistema. Además, incluirá información acerca del estado de estos y su coste.</textarea>
+<div id="GLO-0126-text-html" class=""></div>
+<script>generate_markdown("GLO-0126-text");</script>
 </div>
 <div id="GRF-0098" class="figure">
 <img class="figure_image" src=".\diagramas\IU_V2\Interfaz Usuario Empleado\Perfil Empleado\CreacionPorte.png" />
 <p class="figure_caption">
-<span class="figure_caption_label">Figura 50:
-                 </span>
-<span id="GRF-0098-name-html" class="">IU-035 Creación Porte</span>
+<span class="figure_caption_label">Figura 84: </span>
+<textarea id="GRF-0098-name-md" class="markdown">IU-035 Creación Porte</textarea>
+<span id="GRF-0098-name-html"></span>
+<script>generate_markdown("GRF-0098-name",true);</script>
 </p>
+</div>
+<div id="GLO-0127" class="glo">
+<textarea id="GLO-0127-text-md" class="markdown">**IU-035 Creación de porte**: Este formulario para administradores y empleados, nos dejará insertar nuevos portes en la base de datos. Estos siempre irán asociados a los distintos clientes y servirán para el alquiler o el transporte de <a href="#GLO-0047" class="rem_ref">pedidos</a> usual. </textarea>
+<div id="GLO-0127-text-html" class=""></div>
+<script>generate_markdown("GLO-0127-text");</script>
 </div>
 <div id="GRF-0099" class="figure">
 <img class="figure_image" src=".\diagramas\IU_V2\Interfaz Usuario Administrador\Empleados\ListaEmpleadosVacia.png" />
 <p class="figure_caption">
-<span class="figure_caption_label">Figura 51:
-                 </span>
-<span id="GRF-0099-name-html" class="">IU-036 Listado Empleados Vacía</span>
+<span class="figure_caption_label">Figura 85: </span>
+<textarea id="GRF-0099-name-md" class="markdown">IU-036 Listado Empleados Vacía</textarea>
+<span id="GRF-0099-name-html"></span>
+<script>generate_markdown("GRF-0099-name",true);</script>
 </p>
 </div>
 <div id="GLO-0117" class="glo">
-<div id="GLO-0117-text-html" class=""><p><strong>IU-036 Listado Empleados Vacío</strong>: Esta es la vista que se muestra cuando el listado de empleados es vacío. El propietario podrá acceder al formulario de creación, pulsando en el link.</p></div>
+<textarea id="GLO-0117-text-md" class="markdown">**IU-036 Listado Empleados Vacío**: Esta es la vista que se muestra cuando el listado de empleados es vacío. El propietario podrá acceder al formulario de creación, pulsando en el link.</textarea>
+<div id="GLO-0117-text-html" class=""></div>
+<script>generate_markdown("GLO-0117-text");</script>
 </div>
 <div id="GRF-0100" class="figure">
 <img class="figure_image" src=".\diagramas\IU_V2\Interfaz Usuario Administrador\Empleados\ListaEmpleados.png" />
 <p class="figure_caption">
-<span class="figure_caption_label">Figura 52:
-                 </span>
-<span id="GRF-0100-name-html" class=""><a href='#GLO-0118' class="rem_ref">IU-037 Listado Empleados</a></span>
+<span class="figure_caption_label">Figura 86: </span>
+<textarea id="GRF-0100-name-md" class="markdown">
+<a href="#GLO-0118" class="rem_ref">IU-037 Listado Empleados</a>
+</textarea>
+<span id="GRF-0100-name-html"></span>
+<script>generate_markdown("GRF-0100-name",true);</script>
 </p>
 </div>
 <div id="GLO-0118" class="glo">
-<div id="GLO-0118-text-html" class=""><p><strong>IU-037 Listado Empleados</strong>: Una vez que la base registra empleados, podríamos consultar todos sus datos más relevantes. También se podrán modificar y eliminar los empleados.</p>
-<p>Esta vista también incluye un link directo al perfil de cada empleado.</p></div>
+<textarea id="GLO-0118-text-md" class="markdown">**IU-037 Listado Empleados**: Una vez que la base registra empleados, podríamos consultar todos sus datos más relevantes. También se podrán modificar y eliminar los empleados.¬¬Esta vista también incluye un link directo al perfil de cada empleado.</textarea>
+<div id="GLO-0118-text-html" class=""></div>
+<script>generate_markdown("GLO-0118-text");</script>
 </div>
 <div id="GRF-0101" class="figure">
 <img class="figure_image" src=".\diagramas\IU_V2\Interfaz Usuario Administrador\Empleados\DetallesEmpleado.png" />
 <p class="figure_caption">
-<span class="figure_caption_label">Figura 53:
-                 </span>
-<span id="GRF-0101-name-html" class=""><a href='#GLO-0119' class="rem_ref">IU-038 Datos de un Empleado</a></span>
+<span class="figure_caption_label">Figura 87: </span>
+<textarea id="GRF-0101-name-md" class="markdown">
+<a href="#GLO-0119" class="rem_ref">IU-038 Datos de un Empleado</a>
+</textarea>
+<span id="GRF-0101-name-html"></span>
+<script>generate_markdown("GRF-0101-name",true);</script>
 </p>
 </div>
 <div id="GLO-0119" class="glo">
-<div id="GLO-0119-text-html" class=""><p><strong>IU-038 Datos de un empleado</strong>: Esta vista, solo accesible por propietarios, se corresponde a la de perfil de empleados. A través de ella, nuestro propietario podrá comprobar los datos completos del empleado (incluyendo los de su contrato), además de tener la opción de modificarlos.</p></div>
+<textarea id="GLO-0119-text-md" class="markdown">**IU-038 Datos de un empleado**: Esta vista, solo accesible por propietarios, se corresponde a la de perfil de empleados. A través de ella, nuestro propietario podrá comprobar los datos completos del empleado (incluyendo los de su contrato), además de tener la opción de modificarlos.</textarea>
+<div id="GLO-0119-text-html" class=""></div>
+<script>generate_markdown("GLO-0119-text");</script>
 </div>
 <div id="GRF-0102" class="figure">
 <img class="figure_image" src=".\diagramas\IU_V2\Interfaz Usuario Administrador\Empleados\RegistroEmpleado.png" />
 <p class="figure_caption">
-<span class="figure_caption_label">Figura 54:
-                 </span>
-<span id="GRF-0102-name-html" class=""><a href='#GLO-0120' class="rem_ref">IU-039 Registro Empleado</a></span>
+<span class="figure_caption_label">Figura 88: </span>
+<textarea id="GRF-0102-name-md" class="markdown">
+<a href="#GLO-0120" class="rem_ref">IU-039 Registro Empleado</a>
+</textarea>
+<span id="GRF-0102-name-html"></span>
+<script>generate_markdown("GRF-0102-name",true);</script>
 </p>
 </div>
 <div id="GLO-0120" class="glo">
-<div id="GLO-0120-text-html" class=""><p><strong>IU-039 Registro Empleado</strong>: Este formulario se corresponde al de creación de empleados. Es solo accesible por el propietario, una vez rellenado nos redirecciona a los detalles de contrato.</p></div>
+<textarea id="GLO-0120-text-md" class="markdown">**IU-039 Registro Empleado**: Este formulario se corresponde al de creación de empleados. Es solo accesible por el propietario, una vez rellenado nos redirecciona a los detalles de contrato.</textarea>
+<div id="GLO-0120-text-html" class=""></div>
+<script>generate_markdown("GLO-0120-text");</script>
 </div>
 <div id="GRF-0103" class="figure">
 <img class="figure_image" src=".\diagramas\IU_V2\Interfaz Usuario Administrador\Empleados\RegistroContrato.png" />
 <p class="figure_caption">
-<span class="figure_caption_label">Figura 55:
-                 </span>
-<span id="GRF-0103-name-html" class=""><a href='#GLO-0121' class="rem_ref">IU-040 Registro Contrato Empleado</a></span>
+<span class="figure_caption_label">Figura 89: </span>
+<textarea id="GRF-0103-name-md" class="markdown">
+<a href="#GLO-0121" class="rem_ref">IU-040 Registro Contrato Empleado</a>
+</textarea>
+<span id="GRF-0103-name-html"></span>
+<script>generate_markdown("GRF-0103-name",true);</script>
 </p>
 </div>
 <div id="GLO-0121" class="glo">
-<div id="GLO-0121-text-html" class=""><p><strong>IU-040 Registro Contrato Empleado</strong>: Este formulario se corresponde al de creación de contato. Es solo accesible por el propietario, una vez rellenado,  podríamos comprobar que el empleado se ha añadido al listado de la base de datos.</p></div>
+<textarea id="GLO-0121-text-md" class="markdown">**IU-040 Registro Contrato Empleado**: Este formulario se corresponde al de creación de contato. Es solo accesible por el propietario, una vez rellenado,  podríamos comprobar que el empleado se ha añadido al listado de la base de datos.</textarea>
+<div id="GLO-0121-text-html" class=""></div>
+<script>generate_markdown("GLO-0121-text");</script>
 </div>
 <div id="GRF-0104" class="figure">
 <img class="figure_image" src=".\diagramas\IU_V2\Interfaz Usuario Administrador\Empleados\RegistroHorario.png" />
 <p class="figure_caption">
-<span class="figure_caption_label">Figura 56:
-                 </span>
-<span id="GRF-0104-name-html" class=""><a href='#GLO-0122' class="rem_ref">IU-041 Selección de Horarios</a></span>
+<span class="figure_caption_label">Figura 90: </span>
+<textarea id="GRF-0104-name-md" class="markdown">
+<a href="#GLO-0122" class="rem_ref">IU-041 Selección de Horarios</a>
+</textarea>
+<span id="GRF-0104-name-html"></span>
+<script>generate_markdown("GRF-0104-name",true);</script>
 </p>
 </div>
 <div id="GLO-0122" class="glo">
-<div id="GLO-0122-text-html" class=""><p><strong>IU-041 Selección de Horarios</strong>: Este formulario para propietarios, servirá para establecer los turnos semanales de los empleados. La idea es que se acceda a esta pestaña el sábado de cada semana, para obtener los turnos de la siguiente (será evaluado por el propietario según las circunstancias de la semana).</p>
-<p>Cabe decir que estamos teniendo en cuenta que la semana laboral del empleado va de lunes a sábado.</p></div>
+<textarea id="GLO-0122-text-md" class="markdown">**IU-041 Selección de Horarios**: Este formulario para propietarios, servirá para establecer los turnos semanales de los empleados. La idea es que se acceda a esta pestaña el sábado de cada semana, para obtener los turnos de la siguiente (será evaluado por el propietario según las circunstancias de la semana).¬¬Cabe decir que estamos teniendo en cuenta que la semana laboral del empleado va de lunes a sábado.</textarea>
+<div id="GLO-0122-text-html" class=""></div>
+<script>generate_markdown("GLO-0122-text");</script>
 </div>
 <h1 id="SEC-0062" class="section">6 Interfaz de servicios del sistema</h1>
 <h2 id="SEC-0065" class="section">6.1 Diagramas de la interfaz de servicios del sistema</h2>
 <h2 id="SEC-0066" class="section">6.2 Descripción de la interfaz de servicios del sistema</h2>
 <h2 id="SEC-0067" class="section">6.3 Servicios consumidos por el sistema</h2>
 <h1 id="SEC-0063" class="section">7 Información sobre trazabilidad</h1>
-<h1 id="SEC-0064" class="appendix">A Glosario de acrónimos y abreviaturas</h1>
+<h1 id="SEC-0064" class="section">A Glosario de acrónimos y abreviaturas</h1>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <script>
             // set tooltips of rem:ref references to glossary items or class supertypes
