@@ -2804,7 +2804,7 @@
 <script>generate_markdown("PRG-0132-text");</script>
 </div>
 <div id="PRG-0133">
-<textarea id="PRG-0133-text-md" class="markdown">**Servicio de Empleados** permite a los empleados de la empresa consultar su perfil y su contrato, consultar los clientes, realizar <a href="#GLO-0047" class="rem_ref">pedidos</a> a los <a href="#GLO-0048" class="rem_ref">proveedores</a>, consultar los <a href="#GLO-0047" class="rem_ref">pedidos</a> tanto de clientes como los realizados a <a href="#GLO-0048" class="rem_ref">proveedores</a>, buscar los <a href="#GLO-0047" class="rem_ref">pedidos</a> asociados a un cliente o a un <a href="#GLO-0048" class="rem_ref">proveedor</a> y consultar aquellos <a href="#GLO-0047" class="rem_ref">pedidos</a> que estén activos. Cuenta con los siguientes métodos:¬¬- **ConsultaMiPerfil()**  a través del id de empleado asociado, este método le mostrará a los trabajadores su perfil, conteniendo este los datos y atributos asociados a la entidad.¬¬- **ConsultaMiContrato()** un empleado podrá acceder a su contrato mediante la invocación a este método, que recibirá el id asociado y devolverá los datos principales del contrato.¬¬- **ConsultarClientes()** un empleado también podrá acceder al listado de clientes mediante esta llamada, por tanto, devolverá un listado de aquellos que estén registrados en la base de datos.¬¬- **RealizarPedidoAProveedor()** un empleado podrá emitir un correo a un <a href="#GLO-0048" class="rem_ref">proveedor</a> dadas la dirección de email de <a href="#GLO-0048" class="rem_ref">proveedor</a> y la de usuario. Este invocará al método EnviarPedidoAProveedor().¬¬- **ConsultarPedidosDeClientes()** - **ConsultarClientes()** un empleado también podrá acceder al listado de <a href="#GLO-0047" class="rem_ref">pedidos</a> de clientes mediante esta llamada, por tanto, devolverá un listado de los <a href="#GLO-0047" class="rem_ref">pedidos</a> emitidos por estos.¬¬- **ConsultarPedidosAProveedores()** un empleado podrá acceder al listado de <a href="#GLO-0047" class="rem_ref">pedidos</a> a <a href="#GLO-0048" class="rem_ref">proveedores</a> mediante esta invocación, por tanto, devolverá un listado de los <a href="#GLO-0047" class="rem_ref">pedidos</a> emitidos a estos.¬¬- **BuscarPedidosPorCliente()** este método recibirá como parámetro el usuario asociado al cliente y mostrará todos los <a href="#GLO-0047" class="rem_ref">pedidos</a> relacionados con este.¬¬- **BuscarPedidosPorProveedor()** este método recibirá como parámetro el nombre asociado al <a href="#GLO-0048" class="rem_ref">proveedor</a> y mostrará todos los <a href="#GLO-0047" class="rem_ref">pedidos</a> relacionados con este.¬¬- **ConsultarPedidosActivos()** la invocación de este método creará un listado de <a href="#GLO-0047" class="rem_ref">pedidos</a> pendientes de entrega.</textarea>
+<textarea id="PRG-0133-text-md" class="markdown">**Servicio de Empleados** permite a los empleados de la empresa consultar su perfil y su contrato, consultar los clientes, realizar <a href="#GLO-0047" class="rem_ref">pedidos</a> a los <a href="#GLO-0048" class="rem_ref">proveedores</a>, consultar los <a href="#GLO-0047" class="rem_ref">pedidos</a> tanto de clientes como los realizados a <a href="#GLO-0048" class="rem_ref">proveedores</a>, buscar los <a href="#GLO-0047" class="rem_ref">pedidos</a> asociados a un cliente o a un <a href="#GLO-0048" class="rem_ref">proveedor</a> y consultar aquellos <a href="#GLO-0047" class="rem_ref">pedidos</a> que estén activos. Cuenta con los siguientes métodos:¬¬- **ConsultaMiPerfil()**  a través del id de empleado asociado, este método le mostrará a los trabajadores su perfil, conteniendo este los datos y atributos asociados a la entidad.¬¬- **ConsultaMiContrato()** un empleado podrá acceder a su contrato mediante la invocación a este método, que recibirá el id asociado y devolverá los datos principales del contrato.¬¬- **ConsultarClientes()** un empleado también podrá acceder al listado de clientes mediante esta llamada, por tanto, devolverá un listado de aquellos que estén registrados en la base de datos.¬¬- **RealizarPedidoAProveedor()** un empleado podrá emitir un correo a un <a href="#GLO-0048" class="rem_ref">proveedor</a> dadas la dirección de email de <a href="#GLO-0048" class="rem_ref">proveedor</a> y la de usuario. Este invocará al método EnviarPedidoAProveedor().¬¬- **ConsultarPedidosDeClientes()** - **ConsultarClientes()** un empleado también podrá acceder al listado de <a href="#GLO-0047" class="rem_ref">pedidos</a> de clientes mediante esta llamada, por tanto, devolverá un listado de los <a href="#GLO-0047" class="rem_ref">pedidos</a> emitidos por estos.¬¬- **ConsultarPedidosAProveedores()** un empleado podrá acceder al listado de <a href="#GLO-0047" class="rem_ref">pedidos</a> a <a href="#GLO-0048" class="rem_ref">proveedores</a> mediante esta invocación, por tanto, devolverá un listado de los <a href="#GLO-0047" class="rem_ref">pedidos</a> emitidos a estos.¬¬- **BuscarPedidosPorCliente()** este método recibirá como parámetro el usuario asociado al cliente y mostrará todos los <a href="#GLO-0047" class="rem_ref">pedidos</a> relacionados con este.¬¬- **BuscarPedidosPorProveedor()** este método recibirá como parámetro el nombre asociado al <a href="#GLO-0048" class="rem_ref">proveedor</a> y mostrará todos los <a href="#GLO-0047" class="rem_ref">pedidos</a> relacionados con este.¬¬- **ConsultarPedidosActivos()** la invocación de este método creará un listado de <a href="#GLO-0047" class="rem_ref">pedidos</a> pendientes de entrega.¬¬- **AñadirCamion()** este método recibirá los datos de la entidad camión para registrarlos en la base de datos. ¬¬- **ModificarCamion()** este método será invocado usando como parámetro el nuevo camión modificado y lo actualizará en la base de datos. ¬¬- **AñadirIncidenciaCliente()** el empleado podrá añadir una incidencia de cliente usando como parámetros la orden de alquiler asociada y los atributos principales de la incidencia.¬¬¬</textarea>
 <div id="PRG-0133-text-html" class=""></div>
 <script>generate_markdown("PRG-0133-text");</script>
 </div>
@@ -2815,6 +2815,497 @@
 <script>generate_markdown("PRG-0134-text");</script>
 </div>
 <h1 id="SEC-0063" class="section">7 Información sobre trazabilidad</h1>
+<div id="TRM-0004" class="traceability_matrix">
+<table class="traceability_matrix remus_table">
+<thead>
+<tr>
+<th class="matrix_oid">
+<img src="https://cdn.jsdelivr.net/gh/amador-duran-toro/remus/assets/images/icons/traceabilityMatrix.png" /> <span class="matriz_oid">TRM-0004</span>
+<br />
+<button class="reduce_font">A-</button>
+<button class="increase_font">A+</button>
+</th>
+<th class="matrix_column">
+<a href="#CRQ-0001">CRQ-0001</a>
+</th>
+<th class="matrix_column">
+<a href="#CRQ-0002">CRQ-0002</a>
+</th>
+<th class="matrix_column">
+<a href="#CRQ-0003">CRQ-0003</a>
+</th>
+<th class="matrix_column">
+<a href="#CRQ-0004">CRQ-0004</a>
+</th>
+<th class="matrix_column">
+<a href="#CRQ-0005">CRQ-0005</a>
+</th>
+<th class="matrix_column">
+<a href="#CRQ-0006">CRQ-0006</a>
+</th>
+<th class="matrix_column">
+<a href="#CRQ-0007">CRQ-0007</a>
+</th>
+<th class="matrix_column">
+<a href="#CRQ-0008">CRQ-0008</a>
+</th>
+<th class="matrix_column">
+<a href="#CRQ-0009">CRQ-0009</a>
+</th>
+<th class="matrix_column">
+<a href="#CRQ-0010">CRQ-0010</a>
+</th>
+<th class="matrix_column">
+<a href="#CRQ-0011">CRQ-0011</a>
+</th>
+<th class="matrix_column">
+<a href="#CRQ-0012">CRQ-0012</a>
+</th>
+<th class="matrix_column">
+<a href="#CRQ-0013">CRQ-0013</a>
+</th>
+<th class="matrix_column">
+<a href="#CRQ-0014">CRQ-0014</a>
+</th>
+<th class="matrix_column">
+<a href="#CRQ-0015">CRQ-0015</a>
+</th>
+<th class="matrix_column">
+<a href="#CRQ-0016">CRQ-0016</a>
+</th>
+<th class="matrix_column">
+<a href="#CRQ-0017">CRQ-0017</a>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th>
+<a href="#TYP-0001">TYP-0001</a>
+</th>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr>
+<th>
+<a href="#TYP-0002">TYP-0002</a>
+</th>
+<td>-</td>
+<td class="trace" />
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td class="trace" />
+<td>-</td>
+<td class="trace" />
+<td>-</td>
+<td class="trace" />
+<td>-</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr>
+<th>
+<a href="#TYP-0003">TYP-0003</a>
+</th>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr>
+<th>
+<a href="#TYP-0004">TYP-0004</a>
+</th>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr>
+<th>
+<a href="#TYP-0005">TYP-0005</a>
+</th>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td class="trace" />
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr>
+<th>
+<a href="#TYP-0006">TYP-0006</a>
+</th>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td class="trace" />
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr>
+<th>
+<a href="#TYP-0007">TYP-0007</a>
+</th>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td class="trace" />
+<td class="trace" />
+<td>-</td>
+<td class="trace" />
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr>
+<th>
+<a href="#TYP-0008">TYP-0008</a>
+</th>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td class="trace" />
+<td class="trace" />
+<td>-</td>
+<td class="trace" />
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td class="trace" />
+</tr>
+<tr>
+<th>
+<a href="#TYP-0009">TYP-0009</a>
+</th>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td class="trace" />
+<td class="trace" />
+<td>-</td>
+<td class="trace" />
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr>
+<th>
+<a href="#TYP-0010">TYP-0010</a>
+</th>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td class="trace" />
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr>
+<th>
+<a href="#TYP-0011">TYP-0011</a>
+</th>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td class="trace" />
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td class="trace" />
+</tr>
+<tr>
+<th>
+<a href="#TYP-0012">TYP-0012</a>
+</th>
+<td>-</td>
+<td>-</td>
+<td class="trace" />
+<td>-</td>
+<td class="trace" />
+<td>-</td>
+<td class="trace" />
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td class="trace" />
+<td>-</td>
+<td>-</td>
+<td class="trace" />
+</tr>
+<tr>
+<th>
+<a href="#TYP-0013">TYP-0013</a>
+</th>
+<td class="trace" />
+<td>-</td>
+<td>-</td>
+<td class="trace" />
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr>
+<th>
+<a href="#TYP-0014">TYP-0014</a>
+</th>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td class="trace" />
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr>
+<th>
+<a href="#TYP-0015">TYP-0015</a>
+</th>
+<td class="trace" />
+<td>-</td>
+<td>-</td>
+<td class="trace" />
+<td class="trace" />
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr>
+<th>
+<a href="#TYP-0016">TYP-0016</a>
+</th>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr>
+<th>
+<a href="#TYP-0017">TYP-0017</a>
+</th>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td class="trace" />
+<td class="trace" />
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr>
+<th>
+<a href="#TYP-0018">TYP-0018</a>
+</th>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td class="trace" />
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr>
+<th>
+<a href="#TYP-0019">TYP-0019</a>
+</th>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+<p class="matrix_caption">
+<span class="matrix_caption_label">Matriz de rastreabilidad 4: </span>
+<textarea id="TRM-0004-name-md" class="markdown">Matriz de trazabilidad de clases y reglas de negocio</textarea>
+<span id="TRM-0004-name-html"></span>
+<script>generate_markdown("TRM-0004-name",true);</script>
+</p>
+</div>
 <h1 id="SEC-0064" class="section">A Glosario de acrónimos y abreviaturas</h1>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <script>

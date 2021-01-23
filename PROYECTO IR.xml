@@ -186,7 +186,7 @@
 <rem:day>31</rem:day>
 </rem:date>
 </rem:version>
-<rem:authors stakeholders="STK-0001 STK-0004 STK-0003 STK-0005 STK-0002 "/>
+<rem:authors stakeholders="STK-0003 STK-0005 STK-0004 STK-0001 STK-0002 "/>
 <rem:comments>Ninguno</rem:comments>
 <rem:address>Av. Reina Mercedes</rem:address>
 <rem:telephone><rem:tbd/></rem:telephone>
@@ -5822,7 +5822,7 @@
 </rem:time>
 <rem:place>Lugar del negocio</rem:place>
 <rem:results>El propósito de esta reunión fue extender la información que ya recogimos sobre los procesos, además de recoger más fotos del negocio en sí.<br/><br/>* En un principio se les preguntó a los dueños por los procesos. De aquí pudimos ver que acciones se llevaban a cabo en la carga y descarga de <rem:ref oid="GLO-0016">cubas</rem:ref>. Todo ello fue traducido en el BPMN correspondiente.<br/><br/>* Para este proceso, obtuvimos que el cliente hace una llamada telefónica o se impersona en el negocio para lanzar la solicitud, con un previo acuerdo, la <rem:ref oid="GLO-0016">cuba</rem:ref> es llevada al lugar (en la fecha hablada). Una vez que están las 2 partes, hacen el pago. A la hora de retirarla, si hay algún problema grave (no está la <rem:ref oid="GLO-0016">cuba</rem:ref>, la <rem:ref oid="GLO-0016">cuba</rem:ref> está estropeada, ...), la empresa registraría una multa sobre este cliente. <br/>En incidentes menores (el cliente no está, no hay nadie en la obra...), lo que se haría sería llamar al cliente y dejar la <rem:ref oid="GLO-0016">cuba</rem:ref> en el sitio, sin más repercusiones.<br/>* Tenemos en cuenta que el cliente se encarga de los permisos, no teniendo que verse implicada la empresa en esto; aunque estos no suelen ser necesarios.<br/><br/>* Otra de las dudas que fue resuelta fue sobre los métodos de pago. El más habitual es el pago en efectivo, el siguiente es el pago por tarjeta. Otros pagos que podríamos haber incluido, están descartados por el negocio (este es el caso del cheque).<br/><br/>* También se pregunto acerca de los <rem:ref oid="GLO-0048">proveedores</rem:ref>. Estos suelen venir semanalmente para traer mercancia y recibir las solicitudes, En otros casos, el <rem:ref oid="GLO-0015">polvero</rem:ref> haría una llamada para acordar el <rem:ref oid="GLO-0047">pedido</rem:ref>.<br/><br/>* Sobre el software de la empresa, se mostraron los programas que usan principalmente. Estos son gestasol (para la creación de <rem:ref oid="GLO-0039">facturas</rem:ref>), excel (para el conteo de stock) y word (apuntar <rem:ref oid="GLO-0047">pedidos</rem:ref>, tomar notas...).<br/><br/></rem:results>
-	<rem:attenders stakeholders = "STK-0003 STK-0014 STK-0006 "/>
+	<rem:attenders stakeholders = "STK-0014 STK-0003 STK-0006 "/>
 </rem:meeting>
 <rem:meeting oid="MET-0005">
 <rem:name>Reunión de aceptación de las interfaces (1h)</rem:name>
@@ -5847,7 +5847,7 @@
 </rem:time>
 <rem:place><rem:tbd/></rem:place>
 <rem:results>En este reunión, el objetivo principal era encontrar el nivel de aceptación de las interfaces de usuario.<br/><br/>* En la reunión en físico, se les mosraron las interfaces de usuario al cliente.<br/><br/>* En un principio, el cliente se dio por satisfecho a falta de resolver unos aspectos menores. No obstante, el objetivo principal fue completado.<br/><br/>* Las faltas principales son: la posibilidad de cambiar el logo y el color del prototipo (que esto ya se vería en la IU funcional).<br/></rem:results>
-	<rem:attenders stakeholders = "STK-0003 STK-0013 STK-0014 "/>
+	<rem:attenders stakeholders = "STK-0014 STK-0003 STK-0013 "/>
 </rem:meeting>
 </rem:section>
 <rem:section oid="SEC-0010">
@@ -6163,7 +6163,7 @@
 <rem:day>5</rem:day>
 </rem:date>
 </rem:version>
-<rem:authors stakeholders="STK-0001 STK-0004 STK-0003 STK-0005 STK-0002 "/>
+<rem:authors stakeholders="STK-0003 STK-0005 STK-0004 STK-0001 STK-0002 "/>
 <rem:comments>Ninguno</rem:comments>
 <rem:address>Av. Reina Mercedes</rem:address>
 <rem:telephone><rem:tbd/></rem:telephone>
@@ -9198,7 +9198,7 @@
 </rem:date>
 </rem:version>
 <rem:comments>Ninguno</rem:comments>
-<rem:text>**Servicio de Empleados** permite a los empleados de la empresa consultar su perfil y su contrato, consultar los clientes, realizar <rem:ref oid="GLO-0047">pedidos</rem:ref> a los <rem:ref oid="GLO-0048">proveedores</rem:ref>, consultar los <rem:ref oid="GLO-0047">pedidos</rem:ref> tanto de clientes como los realizados a <rem:ref oid="GLO-0048">proveedores</rem:ref>, buscar los <rem:ref oid="GLO-0047">pedidos</rem:ref> asociados a un cliente o a un <rem:ref oid="GLO-0048">proveedor</rem:ref> y consultar aquellos <rem:ref oid="GLO-0047">pedidos</rem:ref> que estén activos. Cuenta con los siguientes métodos:<br/><br/>- **ConsultaMiPerfil()**  a través del id de empleado asociado, este método le mostrará a los trabajadores su perfil, conteniendo este los datos y atributos asociados a la entidad.<br/><br/>- **ConsultaMiContrato()** un empleado podrá acceder a su contrato mediante la invocación a este método, que recibirá el id asociado y devolverá los datos principales del contrato.<br/><br/>- **ConsultarClientes()** un empleado también podrá acceder al listado de clientes mediante esta llamada, por tanto, devolverá un listado de aquellos que estén registrados en la base de datos.<br/><br/>- **RealizarPedidoAProveedor()** un empleado podrá emitir un correo a un <rem:ref oid="GLO-0048">proveedor</rem:ref> dadas la dirección de email de <rem:ref oid="GLO-0048">proveedor</rem:ref> y la de usuario. Este invocará al método EnviarPedidoAProveedor().<br/><br/>- **ConsultarPedidosDeClientes()** - **ConsultarClientes()** un empleado también podrá acceder al listado de <rem:ref oid="GLO-0047">pedidos</rem:ref> de clientes mediante esta llamada, por tanto, devolverá un listado de los <rem:ref oid="GLO-0047">pedidos</rem:ref> emitidos por estos.<br/><br/>- **ConsultarPedidosAProveedores()** un empleado podrá acceder al listado de <rem:ref oid="GLO-0047">pedidos</rem:ref> a <rem:ref oid="GLO-0048">proveedores</rem:ref> mediante esta invocación, por tanto, devolverá un listado de los <rem:ref oid="GLO-0047">pedidos</rem:ref> emitidos a estos.<br/><br/>- **BuscarPedidosPorCliente()** este método recibirá como parámetro el usuario asociado al cliente y mostrará todos los <rem:ref oid="GLO-0047">pedidos</rem:ref> relacionados con este.<br/><br/>- **BuscarPedidosPorProveedor()** este método recibirá como parámetro el nombre asociado al <rem:ref oid="GLO-0048">proveedor</rem:ref> y mostrará todos los <rem:ref oid="GLO-0047">pedidos</rem:ref> relacionados con este.<br/><br/>- **ConsultarPedidosActivos()** la invocación de este método creará un listado de <rem:ref oid="GLO-0047">pedidos</rem:ref> pendientes de entrega.</rem:text>
+<rem:text>**Servicio de Empleados** permite a los empleados de la empresa consultar su perfil y su contrato, consultar los clientes, realizar <rem:ref oid="GLO-0047">pedidos</rem:ref> a los <rem:ref oid="GLO-0048">proveedores</rem:ref>, consultar los <rem:ref oid="GLO-0047">pedidos</rem:ref> tanto de clientes como los realizados a <rem:ref oid="GLO-0048">proveedores</rem:ref>, buscar los <rem:ref oid="GLO-0047">pedidos</rem:ref> asociados a un cliente o a un <rem:ref oid="GLO-0048">proveedor</rem:ref> y consultar aquellos <rem:ref oid="GLO-0047">pedidos</rem:ref> que estén activos. Cuenta con los siguientes métodos:<br/><br/>- **ConsultaMiPerfil()**  a través del id de empleado asociado, este método le mostrará a los trabajadores su perfil, conteniendo este los datos y atributos asociados a la entidad.<br/><br/>- **ConsultaMiContrato()** un empleado podrá acceder a su contrato mediante la invocación a este método, que recibirá el id asociado y devolverá los datos principales del contrato.<br/><br/>- **ConsultarClientes()** un empleado también podrá acceder al listado de clientes mediante esta llamada, por tanto, devolverá un listado de aquellos que estén registrados en la base de datos.<br/><br/>- **RealizarPedidoAProveedor()** un empleado podrá emitir un correo a un <rem:ref oid="GLO-0048">proveedor</rem:ref> dadas la dirección de email de <rem:ref oid="GLO-0048">proveedor</rem:ref> y la de usuario. Este invocará al método EnviarPedidoAProveedor().<br/><br/>- **ConsultarPedidosDeClientes()** - **ConsultarClientes()** un empleado también podrá acceder al listado de <rem:ref oid="GLO-0047">pedidos</rem:ref> de clientes mediante esta llamada, por tanto, devolverá un listado de los <rem:ref oid="GLO-0047">pedidos</rem:ref> emitidos por estos.<br/><br/>- **ConsultarPedidosAProveedores()** un empleado podrá acceder al listado de <rem:ref oid="GLO-0047">pedidos</rem:ref> a <rem:ref oid="GLO-0048">proveedores</rem:ref> mediante esta invocación, por tanto, devolverá un listado de los <rem:ref oid="GLO-0047">pedidos</rem:ref> emitidos a estos.<br/><br/>- **BuscarPedidosPorCliente()** este método recibirá como parámetro el usuario asociado al cliente y mostrará todos los <rem:ref oid="GLO-0047">pedidos</rem:ref> relacionados con este.<br/><br/>- **BuscarPedidosPorProveedor()** este método recibirá como parámetro el nombre asociado al <rem:ref oid="GLO-0048">proveedor</rem:ref> y mostrará todos los <rem:ref oid="GLO-0047">pedidos</rem:ref> relacionados con este.<br/><br/>- **ConsultarPedidosActivos()** la invocación de este método creará un listado de <rem:ref oid="GLO-0047">pedidos</rem:ref> pendientes de entrega.<br/><br/>- **AñadirCamion()** este método recibirá los datos de la entidad camión para registrarlos en la base de datos. <br/><br/>- **ModificarCamion()** este método será invocado usando como parámetro el nuevo camión modificado y lo actualizará en la base de datos. <br/><br/>- **AñadirIncidenciaCliente()** el empleado podrá añadir una incidencia de cliente usando como parámetros la orden de alquiler asociada y los atributos principales de la incidencia.<br/><br/><br/></rem:text>
 </rem:paragraph>
 </rem:section>
 <rem:section oid="SEC-0067">
@@ -9245,6 +9245,419 @@
 <rem:comments>Ninguno</rem:comments>
 <rem:level>1</rem:level>
 <rem:number>7 </rem:number>
+<rem:traceabilityMatrix oid="TRM-0004">
+<rem:name>Matriz de trazabilidad de clases y reglas de negocio</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2021</rem:year>
+<rem:month>1</rem:month>
+<rem:day>23</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>Ninguno</rem:comments>
+<rem:tr>
+<rem:th/>
+<rem:th oid ="CRQ-0001"/>
+<rem:th oid ="CRQ-0002"/>
+<rem:th oid ="CRQ-0003"/>
+<rem:th oid ="CRQ-0004"/>
+<rem:th oid ="CRQ-0005"/>
+<rem:th oid ="CRQ-0006"/>
+<rem:th oid ="CRQ-0007"/>
+<rem:th oid ="CRQ-0008"/>
+<rem:th oid ="CRQ-0009"/>
+<rem:th oid ="CRQ-0010"/>
+<rem:th oid ="CRQ-0011"/>
+<rem:th oid ="CRQ-0012"/>
+<rem:th oid ="CRQ-0013"/>
+<rem:th oid ="CRQ-0014"/>
+<rem:th oid ="CRQ-0015"/>
+<rem:th oid ="CRQ-0016"/>
+<rem:th oid ="CRQ-0017"/>
+</rem:tr>
+<rem:tr>
+<rem:th oid ="TYP-0001"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+</rem:tr>
+<rem:tr>
+<rem:th oid ="TYP-0002"/>
+<rem:td mark ="no"/>
+<rem:td mark ="yes"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+<rem:td mark ="yes"/>
+<rem:td mark ="no"/>
+<rem:td mark ="yes"/>
+<rem:td mark ="no"/>
+<rem:td mark ="yes"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+</rem:tr>
+<rem:tr>
+<rem:th oid ="TYP-0003"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+</rem:tr>
+<rem:tr>
+<rem:th oid ="TYP-0004"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+</rem:tr>
+<rem:tr>
+<rem:th oid ="TYP-0005"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+<rem:td mark ="yes"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+</rem:tr>
+<rem:tr>
+<rem:th oid ="TYP-0006"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+<rem:td mark ="yes"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+</rem:tr>
+<rem:tr>
+<rem:th oid ="TYP-0007"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+<rem:td mark ="yes"/>
+<rem:td mark ="yes"/>
+<rem:td mark ="no"/>
+<rem:td mark ="yes"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+</rem:tr>
+<rem:tr>
+<rem:th oid ="TYP-0008"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+<rem:td mark ="yes"/>
+<rem:td mark ="yes"/>
+<rem:td mark ="no"/>
+<rem:td mark ="yes"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+<rem:td mark ="yes"/>
+</rem:tr>
+<rem:tr>
+<rem:th oid ="TYP-0009"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+<rem:td mark ="yes"/>
+<rem:td mark ="yes"/>
+<rem:td mark ="no"/>
+<rem:td mark ="yes"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+</rem:tr>
+<rem:tr>
+<rem:th oid ="TYP-0010"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+<rem:td mark ="yes"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+</rem:tr>
+<rem:tr>
+<rem:th oid ="TYP-0011"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+<rem:td mark ="yes"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+<rem:td mark ="yes"/>
+</rem:tr>
+<rem:tr>
+<rem:th oid ="TYP-0012"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+<rem:td mark ="yes"/>
+<rem:td mark ="no"/>
+<rem:td mark ="yes"/>
+<rem:td mark ="no"/>
+<rem:td mark ="yes"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+<rem:td mark ="yes"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+<rem:td mark ="yes"/>
+</rem:tr>
+<rem:tr>
+<rem:th oid ="TYP-0013"/>
+<rem:td mark ="yes"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+<rem:td mark ="yes"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+</rem:tr>
+<rem:tr>
+<rem:th oid ="TYP-0014"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+<rem:td mark ="yes"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+</rem:tr>
+<rem:tr>
+<rem:th oid ="TYP-0015"/>
+<rem:td mark ="yes"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+<rem:td mark ="yes"/>
+<rem:td mark ="yes"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+</rem:tr>
+<rem:tr>
+<rem:th oid ="TYP-0016"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+</rem:tr>
+<rem:tr>
+<rem:th oid ="TYP-0017"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+<rem:td mark ="yes"/>
+<rem:td mark ="yes"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+</rem:tr>
+<rem:tr>
+<rem:th oid ="TYP-0018"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+<rem:td mark ="yes"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+</rem:tr>
+<rem:tr>
+<rem:th oid ="TYP-0019"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+<rem:td mark ="no"/>
+</rem:tr>
+</rem:traceabilityMatrix>
 </rem:section>
 <rem:section oid="SEC-0064">
 <rem:name>Glosario de acrónimos y abreviaturas</rem:name>
@@ -9300,139 +9713,97 @@
 <rem:trace source="GRF-0002"  target="ACT-0003" >
 <rem:isChecked/>
 </rem:trace>
-<rem:trace source="ACT-0015"  target="GLO-0035" >
-<rem:isChecked/>
-</rem:trace>
-<rem:trace source="GRF-0001"  target="ACT-0010" >
-<rem:isChecked/>
-</rem:trace>
 <rem:trace source="GRF-0002"  target="ACT-0010" >
-<rem:isChecked/>
-</rem:trace>
-<rem:trace source="OBJ-0002"  target="OBJ-0001" >
-<rem:isChecked/>
-</rem:trace>
-<rem:trace source="ACT-0010"  target="GLO-0036" >
 <rem:isChecked/>
 </rem:trace>
 <rem:trace source="ACT-0010"  target="GLO-0035" >
 <rem:isChecked/>
 </rem:trace>
-<rem:trace source="GRF-0001"  target="ACT-0002" >
-<rem:isChecked/>
-</rem:trace>
-<rem:trace source="GRF-0002"  target="ACT-0002" >
-<rem:isChecked/>
-</rem:trace>
-<rem:trace source="ACT-0002"  target="GLO-0036" >
-<rem:isChecked/>
-</rem:trace>
-<rem:trace source="GRF-0002"  target="ACT-0014" >
-<rem:isChecked/>
-</rem:trace>
-<rem:trace source="OBJ-0006"  target="OBJ-0003" >
-<rem:isChecked/>
-</rem:trace>
-<rem:trace source="GLO-0015"  target="OBJ-0003" >
-<rem:isChecked/>
-</rem:trace>
 <rem:trace source="GRF-0001"  target="ACT-0013" >
-<rem:isChecked/>
-</rem:trace>
-<rem:trace source="OBJ-0004"  target="OBJ-0003" >
-<rem:isChecked/>
-</rem:trace>
-<rem:trace source="GRF-0001"  target="ACT-0001" >
-<rem:isChecked/>
-</rem:trace>
-<rem:trace source="GRF-0002"  target="ACT-0001" >
-<rem:isChecked/>
-</rem:trace>
-<rem:trace source="GRF-0001"  target="ACT-0007" >
-<rem:isChecked/>
-</rem:trace>
-<rem:trace source="GRF-0001"  target="ACT-0014" >
 <rem:isChecked/>
 </rem:trace>
 <rem:trace source="ACT-0007"  target="GLO-0035" >
 <rem:isChecked/>
 </rem:trace>
+<rem:trace source="ACT-0010"  target="GLO-0036" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source="ACT-0002"  target="GLO-0036" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source="GRF-0001"  target="ACT-0001" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source="GRF-0001"  target="ACT-0007" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source="OBJ-0006"  target="OBJ-0003" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source="GRF-0001"  target="ACT-0010" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source="OBJ-0004"  target="OBJ-0003" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source="GRF-0001"  target="ACT-0002" >
+<rem:isChecked/>
+</rem:trace>
 <rem:trace source="GRF-0001"  target="ACT-0015" >
 <rem:isChecked/>
 </rem:trace>
-<rem:trace source="GRF-0001"  target="ACT-0006" >
+<rem:trace source="GRF-0002"  target="ACT-0002" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source="GLO-0015"  target="OBJ-0003" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source="OBJ-0002"  target="OBJ-0001" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source="GRF-0001"  target="ACT-0014" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source="GRF-0002"  target="ACT-0014" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source="GRF-0002"  target="ACT-0001" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source="ACT-0015"  target="GLO-0035" >
 <rem:isChecked/>
 </rem:trace>
 <rem:trace source="GRF-0002"  target="ACT-0006" >
 <rem:isChecked/>
 </rem:trace>
-<rem:trace source="GRF-0006"  target="ACT-0013" >
+<rem:trace source="GRF-0003"  target="ACT-0013" >
 <rem:isChecked/>
 </rem:trace>
 <rem:trace source="ACT-0002"  target="GLO-0035" >
 <rem:isChecked/>
 </rem:trace>
-<rem:trace source="GRF-0005"  target="ACT-0015" >
-<rem:isChecked/>
-</rem:trace>
-<rem:trace source="GRF-0003"  target="ACT-0002" >
-<rem:isChecked/>
-</rem:trace>
-<rem:trace source="GRF-0006"  target="ACT-0015" >
-<rem:isChecked/>
-</rem:trace>
-<rem:trace source="GRF-0006"  target="ACT-0007" >
+<rem:trace source="GRF-0001"  target="ACT-0006" >
 <rem:isChecked/>
 </rem:trace>
 <rem:trace source="ACT-0006"  target="GLO-0036" >
 <rem:isChecked/>
 </rem:trace>
-<rem:trace source="GRF-0003"  target="ACT-0013" >
-<rem:isChecked/>
-</rem:trace>
-<rem:trace source="GRF-0007"  target="ACT-0015" >
-<rem:isChecked/>
-</rem:trace>
-<rem:trace source="ACT-0006"  target="GLO-0035" >
-<rem:isChecked/>
-</rem:trace>
-<rem:trace source="GRF-0003"  target="ACT-0006" >
-<rem:isChecked/>
-</rem:trace>
-<rem:trace source="GRF-0005"  target="ACT-0007" >
-<rem:isChecked/>
-</rem:trace>
-<rem:trace source="GRF-0006"  target="ACT-0003" >
-<rem:isChecked/>
-</rem:trace>
-<rem:trace source="ACT-0019"  target="GLO-0035" >
-<rem:isChecked/>
-</rem:trace>
-<rem:trace source="GRF-0005"  target="ACT-0013" >
-<rem:isChecked/>
-</rem:trace>
-<rem:trace source="ACT-0019"  target="GLO-0036" >
+<rem:trace source="GRF-0006"  target="ACT-0007" >
 <rem:isChecked/>
 </rem:trace>
 <rem:trace source="GRF-0006"  target="ACT-0002" >
 <rem:isChecked/>
 </rem:trace>
-<rem:trace source="ACT-0020"  target="GLO-0035" >
+<rem:trace source="GRF-0002"  target="ACT-0008" >
 <rem:isChecked/>
 </rem:trace>
-<rem:trace source="ACT-0020"  target="GLO-0036" >
+<rem:trace source="ACT-0006"  target="GLO-0035" >
 <rem:isChecked/>
 </rem:trace>
-<rem:trace source="GRF-0007"  target="ACT-0013" >
+<rem:trace source="GRF-0006"  target="ACT-0003" >
 <rem:isChecked/>
 </rem:trace>
-<rem:trace source="GRF-0007"  target="ACT-0007" >
-<rem:isChecked/>
-</rem:trace>
-<rem:trace source="GRF-0005"  target="ACT-0003" >
-<rem:isChecked/>
-</rem:trace>
-<rem:trace source="GRF-0003"  target="ACT-0015" >
+<rem:trace source="GRF-0007"  target="ACT-0002" >
 <rem:isChecked/>
 </rem:trace>
 <rem:trace source="GRF-0005"  target="ACT-0002" >
@@ -9441,22 +9812,82 @@
 <rem:trace source="GRF-0007"  target="ACT-0006" >
 <rem:isChecked/>
 </rem:trace>
-<rem:trace source="GRF-0007"  target="ACT-0002" >
+<rem:trace source="ACT-0008"  target="GLO-0036" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source="GRF-0005"  target="ACT-0013" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source="GRF-0006"  target="ACT-0015" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source="GRF-0007"  target="ACT-0013" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source="GRF-0007"  target="ACT-0007" >
 <rem:isChecked/>
 </rem:trace>
 <rem:trace source="ACT-0018"  target="GLO-0035" >
 <rem:isChecked/>
 </rem:trace>
-<rem:trace source="ACT-0008"  target="GLO-0036" >
-<rem:isChecked/>
-</rem:trace>
 <rem:trace source="GRF-0003"  target="ACT-0007" >
 <rem:isChecked/>
 </rem:trace>
-<rem:trace source="GRF-0002"  target="ACT-0008" >
+<rem:trace source="GRF-0007"  target="ACT-0015" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source="GRF-0003"  target="ACT-0002" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source="ACT-0019"  target="GLO-0036" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source="GRF-0005"  target="ACT-0007" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source="GRF-0006"  target="ACT-0013" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source="ACT-0020"  target="GLO-0035" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source="ACT-0020"  target="GLO-0036" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source="ACT-0019"  target="GLO-0035" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source="GRF-0003"  target="ACT-0006" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source="GRF-0003"  target="ACT-0015" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source="GRF-0005"  target="ACT-0003" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source="GRF-0005"  target="ACT-0015" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source="GRF-0008"  target="ACT-0007" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source="ACT-0021"  target="GLO-0036" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source="GRF-0009"  target="ACT-0018" >
 <rem:isChecked/>
 </rem:trace>
 <rem:trace source="GRF-0008"  target="ACT-0018" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source="GRF-0008"  target="ACT-0022" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source="ACT-0022"  target="GLO-0035" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source="GRF-0008"  target="ACT-0019" >
 <rem:isChecked/>
 </rem:trace>
 <rem:trace source="GRF-0008"  target="ACT-0020" >
@@ -9465,28 +9896,55 @@
 <rem:trace source="ACT-0022"  target="GLO-0036" >
 <rem:isChecked/>
 </rem:trace>
-<rem:trace source="ACT-0021"  target="GLO-0036" >
+<rem:trace source="GRF-0030"  target="ACT-0022" >
 <rem:isChecked/>
 </rem:trace>
-<rem:trace source="GRF-0008"  target="ACT-0007" >
+<rem:trace source="GRF-0030"  target="TYP-0003" >
 <rem:isChecked/>
 </rem:trace>
-<rem:trace source="GRF-0009"  target="ACT-0018" >
+<rem:trace source="GRF-0032"  target="ACT-0019" >
 <rem:isChecked/>
 </rem:trace>
-<rem:trace source="ACT-0022"  target="GLO-0035" >
+<rem:trace source="GRF-0030"  target="ACT-0020" >
 <rem:isChecked/>
 </rem:trace>
-<rem:trace source="GRF-0008"  target="ACT-0022" >
+<rem:trace source="GRF-0033"  target="ACT-0022" >
 <rem:isChecked/>
 </rem:trace>
-<rem:trace source="GRF-0008"  target="ACT-0019" >
+<rem:trace source="GRF-0031"  target="TYP-0003" >
 <rem:isChecked/>
 </rem:trace>
-<rem:trace source="GRF-0034"  target="ACT-0018" >
+<rem:trace source="GRF-0009"  target="ACT-0019" >
 <rem:isChecked/>
 </rem:trace>
-<rem:trace source="GRF-0034"  target="ACT-0022" >
+<rem:trace source="GRF-0030"  target="ACT-0019" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source="GRF-0032"  target="ACT-0018" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source="GRF-0031"  target="ACT-0019" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source="GRF-0009"  target="ACT-0020" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source="GRF-0009"  target="ACT-0007" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source="CRQ-0016"  target="CRQ-0015" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source="GRF-0031"  target="ACT-0020" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source="GRF-0032"  target="ACT-0020" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source="GRF-0034"  target="ACT-0019" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source="GRF-0034"  target="ACT-0020" >
 <rem:isChecked/>
 </rem:trace>
 <rem:trace source="GRF-0039"  target="ACT-0018" >
@@ -9495,88 +9953,61 @@
 <rem:trace source="GRF-0032"  target="ACT-0022" >
 <rem:isChecked/>
 </rem:trace>
-<rem:trace source="GRF-0034"  target="TYP-0003" >
-<rem:isChecked/>
-</rem:trace>
-<rem:trace source="GRF-0039"  target="ACT-0019" >
-<rem:isChecked/>
-</rem:trace>
-<rem:trace source="GRF-0033"  target="ACT-0019" >
-<rem:isChecked/>
-</rem:trace>
 <rem:trace source="GRF-0033"  target="ACT-0020" >
 <rem:isChecked/>
 </rem:trace>
 <rem:trace source="GRF-0033"  target="TYP-0003" >
 <rem:isChecked/>
 </rem:trace>
-<rem:trace source="GRF-0034"  target="ACT-0020" >
-<rem:isChecked/>
-</rem:trace>
-<rem:trace source="GRF-0033"  target="ACT-0018" >
-<rem:isChecked/>
-</rem:trace>
-<rem:trace source="GRF-0034"  target="ACT-0019" >
-<rem:isChecked/>
-</rem:trace>
-<rem:trace source="GRF-0031"  target="ACT-0018" >
-<rem:isChecked/>
-</rem:trace>
-<rem:trace source="GRF-0030"  target="TYP-0003" >
-<rem:isChecked/>
-</rem:trace>
-<rem:trace source="GRF-0009"  target="ACT-0022" >
-<rem:isChecked/>
-</rem:trace>
-<rem:trace source="GRF-0030"  target="ACT-0019" >
-<rem:isChecked/>
-</rem:trace>
-<rem:trace source="GRF-0031"  target="ACT-0019" >
-<rem:isChecked/>
-</rem:trace>
-<rem:trace source="GRF-0031"  target="TYP-0003" >
-<rem:isChecked/>
-</rem:trace>
-<rem:trace source="GRF-0030"  target="ACT-0020" >
-<rem:isChecked/>
-</rem:trace>
-<rem:trace source="GRF-0009"  target="ACT-0019" >
-<rem:isChecked/>
-</rem:trace>
-<rem:trace source="GRF-0009"  target="ACT-0007" >
-<rem:isChecked/>
-</rem:trace>
-<rem:trace source="GRF-0009"  target="ACT-0020" >
-<rem:isChecked/>
-</rem:trace>
-<rem:trace source="GRF-0030"  target="ACT-0022" >
-<rem:isChecked/>
-</rem:trace>
-<rem:trace source="GRF-0031"  target="ACT-0022" >
-<rem:isChecked/>
-</rem:trace>
-<rem:trace source="GRF-0031"  target="ACT-0020" >
-<rem:isChecked/>
-</rem:trace>
-<rem:trace source="GRF-0032"  target="ACT-0018" >
-<rem:isChecked/>
-</rem:trace>
-<rem:trace source="CRQ-0016"  target="CRQ-0015" >
-<rem:isChecked/>
-</rem:trace>
-<rem:trace source="GRF-0032"  target="ACT-0019" >
-<rem:isChecked/>
-</rem:trace>
-<rem:trace source="GRF-0030"  target="ACT-0018" >
-<rem:isChecked/>
-</rem:trace>
-<rem:trace source="GRF-0032"  target="ACT-0020" >
+<rem:trace source="GRF-0034"  target="ACT-0022" >
 <rem:isChecked/>
 </rem:trace>
 <rem:trace source="GRF-0032"  target="TYP-0003" >
 <rem:isChecked/>
 </rem:trace>
-<rem:trace source="GRF-0033"  target="ACT-0022" >
+<rem:trace source="GRF-0009"  target="ACT-0022" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source="GRF-0034"  target="TYP-0003" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source="GRF-0031"  target="ACT-0022" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source="GRF-0039"  target="ACT-0019" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source="GRF-0033"  target="ACT-0018" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source="GRF-0033"  target="ACT-0019" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source="GRF-0034"  target="ACT-0018" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source="GRF-0030"  target="ACT-0018" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source="GRF-0031"  target="ACT-0018" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source="GRF-0040"  target="ACT-0022" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source="GRF-0039"  target="TYP-0003" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source="GRF-0040"  target="ACT-0020" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source="GRF-0040"  target="TYP-0003" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source="GRF-0041"  target="ACT-0018" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source="GRF-0039"  target="ACT-0020" >
 <rem:isChecked/>
 </rem:trace>
 <rem:trace source="GRF-0039"  target="ACT-0022" >
@@ -9585,139 +10016,64 @@
 <rem:trace source="GRF-0040"  target="ACT-0019" >
 <rem:isChecked/>
 </rem:trace>
-<rem:trace source="GRF-0040"  target="TYP-0003" >
-<rem:isChecked/>
-</rem:trace>
-<rem:trace source="GRF-0039"  target="ACT-0020" >
-<rem:isChecked/>
-</rem:trace>
-<rem:trace source="GRF-0039"  target="TYP-0003" >
-<rem:isChecked/>
-</rem:trace>
-<rem:trace source="GRF-0040"  target="ACT-0022" >
-<rem:isChecked/>
-</rem:trace>
-<rem:trace source="GRF-0041"  target="ACT-0018" >
-<rem:isChecked/>
-</rem:trace>
-<rem:trace source="GRF-0040"  target="ACT-0020" >
-<rem:isChecked/>
-</rem:trace>
 <rem:trace source="GRF-0040"  target="ACT-0018" >
-<rem:isChecked/>
-</rem:trace>
-<rem:trace source="GRF-0047"  target="ACT-0019" >
-<rem:isChecked/>
-</rem:trace>
-<rem:trace source="GRF-0044"  target="ACT-0018" >
-<rem:isChecked/>
-</rem:trace>
-<rem:trace source="GRF-0042"  target="TYP-0003" >
-<rem:isChecked/>
-</rem:trace>
-<rem:trace source="GRF-0043"  target="TYP-0003" >
-<rem:isChecked/>
-</rem:trace>
-<rem:trace source="GRF-0047"  target="ACT-0020" >
-<rem:isChecked/>
-</rem:trace>
-<rem:trace source="GRF-0042"  target="ACT-0018" >
-<rem:isChecked/>
-</rem:trace>
-<rem:trace source="GRF-0044"  target="ACT-0022" >
-<rem:isChecked/>
-</rem:trace>
-<rem:trace source="GRF-0041"  target="ACT-0020" >
-<rem:isChecked/>
-</rem:trace>
-<rem:trace source="GRF-0043"  target="ACT-0019" >
-<rem:isChecked/>
-</rem:trace>
-<rem:trace source="GRF-0044"  target="ACT-0020" >
-<rem:isChecked/>
-</rem:trace>
-<rem:trace source="GRF-0045"  target="TYP-0003" >
-<rem:isChecked/>
-</rem:trace>
-<rem:trace source="GRF-0041"  target="TYP-0003" >
-<rem:isChecked/>
-</rem:trace>
-<rem:trace source="GRF-0045"  target="ACT-0020" >
-<rem:isChecked/>
-</rem:trace>
-<rem:trace source="GRF-0046"  target="ACT-0018" >
-<rem:isChecked/>
-</rem:trace>
-<rem:trace source="GRF-0042"  target="ACT-0022" >
-<rem:isChecked/>
-</rem:trace>
-<rem:trace source="GRF-0044"  target="ACT-0019" >
-<rem:isChecked/>
-</rem:trace>
-<rem:trace source="GRF-0041"  target="ACT-0022" >
-<rem:isChecked/>
-</rem:trace>
-<rem:trace source="GRF-0042"  target="ACT-0020" >
-<rem:isChecked/>
-</rem:trace>
-<rem:trace source="GRF-0046"  target="ACT-0019" >
-<rem:isChecked/>
-</rem:trace>
-<rem:trace source="GRF-0044"  target="TYP-0003" >
-<rem:isChecked/>
-</rem:trace>
-<rem:trace source="GRF-0045"  target="ACT-0018" >
-<rem:isChecked/>
-</rem:trace>
-<rem:trace source="GRF-0046"  target="TYP-0003" >
-<rem:isChecked/>
-</rem:trace>
-<rem:trace source="GRF-0042"  target="ACT-0019" >
-<rem:isChecked/>
-</rem:trace>
-<rem:trace source="GRF-0043"  target="ACT-0022" >
-<rem:isChecked/>
-</rem:trace>
-<rem:trace source="GRF-0041"  target="ACT-0019" >
-<rem:isChecked/>
-</rem:trace>
-<rem:trace source="GRF-0043"  target="ACT-0020" >
-<rem:isChecked/>
-</rem:trace>
-<rem:trace source="GRF-0046"  target="ACT-0020" >
-<rem:isChecked/>
-</rem:trace>
-<rem:trace source="GRF-0043"  target="ACT-0018" >
-<rem:isChecked/>
-</rem:trace>
-<rem:trace source="GRF-0045"  target="ACT-0022" >
-<rem:isChecked/>
-</rem:trace>
-<rem:trace source="GRF-0045"  target="ACT-0019" >
-<rem:isChecked/>
-</rem:trace>
-<rem:trace source="GRF-0047"  target="ACT-0018" >
-<rem:isChecked/>
-</rem:trace>
-<rem:trace source="GRF-0046"  target="ACT-0022" >
-<rem:isChecked/>
-</rem:trace>
-<rem:trace source="GRF-0047"  target="ACT-0022" >
-<rem:isChecked/>
-</rem:trace>
-<rem:trace source="GRF-0047"  target="TYP-0003" >
 <rem:isChecked/>
 </rem:trace>
 <rem:trace source="GRF-0048"  target="ACT-0018" >
 <rem:isChecked/>
 </rem:trace>
-<rem:trace source="GRF-0048"  target="ACT-0019" >
-<rem:isChecked/>
-</rem:trace>
 <rem:trace source="GRF-0048"  target="ACT-0020" >
 <rem:isChecked/>
 </rem:trace>
+<rem:trace source="GRF-0043"  target="ACT-0022" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source="GRF-0046"  target="ACT-0022" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source="GRF-0047"  target="TYP-0003" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source="GRF-0044"  target="TYP-0003" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source="GRF-0043"  target="ACT-0018" >
+<rem:isChecked/>
+</rem:trace>
 <rem:trace source="GRF-0048"  target="ACT-0022" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source="GRF-0044"  target="ACT-0018" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source="GRF-0044"  target="ACT-0020" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source="GRF-0045"  target="ACT-0019" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source="GRF-0043"  target="ACT-0019" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source="GRF-0043"  target="TYP-0003" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source="GRF-0045"  target="ACT-0018" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source="GRF-0047"  target="ACT-0022" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source="GRF-0046"  target="TYP-0003" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source="GRF-0045"  target="ACT-0020" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source="GRF-0047"  target="ACT-0019" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source="GRF-0048"  target="ACT-0019" >
 <rem:isChecked/>
 </rem:trace>
 <rem:trace source="GRF-0048"  target="TYP-0003" >
@@ -9726,61 +10082,67 @@
 <rem:trace source="IRQ-0001"  target="OBJ-0012" >
 <rem:isChecked/>
 </rem:trace>
+<rem:trace source="GRF-0044"  target="ACT-0022" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source="GRF-0046"  target="ACT-0020" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source="GRF-0047"  target="ACT-0018" >
+<rem:isChecked/>
+</rem:trace>
 <rem:trace source="IRQ-0001"  target="OBJ-0013" >
 <rem:isChecked/>
 </rem:trace>
-<rem:trace source="IRQ-0005"  target="OBJ-0014" >
+<rem:trace source="GRF-0043"  target="ACT-0020" >
 <rem:isChecked/>
 </rem:trace>
-<rem:trace source="IRQ-0006"  target="OBJ-0003" >
+<rem:trace source="GRF-0045"  target="TYP-0003" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source="GRF-0045"  target="ACT-0022" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source="GRF-0046"  target="ACT-0018" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source="GRF-0046"  target="ACT-0019" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source="GRF-0044"  target="ACT-0019" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source="GRF-0047"  target="ACT-0020" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source="GRF-0042"  target="ACT-0019" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source="GRF-0041"  target="ACT-0020" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source="GRF-0041"  target="TYP-0003" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source="GRF-0042"  target="ACT-0020" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source="GRF-0042"  target="TYP-0003" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source="GRF-0041"  target="ACT-0019" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source="GRF-0041"  target="ACT-0022" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source="GRF-0042"  target="ACT-0022" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source="GRF-0042"  target="ACT-0018" >
 <rem:isChecked/>
 </rem:trace>
 <rem:trace source="IRQ-0003"  target="OBJ-0001" >
-<rem:isChecked/>
-</rem:trace>
-<rem:trace source="IRQ-0006"  target="OBJ-0007" >
-<rem:isChecked/>
-</rem:trace>
-<rem:trace source="IRQ-0002"  target="OBJ-0008" >
-<rem:isChecked/>
-</rem:trace>
-<rem:trace source="IRQ-0006"  target="OBJ-0010" >
-<rem:isChecked/>
-</rem:trace>
-<rem:trace source="IRQ-0002"  target="OBJ-0006" >
-<rem:isChecked/>
-</rem:trace>
-<rem:trace source="IRQ-0007"  target="OBJ-0003" >
-<rem:isChecked/>
-</rem:trace>
-<rem:trace source="IRQ-0007"  target="OBJ-0014" >
-<rem:isChecked/>
-</rem:trace>
-<rem:trace source="IRQ-0003"  target="OBJ-0008" >
-<rem:isChecked/>
-</rem:trace>
-<rem:trace source="IRQ-0008"  target="OBJ-0010" >
-<rem:isChecked/>
-</rem:trace>
-<rem:trace source="IRQ-0002"  target="OBJ-0012" >
-<rem:isChecked/>
-</rem:trace>
-<rem:trace source="IRQ-0005"  target="OBJ-0006" >
-<rem:isChecked/>
-</rem:trace>
-<rem:trace source="IRQ-0005"  target="OBJ-0001" >
-<rem:isChecked/>
-</rem:trace>
-<rem:trace source="IRQ-0003"  target="OBJ-0011" >
-<rem:isChecked/>
-</rem:trace>
-<rem:trace source="IRQ-0005"  target="OBJ-0003" >
-<rem:isChecked/>
-</rem:trace>
-<rem:trace source="IRQ-0005"  target="OBJ-0008" >
-<rem:isChecked/>
-</rem:trace>
-<rem:trace source="IRQ-0006"  target="OBJ-0006" >
 <rem:isChecked/>
 </rem:trace>
 <rem:trace source="IRQ-0003"  target="OBJ-0005" >
@@ -9789,55 +10151,109 @@
 <rem:trace source="IRQ-0003"  target="OBJ-0002" >
 <rem:isChecked/>
 </rem:trace>
-<rem:trace source="IRQ-0003"  target="OBJ-0010" >
-<rem:isChecked/>
-</rem:trace>
-<rem:trace source="IRQ-0003"  target="OBJ-0014" >
-<rem:isChecked/>
-</rem:trace>
-<rem:trace source="IRQ-0004"  target="OBJ-0003" >
-<rem:isChecked/>
-</rem:trace>
-<rem:trace source="IRQ-0004"  target="OBJ-0006" >
+<rem:trace source="IRQ-0002"  target="OBJ-0012" >
 <rem:isChecked/>
 </rem:trace>
 <rem:trace source="IRQ-0004"  target="OBJ-0010" >
 <rem:isChecked/>
 </rem:trace>
-<rem:trace source="IRQ-0003"  target="OBJ-0006" >
+<rem:trace source="IRQ-0005"  target="OBJ-0004" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source="IRQ-0005"  target="OBJ-0006" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source="IRQ-0005"  target="OBJ-0008" >
 <rem:isChecked/>
 </rem:trace>
 <rem:trace source="IRQ-0002"  target="OBJ-0013" >
 <rem:isChecked/>
 </rem:trace>
-<rem:trace source="IRQ-0003"  target="OBJ-0003" >
+<rem:trace source="IRQ-0004"  target="OBJ-0006" >
 <rem:isChecked/>
 </rem:trace>
-<rem:trace source="IRQ-0003"  target="OBJ-0004" >
-<rem:isChecked/>
-</rem:trace>
-<rem:trace source="IRQ-0001"  target="OBJ-0007" >
+<rem:trace source="IRQ-0006"  target="OBJ-0003" >
 <rem:isChecked/>
 </rem:trace>
 <rem:trace source="IRQ-0004"  target="OBJ-0004" >
 <rem:isChecked/>
 </rem:trace>
-<rem:trace source="IRQ-0005"  target="OBJ-0004" >
+<rem:trace source="IRQ-0006"  target="OBJ-0007" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source="IRQ-0002"  target="OBJ-0008" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source="IRQ-0003"  target="OBJ-0014" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source="IRQ-0005"  target="OBJ-0003" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source="IRQ-0007"  target="OBJ-0003" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source="IRQ-0005"  target="OBJ-0014" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source="IRQ-0007"  target="OBJ-0014" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source="IRQ-0003"  target="OBJ-0003" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source="IRQ-0006"  target="OBJ-0006" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source="IRQ-0003"  target="OBJ-0008" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source="IRQ-0008"  target="OBJ-0010" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source="IRQ-0003"  target="OBJ-0011" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source="IRQ-0005"  target="OBJ-0001" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source="IRQ-0002"  target="OBJ-0006" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source="IRQ-0001"  target="OBJ-0007" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source="IRQ-0006"  target="OBJ-0010" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source="IRQ-0003"  target="OBJ-0004" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source="IRQ-0003"  target="OBJ-0006" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source="IRQ-0003"  target="OBJ-0010" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source="IRQ-0004"  target="OBJ-0003" >
 <rem:isChecked/>
 </rem:trace>
 <rem:trace source="IRQ-0010"  target="OBJ-0013" >
 <rem:isChecked/>
 </rem:trace>
-<rem:trace source="IRQ-0009"  target="OBJ-0003" >
+<rem:trace source="IRQ-0008"  target="OBJ-0014" >
 <rem:isChecked/>
 </rem:trace>
-<rem:trace source="IRQ-0008"  target="OBJ-0014" >
+<rem:trace source="IRQ-0009"  target="OBJ-0006" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source="IRQ-0009"  target="OBJ-0010" >
 <rem:isChecked/>
 </rem:trace>
 <rem:trace source="IRQ-0009"  target="OBJ-0004" >
 <rem:isChecked/>
 </rem:trace>
-<rem:trace source="IRQ-0009"  target="OBJ-0006" >
+<rem:trace source="IRQ-0009"  target="OBJ-0003" >
 <rem:isChecked/>
 </rem:trace>
 <rem:trace source="IRQ-0009"  target="OBJ-0007" >
@@ -9846,85 +10262,16 @@
 <rem:trace source="IRQ-0010"  target="OBJ-0003" >
 <rem:isChecked/>
 </rem:trace>
-<rem:trace source="IRQ-0009"  target="OBJ-0010" >
-<rem:isChecked/>
-</rem:trace>
 <rem:trace source="IRQ-0010"  target="OBJ-0006" >
-<rem:isChecked/>
-</rem:trace>
-<rem:trace source="CRQ-0006"  target="OBJ-0007" >
-<rem:isChecked/>
-</rem:trace>
-<rem:trace source="CRQ-0007"  target="OBJ-0014" >
-<rem:isChecked/>
-</rem:trace>
-<rem:trace source="CRQ-0004"  target="OBJ-0014" >
-<rem:isChecked/>
-</rem:trace>
-<rem:trace source="CRQ-0006"  target="OBJ-0012" >
-<rem:isChecked/>
-</rem:trace>
-<rem:trace source="CRQ-0008"  target="OBJ-0001" >
-<rem:isChecked/>
-</rem:trace>
-<rem:trace source="CRQ-0001"  target="OBJ-0003" >
-<rem:isChecked/>
-</rem:trace>
-<rem:trace source="IRQ-0011"  target="OBJ-0013" >
-<rem:isChecked/>
-</rem:trace>
-<rem:trace source="IRQ-0005"  target="OBJ-0016" >
-<rem:isChecked/>
-</rem:trace>
-<rem:trace source="CRQ-0005"  target="OBJ-0006" >
-<rem:isChecked/>
-</rem:trace>
-<rem:trace source="CRQ-0008"  target="OBJ-0002" >
-<rem:isChecked/>
-</rem:trace>
-<rem:trace source="CRQ-0008"  target="OBJ-0005" >
-<rem:isChecked/>
-</rem:trace>
-<rem:trace source="IRQ-0015"  target="OBJ-0016" >
-<rem:isChecked/>
-</rem:trace>
-<rem:trace source="CRQ-0008"  target="OBJ-0015" >
-<rem:isChecked/>
-</rem:trace>
-<rem:trace source="CRQ-0009"  target="OBJ-0001" >
-<rem:isChecked/>
-</rem:trace>
-<rem:trace source="IRQ-0013"  target="OBJ-0009" >
-<rem:isChecked/>
-</rem:trace>
-<rem:trace source="IRQ-0003"  target="OBJ-0015" >
-<rem:isChecked/>
-</rem:trace>
-<rem:trace source="IRQ-0012"  target="OBJ-0002" >
-<rem:isChecked/>
-</rem:trace>
-<rem:trace source="IRQ-0012"  target="OBJ-0005" >
-<rem:isChecked/>
-</rem:trace>
-<rem:trace source="IRQ-0012"  target="OBJ-0015" >
-<rem:isChecked/>
-</rem:trace>
-<rem:trace source="IRQ-0006"  target="OBJ-0016" >
-<rem:isChecked/>
-</rem:trace>
-<rem:trace source="IRQ-0015"  target="OBJ-0014" >
 <rem:isChecked/>
 </rem:trace>
 <rem:trace source="CRQ-0002"  target="OBJ-0012" >
 <rem:isChecked/>
 </rem:trace>
-<rem:trace source="OBJ-0015"  target="OBJ-0002" >
-<rem:isChecked/>
-</rem:trace>
-<rem:trace source="IRQ-0011"  target="OBJ-0012" >
-<rem:isChecked/>
-</rem:trace>
 <rem:trace source="IRQ-0013"  target="OBJ-0002" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source="OBJ-0015"  target="OBJ-0002" >
 <rem:isChecked/>
 </rem:trace>
 <rem:trace source="IRQ-0004"  target="OBJ-0016" >
@@ -9933,73 +10280,124 @@
 <rem:trace source="CRQ-0001"  target="OBJ-0014" >
 <rem:isChecked/>
 </rem:trace>
-<rem:trace source="IRQ-0014"  target="OBJ-0014" >
-<rem:isChecked/>
-</rem:trace>
-<rem:trace source="IRQ-0012"  target="OBJ-0007" >
-<rem:isChecked/>
-</rem:trace>
 <rem:trace source="CRQ-0003"  target="OBJ-0014" >
 <rem:isChecked/>
 </rem:trace>
-<rem:trace source="CRQ-0004"  target="OBJ-0003" >
+<rem:trace source="CRQ-0004"  target="OBJ-0014" >
 <rem:isChecked/>
 </rem:trace>
 <rem:trace source="CRQ-0005"  target="OBJ-0014" >
 <rem:isChecked/>
 </rem:trace>
-<rem:trace source="CRQ-0011"  target="OBJ-0003" >
+<rem:trace source="CRQ-0006"  target="OBJ-0007" >
 <rem:isChecked/>
 </rem:trace>
-<rem:trace source="CRQ-0009"  target="OBJ-0002" >
+<rem:trace source="CRQ-0008"  target="OBJ-0001" >
 <rem:isChecked/>
 </rem:trace>
-<rem:trace source="CRQ-0009"  target="OBJ-0015" >
+<rem:trace source="IRQ-0013"  target="OBJ-0009" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source="IRQ-0014"  target="OBJ-0014" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source="IRQ-0015"  target="OBJ-0016" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source="IRQ-0006"  target="OBJ-0016" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source="IRQ-0012"  target="OBJ-0015" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source="IRQ-0012"  target="OBJ-0005" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source="CRQ-0005"  target="OBJ-0006" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source="CRQ-0007"  target="OBJ-0014" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source="CRQ-0004"  target="OBJ-0003" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source="IRQ-0011"  target="OBJ-0012" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source="CRQ-0008"  target="OBJ-0002" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source="CRQ-0008"  target="OBJ-0015" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source="IRQ-0011"  target="OBJ-0013" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source="CRQ-0006"  target="OBJ-0012" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source="CRQ-0009"  target="OBJ-0001" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source="IRQ-0012"  target="OBJ-0002" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source="IRQ-0003"  target="OBJ-0015" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source="IRQ-0015"  target="OBJ-0014" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source="CRQ-0008"  target="OBJ-0005" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source="IRQ-0012"  target="OBJ-0007" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source="IRQ-0005"  target="OBJ-0016" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source="CRQ-0001"  target="OBJ-0003" >
 <rem:isChecked/>
 </rem:trace>
 <rem:trace source="CRQ-0010"  target="OBJ-0012" >
 <rem:isChecked/>
 </rem:trace>
-<rem:trace source="CRQ-0011"  target="OBJ-0010" >
+<rem:trace source="CRQ-0009"  target="OBJ-0015" >
 <rem:isChecked/>
 </rem:trace>
-<rem:trace source="CRQ-0012"  target="OBJ-0012" >
-<rem:isChecked/>
-</rem:trace>
-<rem:trace source="CRQ-0013"  target="OBJ-0005" >
+<rem:trace source="CRQ-0011"  target="OBJ-0003" >
 <rem:isChecked/>
 </rem:trace>
 <rem:trace source="CRQ-0010"  target="OBJ-0013" >
 <rem:isChecked/>
 </rem:trace>
+<rem:trace source="CRQ-0011"  target="OBJ-0010" >
+<rem:isChecked/>
+</rem:trace>
 <rem:trace source="CRQ-0009"  target="OBJ-0005" >
 <rem:isChecked/>
 </rem:trace>
-<rem:trace source="OBJ-0010"  target="OBJ-0004" >
+<rem:trace source="CRQ-0013"  target="OBJ-0005" >
 <rem:isChecked/>
 </rem:trace>
-<rem:trace source="FRQ-0005"  target="OBJ-0001" >
+<rem:trace source="CRQ-0009"  target="OBJ-0002" >
 <rem:isChecked/>
 </rem:trace>
-<rem:trace source="FRQ-0003"  target="OBJ-0003" >
-<rem:isChecked/>
-</rem:trace>
-<rem:trace source="FRQ-0001"  target="OBJ-0003" >
-<rem:isChecked/>
-</rem:trace>
-<rem:trace source="FRQ-0003"  target="OBJ-0007" >
+<rem:trace source="CRQ-0012"  target="OBJ-0012" >
 <rem:isChecked/>
 </rem:trace>
 <rem:trace source="OBJ-0016"  target="OBJ-0003" >
 <rem:isChecked/>
 </rem:trace>
-<rem:trace source="OBJ-0014"  target="OBJ-0001" >
-<rem:isChecked/>
-</rem:trace>
-<rem:trace source="FRQ-0001"  target="OBJ-0016" >
+<rem:trace source="FRQ-0003"  target="OBJ-0007" >
 <rem:isChecked/>
 </rem:trace>
 <rem:trace source="OBJ-0007"  target="OBJ-0001" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source="OBJ-0008"  target="OBJ-0003" >
 <rem:isChecked/>
 </rem:trace>
 <rem:trace source="FRQ-0004"  target="OBJ-0013" >
@@ -10008,46 +10406,43 @@
 <rem:trace source="OBJ-0005"  target="OBJ-0003" >
 <rem:isChecked/>
 </rem:trace>
-<rem:trace source="FRQ-0004"  target="OBJ-0012" >
-<rem:isChecked/>
-</rem:trace>
-<rem:trace source="FRQ-0002"  target="OBJ-0007" >
-<rem:isChecked/>
-</rem:trace>
-<rem:trace source="FRQ-0005"  target="OBJ-0016" >
-<rem:isChecked/>
-</rem:trace>
-<rem:trace source="FRQ-0003"  target="OBJ-0016" >
-<rem:isChecked/>
-</rem:trace>
-<rem:trace source="OBJ-0008"  target="OBJ-0003" >
-<rem:isChecked/>
-</rem:trace>
 <rem:trace source="OBJ-0009"  target="OBJ-0002" >
-<rem:isChecked/>
-</rem:trace>
-<rem:trace source="OBJ-0011"  target="OBJ-0003" >
 <rem:isChecked/>
 </rem:trace>
 <rem:trace source="OBJ-0013"  target="OBJ-0012" >
 <rem:isChecked/>
 </rem:trace>
-<rem:trace source="CRQ-0017"  target="OBJ-0014" >
+<rem:trace source="FRQ-0002"  target="OBJ-0007" >
 <rem:isChecked/>
 </rem:trace>
-<rem:trace source="FRQ-0002"  target="OBJ-0002" >
+<rem:trace source="FRQ-0005"  target="OBJ-0001" >
 <rem:isChecked/>
 </rem:trace>
-<rem:trace source="FRQ-0002"  target="OBJ-0011" >
+<rem:trace source="OBJ-0014"  target="OBJ-0001" >
 <rem:isChecked/>
 </rem:trace>
-<rem:trace source="FRQ-0001"  target="OBJ-0011" >
+<rem:trace source="FRQ-0001"  target="OBJ-0016" >
 <rem:isChecked/>
 </rem:trace>
-<rem:trace source="FRQ-0002"  target="OBJ-0012" >
+<rem:trace source="OBJ-0010"  target="OBJ-0004" >
 <rem:isChecked/>
 </rem:trace>
-<rem:trace source="CRQ-0014"  target="OBJ-0014" >
+<rem:trace source="FRQ-0003"  target="OBJ-0003" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source="FRQ-0003"  target="OBJ-0016" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source="FRQ-0004"  target="OBJ-0012" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source="FRQ-0001"  target="OBJ-0003" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source="FRQ-0005"  target="OBJ-0016" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source="OBJ-0011"  target="OBJ-0003" >
 <rem:isChecked/>
 </rem:trace>
 <rem:trace source="FRQ-0001"  target="OBJ-0014" >
@@ -10059,7 +10454,184 @@
 <rem:trace source="CRQ-0017"  target="OBJ-0006" >
 <rem:isChecked/>
 </rem:trace>
+<rem:trace source="FRQ-0002"  target="OBJ-0011" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source="CRQ-0014"  target="OBJ-0014" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source="FRQ-0002"  target="OBJ-0002" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source="FRQ-0001"  target="OBJ-0011" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source="FRQ-0002"  target="OBJ-0012" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source="CRQ-0017"  target="OBJ-0014" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source="TYP-0009"  target="CRQ-0008" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source="TYP-0009"  target="CRQ-0009" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source="TYP-0009"  target="CRQ-0011" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source="TYP-0012"  target="CRQ-0005" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source="TYP-0012"  target="CRQ-0007" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source="TYP-0012"  target="CRQ-0003" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source="TYP-0002"  target="CRQ-0002" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source="TYP-0006"  target="CRQ-0010" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source="TYP-0002"  target="CRQ-0010" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source="TYP-0002"  target="CRQ-0012" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source="TYP-0002"  target="CRQ-0014" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source="TYP-0012"  target="CRQ-0014" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source="TYP-0018"  target="CRQ-0013" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source="TYP-0013"  target="CRQ-0004" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source="TYP-0013"  target="CRQ-0001" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source="TYP-0010"  target="CRQ-0011" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source="TYP-0014"  target="CRQ-0004" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source="TYP-0012"  target="CRQ-0017" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source="TYP-0008"  target="CRQ-0009" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source="TYP-0008"  target="CRQ-0008" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source="TYP-0008"  target="CRQ-0017" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source="TYP-0015"  target="CRQ-0004" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source="TYP-0015"  target="CRQ-0005" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source="TYP-0008"  target="CRQ-0011" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source="TYP-0015"  target="CRQ-0001" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source="TYP-0007"  target="CRQ-0009" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source="TYP-0007"  target="CRQ-0011" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source="TYP-0017"  target="CRQ-0009" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source="TYP-0017"  target="CRQ-0008" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source="TYP-0007"  target="CRQ-0008" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source="TYP-0005"  target="CRQ-0006" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source="TYP-0011"  target="CRQ-0017" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source="TYP-0011"  target="CRQ-0005" >
+<rem:isChecked/>
+</rem:trace>
 <rem:predefinedValueTypes>
+<rem:predefinedValueType oid="PVT-0003">
+<rem:name>Integer</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2000</rem:year>
+<rem:month>10</rem:month>
+<rem:day>30</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>Predefined OCL type</rem:comments>
+<rem:description>Integer numbers</rem:description>
+<rem:definition>(null)</rem:definition>
+</rem:predefinedValueType>
+<rem:predefinedValueType oid="PVT-0006">
+<rem:name>Date</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2000</rem:year>
+<rem:month>10</rem:month>
+<rem:day>30</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>Predefined OCL type (non-standard)</rem:comments>
+<rem:description>Dates</rem:description>
+<rem:definition>(null)</rem:definition>
+</rem:predefinedValueType>
+<rem:predefinedValueType oid="PVT-0002">
+<rem:name>Real</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2000</rem:year>
+<rem:month>10</rem:month>
+<rem:day>30</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>Predefined OCL type</rem:comments>
+<rem:description>Real numbers</rem:description>
+<rem:definition>(null)</rem:definition>
+</rem:predefinedValueType>
+<rem:predefinedValueType oid="PVT-0001">
+<rem:name>Enum Literal</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2020</rem:year>
+<rem:month>10</rem:month>
+<rem:day>11</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>Predefined OCL type (non-standard)</rem:comments>
+<rem:description>Enumeration literals</rem:description>
+<rem:definition>(null)</rem:definition>
+</rem:predefinedValueType>
 <rem:predefinedValueType oid="PVT-0005">
 <rem:name>String</rem:name>
 <rem:version>
@@ -10105,74 +10677,8 @@
 <rem:description>Hour:minutes:seconds</rem:description>
 <rem:definition>(null)</rem:definition>
 </rem:predefinedValueType>
-<rem:predefinedValueType oid="PVT-0002">
-<rem:name>Real</rem:name>
-<rem:version>
-<rem:major>1</rem:major>
-<rem:minor>0</rem:minor>
-<rem:date>
-<rem:year>2000</rem:year>
-<rem:month>10</rem:month>
-<rem:day>30</rem:day>
-</rem:date>
-</rem:version>
-<rem:comments>Predefined OCL type</rem:comments>
-<rem:description>Real numbers</rem:description>
-<rem:definition>(null)</rem:definition>
-</rem:predefinedValueType>
-<rem:predefinedValueType oid="PVT-0006">
-<rem:name>Date</rem:name>
-<rem:version>
-<rem:major>1</rem:major>
-<rem:minor>0</rem:minor>
-<rem:date>
-<rem:year>2000</rem:year>
-<rem:month>10</rem:month>
-<rem:day>30</rem:day>
-</rem:date>
-</rem:version>
-<rem:comments>Predefined OCL type (non-standard)</rem:comments>
-<rem:description>Dates</rem:description>
-<rem:definition>(null)</rem:definition>
-</rem:predefinedValueType>
-<rem:predefinedValueType oid="PVT-0003">
-<rem:name>Integer</rem:name>
-<rem:version>
-<rem:major>1</rem:major>
-<rem:minor>0</rem:minor>
-<rem:date>
-<rem:year>2000</rem:year>
-<rem:month>10</rem:month>
-<rem:day>30</rem:day>
-</rem:date>
-</rem:version>
-<rem:comments>Predefined OCL type</rem:comments>
-<rem:description>Integer numbers</rem:description>
-<rem:definition>(null)</rem:definition>
-</rem:predefinedValueType>
-<rem:predefinedValueType oid="PVT-0001">
-<rem:name>Enum Literal</rem:name>
-<rem:version>
-<rem:major>1</rem:major>
-<rem:minor>0</rem:minor>
-<rem:date>
-<rem:year>2020</rem:year>
-<rem:month>10</rem:month>
-<rem:day>11</rem:day>
-</rem:date>
-</rem:version>
-<rem:comments>Predefined OCL type (non-standard)</rem:comments>
-<rem:description>Enumeration literals</rem:description>
-<rem:definition>(null)</rem:definition>
-</rem:predefinedValueType>
 </rem:predefinedValueTypes>
 <rem:predefinedValues>
-<rem:changeRequestStatusValue oid = "CRV-0001">
-<rem:name>PD</rem:name>
-</rem:changeRequestStatusValue>
-<rem:changeRequestStatusValue oid = "CRV-0005">
-<rem:name>verificado</rem:name>
-</rem:changeRequestStatusValue>
 <rem:changeRequestStatusValue oid = "CRV-0003">
 <rem:name>pendiente de aprobar/rechazar</rem:name>
 </rem:changeRequestStatusValue>
@@ -10182,8 +10688,14 @@
 <rem:changeRequestStatusValue oid = "CRV-0002">
 <rem:name>pendiente de análisis</rem:name>
 </rem:changeRequestStatusValue>
+<rem:changeRequestStatusValue oid = "CRV-0005">
+<rem:name>verificado</rem:name>
+</rem:changeRequestStatusValue>
 <rem:changeRequestStatusValue oid = "CRV-0006">
 <rem:name>rechazado</rem:name>
+</rem:changeRequestStatusValue>
+<rem:changeRequestStatusValue oid = "CRV-0001">
+<rem:name>PD</rem:name>
 </rem:changeRequestStatusValue>
 <rem:conflictStatusValue oid = "CSV-0001">
 <rem:name>PD</rem:name>
@@ -10191,46 +10703,28 @@
 <rem:conflictStatusValue oid = "CSV-0003">
 <rem:name>en proceso de negociación</rem:name>
 </rem:conflictStatusValue>
-<rem:conflictStatusValue oid = "CSV-0004">
-<rem:name>resuelto</rem:name>
-</rem:conflictStatusValue>
 <rem:conflictStatusValue oid = "CSV-0002">
 <rem:name>no resuelto</rem:name>
 </rem:conflictStatusValue>
-<rem:defectStatusValue oid = "DSV-0001">
-<rem:name>PD</rem:name>
+<rem:conflictStatusValue oid = "CSV-0004">
+<rem:name>resuelto</rem:name>
+</rem:conflictStatusValue>
+<rem:defectStatusValue oid = "DSV-0003">
+<rem:name>en proceso de negociación</rem:name>
 </rem:defectStatusValue>
 <rem:defectStatusValue oid = "DSV-0002">
 <rem:name>no eliminado</rem:name>
 </rem:defectStatusValue>
-<rem:defectStatusValue oid = "DSV-0003">
-<rem:name>en proceso de negociación</rem:name>
+<rem:defectStatusValue oid = "DSV-0001">
+<rem:name>PD</rem:name>
 </rem:defectStatusValue>
 <rem:defectStatusValue oid = "DSV-0004">
 <rem:name>eliminado</rem:name>
 </rem:defectStatusValue>
-<rem:defectTypeValue oid = "DTV-0001">
-<rem:name>PD</rem:name>
+<rem:defectTypeValue oid = "DTV-0007">
+<rem:name>No implementabilidad</rem:name>
 <rem:description>
-<![CDATA[Por Determinar]]>
-</rem:description>
-</rem:defectTypeValue>
-<rem:defectTypeValue oid = "DTV-0003">
-<rem:name>No necesidad</rem:name>
-<rem:description>
-<![CDATA[El requisito o requisitos no son necesarios porque no contribuyen a satisfacer ninguna necesidad de clientes o usuarios]]>
-</rem:description>
-</rem:defectTypeValue>
-<rem:defectTypeValue oid = "DTV-0004">
-<rem:name>Incomprensibilidad</rem:name>
-<rem:description>
-<![CDATA[El requisito o requisitos no pueden ser entendidos por algún lector]]>
-</rem:description>
-</rem:defectTypeValue>
-<rem:defectTypeValue oid = "DTV-0010">
-<rem:name>Redundancia</rem:name>
-<rem:description>
-<![CDATA[El requisito o requisitos son redundantes o contienen elementos redundantes]]>
+<![CDATA[El requisito o requisitos no pueden ser implementados con la tecnología actual o dentro de un coste razonable]]>
 </rem:description>
 </rem:defectTypeValue>
 <rem:defectTypeValue oid = "DTV-0017">
@@ -10245,28 +10739,16 @@
 <![CDATA[No se puede comprobar que el sistema satisface el requisito o requisitos]]>
 </rem:description>
 </rem:defectTypeValue>
-<rem:defectTypeValue oid = "DTV-0008">
-<rem:name>Verbosidad excesiva</rem:name>
+<rem:defectTypeValue oid = "DTV-0012">
+<rem:name>Incompleción</rem:name>
 <rem:description>
-<![CDATA[El requisito o requisitos pueden expresarse de forma más concisa sin alterar su significado]]>
+<![CDATA[El requisito o requisitos no describen todo lo que el sistema se supone que deberá hacer, no describen las respuestas del sistema a todas las posibles situaciones o incluyen elementos por determinar (PD)]]>
 </rem:description>
 </rem:defectTypeValue>
-<rem:defectTypeValue oid = "DTV-0007">
-<rem:name>No implementabilidad</rem:name>
+<rem:defectTypeValue oid = "DTV-0003">
+<rem:name>No necesidad</rem:name>
 <rem:description>
-<![CDATA[El requisito o requisitos no pueden ser implementados con la tecnología actual o dentro de un coste razonable]]>
-</rem:description>
-</rem:defectTypeValue>
-<rem:defectTypeValue oid = "DTV-0015">
-<rem:name>Nivel incorrecto de detalle</rem:name>
-<rem:description>
-<![CDATA[El requisito o requisitos no están expresados con el nivel adecuado de detalle, es decir, son demasiado abstractos o demasiado detallados]]>
-</rem:description>
-</rem:defectTypeValue>
-<rem:defectTypeValue oid = "DTV-0014">
-<rem:name>Estabilidad no establecida</rem:name>
-<rem:description>
-<![CDATA[El requisito o requisitos no tienen estimada su estabilidad]]>
+<![CDATA[El requisito o requisitos no son necesarios porque no contribuyen a satisfacer ninguna necesidad de clientes o usuarios]]>
 </rem:description>
 </rem:defectTypeValue>
 <rem:defectTypeValue oid = "DTV-0009">
@@ -10275,22 +10757,16 @@
 <![CDATA[El requisito o requisitos incluyen elementos dependientes del diseño del sistema]]>
 </rem:description>
 </rem:defectTypeValue>
+<rem:defectTypeValue oid = "DTV-0010">
+<rem:name>Redundancia</rem:name>
+<rem:description>
+<![CDATA[El requisito o requisitos son redundantes o contienen elementos redundantes]]>
+</rem:description>
+</rem:defectTypeValue>
 <rem:defectTypeValue oid = "DTV-0011">
 <rem:name>Imprecisión</rem:name>
 <rem:description>
 <![CDATA[El requisito o requisitos no se expresan de forma precisa, es decir, usando cantidades numéricas siempre que sea posible con el nivel adecuado de precisión]]>
-</rem:description>
-</rem:defectTypeValue>
-<rem:defectTypeValue oid = "DTV-0013">
-<rem:name>Prioridad no establecida</rem:name>
-<rem:description>
-<![CDATA[El requisito o requisitos no tienen establecida su prioridad, es decir, su importancia y su urgencia]]>
-</rem:description>
-</rem:defectTypeValue>
-<rem:defectTypeValue oid = "DTV-0016">
-<rem:name>No rastreabilidad</rem:name>
-<rem:description>
-<![CDATA[El requisito o requisitos no están trazados hacia sus orígenes, bien requisitos de nivel superior (objetivos), bien clientes y usuarios]]>
 </rem:description>
 </rem:defectTypeValue>
 <rem:defectTypeValue oid = "DTV-0002">
@@ -10299,10 +10775,22 @@
 <![CDATA[El requisito o requisitos, aunque comprensibles, tienen más de una interpretación posible]]>
 </rem:description>
 </rem:defectTypeValue>
-<rem:defectTypeValue oid = "DTV-0012">
-<rem:name>Incompleción</rem:name>
+<rem:defectTypeValue oid = "DTV-0001">
+<rem:name>PD</rem:name>
 <rem:description>
-<![CDATA[El requisito o requisitos no describen todo lo que el sistema se supone que deberá hacer, no describen las respuestas del sistema a todas las posibles situaciones o incluyen elementos por determinar (PD)]]>
+<![CDATA[Por Determinar]]>
+</rem:description>
+</rem:defectTypeValue>
+<rem:defectTypeValue oid = "DTV-0008">
+<rem:name>Verbosidad excesiva</rem:name>
+<rem:description>
+<![CDATA[El requisito o requisitos pueden expresarse de forma más concisa sin alterar su significado]]>
+</rem:description>
+</rem:defectTypeValue>
+<rem:defectTypeValue oid = "DTV-0004">
+<rem:name>Incomprensibilidad</rem:name>
+<rem:description>
+<![CDATA[El requisito o requisitos no pueden ser entendidos por algún lector]]>
 </rem:description>
 </rem:defectTypeValue>
 <rem:defectTypeValue oid = "DTV-0006">
@@ -10311,32 +10799,56 @@
 <![CDATA[El requisito o requisitos no son consistentes, es decir, presentan contradicciones internas o entre varios]]>
 </rem:description>
 </rem:defectTypeValue>
+<rem:defectTypeValue oid = "DTV-0013">
+<rem:name>Prioridad no establecida</rem:name>
+<rem:description>
+<![CDATA[El requisito o requisitos no tienen establecida su prioridad, es decir, su importancia y su urgencia]]>
+</rem:description>
+</rem:defectTypeValue>
+<rem:defectTypeValue oid = "DTV-0015">
+<rem:name>Nivel incorrecto de detalle</rem:name>
+<rem:description>
+<![CDATA[El requisito o requisitos no están expresados con el nivel adecuado de detalle, es decir, son demasiado abstractos o demasiado detallados]]>
+</rem:description>
+</rem:defectTypeValue>
+<rem:defectTypeValue oid = "DTV-0016">
+<rem:name>No rastreabilidad</rem:name>
+<rem:description>
+<![CDATA[El requisito o requisitos no están trazados hacia sus orígenes, bien requisitos de nivel superior (objetivos), bien clientes y usuarios]]>
+</rem:description>
+</rem:defectTypeValue>
+<rem:defectTypeValue oid = "DTV-0014">
+<rem:name>Estabilidad no establecida</rem:name>
+<rem:description>
+<![CDATA[El requisito o requisitos no tienen estimada su estabilidad]]>
+</rem:description>
+</rem:defectTypeValue>
 <rem:defectTypeValue oid = "DTV-0023">
 <rem:name>Otro</rem:name>
 <rem:description>
 <![CDATA[El requisito o requisitos presentan otro tipo de defecto]]>
 </rem:description>
 </rem:defectTypeValue>
-<rem:importanceValue oid = "IMV-0003">
-<rem:name>importante</rem:name>
+<rem:importanceValue oid = "IMV-0004">
+<rem:name>quedaría bien</rem:name>
 </rem:importanceValue>
 <rem:importanceValue oid = "IMV-0001">
 <rem:name>PD</rem:name>
 </rem:importanceValue>
+<rem:importanceValue oid = "IMV-0003">
+<rem:name>importante</rem:name>
+</rem:importanceValue>
 <rem:importanceValue oid = "IMV-0002">
 <rem:name>vital</rem:name>
-</rem:importanceValue>
-<rem:importanceValue oid = "IMV-0004">
-<rem:name>quedaría bien</rem:name>
 </rem:importanceValue>
 <rem:stabilityValue oid = "SBV-0001">
 <rem:name>PD</rem:name>
 </rem:stabilityValue>
-<rem:stabilityValue oid = "SBV-0002">
-<rem:name>baja</rem:name>
-</rem:stabilityValue>
 <rem:stabilityValue oid = "SBV-0003">
 <rem:name>media</rem:name>
+</rem:stabilityValue>
+<rem:stabilityValue oid = "SBV-0002">
+<rem:name>baja</rem:name>
 </rem:stabilityValue>
 <rem:stabilityValue oid = "SBV-0004">
 <rem:name>alta</rem:name>
@@ -10347,26 +10859,35 @@
 <rem:statusValue oid = "STV-0003">
 <rem:name>pendiente de verificación</rem:name>
 </rem:statusValue>
-<rem:statusValue oid = "STV-0002">
-<rem:name>en construcción</rem:name>
-</rem:statusValue>
 <rem:statusValue oid = "STV-0004">
 <rem:name>pendiente de validación</rem:name>
+</rem:statusValue>
+<rem:statusValue oid = "STV-0002">
+<rem:name>en construcción</rem:name>
 </rem:statusValue>
 <rem:statusValue oid = "STV-0005">
 <rem:name>validado</rem:name>
 </rem:statusValue>
-<rem:terminationValue oid = "TEV-0003">
-<rem:name>queda sin efecto</rem:name>
+<rem:terminationValue oid = "TEV-0001">
+<rem:name>PD</rem:name>
 </rem:terminationValue>
 <rem:terminationValue oid = "TEV-0002">
 <rem:name>continúa</rem:name>
 </rem:terminationValue>
-<rem:terminationValue oid = "TEV-0001">
-<rem:name>PD</rem:name>
+<rem:terminationValue oid = "TEV-0003">
+<rem:name>queda sin efecto</rem:name>
 </rem:terminationValue>
 <rem:timeUnitValue oid = "TUV-0001">
 <rem:name>PD</rem:name>
+</rem:timeUnitValue>
+<rem:timeUnitValue oid = "TUV-0005">
+<rem:name>mes(es)</rem:name>
+</rem:timeUnitValue>
+<rem:timeUnitValue oid = "TUV-0007">
+<rem:name>semana(s)</rem:name>
+</rem:timeUnitValue>
+<rem:timeUnitValue oid = "TUV-0008">
+<rem:name>día(s)</rem:name>
 </rem:timeUnitValue>
 <rem:timeUnitValue oid = "TUV-0009">
 <rem:name>hora(s)</rem:name>
@@ -10374,29 +10895,20 @@
 <rem:timeUnitValue oid = "TUV-0002">
 <rem:name>año(s)</rem:name>
 </rem:timeUnitValue>
-<rem:timeUnitValue oid = "TUV-0008">
-<rem:name>día(s)</rem:name>
-</rem:timeUnitValue>
-<rem:timeUnitValue oid = "TUV-0010">
-<rem:name>minuto(s)</rem:name>
-</rem:timeUnitValue>
 <rem:timeUnitValue oid = "TUV-0011">
 <rem:name>segundo(s)</rem:name>
-</rem:timeUnitValue>
-<rem:timeUnitValue oid = "TUV-0005">
-<rem:name>mes(es)</rem:name>
 </rem:timeUnitValue>
 <rem:timeUnitValue oid = "TUV-0012">
 <rem:name>décima(s) de segundo</rem:name>
 </rem:timeUnitValue>
-<rem:timeUnitValue oid = "TUV-0007">
-<rem:name>semana(s)</rem:name>
-</rem:timeUnitValue>
-<rem:timeUnitValue oid = "TUV-0014">
-<rem:name>milisegundo(s)</rem:name>
+<rem:timeUnitValue oid = "TUV-0010">
+<rem:name>minuto(s)</rem:name>
 </rem:timeUnitValue>
 <rem:timeUnitValue oid = "TUV-0013">
 <rem:name>centésima(s) de segundo</rem:name>
+</rem:timeUnitValue>
+<rem:timeUnitValue oid = "TUV-0014">
+<rem:name>milisegundo(s)</rem:name>
 </rem:timeUnitValue>
 <rem:urgencyValue oid = "URV-0001">
 <rem:name>PD</rem:name>
