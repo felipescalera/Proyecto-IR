@@ -2092,7 +2092,8 @@
 <img class="figure_image" src=".\diagramas\diagramas de secuencia\AnadirProveedor.JPG" width="90%%" />
 <p class="figure_caption">
 <span class="figure_caption_label">Figura 47: </span>
-<textarea id="GRF-0110-name-md" class="markdown">DS-003 Añadir <a href="#GLO-0048" class="rem_ref">proveedor</a>
+<textarea id="GRF-0110-name-md" class="markdown">DS-003 Añadir <a href="#GLO-0039" class="rem_ref">factura</a>
+<a href="#GLO-0048" class="rem_ref">proveedor</a>
 </textarea>
 <span id="GRF-0110-name-html"></span>
 <script>generate_markdown("GRF-0110-name",true);</script>
@@ -2178,6 +2179,11 @@
 <span id="GRF-0119-name-html"></span>
 <script>generate_markdown("GRF-0119-name",true);</script>
 </p>
+</div>
+<div id="GLO-0135" class="glo">
+<textarea id="GLO-0135-text-md" class="markdown">**Copia de IU-001 Página principal**: En esta interfaz de usuario, representamos el escenario de página principal. Aquí los empleados/propietario tendrán que clicar sobre iniciar sesión para ver sus respectivas secciones.¬¬Los clientes podrán ver los <a href="#GLO-0046" class="rem_ref">productos</a> principales. Se podrán seleccionar por categoría, filtrarlos por precio y entrar en las páginas de los <a href="#GLO-0046" class="rem_ref">productos</a> en sí.¬¬Una vez el cliente decida que no va a comprar nada más, solo tendría que darle al carrito y desde ahí, podría tramitar el <a href="#GLO-0047" class="rem_ref">pedido</a>.¬De haber iniciado sesión el cliente, en la barra superior se mostraría la pestaña Mi Perfil.</textarea>
+<div id="GLO-0135-text-html" class=""></div>
+<script>generate_markdown("GLO-0135-text");</script>
 </div>
 <h1 id="SEC-0061" class="section">5 Interfaz de usuario del sistema</h1>
 <h2 id="SEC-0068" class="section">5.1 Diagramas de navegación del sistema</h2>
@@ -2892,7 +2898,7 @@
 </div>
 <h2 id="SEC-0066" class="section">6.2 Descripción de la interfaz de servicios del sistema</h2>
 <div id="PRG-0128">
-<textarea id="PRG-0128-text-md" class="markdown">En nuestro sistema contemplamos 5 servicios.¬¬**Servicio de Clientes** permite a los clientes de la empresa registrarse en el sistema, consultar su perfil y actualizar la información asociada a éste, realizar <a href="#GLO-0047" class="rem_ref">pedidos</a> y consultar los que ya ha realizado previamente. Cuenta con los siguientes métodos:¬¬- **RegistrarCliente()**  es un método que permite añadir a cada cliente sus datos personales, tales como DNI, nombre, apellidos... y registrarlos en nuestra base de datos.¬¬- **ActualizarCliente()** permite a los clientes actualizar sus datos, recibiendo como parámetros los del anterior método.¬¬- **ConsultarMiPerfil()** ayudará a los clientes de forma individual a consultar sus datos personales, estos se mostrarán en una vista de perfil personal. Allí encontraremos también los alquileres, <a href="#GLO-0047" class="rem_ref">pedidos</a> realizados y <a href="#GLO-0047" class="rem_ref">pedidos</a> pendientes.¬¬- **RealizarPedidoCliente()** registrará un <a href="#GLO-0047" class="rem_ref">pedido</a> desde el servicio cliente. Este método hará uso además del servicio de <a href="#GLO-0047" class="rem_ref">pedidos</a> (RegistrarPedido(),ConfirmarPedido(),PagarPedido()). Recibirá una lista de <a href="#GLO-0046" class="rem_ref">productos</a> y los datos personales de clientes. Únicamente se invocará cuando un cliente desee tramitar un <a href="#GLO-0047" class="rem_ref">pedido</a> desde <a href="#GLO-0047" class="rem_ref">pedidos</a> pendientes en Mi Perfil.</textarea>
+<textarea id="PRG-0128-text-md" class="markdown">En nuestro sistema contemplamos 5 servicios.¬¬**Servicio de Clientes** permite a los clientes de la empresa registrarse en el sistema, consultar su perfil y actualizar la información asociada a éste, realizar <a href="#GLO-0047" class="rem_ref">pedidos</a> y consultar los que ya ha realizado previamente. Cuenta con los siguientes métodos:¬¬- **RegistrarCliente()**  es un método que permite añadir a cada cliente sus datos personales, tales como DNI, nombre, apellidos... y registrarlos en nuestra base de datos.¬¬- **ActualizarCliente()** permite a los clientes actualizar sus datos, recibiendo como parámetros los del anterior método.¬¬- **ConsultarMiPerfil()** ayudará a los clientes de forma individual a consultar sus datos personales, estos se mostrarán en una vista de perfil personal. Allí encontraremos también los alquileres, <a href="#GLO-0047" class="rem_ref">pedidos</a> realizados y <a href="#GLO-0047" class="rem_ref">pedidos</a> pendientes.¬¬- **RealizarPedidoCliente()** registrará un <a href="#GLO-0047" class="rem_ref">pedido</a> desde el servicio cliente. Este método hará uso además del servicio de <a href="#GLO-0047" class="rem_ref">pedidos</a> (RegistrarPedido(),ConfirmarPedido(),PagarPedido()). Recibirá una lista de <a href="#GLO-0046" class="rem_ref">productos</a> y los datos personales de clientes. Únicamente se invocará cuando un cliente desee tramitar un <a href="#GLO-0047" class="rem_ref">pedido</a> desde <a href="#GLO-0047" class="rem_ref">pedidos</a> pendientes en Mi Perfil. También recibirá una <a href="#GLO-0016" class="rem_ref">cuba</a> y la fecha del <a href="#GLO-0047" class="rem_ref">pedido</a>, permitiendo así consultar la disponibilidad de esta.</textarea>
 <div id="PRG-0128-text-html" class=""></div>
 <script>generate_markdown("PRG-0128-text");</script>
 </div>
